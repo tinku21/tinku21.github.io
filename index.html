@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>tin</title>
+	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap Core CSS -->
+   
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+      
+        <!-- /.row -->
+
+        <!-- Portfolio Section -->
+        
+        <!-- /.row -->
+
+        <!-- Features Section -->
+       
+      
+           <div class="col-lg-8">
+           <div id="fields">
+           <form id="ajax-contact-form" class="form-horizontal" action="javascript:alert('success!');">
+            <div class="form-group">
+   <div class="row">
+   <div class="col-lg-3"><label class="control-label" for="inputName">Full Name:</label></div>
+   <div class="col-lg-9"><input class="form-control input-sm" type="text" id="inputName" name="name" value="Your full name" onBlur="if(this.value=='') this.value='Your full name'" onFocus="if(this.value =='Your full name' ) this.value=''"></div></div>
+   </div>
+     
+   <div class="form-group">
+   <div class="row">
+   <div class="col-lg-3"><label class="control-label" for="inputPhone">Phone number:</label></div>
+   <div class="col-lg-9"><input class="form-control input-sm" type="text" id="inputPhone" pattern="{1,15}" name="phone" value="Phone number" onBlur="if(this.value=='') this.value='Phone number'" onFocus="if(this.value =='Phone number' ) this.value=''"></div></div>
+   </div>
+   
+   <div class="form-group">
+   <div class="row">
+   <div class="col-lg-3"><label class="control-label" for="inputEmail">Your email:</label></div>
+   <div class="col-lg-9"><input class="form-control input-sm" type="text" id="inputEmail" name="email" value="Your email" onBlur="if(this.value=='') this.value='Your email'" onFocus="if(this.value =='Your email' ) this.value=''"></div></div>
+   </div>
+   
+   <div class="form-group">
+   <div class="row">
+   <div class="col-lg-3"><label class="control-label" for="inputMessage">Message:</label></div>
+   <div class="col-lg-9"><textarea class="form-control input-sm" id="inputMessage" name="content" onBlur="if(this.value=='') this.value='Message:'" 
+                        onFocus="if(this.value =='Message:' ) this.value=''">Message:</textarea></div></div>
+   </div>
+    <div class="form-group">
+   <div class="row">
+   <div class="col-lg-3"></div><div class="col-lg-9"><input type="button" class="btn btn-success" value="Submit"></div></div>
+   </div>
+   </form>
+   </div>
+           </div>
+           
+           
+           
+           <div class="col-lg-4"><div class="panel panel-default">
+             <div class="panel-body"> <i class="fa fa-map-marker"></i></div>
+</div></div>
+           
+        </div>
+        <!-- /.row -->
+
+    
+
+        <!-- Footer -->
+        <footer>
+           
+      </footer>
+       
+
+    </div>
+    
+    
+ 
+    
+    <!-- /.container -->
+<div style="background-color:#212121; color:#fff; bottom:0px; padding:10px; font-size:12px; text-align:center; position:fixed; width:100%;">
+           All Rights Reserved @ 2019.
+            </div>
+   
+    <script src="js/cform.js"></script>
+
+    
+
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+ $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+         
+		 
+			 
+    </script>
+
+</body>
+
+</html>
