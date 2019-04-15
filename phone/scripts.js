@@ -52,7 +52,7 @@
     /* Image Slider 1 - Swiper */
 	var imageSliderOne = new Swiper('.image-slider-1', {
         autoplay: {
-            delay: 6000,
+            delay: 3000,
             disableOnInteraction: false
         },
         loop: true
@@ -62,7 +62,7 @@
     /* Image Slider 2 - Swiper */
     var imageSliderTwo = new Swiper('.image-slider-2', {
         autoplay: {
-            delay: 5000,
+            delay: 2000,
             disableOnInteraction: false
 		},
         loop: false,
@@ -394,4 +394,7 @@
     
 
   
+
+
+
 })(jQuery);

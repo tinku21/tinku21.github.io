@@ -2740,7 +2740,7 @@ module.exports = function($, _) {
 
     win.setTimeout(function() {
       scroll(el, offset);
-    }, e ? 0 : 300);
+    }, e ? 0 : 100);
   }
 
   function scroll(el, offset){
