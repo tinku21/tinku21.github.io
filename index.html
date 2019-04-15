@@ -354,6 +354,21 @@ $('.carousel').carousel({
 </script>
   
 <style>
+.fa-ul {
+    padding-left: 0px;
+    margin-left: 2.14286em;
+    list-style-type: none;
+	margin-top:10px;
+}
+.fa-ul li{padding-bottom:15px;}
+
+.fa-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: 7px;
+    text-align: center;
+    color: #9c71e7;}
 
 .sr-only{
 	position: absolute;
@@ -865,24 +880,19 @@ body{
                 <div class="features-specification right-side">
                   <div style="display: inline-flex;">
                   
-                  <div class="spec-icon"><i class="fa fa-support"></i></div>
-                  <h3 style="padding-top:18px;">Signoff Support</h3>
+                  <div class="spec-icon"><i class="fa fa-cog fa-spin"></i></div>
+                  <h3 style="padding-top:18px;">Medicos<i>Dx</i> Pro<span style="color:#ff0000;">*</span></h3>
                   </div>
-                    <p>Medicos<i>Dx</i> can have the option of requesting Signoff of their Patient Encounters from a supervising Physician with Signoff privileges.</p>
+                  <ul class="fa-ul">
+                  <li><i class="fa-li fa fa-check-circle"></i> Dashboard for Administrative staff</li>
+                   <li><i class="fa-li fa fa-check-circle"></i> Patients Demographic entry done by Admin staff is available in Providers App.</li>
+                    <li><i class="fa-li fa fa-check-circle"></i> Admin staff can request for Signoff of the patient encounters from provider.</li>
+                     <li><i class="fa-li fa fa-check-circle"></i> Visit charges per Provider / Location etc can be downloaded by the Admin staff for creating claims</li>
+                  </ul>
+                 
                 </div>
                 
-                <div class="features-specification right-side">
-                  <div style="display: inline-flex;">
-                  
-                  <div class="spec-icon"><i class="fa fa-dashboard"></i></div>
-                  <h3 style="padding-top:18px;">Admin Panel<br><small>(Patient Status)</small></h3>
-                  
-                  </div>
-                    <p>This summary is used to check whether the patient chart is ‘Signed or Unsigned’.
-                    <br>A patient's status represents whether the patient is “active” or “inactive”
-</p>
-                </div>
-                   </div>
+                                  </div>
     </div>
            
            
