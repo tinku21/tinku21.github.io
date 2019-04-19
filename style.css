@@ -151,19 +151,25 @@ input:-webkit-autofill:focus {
     height: 36px;
     text-align: center;
     line-height: 2.5em;
-    background-color: #ffffff;
-    color: #138fc2;
+    background: -webkit-linear-gradient(50deg,#ff6ec4,#7873f5)!important;
+    background: linear-gradient(40deg,#ff6ec4,#7873f5)!important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.16), 0 1px 3px 0 rgba(0,0,0,.12);
+    color: #fff;
     border-radius: 100px;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     font-size: 15px;
+
 }
 
 .social-menu li a:hover {
-    background-color: #138fc2;
+    background: -webkit-linear-gradient(50deg,#ff6ec4,#7873f5)!important;
+    background: linear-gradient(40deg,#ff6ec4,#7873f5)!important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12), 0 1px 3px 0 rgba(0,0,0,.16);
     color: #ffffff;
     -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+	
 }
 
 /**
