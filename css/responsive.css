@@ -54,10 +54,11 @@
         margin-top: 20px;
     }
     .mainmenu-area .navbar-toggle .icon-bar {
-        background-color: #2db18a;
+        background-color: #ffffff;
     }
     .mainmenu-area #primary-menu {
-        background-color: #ffffff;
+           background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.16), 0 1px 3px 0 rgba(0,0,0,.12);
     }
     .mainmenu-area #primary-menu ul {
         overflow-y: auto;
@@ -91,6 +92,17 @@
     .mainmenu-area .logo {
         margin-left: 15px;
     }
+	
+	.mobilepad{
+		padding-top:190px;}
+	.dash{
+   width: 60% !important;
+   height:auto !important;
+   }
+   .dash2{
+   width: 90% !important;
+   height:auto !important;
+   }
 }
 
 
