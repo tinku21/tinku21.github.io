@@ -1215,3 +1215,11 @@ preloader
     float: left;
     margin: 10px 15px 0 0;
 }
+
+
+@media only screen and (max-width: 767px) {
+		
+	.anlge-bg {
+    background: url(images/angle-bg.png) no-repeat scroll center bottom -8px / 100% auto;
+}
+}
