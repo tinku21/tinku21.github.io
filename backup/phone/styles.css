@@ -1,0 +1,66 @@
+
+/**********************/
+
+
+.header .header-iphone {
+	position: relative;
+	max-width: 31rem;
+	max-height: 38.3125rem; /* necessary to solve IE 11 display issue when the natural image size is larger then specified here */
+	margin-bottom: 3.5rem;
+	
+}
+
+.header .iphone-mask {
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	margin-top: 1%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.header .slider-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 83%;
+	margin-top: 4.9%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.header .swiper-container {
+	border-radius: 1.75rem;
+}
+
+.header .text-container {
+	text-align: center;
+}
+
+.header h1,
+.header .p-large {
+	color: #fff;
+}
+
+.header h1 {
+	margin-bottom: 1.375rem;
+}
+
+.header .p-large {
+	margin-bottom: 2rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+.header .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
+.header .btn-solid-lg:hover {
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+}
+
