@@ -57,7 +57,7 @@
         background-color: #ffffff;
     }
     .mainmenu-area #primary-menu {
-           background-image: linear-gradient( 135deg, rgba(60, 8, 118, 0.8) 0%, rgba(250, 0, 118, 0.8) 100%);
+     background-image: linear-gradient( 135deg, rgba(130, 78, 222, 0.9) 0%, rgba(38, 136, 236, 0.9) 100%);
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.16), 0 1px 3px 0 rgba(0,0,0,.12);
     }
     .mainmenu-area #primary-menu ul {
