@@ -192,6 +192,16 @@ input:-webkit-autofill:focus {
     color: #fff;
 }
 
+.overlay3,
+.sky-bg3 {
+    	background: url(images/bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    color: #fff;
+}
+
 .gray-bg {
     background-color: #f1f3f7;
 }
