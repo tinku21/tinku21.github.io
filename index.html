@@ -1,261 +1,1679 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="zxx">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>test</title>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@charset "UTF-8";
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>MedicosDx</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="device/webflow.css">
+    <link rel="stylesheet" type="text/css" href="device/template-geometric.css">
+ 
 
-.navigation {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  line-height: 1;
-}
+    
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="phone/magnific-popup.css" rel="stylesheet">
+	<link href="phone/styles.css" rel="stylesheet">
 
-.navigation ul,
-.navigation ul li,
-.navigation ul ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-.navigation ul {
-  position: relative;
-  z-index: 500;
-  float: left;
-}
 
-.navigation ul li {
-  float: left;
-  min-height: 0.05em;
-  line-height: 1em;
-  vertical-align: middle;
-  position: relative;
-}
 
-.navigation ul li.hover,
-.navigation ul li:hover {
-  position: relative;
-  z-index: 510;
-  cursor: default;
-}
 
-.navigation ul ul {
-  visibility: hidden;
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  z-index: 520;
-  width: 100%;
-}
 
-.navigation ul ul li { float: none; }
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">  
+ 
+ 
+<script>
 
-.navigation ul ul ul {
-  top: 0;
-  right: 0;
-}
 
-.navigation ul li:hover > ul { visibility: visible; }
++function ($) {
+  'use strict';
 
-.navigation ul ul {
-  top: 0;
-  left: 99%;
-}
+  // CSS TRANSITION SUPPORT (Shoutout: https://www.modernizr.com/)
+  // ============================================================
 
-.navigation ul li { float: none; }
+  function transitionEnd() {
+    var el = document.createElement('bootstrap')
 
-.navigation ul ul { margin-top: 0.05em; }
+    var transEndEventNames = {
+      WebkitTransition : 'webkitTransitionEnd',
+      MozTransition    : 'transitionend',
+      OTransition      : 'oTransitionEnd otransitionend',
+      transition       : 'transitionend'
+    }
 
-.navigation {
-  width: 15em;
-  background: #333333;
-  font-family: 'Poppins', sans-serif;
-  zoom: 1;
-}
+    for (var name in transEndEventNames) {
+      if (el.style[name] !== undefined) {
+        return { end: transEndEventNames[name] }
+      }
+    }
 
-.navigation:before {
-  content: '';
-  display: block;
-}
-
-.navigation:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.navigation a {
-  display: block;
-  padding: 1em 1.3em;
-  color: #ffffff;
-  text-decoration: none;
+    return false // explicit for ie8 (  ._.)
   }
 
-.navigation > ul { width: 15em; }
+  // http://blog.alexmaccaw.com/css-transitions
+  $.fn.emulateTransitionEnd = function (duration) {
+    var called = false
+    var $el = this
+    $(this).one('bsTransitionEnd', function () { called = true })
+    var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
+    setTimeout(callback, duration)
+    return this
+  }
 
-.navigation ul ul { width: 200px; }
+  $(function () {
+    $.support.transition = transitionEnd()
 
-.navigation > ul > li > a {
-  color: #ffffff;
+    if (!$.support.transition) return
+
+    $.event.special.bsTransitionEnd = {
+      bindType: $.support.transition.end,
+      delegateType: $.support.transition.end,
+      handle: function (e) {
+        if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
+      }
+    }
+  })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: carousel.js v3.3.5
+ * https://getbootstrap.com/javascript/#carousel
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // CAROUSEL CLASS DEFINITION
+  // =========================
+
+  var Carousel = function (element, options) {
+    this.$element    = $(element)
+    this.$indicators = this.$element.find('.carousel-indicators')
+    this.options     = options
+    this.paused      = null
+    this.sliding     = null
+    this.interval    = null
+    this.$active     = null
+    this.$items      = null
+
+    this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
+
+    this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
+      .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
+      .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
+  }
+
+  Carousel.VERSION  = '3.3.5'
+
+  Carousel.TRANSITION_DURATION = 600
+
+  Carousel.DEFAULTS = {
+    interval: 5000,
+    pause: 'hover',
+    wrap: true,
+    keyboard: true
+  }
+
+  Carousel.prototype.keydown = function (e) {
+    if (/input|textarea/i.test(e.target.tagName)) return
+    switch (e.which) {
+      case 37: this.prev(); break
+      case 39: this.next(); break
+      default: return
+    }
+
+    e.preventDefault()
+  }
+
+  Carousel.prototype.cycle = function (e) {
+    e || (this.paused = false)
+
+    this.interval && clearInterval(this.interval)
+
+    this.options.interval
+      && !this.paused
+      && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
+
+    return this
+  }
+
+  Carousel.prototype.getItemIndex = function (item) {
+    this.$items = item.parent().children('.item')
+    return this.$items.index(item || this.$active)
+  }
+
+  Carousel.prototype.getItemForDirection = function (direction, active) {
+    var activeIndex = this.getItemIndex(active)
+    var willWrap = (direction == 'prev' && activeIndex === 0)
+                || (direction == 'next' && activeIndex == (this.$items.length - 1))
+    if (willWrap && !this.options.wrap) return active
+    var delta = direction == 'prev' ? -1 : 1
+    var itemIndex = (activeIndex + delta) % this.$items.length
+    return this.$items.eq(itemIndex)
+  }
+
+  Carousel.prototype.to = function (pos) {
+    var that        = this
+    var activeIndex = this.getItemIndex(this.$active = this.$element.find('.item.active'))
+
+    if (pos > (this.$items.length - 1) || pos < 0) return
+
+    if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) }) // yes, "slid"
+    if (activeIndex == pos) return this.pause().cycle()
+
+    return this.slide(pos > activeIndex ? 'next' : 'prev', this.$items.eq(pos))
+  }
+
+  Carousel.prototype.pause = function (e) {
+    e || (this.paused = true)
+
+    if (this.$element.find('.next, .prev').length && $.support.transition) {
+      this.$element.trigger($.support.transition.end)
+      this.cycle(true)
+    }
+
+    this.interval = clearInterval(this.interval)
+
+    return this
+  }
+
+  Carousel.prototype.next = function () {
+    if (this.sliding) return
+    return this.slide('next')
+  }
+
+  Carousel.prototype.prev = function () {
+    if (this.sliding) return
+    return this.slide('prev')
+  }
+
+  Carousel.prototype.slide = function (type, next) {
+    var $active   = this.$element.find('.item.active')
+    var $next     = next || this.getItemForDirection(type, $active)
+    var isCycling = this.interval
+    var direction = type == 'next' ? 'left' : 'right'
+    var that      = this
+
+    if ($next.hasClass('active')) return (this.sliding = false)
+
+    var relatedTarget = $next[0]
+    var slideEvent = $.Event('slide.bs.carousel', {
+      relatedTarget: relatedTarget,
+      direction: direction
+    })
+    this.$element.trigger(slideEvent)
+    if (slideEvent.isDefaultPrevented()) return
+
+    this.sliding = true
+
+    isCycling && this.pause()
+
+    if (this.$indicators.length) {
+      this.$indicators.find('.active').removeClass('active')
+      var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
+      $nextIndicator && $nextIndicator.addClass('active')
+    }
+
+    var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
+    if ($.support.transition && this.$element.hasClass('slide')) {
+      $next.addClass(type)
+      $next[0].offsetWidth // force reflow
+      $active.addClass(direction)
+      $next.addClass(direction)
+      $active
+        .one('bsTransitionEnd', function () {
+          $next.removeClass([type, direction].join(' ')).addClass('active')
+          $active.removeClass(['active', direction].join(' '))
+          that.sliding = false
+          setTimeout(function () {
+            that.$element.trigger(slidEvent)
+          }, 0)
+        })
+        .emulateTransitionEnd(Carousel.TRANSITION_DURATION)
+    } else {
+      $active.removeClass('active')
+      $next.addClass('active')
+      this.sliding = false
+      this.$element.trigger(slidEvent)
+    }
+
+    isCycling && this.cycle()
+
+    return this
+  }
+
+
+  // CAROUSEL PLUGIN DEFINITION
+  // ==========================
+
+  function Plugin(option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.carousel')
+      var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
+      var action  = typeof option == 'string' ? option : options.slide
+
+      if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
+      if (typeof option == 'number') data.to(option)
+      else if (action) data[action]()
+      else if (options.interval) data.pause().cycle()
+    })
+  }
+
+  var old = $.fn.carousel
+
+  $.fn.carousel             = Plugin
+  $.fn.carousel.Constructor = Carousel
+
+
+  // CAROUSEL NO CONFLICT
+  // ====================
+
+  $.fn.carousel.noConflict = function () {
+    $.fn.carousel = old
+    return this
+  }
+
+
+  // CAROUSEL DATA-API
+  // =================
+
+  var clickHandler = function (e) {
+    var href
+    var $this   = $(this)
+    var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) // strip for ie7
+    if (!$target.hasClass('carousel')) return
+    var options = $.extend({}, $target.data(), $this.data())
+    var slideIndex = $this.attr('data-slide-to')
+    if (slideIndex) options.interval = false
+
+    Plugin.call($target, options)
+
+    if (slideIndex) {
+      $target.data('bs.carousel').to(slideIndex)
+    }
+
+    e.preventDefault()
+  }
+
+  $(document)
+    .on('click.bs.carousel.data-api', '[data-slide]', clickHandler)
+    .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
+
+  $(window).on('load', function () {
+    $('[data-ride="carousel"]').each(function () {
+      var $carousel = $(this)
+      Plugin.call($carousel, $carousel.data())
+    })
+  })
+
+}(jQuery);
+
+
+
+$('.carousel').carousel({
+	interval: 0
+});
+</script>
+  
+
+  
+<style>
+.morecontent span {
+display: none;
 }
-
-.navigation > ul > li > a:hover { color: #ffffff; }
-
-.navigation > ul > li a:hover,
-.navigation > ul > li:hover a { background: #34A65F; }
-
-.navigation li { position: relative; }
-
-.navigation ul li.has-sub > a:after {
-  content: '»';
-  position: absolute;
-  right: 1em;
+.morelink {
+display: block;
+color:#2688ec;
 }
-
-.navigation ul ul li.first {
-  -webkit-border-radius: 0 3px 0 0;
-  -moz-border-radius: 0 3px 0 0;
-  border-radius: 0 3px 0 0;
-}
-
-.navigation ul ul li.last {
-  -webkit-border-radius: 0 0 3px 0;
-  -moz-border-radius: 0 0 3px 0;
-  border-radius: 0 0 3px 0;
-  border-bottom: 0;
-}
-
-.navigation ul ul {
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
-}
-
-.navigation ul ul { border: 1px solid #34A65F; }
-
-.navigation ul ul a { color: #ffffff; }
-
-.navigation ul ul a:hover { color: #ffffff; }
-
-.navigation ul ul li { border-bottom: 1px solid #0F8A5F; }
-
-.navigation ul ul li:hover > a {
-  background: #4eb1ff;
-  color: #ffffff;
-}
-
-.navigation.align-right > ul > li > a {
-  border-left: 0.3em solid #34A65F;
-  border-right: none;
-}
-
-.navigation.align-right { float: right; }
-
-.navigation.align-right li { text-align: right; }
-
-.navigation.align-right ul li.has-sub > a:before {
-  content: '+';
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  margin-top: -6px;
-}
-
-.navigation.align-right ul li.has-sub > a:after { content: none; }
-
-.navigation.align-right ul ul {
+.tip {
+  position: relative;
+  display: inline-block;
+ }
+/* Tooltip text */
+.tip .tooltiptext {
   visibility: hidden;
+  width:auto;
+ background:#ffffff;
+    color: #222222;
+  text-align: center;
+  padding: 2px 12px;
+  border-radius: 9px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent #ffffff transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.fa-ul {
+    padding-left: 0px;
+    margin-left: 2.14286em;
+    list-style-type: none;
+	margin-top:10px;
+}
+.fa-ul li{padding-bottom:15px;}
+
+.fa-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: 7px;
+    text-align: center;
+    color: #9c71e7;}
+
+.sr-only{
+	position: absolute;
+	left: -9999999px;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+       -o-transition: .6s ease-in-out left;
+          transition: .6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+         -o-transition:      -o-transform .6s ease-in-out;
+            transition:         transform .6s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
   position: absolute;
   top: 0;
-  left: -100%;
-  z-index: 598;
   width: 100%;
 }
-
-.navigation.align-right ul ul li.first {
-  -webkit-border-radius: 3px 0 0 0;
-  -moz-border-radius: 3px 0 0 0;
-  border-radius: 3px 0 0 0;
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel-control.left {
+ 
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  font-family: serif;
+  line-height: 1;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -15px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -15px;
+  }
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+     bottom: -30px;
+  }
 }
 
-.navigation.align-right ul ul li.last {
-  -webkit-border-radius: 0 0 0 3px;
-  -moz-border-radius: 0 0 0 3px;
-  border-radius: 0 0 0 3px;
+.header2 .slider-container2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 83%;
+    margin-top: 4.9%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo2{
+	font-family: 'Philosopher', sans-serif;
+	font-size:2.5em;
+	font-weight:500;
+	padding-top:30px;
+	
+}
+body{
+	overflow-x: hidden;
+	}
+
+.carousel-indicators {
+    position: absolute;
+     bottom: -30px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel{
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+.bullet li:before {    
+    font-family: 'FontAwesome';
+    content: '\f101';
+    margin:0 5px 0 -15px;
+    color: #2db18a;
+	list-style-type:none !important;
+	
 }
 
-.navigation.align-right ul ul {
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-}
-body {
-	font-size: 12px;
-	font-family: 'Poppins', sans-serif;
-}
 </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#primary-menu">
 
-<div class="navigation">
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#home-page" class="navbar-brand logo2">
+                Medicos<span style="font-style:italic;">Dx</span> </a>
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home-page">Home</a></li>
+                    <li><a href="#feature-page">Features</a></li>
+                    <li><a href="#service-page">Downloads</a></li>
+				   <li><a href="#price-page">Pricing</a></li>
+                   <li><a href="#contact-page">Contact</a></li>
+                   <li><a href="#">Admin Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
 
-<ul>
+
+
+    <!--Header-area-->
+    <header class="header-area overlay full-height relative v-center" id="home-page">
+        <div class="absolute anlge-bg"></div>
+        <div class="container">
+            <div class="row v-center">
+                <div class="col-xs-12 col-md-4 header-text">
+                    <h2>Charge&nbsp;Capture</h2>
+                    <h4>HIPAA Compliant</h4>
+                    <p style="color:#ffffff; text-shadow: 1px 1px 0 rgba(4, 4, 4, 0.4);">The Most Widely Used and Reliable Clinical Charge Capture platform</p>
+                    
+                </div>
+                <div class="hidden-xs hidden-sm col-md-8 text-right">
+                    <div class="">
+                    
+                      <div id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6">
+                        <div class="">
+                        
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
    
-   <li> <a href="#">Favorites</a></li>
-    <li> <a href="#">Dashboard</a></li>
-     <li class="has-sub"> <a href="#">Admin</a>
-     <ul>
-     <li> <a href="#">Info</a></li>
-    <li> <a href="#">Product Activation</a></li>
-     <li> <a href="#">Clinic Info</a></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/11.png" style="width:83%" alt="...">
+      
+    </div>
+    <div class="item">
+      <img src="images/12.png" style="width:83%" alt="...">
+      
+    </div>
    
-   <li> <a href="#">Providers</a></li>
-    <li> <a href="#">Staff</a></li>
-     <li> <a href="#">Roles</a></li>
-     <li> <a href="#">Roles Settings</a></li>
-        <li class="has-sub"> <a href="#">Resources</a>
-      <ul>
-        <li><a href="#">Lab</a></li>
-        <li><a href="#">Room</a></li>
-        <li><a href="#">Equipment</a></li>
-      </ul>
-    </li>
-    <li class="has-sub"> <a href="#">Data Access Admin</a>
-      <ul>
-        <li><a href="#">API Access</a></li>
-        <li><a href="#">Patient Portal</a></li>
-        <li><a href="#">Data Export-CCDA</a></li>
-         </ul>
-    </li>
-    
-    
-    
-    
-    
-     <li class="has-sub"> <a href="#">Admin Reports</a>
-      <ul>
-        <li><a href="#">EHI Logs</a></li>
-        <li><a href="#">Valid/Invalid Login Attempts</a></li>
-        <li><a href="#">Inactive Accounts Logs</a></li>
-        <li><a href="#">Admin User Logs</a></li>
-      </ul>
-    </li>
-  
-  </ul>
- <li><a href="#">Reports</a></li>
-  <li><a href="#">Tools</a></li>
-   <li><a href="#">Help</a></li>
+  </div>
 
-</li></ul>
-
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
+
+
+                        </div> <!-- end of header-ipad -->
+                    </div> <!-- end of col -->
+                   
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </div> <!-- end of header -->
+    <!-- end of header -->            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-area/-->
+
+
+
+    <!--Feature-area-->
+
+    <!--Feature-area/-->
+
+    
+
+
+
+    <section class="gray-bg section-padding" id="feature-page" style="background-image:url(images/mesh.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>SPECIAL FEATURES</h2>
+                        <p>Check out what you can do with this App</p>
+                    </div>
+                </div>
+            </div>
+            
+    
+    <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4">
+   <div class="features-specification left-side">
+                  <div style="display: inline-flex;">
+                  <h3 style="padding-top:18px;">Charge Capture</h3>
+                  <div class="spec-icon"><i class="fa fa-camera"></i></div>
+                  </div>
+                    <p><span class="more">Save time and record patient diagnoses and procedures at the point of care. Charges instantly sync to your Medicos<i>Dx</i> account from anywhere, saving time and paperwork.</span></p>
+                   
+                </div>
+                
+                   <div class="features-specification left-side">
+                  <div style="display: inline-flex;">
+                  <h3 style="padding-top:18px;">Code Search </h3>
+                  <div class="spec-icon"><i class="fa fa-search"></i></div>
+                  </div>
+                    <p><span class="more">The advanced code search functionality is unbelievably fast and easy, giving providers a convenient way to select customized diagnosis codes during the charge capture process.<span class="more"></p>
+                </div>
+                
+                   <div class="features-specification left-side">
+                  <div style="display: inline-flex;">
+                  <h3 style="padding-top:18px;">Frequent History</h3>
+                  <div class="spec-icon"><i class="fa fa-history"></i></div>
+                  </div>
+                    <p><span class="more">Record and share patient diagnoses history inside an intuitive interface that can be customized around your workflow.<span class="more"></p>
+                </div>
+                
+                   
+                
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+ 
+  <!-- <img src="images/mbl.png" class="img-responsive"/>  -->
+  
+  
+    <!-- Header -->
+    <div id="header" class="header">
+       
+           
+               <div class="header-iphone">
+                            <img class="iphone-mask img-fluid" src="phone/header-iphone-mask.png" alt="alternative">
+
+                            <!-- Image Slider -->
+                            <div class="slider-container">
+                                <div class="swiper-container image-slider-1 swiper-container-horizontal"  style="width: 266px;">
+                                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-532px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 266px;">
+                                            <img class="img-fluid" src="phone/header-slide-3.jpg" alt="alternative"  >
+                                        </div>
+                                        
+                                        <!-- Slide -->
+                                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 266px;">
+                                            <img class="img-fluid" src="phone/header-slide-1.jpg" alt="alternative">
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+                                        
+                                        <!-- Slide -->
+                                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 266px;">
+                                            <img class="img-fluid" src="phone/header-slide-2.jpg" alt="alternative">
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+                                        
+                                        <!-- Slide -->
+                                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 266px;">
+                                            <img class="img-fluid" src="phone/header-slide-3.jpg" alt="alternative">
+                                        </div> <!-- end of swiper-slide -->
+                                        <!-- end of slide -->
+                                        
+                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 266px;">
+                                            <img class="img-fluid" src="phone/header-slide-1.jpg" alt="alternative">
+                                        </div></div> <!-- end of swiper-wrapper -->
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> <!-- end of swiper-container -->
+                            </div> <!-- end of slider-container -->
+                            <!-- end of image slider -->
+
+                            <img class="img-fluid" src="phone/header-iphone.png" alt="alternative">
+                        </div> <!-- end of header-ipad -->
+                   
+         
+    </div> <!-- end of header -->
+    <!-- end of header --> 
+      
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 mobilepad">
+      <div class="features-specification right-side">
+                  <div style="display: inline-flex;">
+                  
+                  <div class="spec-icon"><i class="fa fa-eye"></i></div>
+                  <h3 style="padding-top:18px;">Appointment Viewer</h3>
+                  </div>
+                    <p><span class="more">Stay current with an appointment schedule that changes in real-time. Make changes directly in the app and create charges by selecting an appointment.</span></p>
+                </div>
+                
+                <div class="features-specification right-side">
+                  <div style="display: inline-flex;">
+                  
+                  <div class="spec-icon"><i class="fa fa-cog fa-spin"></i></div>
+                  <h3 style="padding-top:18px;">Medicos<i>Dx</i> Pro<span style="color:#ff0000;">*</span></h3>
+                  </div>
+                  <ul class="fa-ul">
+                  <li><i class="fa-li fa fa-check-circle"></i> Dashboard for Administrative staff</li>
+                   <li><i class="fa-li fa fa-check-circle"></i> Patients Demographic entry done by Admin staff is available in Providers App.</li>
+                    <li><i class="fa-li fa fa-check-circle"></i> Admin staff can request for Signoff of the patient encounters from provider.</li>
+                     <li><i class="fa-li fa fa-check-circle"></i> Visit charges per Provider / Location etc can be downloaded by the Admin staff for creating claims</li>
+                  </ul>
+                 
+                </div>
+                
+                                  </div>
+    </div>
+           
+           
+           <div clsss="row">
+           <div class="col-lg-12" style="text-align:center;"><br><br><br>
+           <h2>HIPAA</h2>
+           Built from the ground up to exceed HIPAA requirements, our software is engineered by experts in the field of security and privacy.
+           </div>
+           </div> 
+            </div>
+           <!-- <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="box">
+                        <div class="box-icon">
+                          <i class="fa fa-wifi homeicon"></i>
+                        </div>
+                        <h4>Fast Access to Critical Information and Staff</h4>
+                        <p style="text-align:justify;">Speed and clarity are key components for improving the quality of a patient`s care. This real-time mobile access means information is instantly shared without rounds of phone tag, costly miscommunications, or physically tracking people down.</p>
+                    </div>
+                </div>
+               
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="box">
+                        <div class="box-icon">
+                          <i class="ti-lock homeicon"></i>
+                        </div>
+                        <h4>Secure, Compliant Communications</h4>
+                        <p>With HIPAA fines rising in both frequency and dollar amount, the need to protect patient data at every stage is becoming ever more critical. A secure, encrypted, centrally managed messaging solution is one way to safeguard clinical communications.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="box">
+                        <div class="box-icon">
+                          <i class="ti-layers-alt homeicon"></i>
+                        </div>
+                        <h4>Centralized, Integrated Communications Platform</h4>
+                        <p>Centralizing clinical communications and alerts on a single, integrated platform, critical information that would ordinarily be spread across multiple applications and hospital systems can now be instantly accessed by hospital staff from a smartphone or web browser</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="box">
+                        <div class="box-icon">
+                            <i class="ti-comments homeicon"></i>
+                        </div>
+                        <h3>Multi Organization access and privacy</h3>
+                        <p>This feature lets healthcare staff register in multiple organizations and create personal groups for cross organization communication.</p>
+                    </div>
+                </div>
+               
+          </div>
+		          <div class="row">
+             <div class="col-xs-12 col-sm-6 col-md-6">
+             <div class="box" style="text-align:left;">
+             <h3>Medicos<i>Dx</i>Basic</h3>
+               <ul class="bullet" style="list-style-type:none !important;  text-align:justify;">
+               <li><strong>Patient Demographics entry</strong> you can enter patient demographics in the App itself</li>
+                 <li><strong>Patient Roster</strong>  You can create your own patient roster beforehand</li>
+                 <li><strong>Admit Visit</strong>  you can enter admit details & charges</li>
+                 <li><strong>Visits</strong>  you can create multiple visits & charges</li>
+                 <li><strong>Discharge</strong>  you can enter discharge summary & charges</li>
+				  <li><strong>Charge capture</strong>  you can download all visit charges in Excel formats</li>
+               </ul>
+               </div>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="box" style="text-align:left;">
+               <h3> Medicos<i>Dx</i>Pro</h3>
+               <ul class="bullet" style="list-style-type:none !important; text-align:justify;">
+               <li><strong>All Medicos<i>Dx</i>basic features</strong> </li>
+                 <li><strong>Globally accessible:</strong>  Charges can be accessed from cloud, onto any device securely</li>
+                 <li><strong>Priority Messaging:</strong>  set priority alerts on charges which can be easily identified</li>
+                 <li><strong>Admin controlled:</strong> all user  accessibilities are controlled through a central admin portal. Deregistering or  registering a user, ICE access,etc can be controlled during high-risk  situations like lost device, etc</li>
+               </ul>
+               </div>
+               </div>
+            
+                 </div> 
+		  
+        </div> -->
+    </section>
+
+    <section class="section-padding" id="service-page"  style="background-image: linear-gradient( 135deg, rgba(130, 78, 222, 0.9) 0%, rgba(38, 136, 236, 0.9) 100%);">
+	
+	  <div class="w-section section products">
+        <div class="w-container container">
+            <div class="models-text-block">
+                <h2 class="large-column-title">Devices &amp;&nbsp;Models we work with</h2>
+                <div class="section-divider-line models-divider"></div>
+                <p style="font-size:1.2em;">
+                    Download Available
+                </p>
+               <p style="padding-top:10px;">
+              <a href="#" class="button2 tip" title=""><span class="tooltiptext">Coming Soon</span> <img src="images/playstore.png"> Google Play</a>&nbsp; <a href="#" class="button2 waves-effect waves-light"><img src="images/apple.png"> App Store</a></p>
+            </div>
+            <div class="w-slider models-slider" data-animation="slide" data-duration="500" data-infinite="1" data-delay="3000" data-autoplay="1">
+                <div class="w-slider-mask"><div class="w-slide models-slide" style="transform: translateX(-1140px); opacity: 1; transition: transform 500ms ease 0s;">
+                        <img class="model-image iphone dash" src="device/iphones-default-med-min.png"  style="height:280px;">
+                        <h5 class="model-slider-title" data-ix="model-title-slide" style="opacity: 0; transform: translateX(20px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">Apple iPhone</h5>
+                        <h5 class="model-slider-title subtitle" data-ix="model-title-slide-2" style="opacity: 0; transform: translateX(20px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">7 Plus, 7, 6 Plus, 6, iPad, iPad Pro, and iPad Mini</h5>
+                    </div><div class="w-slide models-slide" style="transform: translateX(-1140px); opacity: 1; transition: transform 500ms ease 0s;">
+                        <img class="model-image ipad  dash" src="device/samsung-side-by-side-wide-min.png">
+                        <h5 class="model-slider-title" data-ix="model-title-slide" style="opacity: 0; transform: translateX(20px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">Android Phones</h5>
+                        <h5 class="model-slider-title subtitle" data-ix="model-title-slide-2" style="opacity: 0; transform: translateX(20px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">
+                            We support all modern Android phones
+                        </h5>
+                    </div>
+					<div class="w-slide models-slide" style="transform: translateX(-1140px); opacity: 1; transition: transform 500ms ease 0s;">
+                        <img class="model-image dash2" src="device/laptop-billing-small-min.png">
+                        <h5 class="model-slider-title" data-ix="model-title-slide" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">Laptops</h5>
+                        <h5 class="model-slider-title subtitle" data-ix="model-title-slide-2" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">
+                            Use Admin Pannel from any Laptop (Windos / MAC)
+                        </h5>
+                    </div>
+					<div class="w-slide models-slide" style="transform: translateX(-1140px); opacity: 1; transition: transform 500ms ease 0s;">
+                        <img class="model-image dash2" src="device/dsktop.png">
+                        <h5 class="model-slider-title" data-ix="model-title-slide" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">Desktop</h5>
+                        <h5 class="model-slider-title subtitle" data-ix="model-title-slide-2" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 700ms ease 0s, transform 700ms ease 0s;">
+                            Use Admin Pannel from any PC or Mac
+                        </h5>
+                    </div></div>
+                <div class="w-slider-arrow-left model-slider-arrow">
+                    <div class="w-icon-slider-left"></div>
+                </div>
+                <div class="w-slider-arrow-right model-slider-arrow">
+                    <div class="w-icon-slider-right"></div>
+                </div>
+                <div class="w-slider-nav w-round w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny"><div class="w-slider-dot" data-wf-ignore=""></div><div class="w-slider-dot" data-wf-ignore=""></div><div class="w-slider-dot w-active" data-wf-ignore=""></div></div>
+            </div>
+        </div>
+    </div>
+	
+      
+    </section>
+
+
+    <section class="price-area overlay2 section-padding" id="price-page" >
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Affordable Price</h2>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-table">
+                        <h3 class="text-uppercase price-title">Individual Plan</h3>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><strong class="amount">$ <span class="big">1.89</span></strong> Per Account /mo<br>
+                          (with annual payment)</li>
+                            <li>monthly/quarterly payment<br><strong class="amount">$ <span class="big">2.10</span></strong> /mo</li>
+                            <li>Suitable for individual providers</li>
+                                                      
+                      </ul>
+                        <hr>
+                        <a href="#" class="button waves-effect waves-light">Purchase</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-table">                      
+                        <h3 class="text-uppercase price-title">basic group Plan</h3>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><strong class="amount">$<span class="big">1.44</span></strong>  Per Account /mo<br>(with annual payment)</li>
+                            <li>monthly/quarterly payment<br><strong class="amount">$ <span class="big">1.60</span></strong> /mo</li>
+                            <li>Suitable for clinical groups</li>
+                            <li>(Min 5 Users)</li>
+                        </ul>
+                        <hr>
+                        <a href="#" class="button waves-effect waves-light">Purchase</a>
+                    </div>
+                </div>               
+                <div class="col-xs-12 col-sm-4">
+                  <div class="price-table active">
+                    <span class="price-info" style=" padding-top:5px;"><span class="fa fa-cog fa-spin" style="font-size:2.2em;"></span></span>
+                        <h3 class="text-uppercase price-title">Pro</h3>
+                        <hr>
+                        <ul class="list-unstyled">
+                        <li></li>
+                            <li>Please contact us for a customized quote.</li>                          
+                           <li>Suitable for clinical groups</li>
+                           <li>Includes<br>Dashboard for Administrative staff</li>
+                           <li></li>
+                           
+                    </ul>
+                        <hr>
+                        <a href="#" class="button waves-effect waves-light">Purchase</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+    
+
+ <span class="more">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+
+
+
+
+
+
+    
+
+
+    <footer class="footer-area relative sky-bg2" id="contact-page">
+        <div class="absolute footer-bg"></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div class="page-title" style="color:#ffffff !important;">
+                            <h2 style="color:#ffffff !important;">Contact us</h2>
+                            
+                            
+                            
+                            <p>Ensuring the privacy and security of your data is a top priority for us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes" style="color:#ffffff;">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/location-arrow.png" alt="">
+                                </div>
+                                <p><strong>Address: </strong> 2055 Comprehensive Dr<br>Aurora, IL 60505</p>
+                            </div>
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/phone-arrow.png" alt="">
+                                </div>
+                                <p><strong>Telephone: </strong>
+                                    <a href="callto:18773778999">1-877-377-8999</a> <br />
+                                    <a href="callto:16302997638">1-630-299-7638</a>
+                                </p>
+                            </div>
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/mail-arrow.png" alt="">
+                                </div>
+                                <p><strong>E-mail: </strong>
+                                    <a href="mailto:info@vinfonet.com">info@vinfonet.com</a>
+                                    
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                       <form id="contact-form" method="post" action="contact.php" role="form" style="width:600px;">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Name <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                             <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Phone <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Phone *" required data-error="Phone Number is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="row">
+                           
+                           </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_email">Email <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message <span style="color:#ed4b4b;">*</span></label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+              <div class="row">
+                    <div class="col-xs-12 col-sm-6 pull-right">
+                        <ul class="social-menu text-right x-left">
+                            <li><a href="https://www.facebook.com/pages/MDCareEMR/121475071231247" target="_blank" class="waves-effect waves-light"><i class="ti-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/mdcareemr" target="_blank" class="waves-effect waves-light"><i class="ti-twitter"></i></a></li>                           
+                            <li><a href="https://www.linkedin.com/company/208891?trk=tyah" target="_blank" class="waves-effect waves-light"><i class="ti-linkedin"></i></a></li>                                           
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>We <i class="fa fa-heart" style="color:#ff0000;"></i> new friends!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>&copy; Copyright 2019 All right reserved @ Medicos<i>Dx</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>  
+    <script  src="js/index.js"></script>
+
+<script type="text/javascript" src="device/jquery.min.js"></script>
+    <script type="text/javascript" src="device/webflow.js"></script>
+
+
+    
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--<script src="js/contact-form.js"></script>-->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+ 
+ 
+     <script src="jquery.min.js"  crossorigin="anonymous"></script>
+    <script src="validator.min.js"  crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+ 
+ 
+ <script src="phone/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="phone/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="phone/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="phone/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="phone/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="phone/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="phone/jquery.countTo.js"></script> <!-- jQuery countTo for counting animation -->
+    <script src="phone/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="phone/scripts.js"></script> <!-- Custom scripts -->
+ 
+ 
+
+    
+        <script>
+	$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 	  autoPlay: 3000,
+      navigation : true, // Show next and prev buttons
+      autoplay: true,
+	  slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      items : 1, 
+      itemsDesktop : true,
+      itemsDesktopSmall : false,
+      itemsTablet: false,
+      itemsMobile : false,
+	  
+  });
+ 
+});
+	</script>
+    <script>
+	;(function(window) {
+    'use strict';
+
+    var Waves = Waves || {};
+    var $$ = document.querySelectorAll.bind(document);
+
+    // Find exact position of element
+    function isWindow(obj) {
+        return obj !== null && obj === obj.window;
+    }
+
+    function getWindow(elem) {
+        return isWindow(elem) ? elem : elem.nodeType === 9 && elem.defaultView;
+    }
+
+    function offset(elem) {
+        var docElem, win,
+            box = {top: 0, left: 0},
+            doc = elem && elem.ownerDocument;
+
+        docElem = doc.documentElement;
+
+        if (typeof elem.getBoundingClientRect !== typeof undefined) {
+            box = elem.getBoundingClientRect();
+        }
+        win = getWindow(doc);
+        return {
+            top: box.top + win.pageYOffset - docElem.clientTop,
+            left: box.left + win.pageXOffset - docElem.clientLeft
+        };
+    }
+
+    function convertStyle(obj) {
+        var style = '';
+
+        for (var a in obj) {
+            if (obj.hasOwnProperty(a)) {
+                style += (a + ':' + obj[a] + ';');
+            }
+        }
+
+        return style;
+    }
+
+    var Effect = {
+
+        // Effect delay
+        duration: 750,
+
+        show: function(e, element) {
+
+            // Disable right click
+            if (e.button === 2) {
+                return false;
+            }
+
+            var el = element || this;
+
+            // Create ripple
+            var ripple = document.createElement('div');
+            ripple.className = 'waves-ripple';
+            el.appendChild(ripple);
+
+            // Get click coordinate and element witdh
+            var pos         = offset(el);
+            var relativeY   = (e.pageY - pos.top);
+            var relativeX   = (e.pageX - pos.left);
+            var scale       = 'scale('+((el.clientWidth / 100) * 10)+')';
+
+            // Support for touch devices
+            if ('touches' in e) {
+              relativeY   = (e.touches[0].pageY - pos.top);
+              relativeX   = (e.touches[0].pageX - pos.left);
+            }
+
+            // Attach data to element
+            ripple.setAttribute('data-hold', Date.now());
+            ripple.setAttribute('data-scale', scale);
+            ripple.setAttribute('data-x', relativeX);
+            ripple.setAttribute('data-y', relativeY);
+
+            // Set ripple position
+            var rippleStyle = {
+                'top': relativeY+'px',
+                'left': relativeX+'px'
+            };
+
+            ripple.className = ripple.className + ' waves-notransition';
+            ripple.setAttribute('style', convertStyle(rippleStyle));
+            ripple.className = ripple.className.replace('waves-notransition', '');
+
+            // Scale the ripple
+            rippleStyle['-webkit-transform'] = scale;
+            rippleStyle['-moz-transform'] = scale;
+            rippleStyle['-ms-transform'] = scale;
+            rippleStyle['-o-transform'] = scale;
+            rippleStyle.transform = scale;
+            rippleStyle.opacity   = '1';
+
+            rippleStyle['-webkit-transition-duration'] = Effect.duration + 'ms';
+            rippleStyle['-moz-transition-duration']    = Effect.duration + 'ms';
+            rippleStyle['-o-transition-duration']      = Effect.duration + 'ms';
+            rippleStyle['transition-duration']         = Effect.duration + 'ms';
+
+            rippleStyle['-webkit-transition-timing-function'] = 'cubic-bezier(0.250, 0.460, 0.450, 0.940)';
+            rippleStyle['-moz-transition-timing-function']    = 'cubic-bezier(0.250, 0.460, 0.450, 0.940)';
+            rippleStyle['-o-transition-timing-function']      = 'cubic-bezier(0.250, 0.460, 0.450, 0.940)';
+            rippleStyle['transition-timing-function']         = 'cubic-bezier(0.250, 0.460, 0.450, 0.940)';
+
+            ripple.setAttribute('style', convertStyle(rippleStyle));
+        },
+
+        hide: function(e) {
+            TouchHandler.touchup(e);
+
+            var el = this;
+            var width = el.clientWidth * 1.4;
+
+            // Get first ripple
+            var ripple = null;
+            var ripples = el.getElementsByClassName('waves-ripple');
+            if (ripples.length > 0) {
+                ripple = ripples[ripples.length - 1];
+            } else {
+                return false;
+            }
+
+            var relativeX   = ripple.getAttribute('data-x');
+            var relativeY   = ripple.getAttribute('data-y');
+            var scale       = ripple.getAttribute('data-scale');
+
+            // Get delay beetween mousedown and mouse leave
+            var diff = Date.now() - Number(ripple.getAttribute('data-hold'));
+            var delay = 350 - diff;
+
+            if (delay < 0) {
+                delay = 0;
+            }
+
+            // Fade out ripple after delay
+            setTimeout(function() {
+                var style = {
+                    'top': relativeY+'px',
+                    'left': relativeX+'px',
+                    'opacity': '0',
+
+                    // Duration
+                    '-webkit-transition-duration': Effect.duration + 'ms',
+                    '-moz-transition-duration': Effect.duration + 'ms',
+                    '-o-transition-duration': Effect.duration + 'ms',
+                    'transition-duration': Effect.duration + 'ms',
+                    '-webkit-transform': scale,
+                    '-moz-transform': scale,
+                    '-ms-transform': scale,
+                    '-o-transform': scale,
+                    'transform': scale,
+                };
+
+                ripple.setAttribute('style', convertStyle(style));
+
+                setTimeout(function() {
+                    try {
+                        el.removeChild(ripple);
+                    } catch(e) {
+                        return false;
+                    }
+                }, Effect.duration);
+            }, delay);
+        },
+
+        // Little hack to make <input> can perform waves effect
+        wrapInput: function(elements) {
+            for (var a = 0; a < elements.length; a++) {
+                var el = elements[a];
+
+                if (el.tagName.toLowerCase() === 'input') {
+                    var parent = el.parentNode;
+
+                    // If input already have parent just pass through
+                    if (parent.tagName.toLowerCase() === 'i' && parent.className.indexOf('waves-effect') !== -1) {
+                        continue;
+                    }
+
+                    // Put element class and style to the specified parent
+                    var wrapper = document.createElement('i');
+                    wrapper.className = el.className + ' waves-input-wrapper';
+
+                    var elementStyle = el.getAttribute('style');
+
+                    if (!elementStyle) {
+                        elementStyle = '';
+                    }
+
+                    wrapper.setAttribute('style', elementStyle);
+
+                    el.className = 'waves-button-input';
+                    el.removeAttribute('style');
+
+                    // Put element as child
+                    parent.replaceChild(wrapper, el);
+                    wrapper.appendChild(el);
+                }
+            }
+        }
+    };
+
+
+    /**
+     * Disable mousedown event for 500ms during and after touch
+     */
+    var TouchHandler = {
+        /* uses an integer rather than bool so there's no issues with
+         * needing to clear timeouts if another touch event occurred
+         * within the 500ms. Cannot mouseup between touchstart and
+         * touchend, nor in the 500ms after touchend. */
+        touches: 0,
+        allowEvent: function(e) {
+            var allow = true;
+
+            if (e.type === 'touchstart') {
+                TouchHandler.touches += 1; //push
+            } else if (e.type === 'touchend' || e.type === 'touchcancel') {
+                setTimeout(function() {
+                    if (TouchHandler.touches > 0) {
+                        TouchHandler.touches -= 1; //pop after 500ms
+                    }
+                }, 500);
+            } else if (e.type === 'mousedown' && TouchHandler.touches > 0) {
+                allow = false;
+            }
+
+            return allow;
+        },
+        touchup: function(e) {
+            TouchHandler.allowEvent(e);
+        }
+    };
+
+
+    /**
+     * Delegated click handler for .waves-effect element.
+     * returns null when .waves-effect element not in "click tree"
+     */
+    function getWavesEffectElement(e) {
+        if (TouchHandler.allowEvent(e) === false) {
+            return null;
+        }
+
+        var element = null;
+        var target = e.target || e.srcElement;
+
+        while (target.parentElement !== null) {
+            if (!(target instanceof SVGElement) && target.className.indexOf('waves-effect') !== -1) {
+                element = target;
+                break;
+            } else if (target.classList.contains('waves-effect')) {
+                element = target;
+                break;
+            }
+            target = target.parentElement;
+        }
+
+        return element;
+    }
+
+    /**
+     * Bubble the click and show effect if .waves-effect elem was found
+     */
+    function showEffect(e) {
+        var element = getWavesEffectElement(e);
+
+        if (element !== null) {
+            Effect.show(e, element);
+
+            if ('ontouchstart' in window) {
+                element.addEventListener('touchend', Effect.hide, false);
+                element.addEventListener('touchcancel', Effect.hide, false);
+            }
+
+            element.addEventListener('mouseup', Effect.hide, false);
+            element.addEventListener('mouseleave', Effect.hide, false);
+        }
+    }
+
+    Waves.displayEffect = function(options) {
+        options = options || {};
+
+        if ('duration' in options) {
+            Effect.duration = options.duration;
+        }
+
+        //Wrap input inside <i> tag
+        Effect.wrapInput($$('.waves-effect'));
+
+        if ('ontouchstart' in window) {
+            document.body.addEventListener('touchstart', showEffect, false);
+        }
+
+        document.body.addEventListener('mousedown', showEffect, false);
+    };
+
+    /**
+     * Attach Waves to an input element (or any element which doesn't
+     * bubble mouseup/mousedown events).
+     *   Intended to be used with dynamically loaded forms/inputs, or
+     * where the user doesn't want a delegated click handler.
+     */
+    Waves.attach = function(element) {
+        //FUTURE: automatically add waves classes and allow users
+        // to specify them with an options param? Eg. light/classic/button
+        if (element.tagName.toLowerCase() === 'input') {
+            Effect.wrapInput([element]);
+            element = element.parentElement;
+        }
+
+        if ('ontouchstart' in window) {
+            element.addEventListener('touchstart', showEffect, false);
+        }
+
+        element.addEventListener('mousedown', showEffect, false);
+    };
+
+    window.Waves = Waves;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        Waves.displayEffect();
+    }, false);
+
+})(window);
+
+
+	</script>
+ 
+
 </body>
+
 </html>

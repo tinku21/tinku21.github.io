@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@charset "UTF-8";
+
+.navigation {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+
+.navigation ul,
+.navigation ul li,
+.navigation ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  position: relative;
+  z-index: 500;
+  float: left;
+}
+
+.navigation ul li {
+  float: left;
+  min-height: 0.05em;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+}
+
+.navigation ul li.hover,
+.navigation ul li:hover {
+  position: relative;
+  z-index: 510;
+  cursor: default;
+}
+
+.navigation ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 520;
+  width: 100%;
+}
+
+.navigation ul ul li { float: none; }
+
+.navigation ul ul ul {
+  top: 0;
+  right: 0;
+}
+
+.navigation ul li:hover > ul { visibility: visible; }
+
+.navigation ul ul {
+  top: 0;
+  left: 99%;
+}
+
+.navigation ul li { float: none; }
+
+.navigation ul ul { margin-top: 0.05em; }
+
+.navigation {
+  width: 15em;
+  background: #333333;
+  font-family: 'Poppins', sans-serif;
+  zoom: 1;
+}
+
+.navigation:before {
+  content: '';
+  display: block;
+}
+
+.navigation:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navigation a {
+  display: block;
+  padding: 1em 1.3em;
+  color: #ffffff;
+  text-decoration: none;
+  }
+
+.navigation > ul { width: 15em; }
+
+.navigation ul ul { width: 200px; }
+
+.navigation > ul > li > a {
+  color: #ffffff;
+}
+
+.navigation > ul > li > a:hover { color: #ffffff; }
+
+.navigation > ul > li a:hover,
+.navigation > ul > li:hover a { background: #34A65F; }
+
+.navigation li { position: relative; }
+
+.navigation ul li.has-sub > a:after {
+  content: '»';
+  position: absolute;
+  right: 1em;
+}
+
+.navigation ul ul li.first {
+  -webkit-border-radius: 0 3px 0 0;
+  -moz-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+
+.navigation ul ul li.last {
+  -webkit-border-radius: 0 0 3px 0;
+  -moz-border-radius: 0 0 3px 0;
+  border-radius: 0 0 3px 0;
+  border-bottom: 0;
+}
+
+.navigation ul ul {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.navigation ul ul { border: 1px solid #34A65F; }
+
+.navigation ul ul a { color: #ffffff; }
+
+.navigation ul ul a:hover { color: #ffffff; }
+
+.navigation ul ul li { border-bottom: 1px solid #0F8A5F; }
+
+.navigation ul ul li:hover > a {
+  background: #4eb1ff;
+  color: #ffffff;
+}
+
+.navigation.align-right > ul > li > a {
+  border-left: 0.3em solid #34A65F;
+  border-right: none;
+}
+
+.navigation.align-right { float: right; }
+
+.navigation.align-right li { text-align: right; }
+
+.navigation.align-right ul li.has-sub > a:before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -6px;
+}
+
+.navigation.align-right ul li.has-sub > a:after { content: none; }
+
+.navigation.align-right ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 598;
+  width: 100%;
+}
+
+.navigation.align-right ul ul li.first {
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+}
+
+.navigation.align-right ul ul li.last {
+  -webkit-border-radius: 0 0 0 3px;
+  -moz-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
+
+.navigation.align-right ul ul {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+body {
+	font-size: 12px;
+	font-family: 'Poppins', sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navigation">
+
+<ul>
+   
+   <li> <a href="#">Favorites</a></li>
+    <li> <a href="#">Dashboard</a></li>
+     <li class="has-sub"> <a href="#">Admin</a>
+     <ul>
+     <li> <a href="#">Info</a></li>
+    <li> <a href="#">Product Activation</a></li>
+     <li> <a href="#">Clinic Info</a></li>
+   
+   <li> <a href="#">Providers</a></li>
+    <li> <a href="#">Staff</a></li>
+     <li> <a href="#">Roles</a></li>
+     <li> <a href="#">Roles Settings</a></li>
+        <li class="has-sub"> <a href="#">Resources</a>
+      <ul>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">Room</a></li>
+        <li><a href="#">Equipment</a></li>
+      </ul>
+    </li>
+    <li class="has-sub"> <a href="#">Data Access Admin</a>
+      <ul>
+        <li><a href="#">API Access</a></li>
+        <li><a href="#">Patient Portal</a></li>
+        <li><a href="#">Data Export-CCDA</a></li>
+         </ul>
+    </li>
+    
+    
+    
+    
+    
+     <li class="has-sub"> <a href="#">Admin Reports</a>
+      <ul>
+        <li><a href="#">EHI Logs</a></li>
+        <li><a href="#">Valid/Invalid Login Attempts</a></li>
+        <li><a href="#">Inactive Accounts Logs</a></li>
+        <li><a href="#">Admin User Logs</a></li>
+      </ul>
+    </li>
+  
+  </ul>
+ <li><a href="#">Reports</a></li>
+  <li><a href="#">Tools</a></li>
+   <li><a href="#">Help</a></li>
+
+</li></ul>
+
+</div>
+
+</body>
+</html>
