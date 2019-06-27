@@ -15,7 +15,7 @@
 	z-index: 999;
 	left: 0;
 	right: 0;
-	margin-top: 1%;
+	margin-top: 1.2%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -24,14 +24,14 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	width: 83%;
-	margin-top: 4.9%;
+	width: 82%;
+	margin-top: 4.4%;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .header .swiper-container {
-	border-radius: 1.75rem;
+	border-radius: 2.7rem;
 }
 
 .header .text-container {
