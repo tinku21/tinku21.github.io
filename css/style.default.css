@@ -3688,3 +3688,9 @@ a > code {
     margin-left: 15px;
   }
 }
+
+.alert-blue {
+    color: #6e5ed2;
+    background-color: #eae8f6;
+    border-color: #a29ad1;
+}
