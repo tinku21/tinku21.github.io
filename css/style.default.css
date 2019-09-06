@@ -499,9 +499,9 @@ ul.social a.email {
 }
 
 .form-control:focus {
-  border-color: #4fbfa8;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(79, 191, 168, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(79, 191, 168, 0.25);
+  border-color: #6e5ed2;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(110, 94, 210, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(110, 94, 210, 0.25);
 }
 
 .form-group label {
@@ -1000,8 +1000,8 @@ header.nav-holder.sticky {
 }
 
 .home-carousel .owl-carousel {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 .home-carousel h1, .home-carousel h2 {
@@ -1010,9 +1010,8 @@ header.nav-holder.sticky {
 }
 
 .home-carousel li, .home-carousel p {
-  text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
@@ -3270,7 +3269,7 @@ a.text-primary:focus, a.text-primary:hover {
 * 6. UTILITIES
 */
 .bg-primary {
-  background-color: #4fbfa8 !important;
+  background-color: #6e5ed2 !important;
 }
 
 a.bg-primary:focus, a.bg-primary:hover {
