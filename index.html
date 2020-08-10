@@ -1,343 +1,816 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document Management System</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <!-- Google fonts - Roboto-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
-    <!-- Bootstrap Select-->
-    <link rel="stylesheet" href="vendor/bootstrap-select/css/bootstrap-select.min.css">
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon and apple touch icons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-   
-  </head>
-  <body>
-    <div id="all">
-      <!-- Top bar-->
-     <!-- <div class="top-bar">
-        <div class="container">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-6 d-md-block d-none">
-              <p>Contact us on +420 777 555 333 or hello@universal.com.</p>
-            </div>
-            <div class="col-md-6">
-              <div class="d-flex justify-content-md-end justify-content-between">
-                <ul class="list-inline contact-info d-block d-md-none">
-                  <li class="list-inline-item"><a href="#"><i class="fa fa-phone"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-                <div class="login"><a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Sign In</span></a><a href="customer-register.html" class="signup-btn"><i class="fa fa-user"></i><span class="d-none d-md-inline-block">Sign Up</span></a></div>
-                <ul class="social-custom list-inline">
-                  <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <!-- Top bar end-->
-      <!-- Login Modal-->
-     <!-- <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true" class="modal fade">
-        <div role="document" class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 id="login-modalLabel" class="modal-title">Customer Login</h4>
-              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-            </div>
-            <div class="modal-body">
-              <form action="customer-orders.html" method="get">
-                <div class="form-group">
-                  <input id="email_modal" type="text" placeholder="email" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input id="password_modal" type="password" placeholder="password" class="form-control">
-                </div>
-                <p class="text-center">
-                  <button class="btn btn-template-outlined"><i class="fa fa-sign-in"></i> Log in</button>
-                </p>
-              </form>
-              <p class="text-center text-muted">Not registered yet?</p>
-              <p class="text-center text-muted"><a href="customer-register.html"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <!-- Login modal end-->
-      <!-- Navbar Start-->
-      <header class="nav-holder make-sticky">
-        <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
-          <div class="container"><a href="index.html" class="navbar-brand home"><img src="img/logo.png" alt="Universal logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Universal logo" class="d-inline-block d-md-none"><span class="sr-only">Universal - go to homepage</span></a>
-            <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggler btn-template-outlined"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
-            <div id="navigation" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item dropdown active"><a href="index.html" >Home</a></li>
-                <li class="nav-item dropdown"><a href="features.html">Features</a></li>
-                <li class="nav-item dropdown"><a href="pricing.html">Pricing</a></li>
-                <li class="nav-item dropdown"><a href="contact.html">Contact</a></li>
-                <li class="nav-item dropdown"><a href="http://dms.mdcare.com/login" target="_blank">Login</a></li>
-                </ul>
-            </div>
-            <div id="search" class="collapse clearfix">
-              
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- Navbar End-->
-      
-      <section style="background: url('img/photogrid.png') center center repeat; background-size: cover; padding:10px 0 !important;" class="bar background-white relative-positioned">
-        <div class="container">
-          <!-- Carousel Start-->
-          <div class="home-carousel">
-            <div class="dark-mask mask-primary"></div>
-            <div class="container">
-              <div class="homepage owl-carousel">
-                <div class="item">
-                  <div class="row">
-                    <div class="col-md-5 text-right"><br>
-                      <div style="padding-top:40px;"><h3>Document Management System</h3>
-                      <p>Automated electronic records disposition.<br>
-                      Improved efficiency which saves time.<br>
-                      Ability to collaborate, share, and socialize content.</p></div>
-                    </div>
-                    <div class="col-md-7"><img src="img/template-homepage.png" alt="" class="img-fluid"></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row">
-                    <div class="col-md-7 text-center"><img src="img/template-mac.png" alt="" class="img-fluid"></div>
-                    <div class="col-md-5">
-                     <div style="padding-top:40px;"> <h3>Document Management System</h3>
-                      <ul class="list-unstyled">
-                        <li>Online Document Management Software for Secure File Storage.</li>   
-                        <li>DMS allows you to search and retrieve documents instantly.</li>   
-                        <li>You can search documents using a variety of search criteria.</li>                  
-                      </ul></div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <!-- Carousel End-->
-        </div>
-      </section>
-      <section class="bar background-white">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="box-simple">
-                <div class="icon-outlined"><i class="fa fa-file-text-o"></i></div>
-                <h3 class="h4">Document management</h3>
-                <p>A Document Management Software is a computer program used to store, manage and track electronic documents and electronic images of paper based information captured through the use of a document scanner.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="box-simple">
-                <div class="icon-outlined"><i class="fa fa-database"></i></div>
-                <h3 class="h4">Records management</h3>
-                <p>Records Management helps your organization by efficiently and systematically controlling the creation, reception, maintenance, utilization and disposition of records</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="box-simple">
-                <div class="icon-outlined"><i class="fa fa-sitemap"></i></div>
-                <h3 class="h4">Workflows</h3>
-                <p>All your documents are electronically stored and organized in ways that make sense for your workflow and access needs.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="box-simple">
-                <div class="icon-outlined"><i class="fa fa-lightbulb-o"></i></div>
-                <h3 class="h4">Automate tasks</h3>
-                <p>Given a specific event, you can apply validation rules and certain actions to be performed on the documents without human intervention.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="box-simple">
-                <div class="icon-outlined"><i class="fa fa-cubes"></i></div>
-                <h3 class="h4">Integration</h3>
-                <p>Enterprise document management provides an interoperable platform to capitalize on resources across applications and repositories enterprise-wide.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="box-simple">
-                <div class="icon-outlined"><i class="fa fa-handshake-o"></i></div>
-                <h3 class="h4">Partner program</h3>
-                <p>Partner Program is designed to create mutually beneficial relationships that increase the overall success and capability of the ecosystem.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="bar background-pentagon no-mb text-md-center">
-        <div class="container">
-          <div class="heading text-center">
-            <h2>Testimonials</h2>
-          </div>
-          <p class="lead">What Our Customers Say...</p>
-          <!-- Carousel Start-->
-          <ul class="owl-carousel testimonials list-unstyled equal-height">
-            <li class="item">
-              <div class="testimonial d-flex flex-wrap">
-                <div class="text">
-                  <p>Document Management Software is a cost-effective solution that is simple to use, easy to manage, and flexible for any organization. Extremely responsive and customer service oriented.</p>
-                </div>
-                <div class="bottom d-flex align-items-center justify-content-between align-self-end">
-                  <div class="icon"><i class="fa fa-quote-left"></i></div>
-                  <div class="testimonial-info d-flex">
-                    <div class="title">
-                      <h5>John McIntyre</h5>
-                     
-                    </div>
-                    <div class="avatar"><img alt="" src="img/person-1.jpg" class="img-fluid"></div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="item">
-              <div class="testimonial d-flex flex-wrap">
-                <div class="text">
-                  <p>Great user experience, ease of use, convenient mobile app. All users participate in managing expense reports, not just a central administrator.</p>
-                </div>
-                <div class="bottom d-flex align-items-center justify-content-between align-self-end">
-                  <div class="icon"><i class="fa fa-quote-left"></i></div>
-                  <div class="testimonial-info d-flex">
-                    <div class="title">
-                      <h5>John McIntyre</h5>
-                      
-                    </div>
-                    <div class="avatar"><img alt="" src="img/person-1.jpg" class="img-fluid"></div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="item">
-              <div class="testimonial d-flex flex-wrap">
-                <div class="text">
-                  <p>I am truly impressed with Document Management Software. It is easy to use. There are multiple reports to choose from for finance. The staff is very knowledgeable and always willing to assist.</p>
-                </div>
-                <div class="bottom d-flex align-items-center justify-content-between align-self-end">
-                  <div class="icon"><i class="fa fa-quote-left"></i></div>
-                  <div class="testimonial-info d-flex">
-                    <div class="title">
-                      <h5>John McIntyre</h5>
-                      
-                    </div>
-                    <div class="avatar"><img alt="" src="img/person-1.jpg" class="img-fluid"></div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="item">
-              <div class="testimonial d-flex flex-wrap">
-                <div class="text">
-                  <p>	
-I am a very satisfied Document Management system customer. The system is easy to use, intuitive and highly customizable. Our end users are very happy with it, when we get issues, they are quick to respond.</p>
-                </div>
-                <div class="bottom d-flex align-items-center justify-content-between align-self-end">
-                  <div class="icon"><i class="fa fa-quote-left"></i></div>
-                  <div class="testimonial-info d-flex">
-                    <div class="title">
-                      <h5>John McIntyre</h5>
-                     
-                    </div>
-                    <div class="avatar"><img alt="" src="img/person-1.jpg" class="img-fluid"></div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="item">
-              <div class="testimonial d-flex flex-wrap">
-                <div class="text">
-                  <p>We customized the product to our business process needs and the Suti team was quick to respond and make those changes happen.</p>
-                </div>
-                <div class="bottom d-flex align-items-center justify-content-between align-self-end">
-                  <div class="icon"><i class="fa fa-quote-left"></i></div>
-                  <div class="testimonial-info d-flex">
-                    <div class="title">
-                      <h5>John McIntyre</h5>
-                     
-                    </div>
-                    <div class="avatar"><img alt="" src="img/person-1.jpg" class="img-fluid"></div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <!-- Carousel End-->
-        </div>
-      </section>
-      <section style="background: url(img/fixed-background-2.jpg) center top no-repeat; background-size: cover;" class="bar no-mb color-white text-center bg-fixed relative-positioned">
-        <div class="dark-mask"></div>
-        <div class="container">
-          <div class="icon icon-outlined icon-lg"><i class="fa fa-file-code-o"></i></div>
-          <h3 class="text-uppercase">Do you want to see more?</h3>
-          <p class="lead">Easily manage digital content, simplify your workload and yield high efficiency</p>
-          <p class="text-center"><a href="contact.html" class="btn btn-template-outlined-white btn-lg">Contact Us</a></p>
-        </div>
-      </section>
-      <section class="bg-white bar">
-        <div class="container">
-          <div class="heading text-center">
-            <h2>Information</h2>
-          </div>
-          <p class="lead">Document Management System is easily captures unstructured information from any digital source. All collected information is stored, viewed, and used in a single workspace. This allows users to browse, enrich, and edit information collected from various sources from within a single application.</p>
-          
-        </div>
-      </section>
-     
-      <!-- GET IT--><!-- FOOTER -->
-      <footer class="main-footer">
-       
-        <div class="copyrights">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 text-center-md">
-                <p>&copy; 2019. Document Management System</p>
-              </div>
-              <div class="col-lg-8 text-right text-center-md">
-                <p>Design by <a href="http://MDOfficeMail.com/" target="_blank">MDOfficeMail </a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!-- Javascript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper.js/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"> </script>
-    <script src="vendor/jquery.counterup/jquery.counterup.min.js"> </script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <script src="vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
-    <script src="js/front.js"></script>
-  </body>
+<head>
+<title>Aaspire</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="aaspire" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- pignose css -->
+<link href="css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<!-- //pignose css -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- cart -->
+	<script src="js/simpleCart.min.js"></script>
+<!-- cart -->
+<!-- for bootstrap working -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
+<script src="js/jquery.easing.min.js"></script>
+</head>
+<body>
+<!-- header -->
+<div class="header">
+	<div class="container">
+		<ul>
+			<li><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Fast Delivery</li>
+			<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Free shipping On all orders</li>
+			<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:">sales@aaspirepro.com</a></li>
+		</ul>
+	</div>
+</div>
+<!-- //header -->
+<!-- header-bot -->
+<div class="header-bot">
+	<div class="container">
+		<div class="col-md-3 header-left">
+			<h1><a href="index.html"><img src="images/logo3.jpg"></a></h1>
+		</div>
+		<div class="col-md-6 header-middle">
+			<form>
+				<div class="search">
+					<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required>
+				</div>
+				<div class="section_room">
+					<select id="country" onchange="change_country(this.value)" class="frm-field required">
+						<option value="null">All categories</option>
+						<option value="null">Face Protection</option>     
+						<option value="AX">Face Shield</option>
+						<option value="AX">PPE Kit`s</option>
+						<option value="AX">N95 Masks</option>
+						
+					</select>
+				</div>
+				<div class="sear-sub">
+					<input type="submit" value=" ">
+				</div>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+		<div class="col-md-3 header-right footer-bottom">
+			<ul>
+				<li><a href="#" class="use1" data-toggle="modal" data-target="#myModal4"><span>Login</span></a>
+					
+				</li>
+				<li><a class="fb" href="#"></a></li>
+				<li><a class="twi" href="#"></a></li>
+				
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //header-bot -->
+<!-- banner -->
+<div class="ban-top">
+	<div class="container">
+		<div class="top_nav_left">
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav menu__list">
+					<li class="active menu__item menu__item--current"><a class="menu__link" href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li class=" menu__item"><a class="menu__link" href="#">Who We Are</a></li>
+					<li class=" menu__item"><a class="menu__link" href="#">Our Products</a></li>
+					<li class=" menu__item"><a class="menu__link" href="#">contact</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>	
+		</div>
+		<div class="top_nav_right">
+			<div class="cart box_1">
+						<a href="checkout.html">
+							<h3> <div class="total">
+								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
+								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+								
+							</h3>
+						</a>
+						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+						
+			</div>	
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //banner-top -->
+<!-- banner -->
+<div class="banner-grid">
+	<div id="visual">
+			<div class="slide-visual">
+				<!-- Slide Image Area (1000 x 424) -->
+				<ul class="slide-group">
+					<li><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image" /></li>
+					<li><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image" /></li>
+					
+				</ul>
+
+				<!-- Slide Description Image Area (316 x 328) -->
+				<div class="script-wrap">
+					<ul class="script-group">
+						<li><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image" /></div></li>
+						<li><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image" /></div></li>
+						
+					</ul>
+					<div class="slide-controller">
+						<a href="#" class="btn-prev"><img src="images/btn_prev.png" alt="Prev Slide" /></a>
+						<a href="#" class="btn-play"><img src="images/btn_play.png" alt="Start Slide" /></a>
+						<a href="#" class="btn-pause"><img src="images/btn_pause.png" alt="Pause Slide" /></a>
+						<a href="#" class="btn-next"><img src="images/btn_next.png" alt="Next Slide" /></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	<script type="text/javascript" src="js/pignose.layerslider.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() {
+			$('#visual').pignoseLayerSlider({
+				play    : '.btn-play',
+				pause   : '.btn-pause',
+				next    : '.btn-next',
+				prev    : '.btn-prev'
+			});
+		});
+	//]]>
+	</script>
+
+</div>
+<!-- //banner -->
+<!-- content -->
+
+<div class="new_arrivals" style="padding-bottom:5px;">
+	<div class="container">
+		<h3><span>Who We </span>Are</h3>
+		<p>Maintain working relationships with existing clients to ensure exceptional service and identification of potential new sales opportunities</p>
+	</div>
+</div>
+
+<div class="product-easy">
+	<div class="container">
+		
+		<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+							$(document).ready(function () {
+								$('#horizontalTab').easyResponsiveTabs({
+									type: 'default', //Types: default, vertical, accordion           
+									width: 'auto', //auto or any width like 600px
+									fit: true   // 100% fit in a container
+								});
+							});
+							
+		</script>
+		<div class="sap_tabs">
+			<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+				<ul class="resp-tabs-list">
+					<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Latest Products</span></li> 
+					<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Special Products</span></li> 
+					<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Our Collections</span></li> 
+				</ul>				  	 
+				<div class="resp-tabs-container">
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a1.png" alt="" class="pro-image-front">
+									<img src="images/a1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a8.png" alt="" class="pro-image-front">
+									<img src="images/a8.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$99.99</span>
+										<del>$109.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a3.png" alt="" class="pro-image-front">
+									<img src="images/a3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$119.99</span>
+										<del>$120.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a4.png" alt="" class="pro-image-front">
+									<img src="images/a4.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$79.99</span>
+										<del>$120.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a5.png" alt="" class="pro-image-front">
+									<img src="images/a5.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$129.99</span>
+										<del>$150.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a1.png" alt="" class="pro-image-front">
+									<img src="images/a1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product Name </a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$129.99</span>
+										<del>$150.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a3.png" alt="" class="pro-image-front">
+									<img src="images/a3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$129.99</span>
+										<del>$150.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a4.png" alt="" class="pro-image-front">
+									<img src="images/a4.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$129.99</span>
+										<del>$150.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="clearfix"></div>
+					</div>
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a1.png" alt="" class="pro-image-front">
+									<img src="images/a1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="single.html" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a8.png" alt="" class="pro-image-front">
+									<img src="images/a8.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a1.png" alt="" class="pro-image-front">
+									<img src="images/a1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a3.png" alt="" class="pro-image-front">
+									<img src="images/a3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a8.png" alt="" class="pro-image-front">
+									<img src="images/a8.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a3.png" alt="" class="pro-image-front">
+									<img src="images/a3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>						
+					</div>
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a1.png" alt="" class="pro-image-front">
+									<img src="images/a1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a1.png" alt="" class="pro-image-front">
+									<img src="images/a1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#"> Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a5.png" alt="" class="pro-image-front">
+									<img src="images/a5.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="single.html">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a8.png" alt="" class="pro-image-front">
+									<img src="images/a8.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a8.png" alt="" class="pro-image-front">
+									<img src="images/a8.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 product-men yes-marg">
+							<div class="men-pro-item simpleCart_shelfItem">
+								<div class="men-thumb-item">
+									<img src="images/a3.png" alt="" class="pro-image-front">
+									<img src="images/a3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="#" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+										
+								</div>
+								<div class="item-info-product ">
+									<h4><a href="#">Product Name</a></h4>
+									<div class="info-product-price">
+										<span class="item_price">$45.99</span>
+										<del>$69.71</del>
+									</div>
+									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>		
+					</div>	
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //product-nav -->
+
+<div class="coupons">
+	<div class="container">
+		<div class="coupons-grids text-center">
+			<div class="col-md-3 coupons-gd">
+				<h3>Buy your product in a simple way</h3>
+			</div>
+			<div class="col-md-3 coupons-gd">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				<h4>LOGIN TO YOUR ACCOUNT</h4>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
+			sit amet, consectetur.</p>
+			</div>
+			<div class="col-md-3 coupons-gd">
+				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+				<h4>SELECT YOUR ITEM</h4>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
+			sit amet, consectetur.</p>
+			</div>
+			<div class="col-md-3 coupons-gd">
+				<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+				<h4>MAKE PAYMENT</h4>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
+			sit amet, consectetur.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 footer-left">
+			<h2><a href="index.html"><img src="images/logo3.jpg" alt=" " /></a></h2>
+			<p>We’re seeking a qualified sales representative to help us sell the products and services that our customers have grown to rely on.</p>
+		</div>
+		<div class="col-md-9 footer-right">
+			
+			<div class="clearfix"></div>
+			<div class="sign-grds">
+				<div class="col-md-4 sign-gd">
+					<h4>Quick access</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Masks</a></li>
+						<li><a href="#">PPE Kits</a></li>
+						<li><a href="#">N95 Mask</a></li>
+						
+					</ul>
+				</div>
+				
+				<div class="col-md-8 sign-gd-two">
+					<h4>Contact Information</h4>
+					<ul>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address : 450 Victoria Avenue, Apt 812, Windsor, Ontario, N9A 6T7, <span>Canada</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email : <a href="mailto:info@example.com">sales@aaspirepro.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone : +1(519) 962 9135</li>
+					</ul>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<p class="copy-right">&copy 2020 All rights reserved @ <a href="#">www.Aaspire.com</a></p>
+	</div>
+</div>
+<!-- //footer -->
+<!-- login -->
+			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content modal-info">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body modal-spa">
+							<div class="login-grids">
+								<div class="login">
+									<div class="login-bottom">
+										<h3>Sign up for free</h3>
+										<form>
+											<div class="sign-up">
+												<h4>Email :</h4>
+												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required>	
+											</div>
+											<div class="sign-up">
+												<h4>Password :</h4>
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
+												
+											</div>
+											<div class="sign-up">
+												<h4>Re-type Password :</h4>
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
+												
+											</div>
+											<div class="sign-up">
+												<input type="submit" value="REGISTER NOW" >
+											</div>
+											
+										</form>
+									</div>
+									<div class="login-right">
+										<h3>Sign in with your account</h3>
+										<form>
+											<div class="sign-in">
+												<h4>Email :</h4>
+												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required>	
+											</div>
+											<div class="sign-in">
+												<h4>Password :</h4>
+												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
+												<a href="#">Forgot password?</a>
+											</div>
+											<div class="single-bottom">
+												<input type="checkbox"  id="brand" value="">
+												<label for="brand"><span></span>Remember Me.</label>
+											</div>
+											<div class="sign-in">
+												<input type="submit" value="SIGNIN" >
+											</div>
+										</form>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- //login -->
+</body>
 </html>
