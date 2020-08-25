@@ -86,7 +86,7 @@ label{
     margin-top: 11px;
 }
 .header-bot {
-    padding: 25px 0;
+    padding: 15px 0;
 }
 .header-right ul li{
 	display:inline-block;
@@ -247,7 +247,7 @@ label{
     margin: 0 15px 0 0;
 }
 .navbar-nav > li > a {
-    padding: 26px 16px;
+    padding: 16px 16px;
 }
 .navbar-collapse {
     padding-right: 0;
@@ -1680,8 +1680,8 @@ padding-top:110px;
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height: 217px;
-    padding-top: 85px;
+    min-height: 117px;
+    padding-top: 30px;
 }
 .page-head h3 {
     color: #fff;
