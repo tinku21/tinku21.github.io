@@ -1209,8 +1209,8 @@ text-align:center;
     padding: 0;
 }
 .resp-tab-item{
-    margin: 0 25px;
-    padding: 0 35px 25px 35px;
+    margin: 0 10px;
+    padding: 0 25px 25px 25px;
     text-decoration: none;
     color: #ccc;
     cursor: pointer;
@@ -1580,6 +1580,7 @@ ul.multi-column-dropdown li a {
 text-decoration:none;
 font-size:14px;
 color:#8E8E8E;	
+margin-left:25px;
 }
 ul.multi-column-dropdown li a:hover{
 	color:#283785;
@@ -1641,8 +1642,9 @@ background-size:cover;
 -o-background-size: cover;
 -ms-background-size: cover;
 -moz-background-size: cover;
-min-height: 470px;
-padding-top:110px;
+
+padding-top:10px;
+padding-bottom:10px;
 }
 
 .coupons-gd span {
@@ -1663,7 +1665,7 @@ padding-top:110px;
     font-size: 23px;
     text-transform: uppercase;
     line-height: 1.8em;
-	margin: 83px 0 0;
+	margin: 2px 0 0;
 }
 .coupons-gd p {
     text-align: center;
