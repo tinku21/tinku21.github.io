@@ -30,10 +30,59 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- cart -->
 <!-- for bootstrap working -->
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+
+
 <!-- //for bootstrap working
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'> -->
 <script src="js/jquery.easing.min.js"></script>
+<style>
+.carousel {
+    margin-bottom: 0;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -20px;
+}
+.carousel-control.right {
+	right: -20px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #283785;
+    border: 3px solid #ffffff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+</style>
 </head>
 <body>
 <!-- header -->
@@ -189,53 +238,75 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					
 					<div class="occasion-cart">
-						<a href="#" class="item_add hvr-outline-out button2">Contact Us</a>
+						<a href="contact.html" class="item_add hvr-outline-out button2">Contact Us</a>
 					</div>
 					
 		</div>
 				<div class="clearfix"> </div>
 
-				<div class="bootstrap-tab animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
-					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-						<ul id="myTab" class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Description</a></li>
-							<li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Reviews(1)</a></li>
-							<li role="presentation" class="dropdown">
-								<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Information <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
-									<li><a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">cleanse</a></li>
-									<li><a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">fanny</a></li>
-								</ul>
-							</li>
-						</ul>
-						<div id="myTabContent" class="tab-content">
-							<div role="tabpanel" class="tab-pane fade in active bootstrap-tab-text" id="home" aria-labelledby="home-tab">
-								<h5>Non Surgical Reusable Cloth Mask Mask</h5>
-								
-							</div>
-							<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="profile" aria-labelledby="profile-tab">
-								<div class="bootstrap-tab-text-grids">
-									<div class="bootstrap-tab-text-grid">
-										<div class="bootstrap-tab-text-grid-left">
-											
-										</div>
-										<div class="bootstrap-tab-text-grid-right">
-											
-											<p>review</p>
-										</div>
-										<div class="clearfix"> </div>
-									</div>
-									
-									<div class="add-review">
-										<h4>add a review</h4>
-										
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
+		
+
+
+
+
+
+<div class="container" style="margin-top:30px;">
+	<div class="row">
+		<div class="col-lg-12">
+        <h3 style="color:#283785; padding:30px 0px 10px 0px;">More items to explore</h3>
+    	    <div class=""> 
+                <div id="myCarousel" class="carousel slide">
+                 
+                
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m1.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m2.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m3.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m4.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                	</div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m5.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m1.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m2.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m3.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                	</div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m4.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m5.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m1.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="col-lg-3"><a href="#x" class="thumbnail"><img src="images/thumb/m2.jpg" alt="Image" style="max-width:100%;" /></a></div>
+                	</div><!--/row-fluid-->
+                </div><!--/item-->
+                 
+                </div><!--/carousel-inner-->
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                </div><!--/myCarousel-->
+                 
+            </div><!--/well-->   
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+		
 	</div>
 </div>
 <!-- //single -->
@@ -323,68 +394,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 </div>
 <!-- //footer -->
-<!-- login -->
-			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="login-grids">
-								<div class="login">
-									<div class="login-bottom">
-										<h3>Sign up for free</h3>
-										<form>
-											<div class="sign-up">
-												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
-											</div>
-											<div class="sign-up">
-												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												
-											</div>
-											<div class="sign-up">
-												<h4>Re-type Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												
-											</div>
-											<div class="sign-up">
-												<input type="submit" value="REGISTER NOW" >
-											</div>
-											
-										</form>
-									</div>
-									<div class="login-right">
-										<h3>Sign in with your account</h3>
-										<form>
-											<div class="sign-in">
-												<h4>Email :</h4>
-												<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
-											</div>
-											<div class="sign-in">
-												<h4>Password :</h4>
-												<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-												<a href="#">Forgot password?</a>
-											</div>
-											<div class="single-bottom">
-												<input type="checkbox"  id="brand" value="">
-												<label for="brand"><span></span>Remember Me.</label>
-											</div>
-											<div class="sign-in">
-												<input type="submit" value="SIGNIN" >
-											</div>
-										</form>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-								<p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-<!-- //login -->
+
 </body>
 </html>
