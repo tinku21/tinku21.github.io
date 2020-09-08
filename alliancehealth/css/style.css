@@ -1976,7 +1976,7 @@ h3.resp-tab-active span.resp-arrow {
 }
 }
 .blog-page {
-	margin-top: 50px
+	margin-top: 0px
 }
 .blog-page .single-post {
 	margin-top: 50px
@@ -1998,7 +1998,7 @@ h3.resp-tab-active span.resp-arrow {
 	margin-right: 10px
 }
 .blog-page .single-post p {
-	color: #a6a6a6;
+	color: #000;
 	font-weight: 300;
 	font-size: 15px;
 	margin-top: 15px;
