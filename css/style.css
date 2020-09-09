@@ -5091,3 +5091,23 @@ td.invert-image a img {
 }
 }
 /*-- //responsive media queries --*/
+
+
+@media (max-width: 1024px) {
+	.multi-column-dropdown{
+	text-align:left;
+	}
+	
+ul.multi-column-dropdown li a{
+	color:#ffffff;
+}
+.navbar-nav > li {
+    margin: 0 0px 0 0;
+    width: 100%;
+    text-align: left;
+}
+.pignose-layerslider .slide-visual .script-wrap{
+left:10px;
+}
+
+}
