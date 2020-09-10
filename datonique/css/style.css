@@ -809,15 +809,16 @@
  .client-slider .single-brand a img {
    width: auto;
    margin: 0 auto;
-   -webkit-filter: grayscale(100%);
-   filter: grayscale(100%);
+   -webkit-filter: grayscale(0%);
+   filter: grayscale(0%);
+   
    -webkit-transition: all 0.4s;
    transition: all 0.4s;
  }
  
  .client-slider .single-brand a:hover img {
-   -webkit-filter: grayscale(0%);
-   filter: grayscale(0%);
+	 -webkit-filter: grayscale(50%);
+   filter: grayscale(50%);
  }
  
  /* ----------------------
@@ -1075,7 +1076,7 @@
  .copyright {
    color: #646470;
    font-size: 14px;
-   padding-top: 25px;
+   padding-top: 15px;
  }
  
  .copyright a {
