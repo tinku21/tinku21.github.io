@@ -417,8 +417,9 @@
  .header-top p {
    margin-bottom: 0;
    color: #f1f1f1;
-   font-size: 12px;
+   font-size: 14px;
    line-height: 1;
+   padding:5px;
  }
  
  .site-logo {
@@ -623,14 +624,14 @@
  }
  
  .hero-item h2 span {
-   padding-left: 25px;
+   padding-left: 15px;
    padding-bottom: 15px;
    display: inline-block;
-   background: #eb6a3e;
+   background: #e48402;
  }
  
  .hero-item h2 span:nth-child(1) {
-   color: #081624;
+   color: #fff;
  }
  
  .hero-item h2 span:nth-child(2) {
@@ -904,7 +905,7 @@
  
  .cta-section h2 {
    color: #fff;
-   font-size: 37px;
+   font-size: 26px;
    font-weight: 300;
  }
  
