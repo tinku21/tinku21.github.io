@@ -45,10 +45,12 @@
  
  p {
    font-size: 14px;
-   color: #718090;
+   color: #333333;
    line-height: 2;
  }
- 
+ .footcolor{
+	 color:#fff;}
+ .testimonial p{color:#fff;}
  img {
    max-width: 100%;
  }

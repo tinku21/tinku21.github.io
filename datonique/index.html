@@ -76,19 +76,23 @@
 .cr-yellow    { background-color: #ec0; }
 .feedback-form-btn
 {
-	position: absolute;
-    right: -70px;
-    color: #fff;
-    transform: rotate(90deg);
-    top: 34%;
-	z-index:9999;
-	border-radius: 0px 0px 8px 8px;
-	font-size:14px;
-	background: rgb(228,131,5);
-background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(77,150,213,1) 47%, rgba(10,62,105,1) 100%);
-border:1px solid #0a3e69;
-}
 
+background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%, rgba(138,203,235,1) 100%);
+}
+.feedback-form-btn:hover
+{
+background: rgb(228,131,5);
+background: linear-gradient(90deg, rgba(138,203,235,1) 0%, rgba(117,209,81,1) 47%, rgba(228,131,5,1) 100%);
+}
+a.logtext:link{
+	color:#fff;
+}
+a.logtext:hover{
+	color:#fdb372 !important;
+}
+a.logtext:visited{
+	color:#fff;
+}
 </style>
 </head>
 <body>
@@ -96,7 +100,6 @@ border:1px solid #0a3e69;
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-    <a href="#" class="feedback-form-btn btn btn-success btn-sm">Free Evaluation / Demo</a>
 <!--<div class="cr cr-top cr-right cr-sticky cr-blue" style="z-index:99999;">Free Evaluation / Demo</div>-->
 	<!-- Header section  -->
 	<header class="header-section clearfix">
@@ -108,7 +111,7 @@ border:1px solid #0a3e69;
 					</div>
 					<div class="col-md-6 text-md-right">
 					
-						<p><i class="fa fa-phone"></i> +626-240-4600 | <i class="fa fa-envelope"></i> hello@datonique.com </p>
+						<p><i class="fa fa-phone"></i> +626-240-4600 | <i class="fa fa-envelope"></i> hello@datonique.com |  <i class="fa fa-user"></i> <a href="#" class="logtext">Login</a></p>
 					</div>
 				</div>
 			</div>
@@ -122,8 +125,7 @@ border:1px solid #0a3e69;
 				<div class="header-info-box">
 					
 					<div class="hib-text" style="padding-bottom:3px; margin-right:20px;">
-						<a href="#" class="btn btn-success btn-sm" style="background: rgb(228,131,5);
-background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%, rgba(138,203,235,1) 100%);">Login</a>
+						<a href="#" class="btn btn-success btn-sm feedback-form-btn" style=" border-radius:20px;">Free Evaluation / Demo</a>
 					</div>
 				</div>
 				<div class="header-info-box">
@@ -131,9 +133,9 @@ background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%,
 					<div class="hib-text">
 						<form>
   <div class="input-group">
-    <input type="text" class="form-control" placeholder="Search" style="margin-right:-3px;">
+    <input type="text" class="form-control form-control-sm" placeholder="Search" style="margin-right:-3px;">
     <div class="input-group-btn">
-      <button class="btn btn-primary" type="submit">
+      <button class="btn btn-primary btn-sm" type="submit">
         <i class="fa fa-search"></i>
       </button>
     </div>
@@ -496,19 +498,14 @@ background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%,
 	<footer class="footer-section spad" style="border-top:2px solid #fff;">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-6 col-md-6">
 					<div class="footer-widget about-widget">
 						<img src="img/logo_small.png" alt="">
-						<p>We bring easy to understand data and analytics to life and leverage these insights to bring real ROI and revenue to you and your company at a fraction of the cost of an in-house analytics team.</p>
-						<div class="footer-social">
-							<a href=""><i class="fa fa-linkedin"></i></a>
-							<a href=""><i class="fa fa-facebook"></i></a>
-							<a href=""><i class="fa fa-twitter"></i></a>
-							
-						</div>
+						<p class="footcolor">We bring easy to understand data and analytics to life and leverage these insights to bring real ROI and revenue to you and your company at a fraction of the cost of an in-house analytics team.</p>
+						<p class="footcolor" style="margin-top:-20px;">We are also your next generation digital transformation and growth marketing partner, helping transform the digital footprint to conquer your addressable market</p>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="footer-widget">
 						<h2 class="fw-title">Useful Resources</h2>
 						<ul>
@@ -522,7 +519,7 @@ background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%,
 					</div>
 				</div>
 			
-				<div class="col-lg-4 col-md-6 col-sm-7">
+				<div class="col-lg-3 col-md-6 col-sm-7">
 					<div class="footer-widget">
 						<h2 class="fw-title">Contact Us</h2>
 						<div class="footer-info-box">
@@ -530,7 +527,7 @@ background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%,
 								<i class="fa fa-phone" style="color:#4c96d7; font-size:1.5em;"></i>
 							</div>
 							<div class="fib-text">
-								<p>+ 626-240-4600</p>
+								<p  class="footcolor">+ 626-240-4600</p>
 							</div>
 						</div>
 						<div class="footer-info-box">
@@ -539,10 +536,15 @@ background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%,
 								
 							</div>
 							<div class="fib-text">
-								<p>hello@datonique.com</p>
+								<p class="footcolor">hello@datonique.com</p>
 							</div>
 						</div>
-						
+						<div class="footer-social">
+							<a href=""><i class="fa fa-linkedin"></i></a>
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+							
+						</div>
 					</div>
 				</div>
 			</div>
@@ -584,8 +586,8 @@ Copyright &copy; All rights reserved | Datonique <br></div>
 <script type="text/javascript">
     (function () {
         var options = {
-            whatsapp: "626-660-6162", // WhatsApp number
-            call_to_action: "Message us", // Call to action
+            whatsapp: "+16266606162", // WhatsApp number
+            call_to_action: "", // Call to action
             position: "right", // Position may be 'right' or 'left'
         };
         var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
@@ -594,6 +596,6 @@ Copyright &copy; All rights reserved | Datonique <br></div>
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
-<!-- /GetButton.io widget -->
+
 	</body>
 </html>

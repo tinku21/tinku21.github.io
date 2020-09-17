@@ -70,6 +70,8 @@ $(window).on('load', function() {
 		items: 1,
 		animateOut: 'fadeOut',
     	animateIn: 'fadeIn',
+		smartSpeed:8000,
+		autoplayTimeout:10000,
 	});
 
 	/*------------------
