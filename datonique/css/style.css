@@ -439,7 +439,7 @@
  .header-info-box {
    display: inline-block;
    margin-right: 40px;
-   padding: 21px 0 15px;
+   padding: 5px 0 5px;
  }
  
  .header-info-box .hib-icon {
@@ -576,6 +576,39 @@
    display: none;
  }
  
+ .site-nav-menu ul li .sub-menu li .submenu2 {
+   position: absolute;
+   top: 100%;
+   left: 220px;
+   width: 220px;
+   background: #fff;
+  
+   opacity: 0;
+   margin-top: 50px;
+   padding: 15px 0 10px;
+   text-align: left;
+   -webkit-box-shadow: 0 15px 50px 1px rgba(0, 0, 0, 0.13);
+   box-shadow: 0 15px 50px 1px rgba(0, 0, 0, 0.13);
+   -webkit-transition: all 0.4s;
+   transition: all 0.4s;
+ }
+ .site-nav-menu ul li .sub-menu li a:hover .submenu2 li a{
+   display: block;
+ }
+ 
+ .site-nav-menu ul li .sub-menu li a:hover .submenu2 li a {
+   padding: 8px 25px;
+   text-transform: none;
+   margin-right: 0;
+ }
+ 
+ .site-nav-menu ul li .sub-menu li a:hover {
+   color: #4c96d7;
+ }
+ 
+ .site-nav-menu ul li .sub-menu li a:after {
+   display: none;
+ }
  /* ----------------
   Hero Section
   ---------------------*/
@@ -996,10 +1029,13 @@
  .footer-widget ul li a {
    display: block;
    font-size: 14px;
-   color: #718090;
+   color: #f1f1f1;
    margin-bottom: 15px;
  }
- 
+  .footer-widget ul li a:hover {
+   color: #e58202 !important;
+  
+ }
  .footer-widget .footer-search {
    position: relative;
  }
@@ -1133,7 +1169,7 @@
  -------------------*/
  
  .page-top-section {
-   height: 366px;
+   height: 170px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -1169,7 +1205,7 @@
  
  .about-text .sign {
    float: left;
-   margin-right: 33px;
+   margin-right: 0px;
  }
  
  .about-text .sign-info {
@@ -2101,3 +2137,19 @@
 }
 .new{font-size:35px;
 color:#e48402;}
+
+.btn-orange {
+	color: #fff;
+	background-color: #fc7e0e;
+	border-color: #da6c09
+}
+.btn-orange:hover {
+	color: #fff;
+	background-color: #fc9234;
+	border-color: #da6c09
+}
+
+
+<!--3 level menu-->
+
+<!--3 level menu-->
