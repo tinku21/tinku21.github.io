@@ -29,7 +29,7 @@
 
 /* dark theme */
 .stellarnav.dark { margin-top:-28px; }
-.stellarnav.dark a { color: #999; }
+.stellarnav.dark a { color: #fff; background-color: #000; margin-top: 20px;}
 .stellarnav.dark ul ul { background-color:#083b66;  }
 .stellarnav.dark ul ul li a {color:#fff; padding: 9px 15px; font-weight:400; font-size:14px;  }
 .stellarnav.dark ul ul li a:hover {background-color:#e48402 !important; color:#fff; }
