@@ -291,7 +291,8 @@
 	display: block
 }
 .navbar-custom .nav li a {
-	border: none
+	border: none;
+	color:#000;
 }
 .navbar-collapse {
 	margin-top: 0;
