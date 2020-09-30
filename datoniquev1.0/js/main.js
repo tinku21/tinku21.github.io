@@ -1,14 +1,3 @@
-/* =================================
-------------------------------------
-	Template Name: Industry.INC 
-	Description: Industry.INC HTML Template
-	Author: colorlib
-	Author URI: https://www.colorlib.com/
-	Version: 1.0
-	Created: colorlib
- ------------------------------------
- ====================================*/
-
 
 'use strict';
 
