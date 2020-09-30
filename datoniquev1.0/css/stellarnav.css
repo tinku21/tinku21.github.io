@@ -7,7 +7,7 @@
 
 /* main level */
 .stellarnav > ul > li { display: inline-block;  }
-.stellarnav > ul > li > a { padding: 14px 15px; }
+.stellarnav > ul > li > a { padding: 9px 15px; }
 
 /* first level dd */
 .stellarnav ul ul { top: auto; width: 220px; position: absolute; z-index: 9900; text-align: left; display: none; background: #ddd; }
@@ -25,9 +25,9 @@
 .stellarnav.dark { margin-top:-28px; }
 .stellarnav.dark a { color: #999; }
 .stellarnav.dark ul ul { background-color:#083b66;  }
-.stellarnav.dark ul ul li a {color:#fff; padding: 9px 15px; font-weight:400; font-size:14px;  }
+.stellarnav.dark ul ul li a {color:#fff; padding: 9px 15px; font-weight:300; font-size:14px; font-family: 'Poppins', sans-serif;  }
 .stellarnav.dark ul ul li a:hover {background-color:#e48402 !important; color:#fff; }
-.stellarnav.dark li a { color: #083b66; font-weight:600;}
+.stellarnav.dark li a { color: #083b66;  font-family: 'Oswald', sans-serif; font-size:20px;}
 .stellarnav.dark li a:hover { background-color:#083b66 !important; color: #fff; }
 /* sticky nav */
 .stellarnav.fixed { position: fixed; width: 100%; top: 0; left: 0; z-index: 9999; }
