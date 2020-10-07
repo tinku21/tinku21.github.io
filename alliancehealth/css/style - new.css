@@ -31,8 +31,8 @@
 	color: #00b2ce
 }
 .navbar-custom {
-	/*background: linear-gradient(110deg, #ffffff 350px, #0164bf 350px);*/
-	background-color:#0164bf;
+	background: linear-gradient(110deg, #ffffff 350px, #0164bf 350px);
+	
 	top: 50px;
 	padding: 15px 0
 }
@@ -164,7 +164,7 @@
 }
 .breadcrumb {
 	background-color: #f3f6f8;
-	padding: 20px 0
+	padding: 40px 0
 }
 .breadcrumb h2 {
 	color: #304254;
@@ -197,7 +197,7 @@
 	transition: background 0.5s ease-in-out, padding 0.3s ease-in-out
 }
 .navbar-custom.top-nav-collapse {
-	padding: 16px 0;
+	padding: 10px 0;
 	top: 0
 }
 .navbar-custom.top-nav-collapse .nav li.dropdown ul.dropdown-menu {
@@ -718,7 +718,7 @@ li, ul {
 	line-height: 28px;
 	color: #111111;
 	font-size: 14px;
-	font-weight: 400
+	font-weight: 300
 }
 .intro ul {
 	margin-top: 50px
@@ -2000,7 +2000,7 @@ h3.resp-tab-active span.resp-arrow {
 }
 .blog-page .single-post p {
 	color: #000;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 15px;
 	margin-top: 15px;
 	line-height: 25px
@@ -2098,10 +2098,9 @@ h3.resp-tab-active span.resp-arrow {
 	margin-top: 50px
 }
 .blog-post h2 {
-	font-size: 17px!important;
-    margin-top: 40px;
-    margin-bottom: 10px;
-	font-weight:500 !important;
+	font-size: 24px!important;
+	margin-top: 40px;
+	margin-bottom: 35px
 }
 .blog-post .search-text .search {
 	padding: 15px;
@@ -2354,52 +2353,4 @@ h3.resp-tab-active span.resp-arrow {
 	display: inherit;
 	margin-left: 0
 }
-}
-
-
-.logo {
-  background-color:#fff; 
-  width:280px; height:55px;
-  line-height:35px;
-  font-size:60px;
-  text-align:center;
-  position:relative;
- 
-  font-family: 'Patua One', cursive;
-  color:#fff;
-  }
-
-.logo:before, .logo:after {
-  background-color:#0c4376; 
-  width:30px; height:55px;
-  content:'';
-  display:block; 
-  transform:skewY(20deg);
-  position:absolute;
-  z-index:-1;
-}
-
-.logo:before {top:7px; left:0; }
-.logo:after {top:-7px; right:0; }
-
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius:5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
 }
