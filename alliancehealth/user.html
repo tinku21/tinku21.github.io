@@ -37,7 +37,9 @@
         }  
     </script>  
 	<style>
-
+.form-group {
+    margin-bottom: 0px !important;
+}
 
 thead tr {
  
@@ -129,61 +131,121 @@ Maitland, FL 32751
       <section class="blog-page">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                   	 <div class="main">
-
-            <!-- Actual search box -->
-             
-<h3>Search Provider</h3><div class="input-group" style="display: inline-flex; width: 100%;">
-                <input type="text" class="form-control" placeholder="Search provider / Zip Code" style="padding-left:10px;">
-                <div class="input-group-append" style="margin-left:-4px;">
-                    <button class="btn btn-secondary" type="button" onclick="showhide()" style="-webkit-border-radius: 5px;">
-                        <i class="fa fa-search"></i>
-                    </button>
+                    <div class="col-sm-12">
+                   	<div class="container">
+    <div class="row my-2">
+        <div class="col-lg-8 order-lg-2">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
+                </li>
+            </ul>
+            <div class="tab-content py-4">
+                <div class="tab-pane active" id="profile" style="padding:10px;">
+                    
+                    <div class="row" style="padding-top:19px;">
+                        <div class="col-md-12" >
+						<div class="row">
+						<div class="col-md-3" ><strong>Provider Name :</strong></div>
+						<div class="col-md-6" >Charles A. Slattery, MD</div>
+						</div>
+						<div class="row" style="padding-top:9px;">
+						<div class="col-md-3" ><strong>Email :</strong></div>
+						<div class="col-md-6" >example@mail.com</div>
+						</div>
+						<div class="row" style="padding-top:9px;">
+						<div class="col-md-3" ><strong>Phone :</strong></div>
+						<div class="col-md-6" >321-264-2100</div>
+						</div>
+						<div class="row" style="padding-top:9px;">
+						<div class="col-md-3" ><strong>Address :</strong></div>
+						<div class="col-md-6" >7455 US-1, Titusville, FL 32780, United States</div>
+						</div>
+						<div class="row">
+						<div class="col-md-4" ></div>
+						<div class="col-md-6" ></div>
+						</div>
+                            
+                        </div>
+                      
+                      
+                    </div>
+                    <!--/row-->
+                </div>
+                
+                <div class="tab-pane" id="edit">
+                    <form role="form" style="padding-top:10px;">
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control form-control-sm" type="text" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Phone</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-3">
+                                <input class="form-control" type="text" value="" placeholder="City">
+                            </div>
+                            <div class="col-lg-3">
+                                <input class="form-control" type="text" value="" placeholder="State">
+                            </div>
+							<div class="col-lg-3">
+                                <input class="form-control" type="text" value="" placeholder="Zip">
+                            </div>
+                        </div>
+                       
+                       
+                      
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+							<input type="button" class="btn btn-secondary" value="Save Changes">
+                                <input type="reset" class="btn btn-secondary" value="Cancel">
+                                
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <!-- Another variation with a button -->
-         
-
-            
-
         </div>
+        <div class="col-lg-4 order-lg-1 text-center">
+            <img src="https://placehold.it/150" class="mx-auto img-fluid img-circle d-block" alt="avatar">
+            <h6 class="mt-2">Upload a different photo</h6>
+            <label class="custom-file">
+                <input type="file" id="file" class="btn btn-primary">
+                
+            </label>
+        </div>
+    </div>
+</div>
                     </div>
                 </div>
 				
-				<div class="row" style="margin-top:20px;">
-                    <div class="col-sm-12"  id="newpost" style="display:none;">
-                    
-    
-  <thead>                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-bordered table-responsive">
-  <tr style="background-color:#247aca; color:#ffffff;">
-    <th>Provider Name</th>
-    <th>Email</th>
-    <th>Phone</th>
-    <th>Address</th>
-    <th>Zip Code</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="user.html">Charles A. Slattery, MD</a></td>
-    <td>example@mail.com</td>
-     <td>321-264-2100</td>
-    <td>7455 US-1, Titusville, FL 32780, United States</td>
-    <td>32780</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-     <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  </tbody>
-</table>
-
-					</div>
-					</div>
+			
 				
             </div>
         </section>

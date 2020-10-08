@@ -3560,7 +3560,6 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 	position: relative;
 	min-height: 50px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #0164bf !important;
 }
 
 @media (min-width:768px) {

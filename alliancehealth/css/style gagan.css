@@ -32,7 +32,7 @@
 }
 .navbar-custom {
 	/*background: linear-gradient(110deg, #ffffff 350px, #0164bf 350px);*/
-	
+	background-color:#0164bf;
 	top: 50px;
 	padding: 15px 0
 }
@@ -64,7 +64,7 @@
 	border-left: 0px solid #465a6f;
 	padding-left: 45px;
 	float: left;
-	color: #0164bf;
+	color: #cddae7;
 	font-size: 12px;
 	line-height: 20px
 }
@@ -83,7 +83,7 @@
 	outline: 0
 }
 .navbar-custom a {
-	color: #0164bf;
+	color: #f1f1f1;
 	background-color: transparent
 }
 .navbar-custom a:hover {
@@ -97,17 +97,16 @@
 	font-size: 14px;
 	border: 1px solid #0164bf;
 	line-height: 28px;
-	border-radius: 20px;
+	border-radius: 24px;
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
-	padding: 7px 25px;
-	margin-right:5px;
+	padding: 10px 25px
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #fff;
-	border-color: #004eb7;
-	background-color: #004eb7
+	color: #87b9f8;
+	border-color: #87b9f8;
+	background-color: transparent
 }
 .navbar-custom .nav li a.btn-default {
 	background-color: #00b2ce;
@@ -198,12 +197,8 @@
 	transition: background 0.5s ease-in-out, padding 0.3s ease-in-out
 }
 .navbar-custom.top-nav-collapse {
-	padding: 10px 0;
-	top: 0;
-	background-color:#fff;
-	    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+	padding: 16px 0;
+	top: 0
 }
 .navbar-custom.top-nav-collapse .nav li.dropdown ul.dropdown-menu {
 	top: 122%
@@ -441,7 +436,7 @@ a:focus, a:hover {
 	background-color: transparent
 }
 input[type=password], input[type=text], select, textarea {
-	
+	border: none;
 	width: 100%;
 	display: block;
 	margin-bottom: 20px;
@@ -454,8 +449,7 @@ input[type=password], input[type=text], select, textarea {
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	padding-left:10px;
+	-o-transition: all 0.3s ease
 }
 input[type=password]:focus, input[type=text]:focus, select:focus, textarea:focus {
 	border-color: #ccc
@@ -724,7 +718,7 @@ li, ul {
 	line-height: 28px;
 	color: #111111;
 	font-size: 14px;
-	font-weight: 300
+	font-weight: 400
 }
 .intro ul {
 	margin-top: 50px
@@ -2006,7 +2000,7 @@ h3.resp-tab-active span.resp-arrow {
 }
 .blog-page .single-post p {
 	color: #000;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 15px;
 	margin-top: 15px;
 	line-height: 25px
@@ -2104,9 +2098,10 @@ h3.resp-tab-active span.resp-arrow {
 	margin-top: 50px
 }
 .blog-post h2 {
-	font-size: 24px!important;
-	margin-top: 40px;
-	margin-bottom: 35px
+	font-size: 17px!important;
+    margin-top: 40px;
+    margin-bottom: 10px;
+	font-weight:500 !important;
 }
 .blog-post .search-text .search {
 	padding: 15px;
@@ -2359,4 +2354,52 @@ h3.resp-tab-active span.resp-arrow {
 	display: inherit;
 	margin-left: 0
 }
+}
+
+
+.logo {
+  background-color:#fff; 
+  width:280px; height:55px;
+  line-height:35px;
+  font-size:60px;
+  text-align:center;
+  position:relative;
+ 
+  font-family: 'Patua One', cursive;
+  color:#fff;
+  }
+
+.logo:before, .logo:after {
+  background-color:#0c4376; 
+  width:30px; height:55px;
+  content:'';
+  display:block; 
+  transform:skewY(20deg);
+  position:absolute;
+  z-index:-1;
+}
+
+.logo:before {top:7px; left:0; }
+.logo:after {top:-7px; right:0; }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius:5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
