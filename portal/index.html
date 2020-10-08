@@ -11,6 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+	</script>
  <style>
  .username {
   white-space: nowrap; 
@@ -30,6 +35,7 @@
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html" style="margin-top:-8px;"><img src="images/logo_small.png"  alt=""/></a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+      <div style="padding-top:10px; padding-left:20px;"><a href="" class="btn btn-light btn-sm">Dashboard</a>&nbsp;&nbsp;<a href="" class="btn btn-light btn-sm">SQL Query</a></div>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
       
@@ -95,8 +101,12 @@
           
         </div>
         <ul class="app-breadcrumb breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+		
+          <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Undo"><i class="fa fa-undo fa-lg"></i></a></li>
+          <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Redo"><i class="fa fa-repeat fa-lg"></i></a></li>
+          <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Revert"><i class="fa fa-retweet fa-lg"></i></a></li>
+          <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Refresh"><i class="fa fa-refresh fa-lg"></i></a></li>
+          <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Pause"><i class="fa fa-pause fa-lg"></i></a></li>
         </ul>
       </div>
      
@@ -105,7 +115,57 @@
           <div class="tile">
             <h3 class="tile-title">Overall Metrics - September 2020</h3>
             <div class="embed-responsive">
-              
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-bordered table-striped">
+ <thead> <tr>
+    <th>Specialty</th>
+    <th>MAU</th>
+    <th>Avg WAU</th>
+    <th>Avg DAU</th>
+    <th>Month 1 Retention</th>
+    <th>Session per User</th>
+    <th>Avg Session Duration (Hrs)</th>
+    <th>Time Spent per User (Hrs)</th>
+    <th>New Subs</th>
+    <th>Active Subs</th>
+  </tr></thead>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
             </div>
           </div>
         </div>

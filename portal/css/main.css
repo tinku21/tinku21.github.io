@@ -159,13 +159,13 @@ sup {
 }
 
 a {
-  color: #083b66;
+  color: #367ab4;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #004a43;
+  color: #083b66;
   text-decoration: underline;
 }
 
@@ -5178,8 +5178,8 @@ input[type="button"].btn-block {
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: #6c757d;
-  content: "/";
+  color: #c3cad3;
+  content: "|";
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
