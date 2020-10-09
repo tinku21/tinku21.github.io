@@ -545,8 +545,8 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:
     
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover,
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li a:hover{
-        background-color: transparent;
-		color: #d33b33;
+        background-color: #273785;
+		color: #f1f1f1;
     }
     
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a{
