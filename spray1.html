@@ -1,390 +1,593 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- Basic -->
+
 <head>
-<title>Product</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="aaspire" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<!-- single -->
-<script src="js/imagezoom.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<!-- single -->
-<!-- cart -->
-	<script src="js/simpleCart.min.js"></script>
-<!-- cart -->
-<!-- for bootstrap working -->
-	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Site Metas -->
+    <title>Aaspire Products</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- //for bootstrap working
-<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'> -->
-<script src="js/jquery.easing.min.js"></script>
-<style>
-.carousel {
-    margin-bottom: 0;
-}
-/* Reposition the controls slightly */
-.carousel-control {
-	left: -20px;
-}
-.carousel-control.right {
-	right: -20px;
-}
-/* Changes the position of the indicators */
-.carousel-indicators {
-	right: 50%;
-	top: auto;
-	bottom: 0px;
-	margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.carousel-indicators li {
-	background: #c0c0c0;
-}
-.carousel-indicators .active {
-background: #333333;
-}
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    left: -20px;
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    font-size: 30px;
-    font-weight: 100;
-    line-height: 30px;
-    color: #ffffff;
-    text-align: center;
-    background: #283785;
-    border: 3px solid #ffffff;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    border-radius: 23px;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-</style>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-<!-- header -->
 
-<!-- //header -->
-<!-- header-bot -->
-<div class="header-bot">
-	<div class="container">
-		<div class="col-md-3 header-left">
-			<h1><a href="index.html"><img src="images/logo3.jpg"></a></h1>
-		</div>
-		<div class="col-md-6">
-			
-		</div>
-		<div class="col-md-3 header-right footer-bottom">
-			<ul>
-				
-				<li><a class="fb" href="#"></a></li>
-				<li><a class="twi" href="#"></a></li>
-				
-			</ul>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!-- //header-bot -->
-<!-- banner -->
-<div class="ban-top">
-	<div class="container">
-		<div class="top_nav_left">
-			<nav class="navbar navbar-default">
-			  <div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
-				  <ul class="nav navbar-nav menu__list">
-					<li class="menu__item"><a class="menu__link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-					<li class=" menu__item"><a class="menu__link" href="whoweare.html">Who We Are</a></li>
-					<li class="dropdown menu__item">
-						<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Products <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<div class="row">
-									<div class="col-sm-3 multi-gd-img">
-										<ul class="multi-column-dropdown">
-											<li><a href="mask.html">Face&nbsp;Masks</a></li>
-											<li><a href="shield.html">Face&nbsp;Shields</a></li>
-											<li><a href="spray.html">Multipurpose&nbsp;Disinfectant&nbsp;Spray</a></li>
-											<li><a href="eye.html">Eye&nbsp;Safety&nbsp;Goggles</a></li>
-											<li><a href="ppe.html">PPE&nbsp;Kit&nbsp;Non-&nbsp;Woven&nbsp;Gown</a></li>
-											<li><a href="shoe.html">Disposable&nbsp;Shoe&nbsp;Cover</a></li>
+<body>
+
+    <!-- Start Main Top -->
+     <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                             <li>
+                                    <i class="fab fa-opencart"></i> Powder Free Nitrile Gloves
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Face Mask
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Face Shields
+                                </li>
+                               
+                                <li>
+                                    <i class="fab fa-opencart"></i> Personal Protection Equipment Kit (PPE Kit)
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Reinforced
+Gown
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Poly Bags High Clarity
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Paper Bags Earth Friendly bags
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="#"> +1(519) 962 9135</a></p>
+                    </div>
+                    <div class="our-link">
+                       <ul>
+                            <li></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="whoweare.html">Who We Are</a></li>
+                       
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                               <li><a href="facemask.html">Face&nbsp;Masks</a></li>
+											
+											
+											
+											
+											<li><a href="cover.html">Knee&nbsp;Leggings&nbsp;&amp;&nbsp;Shoe&nbsp;Cover</a></li>
 											<li><a href="gloves.html">Hand&nbsp;Gloves</a></li>
-											<li><a href="cover.html">Disposable&nbsp;Head&nbsp;Cover</a></li>
+											<li><a href="head.html">Disposable&nbsp;Head&nbsp;Cover</a></li>
 											<li><a href="poly.html">Poly&nbsp;Bags</a></li>
 											<li><a href="paper.html">Paper&nbsp;Bags</a></li>
-										</ul>
-									</div>
-									
-									
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-					</li>
-					
-					<li class=" menu__item"><a class="menu__link" href="contact.html">contact</a></li>
-				  </ul>
-				</div>
-			  </div>
-			</nav>	
-		</div>
-		<div class="top_nav_right">
-			
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!-- //banner-top -->
-<!-- banner -->
-<div class="page-head">
-	<div class="container">
-		<h3>Spray<br><small style="color:#ffffff; font-size:22px;">Multipurpose Disinfectant </small></h3>
-	</div>
-</div>
-<!-- //banner -->
-<!-- single -->
-<div class="single">
-	<div class="container">
-		<div class="col-md-6 single-right-left animated wow slideInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;">
-			<div class="grid images_3_of_2">
-				<div class="flexslider">
-					<!-- FlexSlider -->
-						<script>
-						// Can also be used with $(document).ready()
-							$(window).load(function() {
-								$('.flexslider').flexslider({
-								animation: "slide",
-								controlNav: "thumbnails"
-								});
-							});
-						</script>
-					<!-- //FlexSlider-->
-					<ul class="slides">
-						<li data-thumb="images/s1.jpg">
-							<div class="thumb-image"> <img src="images/s1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/s1.jpg">
-							<div class="thumb-image"> <img src="images/s1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>	
-						<li data-thumb="images/s1.jpg">
-							<div class="thumb-image"> <img src="images/s1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>
-						<li data-thumb="images/s1.jpg">
-							<div class="thumb-image"> <img src="images/s1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-						</li>	
-					</ul>
-					<div class="clearfix"></div>
-				</div>	
-			</div>
-		</div>
-		<div class="col-md-6 single-right-left simpleCart_shelfItem animated wow slideInRight animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInRight;">
-					<h3 style="margin-bottom:10px">Room Sanitizer Spray (300 ml)</h3>
-					
-					<div class="rating1">
-						<span class="starRating">
-							<input id="rating5" type="radio" name="rating" value="5">
-							<label for="rating5">5</label>
-							<input id="rating4" type="radio" name="rating" value="4">
-							<label for="rating4">4</label>
-							<input id="rating3" type="radio" name="rating" value="3" checked="">
-							<label for="rating3">3</label>
-							<input id="rating2" type="radio" name="rating" value="2">
-							<label for="rating2">2</label>
-							<input id="rating1" type="radio" name="rating" value="1">
-							<label for="rating1">1</label>
-						</span>
-					</div>
-					
-					<div class="description">
-						<p>- Kills 99.9% Bacteria / Germs<br>
-- Applicable for High-Touch Surfaces to Clean & Disinfect Daily<br>
-i.e. Door Knobs, Table Surfaces, Hard Dining Chairs, Kitchen Counters,<br> Bathroom Counters, Faucets & Faucet Knobs, Toilets (Seat & Handle),<br> Light Switches, TV Remote Controls, etc.</p>
-					</div>
-					
-					<div class="occasion-cart">
-						<a href="contact.html" class="item_add hvr-outline-out button2">Contact Us</a>
-					</div>
-					
-		</div>
-				<div class="clearfix"> </div>
+                            </ul>
+                        </li>
+               
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                         <li class=""><a class="nav-link" href="Brochure.pdf" style="background-color:#273785; padding:10px 25px; border-radius:25px; color:#ffffff; margin-top:20px;">Brochure</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
 
-		
-
-
-
-
-
-<div class="container" style="margin-top:30px;">
-	<div class="row">
-		<div class="col-lg-12">
-        <h3 style="color:#283785; padding:30px 0px 10px 0px;">More items to explore</h3>
-    	     <div class=""> 
-                <div id="myCarousel" class="carousel slide">
-                 
+                <!-- Start Atribute Navigation -->
                 
-                 
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    
-                <div class="item active">
-                	<div class="row">
-                	  <div class="col-lg-3"><a href="spray1.html" class="thumbnail"><img src="images/thumb/ss1.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                	  <div class="col-lg-3"><a href="spray2.html" class="thumbnail"><img src="images/thumb/ss2.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                	  <div class="col-lg-3"><a href="spray3.html" class="thumbnail"><img src="images/thumb/ss3.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                	  <div class="col-lg-3"><a href="spray4.html" class="thumbnail"><img src="images/thumb/ss4.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                	</div><!--/row-fluid-->
-                </div><!--/item-->
-                 
-                <div class="item">
-                	<div class="row">
-                		<div class="col-lg-3"><a href="spray5.html" class="thumbnail"><img src="images/thumb/ss5.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                		<div class="col-lg-3"><a href="spray1.html" class="thumbnail"><img src="images/thumb/ss1.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                		<div class="col-lg-3"><a href="spray2.html" class="thumbnail"><img src="images/thumb/ss2.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                		<div class="col-lg-3"><a href="spray3.html" class="thumbnail"><img src="images/thumb/ss3.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                	</div><!--/row-fluid-->
-                </div><!--/item-->
-                 
-                <div class="item">
-                	<div class="row">
-                		<div class="col-lg-3"><a href="spray4.html" class="thumbnail"><img src="images/thumb/ss4.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                		<div class="col-lg-3"><a href="spray5.html" class="thumbnail"><img src="images/thumb/ss5.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                		<div class="col-lg-3"><a href="spray1.html" class="thumbnail"><img src="images/thumb/ss1.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                		<div class="col-lg-3"><a href="spray2.html" class="thumbnail"><img src="images/thumb/ss2.jpg" alt="Image" style="max-width:100%;" /></a></div>
-                	</div><!--/row-fluid-->
-                </div><!--/item-->
-                 
-                </div><!--/carousel-inner-->
-                 
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-                </div><!--/myCarousel-->
-                 
-            </div><!--/well-->   
-		</div>
-	</div>
-</div>
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+          
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>SPRAY</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="spray.html">Spray</a></li>
+                        <li class="breadcrumb-item active">Room Sanitizer Spray</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+
+    <!-- Start Shop Detail  -->
+    <div class="shop-detail-box-main" style="padding-top:70px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-6">
+                    <div id="carousel-example-1" class="single-product-slider carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active"> <img class="d-block w-100" src="images/mask/fm-big-25.jpg" alt="First slide"> </div>
+                            <div class="carousel-item"> <img class="d-block w-100" src="images/mask/fm-big-26.jpg" alt="Second slide"> </div>
+                            <div class="carousel-item"> <img class="d-block w-100" src="images/mask/fm-big-27.jpg" alt="Third slide"> </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev"> 
+						<i class="fa fa-angle-left" aria-hidden="true"></i>
+						<span class="sr-only">Previous</span> 
+					</a>
+                        <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next"> 
+						<i class="fa fa-angle-right" aria-hidden="true"></i> 
+						<span class="sr-only">Next</span> 
+					</a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-1" data-slide-to="0" class="active">
+                                <img class="d-block w-100 img-fluid" src="images/mask/fm-sm-25.jpg" alt="" />
+                            </li>
+                            <li data-target="#carousel-example-1" data-slide-to="1">
+                                <img class="d-block w-100 img-fluid" src="images/mask/fm-sm-26.jpg" alt="" />
+                            </li>
+                            <li data-target="#carousel-example-1" data-slide-to="2">
+                                <img class="d-block w-100 img-fluid" src="images/mask/fm-sm-27.jpg" alt="" />
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-6">
+                    <div class="single-product-details">
+                        <h2>Spray</h2>
+                        
+                        
+                                <h4>Room Sanitizer Spray (300 ml)</h4>
+                                <p>- Kills 99.9% Bacteria / Germs<br>
+- Applicable for High-Touch Surfaces to Clean & Disinfect Daily
+i.e. Door Knobs, Table Surfaces, Hard Dining Chairs, Kitchen Counters,
+Bathroom Counters, Faucets & Faucet Knobs, Toilets (Seat & Handle),
+Light Switches, TV Remote Controls, etc.</p>
+                                <ul>
+                                   
+                                   
+                                </ul>
+
+                              
+
+                                <div class="add-to-btn">
+                                    <div class="add-comp">
+                                        <a class="btn hvr-hover" href="#">Contact Us</a>
+                                        
+                                    </div>
+                                    <div class="share-bar">
+                                        <a class="btn hvr-hover" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                                        <a class="btn hvr-hover" href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+                                        <a class="btn hvr-hover" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                       
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Featured Products</h1>
+                        <p>Maintain working relationships with existing clients to ensure exceptional service and identification of potential new sales opportunities</p>
+                    </div>
+                    <div class="featured-products-box owl-carousel owl-theme">
+                        <div class="item">
+                             <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Powder Free Nitrile Gloves</h4>
+                            
+                        </div>
+                    </div>
+                        </div>
+                        <div class="item">
+                             <div class="products-single fix">
+                        <div class="box-img-hover">
+                              <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                   
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Washable Reusable Face Mask</h4>
+                           
+                        </div>
+                    </div>
+                        </div>
+                        <div class="item">
+                           <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">New</p>
+                            </div>
+                            <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                   
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>PPE Kit</h4>
+                           
+                        </div>
+                    </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">New</p>
+                            </div>
+                            <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                   
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>3 PLY MASK</h4>
+                            
+                        </div>
+                    </div>
+                        </div>
+                        <div class="item">
+                             <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Powder Free Nitrile Gloves</h4>
+                            
+                        </div>
+                    </div>
+                        </div>
+                        <div class="item">
+                             <div class="products-single fix">
+                        <div class="box-img-hover">
+                              <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                   
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Washable Reusable Face Mask</h4>
+                           
+                        </div>
+                    </div>
+                        </div>
+                        <div class="item">
+                           <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">New</p>
+                            </div>
+                            <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                   
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>PPE Kit</h4>
+                           
+                        </div>
+                    </div>
+                        </div>
+                        <div class="item">
+                            <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">New</p>
+                            </div>
+                            <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                   
+                                </ul>
+                                <a class="cart" href="#">Details</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>3 PLY MASK</h4>
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Cart -->
+
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-08.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-09.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
 
 
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About Us</h4>
+                            <p>Aaspire products Aap is a premier trading company that started with young entrepreneurs having more than 20 years of diverse industry experience.
+                                </p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">PPE Kit</a></li>
+                                <li><a href="#">Face Mask</a></li>
+                                <li><a href="#">Gloves</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: 450 Victoria Avenue, Apt 812, <br>Windsor, Ontario, N9A 6T7, Canada </p>
+                                </li>
+								 <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College - 533003. <br>Kakinada-AP India</p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
+                                </li>
+								<li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 9703 555 228</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:sales@aaspirepro.com">sales@aaspirepro.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
 
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2020 <a href="#">Aaspire Products</a></p>
+    </div>
+    <!-- End copyright  -->
 
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
-
-
-		
-	</div>
-</div>
-<!-- //single -->
-<!-- //product-nav -->
-<div class="coupons">
-	<div class="container">
-		<div class="coupons-grids text-center">
-			<div class="col-md-3 coupons-gd">
-				<h3>Buy your product in a simple way</h3>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-				<h4>LOGIN TO YOUR ACCOUNT</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-				<h4>SELECT YOUR ITEM</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
-				<h4>MAKE PAYMENT</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!-- footer -->
-<div class="footer">
-	<div class="container">
-		<div class="col-md-3 footer-left">
-			<h2><a href="index.html"><img src="images/logo3.jpg" alt=" " /></a></h2>
-			<p>We’re seeking a qualified sales representative to help us sell the products and services that our customers have grown to rely on.</p>
-		</div>
-		<div class="col-md-9 footer-right">
-			
-			<div class="clearfix"></div>
-			<div class="sign-grds">
-				<div class="col-md-4 sign-gd">
-					<h4>Quick access</h4>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Masks</a></li>
-						<li><a href="#">PPE Kits</a></li>
-						<li><a href="#">N95 Mask</a></li>
-						
-					</ul>
-				</div>
-				
-				<div class="col-md-8 sign-gd-two">
-					<h4>Contact Information</h4>
-					<ul>
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address : 450 Victoria Avenue, Apt 812, Windsor, Ontario, N9A 6T7, <span>Canada</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email : <a href="mailto:info@example.com">sales@aaspirepro.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone : +1(519) 962 9135</li>
-					</ul>
-				</div>
-				
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-		<p class="copy-right">&copy 2020 All rights reserved @ <a href="#">www.Aaspire.com</a></p>
-	</div>
-	<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+91 9959838980", // WhatsApp number
-            sms: "+91 9959838980", // Sms phone number
-            call_to_action: "Message us", // Call to action
-            button_color: "#FF6550", // Color of button
-            position: "right", // Position may be 'right' or 'left'
-            order: "whatsapp,sms", // Order of buttons
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-</div>
-<!-- //footer -->
-
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
