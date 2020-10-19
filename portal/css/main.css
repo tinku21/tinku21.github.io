@@ -1680,6 +1680,8 @@ pre code {
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
+  background-color:#89a1b4;
+  color:#fff;
 }
 
 .table tbody + tbody {
@@ -2018,7 +2020,7 @@ pre code {
   color: #495057;
   background-color: #FFF;
   background-clip: padding-box;
-  border: 2px solid #ced4da;
+  border: 1px solid #ced4da;
   border-radius: 4px;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2043,7 +2045,7 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #FFF;
-  border-color: #009688;
+  border-color: #046293;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2616,14 +2618,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #FFF;
-  background-color: #009688;
-  border-color: #009688;
+  background-color: #057eb0;
+  border-color: #057eb0;
 }
 
 .btn-primary:hover {
   color: #FFF;
-  background-color: #007065;
-  border-color: #00635a;
+  background-color: #046293;
+  border-color: #046293;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -3279,7 +3281,7 @@ input[type="button"].btn-block {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
-  content: "";
+  
   border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
   border-bottom: 0;
@@ -15653,7 +15655,7 @@ be a descendant of the grid when it is being dragged.
 
 .animated-checkbox input[type="checkbox"]:checked + .label-text:before {
   content: "";
-  color: #009688;
+  color: #046293;
   -webkit-animation: tick 180ms ease-in;
           animation: tick 180ms ease-in;
 }
@@ -15890,7 +15892,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .material-half-bg .cover {
-  background-color: #009688;
+ background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%, rgba(138,203,235,1) 100%);
   height: 50vh;
 }
 

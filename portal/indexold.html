@@ -11,7 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+	<script>
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+	</script>
  <style>
  .username {
   white-space: nowrap; 
@@ -24,36 +28,17 @@
 .username:hover {
   overflow: visible;
 }
-
-#vizContainer {
-    width: 1232px;
-    height: 850px;
-    overflow: auto;
-    -webkit-transition: width .4s ease-in-out;
-    -moz-transition: width .4s ease-in-out;
-    -o-transition: width .4s ease-in-out;
-    transition: width .4s ease-in-out;
-
-    -webkit-transition: height .4s ease-in-out;
-    -moz-transition: height .4s ease-in-out;
-    -o-transition: height .4s ease-in-out;
-    transition: height .4s ease-in-out;
-}
-
-#vizContainer iframe {
-    margin: 0 auto;
-}
  </style>
  
   </head>
-  <body class="app sidebar-mini" onload="initViz('1_OverallDashboard',2);">
+  <body class="app sidebar-mini">
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html" style="margin-top:-8px;"><img src="images/logo_small.png"  alt=""/></a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <div style="padding-top:10px; padding-left:20px;"><a href="" class="btn btn-light btn-sm">Home</a>&nbsp;<a href="" class="btn btn-light btn-sm">Product</a>&nbsp;<a href="" class="btn btn-light btn-sm">Resources</a>&nbsp;<a href="" class="btn btn-light btn-sm">SQL Query</a>&nbsp;<a href="" class="btn btn-light btn-sm">Admin</a></div>
+      <div style="padding-top:10px; padding-left:20px;"><a href="" class="btn btn-light btn-sm">Dashboard</a>&nbsp;&nbsp;<a href="" class="btn btn-light btn-sm">SQL Query</a></div>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
-     
+      
         <!--Notification Menu-->
 		  <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-share-alt fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
@@ -93,7 +78,6 @@
       </div>
      
       <ul class="app-menu">
-      
         <li><a class="app-menu__item active" href="#"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-user"></i><span class="app-menu__label">Metrics</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
@@ -129,109 +113,140 @@
       <div class="row">
         <div class="col-md-12">
           <div class="tile">
-            <!-- <h3 class="tile-title">Overall Metrics - September 2020</h3> -->
+            <h3 class="tile-title">Overall Metrics - September 2020</h3>
             <div class="embed-responsive">
-
-              
-              <!-- Report Content Starts -->
-             <iframe frameborder="0" allowtransparency="true" allowfullscreen="true" title="Data Visualization" marginheight="0" marginwidth="0" scrolling="no" style="display: block; width: 1229px; height: 850px; visibility: visible;" src="https://visualization.datonique.com/views/Hippo-AnalyticsDashboard/1_OverallDashboard?:size=1232,850&amp;:embed=y&amp;:showVizHome=n&amp;:bootstrapWhenNotified=y&amp;:tabs=n&amp;:toolbar=n&amp;:apiID=host2&amp;&amp;:showVizHome=n&amp;:bootstrapWhenNotified=y&amp;:tabs=n&amp;:apiID=host0#navType=2&amp;navSrc=Parse"></iframe>
-              <!-- Report Content Ends -->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-bordered table-striped">
+ <thead> <tr>
+    <th>Specialty</th>
+    <th>MAU</th>
+    <th>Avg WAU</th>
+    <th>Avg DAU</th>
+    <th>Month 1 Retention</th>
+    <th>Session per User</th>
+    <th>Avg Session Duration (Hrs)</th>
+    <th>Time Spent per User (Hrs)</th>
+    <th>New Subs</th>
+    <th>Active Subs</th>
+  </tr></thead>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
 
             </div>
           </div>
         </div>
       
       </div>
+	  
+	   <div class="row">
+        <div class="col-md-6">
+          <div class="tile">
+            <h3 class="tile-title">Active Users by Product</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <canvas class="embed-responsive-item" id="lineChartDemo"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tile">
+            <h3 class="tile-title">Total Subs</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <canvas class="embed-responsive-item" id="pieChartDemo"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script src="js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="js/plugins/chart.js"></script>
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-  </script>
     <script type="text/javascript">
-        var viz;
-        function initViz(vtype,hid) {            
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "https://visualization.datonique.com/views/Hippo-AnalyticsDashboard/"+vtype+"?:size=1232,850&:embed=y&:showVizHome=n&:bootstrapWhenNotified=y&:tabs=n&:toolbar=n&:apiID=host"+hid,
-                options = {
-                    hideTabs: true,
-                    onFirstInteractive: function () {
-                        console.log("Run this code when the viz has finished loading.");
-                    }
-                };
-            if (viz) { // If a viz object exists, delete it.
-                viz.dispose();
-            }
-
-            viz = new tableau.Viz(containerDiv, url, options);
-            // Create a viz object and embed it in the container div.
-        }
-        function exportToPDF() {
-            viz.showExportPDFDialog();
-        }
-        function downloadWorkbook () {
-            viz.showDownloadWorkbookDialog();
-        }
-
-        function downloadImage () {
-            viz.showExportImageDialog();
-        }
-
-        function downloadData () {
-            viz.showExportDataDialog();
-        }
-
-        function downloadCrossTab () {
-            viz.showExportCrossTabDialog();
-        }
-
-        function undo () {
-            return viz.undoAsync().then(function () {
-                console.log('viz undo');
-            });
-        }
-
-        function refresh () {
-            return viz.refreshDataAsync().then(function () {
-                console.log('viz data refresh');
-            });
-        }
-
-        function revert () {
-            return viz.revertAllAsync().then(function () {
-                console.log('viz revert');
-            });
-        }
-
-        function redo () {
-            return viz.redoAsync().then(function () {
-                console.log('viz redo');
-            });
-        }
-
-        function pause () {
-            return viz.pauseAutomaticUpdatesAsync().then(function () {
-                console.log('viz paused');
-            });
-        }
-
-        function resume () {
-            return viz.resumeAutomaticUpdatesAsync().then(function () {
-                console.log('viz resumed');
-            });
-        }
+      var data = {
+      	labels: ["January", "February", "March", "April", "May"],
+      	datasets: [
+      		{
+      			label: "My First dataset",
+      			fillColor: "rgba(220,220,220,0.2)",
+      			strokeColor: "rgba(220,220,220,1)",
+      			pointColor: "rgba(220,220,220,1)",
+      			pointStrokeColor: "#fff",
+      			pointHighlightFill: "#fff",
+      			pointHighlightStroke: "rgba(220,220,220,1)",
+      			data: [65, 59, 80, 81, 56]
+      		},
+      		{
+      			label: "My Second dataset",
+      			fillColor: "rgba(151,187,205,0.2)",
+      			strokeColor: "rgba(151,187,205,1)",
+      			pointColor: "rgba(151,187,205,1)",
+      			pointStrokeColor: "#fff",
+      			pointHighlightFill: "#fff",
+      			pointHighlightStroke: "rgba(151,187,205,1)",
+      			data: [28, 48, 40, 19, 86]
+      		}
+      	]
+      };
+      var pdata = [
+      	{
+      		value: 300,
+      		color: "#46BFBD",
+      		highlight: "#5AD3D1",
+      		label: "Complete"
+      	},
+      	{
+      		value: 50,
+      		color:"#F7464A",
+      		highlight: "#FF5A5E",
+      		label: "In-Progress"
+      	}
+      ]
+      
+      var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+      var lineChart = new Chart(ctxl).Line(data);
+      
+      var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+      var pieChart = new Chart(ctxp).Pie(pdata);
     </script>
-    
     <!-- Google analytics script-->
     <script type="text/javascript">
       if(document.location.hostname == 'pratikborsadiya.in') {
