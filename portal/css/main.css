@@ -5211,7 +5211,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #009688;
+  color: #48769a;
   background-color: #FFF;
   border: 1px solid #dee2e6;
 }
@@ -5245,8 +5245,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #FFF;
-  background-color: #009688;
-  border-color: #009688;
+  background-color: #48769a;
+  border-color: #48769a;
 }
 
 .page-item.disabled .page-link {
@@ -15893,7 +15893,7 @@ be a descendant of the grid when it is being dragged.
 
 .material-half-bg .cover {
  background: linear-gradient(90deg, rgba(228,131,5,1) 0%, rgba(117,209,81,1) 47%, rgba(138,203,235,1) 100%);
-  height: 50vh;
+  height: 100vh;
 }
 
 .m-loader {
@@ -16379,7 +16379,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .login-content .logo {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-family: "Niconne";
   color: #fff;
 }
@@ -16732,4 +16732,28 @@ be a descendant of the grid when it is being dragged.
 
 .user .user-settings label {
   color: #666;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:600;
+}
+
+.menu li a:hover {
+  background-color: #083b66;
+  color:#fff;
 }

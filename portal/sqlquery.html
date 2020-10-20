@@ -28,6 +28,7 @@
 .username:hover {
   overflow: visible;
 }
+.gridcontainer { width: 100%; height: 300px; overflow: auto; } th { position: sticky; top: 0; }
  </style>
  
   </head>
@@ -35,28 +36,20 @@
     <!-- Navbar-->
     <header class="app-header"><a class="app-header__logo" href="index.html" style="margin-top:-8px;"><img src="images/logo_small.png"  alt=""/></a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <div style="padding-top:10px; padding-left:20px;"><a href="" class="btn btn-light btn-sm">Home</a>&nbsp;<a href="" class="btn btn-light btn-sm">Product</a>&nbsp;<a href="" class="btn btn-light btn-sm">Resources</a>&nbsp;<a href="" class="btn btn-light btn-sm">SQL Query</a>&nbsp;<a href="" class="btn btn-light btn-sm">Admin</a></div>
+      <div>
+	   <ul class="menu">
+  <li><a class="active" href="#">Home</a></li>
+  <li><a href="#">Products</a></li>
+  <li><a href="#">Resources</a></li>
+  <li ><a href="#">SQL Query</a></li>
+  <li><a href="#">Admin</a></li>
+</ul>
+	  </div>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
       
         <!--Notification Menu-->
-		  <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-share-alt fa-lg"></i></a>
-          <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            
-            <li><a class="dropdown-item" href="#">URL here</a></li>
-            
-          </ul>
-        </li>
-         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-cloud-download fa-lg"></i></a>
-          <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            
-            <li><a class="dropdown-item" href="#"><i class="fa fa-file-pdf-o fa-lg"></i> Pdf</a></li>
-            <li><a class="dropdown-item" href="#"><i class="fa fa-image fa-lg"></i> Image</a></li>
-			<li><a class="dropdown-item" href="#"><i class="fa fa-database fa-lg"></i> Data</a></li>
-			<li><a class="dropdown-item" href="#"><i class="fa fa-th-large fa-lg"></i> CrossTab</a></li>
-          </ul>
-        </li>
-		
+		 
         <!-- User Menu-->
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
@@ -101,8 +94,24 @@
           <h1><i class="fa fa-code"></i> SQL Query</h1>
           
         </div>
-        <ul class="app-breadcrumb breadcrumb">
-		
+         <ul class="app-breadcrumb breadcrumb">
+		<li class="breadcrumb-item dropdown"><a href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-cloud-download fa-lg"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            
+            <li><a class="dropdown-item" href="#"><i class="fa fa-file-pdf-o fa-lg"></i> Pdf</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-image fa-lg"></i> Image</a></li>
+			<li><a class="dropdown-item" href="#"><i class="fa fa-database fa-lg"></i> Data</a></li>
+			<li><a class="dropdown-item" href="#"><i class="fa fa-th-large fa-lg"></i> CrossTab</a></li>
+          </ul>
+        </li>
+		<li class="breadcrumb-item dropdown"><a href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-share-alt fa-lg"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right">
+            
+            <li><a class="dropdown-item" href="#">URL here</a></li>
+            
+          </ul>
+        </li>
+         
           <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Undo"><i class="fa fa-undo fa-lg"></i></a></li>
           <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Redo"><i class="fa fa-repeat fa-lg"></i></a></li>
           <li class="breadcrumb-item"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Revert"><i class="fa fa-retweet fa-lg"></i></a></li>
@@ -117,7 +126,7 @@
            
             <div class="embed-responsive">
               <textarea class="form-control"></textarea>
-<input type="button" class="btn btn-primary" value="Submit" style="margin-top:10px;">
+<input type="button" class="btn btn-primary" value="Submit" style="margin-top:10px;">&nbsp;<input type="button" class="btn btn-primary" value="Cancel" style="margin-top:10px;">
 <div class="alert alert-success" role="alert" style="margin-bottom:0px; margin-top:10px;">Query: select * from analytics.user_detail limit 15</div>
             </div>
           </div>
@@ -132,11 +141,22 @@
             <div class="row">
             <div class="col-md-6"><strong>Total:</strong> 15 Rows
 </div>
-            <div class="col-md-6" style="text-align:right;"><strong>Export:</strong> <a href="#"  data-toggle="tooltip" data-placement="bottom" title="CSV"><i class="fa fa-file-archive-o"></i></a>&nbsp;&nbsp;<a href="#"  data-toggle="tooltip" data-placement="bottom" title="XLSX"><i class="fa fa-file-archive-o"></i></a>
+            <div class="col-md-6" style="text-align:right;">
+			<ul style="list-style-type:none;">
+			<li class="breadcrumb-item dropdown"><a href="#" data-toggle="dropdown" aria-label="Open Profile Menu" style="text-decoration:none;">Exports &nbsp; <i class="fa fa-sort-desc" style="margin-top:-5px;"></i></a>
+          <ul class="dropdown-menu settings-menu dropdown-menu-right" style="width:150px;">
+            
+            <li><a class="dropdown-item" href="#">CSV</a></li>
+			<li><a class="dropdown-item" href="#">XLSX</a></li>
+            
+          </ul>
+        </li>
+		</ul>
 </div>
             </div>
               <div class="table-responsive">
-                <table class="table table-hover table-bordered" id="">
+              <div class="gridcontainer" style="height:200px !important;">
+                <table class="table table-hover table-bordered table-sm" id="">
                   <thead>
                     <tr>
                       <th>Name</th>
@@ -207,6 +227,8 @@
                   
                   </tbody>
                 </table>
+                </div>
+                
               </div>
             </div>
           </div>
