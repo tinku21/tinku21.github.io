@@ -53,13 +53,30 @@
     <header class="app-header"><a class="app-header__logo" href="index.html" style="margin-top:-8px;"><img src="images/logo_small.png"  alt=""/></a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <div>
-	  <ul class="menu">
-  <li><a class="active" href="#">Home</a></li>
-  <li><a href="#">Products</a></li>
-  <li><a href="#">Resources</a></li>
-  <li><a href="#">SQL Query</a></li>
-  <li><a href="#">Admin</a></li>
-</ul>
+	 <nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="outline:none;">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SQL Query</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Admin</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </div>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -113,7 +130,7 @@
         </div>
 		
         <ul class="app-breadcrumb breadcrumb">
-		<li class="breadcrumb-item dropdown"><a href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-cloud-download fa-lg"></i></a>
+		<li class="breadcrumb-item dropdown"><a href="#" data-toggle="dropdown tooltip" data-placement="bottom" title="Download" aria-label="Open Profile Menu"><i class="fa fa-cloud-download fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             
             <li><a class="dropdown-item" href="#"><i class="fa fa-file-pdf-o fa-lg"></i> Pdf</a></li>
@@ -122,7 +139,7 @@
 			<li><a class="dropdown-item" href="#"><i class="fa fa-th-large fa-lg"></i> CrossTab</a></li>
           </ul>
         </li>
-		<li class="breadcrumb-item dropdown"><a href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-share-alt fa-lg"></i></a>
+		<li class="breadcrumb-item dropdown"><a href="#" data-toggle="dropdown" data-placement="bottom" title="Share" aria-label="Open Profile Menu"><i class="fa fa-share-alt fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             
             <li><a class="dropdown-item" href="#">URL here</a></li>
