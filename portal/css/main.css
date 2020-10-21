@@ -4458,7 +4458,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem;
+
 }
 
 .navbar > .container,
@@ -4537,6 +4537,9 @@ input[type="button"].btn-block {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 3px;
+      right: 50px;
+    top: 10px;
+	position:fixed;
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
@@ -4677,8 +4680,7 @@ input[type="button"].btn-block {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding:14px 15px;
   }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
@@ -4804,11 +4806,12 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color:#fff;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  background-color:#083b66;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -4823,12 +4826,15 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	font-family:fontAwesome;
+     content: "\f0c9";
+    font-size: 21px;
+	color:#fff;
+}
 }
 
 .navbar-light .navbar-text {
@@ -16757,3 +16763,48 @@ be a descendant of the grid when it is being dragged.
   background-color: #083b66;
   color:#fff;
 }
+
+
+
+
+
+
+/*desktop*/
+@media (min-width: 1200px) {
+
+  .mbl {
+    display: inline;
+    position: relative;
+    top: -8px !important;
+  }
+}
+/*mobile*/
+@media (max-width: 1024px) {
+  .navbar {
+     position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+		  top:50px;
+		  padding-bottom:0px;
+		  right:60px;
+		  background-color:#ffffff;
+		  width:100px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #000;
+	padding-left:8px;
+}
+  
+  }
+
