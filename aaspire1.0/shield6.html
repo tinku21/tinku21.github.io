@@ -32,11 +32,134 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<link rel="stylesheet" href="sticky/mystickyelements-front.css" media="all">
+
+<script>
+$(document).ready(function(){
+  $("#element-contact-close").modal("show");
+    
+  $("#myBtn").click(function(){
+    $("#element-contact-close").modal("hide");
+  });
+  
+  
+});
+</script>
+<script>
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}
+</script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body>
+<div class="mystickyelements-fixed mystickyelements-position-left mystickyelements-position-screen-center mystickyelements-position-mobile-left mystickyelements-on-hover mystickyelements-size-medium mystickyelements-mobile-size-medium mystickyelements-entry-effect-slide-in mystickyelements-templates-default entry-effect" style="transition: all 0s ease 0s;">
+				<div class="mystickyelement-lists-wrap">
+					<ul class="mystickyelements-lists mysticky">
+													<li class="mystickyelements-minimize ">
+								<span class="mystickyelements-minimize minimize-position-left minimize-position-mobile-left" style="background: #000000">
+								←								</span>
+							</li>
+						
+						
+							<li id="mystickyelements-contact-form" class="mystickyelements-contact-form  element-desktop-on element-mobile-on element-contact-active">
+																<span class="mystickyelements-social-icon " style="background-color: #7761DF; color: #FFFFFF;"><i class="fa fa-envelope"></i>Contact Us</span>
 
+
+																<div class="element-contact-form" style="top: -56px;">
+																		<h3 style="color: #7761DF;">
+										Contact Form										<a onclick="hide('mystickyelement-lists-wrap')" href="" class="element-contact-close"><i class="fa fa-times"></i></a>
+									</h3>
+
+									<form id="contact-form" method="post" action="contact.php" role="form" style="margin:0 auto;">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_name" style="color:#000;">Name <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                             <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_lastname" style="color:#000;">Phone <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Phone *" required data-error="Phone Number is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="row">
+                           
+                           </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_email" style="color:#000;">Email <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message" style="color:#000;">Message <span style="color:#ed4b4b;">*</span></label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="text-align:center;">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </form>
+								</div>
+							</li>
+														<li id="mystickyelements-social-whatsapp" class="mystickyelements-social-whatsapp  element-desktop-on element-mobile-on">
+																			<style>
+																					</style>
+																			<span class="mystickyelements-social-icon social-whatsapp social-" style="background: #26D367">
+																				<a href="https://api.whatsapp.com/send?phone=+1 5199955879" target="_blank" rel="noopener">
+																					<i class="fab fa-whatsapp"></i>
+																				</a>
+																			</span>
+					<span class="mystickyelements-social-text " style="background: #26D367;">
+						<a href="https://api.whatsapp.com/send?phone=+1 5199955879" target="_blank" rel="noopener">
+																						WhatsApp																					</a>
+																		</span>
+																</li>
+
+															<li id="mystickyelements-social-phone" class="mystickyelements-social-phone  element-desktop-on element-mobile-on">
+																			<style>
+																					</style>
+																			<span class="mystickyelements-social-icon social-phone social-" style="background: rgb(38, 211, 124); border-bottom-right-radius: 10px;">
+																				<a href="tel:+1 5199955879">
+																					<i class="fa fa-phone fa-rotate-90"></i>
+																				</a>
+																			</span>
+																	<span class="mystickyelements-social-text " style="background: #26D37C;">
+																				<a href="tel:+1 5199955879">
+																						Phone																					</a>
+																		</span>
+																</li>
+
+												</ul>					
+				</div>
+            </div>
     <!-- Start Main Top -->
      <div class="main-top">
         <div class="container-fluid">
@@ -278,7 +401,7 @@
                            <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale">New</p>
+                                
                             </div>
                             <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
                             <div class="mask-icon">
@@ -300,7 +423,7 @@
                             <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale">New</p>
+                                
                             </div>
                             <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
                             <div class="mask-icon">
@@ -361,7 +484,7 @@
                            <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale">New</p>
+                                
                             </div>
                             <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
                             <div class="mask-icon">
@@ -383,7 +506,7 @@
                             <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale">New</p>
+                                
                             </div>
                             <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
                             <div class="mask-icon">
@@ -483,6 +606,14 @@
                     </div>
                 </div>
             </div>
+			<div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-10.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
             <div class="item">
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-05.jpg" alt="" />
@@ -529,19 +660,21 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link-contact">
                             <h4>Contact Us</h4>
-                            <ul>
+                           <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: 450 Victoria Avenue, Apt 812, <br>Windsor, Ontario, N9A 6T7, Canada </p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: Ouellette avenue, Suite 301, <br>Windsor N9A 1B3 Ontario, Canada </p>
+                                </li>
+								<li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
                                 </li>
 								 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College - 533003. <br>Kakinada-AP India</p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
+                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College <br> 533003, Kakinada-AP India</p>
                                 </li>
 								<li>
                                     <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 9703 555 228</a></p>
+									<p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-9885666656">+91 9885 666 656</a></p>
                                 </li>
+								
                                 <li>
                                     <p><i class="fas fa-envelope"></i>Email: <a href="mailto:sales@aaspirepro.com">sales@aaspirepro.com</a></p>
                                 </li>
@@ -575,9 +708,25 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/baguetteBox.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
+    
+    <script src="jquery.min.js"  crossorigin="anonymous"></script><script src="validator.min.js"  crossorigin="anonymous"></script><script src="contact.js"></script>
     <script src="js/custom.js"></script>
+		<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+1 5199955879", // WhatsApp number
+            sms: "+1 5199955879", // Sms phone number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,sms", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 </body>
 
 </html>

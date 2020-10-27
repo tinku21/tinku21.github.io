@@ -730,8 +730,9 @@
  .cover-slides h1{
      font-family: 'Montserrat', sans-serif;
      font-weight: 500;
-     font-size: 64px;
+     font-size: 52px;
      color: #fff;
+	 text-shadow:2px 2px #000000;
 }
  .cover-slides p{
      font-size: 18px;
@@ -1346,7 +1347,7 @@
      background-size: cover;
      text-align: center;
      background-attachment: fixed;
-     padding: 70px 0px;
+     padding: 15px 0px;
      position: relative;
 }
  .all-title-box::before{
@@ -1363,7 +1364,7 @@
      font-size: 28px;
      font-weight: 700;
      color: #ffffff;
-     padding-bottom: 30px;
+     padding-bottom: 10px;
 }
  .all-title-box .breadcrumb{
      background: #273785;
@@ -1373,7 +1374,7 @@
 }
  .all-title-box .breadcrumb li{
      display: inline-block;
-     color: #010101;
+     color: #90bbe3;
      font-size: 16px;
 }
  .all-title-box .breadcrumb li a{
@@ -1381,7 +1382,7 @@
      font-size: 16px;
 }
  .all-title-box .breadcrumb-item + .breadcrumb-item::before{
-     color: #010101;
+     color: #90bbe3;
 }
  .about-box-main{
      padding: 70px 0px;
@@ -1706,8 +1707,8 @@
      position: relative;
 }
  .product-item-filter{
-     border-bottom: 1px solid #010101;
-     border-top: 1px solid #010101;
+     border-bottom: 0px solid #010101;
+     border-top: 0px solid #010101;
      display: -webkit-box;
      display: -ms-flexbox;
      display: -webkit-flex;
@@ -2398,11 +2399,22 @@
      white-space: nowrap;
 }
  
+div.wh-widget-send-button-wrapper div.wh-widget-send-button-wrapper-list a.wh-widget-send-button-get-button {
+    display: none;
+    position: fixed;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 0px !important;
+    color: #afafaf;
+}
 
 
 
-
-
+div.wh-widget-send-button-wrapper a.wh-widget-send-button-get-button{
+	font-size: 0px !important;
+	
+}
 
 
 

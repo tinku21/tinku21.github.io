@@ -201,7 +201,7 @@
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        
                                                     </div>
                                                     <img src="images/goggle1.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -222,7 +222,7 @@
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        
                                                     </div>
                                                     <img src="images/goggle2.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -255,7 +255,7 @@
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
                                                         <div class="type-lb">
-                                                            <p class="new">New</p>
+                                                            
                                                         </div>
                                                         <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
                                                         <div class="mask-icon">
@@ -277,7 +277,7 @@
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
                                                         <div class="type-lb">
-                                                            <p class="new">New</p>
+                                                            
                                                         </div>
                                                         <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
                                                         <div class="mask-icon">
@@ -299,7 +299,7 @@
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
                                                         <div class="type-lb">
-                                                            <p class="new">New</p>
+                                                            
                                                         </div>
                                                         <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
                                                         <div class="mask-icon">
@@ -449,17 +449,19 @@
                             <h4>Contact Us</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: 450 Victoria Avenue, Apt 812, <br>Windsor, Ontario, N9A 6T7, Canada </p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: Ouellette avenue, Suite 301, <br>Windsor N9A 1B3 Ontario, Canada </p>
+                                </li>
+								<li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
                                 </li>
 								 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College - 533003. <br>Kakinada-AP India</p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
+                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College <br> 533003, Kakinada-AP India</p>
                                 </li>
 								<li>
                                     <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 9703 555 228</a></p>
+									<p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-9885666656">+91 9885 666 656</a></p>
                                 </li>
+								
                                 <li>
                                     <p><i class="fas fa-envelope"></i>Email: <a href="mailto:sales@aaspirepro.com">sales@aaspirepro.com</a></p>
                                 </li>
@@ -495,9 +497,25 @@
     <script src="js/baguetteBox.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
+    
+    <script src="jquery.min.js"  crossorigin="anonymous"></script><script src="validator.min.js"  crossorigin="anonymous"></script><script src="contact.js"></script>
     <script src="js/custom.js"></script>
+		<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+1 5199955879", // WhatsApp number
+            sms: "+1 5199955879", // Sms phone number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,sms", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 </body>
 
 </html>
