@@ -13,7 +13,9 @@ html, body {
 
 .floatright {
   float: right;
+}
 
+.alignleft {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
