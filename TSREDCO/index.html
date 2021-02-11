@@ -5,12 +5,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="css/style2.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="css/ev.css">
 	<link rel="stylesheet" href="css/animate.css">
-	
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
@@ -21,31 +20,10 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
     
-<script type="text/javascript">
-
-function GetClock(){
-var d=new Date();
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-
-if(nhour==0){ap=" AM";nhour=12;}
-else if(nhour<12){ap=" AM";}
-else if(nhour==12){ap=" PM";}
-else if(nhour>12){ap=" PM";nhour-=12;}
-
-if(nmin<=9) nmin="0"+nmin;
-if(nsec<=9) nsec="0"+nsec;
-
-var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
-document.getElementById('clockbox').innerHTML=clocktext;
-}
-
-GetClock();
-setInterval(GetClock,1000);
-var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-</script>
+     
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
 	<div class="py-1 top">
@@ -54,7 +32,7 @@ var tmonth=["January","February","March","April","May","June","July","August","S
 				<div class="col-4 text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
 					<p class="mb-0">
 						<span class="fa fa-clock-o"></span>
-						<span class="text"><div id="clockbox" style="font-size:12px; padding-left:9px; font-family:Roboto !important;"></div>
+						<span class="text"><div id="clockbox" style="font-size:12px; padding-left:9px; font-family:Roboto !important; color:#fff"></div>
                         <script type="text/javascript">
 var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -79,7 +57,7 @@ document.getElementById('clockbox').innerHTML=clocktext;
 GetClock();
 setInterval(GetClock,1000);
 </script></span>
-					<p></p>
+					
 				</div>
 				<div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
 					
@@ -127,11 +105,14 @@ setInterval(GetClock,1000);
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Programmes</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Tenders</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Publications</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About&nbsp;Us</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">ENERGY&nbsp;CONSERVATION</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">SOLAR&nbsp;ENERGY</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">ELECTRIC&nbsp;VEHICLES</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">OTHER&nbsp;RENEWABLE&nbsp;ENERGIES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">DOWNLOADS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">TENDERS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTACT&nbsp;US</a></li>
 				</ul>
 				
 			</div>
@@ -139,21 +120,74 @@ setInterval(GetClock,1000);
 	</nav>
 	<!-- END nav -->
 	
-	
-	<section class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-				<div class="col-lg-6 ftco-animate">
-					<div>
-						<h1 class="mb-4" style="font-size:2em; margin-bottom:19rem !important;">
-                        Making States, Cities & Villages Energy Efficient</h1>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<div class="">
+  
+
+<!-- Carousel wrapper -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+	  <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/bg_1.jpg" alt="Los Angeles" style="width:100%;">
+		  <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+      </div>
+
+      <div class="item">
+        <img src="images/bg_2.jpg" alt="Chicago" style="width:100%;">
+		  <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/bg_3.jpg" alt="New york" style="width:100%;">
+		  <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+      </div>
+	  <div class="item">
+        <img src="images/bg_4.jpg" alt="New york" style="width:100%;">
+		  <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+      </div>
+	  <div class="item">
+        <img src="images/bg_5.jpg" alt="New york" style="width:100%;">
+		  <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+      </div>
+	  <div class="item">
+        <img src="images/bg_6.jpg" alt="New york" style="width:100%;">
+		  <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="padding-top:160px;">
+      <span class="fa fa-chevron-left" ></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="padding-top:160px;">
+      <span class="fa fa-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 	
 	
 	
@@ -164,29 +198,29 @@ setInterval(GetClock,1000);
 		<div class="container">
 			<div class="row no-gutters d-flex">
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
-					<div class="media block-6 services d-flex">
-						<div class="icon justify-content-center align-items-center d-flex"><span class="fa fa-envelope"></span></div>
+					<div class="media block-6 services d-flex" style="width:100%">
+						<div class="icon justify-content-center align-items-center d-flex"><span class="icon-power" style="padding-top:10px;"></span></div>
 						<div class="media-body pl-4">
-							<h3 class="heading mb-3">Feedback</h3>
-							<p>We welcome your comments and suggestions</p>
+							<h3 class="heading mb-3">Energy Conservation</h3>
+							
 						</div>
 					</div>      
 				</div>
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
-					<div class="media block-6 services services-2 d-flex">
-						<div class="icon justify-content-center align-items-center d-flex"><span class="fa fa-child"></span></div>
+					<div class="media block-6 services services-2 d-flex" style="width:100%">
+						<div class="icon justify-content-center align-items-center d-flex"><span class="icon-solar" style="padding-top:10px;"></span></div>
 						<div class="media-body pl-4">
-							<h3 class="heading mb-3">RTI</h3>
-							<p>Right to Information ACT 2005</p>
+							<h3 class="heading mb-3">Solar<br>Energy</h3>
+							
 						</div>
 					</div>      
 				</div>
 				<div class="col-lg-4 d-flex align-self-stretch ftco-animate">
-					<div class="media block-6 services d-flex">
-						<div class="icon justify-content-center align-items-center d-flex"><span class="fa fa-user"></span></div>
+					<div class="media block-6 services d-flex" style="width:100%">
+						<div class="icon justify-content-center align-items-center d-flex"><span class="icon-electriccar1" style="padding-top:10px;"></span></div>
 						<div class="media-body pl-4">
-							<h3 class="heading mb-3">Vendor</h3>
-							<p>Vendor Registration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+							<h3 class="heading mb-3">Electric<br>Vehicles</h3>
+							
 						</div>
 					</div>      
 				</div>
@@ -202,7 +236,14 @@ setInterval(GetClock,1000);
 				<h5 class="card-title">News & Press Release</h5>
   <div class="card-body">
     
-    <p class="card-text"> </p>
+    <p class="card-text"> 
+     <marquee direction="up" height="150px" onMouseOver="this.stop()" onMouseOut="this.start()" scrolldelay="200">
+	<ul class="marq">
+    <li> <img src="images/new.gif"  alt=""/> 21st National Certification Examination for Energy Managers and Energy Auditors on 27th & 28th March, 2021 (Saturday and Sunday).</li>
+    <li> <img src="images/new.gif"  alt=""/> TSREDCO Received Second Prize in 30th National Energy Conservation Award 2020, by Bureau of Energy Efficiency, Ministry of Power, Government of India</li>
+    </ul>
+    </marquee>
+	</p>
    
   </div>
 </div>	
@@ -222,7 +263,15 @@ setInterval(GetClock,1000);
 				<h5 class="card-title">EC Awards</h5>
   <div class="card-body">
     
-    <p class="card-text"> </p>
+    <p class="card-text">
+    <marquee direction="up" height="150px" onMouseOver="this.stop()" onMouseOut="this.start()" scrolldelay="200">
+    <ul class="marq">
+    <li> <img src="images/new.gif"  alt=""/> Telangana State Energy Conservation Awards - 2020 (TSECA -2020)</li>
+    <li>Telangana State Energy Conservation Awards-2019 (TSECA-2019)</li>
+    <li>Telangana State Energy Conservation Awards - 2018 (TSECA-2018)</li>
+    </ul>
+    </marquee>
+     </p>
    
   </div>
 </div>		
@@ -233,8 +282,212 @@ setInterval(GetClock,1000);
 	</section>
 
 
+<!--
+<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<span class="subheading">Our Team</span>
+					<h2 class="mb-4">Our Team</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-1.jpg);">
+								<div class="box">
+									<h2>Ryan Anderson</h2>
+									<p>Head Engineer</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-1.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Ryan Anderson <span class="position">Head Engineer</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-2.jpg);">
+								<div class="box">
+									<h2>Greg Washer</h2>
+									<p>Head Engineer</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-2.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Greg Washer<span class="position">Head Engineer</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-3.jpg);">
+								<div class="box">
+									<h2>Tony Henderson</h2>
+									<p>Ass. Engineer</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-3.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Tony Henderson <span class="position">Ass. Engineer</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-4.jpg);">
+								<div class="box">
+									<h2>Jack Smith</h2>
+									<p>Architect</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-4.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Jack Smith <span class="position">Architect</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-5.jpg);">
+								<div class="box">
+									<h2>Ryan Anderson</h2>
+									<p>President</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-5.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Ryan Anderson <span class="position">President</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-6.jpg);">
+								<div class="box">
+									<h2>Greg Washer</h2>
+									<p>Chief Executive Officer</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-6.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Greg Washer<span class="position">Chief Executive Officer</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-7.jpg);">
+								<div class="box">
+									<h2>Tony Henderson</h2>
+									<p>Contractor Operation Head</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-7.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Tony Henderson <span class="position">Contractor Operation Head</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="block-2 ftco-animate">
+						<div class="flipper">
+							<div class="front" style="background-image: url(/images/team-8.jpg);">
+								<div class="box">
+									<h2>Jack Smith</h2>
+									<p>Chief Financial Officer</p>
+								</div>
+							</div>
+							<div class="back">
+								<!-- back content 
+								<blockquote>
+									<p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+								</blockquote>
+								<div class="author d-flex">
+									<div class="image align-self-center">
+										<img src="images/team-8.jpg" alt="">
+									</div>
+									<div class="name align-self-center ml-3">Jack Smith <span class="position">Chief Financial Officer</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>-->
 
 	
 
@@ -297,7 +550,7 @@ setInterval(GetClock,1000);
 		<div class="container mb-5 pb-4">
 			<div class="row">
 			
-				<div class="col-lg-8 col-md-6">
+				<div class="col-lg-5 col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">Links</h2>
 						<div class="d-flex">
@@ -315,8 +568,24 @@ setInterval(GetClock,1000);
 				</div>
 
 				
+				<div class="col-lg-4 col-md-3">
+					<div class="ftco-footer-widget">
+						
+						<div class="d-flex">
+							<ul class="list-unstyled mr-md-6">
+						
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Give us your feedback<br><small>We welcome your comments and suggestions</small></a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Vendor<br><small>Vendor Registration</small></a></li>
+								<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>RTI<br><small>Right to Information ACT 2005</small></a></li>
+								
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+				
 
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<div class="ftco-footer-widget">
 						<h2 class="ftco-heading-2">TSREDCO</h2>
 						<div class="block-23 mb-3">
