@@ -32,10 +32,134 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<link rel="stylesheet" href="sticky/mystickyelements-front.css" media="all">
+
+<script>
+$(document).ready(function(){
+  $("#element-contact-close").modal("show");
+    
+  $("#myBtn").click(function(){
+    $("#element-contact-close").modal("hide");
+  });
+  
+  
+});
+</script>
+<script>
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}
+</script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body>
+<div class="mystickyelements-fixed mystickyelements-position-left mystickyelements-position-screen-center mystickyelements-position-mobile-left mystickyelements-on-hover mystickyelements-size-medium mystickyelements-mobile-size-medium mystickyelements-entry-effect-slide-in mystickyelements-templates-default entry-effect" style="transition: all 0s ease 0s;">
+				<div class="mystickyelement-lists-wrap">
+					<ul class="mystickyelements-lists mysticky">
+													<li class="mystickyelements-minimize ">
+								<span class="mystickyelements-minimize minimize-position-left minimize-position-mobile-left" style="background: #000000">
+								←								</span>
+							</li>
+						
+						
+							<li id="mystickyelements-contact-form" class="mystickyelements-contact-form  element-desktop-on element-mobile-on element-contact-active">
+																<span class="mystickyelements-social-icon " style="background-color: #7761DF; color: #FFFFFF;"><i class="fa fa-envelope"></i>Contact Us</span>
+
+
+																<div class="element-contact-form" style="top: -56px;">
+																		<h3 style="color: #7761DF;">
+										Contact Form										<a onclick="hide('mystickyelement-lists-wrap')" href="" class="element-contact-close"><i class="fa fa-times"></i></a>
+									</h3>
+
+									<form id="contact-form" method="post" action="contact.php" role="form" style="margin:0 auto;">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_name" style="color:#000;">Name <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                             <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_lastname" style="color:#000;">Phone <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Phone *" required data-error="Phone Number is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                           </div>
+                           <div class="row">
+                           
+                           </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_email" style="color:#000;">Email <span style="color:#ed4b4b;">*</span></label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message" style="color:#000;">Message <span style="color:#ed4b4b;">*</span></label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="text-align:center;">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </form>
+								</div>
+							</li>
+														<li id="mystickyelements-social-whatsapp" class="mystickyelements-social-whatsapp  element-desktop-on element-mobile-on">
+																			<style>
+																					</style>
+																			<span class="mystickyelements-social-icon social-whatsapp social-" style="background: #26D367">
+																				<a href="https://api.whatsapp.com/send?phone=+91 9703555228" target="_blank" rel="noopener">
+																					<i class="fab fa-whatsapp"></i>
+																				</a>
+																			</span>
+					<span class="mystickyelements-social-text " style="background: #26D367;">
+						<a href="https://api.whatsapp.com/send?phone=+91 9703555228" target="_blank" rel="noopener">
+																						WhatsApp																					</a>
+																		</span>
+																</li>
+
+															<li id="mystickyelements-social-phone" class="mystickyelements-social-phone  element-desktop-on element-mobile-on">
+																			<style>
+																					</style>
+																			<span class="mystickyelements-social-icon social-phone social-" style="background: rgb(38, 211, 124); border-bottom-right-radius: 10px;">
+																				<a href="tel:+91 9703555228">
+																					<i class="fa fa-phone fa-rotate-90"></i>
+																				</a>
+																			</span>
+																	<span class="mystickyelements-social-text " style="background: #26D37C;">
+																				<a href="tel:+91 9703555228">
+																						Phone																					</a>
+																		</span>
+																</li>
+
+												</ul>					
+				</div>
+            </div>
 
     <!-- Start Main Top -->
      <div class="main-top">
@@ -51,17 +175,8 @@
                                 <li>
                                     <i class="fab fa-opencart"></i> Face Mask
                                 </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Face Shields
-                                </li>
                                
-                                <li>
-                                    <i class="fab fa-opencart"></i> Personal Protection Equipment Kit (PPE Kit)
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Reinforced
-Gown
-                                </li>
+                                
                                 <li>
                                     <i class="fab fa-opencart"></i> Poly Bags High Clarity
                                 </li>
@@ -76,7 +191,7 @@ Gown
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +1(519) 962 9135</a></p>
+                        <p>Call US :- <a href="#"> +91 9703 555 228</a> | <a href="#"> +91 9885 666 656</a></p>
                     </div>
                     <div class="our-link">
                        <ul>
@@ -114,15 +229,15 @@ Gown
                             <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Products</a>
                             <ul class="dropdown-menu">
                                <li><a href="facemask.html">Face&nbsp;Masks</a></li>
-											<li><a href="faceshield.html">Face&nbsp;Shields</a></li>
-											<li><a href="spray.html">Multipurpose&nbsp;Disinfectant&nbsp;Spray</a></li>
-											<li><a href="goggles.html">Eye&nbsp;Safety&nbsp;Goggles</a></li>
-											<li><a href="#">PPE&nbsp;Kit&nbsp;&amp;&nbsp;Non-&nbsp;Woven&nbsp;Gown</a></li>
-											<li><a href="#">Knee&nbsp;Leggings&nbsp;&amp;&nbsp;Shoe&nbsp;Cover</a></li>
-											<li><a href="#">Hand&nbsp;Gloves</a></li>
-											<li><a href="#">Disposable&nbsp;Head&nbsp;Cover</a></li>
-											<li><a href="#">Poly&nbsp;Bags</a></li>
-											<li><a href="#">Paper&nbsp;Bags</a></li>
+											
+											
+											
+											
+											<li><a href="cover.html">Knee&nbsp;Leggings&nbsp;&amp;&nbsp;Shoe&nbsp;Cover</a></li>
+											<li><a href="gloves.html">Hand&nbsp;Gloves</a></li>
+											<li><a href="head.html">Disposable&nbsp;Head&nbsp;Cover</a></li>
+											<li><a href="poly.html">Poly&nbsp;Bags</a></li>
+											<li><a href="paper.html">Paper&nbsp;Bags</a></li>
                             </ul>
                         </li>
                
@@ -224,7 +339,7 @@ Gown
 
                                 <div class="add-to-btn">
                                     <div class="add-comp">
-                                        <a class="btn hvr-hover" href="#">Contact Us</a>
+                                        <a class="btn hvr-hover" href="contact-us.html">Contact Us</a>
                                         
                                     </div>
                                     <div class="share-bar">
@@ -256,7 +371,7 @@ Gown
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                     
                                 </ul>
-                                <a class="cart" href="#">Details</a>
+                                <a class="cart" href="glove1.html">Details</a>
                             </div>
                         </div>
                         <div class="why-text">
@@ -275,7 +390,7 @@ Gown
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                    
                                 </ul>
-                                <a class="cart" href="#">Details</a>
+                                <a class="cart" href="reusable.html">Details</a>
                             </div>
                         </div>
                         <div class="why-text">
@@ -284,33 +399,12 @@ Gown
                         </div>
                     </div>
                         </div>
-                        <div class="item">
-                           <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <div class="type-lb">
-                                <p class="sale">New</p>
-                            </div>
-                            <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                   
-                                </ul>
-                                <a class="cart" href="#">Details</a>
-                            </div>
-                        </div>
-                        <div class="why-text">
-                            <h4>PPE Kit</h4>
-                           
-                        </div>
-                    </div>
-                        </div>
+                      
                         <div class="item">
                             <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale">New</p>
+                                
                             </div>
                             <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
                             <div class="mask-icon">
@@ -319,7 +413,7 @@ Gown
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                    
                                 </ul>
-                                <a class="cart" href="#">Details</a>
+                                <a class="cart" href="details.html">Details</a>
                             </div>
                         </div>
                         <div class="why-text">
@@ -339,7 +433,7 @@ Gown
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                     
                                 </ul>
-                                <a class="cart" href="#">Details</a>
+                                <a class="cart" href="glove1.html">Details</a>
                             </div>
                         </div>
                         <div class="why-text">
@@ -358,7 +452,7 @@ Gown
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                    
                                 </ul>
-                                <a class="cart" href="#">Details</a>
+                                <a class="cart" href="reusable.html">Details</a>
                             </div>
                         </div>
                         <div class="why-text">
@@ -371,7 +465,7 @@ Gown
                            <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">
-                                <p class="sale">New</p>
+                                
                             </div>
                             <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
                             <div class="mask-icon">
@@ -380,37 +474,16 @@ Gown
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                    
                                 </ul>
-                                <a class="cart" href="#">Details</a>
+                                <a class="cart" href="cover2.html">Details</a>
                             </div>
                         </div>
                         <div class="why-text">
-                            <h4>PPE Kit</h4>
+                            <h4>Disposable Shoe Cover</h4>
                            
                         </div>
                     </div>
                         </div>
-                        <div class="item">
-                            <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <div class="type-lb">
-                                <p class="sale">New</p>
-                            </div>
-                            <img src="images/img-pro-04.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                   
-                                </ul>
-                                <a class="cart" href="#">Details</a>
-                            </div>
-                        </div>
-                        <div class="why-text">
-                            <h4>3 PLY MASK</h4>
-                            
-                        </div>
-                    </div>
-                    </div>
+                       
                 </div>
             </div>
 
@@ -425,7 +498,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-01.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="head1.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -433,7 +506,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-02.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="details.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -441,7 +514,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-03.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="reusable.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -449,7 +522,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-04.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="poly.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -457,7 +530,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-05.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="kn95.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -465,7 +538,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-06.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="paper.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -473,7 +546,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-07.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="cover2.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -481,7 +554,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-08.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="glove3.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -489,7 +562,15 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-09.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="clothmask.html"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+			<div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-10.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="glove1.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -497,7 +578,7 @@ Gown
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-05.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fa fa-eye"></i></a>
+                        <a href="kn95.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -514,7 +595,7 @@ Gown
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About Us</h4>
-                            <p>Aaspire products Aap is a premier trading company that started with young entrepreneurs having more than 20 years of diverse industry experience.
+                            <p>Aaspire products (Aap) is a premier trading company that started with young entrepreneurs having more than 20 years of diverse industry experience.
                                 </p>
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
@@ -528,10 +609,10 @@ Gown
                         <div class="footer-link">
                             <h4>Quick Links</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">PPE Kit</a></li>
-                                <li><a href="#">Face Mask</a></li>
-                                <li><a href="#">Gloves</a></li>
+                                <li><a href="whoweare.html">Who We Are</a></li>
+                                <li><a href="gloves.html">Hand Gloves</a></li>
+                                <li><a href="facemask.html">Face Mask</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
                                
                             </ul>
                         </div>
@@ -541,17 +622,19 @@ Gown
                             <h4>Contact Us</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: 450 Victoria Avenue, Apt 812, <br>Windsor, Ontario, N9A 6T7, Canada </p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: 500 Ouellette avenue, Suite 301, <br>Windsor N9A 1B3 Ontario, Canada </p>
+                                </li>
+								<li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
                                 </li>
 								 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College - 533003. <br>Kakinada-AP India</p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
+                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College <br> 533003, Kakinada-AP India</p>
                                 </li>
 								<li>
                                     <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 9703 555 228</a></p>
+									<p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-9885666656">+91 9885 666 656</a></p>
                                 </li>
+								
                                 <li>
                                     <p><i class="fas fa-envelope"></i>Email: <a href="mailto:sales@aaspirepro.com">sales@aaspirepro.com</a></p>
                                 </li>
@@ -585,9 +668,25 @@ Gown
     <script src="js/isotope.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/baguetteBox.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
+    
+    <script src="jquery.min.js"  crossorigin="anonymous"></script><script src="validator.min.js"  crossorigin="anonymous"></script><script src="contact.js"></script>
     <script src="js/custom.js"></script>
+		<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+91 9703555228", // WhatsApp number
+            sms: "+91 9703555228", // Sms phone number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,sms", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 </body>
 
 </html>

@@ -33,9 +33,32 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+<script>
+$(document).ready(function(){
+  $("#element-contact-close").modal("show");
+    
+  $("#myBtn").click(function(){
+    $("#element-contact-close").modal("hide");
+  });
+  
+  
+});
+</script>
+<script>
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}
+</script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
+
 
     <!-- Start Main Top -->
    <div class="main-top">
@@ -51,17 +74,8 @@
                                 <li>
                                     <i class="fab fa-opencart"></i> Face Mask
                                 </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Face Shields
-                                </li>
-                               
-                                <li>
-                                    <i class="fab fa-opencart"></i> Personal Protection Equipment Kit (PPE Kit)
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Reinforced
-Gown
-                                </li>
+                                
+                                
                                 <li>
                                     <i class="fab fa-opencart"></i> Poly Bags High Clarity
                                 </li>
@@ -76,7 +90,7 @@ Gown
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +1(519) 962 9135</a></p>
+                        <p>Call US :- <a href="#"> +91 9703 555 228</a> | <a href="#"> +91 9885 666 656</a></p>
                     </div>
                     <div class="our-link">
                        <ul>
@@ -114,15 +128,15 @@ Gown
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
                             <ul class="dropdown-menu">
                                <li><a href="facemask.html">Face&nbsp;Masks</a></li>
-											<li><a href="faceshield.html">Face&nbsp;Shields</a></li>
-											<li><a href="spray.html">Multipurpose&nbsp;Disinfectant&nbsp;Spray</a></li>
-											<li><a href="goggles.html">Eye&nbsp;Safety&nbsp;Goggles</a></li>
-											<li><a href="#">PPE&nbsp;Kit&nbsp;&amp;&nbsp;Non-&nbsp;Woven&nbsp;Gown</a></li>
-											<li><a href="#">Knee&nbsp;Leggings&nbsp;&amp;&nbsp;Shoe&nbsp;Cover</a></li>
-											<li><a href="#">Hand&nbsp;Gloves</a></li>
-											<li><a href="#">Disposable&nbsp;Head&nbsp;Cover</a></li>
-											<li><a href="#">Poly&nbsp;Bags</a></li>
-											<li><a href="#">Paper&nbsp;Bags</a></li>
+											
+											
+											
+											
+											<li><a href="cover.html">Knee&nbsp;Leggings&nbsp;&amp;&nbsp;Shoe&nbsp;Cover</a></li>
+											<li><a href="gloves.html">Hand&nbsp;Gloves</a></li>
+											<li><a href="head.html">Disposable&nbsp;Head&nbsp;Cover</a></li>
+											<li><a href="poly.html">Poly&nbsp;Bags</a></li>
+											<li><a href="paper.html">Paper&nbsp;Bags</a></li>
                             </ul>
                         </li>
                
@@ -177,16 +191,13 @@ Gown
                             </div>
                             <div class="list-group list-group-collapse list-group-sm list-group-tree" id="list-group-men" data-children=".sub-men">
                             
-								<a href="details.html" class="list-group-item list-group-item-action active">Face&nbsp;Masks</a>
-								<a href="faceshield.html" class="list-group-item list-group-item-action">Face&nbsp;Shields</a>
-							 <a href="spray.html" class="list-group-item list-group-item-action">Multipurpose&nbsp;Disinfectant&nbsp;Spray</a>
-								<a href="goggles.html" class="list-group-item list-group-item-action">Eye&nbsp;Safety&nbsp;Goggles</a>
-								<a href="#" class="list-group-item list-group-item-action">PPE&nbsp;Kit&nbsp;&amp;&nbsp;Non-&nbsp;Woven&nbsp;Gown</a>
-								<a href="#" class="list-group-item list-group-item-action">Knee&nbsp;Leggings&nbsp;&amp;&nbsp;Shoe&nbsp;Cover</a>
-								<a href="#" class="list-group-item list-group-item-action">Hand&nbsp;Gloves</a>
-								<a href="#" class="list-group-item list-group-item-action">Disposable&nbsp;Head&nbsp;Cover</a>
-								<a href="#" class="list-group-item list-group-item-action">Poly&nbsp;Bags</a>
-								<a href="#" class="list-group-item list-group-item-action">Paper&nbsp;Bags</a>
+								<a href="facemask.html" class="list-group-item list-group-item-action active">Face&nbsp;Masks</a>
+							
+								<a href="cover.html" class="list-group-item list-group-item-action">Knee&nbsp;Leggings&nbsp;&amp;&nbsp;Shoe&nbsp;Cover</a>
+								<a href="gloves.html" class="list-group-item list-group-item-action">Hand&nbsp;Gloves</a>
+								<a href="head.html" class="list-group-item list-group-item-action">Disposable&nbsp;Head&nbsp;Cover</a>
+								<a href="poly.html" class="list-group-item list-group-item-action">Poly&nbsp;Bags</a>
+								<a href="paper.html" class="list-group-item list-group-item-action">Paper&nbsp;Bags</a>
                             </ul>
                             </div>
                         </div>
@@ -210,7 +221,7 @@ Gown
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        
                                                     </div>
                                                     <img src="images/3ply.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -231,7 +242,7 @@ Gown
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        
                                                     </div>
                                                     <img src="images/clothm.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -253,7 +264,7 @@ Gown
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        
                                                     </div>
                                                     <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -276,7 +287,7 @@ face mask</h4>
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
                                                     <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                        
                                                     </div>
                                                     <img src="images/kn95.jpg" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
@@ -306,7 +317,7 @@ face mask</h4>
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
                                                         <div class="type-lb">
-                                                            <p class="new">New</p>
+                                                            
                                                         </div>
                                                         <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
                                                         <div class="mask-icon">
@@ -328,7 +339,7 @@ face mask</h4>
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
                                                         <div class="type-lb">
-                                                            <p class="new">New</p>
+                                                            
                                                         </div>
                                                         <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
                                                         <div class="mask-icon">
@@ -350,7 +361,7 @@ face mask</h4>
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
                                                         <div class="type-lb">
-                                                            <p class="new">New</p>
+                                                            
                                                         </div>
                                                         <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
                                                         <div class="mask-icon">
@@ -384,7 +395,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-01.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="head1.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -392,7 +403,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-02.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="details.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -400,7 +411,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-03.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="reusable.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -408,7 +419,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-04.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="poly.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -416,7 +427,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-05.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="kn95.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -424,7 +435,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-06.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="paper.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -432,7 +443,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-07.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="cover2.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -440,7 +451,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-08.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="glove3.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -448,7 +459,15 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-09.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="clothmask.html"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+			<div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-10.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="glove1.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -456,7 +475,7 @@ face mask</h4>
                 <div class="ins-inner-box">
                     <img src="images/instagram-img-05.jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="kn95.html"><i class="fa fa-eye"></i></a>
                     </div>
                 </div>
             </div>
@@ -473,7 +492,7 @@ face mask</h4>
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About Us</h4>
-                            <p>Aaspire products Aap is a premier trading company that started with young entrepreneurs having more than 20 years of diverse industry experience.
+                            <p>Aaspire products (Aap) is a premier trading company that started with young entrepreneurs having more than 20 years of diverse industry experience.
                                 </p>
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
@@ -487,10 +506,10 @@ face mask</h4>
                         <div class="footer-link">
                             <h4>Quick Links</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">PPE Kit</a></li>
-                                <li><a href="#">Face Mask</a></li>
-                                <li><a href="#">Gloves</a></li>
+                                <li><a href="whoweare.html">Who We Are</a></li>
+                                <li><a href="gloves.html">Hand Gloves</a></li>
+                                <li><a href="facemask.html">Face Mask</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
                                
                             </ul>
                         </div>
@@ -500,17 +519,19 @@ face mask</h4>
                             <h4>Contact Us</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: 450 Victoria Avenue, Apt 812, <br>Windsor, Ontario, N9A 6T7, Canada </p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: 500 Ouellette avenue, Suite 301, <br>Windsor N9A 1B3 Ontario, Canada </p>
+                                </li>
+								<li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
                                 </li>
 								 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College - 533003. <br>Kakinada-AP India</p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1(519) 962 9135</a></p>
+                                    <p><i class="fas fa-map-marker-alt"></i>D No-67-14-1, OPP SRR ITI College <br> 533003, Kakinada-AP India</p>
                                 </li>
 								<li>
                                     <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91 9703 555 228</a></p>
+									<p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-9885666656">+91 9885 666 656</a></p>
                                 </li>
+								
                                 <li>
                                     <p><i class="fas fa-envelope"></i>Email: <a href="mailto:sales@aaspirepro.com">sales@aaspirepro.com</a></p>
                                 </li>
@@ -546,9 +567,24 @@ face mask</h4>
     <script src="js/baguetteBox.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
+   
     <script src="js/custom.js"></script>
+		<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+91 9703555228", // WhatsApp number
+            sms: "+91 9703555228", // Sms phone number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,sms", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 </body>
 
 </html>
