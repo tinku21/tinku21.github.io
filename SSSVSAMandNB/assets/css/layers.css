@@ -40,7 +40,7 @@ img{
 
 
 .top_nav{
-	background-color:#fd2609;
+	background-color:#ef8e38;
 	padding:10px 0px;
 	overflow:hidden;
 }
@@ -164,7 +164,7 @@ nav{
 }
 
 .menu ul li a:hover{
-	color:#fd2609;
+	color:#ef8e38;
 	transition:0.5s;
 }
 
@@ -188,7 +188,7 @@ nav{
     position:absolute;
     content:"\f0c9";
     font-size:26px;
-    color:#fd2609;
+    color:#ef8e38;
     font-family:fontawesome;
 }
 
@@ -265,7 +265,7 @@ nav{
     -o-transition: height .4s;
     transition: height .4s;
     height: 0;
-    background:#fd2609;
+    background:#ef8e38;
     width: 100%;
     bottom: 0;
     z-index: 1;
@@ -326,7 +326,7 @@ nav{
 }
 
 ._hg_we_fe h2 span{
-	color:#fd2609;
+	color:#ef8e38;
 	font-weight:bold;
 	margin-left:10px;
 }
@@ -336,7 +336,7 @@ nav{
 	content:"";
 	width:7%;
 	height:3px;
-	background:#fd2609;
+	background:#ef8e38;
 	bottom:0;
 	left:0;
 }
@@ -386,7 +386,7 @@ nav{
 
 ._oi_yt_we .accordion .card{
 	margin: 10px 0px;
-    border: 1px solid#fd2609;
+    border: 1px solid#ef8e38;
     border-radius: 0px;
     background:transparent;
 }
@@ -413,7 +413,7 @@ nav{
     position: absolute;
     content: "\f067";
     font-size: 16px;
-    color: #fd2609;
+    color: #ef8e38;
     font-family: fontawesome;
     right: 30px;
 }
@@ -451,7 +451,7 @@ nav{
     content: "\f1cd";
     font-family: fontawesome;
     font-size: 30px;
-    color: #fd2609;
+    color: #ef8e38;
     height: 100px;
     width: 100px;
     background: #dfdfdf;
@@ -483,10 +483,10 @@ nav{
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    /*box-shadow: inset 0 0 1px 7px #fd2609;
-    -webkit-box-shadow: inset 0 0 1px 10px #fd2609;
-    -moz-box-shadow: inset 0 0 1px 10px #fd2609;
-    box-shadow: inset 0 0 1px 10px #fd2609;*/
+    /*box-shadow: inset 0 0 1px 7px #ef8e38;
+    -webkit-box-shadow: inset 0 0 1px 10px #ef8e38;
+    -moz-box-shadow: inset 0 0 1px 10px #ef8e38;
+    box-shadow: inset 0 0 1px 10px #ef8e38;*/
     box-shadow:none;
 
 }
@@ -740,7 +740,7 @@ nav{
 }
 
 ._he_w ol li{
-	color:#fd2609;
+	color:#ef8e38;
 	font-size:14px;
 	display:inline-block;
 	width:100%;
@@ -750,7 +750,7 @@ nav{
 ._he_w ol li ._mn_cd_xs{
 	margin:0px;
 	left:10%;
-	color:#fd2609;
+	color:#ef8e38;
 	font-size:14px;
 	font-weight:400;
 	position:relative;
@@ -853,7 +853,7 @@ nav{
 	border-radius:50%;
 	line-height:30px;
 	justify-content:center;
-	border:1px solid#fd2609;
+	border:1px solid#ef8e38;
 	margin:10px 8px 10px 0px;
 }
 
@@ -911,7 +911,7 @@ nav{
 .owl-carousel .owl-nav button.owl-prev,.owl-carousel .owl-nav button.owl-next{
 	font-size:30px;
 	font-weight:600;
-	color:#fd2609;
+	color:#ef8e38;
 	margin:0px 20px;
 }
 
@@ -959,7 +959,7 @@ button:focus {
     font-family: fontawesome;
     font-size: 27px;
     font-weight:400;
-    color: #fd2609;
+    color: #ef8e38;
     left: -50px;
     display: flex;
     align-items: center;
@@ -999,7 +999,7 @@ button:focus {
     display: inline-block;
     z-index: 9;
     position: relative;
-    background: #fd2609;
+    background: #ef8e38;
     color: #fff;
     text-align: center;
     border-radius: 20px;
@@ -1159,7 +1159,7 @@ button:focus {
 }
 
 ._jh_er_xs p a{
-	color:#fd2609;
+	color:#ef8e38;
 	font-weight:600;
 }
 
@@ -1298,7 +1298,7 @@ button:focus {
 }
 
 ._cd_er_ad ol li i{
-	color:#fd2609;
+	color:#ef8e38;
 	font-size:30px;
 	transition:1s;
 }
@@ -1409,7 +1409,7 @@ button:focus {
 
 	.menu{
 		position:absolute;
-		top:90px;
+		top:54px;
 		left:0;
 		width:100%;
 		height:100vh;
