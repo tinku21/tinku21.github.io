@@ -167,7 +167,10 @@ nav{
 	color:#ef8e38;
 	transition:0.5s;
 }
-
+.menu ul li a.active{
+	color:#ef8e38;
+	transition:0.5s;
+}
 ._ol_ul_hy{
 	float:right;
 }
@@ -1254,7 +1257,7 @@ button:focus {
 ._cd_er_ad{
 	display:block;
 	margin:20px 0px;
-	text-align:center;	
+
 }
 
 ._cd_er_ad ol li {
