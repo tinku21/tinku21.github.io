@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -164,11 +167,12 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(25, 25, 25, 0.95);
   transition: all 0.5s;
   z-index: 997;
-  height: 70px;
+  height: 85px;
 }
 
 #header.fixed-top {
-  background: #191919;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 60%);
 }
 
 #header .logo {
@@ -219,16 +223,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
-.navbar a, .navbar a:focus, .navbar a:hover {
+.navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 15px 24px 15px;
-  font-size: 14px;
-  color: #fff;
+  padding: 31px 15px 27px 15px;
+  font-size: 18px;
+  color: #000;
+  font-style: normal;
   white-space: nowrap;
   transition: 0.3s;
+  font-family: "Unica One", sans-serif;
+  text-transform:uppercase;
+  font-weight:400;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
+ .navbar a:hover {
+	 color: #fff;}
 
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -238,6 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   background: #689ac9;
+  color:#fff;
 }
 
 .navbar .dropdown ul {
