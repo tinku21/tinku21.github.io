@@ -342,16 +342,17 @@ ol {
 }
 
 .header__logo {
-	padding: 8px 0 16px;
+	padding: 3px 0 8px;
 	position: relative;
 	z-index: 1;
+	padding-right:10px;
 }
 
 .header__logo::before {
 	position: absolute;
 	left: -400px;
 	top: 0;
-	width: 580px;
+	width: 590px;
 	height: 100%;
 	background: #f3bd00;
 	content: "";
@@ -532,13 +533,13 @@ ol {
 .hero__text h5 {
 	color: #ffffff;
 	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	
+	letter-spacing: 1px;
 	margin-bottom: 20px;
 }
 
 .hero__text h2 {
-	font-size: 42px;
+	font-size: 28px;
 	font-weight: 800;
 	text-transform: uppercase;
 	font-style: italic;
