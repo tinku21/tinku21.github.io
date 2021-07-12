@@ -30,7 +30,7 @@
 
 /* Template default CSS
 /*----------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 html,
 body {
 	height: 100%;
@@ -121,7 +121,7 @@ ol {
 }
 
 .section-title span {
-	color: #f3bd00;
+	color: #0c2b4b;
 	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -366,7 +366,7 @@ ol {
 }
 
 .header__menu {
-	padding: 28px 0px;
+	padding: 23px 0px;
 }
 
 .header__menu ul li {
@@ -416,14 +416,15 @@ ol {
 }
 
 .header__menu ul li .dropdown li a {
-	font-size: 14px;
+	font-size: 16px;
 	color: #0c2b4b;
 	font-weight: 400;
 	padding: 8px 20px;
 	text-transform: capitalize;
+	
 }
 .header__menu ul li .dropdown li a:hover {
-	font-size: 14px;
+	font-size: 16px;
 	color: #ffffff;
 	background-color:#0c2b4b;
 	font-weight: 400;
@@ -435,13 +436,14 @@ ol {
 }
 
 .header__menu ul li a {
-	font-size: 14px;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: #ffffff;
 	display: block;
 	padding: 6px 0;
 	position: relative;
+	font-family: "Unica One", sans-serif;
 }
 
 .header__menu ul li a:after {
@@ -1164,10 +1166,10 @@ ol {
 -----------------------*/
 
 .about-hero {
-	padding-top: 170px;
-	padding-bottom: 130px;
+	padding-top: 120px;
+	padding-bottom: 90px;
 	margin-top: -48px;
-	height: 560px;
+	height: 450px;
 }
 
 .about__hero__text .section-title {
@@ -1284,7 +1286,7 @@ ol {
 }
 
 .feature__text {
-	padding-top: 80px;
+	padding-top: 0px;
 }
 
 .feature__text .section-title {
