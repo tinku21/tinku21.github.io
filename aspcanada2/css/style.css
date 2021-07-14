@@ -1056,7 +1056,7 @@ ol {
 }
 
 .footer__widget h5 {
-	color: #ffffff;
+	color: #f3bd00;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 24px;
@@ -2940,8 +2940,18 @@ ol {
 	font-weight:700;
 }
 .brochure{
-	background-color:#0c2b4b;
+	background-color:#f3bd00 !important;
 	padding:3px 12px 5px 12px;
 	border-radius:10px;
 	font-size:14px !important;
+	color:#0c2b4b !important;
+	font-weight:600;
+}
+.brochure:hover{
+	background-color:#0c2b4b !important;
+	padding:3px 12px 5px 12px;
+	border-radius:10px;
+	font-size:14px !important;
+	color:#f3bd00 !important;
+	
 }
