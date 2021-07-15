@@ -32,6 +32,7 @@
 /*----------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 html,
 body {
 	height: 100%;
@@ -2929,11 +2930,11 @@ ol {
 
 .toptext{
 	background-color:#051322;
-	text-align:center;
+	text-align:right;
 	color:#fff;
 	padding:6px;
-	font-size: 21px;
-    font-family: 'Oswald', sans-serif;
+	font-size: 23px;
+    font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 0.5px;
 }
 .price{
@@ -2941,15 +2942,15 @@ ol {
 }
 .brochure{
 	background-color:#f3bd00 !important;
-	padding:3px 12px 5px 12px;
+	padding:5px 12px 5px 12px;
 	border-radius:10px;
 	font-size:14px !important;
 	color:#0c2b4b !important;
-	font-weight:600;
+	
 }
 .brochure:hover{
 	background-color:#0c2b4b !important;
-	padding:3px 12px 5px 12px;
+	padding:5px 12px 5px 12px;
 	border-radius:10px;
 	font-size:14px !important;
 	color:#f3bd00 !important;
