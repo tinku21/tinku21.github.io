@@ -1408,6 +1408,7 @@ button:focus {
 
 ._kj_qw_cd {
     padding: 10px 0px;
+	height:170px;
 }
 
 
@@ -1747,6 +1748,7 @@ button:focus {
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
 	text-shadow: 1px 1px 0 #212121, 1px 1px 2px rgba(206,89,55,0);
+	font-weight:bold;
 }
 .title{
 	color:#e3710c;
