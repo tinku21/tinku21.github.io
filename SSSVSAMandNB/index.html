@@ -29,6 +29,42 @@ border: 0px;
     font-size: 14px;
 
 }
+ ul li ul.dropdown {
+        min-width: 150px; /* Set width of the dropdown */
+        background: #fff;
+        display: none;
+        position: absolute;
+        z-index: 999;
+		top:50px;
+		
+        
+    }
+    ul li:hover ul.dropdown {
+        display: block; /* Display the dropdown */
+		
+    }
+    ul li ul.dropdown li {
+        display: block;
+		padding:0px;
+    }
+	 ul li ul.dropdown li:hover{
+        display: block;
+		
+		color:#fff !important;
+		cursor:pointer;
+    }
+	ul li ul.dropdown li a{
+	width:150px !important;}
+	 ul li ul.dropdown li a:hover{
+        display: block;
+		width:100% !important;
+		background-color:#ef8e38;
+		color:#fff;
+    }
+	
+	
+	
+
 	</style>
   </head>
   <body>
@@ -60,7 +96,18 @@ border: 0px;
                   <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <!--<li><a href="aboutus.html">About Us</a></li>-->
-                    <li><a href="#">Services</a></li>
+					<li><div class="dropdown">
+  <a href="#" class="dropbtn">Services</a>
+  <div class="dropdown-content">
+  <a href="annam.html">Anna Dhanam</a>
+    <a href="dhayana.html">Dhyana Mandir</a>
+    <a href="bathroom.html">Bathroom Toilets</a>
+    <a href="plantation.html">Plantation</a>
+	<a href="gosamrakshana.html">Go-Samrakshana</a>
+    
+  </div>
+</div></li>
+					
 					 <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="trustmembers.html">Trust Members</a></li>
                     <li><a href="contactus.html" >Contact Us</a></li>
@@ -95,7 +142,7 @@ border: 0px;
           <div class="carousel-item">
             <img src="assets/images/slide-02.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>old people of Nest Old Age Home</h5>
+              <h5>Old people of Nest Old Age Home</h5>
               
             </div>
           </div>
@@ -296,7 +343,6 @@ border: 0px;
               <div class="_cd_er_ad" style="text-align:center;">
               <img src="assets/images/home.png"  alt="" style="text-align:center;"/></br>
                 <b>To Aid and Establish Orphanages, Disabled and Old age homes</b>
-               
               </div>
             </div>
           </div>
