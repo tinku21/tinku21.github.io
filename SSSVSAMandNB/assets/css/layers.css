@@ -1371,9 +1371,9 @@ button:focus {
 	transition: all 0.3s ease;
 }
 
-._jk_rt_we:hover {
+/*._jk_rt_we:hover {
     transform: translateY(-15px);
-}
+}*/
 
 ._kl_er_we{
 	position:relative;
@@ -1408,7 +1408,7 @@ button:focus {
 
 ._kj_qw_cd {
     padding: 10px 0px;
-	height:170px;
+	
 }
 
 
