@@ -1815,7 +1815,7 @@ button:focus {
   display: none;
   position: absolute;
   background-color: #fff;
-  min-width: 180px;
+  min-width: 200px;
  
   z-index: 1;
 }
@@ -1837,5 +1837,3 @@ button:focus {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn :}	
 
-.btn-link {
-font-weight: 600 !important;}
