@@ -13,6 +13,10 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/layers.css" rel="stylesheet">
+	
+        <link rel="stylesheet" href="css/font-awesome.css">
+       
+        <link rel="stylesheet" href="galleryfiles/jquery.simplefilebrowser.css">
 <style>
 #vlb1lightbox{z-index:1000 !important;}
 </style>
@@ -91,7 +95,7 @@
 
     <!-- ====================================CONTACT>>>START==================================== -->
 
-<section id="aboutus" class="_ab_er_we">
+<section id="aboutus" class="_ab_er_we" style="margin-bottom:150px;">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -103,20 +107,9 @@
 
         <div class="row">
           <div class="col-lg-12 col-12">
-           <div id="vlightbox1">
-	<a class="vlightbox1" href="index_files/vlb_images1/1.jpg" title="1"><img src="index_files/vlb_thumbnails1/1.jpg" alt="1"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/10.jpg" title="10"><img src="index_files/vlb_thumbnails1/10.jpg" alt="10"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/11.jpg" title="11"><img src="index_files/vlb_thumbnails1/11.jpg" alt="11"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/2.jpg" title="2"><img src="index_files/vlb_thumbnails1/2.jpg" alt="2"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/3.jpg" title="3"><img src="index_files/vlb_thumbnails1/3.jpg" alt="3"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/4.jpg" title="4"><img src="index_files/vlb_thumbnails1/4.jpg" alt="4"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/5.jpg" title="5"><img src="index_files/vlb_thumbnails1/5.jpg" alt="5"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/6.jpg" title="6"><img src="index_files/vlb_thumbnails1/6.jpg" alt="6"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/7.jpg" title="7"><img src="index_files/vlb_thumbnails1/7.jpg" alt="7"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/8.jpg" title="8"><img src="index_files/vlb_thumbnails1/8.jpg" alt="8"/></a>
-<a class="vlightbox1" href="index_files/vlb_images1/9.jpg" title="9"><img src="index_files/vlb_thumbnails1/9.jpg" alt="9"/></a>
-
-	</div>
+            <div id="example1" class="sfb x32"><ul class="sfbBreadCrumbs"><li>root</li><li>Gallery</li></ul><div class="sfbContent icon"><ul><li data-name=".." data-type="folder"><i class="fa fa-folder"></i><span>..</span></li><li data-name="Disc One" data-type="folder"><i class="fa fa-folder"></i><span>Disc One</span></li><li data-name="Disc Two" data-type="folder"><i class="fa fa-folder"></i><span>Disc Two</span></li><li data-name="Disc Three" data-type="folder"><i class="fa fa-folder"></i><span>Disc Three</span></li></ul></div></div>
+                    <div id="select"></div>
+                    <p class="sep">&nbsp;</p>
 	
           </div>
 
@@ -149,12 +142,94 @@
     </section>
 
     <!-- ====================================FOOTER>>>END==================================== -->
+<script src="galleryfiles/jquery-1.11.1.min.js"></script>
+        <script src="galleryfiles/bootstrap.min.js"></script>
+        <script src="galleryfiles/jquery.simplefilebrowser.js"></script>
+        <script src="galleryfiles/musica.js"></script>
+        <script>
+            $().ready(function() {
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+                $("#example1").simpleFileBrowser({
+                    json: musica,
+                    path: '/Gallery',
+                    view: 'icon',
+                    select: false,
+                    breadcrumbs: true,
+                    onSelect: function (obj, file, folder, type) {
+                        $("#select").html("You select a "+type+" "+folder+'/'+file);
+                    },
+                    onOpen: function (obj,file, folder, type) {
+                        if (type=='file') {
+                            alert("Open file: "+folder+'/'+file);
+                        }
+                    }
+                });
+
+                $("input[name='view']").on("change", function () {
+                    $input = $(this);
+
+
+                    switch ($input.val()) {
+
+                        case 'icon_32':
+                            $("#example1").simpleFileBrowser("chgOption", {
+                                view: 'icon',
+                                size: '32',
+                            });
+                            $("#example1").simpleFileBrowser("redraw");
+                            break;
+
+                        case 'icon_22':
+                            $("#example1").simpleFileBrowser("chgOption", {
+                                view: 'icon',
+                                size: '22',
+                            });
+                            $("#example1").simpleFileBrowser("redraw");
+                            break;
+
+                        case 'icon_16':
+                            $("#example1").simpleFileBrowser("chgOption", {
+                                view: 'icon',
+                                size: '16',
+                            });
+                            $("#example1").simpleFileBrowser("redraw");
+                            break;
+
+                        case 'details':
+                            $("#example1").simpleFileBrowser("chgOption", {
+                                view: 'details',
+                                size: '31',
+                            });
+                            $("#example1").simpleFileBrowser("redraw");
+                            break;
+                    }
+                });
+
+
+                $("input[name='select']").on("change", function () {
+                    $input = $(this);
+
+                    $("#example1").simpleFileBrowser("chgOption", {
+                        select: ($input.val()=='1'?true:false)
+                    });
+
+                });
+
+                $("input[name='path']").on("change", function () {
+                    $input = $(this);
+
+                    $("#example1").simpleFileBrowser("chgOption", {
+                        path: $input.val()
+                    });
+                    $("#example1").simpleFileBrowser("redraw");
+
+                });
+            });
+
+        </script>
+   
     <script src="assets/js/owl.carousel.min.js"></script>
-<script src="index_files/vlb_engine/vlbdata1.js" type="text/javascript"></script>
-<script src="index_files/vlb_engine/visuallightbox.js" type="text/javascript"></script>
+
     <script>
       $(document).ready (function(){
         $('.menu-toggle').click(function(){
