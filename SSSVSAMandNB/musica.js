@@ -240,7 +240,7 @@ var musica = {
         {
             name: '01.jpg',
             type: 'jpg',
-			path: "../assets/images/kumarsai.png",
+			path: "assets/images/kumarsai.png",
         },
         {
             name: '02.jpg',
