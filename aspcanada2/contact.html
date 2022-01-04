@@ -1,389 +1,378 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Aspire products">
-    <meta name="keywords" content="Aspire products Ltd.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aspire products Ltd.</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-	<script type="text/javascript">
-
-
-        function SendMail() {
-            $('#success_message').hide();
-            $('#error_message').hide();
-            debugger
-           if ($('#txtemail').val()!='')
-           {
-               var text = 'Name:  ' + $('#txtName').val() + '<br>Phone: ' + $("#txtphone").val() + '<br>Email: ' + $("#txtemail").val() + '<br>' + $('#txtmessage').val();
-               //alert(text)
-              // let endpoint = 'https://localhost:44387/SendEmail?To=' + $('#txtemail').val() + '&Subject=' + $('#txtName').val() + '&Body=' + text;
-               let endpoint = 'https://apps-pt.mdcare.com/emailservice/SendEmail?To=TcNlD8YaZh&Subject=' + $('#txtName').val() + '&Body=' + text;
-                let apiKey = ''
-                $.ajax({
-                    url: endpoint,
-                    contentType: "application/json",
-                    dataType: 'json',
-                    "headers": {
-                        "accept": "application/json",
-                        "Access-Control-Allow-Origin": "*"
-                    },
-                    success: function (result) {
-                        $('#success_message').show();
-                        $("#txtphone").val("");
-                        $('#txtName').val('');
-                        $('#txtemail').val('');
-                        $('#txtmessage').val('');
-                    },
-                    error: function (xhr, status, error) {
-                        var err = eval("(" + xhr.responseText + ")");
-                        $('#error_message').show();
-                        alert(err.Message);
-                    }
-                })
-            }
-            else {
-                alert("Entern email.");
-            }
-        }</script>
-</head>
-
-<body style="overflow-x:hidden;">
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
- <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-        <div class="offcanvas__search">
-            <i class="fa fa-search search-switch"></i>
-        </div>
-        <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
-        </div>
-        <nav class="offcanvas__menu mobile-menu">
-            <ul>
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nitrile 4 Mil Powder Free Examination Gloves, Black 6 mil Nitrile, face mask, Aspire products, glove design, real guard, useful links for gloves, Your Partner in Infection Prevention, Contamination Control and Safety, Nitrile Powder Free "/>
+    <meta name="keywords" content="Aspire products Ltd.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Aspire products Ltd." content="Aspire products Ltd."/>
+    <title>Aspire products Ltd.</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+
+
+        function SendMail() {
+            $('#success_message').hide();
+            $('#error_message').hide();
+            debugger
+           if ($('#txtemail').val()!='')
+           {
+               var text = 'Name:  ' + $('#txtName').val() + '<br>Phone: ' + $("#txtphone").val() + '<br>Email: ' + $("#txtemail").val() + '<br>' + $('#txtmessage').val();
+               //alert(text)
+              // let endpoint = 'https://localhost:44387/SendEmail?To=' + $('#txtemail').val() + '&Subject=' + $('#txtName').val() + '&Body=' + text;
+               let endpoint = 'https://apps-pt.mdcare.com/emailservice/SendEmail?To=TcNlD8YaZh&Subject=' + $('#txtName').val() + '&Body=' + text;
+                let apiKey = ''
+                $.ajax({
+                    url: endpoint,
+                    contentType: "application/json",
+                    dataType: 'json',
+                    "headers": {
+                        "accept": "application/json",
+                        "Access-Control-Allow-Origin": "*"
+                    },
+                    success: function (result) {
+                        $('#success_message').show();
+                        $("#txtphone").val("");
+                        $('#txtName').val('');
+                        $('#txtemail').val('');
+                        $('#txtmessage').val('');
+                    },
+                    error: function (xhr, status, error) {
+                        var err = eval("(" + xhr.responseText + ")");
+                        $('#error_message').show();
+                        alert(err.Message);
+                    }
+                })
+            }
+            else {
+                alert("Entern email.");
+            }
+        }</script>
+</head>
+
+<body style="overflow-x:hidden;">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+ <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="offcanvas__menu mobile-menu">
+            <ul>
                 <li><a href="./index.html">Home</a></li>
-               
-                <li><a href="#">Our Gloves</a>
-                                <ul class="dropdown">
-                                 <li><a href="./gloves1.html">Nitrile Powder Free Examination Gloves</a></li>
-                                   
-                                    <li><a href="./gloves2.html">Black 6 mil Nitrile</a></li>                                    
-                                </ul>
-                            </li>
-                             <li><a href="#">Face Mask</a>
-                                <ul class="dropdown">
-                                    <li><a href="./3ply.html">3 Ply Melt Blown Mask</a></li>
-                                    <li><a href="./n95.html">KN95 Face Mask</a></li>                                    
-                                </ul>
-                            </li>
-                            <li><a href="./aboutgloves.html">useful links for gloves</a></li>
-							 
-               
-                <li class="active"><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__social">
-            
-            <a href="https://www.linkedin.com/in/kajababu-mohammed-7484abba" target="_blank"><i class="fa fa-linkedin"></i></a>
-           
-        </div>
-        
-    </div>
-    <!-- Offcanvas Menu End -->
-
-    <!-- Header Section Begin -->
-     <header class="header header--normal">
-<div class="row toptext">
-	
-	<div class="col-lg-9"><div>Your Partner in Infection Prevention,
-Contamination Control and Safety
-  
-</div></div>
-	<div class="col-lg-3"><div class="header__right" style="margin-top: -1px;">
-                       
-                        <div class="header__right__social">
-						<a href="Aspire Gloves.pdf" download target="_blank" class="brochure">Download Brochure</a>
-                            <a href="https://www.linkedin.com/in/kajababu-mohammed-7484abba" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                                   
-                        </div>
-                      
-                    </div></div>
-	</div>
-	
-        <div class="container">
-		
-            <div class="row">
-                <div class="col-lg-2">
-				
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-				
-                    <nav class="header__menu">
-                       <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#">Our Gloves</a>
-                                <ul class="dropdown">
-                                 <li><a href="./gloves1.html">Nitrile Powder Free Examination Gloves</a></li>
-                                  
-                                    <li><a href="./gloves2.html">Black 6 mil Nitrile</a></li>                                    
-                                </ul>
-                            </li>
-                             <li><a href="#">Face Mask</a>
-                                <ul class="dropdown">
-                                    <li><a href="./3ply.html">3 Ply Melt Blown Mask</a></li>
-                                    <li><a href="./n95.html">KN95 Face Mask</a></li>                                    
-                                </ul>
-                            </li>
-                             <li><a href="./aboutgloves.html">useful links for gloves</a></li>
-							 
-                            <li class="active"><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                
-            </div>
-            <div class="canvas__open">
-                <span class="fa fa-bars"></span>
-            </div>
-        </div>
-    </header>
-    <!-- Header Section End -->
-
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
-                        
-                        <span>Contact Us</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
- <div class="map">
- <div class="row">
-                <div class="col-lg-6 col-md-6">
-				<div style=" text-align:center; padding-bottom:5px;"><h5 style="font-weight:bold;" >Warehouse address</h5></div>
-				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.402911314609!2d-79.67397488450139!3d43.68138637912026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ec1ee513477%3A0x2fdeac558fb5c7df!2s7890%20Tranmere%20Dr%2C%20Mississauga%2C%20ON%20L5S%201L9%2C%20Canada!5e0!3m2!1sen!2sin!4v1626360791467!5m2!1sen!2sin"  height="400" style="border:0;" allowfullscreen=""></iframe>
-				</div>
-				<div class="col-lg-6 col-md-6">
-				<div style=" text-align:center; padding-bottom:5px;"><h5 style="font-weight:bold;">Office address</h5></div>
-				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.283085698557!2d-83.03932108454511!3d42.31516047918994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d1de21f7d8d%3A0x8db82a3c5abc8996!2s500%20Ouellette%20Ave%20Suite%20301%2C%20Windsor%2C%20ON%20N9A%201B3%2C%20Canada!5e0!3m2!1sen!2sin!4v1625140080583!5m2!1sen!2sin"  height="400" style="border:0;" allowfullscreen=""></iframe>
-				</div>
-				</div>
-
-        
-    </div>
-    <!-- Faq Section Begin -->
-       <section class="contact spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="contact__address">
-                        <h4>Contact info</h4>
-                        <ul>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <p><span>+1(519) 995 5879<br>+1(226) 457 7759</span></p>
-                            </li>
-							 <li>
-                                <div class="icon">
-                                    <i class="fa fa-map-marker"></i>
-                                </div>
-								<p style="font-weight:bold;">Warehouse address</p>
-                                <p>7890 Trandmere Drive, Mississauga,<br>L5S 1L9, Ontario, Canada.</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-map-marker"></i>
-                                </div>
-								<p style="font-weight:bold;">Office address</p>
-                                <p>500 Ouellette avenue, Suite 301,<br>
-Windsor N9A 1B3, Ontario, Canada.</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <p><span>sales@aspireproducts.ca</span></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8">
-                    <div class="contact__form">
-                        <h4>Leave a message</h4>
-                        <div class="col-md-12 col-md-offset-3 col-sm-12 col-xs-12">
-                        <div class="panel panel-danger">
-                            <div class="panel-body">
-                                <form id="reused_form">
-                                    <div class="form-group">
-                                        <label >Name</label>
-                                        <input type="text" id="txtName" name="name" required class="form-control" placeholder="Enter Name">
-
-                                    </div>
-									<div class="form-group">
-                                        <label >Phone</label>
-                                        <input type="text" id="txtphone" name="phone" required class="form-control" placeholder="Enter Phone">
-                                    </div>
-                                    <div class="form-group">
-                                        <label >Email</label>
-                                        <input type="email" id="txtemail" name="email" required class="form-control" placeholder="Enter Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label >Message</label>
-                                        <textarea rows="3" id="txtmessage" name="message" class="form-control" placeholder="Type Your Message"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="site-btn" type="button" onclick="SendMail()" >
-                                            Send
-                                        </button>
-                                    </div>
-                                </form>
-                                <div id="error_message" style="width:100%; height:100%; font-size:1.1em; font-weight:600; display:none; " class="alert alert-danger">
-                                   
-                                        Error
-                                   <br>
-                                    <i class="fa fa-sad-tear"></i> &nbsp;Sorry there was an error sending your form. 
-                                </div>
-                                <div id="success_message" style="width:100%; height:100%; font-size:1.1em; font-weight:600; display:none; " class="alert alert-success">
-<i class="fa fa-thumbs-up"></i> &nbsp;Success! Your Message was Sent Successfully.
-</div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Faq Section End -->
-
-    <!-- Footer Section Begin -->
-   <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-2 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>COMPANY</h5>
-                        <p style="color:#fff;">Aspire products Ltd. is a premier trading company that started with young entrepreneurs having more than 20 years of diverse industry experience.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>COMPANY LINKS</h5>
-                        <ul style="color:#f3bd00;">
-                            <li><i class="fa fa-caret-right"></i> <a href="index.html">Home</a></li>
-                            <li><i class="fa fa-caret-right"></i> <a href="gloves1.html">Our Gloves</a></li>
-                            <li><i class="fa fa-caret-right"></i> <a href="n95.html">Face Mask</a></li>
-                          
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h5>CONTACT</h5>
-                        <ul Style="color:#fff;">
-						<li style="margin-bottom:8px;"><i class="fa fa-phone"></i> : +1(226) 457 7759</li>
-                            <li style="margin-bottom:8px;"><i class="fa fa-phone"></i> : +1(519) 995 5879</li>
-                            <li style="margin-bottom:8px;"><i class="fa fa-envelope"></i> : sales@aspireproducts.ca</li>
-                           
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="footer__about">
-                      
-						<span style="color:#f3bd00; font-weight:600;">Warehouse address</span>
-						<p><i class="fa fa-map-marker"></i> : 7890 Trandmere Drive, Mississauga,<br>L5S 1L9, Ontario, Canada.</p>
-						<span style="color:#f3bd00; font-weight:600;">Office address</span>
-                        <p><i class="fa fa-map-marker"></i> : 500 Ouellette avenue, Suite 301, Windsor <br>N9A 1B3, Ontario, Canada.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    <div class="footer__copyright__text">
-                        <p>Copyright &copy; 2021 All rights reserved</p>
-                    </div>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Search Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
-    <!-- Search End -->
-
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-	<script>
-	function change_image(image){
-
-var container = document.getElementById("main-image");
-
-container.src = image.src;
-}
-
-
-
-document.addEventListener("DOMContentLoaded", function(event) {
-
-
-
-
-
-
-
-});
-	</script>
-	
-</body>
-
+                <li><a href="#">PPE Products</a>                                <ul class="dropdown">                                   <li><a href="./DisinfectantSpray.html">Disinfectant Spray</a></li>                                    <li><a href="./Thermometers.html">Thermometers</a></li>									<li><a href="./Gowns.html">Gowns</a></li>									<li><a href="./AlcoholWipes.html">Alcohol Wipes</a></li>									<li><a href="./Gloves.html">Gloves</a></li>									<li><a href="./HandSanitizer.html">Hand Sanitizer</a></li>									<li><a href="./FaceShields.html">Face Shields</a></li>									<li><a href="./Masks.html">Masks</a></li>									</ul>                            </li>
+                         
+                            <li><a href="./aboutgloves.html">useful links for gloves</a></li>
+							 
+               
+                <li class="active"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__social">
+            <a href="Aspire Gloves.pdf" download target="_blank" class="brochure">Nitrile Gloves Brochure</a><br>
+            <a href="https://www.linkedin.com/in/kajababu-mohammed-7484abba" target="_blank"><i class="fa fa-linkedin"></i></a>
+           
+        </div>
+        
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+     <header class="header header--normal">
+<div class="row toptext">
+	
+	<div class="col-lg-9"><div>Your Partner in Infection Prevention,
+Contamination Control and Safety
+  
+</div></div>
+	<div class="col-lg-3"><div class="header__right" style="margin-top: -1px;">
+                       
+                        <div class="header__right__social">
+						<a href="Aspire Gloves.pdf" download target="_blank" class="brochure">Nitrile Gloves Brochure</a>
+                            <a href="https://www.linkedin.com/in/kajababu-mohammed-7484abba" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                                   
+                        </div>
+                      
+                    </div></div>
+	</div>
+	
+        <div class="container">
+		
+            <div class="row">
+                <div class="col-lg-2">
+				
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+				
+                    <nav class="header__menu">
+                       <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">PPE Products</a>                                <ul class="dropdown">                                   <li><a href="./DisinfectantSpray.html">Disinfectant Spray</a></li>                                    <li><a href="./Thermometers.html">Thermometers</a></li>									<li><a href="./Gowns.html">Gowns</a></li>									<li><a href="./AlcoholWipes.html">Alcohol Wipes</a></li>									<li><a href="./Gloves.html">Gloves</a></li>									<li><a href="./HandSanitizer.html">Hand Sanitizer</a></li>									<li><a href="./FaceShields.html">Face Shields</a></li>									<li><a href="./Masks.html">Masks</a></li>									</ul>                            </li>
+                             <li><a href="./aboutgloves.html">useful links for gloves</a></li>
+							 
+                            <li class="active"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+ <div class="map">
+ <div class="row">
+                <div class="col-lg-6 col-md-6">
+				<div style=" text-align:center; padding-bottom:5px;"><h5 style="font-weight:bold;" >Warehouse address</h5></div>
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.402911314609!2d-79.67397488450139!3d43.68138637912026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3ec1ee513477%3A0x2fdeac558fb5c7df!2s7890%20Tranmere%20Dr%2C%20Mississauga%2C%20ON%20L5S%201L9%2C%20Canada!5e0!3m2!1sen!2sin!4v1626360791467!5m2!1sen!2sin"  height="400" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				<div class="col-lg-6 col-md-6">
+				<div style=" text-align:center; padding-bottom:5px;"><h5 style="font-weight:bold;">Office address</h5></div>
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.1447929346978!2d-83.04883418454504!3d42.318110379189775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d182c27d669%3A0xcede373834d82a7e!2sWaterpark%20Place%20Condominiums!5e0!3m2!1sen!2sin!4v1635837482175!5m2!1sen!2sin"  height="400" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				</div>
+
+        
+    </div>
+    <!-- Faq Section Begin -->
+       <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="contact__address">
+                        <h4>Contact info</h4>
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <p><span>+1(519) 995 5879<br>+1(226) 457 7759</span></p>
+                            </li>
+							 <li>
+                                <div class="icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+								<p style="font-weight:bold;">Warehouse address</p>
+                                <p>7890 Trandmere Drive, Mississauga,<br>L5S 1L9, Ontario, Canada.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+								<p style="font-weight:bold;">Office address</p>
+                                <p>515 Riverside Dr West, Suite# 803,<br>Windsor, Ontario, N9A 7C3,Canada.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <p><span><a href="mailto:sales@aspireproducts.ca" style="color:#000;">sales@aspireproducts.ca</a></span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="contact__form">
+                        <h4>Leave a message</h4>
+                        <div class="col-md-12 col-md-offset-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                <form id="reused_form">
+                                    <div class="form-group">
+                                        <label >Name</label>
+                                        <input type="text" id="txtName" name="name" required class="form-control" placeholder="Enter Name">
+
+                                    </div>
+									<div class="form-group">
+                                        <label >Phone</label>
+                                        <input type="text" id="txtphone" name="phone" required class="form-control" placeholder="Enter Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label >Email</label>
+                                        <input type="email" id="txtemail" name="email" required class="form-control" placeholder="Enter Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label >Message</label>
+                                        <textarea rows="3" id="txtmessage" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="site-btn" type="button" onclick="SendMail()" >
+                                            Send
+                                        </button>
+                                    </div>
+                                </form>
+                                <div id="error_message" style="width:100%; height:100%; font-size:1.1em; font-weight:600; display:none; " class="alert alert-danger">
+                                   
+                                        Error
+                                   <br>
+                                    <i class="fa fa-sad-tear"></i> &nbsp;Sorry there was an error sending your form. 
+                                </div>
+                                <div id="success_message" style="width:100%; height:100%; font-size:1.1em; font-weight:600; display:none; " class="alert alert-success">
+<i class="fa fa-thumbs-up"></i> &nbsp;Success! Your Message was Sent Successfully.
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq Section End -->
+
+    <!-- Footer Section Begin -->
+   <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>COMPANY</h5>
+                        <p style="color:#fff;">Aspire products Ltd. is a premier trading company that started with young entrepreneurs having more than 20 years of diverse industry experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>COMPANY LINKS</h5>
+                        <ul style="color:#f3bd00;">
+                            <li><i class="fa fa-caret-right"></i> <a href="index.html">Home</a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="gloves1.html">Our Gloves</a></li>
+                            <li><i class="fa fa-caret-right"></i> <a href="n95.html">Face Mask</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>CONTACT</h5>
+                        <ul Style="color:#fff;">
+						<li style="margin-bottom:8px;"><i class="fa fa-phone"></i> : +1(226) 457 7759</li>
+                            <li style="margin-bottom:8px;"><i class="fa fa-phone"></i> : +1(519) 995 5879</li>
+                            <li style="margin-bottom:8px;"><i class="fa fa-envelope"></i> : <a href="mailto:sales@aspireproducts.ca">sales@aspireproducts.ca</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="footer__about">
+                      
+						<span style="color:#f3bd00; font-weight:600;">Warehouse address</span>
+						<p><i class="fa fa-map-marker"></i> : 7890 Trandmere Drive, Mississauga,<br>L5S 1L9, Ontario, Canada.</p>
+						<span style="color:#f3bd00; font-weight:600;">Office address</span>
+                        <p><i class="fa fa-map-marker"></i> : 515 Riverside Dr West, Suite# 803,Windsor, <br>Ontario, N9A 7C3,Canada.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div class="footer__copyright__text">
+                        <p>Copyright &copy; 2021 All rights reserved</p>
+                    </div>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+	<script>
+	function change_image(image){
+
+var container = document.getElementById("main-image");
+
+container.src = image.src;
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+
+
+
+
+
+
+});
+	</script>
+		<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "1(519) 995 5879", // WhatsApp number
+            call_to_action: "", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+</body>
+
 </html>
