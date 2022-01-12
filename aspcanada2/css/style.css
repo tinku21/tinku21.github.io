@@ -922,10 +922,10 @@ ol {
 	float: left;
 	margin-right: 30px;
 }
-
+/*
 .team__item__text {
 	overflow: hidden;
-}
+}*/
 
 .team__item__text h5 {
 	font-weight: 700;
