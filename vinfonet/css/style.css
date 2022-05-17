@@ -1011,7 +1011,7 @@ ul.navbar-nav > li > a {
   text-align: left;
   background: #fff;
   z-index: 100;
-  min-width: 215px;
+  min-width: 220px;
   border-radius: 0;
   border: 0;
   border-top: 2px solid #ffb600;
@@ -1091,6 +1091,7 @@ ul.navbar-nav > li > a {
   }
   ul.nav li.dropdown ul.dropdown-menu li.dropdown-submenu:hover .dropdown-menu {
     display: block;
+	margin-left:10px;
   }
 }
 
