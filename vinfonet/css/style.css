@@ -2652,7 +2652,7 @@ img.testimonial-thumb {
 /*-- Banner --*/
 .banner-area {
   position: relative;
-  min-height: 300px;
+  min-height: 150px;
   color: #fff;
   background-position: 50% 50%;
   background-size: cover;
@@ -2679,7 +2679,7 @@ img.testimonial-thumb {
 
 .banner-text {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0;
   right: 0;
   max-width: 1170px;
