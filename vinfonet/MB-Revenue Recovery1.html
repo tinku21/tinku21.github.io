@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
   <!-- Template styles-->
   <link rel="stylesheet" href="css/style.css">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
   <div class="body-inner">
@@ -51,7 +51,7 @@
               <nav class="navbar navbar-expand-lg navbar-light p-0">
                 
                 <div class="logo">
-                    <a class="d-block" href="index-2.html">
+                    <a class="d-block" href="index.html">
                       <img loading="lazy" src="images/logo.png" alt="Constra">
                     </a>
                 </div><!-- logo end -->
@@ -92,7 +92,7 @@
 									   <li><a href="#!">FAQs</a></li>
                                 </ul>
 								</li>
-                                  <li><a href="MB-Revenue Recovery1.html">Denial Management</a></li>
+                                  <li><a href="#">Denial Management</a></li>
                                   <li><a href="http://www.mdcare.com/" target="_blank">MDCare EMR/PMS</a></li>
                           </ul>
                       </li>
@@ -132,12 +132,12 @@
         <div class="row">
           <div class="col-lg-12">
               <div class="banner-heading">
-                <h1 class="banner-title">Medical Billing</h1>
+                <h1 class="banner-title">REVENUE RECOVERY</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
                       <li class="breadcrumb-item"><a href="#">Our Services</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Medical Billing</li>
+                    <li class="breadcrumb-item active" aria-current="page">REVENUE RECOVERY</li>
                     </ol>
                 </nav>
               </div>
@@ -149,120 +149,74 @@
 
 
 <section id="main-container" class="main-container">
+
+
+
+
+
+
   <div class="container">
+<div class="row">
+            <div class="col-md-8">
+              <h3 class="column-title-small">General Reasons for claim denial are as follows</h3>
 
-    <div class="row">
-      <div class="col-lg-8">
-      <div class="accordion accordion-group accordion-classic" id="construction-accordion">
-          <div class="card">
-            <div class="card-header p-0 bg-transparent" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Medical Billing
-                </button>
-              </h2>
-            </div>
+              <ul class="list-arrow">
+                <li>Under coding or Up coding medical claims.</li>
+ <li>Improper usage/non-usage of Modifiers.</li>
+ <li>Not meeting medical necessity.</li>
+ <li>ABN Policies.</li>
+ <li>Payer agreements.</li>
+ <li>Improper demographics.</li>
+ <li>Improper verification of eligibility and benefits etc.</li>
+ <li>Our staff has a good understanding of the above, contracts between payers and providers.</li>
+ <li>We interpret, analyze and identify systemic underpayments by payers at the individual claim level.</li>
+ <li>We do consistent, personalized, courteous follow-up on all accounts with outstanding balances.</li>
+ <li>We do have excellent AR follow-up skills to call upon payers, enquire about the correct reason for denial and work as per their clarification and getting the claim paid.</li>
+              </ul>
+			  <p>
+			  This entire process involves following up on underpaid claims, understanding the reasons for underpayment, and then recovering revenues from the payers by taking steps to address those issues (resubmitting claims, appeals, etc.)
+			  </p>
+			  Following diagram shows the general reasons for denials with approximate percentage of each reason.
+<canvas id="myChart" style="width:100%;max-width:100%"></canvas>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-              data-parent="#construction-accordion">
-              <div class="card-body">
- 
- <ul  class="list-arrow">
- <li>Faster reimbursement</li>
- <li>Increased cash flow</li>
- <li>Intensive A/R follow-up</li>
-<li> Pay us only after you get paid</li>
- <li>Certified billing and coding team</li>
- <li>Dedicated Account Manager for your account</li>
- <li>Free Medical Billing Software and EMR</li>
- <li>Instant payment program</li>
- </ul>
-              </div>
+<script>
+var xValues = ["ICD-9", "CPT", "Eligibility", "Demographics", "Others"];
+var yValues = [60, 49, 25, 24, 45];
+var barColors = [
+  "#b70400",
+  "#f6bb00",
+  "#e22be6",
+  "#37a0e0",
+  "#5db640"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  
+});
+</script>
+			  <h3 class="column-title-small">Appeals:</h3>
+
+              <ul class="list-arrow">
+                <li>We have a system to time appeals submitted and ensure that no time is wasted in the appeal process. We also develop standard appeal letters that can be easily customized with information about the particular patient and situation involved in every denial.</li>
+ <li>If an insurer routinely down-codes claims, we appeal for the code that was submitted originally and include supporting documentation.</li>
+ <li>If an insurer consistently refuses payment for a certain code, we request the physicians to contact the insurer, discuss the situation and bring along supporting documentation instead of sending more appeals.</li>
+ <li>Before signing any contract with a payer, we request the physicians to make sure that the claim appeal process is explained clearly. This helps us determine steps to be taken after a denial and consider steps for further action.</li>
+              </ul>
             </div>
+<div class="col-md-4">
+
+</div>
+            
           </div>
-          <div class="card">
-            <div class="card-header p-0 bg-transparent" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Strengths of our Medical Billing Services
-                </button>
-              </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#construction-accordion">
-              <div class="card-body">
- <ul class="list-arrow">
- <li>State of the art billing module of our MDCare EMR/PMS</li>
- <li>MDCare AR Processing software</li>
- <li>Experienced and certified coders and billing executives</li>
- <li>Assured Cash Billing Model</li>
- <li>Stat Cash Billing Models</li>
- <li>Instant Payment</li>
- <li>Professional & economical</li>
- <li>Electronic service</li>
- <li>Proven record of increased reimbursement
- </li>
- </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header p-0 bg-transparent" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
-                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  We are currently providing the following specialty specific medical billing services
-                </button>
-              </h2>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-              data-parent="#construction-accordion">
-              <div class="card-body">
-<ul class="list-arrow">
- <li>Internal Medicine</li>
-  <li>Cardiology</li>
-  <li>Nephrology</li>
-  <li>Psychiatry</li>
-  <li>Pulmonology</li>
-  <li>Pain Management</li>
-  <li>Dermatology</li>
-  <li>Pediatrics</li>
-  <li>Radiology </li>
- </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--/ Accordion end -->
-
-        <div class="gap-40"></div>
-        
-        <!--/ Accordion end -->
-
-      </div><!-- Col end -->
-
-      <div class="col-lg-4 mt-5 mt-lg-0">
-
-        <div class="sidebar sidebar-right">
-        <div class="widget">
-            <h3 class="widget-title">Other Services </h3>
-            <ul class="arrow nav nav-tabs">
-              <li><a href="#!">Advantages</a></li>
-                                  <li><a href="#!">Medical Coding</a></li>
-                                  <li><a href="#!">Medical Billing</a></li>
-								   <li><a href="#!">Revenue Recovery</a></li>
-								    <li><a href="#!">Stat Cash Billing Service</a></li>
-									 <li><a href="#!">Assured Cash Billing Service</a></li>
-									  <li><a href="#!">Billing Cycle</a></li>
-									   <li><a href="#!">FAQs</a></li>
-            </ul>
-          </div>
-        </div><!-- Sidebar end -->
-
-      </div><!-- Col end -->
-
-    </div><!-- Content row end -->
+    
 
   </div><!-- Container end -->
 </section><!-- Main container end -->
@@ -280,7 +234,7 @@
             <h3 class="widget-title">About Us</h3>
             <img loading="lazy" width="200px" class="footer-logo" src="images/footer-logo.png" alt="Constra">
             <p>Vision Infonet Inc. is an Illinois-based provider of cutting-edge technologies and services for the healthcare industry.</p>
-          <div class="footer-social">
+           <div class="footer-social">
               <ul>
                 <li><a href="#" aria-label="Facebook"><i
                       class="fab fa-facebook-f"></i></a></li>
@@ -309,7 +263,7 @@
               <li><a href="service-single.html">Medical Billing Services</a></li>
               <li><a href="service-single.html">Medical Transcription Services</a></li>
               <li><a href="service-single.html">MDCare EMR/PMS</a></li>
-              
+             
             </ul>
           </div><!-- Col end -->
         </div><!-- Row end -->

@@ -456,7 +456,7 @@ ul.list-arrow li:before {
   font-family: "Font Awesome 5 Free";
   content: "\f105";
   margin-right: 10px;
-  color: #ffb600;
+  color: #5dc1ac;
   font-size: 16px;
   font-weight: bold;
 }
@@ -576,7 +576,7 @@ a[href^=tel] {
 /* Top Bar
 ================================================== */
 .top-bar {
-  padding: 8px 0;
+  padding: 0px 0;
   background: #ebebeb;
   position: relative;
 }
@@ -1475,8 +1475,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .box-slider-text {
-  background: #111;
-  background: rgba(0, 0, 0, 0.65);
+  /*background: #111;
+  background: rgba(0, 0, 0, 0.65);*/
   display: inline-block;
   padding: 20px 30px;
   max-width: 650px;
@@ -1484,9 +1484,9 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .box-slide-title {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
   margin: 0;
-  color: #fff;
+  color: #303288;
 }
 
 @media (max-width: 767px) {
