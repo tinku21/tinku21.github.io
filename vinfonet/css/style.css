@@ -8,6 +8,7 @@ Description: Constra - Construction Html5 Template
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 /* Typography
 ================================================== */
 body {
@@ -963,12 +964,12 @@ ul.navbar-nav > li > a:after {
 }
 
 ul.navbar-nav > li > a {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: #fff !important;
   text-rendering: optimizeLegibility;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   text-transform: uppercase;
-  letter-spacing: -.2px;
+ 
   font-size: 14px;
   margin: 0;
   line-height: 40px;
@@ -978,7 +979,7 @@ ul.navbar-nav > li > a {
 
 .navbar-light ul.navbar-nav > li > a {
   color: #000 !important;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 /* Dropdown */
@@ -1049,11 +1050,11 @@ ul.navbar-nav > li > a {
 }
 
 .dropdown-menu li a {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Dosis', sans-serif;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 501;
   line-height: normal;
   text-decoration: none;
   padding: 15px 0;
@@ -3546,3 +3547,12 @@ label {
   font-weight: 700;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #FFF;
+  background: #303289;
+}
+
+::selection {
+  color: #fff;
+  background: #303289;
+}
