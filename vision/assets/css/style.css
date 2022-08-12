@@ -9,6 +9,7 @@
 # General
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -343,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   right: 0;
@@ -365,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 #hero h2 {
-  color: #2e2e2e;
+  color: #ffca08;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -471,6 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   #hero p {
     width: 50%;
+	color:#fff;
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
@@ -1876,4 +1878,21 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+.listone {
+  list-style: none;
+  padding: 0;
+}
+.listone li {
+  padding-left: 1.3em;
+}
+.listone li:before {
+  content: "\ea55"; /* FontAwesome Unicode */
+  font-family: boxicons;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  color:#ff6c00;
+  font-size:14px;
 }
