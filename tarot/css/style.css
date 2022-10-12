@@ -1,8 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto&display=swap');
-@font-face{font-family:'Oswald';src:url('../fonts/fontawesome-webfont.eot?v=4.2.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),url('../fonts/Oswald-Regular.ttf?v=4.2.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular')
 body {
-  font-family: "Open Sans";
+  font-family: 'Roboto';
   color: #808080;
   font-weight: 400;
   font-size: 14px;
@@ -28,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   color: #4c4c4c;
   letter-spacing: 1px;
   font-weight: 400;
@@ -205,7 +203,7 @@ h6 {
   *zoom: 1;
 }
 .btn {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   font-size: 16px;
   letter-spacing: 1px;
   border-radius: 40px;
@@ -304,7 +302,7 @@ h6 {
   margin-bottom: 70px;
 }
 .section-title h3 {
-  font-family: "Oswald";
+  font-family: 'Oswald';
   text-transform: uppercase;
   color: #4c4c4c;
   font-weight: 400;
@@ -319,7 +317,7 @@ h6 {
   padding: 0 10px;
 }
 .section-title p {
-  font-family: "Oswald";
+  font-family: 'Oswald';
   text-transform: uppercase;
   color: #e16c04;
   font-size: 38px;
@@ -467,7 +465,7 @@ h6 {
   text-align: center;
 }
 .home .hero-txt .hero-title {
-  font-family: "Oswald";
+  font-family: 'Oswald';
   color: #fff;
   text-transform: uppercase;
   font-size: 70px;
@@ -480,7 +478,7 @@ h6 {
   padding: 20px 10px;
 }
 .home .hero-txt .hero-work {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 0;
@@ -503,7 +501,7 @@ h6 {
   margin-right: 20px !important;
 }
 .home .hero-txt .hero-sub-title {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   font-size: 30px;
   letter-spacing: 5px;
   font-weight: 300;
@@ -551,7 +549,7 @@ h6 {
           transition: height 0.3s;
 }
 .navbar-nav > li > a {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -665,7 +663,7 @@ h6 {
           transition: transform 0.5s ease 0.2s;
 }
 .st-member .st-member-info .st-member-name {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   display: block;
   color: #4c4c4c;
   font-size: 30px;
@@ -684,7 +682,7 @@ h6 {
 }
 .st-member .st-member-info .st-member-pos {
   display: block;
-  font-family: "Oswald";
+  font-family: 'Roboto';
   font-size: 20px;
   line-height: 18px;
   font-weight: 300;
@@ -858,7 +856,7 @@ h6 {
   padding: 100px 0;
 }
 .funfacts .funfact {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   text-align: center;
   color: #fff;
 }
@@ -908,7 +906,7 @@ h6 {
 }
 .st-feature .st-feature-title {
   display: block;
-  font-family: "Oswald";
+  font-family: 'Roboto';
   font-size: 25px;
   line-height: 45px;
   letter-spacing: 1px;
@@ -1156,7 +1154,7 @@ ul.styled-list.list-star li:before {
   left: 5%;
 }
 .testimonial .testimonial-img:before {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   content: '\201C';
   font-size: 40px;
   position: absolute;
@@ -1202,7 +1200,7 @@ ul.styled-list.list-star li:before {
   background-color: #fff;
 }
 .pricing-table .pricing-header .pt-price {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   color: #4c4c4c;
   font-size: 40px;
   line-height: 70px;
@@ -1216,7 +1214,7 @@ ul.styled-list.list-star li:before {
   font-weight: 300;
 }
 .pricing-table .pricing-header .pt-name {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   padding: 10px 40px;
   text-align: center;
   font-weight: 300;
@@ -1263,7 +1261,7 @@ ul.styled-list.list-star li:before {
   color: #e16c04;
 }
 .pricing-table.featured .pricing-header .featured-text {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 1px;
@@ -1468,7 +1466,7 @@ ul.styled-list.list-star li:before {
   font-weight: 300;
 }
 .subscribe .subscribe-or {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   color: #fff;
   text-align: center;
   font-size: 20px;
@@ -1503,7 +1501,7 @@ ul.styled-list.list-star li:before {
   padding: 14px 20px 14px 30px !important;
 }
 a.social {
-  font-family: "Oswald";
+  font-family: 'Roboto';
   letter-spacing: 1px;
   display: inline-block;
   background-color: #e16c04;
