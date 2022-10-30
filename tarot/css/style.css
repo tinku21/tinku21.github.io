@@ -1202,8 +1202,8 @@ ul.styled-list.list-star li:before {
 .pricing-table .pricing-header .pt-price {
   font-family: 'Roboto';
   color: #4c4c4c;
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 400;
   text-align: center;
   padding: 10px 40px;
@@ -1252,10 +1252,12 @@ ul.styled-list.list-star li:before {
   overflow: hidden;
 }
 .pricing-table.featured .pricing-header .pt-price {
-  color: #e16c04;
+  color: #fff;
+    background-color: #e16c04;
+    border-radius: 5px 5px 0px 0px;
 }
 .pricing-table.featured .pricing-header .pt-price small {
-  color: #e16c04;
+  color: #fff;
 }
 .pricing-table.featured .pricing-header .pt-name {
   color: #e16c04;
