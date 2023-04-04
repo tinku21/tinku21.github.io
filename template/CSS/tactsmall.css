@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'tactsmall';
+    src: url('../fonts/tactsmall.eot');
+    src: url('../fonts/tactsmall.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tactsmall.woff') format('woff'),
+         url('../fonts/tactsmall.ttf') format('truetype'),
+         url('../fonts/tactsmall.svg#tactsmall') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='tactsm-']:before{
+	display: inline-block;
+   font-family: 'tactsmall';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.tactsm-Emergencyaccess:before{content:'\0041';}
+.tactsm-nursenote:before{content:'\0042';}
+.tactsm-devicelist:before{content:'\0043';}
+.tactsm-amendments:before{content:'\0044';}
+.tactsm-externalfacility:before{content:'\0045';}
+.tactsm-notifications:before{content:'\0046';}
+.tactsm-externalclinical:before{content:'\0047';}
+.tactsm-testresult:before{content:'\0048';}
+.tactsm-reminders:before{content:'\0049';}
+.tactsm-decisiontree:before{content:'\004a';}
+.tactsm-educationform:before{content:'\004b';}
+.tactsm-letter:before{content:'\004c';}
+.tactsm-diseasemanagement:before{content:'\004d';}
+.tactsm-qdc:before{content:'\004e';}
