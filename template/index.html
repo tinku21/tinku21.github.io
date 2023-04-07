@@ -1,44 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>MDCare</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="CSS/topmenu.css" rel="stylesheet" />
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-   <link href="CSS/tact.css" rel="stylesheet" />
+<!doctype html>
+<html >
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MDCare</title>
+    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/topmenu.css" rel="stylesheet" />
+    <link href="CSS/tact.css" rel="stylesheet" />
     <link href="CSS/tactsmall.css" rel="stylesheet" />
     <link href="CSS/small.css" rel="stylesheet" />
-	 <link href="CSS/font-awesome.css" rel="stylesheet" />
-	
-<style type="text/css">   
-   
+     <link rel="stylesheet" href="CSS/normalize.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+	<script type="text/javascript" src="CSS/editor.css"></script>
+	 <script type="text/javascript" src="assets/js/editor.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#txtEditor").Editor();
+        });
+    </script>
+    <script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+    <style type="text/css">
+body {
+	background-color: #edeef3
+}
 
- 
-	     @media (min-width:768px) {
-            .container {
-                width: 750px;
-            }
-        }
+@media (min-width:768px) {
+.container {
+	width: 750px;
+}
+}
 
 @media (min-width:992px) {
 .container {
@@ -51,83 +53,66 @@
 	width: 1170px
 }
 }
-@media screen and (max-width: 1422px){
-		.subnavbar {
-    	margin-bottom: 2em;
-    }
-    
-.subnavbar-inner {
-	height: 31px;	
-}
 
+@media screen and (max-width: 1422px) {
+.subnavbar {
+	margin-bottom: 2em;
+}
+.subnavbar-inner {
+	height: 31px;
+}
 .subnavbar .container > ul {
 	display: inline-block;
-	margin-right:-15px;
+	margin-right: -15px;
 	padding: 0;
-	margin: 0;	
+	margin: 0;
 }
-
 .subnavbar .container > ul > li {
 	float: left;
 	padding: 0;
 	margin: 0;
-	width:auto;
+	width: auto;
 	text-align: center;
 	list-style: none;
-	}
-
+}
 .subnavbar .container > ul > li > a {
 	display: block;
-	width:auto;	
+	width: auto;
 	height: 100%;
 	padding: 0 4px;
-	text-decoration:none;	
+	text-decoration: none;
 	font-size: 10px;
 	color: #fff;
 	padding-bottom: 4px;
 }
-
 .subnavbar .container > ul > li > a > i {
-	display: inline-block;	
+	display: inline-block;
 	width: 20px;
 	height: 20px;
 	margin-top: 7px;
 	margin-bottom: -3px;
 	font-size: 1.6em;
 }
-
 .subnavbar .container > ul > li > a > span {
 	display: block;
-    font-family: "Roboto-Light" !important;
-    font-size:9px;
+	font-size: 9px;
 }
-
-
 .subnavbar .container > ul > li.active > a {
-	border-bottom:4px solid #fee25f;
+	border-bottom: 4px solid #fee25f;
 	color: #fff;
 }
-    
-a:focus
-
-
-.subnavbar .dropdown .dropdown-menu a {
+a:focus  .subnavbar .dropdown .dropdown-menu a {
 	font-size: 12px;
 }
-
-    
 .subnavbar .dropdown .dropdown-menu {
-    	text-align: left;    	
-		-webkit-border-top-left-radius: 0;
-		-webkit-border-top-right-radius: 0;
-		-moz-border-radius-topleft: 0;
-		-moz-border-radius-topright: 0;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-    }
-    
-    
-    
+	text-align: left;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
 .subnavbar .dropdown-menu::before {
 	content: '';
 	display: inline-block;
@@ -139,7 +124,6 @@ a:focus
 	top: -7px;
 	left: 9px;
 }
-
 .subnavbar .dropdown-menu::after {
 	content: '';
 	display: inline-block;
@@ -150,31 +134,28 @@ a:focus
 	top: -6px;
 	left: 7px;
 }
-
-
 .subnavbar .caret {
-	margin-top: 4px;	
+	margin-top: 4px;
 	border-top-color: white;
 	border-bottom-color: white;
 }
-
 .subnavbar .dropdown.open .caret {
 	display: none;
 }
 .subnavbar .container > ul > li > a:hover {
 	color: #fee158;
 	text-decoration: none;
-	border-bottom:4px solid #fee158;
-	border-radius:0px;
+	border-bottom: 4px solid #fee158;
+	border-radius: 0px;
 }
 .subnavbar .container > ul > li > a:focus {
 	color: #fee158;
 	text-decoration: none;
-	border-bottom:4px solid #fee158;	
-	border-radius:0px;	
+	border-bottom: 4px solid #fee158;
+	border-radius: 0px;
 }
 .subnavbar .container > ul > li > a > i {
-	display: inline-block;	
+	display: inline-block;
 	width: 23px;
 	height: 23px;
 	margin-top: 7px;
@@ -182,100 +163,75 @@ a:focus
 	font-size: 1.9em;
 }
 }
+
 @media screen and (min-width: 1200px) {
-	
 .subnavbar {
-    	margin-bottom: 0em;
-    }
-    
+	margin-bottom: 0em;
+}
 .subnavbar-inner {
 	height: 59px;
 }
-
 .subnavbar .container > ul {
 	display: inline-block;
 	padding: 0;
 	margin: 0;
-	
 }
-
 .subnavbar .container > ul > li {
 	float: left;
 	padding: 0;
 	margin: 0;
 	text-align: center;
 	list-style: none;
-	margin-right:12px;
+	margin-right: 12px;
 }
-
 .subnavbar .container > ul > li > a {
 	display: block;
-	width:auto;	
+	width: auto;
 	height: 100%;
 	padding: 0 5px;
-	text-decoration:none;	
+	text-decoration: none;
 	font-size: 12px;
 	color: #fff;
 }
-
 .subnavbar .container > ul > li > a:hover {
 	color: #fee158;
 	text-decoration: none;
-	border-bottom:4px solid #fee158;
-	border-radius:0px;
-   
-
+	border-bottom: 4px solid #fee158;
+	border-radius: 0px;
 }
 .subnavbar .container > ul > li > a:focus {
 	color: #fee158;
 	text-decoration: none;
-	border-bottom:4px solid #fee158;	
-	border-radius:0px;
-
-	
+	border-bottom: 4px solid #fee158;
+	border-radius: 0px;
 }
 .subnavbar .container > ul > li > a > i {
 	display: inline-block;
-	
 	width: 24px;
 	height: 24px;
 	margin-top: 7px;
 	margin-bottom: -3px;
 	font-size: 2em;
 }
-
-
 .subnavbar .container > ul > li > a > span {
 	display: block;
-
 }
-
-
 .subnavbar .container > ul > li.active > a {
-	
-	border-bottom:4px solid #fee25f;
+	border-bottom: 4px solid #fee25f;
 	color: #fff;
 }
-    
-
 .subnavbar .dropdown .dropdown-menu a {
 	font-size: 12px;
 }
-
-    
 .subnavbar .dropdown .dropdown-menu {
-    	text-align: left;
-    	
-		-webkit-border-top-left-radius: 0;
-		-webkit-border-top-right-radius: 0;
-		-moz-border-radius-topleft: 0;
-		-moz-border-radius-topright: 0;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-    }
-    
-    
-    
+	text-align: left;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
 .subnavbar .dropdown-menu::before {
 	content: '';
 	display: inline-block;
@@ -287,7 +243,6 @@ a:focus
 	top: -7px;
 	left: 9px;
 }
-
 .subnavbar .dropdown-menu::after {
 	content: '';
 	display: inline-block;
@@ -298,20 +253,16 @@ a:focus
 	top: -6px;
 	left: 10px;
 }
-
-
 .subnavbar .caret {
 	margin-top: 4px;
-	
 	border-top-color: white;
 	border-bottom-color: white;
 }
-
 .subnavbar .dropdown.open .caret {
 	display: none;
 }
 }
-    /*added new menu css on 12/11/2018 gagan*/ 
+/*added new menu css on 12/11/2018 gagan*/ 
 
 
 a {
@@ -331,27 +282,16 @@ a:focus {
     box-sizing: border-box;
 }*/
 .container {
-    padding-right: 9px;
-    width: 100%;
-}	
+	padding-right: 9px;
+	width: 100%;
+}
 
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-	color:#fff;
- }
- a.dropdown:link{
-	 color:#fff;}
-	  a.dropdown:visited{
-	 color:#fff;}
-	  a.dropdown:hover{
-	 color:#fff;}
 .btnfillwt {
 	display: inline-block;
 	margin-bottom: 0;
 	font-size: 16px;
-    color:#fff;
-	font-weight: 400;	
+	color: #fff;
+	font-weight: 400;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
@@ -365,340 +305,352 @@ a:focus {
 	background-image: none;
 	border: 0px solid transparent;
 	border-radius: 0px;
-	outline:none;
-    border-bottom:2px solid transparent;
-    padding:4px 5px 0px 4px;
-	}
-
-a.btnfillwt:link {margin:0px 1px;}
-a.btnfillwt:visited {margin:0px 1px;}
-a.btnfillwt:hover {margin:0px 1px; border-bottom:2px solid #fee158;  background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.2);  color:#fee158}
-
-
-.btnfillwt-panel-gray {
-   
-    font-size: 16px;
-    background: transparent;
-    box-shadow: none !important;
-    color: #fff;
-	padding-right:0px;
-	padding-top:0px;
-
+	outline: none;
+	border-bottom: 2px solid transparent;
+	padding: 4px 5px 0px 4px;
 }
-
-
-    .open .btnfillwt-panel-gray, .btnfillwt-panel-gray:hover {
-        color: #606e7b;
-		outline:none;
-    }
-
-    .btnfillwt-panel-gray:active {
-        outline: none;
-		margin:0px;
-    }
-
-
-
+a.btnfillwt:link {
+	margin: 0px 1px;
+}
+a.btnfillwt:visited {
+	margin: 0px 1px;
+}
+a.btnfillwt:hover {
+	margin: 0px 1px;
+	border-bottom: 2px solid #fee158;
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.2);
+	color: #fee158
+}
+.btnfillwt-panel-gray {
+	font-size: 16px;
+	background: transparent;
+	box-shadow: none !important;
+	color: #fff;
+	padding-right: 0px;
+	padding-top: 0px;
+}
 .open .btnfillwt-panel-gray, .btnfillwt-panel-gray:hover {
-    color: #606e7b;
-	outline:none;
-	margin:0px;
+	color: #606e7b;
+	outline: none;
+}
+.btnfillwt-panel-gray:active {
+	outline: none;
+	margin: 0px;
+}
+.open .btnfillwt-panel-gray, .btnfillwt-panel-gray:hover {
+	color: #606e7b;
+	outline: none;
+	margin: 0px;
 }
 .btnfillwt.focus, .btnfillwt:focus, .btnfillwt:hover {
-    color: #fff;
-    text-decoration: none;
-	outline:none;
-	margin:0px;
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	margin: 0px;
 }
-
 a.tooltip.left:hover:after {
-    right: -30%;
-    bottom: -117% !important;
+	right: -30%;
+	bottom: -117% !important;
 }
 a.tooltip.left:hover:before {
-    top: 32px;
+	top: 32px;
 }
 a.tooltip.bottom:hover:after {
-    top: 38px;
+	top: 38px;
 }
 a.tooltip.bottom:hover:before {
-    top: 32px;
+	top: 32px;
 }
-
-
 </style>
-</head>
+    <style>
+    #weatherWidget .currentDesc {
+        color: #ffffff!important;
+    }
+        .traffic-chart {
+            min-height: 335px;
+        }
+        #flotPie1  {
+            height: 150px;
+        }
+        #flotPie1 td {
+            padding:3px;
+        }
+        #flotPie1 table {
+            top: 20px!important;
+            right: -10px!important;
+        }
+        .chart-container {
+            display: table;
+            min-width: 270px ;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #flotLine5  {
+             height: 105px;
+        }
 
-<body>
+        #flotBarChart {
+            height: 150px;
+        }
+        #cellPaiChart{
+            height: 160px;
+        }
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-<div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        
-      </a>
-     </div>
-  
+    </style>
+    </head>
 
-<ul style="margin:0px; right:0px; position:absolute;">
-                                                        <div class="subnavbar">
-                                                            <div class="subnavbar-inner">
-                                                                <div class="container">
-
-                                                                   <ul>
-																  
-                                                                            <li>
-                                                                                <a href="#"  data-tool="Chart&nbsp;Queue"><i class="tact-chartqueue"></i><span>Queue</span></a></li>
-                                                                            <li>
-                                                                                <a href="#" data-tool="Templates"><i class="tact-templates"></i><span>Templates</span></a>
-</a>
-
-
-                                                                            </li>
-                                                                            <li>
-                                                                               <a href="#"  data-tool="Settings"><i class="tact-settings"></i><span>Settings</span></a>
-                                                                                </a>
-
-
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="#"   data-tool="Scanning" ><i class="tact-scanner"></i><span>Scanning</span></a></li>
-                                                                            <li>
-                                                                                <a href="#"   data-tool="Appts"><i class="tact-appt"></i><span>Appts</span></a></li>
-
-                                                                                <li><a href="#" data-tool="EM&nbsp;Coding"><i class="tact-emcoding"></i><span>EM&nbsp;Coding</span></a></li>
-
-                                                                            <li > <a href="#" data-tool="Print" ><i class="tact-printer"></i><span>Print</span></a></li>
-                                                                            <li>
-                                                                                <a href="#"  data-tool="All&nbsp;Enc"><i class="tact-allencounter"></i><span>All&nbsp;Enc</span></a></li>
-                                                                            <li><a href="#" data-tool="Sign&nbsp;Off"><i class="tact-sign"></i><span>Sign&nbsp;Off</span></a>
-                                                                               
-                                                                            </li>
-                                                                            
-                                                                            
-                                                                            <li> <a href="#" data-tool="Comments" ><i class="tact-comments"></i><span>Comments</span></as></li>
-                                                                            <li>
-                                                                                <a href="#" data-tool="Co-sign&nbsp;Comments"><i class="tact-sign"></i><span>Co-sign</span></a></li>
-
-                                                                            <li>
-                                                                                <a href="#" data-tool="User&nbsp;Logs"><i class="tact-userlogs"></i><span>Logs</span></a></li>
-
-                                                                            <li>
-                                                                                <a href="#" data-tool="Close"><i class="tact-close"></i><span>Close</span></a></li>
-                                                                            </li>
-                                                                        </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </ul>
-													
-													
-
-  </header><!-- End Header -->
-
-  <!-- ======= Sidebar ======= -->
- <div class="homemenu" style="text-align:right; padding-right:10px;">
- <a href="#" class="btnfillwt" data-tool="Emergency Access" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Emergency Access"><i class="small-emergencyaccess"></i></a>
-                                         <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Direct&nbsp;Message"><i class="small-directmessage"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Amendments"><i class="small-amendments"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Patient&nbsp;Portal&nbsp;Pending&nbsp;Request"><i class="small-ppp-request"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Meaningful&nbsp;Use&nbsp;Dashboard"><i class="small-meaningful"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Hold&nbsp;Encno(s)"><i class="small-holdencos"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Chart Notes"><i class="small-notes" style="font-size:14px;"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Prescription&nbsp;Tracker"><i class="small-prescription"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Refill&nbsp;Request"><i class="small-refillrequest"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Free standing Error Messages"><i class="fa fa-exclamation-triangle"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Test&nbsp;Results"><i class="small-testresult"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Immunization&nbsp;Tracker"><i class="small-immunizationtracker"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="HM&nbsp;Search"><i class="small-hmsearch"></i></a>
-                                       <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Billing & AR&nbsp;Comments"><i class="small-billingarcomments"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Mails"><i class="small-mails"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Reminders"><i class="small-reminder"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="To Do List"><i class="small-todolist"></i></a>
-                                       <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Change&nbsp;Password"><i class="small-password"></i></a>
-                                       <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Medication&nbsp;Logs"><i class="small-medicalogs"></i></a>
-                                        <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Coumadin Visit"><i class="small-scoumadin2"></i></a>
- </div>
- 
- <div class="homemenu2 " >
- <div class="topnav" style="display:-webkit-inline-box; overflow-x:hidden; width:100%;">
-<a href="#"  >Allergies</a>
-<a href="#" class="active" >Chief Complaints</a>
-<a href="#"  >Clinical Note</a>
-<a href="#"  >Family History</a>
-<a href="#" >Plan</a>
-<a href="#"  >Referrals</a>
-<a href="#"  >ROS</a>
-<a href="#"  >Current Medication</a>
-<a href="#" >Past Medical History</a>
-<a href="#"  >Surgical History</a>
-<a href="#"  >Social History</a>
-<a href="#"  >OB-GYN Hisory</a>
-<a href="#"  >Vital Signs</a>
-<a href="#"  >Physical Exam</a>
-<a href="#"  >Final Diagnosis</a>
-<a href="#" >Lab Orders</a>
-<a href="#"  >Diagnostic Studies</a>
-<a href="#"  >Medication</a>
-<a href="#"  >Treatment Plan</a>
-<a href="#" >Instructions</a>
-<a href="#" >Procedures</a>
-<a href="#" >Immunization</a>
-<a href="#" >Subjective</a>
-<a href="#" >E/F Assessment</a>
-<a href="#" >Chronic Conditions</a>
-<a href="#" >Hospitalizations/Admission History</a>
-<a href="#">Scales</a>
- </div> 
- </div>
-
-  <main id="main" class="main">
-
-       <section >
-	
-	<div class="row">
-	<div class="col-lg-12">
-	<div class="card">
-            <div class="card-body">
-			<div class="row">
-			<div class="col-md-4">
-			 <h5 class="card-title">Chief Complaint/Reason for Visit</h5>
-              <textarea class="form-control" style="height: 232px"></textarea>
-			</div>
-			<div class="col-md-5">
-			  <h5 class="card-title">Free Text</h5>
-
-              <!-- Quill Editor Default -->
-              <div class="quill-editor-default" style="height:190px">
-                
-              </div>
-			</div>
-			<div class="col-md-3">
-			    <!-- Default Tabs -->
-              <ul class="nav nav-tabs nav-tabs-bordered d-flex" id="myTabjustified" role="tablist">
-                <li class="nav-item flex-fill" role="presentation">
-                  <button class="nav-link w-100 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-justified" type="button" role="tab" aria-controls="home" aria-selected="true">Frequent list</button>
-                </li>
-                <li class="nav-item flex-fill" role="presentation">
-                  <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-justified" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1">History</button>
-                </li>
-                <li class="nav-item flex-fill" role="presentation">
-                  <button class="nav-link w-100" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-justified" type="button" role="tab" aria-controls="contact" aria-selected="false" tabindex="-1">Past Encounter</button>
+    <body>
+<!-- Left Panel -->
+<aside id="left-panel" class="left-panel">
+      <nav class="navbar navbar-expand-sm navbar-default">
+    <div id="main-menu" class="main-menu collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+        <li > <a href="#"><i class="menu-icon fa fa-laptop"></i>Allergies </a> </li>
+		<li class="active"> <a href="#"><i class="menu-icon fa fa-laptop"></i>Chief Complaints </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Clinical Note </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Family History</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Plan </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Referrals </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>ROS </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Current Medication </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Past Medical History </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Surgical History </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Social History</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>OB-GYN Hisory</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Vital Signs </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Physical Exam </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Final Diagnosis </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Lab Orders </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Diagnostic Studies </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Medication </a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Treatment Plan</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Instructions</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Procedures</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Immunization</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Subjective</a> </li>
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>E/F Assessment</a> </li>
+       
+     
+      </ul>
+        </div>
+    <!-- /.navbar-collapse --> 
+  </nav>
+    </aside>
+<!-- /#left-panel --> 
+<!-- Right Panel -->
+<div id="right-panel" class="right-panel"> 
+      <!-- Header-->
+      <header id="header" class="header">
+    <div class="top-left">
+          <div class="navbar-header"> <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a> <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a> <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> </div>
+        </div>
+    <div class="top-right">
+          <ul style="margin:0px; right:0px; position:absolute;">
+        <div class="subnavbar">
+              <div class="subnavbar-inner">
+            <div class="container">
+                  <ul>
+                <li> <a href="#"  data-tool="Chart&nbsp;Queue"><i class="tact-chartqueue"></i><span>Queue</span></a></li>
+                <li> <a href="#" data-tool="Templates"><i class="tact-templates"></i><span>Templates</span></a> </a> </li>
+                <li> <a href="#"  data-tool="Settings"><i class="tact-settings"></i><span>Settings</span></a> </a> </li>
+                <li> <a href="#"   data-tool="Scanning" ><i class="tact-scanner"></i><span>Scanning</span></a></li>
+                <li> <a href="#"   data-tool="Appts"><i class="tact-appt"></i><span>Appts</span></a></li>
+                <li><a href="#" data-tool="EM&nbsp;Coding"><i class="tact-emcoding"></i><span>EM&nbsp;Coding</span></a></li>
+                <li > <a href="#" data-tool="Print" ><i class="tact-printer"></i><span>Print</span></a></li>
+                <li> <a href="#"  data-tool="All&nbsp;Enc"><i class="tact-allencounter"></i><span>All&nbsp;Enc</span></a></li>
+                <li><a href="#" data-tool="Sign&nbsp;Off"><i class="tact-sign"></i><span>Sign&nbsp;Off</span></a> </li>
+                <li> <a href="#" data-tool="Comments" ><i class="tact-comments"></i><span>Comments</span>
+                      </as>
+                    </li>
+                <li> <a href="#" data-tool="Co-sign&nbsp;Comments"><i class="tact-sign"></i><span>Co-sign</span></a></li>
+                <li> <a href="#" data-tool="User&nbsp;Logs"><i class="tact-userlogs"></i><span>Logs</span></a></li>
+                <li> <a href="#" data-tool="Close"><i class="tact-close"></i><span>Close</span></a></li>
                 </li>
               </ul>
-              <div class="tab-content p-2" id="myTabjustifiedContent">
-                <div class="tab-pane fade show active" id="home-justified" role="tabpanel" aria-labelledby="home-tab">
-				<div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action">1 MONTH DIABETIC</button>
-                <button type="button" class="list-group-item list-group-item-action">1 MONTH DIABETIC W/ LABS</button>
-                <button type="button" class="list-group-item list-group-item-action">1 MTH WITH LABS</button>
-                <button type="button" class="list-group-item list-group-item-action">1WK WITH LABS</button>
-				<button type="button" class="list-group-item list-group-item-action">3WKS WITH LABS</button>
-				<button type="button" class="list-group-item list-group-item-action">AORTA SCAN</button>
-				<button type="button" class="list-group-item list-group-item-action">CHECK BP</button>
-				<button type="button" class="list-group-item list-group-item-action">Fever</button>
-				<button type="button" class="list-group-item list-group-item-action">fever test</button>
-				<button type="button" class="list-group-item list-group-item-action">Fever with colds</button>
-              </div>
-                  
-				  
                 </div>
-                <div class="tab-pane fade" id="profile-justified" role="tabpanel" aria-labelledby="profile-tab">
-                  <div class="list-group">
-                <button type="button" class="list-group-item list-group-item-action">Allergies</button>
-                <button type="button" class="list-group-item list-group-item-action">Environmental Allergies</button>
-                <button type="button" class="list-group-item list-group-item-action">Family Histroy</button>
-                <button type="button" class="list-group-item list-group-item-action">Surgical Histroy</button>
-				<button type="button" class="list-group-item list-group-item-action">Past Medical History</button>
-				<button type="button" class="list-group-item list-group-item-action">Current Medication</button>
-				<button type="button" class="list-group-item list-group-item-action">Gynecology History</button>
-				<button type="button" class="list-group-item list-group-item-action">Obstetric History</button>
-				<button type="button" class="list-group-item list-group-item-action">Chronic Condition</button>
-				<button type="button" class="list-group-item list-group-item-action">Procedure Report</button>
-				<button type="button" class="list-group-item list-group-item-action">Perinatal & Development</button>
-				<button type="button" class="list-group-item list-group-item-action">Past Psychiatry History</button>
-              </div>
-                </div>
-                <div class="tab-pane fade" id="contact-justified" role="tabpanel" aria-labelledby="contact-tab">
+          </div>
+            </div>
+      </ul>
+	  
+        </div>
+    <div style="width: 100%; position: absolute; top: 57px; background-color:#247697; color:#fff; left:0px;">
+          <div class="homemenu" style="text-align:right; padding-right:10px;">
+		  <a href="#" class="btnfillwt" data-toggle="tooltip" data-placement="bottom" title="Emergency Access"><i class="small-emergencyaccess"></i></a>
+		  <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Direct&nbsp;Message"><i class="small-directmessage"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Amendments"><i class="small-amendments"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Patient&nbsp;Portal&nbsp;Pending&nbsp;Request"><i class="small-ppp-request"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Meaningful&nbsp;Use&nbsp;Dashboard"><i class="small-meaningful"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Hold&nbsp;Encno(s)"><i class="small-holdencos"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Chart Notes"><i class="small-notes" style="font-size:14px;"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Prescription&nbsp;Tracker"><i class="small-prescription"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Refill&nbsp;Request"><i class="small-refillrequest"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Free standing Error Messages"><i class="fa fa-exclamation-triangle"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Test&nbsp;Results"><i class="small-testresult"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Immunization&nbsp;Tracker"><i class="small-immunizationtracker"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="HM&nbsp;Search"><i class="small-hmsearch"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Billing & AR&nbsp;Comments"><i class="small-billingarcomments"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Mails"><i class="small-mails"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Reminders"><i class="small-reminder"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="To Do List"><i class="small-todolist"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Change&nbsp;Password"><i class="small-password"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Medication&nbsp;Logs"><i class="small-medicalogs"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Coumadin Visit"><i class="small-scoumadin2"></i></a> </div>
+        </div>
+  </header>
+      
+      <!-- /#header --> 
+      <!-- Content -->
+      <div class="content"> 
+    <!-- Animated -->
+    <div class="animated fadeIn"> 
+          <!-- Widgets  --> 
+          
+          <!--  Traffic  -->
+          <div class="row">
+        <div class="col-lg-12">
+              <div class="card">
+            <div class="card-body">
                  
-				 <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h3 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                     03/10/2023
-                    </button>
-                  </h3>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
-                    <div class="accordion-body">Encno : 139778<br>
+				  <div class="row">
+			<div class="col-md-4">
+			 <h4 class="box-title">Chief Complaint/Reason for Visit</h4>
+              <textarea class="form-control" style="height: 232px"></textarea>
+			</div>
+			<div class="col-md-4">
+			   <h4 class="box-title">Free Text</h4>
+
+              <!-- Quill Editor Default -->
+             <textarea id="txtEditor"></textarea>
+                
+              </div>
+			  <div class="col-md-4">
+			  <div class="default-tab">
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active show" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Frequent List</a>
+                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">History</a>
+                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Past Encounter</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content pt-2" id="nav-tabContent">
+                                            <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                <div class="list-group">
+ 
+  <a href="#" class="list-group-item list-group-item-action">1 MONTH DIABETIC</a>
+  <a href="#" class="list-group-item list-group-item-action">1 MONTH DIABETIC W/ LABS</a>
+  <a href="#" class="list-group-item list-group-item-action">1 MTH WITH LABS</a>
+  <a href="#" class="list-group-item list-group-item-action ">1WK WITH LABS</a>
+   <a href="#" class="list-group-item list-group-item-action ">3WKS WITH LABS</a>
+    <a href="#" class="list-group-item list-group-item-action ">AORTA SCAN</a>
+	 <a href="#" class="list-group-item list-group-item-action ">CHECK BP</a>
+	  <a href="#" class="list-group-item list-group-item-action ">Fever</a>
+	   <a href="#" class="list-group-item list-group-item-action ">Fever test</a>
+	    <a href="#" class="list-group-item list-group-item-action ">Fever with colds</a>
+</div>
+                                            </div>
+                                            <div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                 <div class="list-group">
+ 
+  <a href="#" class="list-group-item list-group-item-action">Allergies</a>
+  <a href="#" class="list-group-item list-group-item-action">Environmental Allergies</a>
+  <a href="#" class="list-group-item list-group-item-action">Family Histroy</a>
+  <a href="#" class="list-group-item list-group-item-action ">Surgical Histroy</a>
+   <a href="#" class="list-group-item list-group-item-action ">Past Medical History</a>
+    <a href="#" class="list-group-item list-group-item-action ">Current Medication</a>
+	 <a href="#" class="list-group-item list-group-item-action ">Gynecology History</a>
+	  <a href="#" class="list-group-item list-group-item-action ">Obstetric History</a>
+	   <a href="#" class="list-group-item list-group-item-action ">Chronic Condition</a>
+	    <a href="#" class="list-group-item list-group-item-action ">Procedure Report</a>
+</div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                               <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          03/10/2023
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Encno : 139778<br>
 Provider :Dr.Albert Davis<br>
 Status :For Review<br>
-Problem(s) :</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      03/10/2023
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="">
-                    <div class="accordion-body">
-					Encno : 139773<br>
+Problem(s) :
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          03/10/2023
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+      Encno : 139773<br>
 Provider :Edgar Ortega<br>
 Status :For Review<br>
 Problem(s) :
-					</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      03/06/2023
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" style="">
-                    <div class="accordion-body">
-					Encno : 139752<br>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         03/06/2023
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       Encno : 139752<br>
 Provider :Edgar Ortega<br>
 Status :For Review<br>
-Problem(s) :</div>
-                  </div>
+Problem(s) :
+      </div>
+    </div>
+  </div>
+</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+			</div>
+			</div>
+			
+			</div>
                 </div>
-              </div>
-				 
-                </div>
-              </div><!-- End Default Tabs -->
-			</div>
-			</div>
-			</div>
-			</div>
-	</div>
-	</div>
-	
+            
+            <!-- /.row -->
+            
+          </div>
+            </div>
+        <!-- /# column --> 
+      </div>
+          <!--  /Traffic -->
+          <div class="clearfix"></div>
+         
+        </div>
+    <!-- .animated --> 
+  </div>
+      <!-- /.content -->
      
-    </section>
+      <!-- /.site-footer --> 
+    </div>
+<!-- /#right-panel --> 
 
-  </main><!-- End #main -->
+<!-- Scripts --> 
 
-  <!-- ======= Footer ======= -->
- 
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script> 
+<script src="assets/js/main.js"></script> 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!--  Chart js --> 
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+
+
+<!--Chartist Chart--> 
+
+
+
+<!--  Chart js --> 
+
+<!--Chartist Chart--> 
+
+<!--Local Stuff-->
 
 </body>
-
 </html>
