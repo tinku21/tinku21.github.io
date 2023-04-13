@@ -590,7 +590,7 @@ aside.left-panel {
   .navbar .main-menu {
     float: left;
     padding: 0;
-    padding-bottom: 50px; }
+    padding-bottom: 90px; }
   .navbar .menu-title {
     color: #41434d;
     clear: both;
@@ -651,7 +651,7 @@ text-decoration:none;		}
           .navbar .navbar-nav li.menu-item-has-children a:before {
             content: "";
             position: absolute;
-            top: 23px;
+            top: 17px;
             right: 0;
             width: 8px;
             height: 8px;
@@ -825,7 +825,7 @@ text-decoration:none;		}
   margin-left: 280px;
   margin-top: 86px; }
   .right-panel .top-left {
-    width: 350px;
+  
     float: left; }
   .right-panel .top-rigth {
     float: left; }
@@ -863,7 +863,7 @@ text-decoration:none;		}
   -webkit-box-shadow: none;
           box-shadow: none;
   clear: both;
-  padding: 0 30px;
+  padding: 0 10px;
   height: 58px;
   position: fixed;
   left: 280px;
@@ -900,15 +900,15 @@ header.fixed-top {
 
 .menutoggle {
   background-color: transparent;
-  color: #99abb4 !important;
+  color: #fee158 !important;
   cursor: pointer;
   font-size: 1em;
-  height: 40px;
-  line-height: 40px;
+  
   width: 40px;
   display: block;
-left: 200px;
-    position: absolute;  }
+left: 10px;
+    position: absolute; 
+margin-top: -3px;	}
 
 .search-trigger {
   background: transparent;
@@ -1096,22 +1096,22 @@ header .form-inline {
   float: right;
   padding-right: 0;
   position: relative;
-  padding-left: 20px; }
+   }
   .user-area .user-menu {
     background: #fff;
     border: none;
-    left: inherit !important;
+    right: inherit !important;
     right: 0;
-    top: 54px !important;
+    top: 58px !important;
     margin: 0;
-    max-width: 150px;
+    max-width: 250px;
     padding: 5px 10px;
     position: absolute;
     width: 100%;
     z-index: 999;
-    min-width: 150px;
-    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05); }
+    min-width: 250px;
+    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2); }
     .user-area .user-menu .nav-link {
       color: #607d8b;
       display: block;
@@ -1197,7 +1197,7 @@ header .form-inline {
 
 .content {
   float: left;
-  padding: 1.4em;
+  padding:15px;
   width: 100%; }
 
 .card {

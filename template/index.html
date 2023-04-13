@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MDCare</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="CSS/topmenu.css" rel="stylesheet" />
     <link href="CSS/tact.css" rel="stylesheet" />
@@ -12,25 +12,12 @@
     <link href="CSS/small.css" rel="stylesheet" />
      <link rel="stylesheet" href="CSS/normalize.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="CSS/font-awesome.css">
+   
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
-	<script type="text/javascript" src="CSS/editor.css"></script>
-	 <script type="text/javascript" src="assets/js/editor.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#txtEditor").Editor();
-        });
-    </script>
-    <script>
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
+  
+	
     <style type="text/css">
 body {
 	background-color: #edeef3
@@ -406,30 +393,31 @@ a.tooltip.bottom:hover:before {
       <nav class="navbar navbar-expand-sm navbar-default">
     <div id="main-menu" class="main-menu collapse navbar-collapse">
           <ul class="nav navbar-nav">
-        <li > <a href="#"><i class="menu-icon fa fa-laptop"></i>Allergies </a> </li>
-		<li class="active"> <a href="#"><i class="menu-icon fa fa-laptop"></i>Chief Complaints </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Clinical Note </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Family History</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Plan </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Referrals </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>ROS </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Current Medication </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Past Medical History </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Surgical History </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Social History</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>OB-GYN Hisory</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Vital Signs </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Physical Exam </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Final Diagnosis </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Lab Orders </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Diagnostic Studies </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Medication </a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Treatment Plan</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Instructions</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Procedures</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Immunization</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Subjective</a> </li>
-		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>E/F Assessment</a> </li>
+		   <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home"></i>main menu 1</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><a href="#">menu level 1</a></li>
+                            <li><a href="#">menu level 2</a></li>
+                        </ul>
+                    </li>
+					
+					 <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-gear"></i>main menu 2</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><a href="#">menu level 1</a></li>
+                            <li><a href="#">menu level 2</a></li>
+                        </ul>
+                    </li>
+					
+					 <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>main menu 3</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><a href="#">menu level 1</a></li>
+                            <li><a href="#">menu level 2</a></li>
+                        </ul>
+                    </li>
+
+		<li> <a href="#"><i class="menu-icon fa fa-laptop"></i>Static Menu</a> </li>
        
      
       </ul>
@@ -443,7 +431,29 @@ a.tooltip.bottom:hover:before {
       <!-- Header-->
       <header id="header" class="header">
     <div class="top-left">
-          <div class="navbar-header"> <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a> <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a> <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> </div>
+         
+		  <div> <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                           <a class="nav-link" href="#"><strong>DOB:</strong> 1/5/1999 (24 Year(s)) </a>
+
+                            <a class="nav-link" href="#"><strong>DOS:</strong> 04/10/2023 </a>
+                            <a class="nav-link" href="#"><strong>Location:</strong> IL</a>
+<a class="nav-link" href="#"><strong>Sex:</strong> Male </a>
+<a class="nav-link" href="#"><strong>Visit Type:</strong>  New</a>
+                            <a class="nav-link" href="#">Logout</a>
+                        </div>
+                    </div>
+					<div style="float: right; position: absolute; left: 70px; color:#fff; font-size:11px; padding-top:5px;">
+					<strong style="color:#fee158;">Patient Name:</strong>	Christofer, Novert	
+					<br>
+					<strong style="color:#fee158;">MR No:</strong> 10039<br>
+					
+					<strong style="color:#fee158;">Provider:</strong> FRANK</div>	
+					</div>
         </div>
     <div class="top-right">
           <ul style="margin:0px; right:0px; position:absolute;">
@@ -465,7 +475,7 @@ a.tooltip.bottom:hover:before {
                     </li>
                 <li> <a href="#" data-tool="Co-sign&nbsp;Comments"><i class="tact-sign"></i><span>Co-sign</span></a></li>
                 <li> <a href="#" data-tool="User&nbsp;Logs"><i class="tact-userlogs"></i><span>Logs</span></a></li>
-                <li> <a href="#" data-tool="Close"><i class="tact-close"></i><span>Close</span></a></li>
+                
                 </li>
               </ul>
                 </div>
@@ -475,6 +485,7 @@ a.tooltip.bottom:hover:before {
 	  
         </div>
     <div style="width: 100%; position: absolute; top: 57px; background-color:#247697; color:#fff; left:0px;">
+	<div><a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> </div>
           <div class="homemenu" style="text-align:right; padding-right:10px;">
 		  <a href="#" class="btnfillwt" data-toggle="tooltip" data-placement="bottom" title="Emergency Access"><i class="small-emergencyaccess"></i></a>
 		  <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Direct&nbsp;Message"><i class="small-directmessage"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Amendments"><i class="small-amendments"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Patient&nbsp;Portal&nbsp;Pending&nbsp;Request"><i class="small-ppp-request"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Meaningful&nbsp;Use&nbsp;Dashboard"><i class="small-meaningful"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Hold&nbsp;Encno(s)"><i class="small-holdencos"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Chart Notes"><i class="small-notes" style="font-size:14px;"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Prescription&nbsp;Tracker"><i class="small-prescription"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Refill&nbsp;Request"><i class="small-refillrequest"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Free standing Error Messages"><i class="fa fa-exclamation-triangle"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Test&nbsp;Results"><i class="small-testresult"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Immunization&nbsp;Tracker"><i class="small-immunizationtracker"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="HM&nbsp;Search"><i class="small-hmsearch"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Billing & AR&nbsp;Comments"><i class="small-billingarcomments"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Mails"><i class="small-mails"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Reminders"><i class="small-reminder"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="To Do List"><i class="small-todolist"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Change&nbsp;Password"><i class="small-password"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Medication&nbsp;Logs"><i class="small-medicalogs"></i></a> <a href="#" class="btnfillwt" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Coumadin Visit"><i class="small-scoumadin2"></i></a> </div>
@@ -500,11 +511,9 @@ a.tooltip.bottom:hover:before {
               <textarea class="form-control" style="height: 232px"></textarea>
 			</div>
 			<div class="col-md-4">
-			   <h4 class="box-title">Free Text</h4>
-
-              <!-- Quill Editor Default -->
-             <textarea id="txtEditor"></textarea>
-                
+			   <h4 class="box-title">Notes</h4>
+ 
+                  <textarea class="form-control" style="height: 70vh"></textarea>
               </div>
 			  <div class="col-md-4">
 			  <div class="default-tab">
@@ -623,9 +632,7 @@ Problem(s) :
         </div>
     <!-- .animated --> 
   </div>
-      <!-- /.content -->
-     
-      <!-- /.site-footer --> 
+    
     </div>
 <!-- /#right-panel --> 
 
