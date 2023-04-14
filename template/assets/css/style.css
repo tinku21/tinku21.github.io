@@ -692,7 +692,7 @@ text-decoration:none;		}
               width: 25px; }
         .navbar .navbar-nav li.menu-item-has-children.show a:before {
           border-color: transparent #607d8b #607d8b transparent;
-          top: 20px;
+          top: 17px;
           right: -5px; }
         .navbar .navbar-nav li.menu-item-has-children.show a:hover:before {
           border-color: transparent #03a9f3 #03a9f3 transparent; }
@@ -738,8 +738,8 @@ text-decoration:none;		}
     display: none; }
 
 .open aside.left-panel {
-  max-width: 70px;
-  width: 70px;
+  max-width: 63px;
+  width: 63px;
   }
   .open aside.left-panel .navbar .navbar-header {
     padding: 0; }
@@ -778,7 +778,7 @@ text-decoration:none;		}
       .open aside.left-panel .navbar .navbar-nav li a .badge {
         display: none; }
     .open aside.left-panel .navbar .navbar-nav li > a {
-      max-width: 60px;
+      max-width: 50px;
       padding-left: 0; }
     .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children {
       overflow: hidden; }
@@ -786,7 +786,7 @@ text-decoration:none;		}
         padding-left: 0; }
       .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu {
         display: block;
-        left: 70px;
+        left: 63px;
         top: 0; }
         .open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu li a {
           display: block;
@@ -1198,12 +1198,12 @@ header .form-inline {
   display: block; }
 
 .content {
-  float: left;
-  padding:15px;
-  width: 100%;
-    left: 69px;
+    float: left;
+    padding: 7px;
+    width: 100%;
+    left: 67px;
     position: fixed;
-    padding-right: 89px;  }
+    padding-right: 78px; }
 
 .card {
   margin-bottom: 0em;
