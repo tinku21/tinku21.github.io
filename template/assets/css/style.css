@@ -562,7 +562,7 @@ aside.left-panel {
   height: 100vh;
   padding: 0;
   vertical-align: top;
-  width: 280px;
+  width: 240px;
   -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
           box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
   position: fixed;
@@ -606,8 +606,8 @@ aside.left-panel {
     float: none;
     position: relative; }
     .navbar .navbar-nav > li {
-      padding-left: 30px;
-      padding-right: 30px; }
+      padding-left: 14px;
+      padding-right: 18px; }
       .navbar .navbar-nav > li.active {
         background: #fafafa; }
     .navbar .navbar-nav li {
@@ -633,7 +633,7 @@ text-decoration:none;		}
           color: #607d8b;
           float: left;
           margin-top: 8px;
-          width: 55px;
+          width: 40px;
           text-align: left;
           z-index: 9; }
         .navbar .navbar-nav li > a .menu-title-text {
@@ -682,7 +682,7 @@ text-decoration:none;		}
             font-size: 14px;
             top: 9px; }
           .navbar .navbar-nav li.menu-item-has-children .sub-menu a {
-            padding: 2px 0 2px 30px; }
+            padding: 2px 0 2px 9px; }
             .navbar .navbar-nav li.menu-item-has-children .sub-menu a:before {
               content: '';
               display: none; }
@@ -1340,7 +1340,7 @@ header .form-inline {
     width: 40%; }
   .card .card-body {
     float: left;
-    padding: 1.25em;
+    padding: 13px;
     position: relative;
     width: 100%; }
   .card h4 {
