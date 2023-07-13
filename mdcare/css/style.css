@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400);
 @import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css2?family=Jost&display=swap);
 /* Global properties ======================================================== */
 a[href^="tel:"] {
 	color: inherit;
@@ -30,7 +31,8 @@ a:hover {
 body {
 	background: #fff;
 	border: 0;
-	font: 13px Arial, Helvetica, sans-serif;
+	font-family: 'Jost', sans-serif;
+	font-size:: 14px;
 	color: #4c555c;
 	line-height: 18px;
 	min-width: 320px;
