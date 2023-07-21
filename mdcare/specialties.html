@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MDCare</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<style>
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $('#myCarousel').carousel({
+        interval: 10000
+	})
+});
+</script>
+<script>
+$(document).ready(function() {
+	// camera
+	$('#camera_wrap').camera({
+		//thumbnails: true
+		autoAdvance			: true,		
+		mobileAutoAdvance	: true,
+		height: '47%',
+		hover: false,
+		loader: 'none',
+		navigation: false,
+		navigationHover: false,
+		mobileNavHover: false,
+		playPause: false,
+		pauseOnClick: false,
+		pagination			: true,
+		time: 7000,
+		transPeriod: 1000,
+		minHeight: '400px'
+	});
+
+	//	carouFredSel
+	$('#slider3 .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 8000					
+		},
+		responsive: true,
+		prev: '.prev3',
+		next: '.next3',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},			
+		items: {
+        	width: '350',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 3
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	});
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){		
+		$('#slider3 .carousel.main ul').trigger("updateSizes");
+	}
+	updateSizes_vat();
+
+	// carufredsel testimonials
+	$('#caroufredsel').carouFredSel({
+		auto: {
+			timeoutDuration: 9000					
+		},
+		responsive: true,		
+		direction:	"left",
+		prev: '.prev_testimonial',
+		next: '.next_testimonial',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo",
+			fx: "fade"
+		},			
+		items: {
+        	width: '1000',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 1
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+		
+
+
+	}); 
+
+
+
+
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+</script>		
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="main">
+<div id="main">
+
+<div class="top1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top1_inner clearfix">
+<div class="top1_inner_bg"></div>
+<header><div class="logo_wrapper"><a href="index.html" class="logo"><img class="llogo" src="images/logo.png" alt=""></a></div></header>
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+	   <li><a href="features.html">Features</a></li>
+	   <li class="active"><a href="#">Specialties</a></li>
+	   <li><a href="#">Resources</a></li>
+			
+				<li><a href="index-3.html">Roi</a></li>
+				
+				<li><a href="contact.html">Contacts</a></li>
+<li class="sub-menu sub-menu-1"><a href="#">Portal</a>
+					<ul>
+						<li><a href="#">Patient Portal</a></li>
+						<li><a href="#">Referral Portal</a></li>
+						
+						
+					</ul>
+				</li>			
+    </ul>
+		</div>
+	</div>
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+<div class="breadcrumbs1" style="padding-top:77px;">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="breadcrumbs1_inner"><a href="index.html">home</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;Specialties</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+
+
+
+
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span9">
+	
+<h1>Specialties</h1>
+
+<p style="text-align:justify;">
+MDCare EMR is equipped with a specialty-specific user-friendly electronic medical records system, fully customizable to the unique medical documentation needs. Instead of imposing complex charting rules, MDCare EMR facilitates multiple medical specialties by providing a data-set that can be customized according to the physician-specific, specialty-specific documentation workflow with an enhanced feature of customizing the data set themselves that best suits the provider’s style and determine the documentation work-flow that best conforms to their own thought process.
+<br><br>
+MDCare, our innovative Electronic Medical Records (EMR) and Practice Management (PMS) platform is developed by an efficient team of physicians from multiple specialties and senior development team with years of healthcare domain expertise. Our services offer unparalleled reliability, comprehensive support, security, ease-of-use, efficiency, and customizability.<br><br>
+
+We bring to you an authentic and stable Electronic Medical Record solution with proven technology to meet the specific requirements of each specialty. We will assist you through the maze and bring to you customizable solutions with proven technology for your practice.<br><br>
+
+The unique customization capability of our innovative EMR platform let physicians themselves determine what they want (or don’t want) to appear on the encounter form and other parts of the chart, specifically to each and every detailed custom point-and-click item and menu list choice. By coordinating and structuring encounter form yourself and populating menus / lists with medical terms and phrases in your own verbiage, you will instinctively know what to find, where to find, and how to find it. Although customization might initially require some valuable time of yours, this largely simplifies the charting process in actual patient encounters later on.<br><br>
+
+MDCARE EMR/PMS clinical content and practice management tools optimize every step of your office workflow, including scheduling, clinical documentation, claims management, coding, and collection processes.<br><br>
+
+MDCARE EMR/PMS simplifies your practice, reduce your costs, provides more rapid implementation periods, real returns on investment, higher adoption rates with greater rates of success, and maximize your efficiencies.
+</p>
+<div class="line1"></div>
+<h2>MDCARE Specialty-Specific EMR key features include</h2>
+
+
+<div class="row">
+<div class="span4">
+
+<ul class="fa-ul">
+<li><i class="fa-li fa fa-angle-double-right"></i> Client/Server or Web-based EMR options</li>
+<li><i class="fa-li fa fa-angle-double-right"></i> HIPAA Technical Security Compliant</li>
+<li><i class="fa-li fa fa-angle-double-right"></i> Drag & Drop to Reschedule Appointments</li>
+<li><i class="fa-li fa fa-angle-double-right"></i> Custom Specialty-Specific Templates</li>
+<li><i class="fa-li fa fa-angle-double-right"></i> Automatic Refill Requests </li>
+<li><i class="fa-li fa fa-angle-double-right"></i> E-Faxing </li>
+<li><i class="fa-li fa fa-angle-double-right"></i> Interoffice communication</li>
+<li><i class="fa-li fa fa-angle-double-right"></i> Electronic Billing / CMS-1500 Claims Filing </li>
+<li><i class="fa-li fa fa-angle-double-right"></i> PDR-Based Prescription Writing </li>
+<li><i class="fa-li fa fa-angle-double-right"></i> Custom Decision Support (ADE, Coding)</li>
+<li><i class="fa-li fa fa-angle-double-right"></i> HL7 Custom Interfacing</li>
+<li><i class="fa-li fa fa-angle-double-right"></i> Medical Calculator</li>
+               
+              </ul>
+</div>
+<div class="span5">
+<ul class="fa-ul">
+<li><i class="fa-li fa fa-angle-double-right"></i>Multi Provider and Resource Appointment Scheduler/Scheduling</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Insurance Authorization</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Point & Click SOAP Note Templates</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Electronic Prescribing</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Tablet PC Enabled </li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Drug & Allergy Alerts</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Online Patient Portal</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Built-in Reports</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>E&M Coding Assistance for Specific Specialty</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Lab Interface (Quest, LabCorp, etc.)</li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Document/Image Management </li> 
+<li><i class="fa-li fa fa-angle-double-right"></i>Reminders and many more additional features.</li>               
+              </ul>
+
+</div>
+</div>
+<div class="line1"></div>
+<p style="text-align:justify;">
+The comprehensive specialty-specific customization feature set is customer-driven, advanced, and continuously updated to keep pace with rapid changes in healthcare industry. The specialty-specific EMR is fully customizable to suit individual needs and workflow settings, and covers over 30 medical specialties as described below.
+</p>
+
+
+<div class="row">
+<div class="span4">
+
+<ul class="fa-ul">
+<li><i class="fa-li fa fa-angle-double-right"></i>Cardiology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Dermatology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Endocrinology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>ENT/Otolaryngology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Family Practice</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Gastroenterology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>General Surgery</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Internal Medicine</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Neurology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>OB-GYN</li>
+               
+              </ul>
+</div>
+<div class="span5">
+<ul class="fa-ul">
+
+<li><i class="fa-li fa fa-angle-double-right"></i>Ophthalmology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Orthopedics</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Pain Management</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Pediatric</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Podiatry</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Psychiatry</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>RIS (Radiology Information System)</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Pulmonology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Urology</li>
+<li><i class="fa-li fa fa-angle-double-right"></i>Urgent Care</li>
+             
+              </ul>
+
+</div>
+</div>
+<p>Also supporting Allergy, Rheumatology, Infectious Disease, Plastic/Cosmetic Surgery, Geriatrics, Optometry, Hematology, Oncology, Sports Medicine and other specialties. Contact us for more information.</p>
+
+</div>
+
+<div class="span3">
+
+<h2>Why choose us</h2>
+
+	<ul class="ul1">
+	   <li><a href="#">Client/Server or Web-based EMR</a></li>
+	  <li><a href="#">HIPAA Technical Security Compliant</a></li>
+	  <li><a href="#">Electronic Billing</a></li>
+	  <li><a href="#">Electronic Prescribing</a></li>
+	  <li><a href="#">Medical Calculator</a></li>	  	            		      	      			      
+	</ul>	
+
+	<br>
+	
+<div class="box1">
+<div class="caroufredsel_slider">
+	<div class="txt1">Testimonials</div>
+	<a class="prev_testimonial" href="#"></a>
+	<a class="next_testimonial" href="#"></a>	
+	<ul id="caroufredsel" class="clearfix">
+		<li>
+			<div class="testimonial1">
+				<div class="txt1"> “I received my incentive money” MDCARE EMR is very easy to work with. I could successfully learn using it, and also got my incentive money for 2011. </div>
+				<div class="txt2">- Gene Turner MD</div>
+			</div>
+			
+		</li>
+		<li>
+			<div class="testimonial1">
+				<div class="txt1"> “I received my incentive money” MDCARE EMR is very easy to work with. I could successfully learn using it, and also got my incentive money for 2011. </div>
+				<div class="txt2">- Dr. Pradeep</div>
+			</div>
+			
+		</li>
+		<li>
+			<div class="testimonial1">
+				<div class="txt1"> “I received my incentive money” MDCARE EMR is very easy to work with. I could successfully learn using it, and also got my incentive money for 2011. </div>
+				<div class="txt2">- Dr. Goyal</div>
+			</div>
+			
+		</li>								
+	</ul>
+</div>
+</div>
+
+</div>
+
+ <!-- 
+<div class="span12">
+    	    <div> 
+                <div id="myCarousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                 
+               
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row-fluid">
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+					  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row-fluid">
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row-fluid">
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                </div>
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                </div>
+                 
+            </div>
+		</div> -->
+
+	
+</div>	
+</div>	
+</div>
+
+
+<div class="bot1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="bot1_inner">
+<div class="row">
+<div class="span3">
+
+	<div class="block_title">Useful Links</div>
+
+	<ul class="ul0">
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">MDCARE EMR/PMS Disclosure statement</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">MDCare API Documentation</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Real World Testing Plan 2022</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Real World Testing Results 2022</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Real World Testing Plan 2023</a></li>	                                                                                
+	                                                                                
+	</ul>
+
+</div>
+<div class="span3">
+
+	<div class="block_title">Our Services</div>
+
+	<ul class="ul0">
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">E-Prescribing</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Scheduling</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Clinical Documentation</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Pos</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">EM Coding</a></li>
+      <li><i class="fa fa-angle-double-right"></i> <a href="#">Decision Making</a></li> 
+	</ul>
+
+</div>
+<div class="span3">
+
+	<div class="block_title">&nbsp;</div>
+
+	<ul class="ul0">
+	
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Patient Education Forms</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">HL7 Interface</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Integrated Billing Module</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Denial Management Module</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Document Editing & Management</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">HIPAA</a></li>
+	 
+	</ul>
+
+</div>
+<div class="span3">
+
+		<div class="phone1" style="margin-top:20px;">
+		<div class="txt2">MDCare</div>
+	</div>
+
+	<ul class="ul0">
+	  <li style="color:#fff;">1717 Park Street, Suite 110<br>
+Naperville, IL 60563<br>
+United States</li>
+	  <li style="padding-top:10px;">Email: <a href="#">info@vinfonet.com</a></li>	                                                                                  
+	</ul>
+
+</div>	
+</div>	
+<footer>
+	<div class="copyright"><a href="#">Designed By Vinfonet</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2023. All rights reserved</div>
+</footer>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+
+
+
+
+
+
+
+	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

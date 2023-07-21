@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MDCare</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen">    
+<link rel="stylesheet" href="css/camera.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+
+<script type="text/javascript" src="js/camera.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<style>
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $('#myCarousel').carousel({
+        interval: 10000
+	})
+});
+</script>
+<script>
+$(document).ready(function() {	
+	//	carouFredSel
+	$('#slider4 .carousel.main ul').carouFredSel({
+		auto: {
+			timeoutDuration: 8000					
+		},
+		responsive: true,
+		prev: '.prev4',
+		next: '.next4',
+		width: '100%',
+		scroll: {
+			items: 1,
+			duration: 1000,
+			easing: "easeOutExpo"
+		},			
+		items: {
+        	width: '350',
+			height: 'variable',	//	optionally resize item-height			  
+			visible: {
+				min: 1,
+				max: 4
+			}
+		},
+		mousewheel: false,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			}
+	});
+	$(window).bind("resize",updateSizes_vat).bind("load",updateSizes_vat);
+	function updateSizes_vat(){		
+		$('#slider4 .carousel.main ul').trigger("updateSizes");
+	}
+	updateSizes_vat();
+
+
+
+
+
+}); //
+$(window).load(function() {
+	//
+
+}); //
+</script>		
+<!--[if lt IE 8]>
+		<div style='text-align:center'><a href="https://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+	<![endif]-->    
+
+<!--[if lt IE 9]>
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+
+<body class="main">
+<div id="main">
+
+<div class="top1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="top1_inner clearfix">
+<div class="top1_inner_bg"></div>
+<header><div class="logo_wrapper"><a href="index.html" class="logo"><img class="llogo" src="images/logo.png" alt=""></a></div></header>
+<div class="navbar navbar_">
+	<div class="navbar-inner navbar-inner_">
+		<a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+		<div class="nav-collapse nav-collapse_ collapse">
+			<ul class="nav sf-menu clearfix">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+	   <li><a href="features.html">Features</a></li>
+	   <li><a href="specialties.html">Specialties</a></li>
+	   <li><a href="#">Resources</a></li>
+			
+				<li><a href="index-3.html">Roi</a></li>
+				
+				<li class="active"><a href="contact.html">Contacts</a></li>
+<li class="sub-menu sub-menu-1"><a href="#">Portal</a>
+					<ul>
+						<li><a href="#">Patient Portal</a></li>
+						<li><a href="#">Referral Portal</a></li>
+						
+						
+					</ul>
+				</li>			
+    </ul>
+		</div>
+	</div>
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+<div class="breadcrumbs1" style="padding-top:77px;">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="breadcrumbs1_inner"><a href="index.html">home</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;contact us</div>	
+</div>	
+</div>	
+</div>	
+</div>	
+
+
+
+
+
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span9">
+	
+<h1>Contact Us</h1>
+
+<figure class="google_map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.38128170301!2d-88.14949589999999!3d41.798546099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e56388e430811%3A0xb1119925f48a08ae!2s1717%20Park%20St%20Suite%20110%2C%20Naperville%2C%20IL%2060563%2C%20USA!5e0!3m2!1sen!2sin!4v1689934547119!5m2!1sen!2sin"></iframe>
+</figure>
+
+<h3>Vision Infonet Inc.</h3>
+
+<p>
+	1717 Park Street, Suite 110<br>
+Naperville, IL 60563.<br>
+Telephone: 1-877-377-8999 / 1-630-299-7638<br>
+Fax: 1-630-778-0634<br>
+E-mail: <a href="#">info@vinfonet.com</a>
+</p>
+
+<div class="line1"></div>
+
+<h2>contact form</h2>
+
+<div id="note"></div>
+<div id="fields">
+	<form id="ajax-contact-form" class="form-horizontal" action="javascript:alert('success!');">
+		<div class="row">
+			<div class="span4">
+				<div class="control-group">
+				    <label class="control-label" for="inputName">Your full name:</label>
+				    <div class="controls">				      
+				      <input class="span4" type="text" id="inputName" name="name" value="Your full name:" onBlur="if(this.value=='') this.value='Your full name:'" onFocus="if(this.value =='Your full name:' ) this.value=''">
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label class="control-label" for="inputEmail">Your email:</label>
+				    <div class="controls">				      
+				      <input class="span4" type="text" id="inputEmail" name="email" value="Your email:" onBlur="if(this.value=='') this.value='Your email:'" onFocus="if(this.value =='Your email:' ) this.value=''">
+				    </div>
+				</div>
+				<div class="control-group">
+				    <label class="control-label" for="inputPhone">Phone number:</label>
+				    <div class="controls">				      
+				      <input class="span4" type="text" id="inputPhone" name="phone" value="Phone number:" onBlur="if(this.value=='') this.value='Phone number:'" onFocus="if(this.value =='Phone number:' ) this.value=''">
+				    </div>
+				</div>
+			</div>
+			<div class="span5">
+				<div class="control-group">
+				    <label class="control-label" for="inputMessage">Message:</label>
+				    <div class="controls">				      				      
+				      <textarea class="span5" id="inputMessage" name="content" onBlur="if(this.value=='') this.value='Message:'" 
+                        onFocus="if(this.value =='Message:' ) this.value=''">Message:</textarea>
+				    </div>
+				</div>
+			</div>
+		</div>
+		
+		<button type="submit" class="submit">Submit</button>
+	</form>
+</div>
+
+
+</div>
+
+<div class="span3">
+
+<h2>Why choose us</h2>
+
+	<ul class="ul1">
+	   <li><a href="#">Client/Server or Web-based EMR</a></li>
+	  <li><a href="#">HIPAA Technical Security Compliant</a></li>
+	  <li><a href="#">Electronic Billing</a></li>
+	  <li><a href="#">Electronic Prescribing</a></li>
+	  <li><a href="#">Medical Calculator</a></li>	  	            		      	      			      
+	</ul>	
+
+	<br>
+	
+<div class="box1">
+<div class="caroufredsel_slider">
+	<div class="txt1">Testimonials</div>
+	<a class="prev_testimonial" href="#"></a>
+	<a class="next_testimonial" href="#"></a>	
+	<ul id="caroufredsel" class="clearfix">
+		<li>
+			<div class="testimonial1">
+				<div class="txt1"> “I received my incentive money” MDCARE EMR is very easy to work with. I could successfully learn using it, and also got my incentive money for 2011. </div>
+				<div class="txt2">- Gene Turner MD</div>
+			</div>
+			
+		</li>
+		<li>
+			<div class="testimonial1">
+				<div class="txt1"> “I received my incentive money” MDCARE EMR is very easy to work with. I could successfully learn using it, and also got my incentive money for 2011. </div>
+				<div class="txt2">- Dr. Pradeep</div>
+			</div>
+			
+		</li>
+		<li>
+			<div class="testimonial1">
+				<div class="txt1"> “I received my incentive money” MDCARE EMR is very easy to work with. I could successfully learn using it, and also got my incentive money for 2011. </div>
+				<div class="txt2">- Dr. Goyal</div>
+			</div>
+			
+		</li>								
+	</ul>
+</div>
+</div>
+
+</div>
+
+<div class="container">
+<div class="row">
+<div class="span12">
+<div id="slider4">
+<div class="slider4-title">Our Supports</div>
+<div class="slider4_wrapper2">
+<a class="prev4" href="#"></a>
+<a class="next4" href="#"></a>
+<div class="carousel-box row">
+	<div class="inner span12">			
+		<div class="carousel main">
+			<ul>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								<div class="caption">
+									<div class="txt1">Sales and marketing</div>
+									<div class="txt2">Please contact to know more about MDCare or schedule live demo</div>
+								 <i class="fa fa-envelope"></i>	info@vinfonet.com<br>
+ <i class="fa fa-phone"></i> 1-877-377-8999 ext.21						
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								
+								<div class="caption">
+									<div class="txt1">Support</div>
+									<div class="txt2">A dedicated Account Manager will be assigned for each client of MDCare EMR/PMS.</div>		 <i class="fa fa-envelope"></i>	support@vinfonet.com
+ <br>
+ <i class="fa fa-phone"></i> 1-877-377-8999 ext.25					
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+							
+								<div class="caption">
+									<div class="txt1">Training</div>
+									<div class="txt2">Our team will work with the client to develop a customized implementation plan for their practice.</div>		
+ <i class="fa fa-envelope"></i>	mdcare@vinfonet.com									
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								
+								<div class="caption">
+									<div class="txt1">Demonstration</div>
+									<div class="txt2">Call us today for more information and to setup a live demo of MDCare EMR/PMS.</div>	<i class="fa fa-envelope"></i>	info@vinfonet.com <br>
+                                    <i class="fa fa-phone"></i>  1-877-377-8999 ext.31								
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="thumb-carousel2 banner1">
+						<div class="thumbnail clearfix">
+							<a href="#">
+								
+								<div class="caption">
+									<div class="txt1">Regional Offices</div>
+									<div class="txt2"><strong>Southern Region :</strong>
+804 West Royal Ln, #213 Irving TX 60563<br>
+<strong>South Eastern Region :</strong>
+8771 SW 21st street Miramar FL 33025<br>
+<strong>Western Region :</strong>
+1633 Bayshore Highway, Ste 206, Burlingame, CA 94010
+</div>								
+								</div>								
+							</a>								
+						</div>
+					</div>
+				</li>
+				
+			
+																												
+			</ul>
+		</div>
+	</div>
+</div>	
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+
+ <!-- 
+<div class="span12">
+    	    <div> 
+                <div id="myCarousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                 
+               
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row-fluid">
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+					  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row-fluid">
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row-fluid">
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                </div>
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                </div>
+                 
+            </div>
+		</div> -->
+
+	
+</div>	
+</div>	
+</div>
+
+
+<div class="bot1">
+<div class="container">
+<div class="row">
+<div class="span12">
+<div class="bot1_inner">
+<div class="row">
+<div class="span3">
+
+	<div class="block_title">Useful Links</div>
+
+	<ul class="ul0">
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">MDCARE EMR/PMS Disclosure statement</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">MDCare API Documentation</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Real World Testing Plan 2022</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Real World Testing Results 2022</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Real World Testing Plan 2023</a></li>	                                                                                
+	                                                                                
+	</ul>
+
+</div>
+<div class="span3">
+
+	<div class="block_title">Our Services</div>
+
+	<ul class="ul0">
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">E-Prescribing</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Scheduling</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Clinical Documentation</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">Pos</a></li>
+	  <li><i class="fa fa-angle-double-right"></i> <a href="#">EM Coding</a></li>
+      <li><i class="fa fa-angle-double-right"></i> <a href="#">Decision Making</a></li> 
+	</ul>
+
+</div>
+<div class="span3">
+
+	<div class="block_title">&nbsp;</div>
+
+	<ul class="ul0">
+	
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Patient Education Forms</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">HL7 Interface</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Integrated Billing Module</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Denial Management Module</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">Document Editing & Management</a></li>
+<li><i class="fa fa-angle-double-right"></i> <a href="#">HIPAA</a></li>
+	 
+	</ul>
+
+</div>
+<div class="span3">
+
+		<div class="phone1" style="margin-top:20px;">
+		<div class="txt2">MDCare</div>
+	</div>
+
+	<ul class="ul0">
+	  <li style="color:#fff;">1717 Park Street, Suite 110<br>
+Naperville, IL 60563<br>
+United States</li>
+	  <li style="padding-top:10px;">Email: <a href="#">info@vinfonet.com</a></li>	                                                                                  
+	</ul>
+
+</div>	
+</div>	
+<footer>
+	<div class="copyright"><a href="#">Designed By Vinfonet</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright © 2023. All rights reserved</div>
+</footer>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>
+
+
+
+
+
+
+
+
+	
+</div>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

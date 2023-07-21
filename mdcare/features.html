@@ -26,6 +26,41 @@
 
 <script type="text/javascript" src="js/jquery.caroufredsel.js"></script>
 <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<style>
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	left: -12px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $('#myCarousel').carousel({
+        interval: 10000
+	})
+});
+</script>
 <script>
 $(document).ready(function() {
 	// camera
@@ -154,16 +189,16 @@ $(window).load(function() {
 		</a>
 		<div class="nav-collapse nav-collapse_ collapse">
 			<ul class="nav sf-menu clearfix">
-      <li class="active"><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="aboutus.html">About Us</a></li>
-	   <li><a href="features.html">Features</a></li>
+	   <li class="active"><a href="#">Features</a></li>
 	   <li><a href="specialties.html">Specialties</a></li>
 	   <li><a href="#">Resources</a></li>
 			
-				<li><a href="#">Roi</a></li>
+				<li><a href="index-3.html">Roi</a></li>
 				
 				<li><a href="contact.html">Contacts</a></li>
-<li class="sub-menu sub-menu-1"><a href="index-2.html">Portal</a>
+<li class="sub-menu sub-menu-1"><a href="#">Portal</a>
 					<ul>
 						<li><a href="#">Patient Portal</a></li>
 						<li><a href="#">Referral Portal</a></li>
@@ -180,248 +215,74 @@ $(window).load(function() {
 </div>	
 </div>	
 </div>
-
-<div class="slider_wrapper2">
-<div class="slider_wrapper">
-<div id="slider">
-<div id="camera_wrap">
-	<div data-src="images/one.png">
-		    
-	</div>
-
-	<div data-src="images/two.png">
-	    
-	</div>
-	
-				
-</div>	
-</div>	
-</div>	
-</div>	
-
-<div class="slider2">
+<div class="breadcrumbs1" style="padding-top:77px;">
 <div class="container">
 <div class="row">
 <div class="span12">
-<div class="slider2_inner clearfix">
-<div class="slider2_block1">
-<div id="slider3">
-<div class="carousel-box">
-	<div class="inner">			
-		<div class="carousel main">
-			<ul>				
-				<li>
-					<div class="thumb-carousel">
-						<div class="thumbnail clearfix">
-							<a href="#">
-								<figure>
-									<img src="images/banner1.png" alt="">
-								</figure>
-								<div class="caption">
-									<div class="txt1">
-										The Team
-									</div>
-									<div class="txt2">
-										Consisting of Physicians, Software professionals, Medical Transcriptionists..
-									</div>
-									<div class="txt3">read more</div>
-								</div>								
-							</a>								
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="thumb-carousel">
-						<div class="thumbnail clearfix">
-							<a href="#">
-								<figure>
-									<img src="images/banner2.png" alt="">
-								</figure>
-								<div class="caption">
-									<div class="txt1">
-										The Experience
-									</div>
-									<div class="txt2">
-										30 years of medical practice, 12 years of software development, 18 years of transcription ..
-									</div>
-									<div class="txt3">read more</div>
-								</div>								
-							</a>								
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="thumb-carousel">
-						<div class="thumbnail clearfix">
-							<a href="#">
-								<figure>
-									<img src="images/banner3.png" alt="">
-								</figure>
-								<div class="caption">
-									<div class="txt1">
-										The Product
-									</div>
-									<div class="txt2">
-										One of the most advanced, flexible, customizable, robust, user-friendly EMR..
-									</div>
-									<div class="txt3">read more</div>
-								</div>								
-							</a>								
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="thumb-carousel">
-						<div class="thumbnail clearfix">
-							<a href="#">
-								<figure>
-									<img src="images/banner4.png" alt="">
-								</figure>
-								<div class="caption">
-									<div class="txt1">
-										INTEGRATED BILLING
-									</div>
-									<div class="txt2">
-										As Per the traditional way, the provider spends about 15 minutes and 5 minutes..
-									</div>
-									<div class="txt3">read more</div>
-								</div>								
-							</a>								
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="thumb-carousel">
-						<div class="thumbnail clearfix">
-							<a href="#">
-								<figure>
-									<img src="images/banner5.png" alt="">
-								</figure>
-								<div class="caption">
-									<div class="txt1">
-										CUSTOMIZED REPORTING
-									</div>
-									<div class="txt2">
-										Over 500 customizable patient education handouts. The system has the capability to create..
-									</div>
-									<div class="txt3">read more</div>
-								</div>								
-							</a>								
-						</div>
-					</div>
-				</li>
-																				
-			</ul>
-		</div>
-	</div>
-</div>
-</div>
-</div>
-<div class="slider2_block2">
-<div class="slider2_block2_description">
-	<div class="txt1">We provide the best service</div>
-	<div class="txt2">Use MDCare EMR for 6 months absolutely free!</div>
-</div>
-<div class="slider2_block2_pag clearfix">
-	<a class="prev3" href="#"></a>
-	<a class="next3" href="#"></a>	
-</div>
-</div>		
-</div>
+<div class="breadcrumbs1_inner"><a href="index.html">home</a>&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;features</div>	
 </div>	
 </div>	
 </div>	
-</div>
+</div>	
 
-<div class="banners2">
-<div class="container">
-<div class="row">
-<div class="span4 banner banner1">
-<div class="banner_inner">
-	<a href="#">
-	
-		<img src="images/log2.png" alt="" class="img">
-		
-	</a>
-</div>	
-</div>
-<div class="span4 banner banner2">
-<div class="banner_inner">
-	<a href="#">
-		
-		<img src="images/log1.png" alt="" class="img">
-		
-	</a>
-</div>	
-</div>
-<div class="span4 banner banner3">
-<div class="banner_inner">
-	<a href="#">
-		
-		<img src="images/log3.png" alt="" class="img">
-		
-	</a>
-</div>	
-</div>	
-</div>	
-</div>	
-</div>
 
-<div class="slogan1">
-<div class="container">
-<div class="row">
-<div class="span12">
-<div class="slogan1_inner clearfix">
-<div class="row">
-<div class="span8">
-<div class="block1">
-	<div class="txt1">Have Questions? <span>Call uS: 1-877-377-8999 ext.31</span></div>
-	<div class="txt2">Call us today for more information and to setup a live demo of MDCare EMR/PMS.</div>
-</div>	
-</div>
-<div class="span4">
-<div class="block2">
-	<a href="#" class="button1">request free quote</a>
-</div>	
-</div>	
-</div>	
-</div>	
-</div>	
-</div>	
-</div>	
-</div>
+
+
 
 <div id="content">
 <div class="container">
 <div class="row">
-<div class="span4">
+<div class="span9">
 	
-	<h2>Welcome to <span>MDCare</span></h2>
+<h1>Features</h1>
 
-	<p style="text-align:justify;">
-		With the ongoing trends in Information Technology, where change is an obsession, time a limited commodity, and quality the hallmark of every business, Vision Infonet Inc has created its niche in the industry by providing healthcare providers the best. Vision Infonet proactively understands the current needs of the healthcare industry and successfully fulfilling them by combining high-end technology with highly skilled professionals to make the documentation process simple.
-	</p>
-	<a href="#" class="button2">read more</a>
+
+<ul class="fa-ul">
+                <li><i class="fa-li fa fa-angle-double-right"></i> Drug-Drug Interactions, Drug-Disease Interactions (Contraindications,  Precautions)</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Improve your practice&rsquo;s productivity through automation with MDCare+ EMR.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Eliminates pulling and filing charts.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> End of the day reporting becomes much easier with EMR customizable  reports.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Automated CPT coding increases revenue and saves valuable time.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Clinical Decision Tools create evidence based diagnosis and better  treatment decisions.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> More than one user can access the medical record.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> HIPAA compliant architecture.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Access one word anywhere.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Customizable templates.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Clinical documentation designed for speed.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Integrated Digital Signature.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Integrated Spell-Checker</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Workflow optimization.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> HL7 Lab interface, HL7 Custom interface.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Integrated DICOM viewer.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Integrated SNOMED and LOINC codes.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Drawing capabilities and image annotations.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Health maintenance recording.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Disease Management.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Clinical messaging between physicians and staff.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Patient summary screens that summarizes patient clinical condition,  allergies, Past medical history, and family history.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Over 500 customizable, patient education material.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Over 500 Medical Calculators and Medical Decision Trees.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Drug database with 40,000 of the most commonly used Prescription Drugs,  Over-the-Counter Drugs and Herbal medications.</li>
+                <li><i class="fa-li fa fa-angle-double-right"></i> Interface with the National Drug Code (NDC) for More than 10,000 NDC  coded Drugs.</li>
+              </ul>
 
 
 
 </div>
-<div class="span4">
-	
-	<h2>Why choose us</h2>
+
+<div class="span3">
+
+<h2>Why choose us</h2>
 
 	<ul class="ul1">
-	  <li><a href="#">Client/Server or Web-based EMR</a></li>
+	   <li><a href="#">Client/Server or Web-based EMR</a></li>
 	  <li><a href="#">HIPAA Technical Security Compliant</a></li>
 	  <li><a href="#">Electronic Billing</a></li>
 	  <li><a href="#">Electronic Prescribing</a></li>
 	  <li><a href="#">Medical Calculator</a></li>	  	            		      	      			      
-	</ul>
+	</ul>	
 
-
-	
-</div>
-<div class="span4">
+	<br>
 	
 <div class="box1">
 <div class="caroufredsel_slider">
@@ -454,13 +315,64 @@ $(window).load(function() {
 </div>
 </div>
 
+</div>
+
+ <!-- 
+<div class="span12">
+    	    <div> 
+                <div id="myCarousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                 
+               
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row-fluid">
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+					  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	  <div class="span2"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row-fluid">
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                <div class="item">
+                	<div class="row-fluid">
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                		<div class="span3"><a href="#x" class="thumbnail"><img src="http://placehold.it/100x100" alt="Image" style="max-width:100%;" /></a></div>
+                	</div>
+                </div>
+                 
+                </div>
+                 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                </div>
+                 
+            </div>
+		</div> -->
 
 	
 </div>	
 </div>	
-</div>	
 </div>
-
 
 
 <div class="bot1">

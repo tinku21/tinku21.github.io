@@ -18,6 +18,7 @@ a[href^="tel:"] {
 background:#ca0000!important;
 color:#fff
 }
+p{text-align:justify;}
 a {
 	color: #009dc0;
 	text-decoration: underline;
@@ -1787,4 +1788,12 @@ body {
 .navbar-form input {
 	width: 240px;
 }
+}
+.fa-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: 0.14285714em;
+    text-align: center;
+    color: #008ddc;
 }
