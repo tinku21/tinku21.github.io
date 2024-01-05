@@ -26,7 +26,12 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+<style>
+.contact .php-email-form {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.0);
+    padding: 30px;
+}
+</style>
 
 </head>
 
@@ -89,7 +94,8 @@
           <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Speedarp Solutions</span></h2>
+                <h2 class="animate__animated animate__fadeInDown">Comprehensive internal 
+ <span>documentation for LLCs </span></h2>
               
               </div>
             </div>
@@ -99,7 +105,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated fanimate__adeInDown">Do the  <span>Speedarp way</span></h2>
+                <h2 class="animate__animated fanimate__adeInDown">Appealing and creative<span> content for websites</span></h2>
                
               </div>
             </div>
@@ -109,7 +115,8 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Innovative and  <span>Genuine Content</span></h2>
+                <h2 class="animate__animated animate__fadeInDown">Paraphrasing and documentation  
+  <span>services for students</span></h2>
                 
               </div>
             </div>
@@ -196,7 +203,7 @@
    </p>
           </div>
 		   <div class="col-lg-6">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/about.jpg" class="img-fluid img-thumbnail" alt="">
           </div>
         </div>
   <div class="row" style="padding-top:10px;">
@@ -211,9 +218,73 @@
 
   </main><!-- End #main -->
 
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="color:#002060;">Request a Quote</h4>
+		  <a href="#"class="close" data-dismiss="modal"  style="color:#002060;">&times;</a>
+         
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="background-color:#fff; padding:0px;">
+         <div class="row">
+
+     <section id="contact" class="contact" style="padding:0px; background-color:transparent;">
+          <div class="col-lg-12">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form" style="box-shadow:0px !important;">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+		  </section>
+
+        </div>
+        </div>
+        
+        <!-- Modal footer -->
+       
+      </div>
+    </div>
+  </div>
   <!-- ======= Footer ======= -->
   <footer id="footer">
- 
+   <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+           
+            <p style="font-size:18px;">Please feel free to contact us for any question you might have, we will be happy to assist you shortly. Please note that our support team will contact you with in 24 hours.</p>
+          </div>
+          <div class="col-lg-4" style="text-align:center;">
+           <a href="#" class="btn btn-primary btn-lg btn-block" style="border-radius:20px;"   data-toggle="modal" data-target="#myModal">Request a Quotes</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Speedarp Solutions</span></strong>. All Rights Reserved 2024
@@ -223,7 +294,9 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -235,6 +308,35 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
+// Initialize tooltip component
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Initialize popover component
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<h4 class="modal-title" id="modalLabel">Modal Title</h4>
+</div>
+<div class="modal-body">
+Modal content...
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
 
 </body>
 
