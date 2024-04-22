@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MDCare</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  
+<SCRIPT language="JavaScript">
+<!--
+
+function startclock()
+{//alert(1)
+var thetime=new Date();
+
+var nhours=thetime.getHours();
+var nmins=thetime.getMinutes();
+var nsecn=thetime.getSeconds();
+var nday=thetime.getDay();
+var nmonth=thetime.getMonth();
+var ntoday=thetime.getDate();
+var nyear=thetime.getYear();
+var AorP=" ";
+
+if (nhours>=12)
+    AorP="P.M.";
+else
+    AorP="A.M.";
+
+if (nhours>=13)
+    nhours-=12;
+
+if (nhours==0)
+   nhours=12;
+
+if (nsecn<10)
+ nsecn="0"+nsecn;
+
+if (nmins<10)
+ nmins="0"+nmins;
+
+if (nday==0)
+  nday="Sunday";
+if (nday==1)
+  nday="Monday";
+if (nday==2)
+  nday="Tuesday";
+if (nday==3)
+  nday="Wednesday";
+if (nday==4)
+  nday="Thursday";
+if (nday==5)
+  nday="Friday";
+if (nday==6)
+  nday="Saturday";
+
+nmonth+=1;
+
+if (nyear<=99)
+  nyear= "19"+nyear;
+
+if ((nyear>99) && (nyear<2000))
+ nyear+=1900;
+
+ var tt=nhours+": "+nmins+": "+nsecn+" "+AorP+" "+nday+", "+nmonth+"/"+ntoday+"/"+nyear;
+ //alert(tt)
+document.getElementById("clock").innerHTML="<font color='#fff' >"+tt+"</font>";
+
+setTimeout('startclock()',1000);
+
+} 
+
+
+</SCRIPT>
+</head>
+<body class="hold-transition layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="left: 0; position: fixed; right: 0; top: 0; z-index: 1037; margin-left:0px;">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+     
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-plus"></i>
+          </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+      
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">New Appointment</a>
+          <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">New Video Visit</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">Create Tasks</a>
+          <div class="dropdown-divider"></div>
+         <a href="#" class="dropdown-item">New Patient</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="margin-top:56px">
+    <!-- Brand Logo -->
+<div class="card card-tabs" >
+              <div class="card-header p-0 pt-0">
+                <ul class="nav nav-tabs nav-justified" id="custom-tabs-one-tab" role="tablist" style="background-color:#fff;">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-one-home-tab"  style="border-radius:0px; border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">
+					<i class="fas fa-folder-open" style="font-size:28px;"></i><br>
+					Visit</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-profile-tab" style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
+					<i class="fas fa-user" style="font-size:28px;"></i><br>
+					Patient</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-messages-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">
+					<i class="fa fa-history" style="font-size:28px;"></i><br>
+					History</a>
+                  </li>
+                 
+                </ul>
+              </div>
+              <div class="card-body" style="padding:0px; background-color: currentcolor;">
+                <div class="tab-content" id="custom-tabs-one-tabContent">
+                  <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                   <div class="sidebar" style="padding-top:5px;">
+  
+      <!-- SidebarSearch Form -->
+   
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+             <i class="nav-icon fas fa-map-marker-alt"></i>
+              <p>
+                Check-in Information       
+              </p>
+            </a>
+         
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-history"></i>
+              <p>
+                Family / Social History
+                
+              </p>
+            </a>
+          </li>
+		   <li class="nav-item">
+            <a href="#" class="nav-link">
+             <i class="nav-icon fas fa-capsules"></i>
+              <p>
+                Medications / Allergies
+                
+              </p>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a href="#" class="nav-link">
+             <i class="nav-icon fas fa-male"></i>
+              <p>
+               Review of Systems
+                
+              </p>
+            </a>
+          </li>
+		   <li class="nav-item">
+            <a href="#" class="nav-link">
+              
+			  <i class="nav-icon fas fa-stethoscope"></i>
+              <p>
+               Phusical Exam
+                
+              </p>
+            </a>
+          </li>
+		    <li class="nav-item">
+            <a href="#" class="nav-link">
+			<i class="nav-icon fas fa-clipboard"></i>
+			  <p>
+              Assessment
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-file"></i>
+			 <p>
+              Plan
+              </p>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a href="#" class="nav-link">
+			 <i class="nav-icon fas fa-notes-medical"></i>
+              <p>
+              Meaningful Use
+              </p>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a href="#" class="nav-link">
+			<i class="nav-icon fas fa-dollar-sign"></i>
+                      <p>
+              Billing
+              </p>
+            </a>
+          </li>
+          
+         
+         
+        
+      
+        
+   
+          
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                    2
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-messages" role="tabpanel" aria-labelledby="custom-tabs-one-messages-tab">
+                     3
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel" aria-labelledby="custom-tabs-one-settings-tab">
+                    4
+                  </div>
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+    <!-- Sidebar -->
+    
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+ 
+    <!-- /.content-header -->
+ <div style="background-color:#367598; margin-top:56px; border-left:1px solid #418db7; padding:10px;" >
+ <div class="container-fluid">
+ <div class="row">
+ <div class="col-lg-6">
+ <table width="100%">
+ <tr>
+ <td style="width:66px;"> <img class="profile-user-img img-fluid img-circle" src="Images/avatar5.png" alt="User profile picture" style="width:66px;"></td>
+ <td valign="top">
+ <table>
+ <tr>
+ <td valign="top" style="padding-left:10px; color:#fff;"><div style="padding-left:10px; color:#fff; font-size:20px; font-weight:bold;">Patient Name</div>
+<div style="padding-left:10px;">(Male | 40 | 02/11/1980 )</div>
+ </td>
+ <tr>
+ 
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+</div>
+ <div class="col-lg-6"  style="color:#fff; text-align:Right"><div id="clock" align="right"></div>
+                <script language="JavaScript" type="text/javascript">
+startclock();
+</script>
+<div style="padding-top:10px;">
+<button type="button" class="btn btn-default btn-sm">Vitals</button>
+<button type="button" class="btn btn-default btn-sm">Tools</button>
+</div>
+</div>
+ </div>
+</div>
+
+ </div>
+    <!-- Main content -->
+    
+     <section class="content" style="padding-top:10px;">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-6">
+            <!-- general form elements -->
+            <div class="card card-default">
+                           <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+               <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Past Medical History</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Past Surgical History</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+				  
+				   <div class="form-group">
+                    <label for="exampleInputPassword1">Childhood illnesses</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+                 <div class="form-group">
+                    <label for="exampleInputPassword1">Childhood immunizations</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+				   <div class="form-group">
+                    <label for="exampleInputPassword1">Date of last PE</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+                
+                
+                </div>
+                <!-- /.card-body -->
+
+               
+              </form>
+            </div>
+            <!-- /.card -->
+
+            <!-- general form elements -->
+                       <!-- /.card -->
+
+            <!-- Input addon -->
+           
+            <!-- /.card -->
+            <!-- Horizontal Form -->
+            
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+            <div class="card card-default">
+                           <!-- /.card-header -->
+              <!-- form start -->
+              <form>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Past Medical History freewrite</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Comments</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+				   <div class="form-group">
+                    <label for="exampleInputPassword1">Comments</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+				   <div class="form-group">
+                    <label for="exampleInputPassword1">Comments</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+				   <div class="form-group">
+                    <label for="exampleInputPassword1">Comments</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" >
+                  </div>
+                
+                </div>
+                <!-- /.card-body -->
+
+                
+              </form>
+            </div>
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+        <!-- Main row -->
+        <!-- /.row (main row) -->
+     
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer" style="bottom: 0; left: 0; position: fixed; right: 0; z-index: 1032;">
+    <strong>Copyright &copy; 2024</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      text
+    </div>
+  </footer>
+
+ 
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
