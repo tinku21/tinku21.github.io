@@ -10627,7 +10627,7 @@ height:.5rem
 	border-color: rgba(0,0,0,.1)
 }
 [class*=sidebar-dark-] {
-	background-color: #343a40
+	background-color: #212529
 }
 [class*=sidebar-dark-] .user-panel a:hover {
 	color: #fff
@@ -12443,7 +12443,7 @@ body.text-sm .control-sidebar {
 	color: #ced4da!important
 }
 .nav-pills .nav-link {
-	color: #6c757d
+	color: #ececec
 }
 .nav-pills .nav-link:not(.active):hover {
 	color: #007bff
