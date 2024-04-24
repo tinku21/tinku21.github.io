@@ -320,8 +320,8 @@ template {
 	line-height: 1.2
 }
 hr {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 	border: 0;
 	border-top: 1px solid rgba(0,0,0,.1)
 }
@@ -10389,7 +10389,7 @@ color:rgba(0,0,0,.6)
 }
 .main-sidebar {
 	height: 100vh;
-	overflow-y: hidden;
+	/*overflow-y: hidden;*/
 	z-index: 1038
 }
 .main-sidebar a:-moz-focusring {
@@ -10529,8 +10529,10 @@ height:.5rem
 	margin-left: -.5rem
 }
 .nav-sidebar .nav-header {
-	font-size: .9rem;
-	padding: .5rem .75rem
+	font-size: 16px;
+	padding: .5rem .75rem;
+	color:#f9e458 !important;
+	border-bottom:1px solid #3f3f3f !important;
 }
 .nav-sidebar .nav-link p {
 	display: inline;
@@ -12092,7 +12094,7 @@ width:calc(250px - .5rem * 5)
 	
 }
 .nav-link p{
-	font-size:19px;
+	font-size:16px;
 }
 @media (prefers-reduced-motion:reduce) {
 .main-sidebar .brand-text, .main-sidebar .logo-xl, .main-sidebar .logo-xs, .sidebar .nav-link p, .sidebar .user-panel .info {
@@ -16836,7 +16838,7 @@ color:#fff
 	line-height: calc(1.8125rem + 2px)
 }
 label:not(.form-check-label):not(.custom-file-label) {
-	font-weight: 700
+	font-weight: 400
 }
 .warning-feedback {
 	font-size: 80%;
