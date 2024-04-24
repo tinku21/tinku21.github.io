@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-
   <style>
   .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
     background-color: #383b3f !important;
@@ -148,25 +147,21 @@ setTimeout('startclock()',1000);
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="margin-top:56px;">
-  
-    
-  
-    <!-- Brand Logo -->
 <div class="card card-tabs" style="box-shadow: 0 0 0px rgba(0, 0, 0, .0), 0 0px 0px rgba(0, 0, 0, .0);">
               <div class="card-header p-0 pt-0">
                 <ul class="nav nav-tabs nav-justified" id="custom-tabs-one-tab" role="tablist" style="background-color:#fff;">
                   <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-one-home-tab"  style="border-radius:0px; border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">
+                    <a class="nav-link active" id="custom-tabs-one-home-tab"  style="border-radius:0px; border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">
 					<i class="fas fa-folder-open" style="font-size:28px;"></i><br>
 					Encno</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
+                    <a class="nav-link" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
 					<i class="fas fa-user" style="font-size:28px;"></i><br>
 					Patient</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-one-messages-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">
+                    <a class="nav-link " id="custom-tabs-one-messages-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">
 					<i class="fa fa-history" style="font-size:28px;"></i><br>
 					History</a>
                   </li>
@@ -175,9 +170,9 @@ setTimeout('startclock()',1000);
               </div>
               <div class="card-body" style="padding:0px; background-color: currentcolor;">
                 <div class="tab-content" id="custom-tabs-one-tabContent" style="padding:0px 0px !important;">
-                  <div class="tab-pane fade " id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                  <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
                    <div class="sidebar" style="padding:0px 0px !important;">
-				      <div style="padding:5px 8px 0px 5px !important;"><select class="form-control form-control-sidebar">
+				    				   <div style="padding:5px 8px 0px 5px !important;"><select class="form-control form-control-sidebar">
                           <option>04/24/2024&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>General Visit</small></option>
                           <option>03/21/2024&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>Initial Visit</small></option>
                           <option>05/10/2023&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>Back Pain</small></option>
@@ -185,11 +180,9 @@ setTimeout('startclock()',1000);
                         </select></div>
   <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-			   <li class="nav-header">Subjective</li>
+ 			   <li class="nav-header">Subjective</li>
           <li class="nav-item">
-            <a href="ros.html" class="nav-link"><p>ROS</p></a>
+            <a href="#" class="nav-link active"><p>ROS</p></a>
 			</li>
 			<li class="nav-item">
             <a href="#" class="nav-link"><p>Current Medication</p></a>
@@ -277,7 +270,7 @@ setTimeout('startclock()',1000);
     </div>
     <!-- /.sidebar -->
                   </div>
-                  <div class="tab-pane fade  show active" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                  <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
                     <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
  <li class="nav-header">Patient Information</li>
@@ -285,7 +278,7 @@ setTimeout('startclock()',1000);
             <a href="patientinfo.html" class="nav-link"><p>Patient Information</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="dashboard.html" class="nav-link active"><p>Dashboard</p></a>
+            <a href="dashboard.html" class="nav-link"><p>Dashboard</p></a>
 			</li>
 			<li class="nav-item">
             <a href="#" class="nav-link"><p>Appointment List</p></a>
@@ -313,7 +306,7 @@ setTimeout('startclock()',1000);
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 		<li class="nav-header">Previous Visits</li>
           <li class="nav-item">
-            <a href="hx1.html" class="nav-link"><p>04/24/2024</p></a>
+            <a href="hx1.html" class="nav-link active"><p>04/24/2024</p></a>
 			</li>
 			<li class="nav-item">
             <a href="#" class="nav-link"><p>04/23/2024</p></a>
@@ -332,8 +325,7 @@ setTimeout('startclock()',1000);
 			</li>
 			<li class="nav-item">
             <a href="#" class="nav-link"><p>04/18/2024</p></a>
-			</li>
-         
+			</li>         
         </ul>
       </nav>
                   </div>
@@ -362,7 +354,7 @@ setTimeout('startclock()',1000);
  <table>
  <tr>
  <td valign="top" style="padding-left:10px; color:#fff;"><div style="padding-left:10px; color:#fff; font-size:20px; font-weight:bold;">Patient Name</div>
-<div style="padding-left:10px;">( Male | 40 | 02/11/1980 )</div>
+<div style="padding-left:10px;">(Male | 40 | 02/11/1980 )</div>
  </td>
  <tr>
  
@@ -373,7 +365,7 @@ setTimeout('startclock()',1000);
  </tr>
  </table>
 </div>
- <div class="col-lg-6 col-md-6" style="color:#fff; text-align:Right"><div id="clock" align="right"></div>
+ <div class="col-lg-6 col-md-6"  style="color:#fff; text-align:Right"><div id="clock" align="right"></div>
                 <script language="JavaScript" type="text/javascript">
 startclock();
 </script>
@@ -387,249 +379,143 @@ startclock();
 
  </div>
     <!-- Main content -->
-    <section class="content-header" style="padding-top:10px;">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Dashboard</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Patient</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-     <section class="content" >
+    
+     <section class="content" style="padding-top:10px;">
       <div class="container-fluid">
         <div class="row">
           <!-- left column -->
-         
-          <div class="col-md-4">
-           <div class="card card-default">
+          <div class="col-md-12">
+            <!-- general form elements -->
+           
+			   <div class="card card-info card-outline">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Alerts/ Reminders</h3>
+                <h5 class="card-title">Eyes&nbsp;&nbsp;<div class="custom-control custom-checkbox" style="display:inline !important;">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox2"/>
+                  <label for="customCheckbox2" class="custom-control-label" style="font-size:14px; padding-top:4px;">All Normals</label>
+                </div></h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">Clear</a>
+                  <a href="#" class="btn btn-tool btn-link">Add New</a>
+                </div>
               </div>
               <div class="card-body p-0">
-               <table class="table table-sm">
-                
+			  <table class="table table-bordered table-sm" width="100%">
+                  <thead>
+                    <tr>
+                      <th style="width: 40px">Denies</th>
+                      <th style="width: 40px">Admits</th>
+                      <th style="width: 40%">&nbsp;</th>
+                      <th style="width: 40px">Denies</th>
+                      <th style="width: 40px">Admits</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
+                      <td align="center"><input type="checkbox" name="checkbox" id="checkbox"></td>
+                      <td align="center"><input type="checkbox" name="checkbox2" id="checkbox2"></td>
+                      <td>EYES ICHING</td>
+                      <td align="center"><input type="checkbox" name="checkbox8" id="checkbox8"></td>
+                      <td align="center"><input type="checkbox" name="checkbox12" id="checkbox12"></td>
+                      <td>AUG EYES</td>
                     </tr>
                     <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
+                      <td align="center"><input type="checkbox" name="checkbox4" id="checkbox4"></td>
+                      <td align="center"><input type="checkbox" name="checkbox3" id="checkbox3"></td>
+                      <td>Glaucoma</td>
+                      <td align="center"><input type="checkbox" name="checkbox9" id="checkbox9"></td>
+                      <td align="center"><input type="checkbox" name="checkbox13" id="checkbox13"></td>
+                      <td>Test</td>
                     </tr>
                     <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
+                      <td align="center"><input type="checkbox" name="checkbox5" id="checkbox5"></td>
+                      <td align="center"><input type="checkbox" name="checkbox16" id="checkbox16"></td>
+                      <td>RETINA</td>
+                      <td align="center"><input type="checkbox" name="checkbox10" id="checkbox10"></td>
+                      <td align="center"><input type="checkbox" name="checkbox14" id="checkbox14"></td>
+                      <td>Test</td>
                     </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
+                   
                   </tbody>
                 </table>
+				<div style="padding:5px;">
+				<strong>Note</strong>
+				<textarea name="textarea" id="textarea" class="form-control"></textarea>
+				</div>
               </div>
-              <!-- /.card-body -->
             </div>
-          </div>
-         
-          <div class="col-md-4">
-           <div class="card card-default">
+			
+			
+			<div class="card card-info card-outline">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Medication</h3>
+                <h5 class="card-title">Neurological&nbsp;&nbsp;<div class="custom-control custom-checkbox" style="display:inline !important;">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox1_1"/>
+                  <label for="customCheckbox1_1" class="custom-control-label" style="font-size:14px; padding-top:4px;">All Normals</label>
+                </div></h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">Clear</a>
+                  <a href="#" class="btn btn-tool btn-link">Add New</a>
+                </div>
               </div>
-             <div class="card-body p-0">
-               <table class="table table-sm">
-                
+              <div class="card-body p-0">
+			  <table class="table table-bordered table-sm" width="100%">
+                  <thead>
+                    <tr>
+                      <th style="width: 40px">Denies</th>
+                      <th style="width: 40px">Admits</th>
+                      <th style="width: 40%">&nbsp;</th>
+                      <th style="width: 40px">Denies</th>
+                      <th style="width: 40px">Admits</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
+                      <td align="center"><input type="checkbox" name="checkbox" id="checkbox"></td>
+                      <td align="center"><input type="checkbox" name="checkbox2" id="checkbox2"></td>
+                      <td>NEURO1</td>
+                      <td align="center"><input type="checkbox" name="checkbox8" id="checkbox8"></td>
+                      <td align="center"><input type="checkbox" name="checkbox12" id="checkbox12"></td>
+                      <td>h/o head injury</td>
                     </tr>
                     <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
+                      <td align="center"><input type="checkbox" name="checkbox4" id="checkbox4"></td>
+                      <td align="center"><input type="checkbox" name="checkbox3" id="checkbox3"></td>
+                      <td>Dizziness</td>
+                      <td align="center"><input type="checkbox" name="checkbox9" id="checkbox9"></td>
+                      <td align="center"><input type="checkbox" name="checkbox13" id="checkbox13"></td>
+                      <td>Paresthesias</td>
                     </tr>
                     <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
+                      <td align="center"><input type="checkbox" name="checkbox5" id="checkbox5"></td>
+                      <td align="center"><input type="checkbox" name="checkbox16" id="checkbox16"></td>
+                      <td>Fainting</td>
+                      <td align="center"><input type="checkbox" name="checkbox10" id="checkbox10"></td>
+                      <td align="center"><input type="checkbox" name="checkbox14" id="checkbox14"></td>
+                      <td>Vision changes</td>
                     </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
+                   
                   </tbody>
                 </table>
+				<div style="padding:5px;">
+				<strong>Note</strong>
+				<textarea name="textarea" id="textarea" class="form-control"></textarea>
+				</div>
               </div>
-              <!-- /.card-body -->
             </div>
-          </div>
-      
+			   
 	
-          <div class="col-md-4">
-           <div class="card card-default">
-              <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Allergies</h3>
-              </div>
-            <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
+           
           </div>
+          
         </div>
-		 <div class="row">
-          <!-- left column -->         
-          <div class="col-md-4">
-           <div class="card card-default">
-              <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Orders</h3>
-              </div>
-            <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-          </div>
-         
-          <div class="col-md-4">
-           <div class="card card-default">
-              <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Problems</h3>
-              </div>
-              <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-          </div>
-      
-	
-          <div class="col-md-4">
-           <div class="card card-default">
-              <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Communications</h3>
-              </div>
-              <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-          </div>
-        </div>
-       </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
     </section>
-      
+        <!-- Main row -->
+        <!-- /.row (main row) -->
+     
+    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer" style="bottom: 0; left: 0; position: fixed; right: 0; z-index: 1032;">

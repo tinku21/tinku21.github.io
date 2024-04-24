@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-
   <style>
   .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
     background-color: #383b3f !important;
@@ -148,10 +147,6 @@ setTimeout('startclock()',1000);
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="margin-top:56px;">
-  
-    
-  
-    <!-- Brand Logo -->
 <div class="card card-tabs" style="box-shadow: 0 0 0px rgba(0, 0, 0, .0), 0 0px 0px rgba(0, 0, 0, .0);">
               <div class="card-header p-0 pt-0">
                 <ul class="nav nav-tabs nav-justified" id="custom-tabs-one-tab" role="tablist" style="background-color:#fff;">
@@ -161,12 +156,12 @@ setTimeout('startclock()',1000);
 					Encno</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
+                    <a class="nav-link" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
 					<i class="fas fa-user" style="font-size:28px;"></i><br>
 					Patient</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-one-messages-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">
+                    <a class="nav-link active" id="custom-tabs-one-messages-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">
 					<i class="fa fa-history" style="font-size:28px;"></i><br>
 					History</a>
                   </li>
@@ -175,9 +170,9 @@ setTimeout('startclock()',1000);
               </div>
               <div class="card-body" style="padding:0px; background-color: currentcolor;">
                 <div class="tab-content" id="custom-tabs-one-tabContent" style="padding:0px 0px !important;">
-                  <div class="tab-pane fade " id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                  <div class="tab-pane fade" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
                    <div class="sidebar" style="padding:0px 0px !important;">
-				      <div style="padding:5px 8px 0px 5px !important;"><select class="form-control form-control-sidebar">
+				    				   <div style="padding:5px 8px 0px 5px !important;"><select class="form-control form-control-sidebar">
                           <option>04/24/2024&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>General Visit</small></option>
                           <option>03/21/2024&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>Initial Visit</small></option>
                           <option>05/10/2023&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>Back Pain</small></option>
@@ -185,9 +180,7 @@ setTimeout('startclock()',1000);
                         </select></div>
   <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-			   <li class="nav-header">Subjective</li>
+ 			   <li class="nav-header">Subjective</li>
           <li class="nav-item">
             <a href="ros.html" class="nav-link"><p>ROS</p></a>
 			</li>
@@ -277,7 +270,7 @@ setTimeout('startclock()',1000);
     </div>
     <!-- /.sidebar -->
                   </div>
-                  <div class="tab-pane fade  show active" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                  <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
                     <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
  <li class="nav-header">Patient Information</li>
@@ -285,7 +278,7 @@ setTimeout('startclock()',1000);
             <a href="patientinfo.html" class="nav-link"><p>Patient Information</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="dashboard.html" class="nav-link active"><p>Dashboard</p></a>
+            <a href="dashboard.html" class="nav-link"><p>Dashboard</p></a>
 			</li>
 			<li class="nav-item">
             <a href="#" class="nav-link"><p>Appointment List</p></a>
@@ -308,12 +301,12 @@ setTimeout('startclock()',1000);
         </ul>
       </nav>
                   </div>
-                  <div class="tab-pane fade" id="custom-tabs-one-messages" role="tabpanel" aria-labelledby="custom-tabs-one-messages-tab">
+                  <div class="tab-pane fade show active" id="custom-tabs-one-messages" role="tabpanel" aria-labelledby="custom-tabs-one-messages-tab">
                      <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 		<li class="nav-header">Previous Visits</li>
           <li class="nav-item">
-            <a href="hx1.html" class="nav-link"><p>04/24/2024</p></a>
+            <a href="hx1.html" class="nav-link active"><p>04/24/2024</p></a>
 			</li>
 			<li class="nav-item">
             <a href="#" class="nav-link"><p>04/23/2024</p></a>
@@ -332,8 +325,7 @@ setTimeout('startclock()',1000);
 			</li>
 			<li class="nav-item">
             <a href="#" class="nav-link"><p>04/18/2024</p></a>
-			</li>
-         
+			</li>         
         </ul>
       </nav>
                   </div>
@@ -362,7 +354,7 @@ setTimeout('startclock()',1000);
  <table>
  <tr>
  <td valign="top" style="padding-left:10px; color:#fff;"><div style="padding-left:10px; color:#fff; font-size:20px; font-weight:bold;">Patient Name</div>
-<div style="padding-left:10px;">( Male | 40 | 02/11/1980 )</div>
+<div style="padding-left:10px;">(Male | 40 | 02/11/1980 )</div>
  </td>
  <tr>
  
@@ -373,7 +365,7 @@ setTimeout('startclock()',1000);
  </tr>
  </table>
 </div>
- <div class="col-lg-6 col-md-6" style="color:#fff; text-align:Right"><div id="clock" align="right"></div>
+ <div class="col-lg-6 col-md-6"  style="color:#fff; text-align:Right"><div id="clock" align="right"></div>
                 <script language="JavaScript" type="text/javascript">
 startclock();
 </script>
@@ -387,249 +379,81 @@ startclock();
 
  </div>
     <!-- Main content -->
-    <section class="content-header" style="padding-top:10px;">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Dashboard</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Patient</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-     <section class="content" >
+    
+     <section class="content" style="padding-top:10px;">
       <div class="container-fluid">
         <div class="row">
           <!-- left column -->
-         
-          <div class="col-md-4">
-           <div class="card card-default">
+          <div class="col-md-12">
+            <!-- general form elements -->
+           
+			   <div class="card card-info card-outline">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Alerts/ Reminders</h3>
+                <h5 class="card-title"> <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox1_1">
+                  <label for="customCheckbox1_1" class="custom-control-label">SOCIAL HISTORY:(Signed by MDCARE FIVE on 04/18/24 9:29:12 AM)</label>
+                </div></h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">Encno : 2582 | Provider :Dr.Frank V John | Status :For Review</a>
+                  
+                </div>
               </div>
-              <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="card-body" style="padding: 0.5rem;">Occupation: Employed. Place of Employment: Vision. Education: Graduate School. Marital Status: Married. Spouse Employer: Tech Info. Spouse Occupation: Lawyer. Age of spouse: 59. Children: Yes. No of Children: 3. Sons: 2. Daughters: 1. child1: 9Year(s) child2: 6Year(s) child3: 3Year(s) .The patient can speak and read English. The patient completed 10 years of schooling.The patient did take English classes in United States. Curent Smoking Status: Never smoker.
               </div>
-              <!-- /.card-body -->
             </div>
-          </div>
-         
-          <div class="col-md-4">
-           <div class="card card-default">
+			   
+			   <div class="card card-info card-outline">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Medication</h3>
+                <h5 class="card-title"> <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox2">
+                  <label for="customCheckbox2" class="custom-control-label">FAMILY HISTORY:(Signed by MDCARE FIVE on 04/18/24 9:29:19 AM)</label>
+                </div></h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">Encno : 2582 | Provider :Dr.Frank V John | Status :For Review</a>
+                  
+                </div>
               </div>
-             <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="card-body" style="padding: 0.5rem;">Father is Alive, aged 56. Occupation: Police. His health status is Stable.  <br>
+Mother was deceased. The cause of death was Viral Disease.  <br>
+Son is Alive.
               </div>
-              <!-- /.card-body -->
             </div>
-          </div>
-      
-	
-          <div class="col-md-4">
-           <div class="card card-default">
+			   
+			
+ <div class="card card-info card-outline">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Allergies</h3>
+                <h5 class="card-title"> <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input" type="checkbox" id="customCheckbox3">
+                  <label for="customCheckbox3" class="custom-control-label">HOSPITALIZATIONS/ADMISSION HISTORY:(Signed by MDCARE FIVE on 04/18/24 9:29:08 AM)</label>
+                </div></h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">Encno : 2582 | Provider :Dr.Frank V John | Status :For Review</a>
+                  
+                </div>
               </div>
-            <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="card-body" style="padding: 0.5rem;">Reviewed hospitalization list with patient and updated<br>
+Hospital / Facility name : Jio Facility<br>
+Type of facitlity : Respiratory emergency hospital admission (procedure)
+Admitted for : Type-casting-machine operator (occupation)<br>
+From : 11/26/2023To : 12/29/2023<br>
+Discharge To : Arranging transportation of device<br>
+Discharge Status : Patient disposition (procedure)<br>
+Notes : Patient Health Status
+
               </div>
-              <!-- /.card-body -->
-            </div>
+            </div>			
+			 
+           
           </div>
+          
         </div>
-		 <div class="row">
-          <!-- left column -->         
-          <div class="col-md-4">
-           <div class="card card-default">
-              <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Orders</h3>
-              </div>
-            <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-          </div>
-         
-          <div class="col-md-4">
-           <div class="card card-default">
-              <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Problems</h3>
-              </div>
-              <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-          </div>
-      
-	
-          <div class="col-md-4">
-           <div class="card card-default">
-              <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Communications</h3>
-              </div>
-              <div class="card-body p-0">
-               <table class="table table-sm">
-                
-                  <tbody>
-                    <tr>
-                      <td>1.</td>
-                      <td>Residual schizophrenia - F20.5(ICD-10)</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>I&D LEG/ANKLE DP ABSC/HMTMA</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>ARTHRO, LOOSE BODY + CHONDRO</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Eraxis 50 MG Injection </td>
-                      
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-          </div>
-        </div>
-       </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
     </section>
-      
+        <!-- Main row -->
+        <!-- /.row (main row) -->
+     
+    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer" style="bottom: 0; left: 0; position: fixed; right: 0; z-index: 1032;">
