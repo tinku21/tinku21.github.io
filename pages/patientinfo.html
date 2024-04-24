@@ -23,6 +23,12 @@
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
 
+  <style>
+  .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #383b3f !important;
+    color: #fff;
+}
+  </style>
   
 <SCRIPT language="JavaScript">
 <!--
@@ -91,7 +97,7 @@ setTimeout('startclock()',1000);
 
 </SCRIPT>
 </head>
-<body class="hold-transition layout-fixed">
+<body class="hold-transition layout-fixed" style="margin-bottom: 57px;">
 <div class="wrapper">
 
   
@@ -150,12 +156,12 @@ setTimeout('startclock()',1000);
               <div class="card-header p-0 pt-0">
                 <ul class="nav nav-tabs nav-justified" id="custom-tabs-one-tab" role="tablist" style="background-color:#fff;">
                   <li class="nav-item">
-                    <a class="nav-link active" id="custom-tabs-one-home-tab"  style="border-radius:0px; border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">
+                    <a class="nav-link" id="custom-tabs-one-home-tab"  style="border-radius:0px; border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">
 					<i class="fas fa-folder-open" style="font-size:28px;"></i><br>
 					Encno</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
+                    <a class="nav-link active" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
 					<i class="fas fa-user" style="font-size:28px;"></i><br>
 					Patient</a>
                   </li>
@@ -169,7 +175,7 @@ setTimeout('startclock()',1000);
               </div>
               <div class="card-body" style="padding:0px; background-color: currentcolor;">
                 <div class="tab-content" id="custom-tabs-one-tabContent" style="padding:0px 0px !important;">
-                  <div class="tab-pane fade  show active" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                  <div class="tab-pane fade " id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
                    <div class="sidebar" style="padding:0px 0px !important;">
 				    
   <nav class="mt-2">
@@ -266,12 +272,12 @@ setTimeout('startclock()',1000);
     </div>
     <!-- /.sidebar -->
                   </div>
-                  <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                  <div class="tab-pane fade  show active" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
                     <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
  <li class="nav-header">Patient Information</li>
           <li class="nav-item">
-            <a href="patientinfo.html" class="nav-link"><p>Patient Information</p></a>
+            <a href="patientinfo.html" class="nav-link active"><p>Patient Information</p></a>
 			</li>
 			<li class="nav-item">
             <a href="dashboard.html" class="nav-link"><p>Dashboard</p></a>
@@ -340,18 +346,57 @@ setTimeout('startclock()',1000);
     <!-- Content Header (Page header) -->
  
     <!-- /.content-header -->
- <div style="background-color:#367598; margin-top:56px; border-left:1px solid #418db7; padding:10px;" >
- <div class="container-fluid">
- <div class="row">
- <div class="col-lg-6">
- <table width="100%">
+ 
+    <!-- Main content -->
+    
+     <section class="content" style="padding-top:70px;">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+
+            <!-- Profile Image -->
+            <div class="card card-primary card-outline">
+              <div class="card-body box-profile">
+			   <table width="100%">
  <tr>
- <td style="width:66px;"> <img class="profile-user-img img-fluid img-circle" src="Images/avatar5.png" alt="User profile picture" style="width:66px;"></td>
+ <td style="width:115px; text-align:center;" valign="top" > <img class="profile-user-img img-fluid img-circle" src="Images/avatar5.png" alt="User profile picture" style="width:115px;"><br>
+ 
+ </td>
  <td valign="top">
- <table>
+ <table  width="100%">
  <tr>
- <td valign="top" style="padding-left:10px; color:#fff;"><div style="padding-left:10px; color:#fff; font-size:20px; font-weight:bold;">Patient Name</div>
-<div style="padding-left:10px;">(Male | 40 | 02/11/1980 )</div>
+ <td valign="top" style="padding-left:10px;"><div style="padding-left:10px; font-size:20px; font-weight:bold;">Patient Name</div>
+<div style="padding-left:10px;">(Male | 40 | 02/11/1980 )<br>
+MR No : xxxxxx<br>
+<button type="button" class="btn btn-info btn-xs" style="margin-top:5px;"><i class="fa fa-pen"></i>&nbsp; Edit</button>
+
+
+     
+</div>
+
+ </td>
+ <td style="width:230px;">
+ <table style="margin-top:-20px;">
+ <tr>
+ <td style="text-align:center;"><strong>Dl Front</strong></td>
+ <td>&nbsp;</td>
+ <td style="text-align:center;"><strong>Dl Rare</strong></td>
+ </tr>
+ <tr>
+ <td style="border:4px solid #ced4da; width:90px; height:100px">&nbsp;</td>
+ <td>&nbsp;</td>
+ <td style="border:4px solid #ced4da; width:90px; height:100px">&nbsp;</td>
+ </tr>
+ <tr>
+ <td style="text-align:center;"><button type="button" class="btn btn-info btn-xs" style="margin-top:5px;">Change Image</button></td>
+ <td>&nbsp;</td>
+ <td style="text-align:center;"><button type="button" class="btn btn-info btn-xs" style="margin-top:5px;">Change Image</button></td>
+ </tr>
+ 
+ </table>
+ 
+
  </td>
  <tr>
  
@@ -361,113 +406,117 @@ setTimeout('startclock()',1000);
  </td>
  </tr>
  </table>
-</div>
- <div class="col-lg-6"  style="color:#fff; text-align:Right"><div id="clock" align="right"></div>
-                <script language="JavaScript" type="text/javascript">
-startclock();
-</script>
-<div style="padding-top:10px;">
-<button type="button" class="btn btn-default btn-sm">Vitals</button>
-<button type="button" class="btn btn-default btn-sm">Tools</button>
-</div>
-</div>
- </div>
-</div>
-
- </div>
-    <!-- Main content -->
-    
-     <section class="content" style="padding-top:10px;">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- left column -->
-          <div class="col-md-6">
-            <!-- general form elements -->
-            <div class="card card-default">
-                           <!-- /.card-header -->
-              <!-- 
-              <form>
-               <div class="card-body">
-                  <div class="form-group">
-                    <label>Past Medical History</label>
-                    <input type="email" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <label>Past Surgical History</label>
-                    <input type="password" class="form-control" >
-                  </div>
-				  
-				   <div class="form-group">
-                    <label>Childhood illnesses</label>
-                    <input type="password" class="form-control" >
-                  </div>
-                 <div class="form-group">
-                    <label>Childhood immunizations</label>
-                    <input type="password" class="form-control" >
-                  </div>
-				   <div class="form-group">
-                    <label>Date of last PE</label>
-                    <input type="password" class="form-control"  >
-                  </div>
+             
                 
-                
-                </div>
-               
 
-               
-              </form>-->
+              </div>
+              <!-- /.card-body -->
             </div>
             <!-- /.card -->
 
-            <!-- general form elements -->
+            <!-- About Me Box -->
                        <!-- /.card -->
-
-            <!-- Input addon -->
-           
-            <!-- /.card -->
-            <!-- Horizontal Form -->
-            
-            <!-- /.card -->
-
           </div>
           <!--/.col (left) -->
           <!-- right column -->
-          <div class="col-md-6">
-            <div class="card card-default">
-                           <!-- /.card-header -->
-              <!--
-              <form>
-                <div class="card-body">
-                  <div class="form-group">
-                    <label >Past Medical History freewrite</label>
-                    <input type="email" class="form-control" >
-                  </div>
-                  <div class="form-group">
-                    <label>Comments</label>
-                    <input type="password" class="form-control"  >
-                  </div>
-				   <div class="form-group">
-                    <label>Comments</label>
-                    <input type="password" class="form-control"  >
-                  </div>
-				   <div class="form-group">
-                    <label>Comments</label>
-                    <input type="password" class="form-control" >
-                  </div>
-				   <div class="form-group">
-                    <label>Comments</label>
-                    <input type="password" class="form-control">
-                  </div>
-                
-                </div>
-               
-
-                
-              </form>-->
-            </div>
-          </div>
+        
           <!--/.col (right) -->
         </div>
+		
+		
+		 <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+
+            <!-- Profile Image -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title" style="color:#007bff">
+                 Address		
+                </h3>
+				<div class="card-tools">
+				<button type="button" class="btn btn-tool" title="Edit"><i class="fa fa-pen"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+			  <div class="card-body ">			   
+			  <div class="row">
+			  <div class="col-lg-6">Near Complex, New City,<br>Monta view USA, 90909</div>			 
+			  </div>			  
+			  </div></div> 
+          </div>
+        </div>
+		
+		 <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- Profile Image -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title"  style="color:#007bff">
+                 Background		
+                </h3><div class="card-tools">
+				<button type="button" class="btn btn-tool" title="Edit"><i class="fa fa-pen"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+			  <div class="card-body "  style="display: block;">			   
+			   <div class="row">
+			  <div class="col-lg-6"><strong>Date of Birth</strong><br><span >04/24/2024</span></div>
+			  <div class="col-lg-6"><strong>Preferred language</strong><br><span>English</span></div>
+			  </div>
+  <div class="row" style="padding-top:10px;">
+			  <div class="col-lg-6"><strong>Age & Sex</strong><br><span >40 Years | Male</span></div>
+			  <div class="col-lg-6"><strong>Suffix</strong><br><span>Unknown</span></div>
+			  </div>
+ <div class="row" style="padding-top:10px;">
+			  <div class="col-lg-6"><strong>Sexual Orientation</strong><br><span >Unknown</span></div>
+			  <div class="col-lg-6"><strong>Gender Identity</strong><br><span>Unknown</span></div>
+			  </div>
+			  
+			  </div></div> 
+          </div>
+        </div>
+		
+		
+		
+		  <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- Profile Image -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title"  style="color:#007bff">
+                 Contact Information	
+                </h3><div class="card-tools">
+				<button type="button" class="btn btn-tool" title="Edit"><i class="fa fa-pen"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+			  <div class="card-body "  style="display: block;">			   
+			   <div class="row">
+			  <div class="col-lg-6"><strong>Cell Phone</strong><br><span >xxx-xxx-xxxx</span></div>
+			  <div class="col-lg-6"><strong>Home Phone</strong><br><span>xxx-xxx-xxxx</span></div>
+			  </div>
+  <div class="row" style="padding-top:10px;">
+			  <div class="col-lg-6"><strong>Office Phone</strong><br><span >xxx-xxx-xxxx</span></div>
+			  <div class="col-lg-6"><strong>Email</strong><br><span>Unknown@example.com</span></div>
+			  </div>
+ <div class="row" style="padding-top:10px;">
+			  <div class="col-lg-6"><strong>Sexual Orientation</strong><br><span >Unknown</span></div>
+			  <div class="col-lg-6"><strong>Gender Identity</strong><br><span>Unknown</span></div>
+			  </div>
+			  
+			  </div></div> 
+          </div>
+        </div>
+		
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>

@@ -23,12 +23,6 @@
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
 
-  <style>
-  .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
-    background-color: #383b3f !important;
-    color: #fff;
-}
-  </style>
   
 <SCRIPT language="JavaScript">
 <!--
@@ -97,10 +91,13 @@ setTimeout('startclock()',1000);
 
 </SCRIPT>
 </head>
-<body class="hold-transition layout-fixed" style="margin-bottom: 57px;">
+<body class="hold-transition layout-fixed">
 <div class="wrapper">
 
-  
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="left: 0; position: fixed; right: 0; top: 0; z-index: 1037; margin-left:0px;">
@@ -147,18 +144,17 @@ setTimeout('startclock()',1000);
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="margin-top:56px;">
-  
-    
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="margin-top:56px">
+ 
   
     <!-- Brand Logo -->
-<div class="card card-tabs" style="box-shadow: 0 0 0px rgba(0, 0, 0, .0), 0 0px 0px rgba(0, 0, 0, .0);">
+<div class="card card-tabs" >
               <div class="card-header p-0 pt-0">
                 <ul class="nav nav-tabs nav-justified" id="custom-tabs-one-tab" role="tablist" style="background-color:#fff;">
                   <li class="nav-item">
                     <a class="nav-link" id="custom-tabs-one-home-tab"  style="border-radius:0px; border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">
 					<i class="fas fa-folder-open" style="font-size:28px;"></i><br>
-					Encno</a>
+					Visit</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
@@ -174,165 +170,210 @@ setTimeout('startclock()',1000);
                 </ul>
               </div>
               <div class="card-body" style="padding:0px; background-color: currentcolor;">
-                <div class="tab-content" id="custom-tabs-one-tabContent" style="padding:0px 0px !important;">
-                  <div class="tab-pane fade " id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
-                   <div class="sidebar" style="padding:0px 0px !important;">
-				    
+                <div class="tab-content" id="custom-tabs-one-tabContent">
+                  <div class="tab-pane fade" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                   <div class="sidebar" style="padding-top:5px;">
+				     <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
   <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-			   <li class="nav-header">Subjective</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"><p>ROS</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Current Medication</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Chief Complaints</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Allergies</p></a>
-			</li>
-			
-		  <li class="nav-header">Objective</li>
-		   <li class="nav-item">
-            <a href="#" class="nav-link">
-            <p>Scales</p> </a>      
-          </li>
-		   <li class="nav-item">
-            <a href="#" class="nav-link">
-            <p>Physical Exam</p> </a>      
-          </li>
-		   <li class="nav-item">
-            <a href="#" class="nav-link">
-            <p>Vital Signs</p> </a>      
-          </li>
-		    <li class="nav-header">Assessment</li>
-		   <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Final Diagnosis</p>
-            </a>         
-          </li>
-		  <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Assessment</p>
-            </a>         
-          </li>
-		  <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Post-Op</p>
-            </a>         
-          </li>
-		  <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Pediatrics</p>
-            </a>         
-          </li>
-		  <li class="nav-header">Plan</li>
-		   <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Immunization</p>
-            </a>
+			   
+          <li class="nav-item nav-item2">
          
+           <div class="user-block" style="width:100%">
+                        <img class="img-circle img-bordered-sm" src="Images/avatar5.png" alt="user image" style="margin-right:10px;">
+                        <span class="username">
+                          <a href="index.html">Jonathan Burke Jr.</a>					  
+						  
+                        </span>
+						<div style="width:100%">
+						<span class="description" style="float:left; margin-left:0px">09/24 - 7:30 AM</span>
+						<span class="description" style="float:right;">General Visit</span>
+						</div>
+                        
+                      </div>
+          
           </li>
-		   <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Plan</p>
-            </a>
+		   <li class="nav-item nav-item2">
+         
+           <div class="user-block" style="width:100%">
+                        <img class="img-circle img-bordered-sm" src="Images/avatar5.png" alt="user image" style="margin-right:10px;">
+                        <span class="username">
+                          <a href="#">Amith, Smith SR</a>					  
+						  
+                        </span>
+						<div style="width:100%">
+						<span class="description" style="float:left; margin-left:0px">09/24 - 8:30 AM</span>
+						<span class="description" style="float:right;">Initial Visit</span>
+						</div>
+                        
+                      </div>
+          
           </li>
-		  <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Clinical Note</p>
-            </a>
+		   <li class="nav-item nav-item2">
+         
+           <div class="user-block" style="width:100%">
+                        <img class="img-circle img-bordered-sm" src="Images/avatar5.png" alt="user image" style="margin-right:10px;">
+                        <span class="username">
+                          <a href="#">Scott, Peterson SR</a>					  
+						  
+                        </span>
+						<div style="width:100%">
+						<span class="description" style="float:left; margin-left:0px">03/24 - 5:30 PM</span>
+						<span class="description" style="float:right;">Back pain</span>
+						</div>
+                        
+                      </div>
+          
           </li>
-		    <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Treatment</p>
-            </a>
+		   <li class="nav-item nav-item2">
+         
+           <div class="user-block" style="width:100%">
+                        <img class="img-circle img-bordered-sm" src="Images/avatar5.png" alt="user image" style="margin-right:10px;">
+                        <span class="username">
+                          <a href="#">	SR Lopez, Suje KV</a>					  
+						  
+                        </span>
+						<div style="width:100%">
+						<span class="description" style="float:left; margin-left:0px">09/24 - 7:30 AM today</span>
+						<span class="description" style="float:right;">General Visit</span>
+						</div>
+                        
+                      </div>
+          
           </li>
-		  <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Lab Orders</p>
-            </a>
+		   <li class="nav-item nav-item2">
+         
+           <div class="user-block" style="width:100%">
+                        <img class="img-circle img-bordered-sm" src="Images/avatar5.png" alt="user image" style="margin-right:10px;">
+                        <span class="username">
+                          <a href="#">Scott, Peterson SR</a>					  
+						  
+                        </span>
+						<div style="width:100%">
+						<span class="description" style="float:left; margin-left:0px">09/24 - 7:30 AM today</span>
+						<span class="description" style="float:right;">General Visit</span>
+						</div>
+                        
+                      </div>
+          
           </li>
-		  <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Diagnostic Studies</p>
-            </a>
-          </li>
-		   <li class="nav-item">
-            <a href="#" class="nav-link">
-              <p>Treatment Plan</p>
-            </a>
-          </li>
+		  
         </ul>
       </nav>
     </div>
     <!-- /.sidebar -->
                   </div>
-                  <div class="tab-pane fade  show active" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                  <div class="tab-pane fade show active" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
                     <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
- <li class="nav-header">Patient Information</li>
+
           <li class="nav-item">
-            <a href="patientinfo.html" class="nav-link"><p>Patient Information</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="dashboard.html" class="nav-link active"><p>Dashboard</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Appointment List</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Face Sheet</p></a>
-			</li>
-			
-		  <li class="nav-header">Clinical Information</li> 
+            <a href="#" class="nav-link">
+             <i class="nav-icon fas fa-map-marker-alt"></i>
+              <p>
+                Dashboard 
+              </p>
+            </a>
+         
+          </li>
+          <li class="nav-item">
+            <a href="details.html" class="nav-link">
+              <i class="nav-icon fa fa-history"></i>
+              <p>
+                Family / Social History
+                
+              </p>
+            </a>
+          </li>
+		   <li class="nav-item">
+            <a href="#" class="nav-link">
+             <i class="nav-icon fas fa-capsules"></i>
+              <p>
+                Medications / Allergies
+                
+              </p>
+            </a>
+          </li>
 		  <li class="nav-item">
-            <a href="#" class="nav-link"><p>Problems</p></a>
-			</li>
-           <li class="nav-item">
-            <a href="#" class="nav-link"><p>Medication & Allergies</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Labs</p></a>
-			</li>
-          <li class="nav-header">Billing Information</li>
+            <a href="#" class="nav-link">
+             <i class="nav-icon fas fa-male"></i>
+              <p>
+               Review of Systems
+                
+              </p>
+            </a>
+          </li>
+		   <li class="nav-item">
+            <a href="#" class="nav-link">
+              
+			  <i class="nav-icon fas fa-stethoscope"></i>
+              <p>
+               Phusical Exam
+                
+              </p>
+            </a>
+          </li>
+		    <li class="nav-item">
+            <a href="#" class="nav-link">
+			<i class="nav-icon fas fa-clipboard"></i>
+			  <p>
+              Assessment
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-file"></i>
+			 <p>
+              Plan
+              </p>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a href="#" class="nav-link">
+			 <i class="nav-icon fas fa-notes-medical"></i>
+              <p>
+              Meaningful Use
+              </p>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a href="#" class="nav-link">
+			<i class="nav-icon fas fa-dollar-sign"></i>
+                      <p>
+              Billing
+              </p>
+            </a>
+          </li>
+          
+         
+         
+        
+      
+        
+   
+          
+          
         </ul>
       </nav>
                   </div>
                   <div class="tab-pane fade" id="custom-tabs-one-messages" role="tabpanel" aria-labelledby="custom-tabs-one-messages-tab">
-                     <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-		<li class="nav-header">Previous Visits</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"><p>04/24/2024</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/23/2024</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/22/2024</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/21/2024</p></a>
-			</li>
-		  <li class="nav-item">
-            <a href="#" class="nav-link"><p>04/20/2024</p></a>
-			</li>
-           <li class="nav-item">
-            <a href="#" class="nav-link"><p>04/19/2024</p></a>
-			</li>
-			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/18/2024</p></a>
-			</li>
-         
-        </ul>
-      </nav>
+                     3
                   </div>
-                
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel" aria-labelledby="custom-tabs-one-settings-tab">
+                    4
+                  </div>
                 </div>
               </div>
               <!-- /.card -->
@@ -405,7 +446,7 @@ startclock();
           <div class="col-md-4">
            <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Alerts/ Reminders</h3>
+                <h3 class="card-title">Alerts/ Reminders</h3>
               </div>
               <div class="card-body p-0">
                <table class="table table-sm">
@@ -441,7 +482,7 @@ startclock();
           <div class="col-md-4">
            <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Medication</h3>
+                <h3 class="card-title">Active Medication</h3>
               </div>
              <div class="card-body p-0">
                <table class="table table-sm">
@@ -478,7 +519,7 @@ startclock();
           <div class="col-md-4">
            <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Allergies</h3>
+                <h3 class="card-title">Active Allergies</h3>
               </div>
             <div class="card-body p-0">
                <table class="table table-sm">
@@ -516,7 +557,7 @@ startclock();
           <div class="col-md-4">
            <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Orders</h3>
+                <h3 class="card-title">Orders</h3>
               </div>
             <div class="card-body p-0">
                <table class="table table-sm">
@@ -552,7 +593,7 @@ startclock();
           <div class="col-md-4">
            <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Active Problems</h3>
+                <h3 class="card-title">Active Problems</h3>
               </div>
               <div class="card-body p-0">
                <table class="table table-sm">
@@ -589,7 +630,7 @@ startclock();
           <div class="col-md-4">
            <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title" style="color:#007bff">Communications</h3>
+                <h3 class="card-title">Communications</h3>
               </div>
               <div class="card-body p-0">
                <table class="table table-sm">
