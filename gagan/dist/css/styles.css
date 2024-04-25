@@ -1,4 +1,5 @@
-:root {
+
+ :root {
 --blue:#007bff;
 --indigo:#6610f2;
 --purple:#6f42c1;
@@ -8836,7 +8837,7 @@ html.scroll-smooth {
 	position: relative
 }
 .wrapper .content-wrapper {
-	min-height: calc(100vh - calc(0.1rem + 1px) - calc(3.5rem + 1px)) !important;
+	min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px))
 }
 .layout-boxed .wrapper {
 	box-shadow: 0 0 10 rgba(0,0,0,.3)
@@ -11497,7 +11498,7 @@ height:calc(100% - ((3.5rem + 8rem) + 1px))
 	display: none
 }
 .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
-	margin-left: 4.6rem!important
+	margin-left: 0rem!important
 }
 .sidebar-mini.sidebar-collapse .nav-sidebar .nav-header {
 	display: none
@@ -11540,7 +11541,7 @@ height:calc(100% - ((3.5rem + 8rem) + 1px))
 }
 .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
 	margin-left: 0;
-	width: 4.6rem
+	width: 0rem
 }
 .sidebar-mini.sidebar-collapse .main-sidebar .user-panel .image {
 	float: none
