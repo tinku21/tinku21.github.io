@@ -38764,4 +38764,7 @@ a.text-muted:hover {
 .dark-mode .border-dark {
 	border-color: #4b545c!important
 }
-/*# sourceMappingURL=adminlte.min.css.map */
+.os-host-overflow>.os-padding {
+    overflow-y: scroll !important;
+	margin-bottom:100px !important;
+}
