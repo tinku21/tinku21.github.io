@@ -1,0 +1,153 @@
+ 
+.maindiv {
+  display: flex;
+  position: relative;
+  top: 0px;
+  position: absolute;
+  left: 115px;
+}
+
+#toggle2 {
+  -webkit-appearance:none ;
+}
+
+.button5 {
+  position: absolute;
+  z-index: 999;
+  width: 620px;
+  height: 55px;
+  
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 24px;
+  overflow: hidden;
+  transition: width 300ms linear;
+}
+.button5:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #f9e458;
+  transform: rotate(225deg);
+  transition: all 0.4s ease;
+}
+.button5:after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #f9e458;
+  transform: rotate(135deg);
+  transition: all 0.4s ease;
+}
+
+.nav5 {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+ 
+  width: 100%;
+  border-radius: 5px;
+  transform: translateX(5%);
+  padding: 10px;
+}
+.nav5 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.nav5 li {
+  opacity: 0;
+  list-style: none;
+}
+.nav5 li:nth-child(1) {
+  transform-origin: bottom;
+  animation: itop 300ms 50ms linear forwards;
+}
+.nav5 li:nth-child(2) {
+  transform-origin: bottom;
+  animation: itop 300ms 100ms linear forwards;
+}
+.nav5 li:nth-child(3) {
+  transform-origin: bottom;
+  animation: itop 300ms 150ms linear forwards;
+}
+.nav5 li:nth-child(4) {
+  transform-origin: bottom;
+  animation: itop 300ms 200ms linear forwards;
+}
+.nav5 li:nth-child(5) {
+  transform-origin: bottom;
+  animation: itop 300ms 250ms linear forwards;
+}
+.nav5 li:nth-child(6) {
+  transform-origin: bottom;
+  animation: itop 300ms 300ms linear forwards;
+}
+.nav5 li:nth-child(7) {
+  transform-origin: bottom;
+  animation: itop 300ms 350ms linear forwards;
+}
+.nav5 li:nth-child(8) {
+  transform-origin: bottom;
+  animation: itop 300ms 400ms linear forwards;
+}
+.nav5 a {
+  transition: all 0.5s linear;
+  text-decoration: none;
+  color: #f9e458;
+  font-size: 20px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 0;
+  border-radius: 15px;
+}
+.nav5 a:hover {
+  color: #fff;
+ 
+}
+
+#toggle2:checked ~ label .nav5 {
+  display: none;
+  opacity: 0;
+  transform: translateX(0);
+}
+
+#toggle2:checked ~ .button5:before {
+  transform: rotate(90deg);
+}
+
+#toggle2:checked ~ .button5:after {
+  transform: rotate(0deg);
+}
+
+#toggle2:checked ~ .button5 {
+  width: 65px;
+  transition: all 0.1s linear;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+}
+@keyframes itop {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

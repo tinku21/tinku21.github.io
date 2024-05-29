@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="viewport-fit=cover">
   <title>MDCare</title>
-
+ <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -17,12 +18,22 @@
   <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="stylesheet" href="dist/css/topmenu.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-  <style>
-  
+   <style>
+
+
+
+
+ .animate1{
+  animation: 3s infinite alternate slidein;
+  transition-timing-function: ease-out;
+ }  
+		
+		
 #hover {
     color:#ececec;
     display: inline;
@@ -145,18 +156,35 @@ background-color:#383b3f;
   <!-- Preloader -->
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="left: 0; position: fixed; right: 0; top: 0; z-index: 1037; margin-left:0px;">
+ <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="left: 0; position: fixed; right: 0; top: 0; z-index: 1040; margin-left:0px !important;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      
+     <li class="nav-item d-none d-sm-inline-block">
         <a href="index.html" class="nav-link">Back</a>
       </li>
-     
+	  <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
     </ul>
 
+<div class="maindiv">
+  <input type="checkbox" id="toggle2" checked />
+  <label class="button5" for="toggle2">
+    <nav class="nav5">
+      <ul>
+        <li><a href="#0" data-toggle="tooltip" data-placement="bottom" title="Settings"><i class="fa fa-cog"></i></a></li>
+        <li><a href="#0" data-toggle="tooltip" data-placement="bottom" title="Queue"><i class="fas fa-tasks"></i></a></li>
+        <li><a href="#0" data-toggle="tooltip" data-placement="bottom" title="EM Coding"><i class="fas fa-medkit"></i></a></li>
+        <li><a href="#0" data-toggle="tooltip" data-placement="bottom" title="Templates"><i class="fas fa-clipboard-list"></i></a></li>
+        <li><a href="#0"  data-toggle="tooltip" data-placement="bottom" title="Sign Off"><i class="fas fa-file-signature"></i></a></li>
+        <li><a href="#0"  data-toggle="tooltip" data-placement="bottom" title="Appts"><i class="fas fa-clock"></i></a></li>
+        <li><a href="#0" data-toggle="tooltip" data-placement="bottom" title="Print"><i class="fas fa-print"></i></a></li>
+       
+      </ul>
+    </nav>
+  </label>
+</div>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
   
@@ -167,7 +195,7 @@ background-color:#383b3f;
 startclock();
 </script>
 </div></li>
-          <i class="fa fa-plus"></i>
+          <i class="fa fa-user"></i>
           </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
       
@@ -192,42 +220,29 @@ startclock();
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="margin-top:56px">
-   
-    <!-- Sidebar -->
-    <div class="card card-tabs" style="box-shadow: 0 0 0px rgba(0, 0, 0, .0), 0 0px 0px rgba(0, 0, 0, .0);">
-              <div class="card-header p-0 pt-0">
-                <ul class="nav nav-tabs nav-justified" id="custom-tabs-one-tab" role="tablist" style="background-color:#fff;">
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-one-home-tab"  style="border-radius:0px; border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">
-					<i class="fas fa-folder-open" style="font-size:28px;"></i><br>
-					Encno</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" id="custom-tabs-one-profile-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">
-					<i class="fas fa-user" style="font-size:28px;"></i><br>
-					Patient</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="custom-tabs-one-messages-tab"  style="border-radius:0px;  border-top:0px; padding: 1rem 1rem" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">
-					<i class="fa fa-history" style="font-size:28px;"></i><br>
-					History</a>
-                  </li>
-                 
-                </ul>
-              </div>
-              <div class="card-body" style="padding:0px; background-color: currentcolor;">
-                <div class="tab-content" id="custom-tabs-one-tabContent" style="padding:0px 0px !important;">
-                  <div class="tab-pane fade " id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
-                   <div class="sidebar" style="padding:0px 0px !important;">
-				   <div style="padding:5px 8px 0px 5px !important;"><select class="form-control form-control-sidebar">
+  
+<aside class="main-sidebar sidebar-dark-primary elevation-4" style="margin-top:56px;">
+ <div style="">
+    <div class="tab-container animate1">
+    <div class="tab" onclick="openTab('tab1')"><i class="fas fa-folder-open" style="font-size:28px;"></i><br>
+					Encno</div>
+    <div class="tab active-tab" onclick="openTab('tab2')"><i class="fas fa-user" style="font-size:28px;"></i><br>
+					Patient</div>
+    <div class="tab" onclick="openTab('tab3')"><i class="fa fa-history" style="font-size:28px;"></i><br>
+					History</div>
+</div>
+  </div>
+         
+                   <div class="sidebar" style="padding:0px 0px !important; margin-top:88px;">
+				    
+<div id="tab1" class="tab-content">
+ <div style="padding:5px 8px 0px 5px !important;"><select class="form-control form-control-sidebar">
                           <option>04/24/2024&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>General Visit</small></option>
                           <option>03/21/2024&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>Initial Visit</small></option>
                           <option>05/10/2023&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>Back Pain</small></option>
                          <option>10/10/2023&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<small>General Visit</small></option>
                         </select></div>
-				    
-  <nav class="mt-2" style="padding-bottom: 55px;">
+    <nav class="mt-2" style="padding-bottom:40px;">
   
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -235,162 +250,208 @@ startclock();
 			   
 			   <li class="nav-header">Subjective</li>
           <li class="nav-item">
-            <a href="ros.html" class="nav-link"><p>ROS</p></a>
+            <a href="ros.html" class="nav-link">
+			<i class="fas fa-home nav-icon"></i>
+			<p>ROS</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Current Medication</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-tools nav-icon"></i><p>Current Medication</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Chief Complaints</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-stethoscope nav-icon"></i><p>Chief Complaints</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Allergies</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-prescription-bottle-alt nav-icon"></i><p>Allergies</p></a>
 			</li>
 			
 		  <li class="nav-header">Objective</li>
 		   <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="fas fa-paperclip nav-icon"></i>
             <p>Scales</p> </a>      
           </li>
 		   <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="fas fa-link nav-icon"></i>
             <p>Physical Exam</p> </a>      
           </li>
 		   <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="fas fa-file-medical nav-icon"></i>
             <p>Vital Signs</p> </a>      
           </li>
 		    <li class="nav-header">Assessment</li>
 		   <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="fas fa-file-medical-alt nav-icon"></i>
               <p>Final Diagnosis</p>
             </a>         
           </li>
 		  <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="far fa-circle nav-icon"></i>
               <p>Assessment</p>
             </a>         
           </li>
 		  <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="fas fa-cogs nav-icon"></i>
               <p>Post-Op</p>
             </a>         
           </li>
 		  <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="fas fa-capsules nav-icon"></i>
               <p>Pediatrics</p>
             </a>         
           </li>
 		  <li class="nav-header">Plan</li>
 		   <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="fas fa-user-tie nav-icon"></i>
               <p>Immunization</p>
             </a>
          
           </li>
 		   <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="far fa-circle nav-icon"></i>
               <p>Plan</p>
             </a>
           </li>
 		  <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="far fa-circle nav-icon"></i>
               <p>Clinical Note</p>
             </a>
           </li>
 		    <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="far fa-circle nav-icon"></i>
               <p>Treatment</p>
             </a>
           </li>
 		  <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="far fa-circle nav-icon"></i>
               <p>Lab Orders</p>
             </a>
           </li>
 		  <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="far fa-circle nav-icon"></i>
               <p>Diagnostic Studies</p>
             </a>
           </li>
 		   <li class="nav-item">
             <a href="#" class="nav-link">
+			<i class="far fa-circle nav-icon"></i>
               <p>Treatment Plan</p>
             </a>
           </li>
         </ul>
       </nav>
-    </div>
-    <!-- /.sidebar -->
-                  </div>
-                  <div class="tab-pane fade show active" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
-                    <nav class="mt-2">
+</div>
+
+<div id="tab2" class="tab-content active-content">
+    <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
  <li class="nav-header">Patient Information</li>
           <li class="nav-item">
-            <a href="patientinfo.html" class="nav-link active"><p>Patient Information</p></a>
+            <a href="patientinfo.html" class="nav-link active">
+			<i class="fas fa-hospital-user  nav-icon"></i>
+			<p>Patient Information</p></a>
 			</li>
 			<li class="nav-item ">
-            <a href="dashboard.html" class="nav-link "><p>Dashboard</p></a>
+            <a href="dashboard.html" class="nav-link ">
+			<i class="fas fa-tachometer-alt  nav-icon"></i>
+			<p>Dashboard</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Appointment List</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-clipboard-list nav-icon"></i>
+			<p>Appointment List</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Face Sheet</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-file-invoice nav-icon"></i>
+			<p>Face Sheet</p></a>
 			</li>
 			
 		  <li class="nav-header">Clinical Information</li> 
 		  <li class="nav-item">
-            <a href="#" class="nav-link"><p>Problems</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-file-alt nav-icon"></i>
+			<p>Problems</p></a>
 			</li>
            <li class="nav-item">
-            <a href="#" class="nav-link"><p>Medication & Allergies</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-allergies nav-icon"></i>
+			<p>Medication & Allergies</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>Labs</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-vials nav-icon"></i>
+			<p>Labs</p></a>
 			</li>
           <li class="nav-header">Billing Information</li>
         </ul>
       </nav>
-                  </div>
-                  <div class="tab-pane fade" id="custom-tabs-one-messages" role="tabpanel" aria-labelledby="custom-tabs-one-messages-tab">
-                     <nav class="mt-2">
+</div>
+
+<div id="tab3" class="tab-content">
+  <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 		<li class="nav-header">Previous Visits</li>
           <li class="nav-item">
-            <a href="hx1.html" class="nav-link"><p>04/24/2024</p></a>
+            <a href="hx1.html" class="nav-link">
+			<i class="fas fa-clock nav-icon"></i>
+			<p>04/24/2024</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/23/2024</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-clock nav-icon"></i>
+			<p>04/23/2024</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/22/2024</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-clock nav-icon"></i>
+			<p>04/22/2024</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/21/2024</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-clock nav-icon"></i>
+			<p>04/21/2024</p></a>
 			</li>
 		  <li class="nav-item">
-            <a href="#" class="nav-link"><p>04/20/2024</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-clock nav-icon"></i>
+			<p>04/20/2024</p></a>
 			</li>
            <li class="nav-item">
-            <a href="#" class="nav-link"><p>04/19/2024</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-clock nav-icon"></i>
+			<p>04/19/2024</p></a>
 			</li>
 			<li class="nav-item">
-            <a href="#" class="nav-link"><p>04/18/2024</p></a>
+            <a href="#" class="nav-link">
+			<i class="fas fa-clock nav-icon"></i>
+			<p>04/18/2024</p></a>
 			</li>
          
         </ul>
       </nav>
-                  </div>
-                
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-    <!-- /.sidebar -->
-  </aside>
+</div>
 
+					
+					
+  
+    </div>
+    
+  </aside>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -746,6 +807,27 @@ MR No : xxxxxx<br>
     myDropzone.removeAllFiles(true)
   }
  
+</script>
+
+
+<script>
+    function openTab(tabId) {
+        // Hide all tab contents
+        var tabContents = document.getElementsByClassName('tab-content');
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = 'none';
+        }
+
+        // Remove 'active-tab' class from all tabs
+        var tabs = document.getElementsByClassName('tab');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active-tab');
+        }
+
+        // Show the selected tab content and mark it as active
+        document.getElementById(tabId).style.display = 'block';
+        document.querySelector('[onclick="openTab(\'' + tabId + '\')"]').classList.add('active-tab');
+    }
 </script>
 </body>
 </html>

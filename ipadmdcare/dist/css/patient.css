@@ -11498,7 +11498,7 @@ height:calc(100% - ((3.5rem + 8rem) + 1px))
 	display: none
 }
 .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
-	margin-left: 4.6rem!important
+	margin-left: 0rem!important
 }
 .sidebar-mini.sidebar-collapse .nav-sidebar .nav-header {
 	display: none
@@ -11541,20 +11541,16 @@ height:calc(100% - ((3.5rem + 8rem) + 1px))
 }
 .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
 	margin-left: 0;
-	width: 4.6rem;
-	margin-top:-32px !important;
-	height: 104vh !important;
-	overflow-x:hidden !important;
+	width: 0rem
 }
 .sidebar-mini.sidebar-collapse .main-sidebar .user-panel .image {
 	float: none
 }
 .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused, .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand):hover {
-	margin-top:55px !important;
-	width: 350px
+	width: 250px
 }
 .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .brand-link, .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand):hover .brand-link {
-	width: 350px
+	width: 250px
 }
 .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused .user-panel, .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand):hover .user-panel {
 	text-align: left
@@ -11911,10 +11907,10 @@ width:calc(250px - .5rem * 2)
 width:calc(250px - .5rem * 3)
 }
 .sidebar-mini .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-link, .sidebar-mini-md .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-link, .sidebar-mini-xs .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-link {
-width:calc(350px - .5rem * 4)
+width:calc(250px - .5rem * 4)
 }
 .sidebar-mini .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-link, .sidebar-mini-md .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-link, .sidebar-mini-xs .main-sidebar .nav-child-indent.nav-legacy.nav-compact .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-treeview .nav-link {
-width:calc(350px - .5rem * 5)
+width:calc(250px - .5rem * 5)
 }
 .sidebar-mini .main-sidebar .nav-link, .sidebar-mini-md .main-sidebar .nav-link, .sidebar-mini-xs .main-sidebar .nav-link {
  /*width:calc(350px - .5rem * 2);*/
@@ -11946,7 +11942,7 @@ width:calc(4.6rem - .5rem * 2)
 	display: inline-block
 }
 .sidebar-collapse.sidebar-mini .main-sidebar.sidebar-focused:not(.sidebar-no-expand) .nav-link, .sidebar-collapse.sidebar-mini .main-sidebar:hover:not(.sidebar-no-expand) .nav-link, .sidebar-collapse.sidebar-mini-md .main-sidebar.sidebar-focused:not(.sidebar-no-expand) .nav-link, .sidebar-collapse.sidebar-mini-md .main-sidebar:hover:not(.sidebar-no-expand) .nav-link, .sidebar-collapse.sidebar-mini-xs .main-sidebar.sidebar-focused:not(.sidebar-no-expand) .nav-link, .sidebar-collapse.sidebar-mini-xs .main-sidebar:hover:not(.sidebar-no-expand) .nav-link {
-width:calc(350px - .5rem * 2)
+width:calc(250px - .5rem * 2)
 }
 .sidebar-collapse.sidebar-mini .main-sidebar.sidebar-focused:not(.sidebar-no-expand) .form-control-sidebar, .sidebar-collapse.sidebar-mini .main-sidebar:hover:not(.sidebar-no-expand) .form-control-sidebar, .sidebar-collapse.sidebar-mini-md .main-sidebar.sidebar-focused:not(.sidebar-no-expand) .form-control-sidebar, .sidebar-collapse.sidebar-mini-md .main-sidebar:hover:not(.sidebar-no-expand) .form-control-sidebar, .sidebar-collapse.sidebar-mini-xs .main-sidebar.sidebar-focused:not(.sidebar-no-expand) .form-control-sidebar, .sidebar-collapse.sidebar-mini-xs .main-sidebar:hover:not(.sidebar-no-expand) .form-control-sidebar {
 	display: inline-block
