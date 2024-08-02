@@ -1,0 +1,497 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Arial;
+	font-size: 12px;
+	background-color:#f6f6f6;
+}
+
+div#header{
+  background-image:url(../images/topbg.jpg);
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:120px;
+  
+ }
+ 
+.mainheading{
+	font-size:200%;
+	color:#FFFFFF;
+	font-weight:bold;
+	line-height:32px;
+	}
+	
+.smallheading{
+	font-size:118%;
+	color:#898989;
+	font-weight:bold;
+	line-height:22px;
+	}
+	
+.welcome{
+	font-size:225%;
+	color:#181818;
+	font-weight:bold;
+	line-height:32px;
+	padding-left:5px;
+	padding-top:9px;
+	}
+	
+	
+.welcome1{
+	font-size:225%;
+	color:#181818;
+	font-weight:bold;
+	line-height:22px;
+	padding-left:5px;
+	padding-top:5px;
+	}
+	
+.normaltxt{
+	font-size:14px;
+	color:#444444;
+	font-weight:bold;
+	padding-left:102px;
+	}
+	
+.normaltxt2{
+	font-size:13px;
+	color:#444444;
+	font-weight:bold;
+	padding-left:5px;
+	
+	}
+	.normaltxt3{
+	font-size:14px;
+	color:#444444;
+	padding-left:5px;
+	height:30px;
+	
+	}
+	
+.title{
+	font-size:14px;
+	color:#006aaf;
+	font-weight:bold;
+	padding-left:5px;
+	line-height:28px;
+	}
+	
+.title5{
+	font-size:14px;
+	color:#006aaf;
+	font-weight:bold;
+	padding:10px 0px 0px 5px;
+	}
+		
+	
+	.title3{
+	font-size:14px;
+	color:#006aaf;
+	font-weight:bold;
+	padding-left:1px;
+	line-height:20px;
+	}
+	.title4{
+	font-size:13px;
+	color:#006aaf;
+	font-weight:bold;
+	padding-left:1px;
+	line-height:20px;
+	}
+.mdom{
+	font-size:12px;
+	color:#444;
+	font-weight:bold;
+	line-height:18px;
+	padding:5px;
+	}
+
+	
+.title2{
+	font-size:12px;
+	color:#006aaf;
+	background-color:#e2f0fb;
+	font-weight:bold;
+	padding-left:5px;
+	line-height:28px;
+	border:1px solid #d9e7f1;
+	}
+
+
+
+	
+.texthome{
+	font-size:12px;
+	color:#444444;
+	text-align:justify;
+	padding:5px 5px 12px 5px;
+	line-height:18px;
+	
+	
+	}
+	
+.textboxone{
+	font-size:12px;
+	color:#fff;
+	text-align:justify;
+	padding:3px 19px 5px 15px;
+	line-height:16px;
+	}
+	
+
+	
+.text{
+	font-size:12px;
+	color:#444444;
+	text-align:justify;
+	padding:5px 5px 12px 5px;
+	line-height:18px;
+	background-color:#fff;
+	border:1px solid #d9e7f1;
+	
+	}
+	
+.textleft{
+	font-size:12px;
+	color:#444444;
+	text-align:left;
+	padding:5px 0px 0px 5px;
+	line-height:18px;
+	
+	}
+		
+	
+.circle {list-style-image:url(../images/blue_arrow.gif);
+margin-bottom:-5px;
+}	
+.circle2 {list-style-image:url(../images/blue_arrow.gif);
+ font-size:12px;
+ color:#444444;
+ text-align:left;
+ line-height:16px;
+ padding-right:10px;
+ margin-bottom:-5px;
+
+}
+.circle2 li{
+ padding-bottom:10px;
+ }
+.circle2 ul{
+margin:0px;
+} 
+	
+
+.circle3 {
+ list-style-image:url(../images/blue_arrow.gif);
+ font-size:12px;
+ color:#444444;
+ text-align:justify;
+ line-height:16px;
+ padding-right:10px;
+
+}
+
+
+.circle4{
+	list-style-image:url(../images/blue_arrow.gif);
+ font-size:13px;
+ color:#444444;
+ text-align:justify;
+ line-height:16px;
+ padding-right:21px;
+}
+.circle4 li{
+ padding-bottom:9px;
+ }
+
+.circle3 li{
+ padding-bottom:9px;
+ }
+	
+.menu{
+	width: 100%;
+	font-family:Arial;
+	font-weight:bold;
+	 /* The menu should be the entire width of it's surrounding object, in this case the whole page */
+	} /* dark grey bg */
+
+.menu ul{
+	margin: 0;
+	padding: 0;
+	float: left;}
+
+.menu ul li{
+	display: inline;} /* Makes the link all appear in one line, rather than on top of each other */
+
+.menu ul li a{
+	float: left; 
+	text-decoration: none; /* removes the underline from the menu text */
+	color: #fff; /* text color of the menu */
+	padding: 7px 9px; /* 10.5px of padding to the right and left of the link and 11px to the top and bottom */
+	}
+
+.menu ul li a:visited{ /* This bit just makes sure the text color doesn't change once you've visited a link */
+	color: #fff;
+	text-decoration: none;}
+
+.menu ul li a:hover, .menu ul li .current{
+	background-color:#181818;
+	color: #cfe0aa;
+	/*color: #fff;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px; 
+	-khtml-border-radius: 8px;*/
+	} 
+	
+.features{
+	background-color:#00609d;
+	font-size:large;
+	height:40px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-align:center;
+	}
+	
+.featuresgreen{
+	background-color:#55960f;
+	font-size:110%;
+	height:40px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-align:center;
+	}	
+	
+.pad1{
+	padding:8px;
+	font-size:12px;
+	color:#444444;
+	line-height:18px;
+	background-color:#e6f1f8;
+	border-right:1px solid #e7e9ea;
+	}
+	
+.pad2{
+	padding:8px;
+	font-size:12px;
+	color:#444444;
+	line-height:18px;
+	background-color:#f6f9fc;
+	border-right:1px solid #e7e9ea;
+	}	
+	
+	
+a.offer:link{
+	font-size:135%;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:40px;
+	text-decoration:none;
+	
+	}
+a.offer:visited{
+	font-size:135%;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:40px;
+	text-decoration:none;
+	
+	}
+a.offer:hover{
+	font-size:135%;
+	font-weight:bold;
+	color:#FFFF00;
+	padding-left:40px;
+	text-decoration:none;
+	}
+		
+	
+a.offer1:link{
+	font-size:125%;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:40px;
+	text-decoration:none;
+	
+	}
+a.offer1:visited{
+	font-size:125%;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:40px;
+	text-decoration:none;
+	
+	}
+a.offer1:hover{
+	font-size:125%;
+	font-weight:bold;
+	color:#FFFF00;
+	padding-left:40px;
+	text-decoration:none;
+	}
+	
+	
+a.black:link{
+	font-size:13px;
+	
+	color:#444444;
+	font-weight:bold;
+	text-decoration:none;
+	
+	}
+a.black:visited{
+	font-size:13px;
+	
+	color:#444444;
+	font-weight:bold;
+	text-decoration:none;
+	
+	}
+a.black:hover{
+	font-size:13px;
+
+	color:#0099FF;
+	font-weight:bold;
+	text-decoration:none;
+	
+	}
+	
+a.all:link{
+	color:#0869AE;
+	text-decoration:none;
+	}
+a.all:visited{
+	color:#0869AE;
+	text-decoration:none;
+	}
+a.all:hover{
+	color:#4c8d05;
+	text-decoration:underline;
+	}
+	
+.fothead{
+	font-size:120%;
+	color:#006aaf;
+	font-style:italic;
+	}
+	
+a.more:link{
+	font-size:12px;
+	color:#006aaf;
+	text-decoration:none;
+	}
+a.more:visited{
+	font-size:12px;
+	color:#006aaf;
+	text-decoration:none;
+	}
+a.more:hover{
+	font-size:12px;
+	color:#444444;
+	text-decoration:none;
+	}
+	
+.fotertext{
+	font-size:10px;
+	color:#666666;
+	text-align:right;
+	}
+	
+.border{
+	border:1px solid #c6e0eb;
+	padding:1px;
+	}
+	
+.featuretext{
+	font-size:12px;
+	color:#333333;
+	font-weight:bold;
+	line-height:20px;
+	padding-left:50px;
+	text-align:left;
+	}
+	
+a.list:link{
+	font-size:12px;
+	font-weight:bold;
+	color:#444444;
+	text-decoration:none;
+	}
+a.list:visited{
+	font-size:12px;
+	font-weight:bold;
+	color:#444444;
+	text-decoration:none;
+	}
+a.list:hover{
+	font-size:12px;
+	font-weight:bold;
+	color:#990000;
+	text-decoration:none;
+	font-family: Tahoma, Geneva, sans-serif;
+	}
+	
+.fon{
+	font-size:16px;
+	color:#390;
+	}
+	
+.fon1{
+	font-size:16px;
+	color:#390;
+	font-weight:bold;
+}
+
+.bigtitle{
+		font-size:16px;
+	color:#006aaf;
+	padding-left:5px;
+}
+.leftpanneltxt{
+	font-size:12px;
+	color:#075587;
+	font-weight:bold;
+	line-height:18px;
+	text-align:left;
+	padding-left:9px;
+	}
+	
+.address{
+	font-size:12px;
+	color:#FFFFFF;
+	text-align:right;
+	padding-right:8px;
+	padding-top:7px;
+
+	}
+
+a.butadd:link{
+	font-size:12px;
+	color:#FFFFFF;
+	text-align:right;
+	padding-right:5px;
+	padding-top:7px;
+	text-decoration:none;
+	}
+a.butadd:visited{
+	font-size:12px;
+	color:#FFFFFF;
+	text-align:right;
+	padding-right:5px;
+	padding-top:7px;
+	text-decoration:none;
+	}
+a.butadd:hover{
+	font-size:12px;
+	color:#FFCC00;
+	text-align:right;
+	padding-right:5px;
+	padding-top:7px;
+	text-decoration:none;
+	}
