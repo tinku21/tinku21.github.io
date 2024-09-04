@@ -1268,3 +1268,12 @@
   color: #0acfec;
  }
 	
+a.hypertext:link{
+	color:#42c004;
+}
+a.hypertext:visited{
+	color:#42c004;
+}
+a.hypertext:hover{
+	color:#08cfec;
+}

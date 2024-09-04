@@ -1540,3 +1540,14 @@ video {
   width: 100%;
   height: auto;
 }
+
+
+.hypertext a:link{
+	color:#70b604;
+}
+.hypertext a:visited{
+	color:#70b604;
+}
+.hypertext a:hover{
+	color:#08cfec;
+}

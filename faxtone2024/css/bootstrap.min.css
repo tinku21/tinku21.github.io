@@ -3859,11 +3859,12 @@ z-index:3
 .breadcrumb-item+.breadcrumb-item::before {
 	float: left;
 	padding-right: .5rem;
-	color: #6c757d;
-	content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */
+	color: #ffffff;
+	content: var(--bs-breadcrumb-divider, "|"); /* rtl: var(--bs-breadcrumb-divider, "/") */
+	font-weight:bold;
 }
 .breadcrumb-item.active {
-	color: #6c757d
+	color: #ffffff;
 }
 .pagination {
 	display: flex;
