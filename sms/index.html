@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 5, SASS and PUG.js. It's fully customizable and modular.">
+    <!-- Twitter meta-->
+
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+  <style>
+    .app-content {
+        margin-left:0px !important; 
+    }
+      #intro {
+        background-image: url(assets/img/hero-bg-light.webp);
+
+      }
+.bg-image {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+  </style>
+  </head>
+  <body class="app sidebar-mini">
+    <!-- Navbar-->
+   <div id="intro" class="bg-image"> 
+    <!-- Sidebar menu-->
+    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    <main class="app-content">
+     <div class="app-title">
+        <div>
+        <img src="assets/img/logo.png" width="150" height="34"  alt=""/> </div>
+        <ul class="app-breadcrumb breadcrumb">
+         
+          <li class="breadcrumb-item"><a href="#">Secure Sign Out</a></li>
+        </ul>
+      </div>
+    
+<div class="row">
+        <div class="col-md-12 col-lg-6" style="margin:0 auto;">
+          <div class="tile">
+          <div class="tile-title">Payment Details</div>
+            <div class="tile-body">
+  
+    <div class="row">
+   <div class="col-md-12 ">
+<div class="card mb-3 border-default">
+                <div class="card-body">
+                 <div class="row">
+                 <div class="col-lg-8">Patient
+<h5>MICHELLE</h5>
+<div style="padding-top:20px;">
+Practice
+
+<h5>PRAMOD JOSEPH HOSPITAL PRACTICE LLC</h5>
+PO BOX 881325 , PORT SAINT LUCIE, FL, 34988-1436
+</div>
+</div>
+                 <div class="col-lg-4">
+                 <div class="card text-black bg-light">
+                <div class="card-body">
+                 
+                  <div class="d-flex justify-content-between align-items-start">
+										<div>
+											Balance Due
+											<div class="mb-3"><h2>$50.00</h2></div>
+
+										Statement Amount
+											<div><h6>$50.00</h6></div>
+										</div>
+										<div>
+											<a href="#" class="btn btn-secondary" style="border-radius:18px" >Pay</a>
+										</div>
+									</div>
+                </div>
+              </div>
+                 </div>
+                 </div>
+                </div>
+              </div>
+   </div>
+   </div>
+   
+   <div class="row">
+   <div class="col-lg-6"><a href=# class="btn btn-link" style="text-decoration:underline;"></a></div>
+   <div class="col-lg-6" style="text-align:right"><a href="page3.html" class="btn btn-outline-secondary" style="border-radius:18px">View Statement Details</a></div>
+   </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+            <div style="text-align:center; line-height:30px; width:100%; position:fixed; bottom:0px;">
+	  © All Rights Reserved @ 2024
+	  </div>
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Page specific javascripts-->
+
+    <script>
+      // Enable all alerts on the page
+      const alertList = document.querySelectorAll('.alert');
+      const alerts = [...alertList].map(element => new bootstrap.Alert(element));
+      
+      // Enable all popovers on the page
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+      
+      // Enable all tooltips on the page
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+	</div>
+  </body>
+</html>
