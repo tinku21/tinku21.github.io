@@ -15,8 +15,9 @@ label {
 }
 
 .help-block.with-errors {
-    color: #ff5050;
+    color: #ff5050 !important;
     margin-top: 5px;
+	font-size:12px;
 }
 
 
@@ -25,9 +26,9 @@ label {
 ==================================================================================
 ==================================================================================
 
-Universal Template 
+                               Universal Template 
 
-https://bootstrapious.com/p/universal-business-e-commerce-template
+      https://bootstrapious.com/p/universal-business-e-commerce-template
 
 ==================================================================================
 ==================================================================================
@@ -36,7 +37,7 @@ https://bootstrapious.com/p/universal-business-e-commerce-template
 /*
 *
 * =====================
-* GENERAL
+*       GENERAL
 * =====================
 *
 */
