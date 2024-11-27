@@ -144,7 +144,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
+  --background-color: transparent;
   color: var(--default-color);
   background-color: var(--background-color);
   
@@ -153,14 +153,15 @@ h6 {
 }
 
 .header .header-container {
-  background: var(--surface-color);
-  border-radius: 50px;
+  background: transparent;
+ 
   padding: 5px 25px;
  
 }
 
 .scrolled .header .header-container {
-  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  background: #fff;
+  box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
@@ -1554,9 +1555,7 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients .swiper-slide img {
-  opacity: 0.5;
   transition: 0.3s;
-  filter: grayscale(100);
 }
 
 .clients .swiper-slide img:hover {
