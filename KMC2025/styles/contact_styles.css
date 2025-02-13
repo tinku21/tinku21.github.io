@@ -35,6 +35,7 @@
 ***********/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 /*********************************
 2. Body and some general stuff
@@ -672,11 +673,13 @@ section
 }
 .home_content h1
 {
-	font-size: 72px;
+	font-family: "Oleo Script", serif !important;
+	font-size: 40px;
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 0.5;
 	white-space: nowrap;
+	text-shadow: 0px 2px #000000;
 }
 
 /*********************************
@@ -878,7 +881,7 @@ section
 .footer
 {
 	width: 100%;
-	padding-top: 86px;
+	padding-top: 0px;
 	background: #1a1a1a;
 }
 .footer .section_title h1
