@@ -297,7 +297,7 @@ section
 }
 .header_content
 {
-	width: calc(100% - 279px);
+	width: calc(100% - 0px);
 	height: 100%;
 }
 .header_content::before
@@ -341,7 +341,7 @@ section
 {
 	display: inline-block;
 	margin-left: auto;
-	padding-right: 93px;
+	padding-right: 40px;
 }
 .main_nav
 {
@@ -758,7 +758,7 @@ section
 }
 .contact_form_container
 {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 .input_field
 {
