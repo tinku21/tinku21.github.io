@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Yummy Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+	.thumonly {
+    vertical-align: middle;border:5px solid #f1ce37;
+	border-radius:10px;
+    margin-top: 22px;
+}
+.img-fluid {
+    width: 100% !important;
+    height: auto;
+}
+	</style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top" style="color:#151515">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+   <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#events">Home<br></a></li>
+          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>             
+              <li class="dropdown"><a href="#2025"><span>2025 Class Reunion</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+				 <li><a href="#">Reception</a></li>
+                  <li><a href="#">Session One</a></li>
+                  <li><a href="#">Session Two</a></li>
+                  <li><a href="#">Session Three</a></li>
+                  <li><a href="#">Session Four</a></li>
+                  <li><a href="#">Session Five</a></li>
+                </ul>
+              </li>
+              <li><a href="#2019">2019 College Reunion</a></li>
+              <li><a href="#collegedays">College Days</a></li>
+              <li><a href="#Individual">Individual Pics Upload</a></li>
+            </ul>
+          </li>
+          <li><a href="#Addressograph">Addressograph</a></li>
+		  <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+     <section id="events" class="events section" style="background-color:#231f1e; padding-top:15px;">
+<div style="text-align:center; padding-bottom:10px;">
+<img src="assets/img/loader.png" class="img-fluid" alt="">
+</div>
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/2.jpg)">
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/3.jpg)">
+            </div><!-- End Event item -->
+
+           <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/2.jpg)">
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/3.jpg)">
+            </div><!-- End Event item -->
+			  <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/2.jpg)">
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/3.jpg)">
+            </div><!-- End Event item -->
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+<section id="2025" class="about section">
+<ul class="breadcrumb">
+<li style="padding:5px"><a href="#events">Home</a></li>
+<li style="padding-top:5px">></li>
+<li style="padding:5px">Gallery</li>
+<li style="padding-top:5px">></li>
+<li class="active" style="padding:5px">2025 Class Reunion</li>
+</ul>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span>2025</span> <span class="description-title"> Class Reunion</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" style="height:400px;">
+
+
+      </div>
+
+    </section>
+
+<section id="2019" class="about section">
+<ul class="breadcrumb">
+<li style="padding:5px"><a href="#events">Home</a></li>
+<li style="padding-top:5px">></li>
+<li style="padding:5px">Gallery</li>
+<li style="padding-top:5px">></li>
+<li class="active" style="padding:5px">2019 College Reunion</li>
+</ul>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span>2019</span> <span class="description-title"> College Reunion</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" style="height:400px;">
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="collegedays" class="about section">
+<ul class="breadcrumb">
+<li style="padding:5px"><a href="#events">Home</a></li>
+<li style="padding-top:5px">></li>
+<li style="padding:5px">Gallery</li>
+<li style="padding-top:5px">></li>
+<li class="active" style="padding:5px">College Days</li>
+</ul>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span>College</span> <span class="description-title">Days</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+<div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/1.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/1.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/2.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/2a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/3.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/3a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/4.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/4.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/5.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/5.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/6.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/6.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/7.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/7.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/8.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/8.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/9.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/9.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/10.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/10a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/11.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/11a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/12.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/12.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/13.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/13.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/14.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/14.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/15.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/15a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/16.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/16a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/17.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/17a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/18.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/18a.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/19.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/19a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/20.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/20a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/21.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/21a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/22.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/22.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/23.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/23.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/24.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/24.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/25.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/25.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/26.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/26.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/27.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/27a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/28.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/28.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/29.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/29a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/30.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/30.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/31.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/31a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/32.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/32.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/33.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/33.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/34.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/34.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/35.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/35.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/36.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/36.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/37.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/37a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/38.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/38a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/39.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/39a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/40.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/40a.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/41.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/41a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/42.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/42a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/43.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/43.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/44.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/44.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/45.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/45a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/46.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/46.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/47.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/47a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/48.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/48.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/49.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/49.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/50.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/50.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/51.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/51.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/52.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/52a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/53.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/53a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/54.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/54a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/55.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/55a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/56.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/56.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/57.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/57a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/58.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/58.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/59.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/59a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/60.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/60a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/61.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/61a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/62.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/62.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/63.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/63a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/64.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/64a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/65.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/65a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/66.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/66a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/67.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/67a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/68.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/68a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/69.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/69a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/70.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/70a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/71.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/71a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/72.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/72a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/73.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/73a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/74.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/74a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/75.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/75.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/76.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/76.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/77.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/77a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/78.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/78a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/79.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/79.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/80.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/80a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/81.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/81a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/82.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/82a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/83.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/83a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/84.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/84a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/85.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/85a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/86.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/86a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/87.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/87a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/88.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/88a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/89.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/89a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/90.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/90a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/91.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/91a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/92.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/92a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/93.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/93a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/94.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/94a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/95.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/95a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/96.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/96a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/97.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/97a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/98.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/98.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/99.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/99a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/100.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/100.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/101.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/101a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/102jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/102a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/103.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/103a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/104.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/104a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/105.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/105a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/106.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/106a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/107.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/107a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/108.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/108.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/109.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/109a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/110.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/110a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/111.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/111a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/112.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/112a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/113.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/113.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/114.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/114a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/115.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/115a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/116.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/116.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/117.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/117a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/118.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/118a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/119.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/119a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/120.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/120a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/121.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/121.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/122.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/122.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/123.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/123.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/124.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/124a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/125.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/125a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/126.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/126.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/127.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/127a.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/128.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/128.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/129.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/129.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/130.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/130a.jpg"></a></div>
+
+
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/131.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/131.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/132.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/132.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/133.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/133.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/134.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/134.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/135.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/135a.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/136.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/136a.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/137.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/137.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/138.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/138.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/139.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/139.jpg"></a></div>
+<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="slider/140.jpg" data-lightbox="photos"><img class="img-fluid thumonly" src="slider/140.jpg"></a></div>
+
+				
+
+				
+				
+				
+            </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
+<section id="Individual" class="about section">
+<ul class="breadcrumb">
+<li style="padding:5px"><a href="#events">Home</a></li>
+<li style="padding-top:5px">></li>
+<li style="padding:5px">Gallery</li>
+<li style="padding-top:5px">></li>
+<li class="active" style="padding:5px">Individual Pics Uploads</li>
+</ul>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span>Individual</span> <span class="description-title"> Pics Uploads</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" style="height:400px;">
+
+
+      </div>
+
+    </section>
+
+<section id="Addressograph" class="about section">
+<ul class="breadcrumb">
+<li style="padding:5px"><a href="#events">Home</a></li>
+<li style="padding-top:5px">></li>
+
+<li class="active" style="padding:5px">Addressograph</li>
+</ul>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span>Addressograph</span> </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" style="height:400px;">
+
+
+      </div>
+
+    </section>
+
+
+
+<section id="contact" class="about section">
+<ul class="breadcrumb">
+<li style="padding:5px"><a href="#events">Home</a></li>
+<li style="padding-top:5px">></li>
+
+<li class="active" style="padding:5px">Contact Us</li>
+</ul>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p><span>Contact</span> <span class="description-title"> Us</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" style="height:400px;">
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- About Section -->
+    
+
+    <!-- Why Us Section -->
+    
+
+    <!-- Stats Section -->
+    
+    <!-- Menu Section -->
+  
+
+    <!-- Testimonials Section -->
+    
+
+    <!-- Events Section -->
+ <!-- /Events Section -->
+
+    <!-- Chefs Section -->
+    
+
+    <!-- Book A Table Section -->
+    
+
+    <!-- Gallery Section -->
+    
+    <!-- Contact Section -->
+    
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel()
+    </script>
+</body>
+
+</html>
