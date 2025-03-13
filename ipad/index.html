@@ -8,16 +8,9 @@
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
         <script src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
         <script src="https://kendo.cdn.telerik.com/2025.1.227/js/kendo.all.min.js"></script>
-    <script src="kendo.all.min.js" type="module"></script>
+    <!-- <script src="kendo.all.min.js" type="module"></script> -->
     
-    
-</head>
-<body>
-    <div id="example">
-    <div id="pdfViewer">
-    </div>
-</div>
-<script type="module">
+    <script type="module">
     $("#pdfViewer").kendoPDFViewer({
         render: function (e) {
             $("[title='Enable Selection']").click();
@@ -26,12 +19,19 @@
             contextMenu: true
         },
         pdfjsProcessing: {
-            file: "document.pdf"
+            file: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
         },
         width: "100%",
-        height: 1000
+        height: 800
     });
 </script>
+</head>
+<body>
+    <div id="example">
+    <div id="pdfViewer">
+    </div>
+</div>
+
 
 
 </body>
