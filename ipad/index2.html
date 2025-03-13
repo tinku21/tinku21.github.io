@@ -1,0 +1,41 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My PDF Viewer</title>
+
+</head>
+<body>
+
+<div id="pdf-container" style="width: 100%; overflow: auto;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script>
+  const url = "https://tinku21.github.io/ipad/document.pdf";
+  const container = document.getElementById("pdf-container");
+
+  pdfjsLib.getDocument(url).promise.then(pdf => {
+    // Loop through all pages and render them
+    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+      pdf.getPage(pageNum).then(page => {
+        const canvas = document.createElement("canvas");
+        container.appendChild(canvas); // Add a canvas for each page
+        
+        const viewport = page.getViewport({ scale: 2});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        
+        page.render({
+          canvasContext: canvas.getContext("2d"),
+          viewport: viewport
+        });
+      });
+    }
+  });
+</script>
+
+
+</body>
+</html>
