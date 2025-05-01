@@ -1,41 +1,42 @@
-<!doctype html>
- 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My PDF Viewer</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF.js Viewer</title>
+    <style>
+        #pdf-canvas {
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
+    <h1>PDF Viewer with PDF.js</h1>
+    <canvas id="pdf-canvas"></canvas>
 
-<div id="pdf-container" style="width: 100%; overflow: auto;"></div>
+    <script>
+        const url = 'https://tinku21.github.io/ipad/document.pdf'; // Path to your PDF file
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-<script>
-  const url = "https://tinku21.github.io/ipad/document.pdf";
-  const container = document.getElementById("pdf-container");
+        const canvas = document.getElementById('pdf-canvas');
+        const context = canvas.getContext('2d');
 
-  pdfjsLib.getDocument(url).promise.then(pdf => {
-    // Loop through all pages and render them
-    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-      pdf.getPage(pageNum).then(page => {
-        const canvas = document.createElement("canvas");
-        container.appendChild(canvas); // Add a canvas for each page
-        
-        const viewport = page.getViewport({ scale: 2});
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-        
-        page.render({
-          canvasContext: canvas.getContext("2d"),
-          viewport: viewport
-        });
-      });
-    }
-  });
-</script>
+        const renderPDF = async (url) => {
+            const pdf = await pdfjsLib.getDocument(url).promise;
+            const page = await pdf.getPage(1); // Get the first page of the PDF
 
+            const viewport = page.getViewport({ scale: 1 });
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
 
+            const renderContext = {
+                canvasContext: context,
+                viewport: viewport,
+            };
+
+            await page.render(renderContext);
+        };
+
+        renderPDF(url);
+    </script>
 </body>
 </html>
