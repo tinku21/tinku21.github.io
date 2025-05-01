@@ -1310,7 +1310,7 @@ html {
 }
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: #666666;
     transition: 0.5s;
 }
 
