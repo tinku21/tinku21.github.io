@@ -881,11 +881,11 @@ flex: 50%;
 }
 
 @media (max-width: 768px) {
-.navbar .navbar-toggler {
-position: relative;
-top: 10px; left: 85%;
+/* .navbar .navbar-toggler { */
+/* position: relative; */
+/* top: 10px; left: 85%; */
 
-}
+/* } */
 .topbar {
 display: none;    
 }
