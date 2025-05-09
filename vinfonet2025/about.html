@@ -21,11 +21,11 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
+        <!--  Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         <script>
             document.addEventListener("DOMContentLoaded", () => {
@@ -57,7 +57,99 @@
     </head>
 
     <body>
-
+    <!--- quick quote start-->
+    <div class="side-container">
+        <div class="side-box">
+           <div class="bg-white p-3">
+              <span class="side-close-btn text-danger bg-dark rounded p-1"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+              <form>
+                 <div class="input-group flex-nowrap mt-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-user"></i></span>
+                    <input type="text" class=" form-control" placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping" >
+                 </div>
+                 <div class="input-group flex-nowrap mt-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-phone" style="transform: rotate(125deg);"></i></span>
+                    <input type="text" class=" form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="addon-wrapping" >
+                 </div>
+                 <div class="input-group flex-nowrap mt-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa fa-envelope"></i></span>
+                    <input type="text" class=" form-control" placeholder="e-Mail" aria-label="e-Mail" aria-describedby="addon-wrapping" >
+                 </div>
+                 <textarea class="form-control mt-3" placeholder="comment here" id="floatingTextarea"></textarea>
+                 <select class="form-select mt-3" aria-label="Default select example">
+                    <option selected>Service</option>
+                    <option value="Transcription">Select</option>
+                    <option value="Transcription">Transcription</option>
+                    <option value="Coding/Billing">Coding/Billing</option>
+                    <option value="MDCare EMR/PMS">MDCare EMR/PMS</option>
+                    <option value="D R Transcription">D R Transcription</option>
+                 </select>
+                 <button type="button" class="btn btn-primary mt-3">Submit</button>
+              </form>
+           </div>
+        </div>
+     </div>
+     <button class="quote-button action-btn open-side-btn">
+     <span><i class="fa fa-quote-left"></i> Get a Quote</span>
+     </button>
+     <script>
+        $(".open-side-btn").click(function(e){
+        $(".side-container .side-box").addClass("open-side");
+        $(".side-container .side-box").animate({
+        width: 400
+        })
+        });
+        
+        $(".side-container .side-close-btn").click(function(e){
+        $(".side-container .side-box").animate({
+        width: 0
+        }, 200, function() {
+        $(".side-container .side-box").removeClass("open-side");
+        });
+        });
+        
+        
+     </script>
+     <!--- quick quote end-->
+     <!--- call start-->
+     <button class="quote-button1 action-btn1 open-side-btn1">
+        <span><i class="fas fa-phone-alt text-white  me-2"></i>Contact</span>
+     </button>
+     <div class="side-container1">
+        <div class="side-box1">
+           <div class="bg-white p-3 contact-pop">
+              <span class="side-close-btn1 text-danger bg-dark rounded p-1 px-2"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+              <h3>
+                Contact
+             </h3>
+             <h4>
+                Phone: 1-877-377-8999
+             </h4>
+             <h4>
+                E-mail: info@vinfonet.com
+             </h4>
+           </div>
+        </div>
+     </div>
+     <script>
+        $(".open-side-btn1").click(function(e){
+        $(".side-container1 .side-box1").addClass("open-side1");
+        $(".side-container1 .side-box1").animate({
+        width: 400
+        })
+        });
+        
+        $(".side-container1 .side-close-btn1").click(function(e){
+        $(".side-container1 .side-box1").animate({
+        width: 0
+        }, 200, function() {
+        $(".side-container1 .side-box1").removeClass("open-side1");
+        });
+        });
+        
+        
+     </script>
+     <!--- call  end-->
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary">
@@ -120,26 +212,24 @@
                                     <div class="inner-main">
                                        <a href="MB-Advantages.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Advantages</a>   
                                        <a href="MB-MedicalCoding.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Medical Coding</a>   
-                                       <a href="MB-Medical Billing.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Medical Billing</a>   
-                                       <a href="MB-Revenue Recovery.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Revenue Recovery</a>   
-                                       <a href="MB-Stat Cash Billing.html" class="dropdown-item py-2 menu-hover-c  ">Stat Cash Billing Service</a>   
-                                       <a href="MB-Assured Billing.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Assured Cash Billing Service</a>   
-                                       <a href="MB-Billing Cycle.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Billing Cycle</a>   
+                                       <a href="MB-Medical-Billing.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Medical Billing</a>   
+                                       <a href="MB-Revenue-Recovery.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Revenue Recovery</a>   
+                                     
+                                       <a href="MB-Billing-Cycle.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">Billing Cycle</a>   
                                        <a href="MB-FAQs.html" class="nav-item  dropdown-item py-2 menu-hover-c  ">FAQs</a>
                                     </div>
                                  </div>
-                                 <div href="medical-billing.html" class="dropdown-item py-2 menu-hover-c">
-                                  Medical Billing <i class="fas fa-angle-right me-2 sub-icon"></i>
-                                  <div class="inner-main">
-                                    
-                                        <a href="MT-Advantages.html" class="nav-item  dropdown-item py-2 menu-hover-c">Advantages</a>
-                                    <a href="MT-How it works.html" class=" nav-item dropdown-item py-2 menu-hover-c">How It Works</a>
+                                 <div href="Medical-Transcription.html" class="dropdown-item py-2 menu-hover-c">
+                               
+                                    <a h href="Medical-Transcription.html" class="text-white"> Medical Transcription <i class="fas fa-angle-right me-2 sub-icon"></i></a>
+                                    <div class="inner-main">
+                                       <a href="MT-Advantages.html" class="nav-item  dropdown-item py-2 menu-hover-c">Advantages</a>
+                                       <a href="MT-How it works.html" class=" nav-item dropdown-item py-2 menu-hover-c">How It Works</a>
                                        <a href="MT-iPhone app.html" class=" nav-item dropdown-item py-2 menu-hover-c">iPhone Dictation app</a>
-                                        <a href="MT-DRTs.html" class=" nav-item dropdown-item py-2 menu-hover-c">DRT</a>
-                                            <a href="#!" class=" nav-item dropdown-item py-2 menu-hover-c">FAQs</a>
-                                    
-                                  </div>
-                               </div>
+                                       <a href="MT-DRTs.html" class=" nav-item dropdown-item py-2 menu-hover-c">DRT</a>
+                                       <a href="#!" class=" nav-item dropdown-item py-2 menu-hover-c">FAQs</a>
+                                    </div>
+                                 </div>
                                  
                               
                               <a href="medical-transcription.html" class="dropdown-item py-2">Denial Management
