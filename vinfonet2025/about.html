@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Medical Billing Services | Medical Transcription Services | Vinfonet.com</title>
+             <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="icon" type="" href="img/favicon.png">
+        <!-- Google Web Fonts -->
+       
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+         
+
+        <!-- Libraries Stylesheet -->
+       
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/innerbg.css" rel="stylesheet">
+        <!--  Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+      <link href="css/menu.css" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="side-container">
+         <div class="side-box">
+            <div class="bg-white p-3">
+                
+               <form>
+                  <div class="input-group flex-nowrap mt-3">
+                     <span class="input-group-text" id="addon-wrapping"><i class="fa fa-user"></i></span>
+                     <input type="text" class=" form-control" placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping" >
+                  </div>
+                  <div class="input-group flex-nowrap mt-3">
+                     <span class="input-group-text" id="addon-wrapping"><i class="fa fa-phone" style="transform: rotate(125deg);"></i></span>
+                     <input type="text" class=" form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="addon-wrapping" >
+                  </div>
+                  <div class="input-group flex-nowrap mt-3">
+                     <span class="input-group-text" id="addon-wrapping"><i class="fa fa-envelope"></i></span>
+                     <input type="text" class=" form-control" placeholder="e-Mail" aria-label="e-Mail" aria-describedby="addon-wrapping" >
+                  </div>
+                  <textarea class="form-control mt-3" placeholder="comment here" id="floatingTextarea"></textarea>
+                  <select class="form-select mt-3" aria-label="Default select example">
+                     <option selected>Service</option>
+                     <option value="Transcription">Select</option>
+                     <option value="Transcription">Transcription</option>
+                     <option value="Coding/Billing">Coding/Billing</option>
+                     <option value="MDCare EMR/PMS">MDCare EMR/PMS</option>
+                     <option value="D R Transcription">D R Transcription</option>
+                  </select>
+                  <button type="button" class="btn btn-primary mt-3">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <button class="quote-button action-btn open-side-btn">
+      <span><i class="fa fa-quote-left"></i> Get a Quote</span>
+      </button>
+      <script>
+        // Open the sidebar
+$(".open-side-btn").click(function(e) {
+    e.stopPropagation(); // Prevent this click from propagating to the document
+    $(".side-container .side-box").addClass("open-side");
+    $(".side-container .side-box").animate({
+        width: 400
+    });
+});
+
+// Close the sidebar when the close button is clicked
+$(".side-container .side-close-btn").click(function(e) {
+    $(".side-container .side-box").animate({
+        width: 0
+    }, 200, function() {
+        $(".side-container .side-box").removeClass("open-side");
+    });
+});
+
+// Close the sidebar when clicking outside of it
+$(document).click(function(e) {
+    // Close the sidebar only if the click is outside the side-container
+    if (!$(e.target).closest(".side-container").length && !$(e.target).is(".open-side-btn")) {
+        $(".side-container .side-box").animate({
+            width: 0
+        }, 200, function() {
+            $(".side-container .side-box").removeClass("open-side");
+        });
+    }
+});
+
+// Prevent clicks on the sidebar itself or its close button from triggering the document click handler
+$(".side-container").click(function(e) {
+    e.stopPropagation(); // Prevent the click from propagating to the document
+});
+
+         
+         
+      </script>
+      <!--- quick quote end-->
+     
+   
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="https://maps.app.goo.gl/YBjoim3hf4eotT1SA" target="_blank" class="text-white me-4">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                2055 Comprehensive Dr, Aurora, IL 60505, USA</a>
+                            <a href="tel:1-877-377-8999" class="text-white me-4"><i class="fas fa-phone-alt text-primary me-2"></i>1-877-377-8999</a>
+                            <a href="mailto:info@vinfonet.com" class="text-white me-0"><i class="fas fa-envelope text-primary me-2"></i>info@vinfonet.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-twitter text-white"></i></a>
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-instagram text-white"></i></a>
+                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar & Hero Start -->
+         <div class="container-fluid sticky-top">
+    <div class="container px-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <a class="navbar-brand col-lg-2 col-6" href="index.html">
+                <img src="img/logo.png" alt="" class="d-inline-block align-text-top img-fluid w-100" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse dlg-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Our Services
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle py-2" href="medical-billing.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href=this.href">
+                                    Medical Billing
+                                </a>
+                                <script>
+                                    document.addEventListener("DOMContentLoaded", function () {
+                                        // Check if it's a mobile device based on screen width
+                                        if (window.innerWidth <= 768) {
+                                            // Select the link with the specific href
+                                            const mobileBillingLink = document.querySelector('a[href="medical-billing.html"]');
+
+                                            // If found, change its href to "#" and remove the onclick behavior
+                                            if (mobileBillingLink) {
+                                                mobileBillingLink.setAttribute("href", "#");
+                                                mobileBillingLink.removeAttribute("onclick");
+                                            }
+                                        }
+                                    });
+                                </script>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item "><a href="medical-billing-mobile.html"  class="dropdown-item py-2 d-block d-lg-none">    Medical Billing</a> 
+                                    <li class="nav-item"><a href="MB-Advantages.html" class="dropdown-item py-2">Advantages</a></li>
+                                    <li class="nav-item"><a href="MB-MedicalCoding.html" class="dropdown-item py-2">Medical Coding</a></li>
+                                    <li class="nav-item"><a href="MB-Revenue-Recovery.html" class="dropdown-item py-2">Revenue Recovery</a></li>
+                                    <li class="nav-item"><a href="MB-Billing-Cycle.html" class="dropdown-item py-2">Billing Cycle</a></li>
+                                    <li class="nav-item"><a href="MB-FAQs.html" class="dropdown-item py-2">FAQs</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle py-2" href="Medical-Transcription.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href=this.href">
+                                    Medical Transcription
+                                </a>
+                                <script>
+                                    document.addEventListener("DOMContentLoaded", function () {
+                                        if (window.innerWidth <= 768) {
+                                            const linksToDisable = ["Medical-Transcription.html"];
+
+                                            linksToDisable.forEach(function (href) {
+                                                const link = document.querySelector('a[href="' + href + '"]');
+                                                if (link) {
+                                                    link.setAttribute("href", "#");
+                                                    link.removeAttribute("onclick");
+                                                }
+                                            });
+                                        }
+                                    });
+                                </script>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="MT-Advantages.html" class="dropdown-item py-2">Advantages</a></li>
+                                    <li class="nav-item"><a href="MT-How-it-works.html" class="dropdown-item py-2">How It Works</a></li>
+                                    <li class="nav-item"><a href="MT-iPhone-app.html" class="dropdown-item py-2">iPhone Dictation app</a></li>
+                                    <li class="nav-item"><a href="MT-DRTs.html" class="dropdown-item py-2">DRT</a></li>
+                                    <li class="nav-item"><a href="MT-FAQ.html" class="dropdown-item py-2">FAQs</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="denial-management.html">denial-management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.mdcare.com" class="nav-link">MDCare EMR/PMS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://mdofficemail.com/" class="nav-link" target="_blank">HIPAA Email</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hipaa.html" class="nav-link">HIPAA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            Other Services
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropend"><a href="back-office-service.html" class="nav-link">Back Office Service </a></li>
+                            <li class="dropend"><a href="website-development.html" class="nav-link">Website Development </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <a href="img/Vision-Infonet-Billing.pdf" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0" download="">Download Brochure</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+        <!-- Navbar & Hero End -->
+
+      
+
+   <div class="container-fluid h-custam-h">    
+
+    
+    <img class="background" src="img/about-inner-p.jpg"/>
+  <div class="message bg-img-inner-all">
+    <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" >About Us</h4>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                
+                    <li class="breadcrumb-item active ">About</li>
+                </ol>    
+            </div></div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+
+</div>
+
+        
+
+
+       
+<!-- About Start -->
+      <div class="container-fluid about bg-light py-5">
+            <div class="container ">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="about-img">
+                            <img src="img/aboutusn.jpg" class="img-fluid w-100 rounded-top bg-white" alt="Image">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                        <h4 class="text-primary">About Us</h4>
+                        <h1 class="display-5 mb-4"><span class="text-uppercase"> Vision Infonet Inc.</span></h1>
+                        <p class="text ps-4 mb-4">
+                            <span class="text-uppercase"> Vision Infonet Inc.</span>. is an Illinois-based provider of cutting-edge technologies and services for the healthcare industry. Our medical transcription, medical coding, medical billing, Electronic Medical Records (EMR), Paperless Office System implementation, and other back-office services assure maximum profit for practices as small as one doctor to as large as a hospital group with four hundred or more physicians.
+                        </br></br>
+                            Founded in 1999 by a medical doctor, <span class="text-uppercase"> Vision Infonet Inc.</span>. has steadily grown over the past decade to serve over 2000 clients all over the United States. Our employee base spread out at our 4 locations, consists of 750+ specialized staff and managers dedicated in providing exceptional quality end-to-end back-office services to the healthcare industry.
+                        </br></br>
+
+                            With the ongoing trends in information technology where change is an obsession, time a limited commodity, and quality the hallmark of every business, <span class="text-uppercase"> Vision Infonet Inc.</span>. has created its niche in the service of healthcare providers by proactively understanding the current needs of the healthcare industry and successfully fulfilling them by combining high-end technology with highly skilled professionals to make the documentation process simple.   
+                        </br></br>
+                            <span class="text-uppercase"> Vision Infonet Inc.</span>. functions as an intelligent electronic platform between Government on one side and healthcare providers on the other. We provide a complete technology backbone that delivers automated, compliant, transparent and secure processes to the medical facilities.
+                        </p>
+                     
+                        <div class="row g-4 justify-content-between ">
+                            <div class="col-xl-5"><a href="#" class="btn btn-primary rounded-pill py-3 px-5">Read More</a></div>
+                         
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <div class="contact-item mt-5 wow fadeInUp">
+                    <div class="pb-5">
+                       
+                        <h1 class="display-5 mb-4">The secret behind our strength lies in</h1>
+                        <p class="mb-0">OUR TEAM consisting of medical transcription professionals with relevant experience in transcription and proof-reading led by Medical and English professionals; certified medical billing & coding professionals with strong expertise in claims processing and AR calling led by dedicated account managers; EMR software professionals with strong expertise in the Healthcare space led by project heads and domain experts</p>
+                    </div>
+               
+              
+                </div>
+
+
+
+
+
+
+
+
+
+                <ol class="olcards  wow fadeInDown">
+                    <li style="--cardColor:#8f8f8f">
+                        <div class="content">
+                         
+                            
+                            <div class="text">Our coders team comprises of CPC (Certificate of Professional Coding) credentialed coders certified by American Academy of Professional Coders (AAPC) who ensure compliant coding in accordance with NCCI (National Correct Coding Initiatives) and LCD (Local Coverage decision and medical policies) as per the rules set for each state across the country.</div>
+                        </div>
+                    </li>
+                    <li style="--cardColor:#a3a3a3">
+                        <div class="content">
+                           
+                            
+                            <div class="text"> Our billers certified by AAHAM (American Association of Healthcare and Administrative Management) are highly experienced in Accurate and Convergent Billing in compliance with HIPAA (Health Information and Portability Act).</div>
+                        </div>
+                    </li>
+                    <li style="--cardColor:#8f8f8f">
+                        <div class="content">
+                           
+                            
+                            <div class="text">Our software professionals, certified as MCP (Microsoft Certified Professional), MCTS (Microsoft Certified Technology Specialist), MCPD (Microsoft Certified Professional Developer), MCITP (Microsoft Certified IT Professional), develop and maintain our cutting-edge EMR software which is one of the most economical options in the market.</div>
+                        </div>
+                    </li>
+                  
+
+                       
+                    </li>
+                </ol>
+                                            
+                            <p class="text mt-5 text-dark">Our workforce as depicted in the graph is mainly composed of a team of young, qualified graduates, led by Team Leaders with 7-15 years of experience in their relevant fields, collectively working towards simplifying & streamlining your practice.</p>
+            </div>
+        </div> 
+
+      
+        <!-- About End -->
+
+
+        <!-- counter-value start -->
+        <div class="container-fluid counter-value p-0 wow fadeInDown pb-5">
+    
+    
+    
+    
+    
+    
+    
+            <section class="counter-wrapper">
+            
+                <div class="counter-inner">
+                    <div class="container">
+                        <div class="row g-0">
+                         
+        
+        
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/Total-Projects.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count1">160</span>+
+                                    </div>
+                                    <div>
+                                        Total Projects
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/Employees.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count2">450</span>+
+                                    </div>
+                                    <div>
+                                        Employees
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/YearsExperience.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count3">20</span>+
+                                    </div>
+                                    <div>
+                                        Years Experience
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/Happy-Clients.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count4">200</span>+
+                                    </div>
+                                    <div>
+                                        Happy Clients
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                            
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/Doctors-on-board.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count5">5</span>+
+                                    </div>
+                                    <div>
+                                        Doctors on board
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/Software-Developers.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count6">50</span>+
+                                    </div>
+                                    <div>
+                                        Software Developers
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/Medical-Coders.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count7">5</span>+
+                                    </div>
+                                    <div>
+                                        Medical Coders
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="py-5 text-center text-white">
+                                    <div>
+                                        <img src="img/Happy-Clients.png"/>
+                                    </div>
+                                    <div class="py-2 count">
+                                        <span id="count8">5</span>+
+                                    </div>
+                                    <div>
+                                        Healthcare Expertise
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+<!-- counter-value end -->
+
+
+        <!-- Footer Start -->
+         <div class="container-fluid footer py-5 wow fadeIn pb-3" data-wow-delay="0.2s">
+            <div class="container ">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h4 class="text-white mb-4">About Us</h4>
+                                <img src="img/footer-logo.png"/>
+                                <p class="mb-3  mt-2">
+                                    <span class="text-uppercase"> Vision Infonet Inc.</span>. is an Illinois-based provider of cutting-edge technologies and services for the healthcare industry.
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home </a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> HIPAA Email</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> HIPAA</a>
+                            
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                     
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Our Services</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Medical Billing </a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i>  Medical Transcription </a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Denial Management</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i>   MDCare EMR/PMS</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Back Office Service</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Website Development</a>
+                    
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.4479497457664!2d-88.27379442344161!3d41.7971096704804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efbb0a42a7553%3A0x919e1847256d27b9!2s2055%20Comprehensive%20Dr%2C%20Aurora%2C%20IL%2060505%2C%20USA!5e0!3m2!1sen!2sin!4v1746082660186!5m2!1sen!2sin" width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="https://maps.app.goo.gl/YBjoim3hf4eotT1SA" target="_blank" class="mt-3">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                2055 Comprehensive Dr, Aurora, IL 60505, USA</a>
+                                <a href="tel:1-877-377-8999" class=" me-4"><i class="fas fa-phone-alt text-primary  me-2"></i>1-877-377-8999</a>
+                            <a href="mailto:info@vinfonet.com" class=" "><i class="fas fa-envelope text-primary  me-2"></i>Example@gmail.com</a>
+                           
+
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div> 
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-primary"><i class="fas fa-copyright text-light me-2"></i>
+                            2025 <span class="text-uppercase"> Vision Infonet Inc.</span></a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-3  text-body">
+                        <a class=" text-muted text-start" href="#">  Terms & Conditions</a> 
+                    </div>
+                    <div class="col-md-3  text-body">
+                        <a class="text-muted" href="#"> Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
