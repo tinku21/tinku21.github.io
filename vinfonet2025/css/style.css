@@ -1319,11 +1319,7 @@ position: relative; top: 27%; right: 0;
 /* =======================Responsive Breakpoint ========================== */
 
 @media only screen and (max-width:992px) {
-    .container {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
+   
 
     .container .card {
         width: 450px;
@@ -2416,8 +2412,39 @@ nav .active{
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+.dropdown-menu  .nav-item .nav-link{ 
+
+      padding-right: 30px;
+    position: relative;
+        color: #000;
+            display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: bold;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+.shadow-sm img {
+    width: 100% !important;
+}
+ .navbar-expand-lg .navbar-nav .nav-link , .dropdown-item{ padding: 8px;         font-weight: bold;} 
+.dropdown-toggle::after{ position: absolute; right: 10px;}
+.navbar .nav-item .dropdown-menu{ margin-top: 0px;}
+ .sticky-top{ z-index: 99999999;}
+
+
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
 .dropdown-menu  .nav-item .nav-link{ 
 
       padding-right: 30px;
@@ -2444,31 +2471,30 @@ nav .active{
 
 
 
+ 
+.navbar-brand img{ width: 50% !important;}
+.testimonial-item {
+    min-height: 560px;
+}
+.pricing-card{max-width: 100%;}
+.pricing-table{ padding: 0px;}
+.medc-links-section{ grid-template-columns: none;}
+.container .card{ max-width: 100%;}
+ }
 
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
 
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
 
 
 }
