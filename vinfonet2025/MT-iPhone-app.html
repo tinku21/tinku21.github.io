@@ -112,7 +112,7 @@
         <div class="container-fluid topbar px-0 d-none d-lg-block">
             <div class="container px-0">
                 <div class="row gx-0 align-items-center" style="height: 45px;">
-                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                   <div class="col-lg-9 col-xl-8 text-center text-lg-start mb-lg-0">
                         <div class="d-flex flex-wrap">
                             <a href="https://maps.app.goo.gl/YBjoim3hf4eotT1SA" target="_blank" class="text-white me-4">
                                 <i class="fas fa-map-marker-alt text-primary me-2"></i>
@@ -122,7 +122,7 @@
                             <a href="mailto:info@vinfonet.com" class="text-white me-0"><i class="fas fa-envelope text-primary me-2"></i>info@vinfonet.com</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center text-lg-end">
+                   <div class="col-lg-3 col-xl-4 text-center text-lg-end">
                         <div class="d-flex align-items-center justify-content-end">
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-twitter text-white"></i></a>
@@ -135,7 +135,7 @@
         </div>
         <!-- Topbar End -->
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid sticky-top">
+    <div class="container-fluid sticky-top">
             <div class="container px-0">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <a class="navbar-brand col-lg-2 col-6" href="index.html">
@@ -153,12 +153,12 @@
                                 <a href="about.html" class="nav-link">About Us</a>
                             </li>
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                     Our Services
                                 </a>
 
-                                <ul class="dropdown-menu active">
+                                <ul class="dropdown-menu">
                                     <li class="dropend">
                                         <a class="dropdown-item dropdown-toggle py-2" href="medical-billing.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href=this.href">
                                             Medical Billing
@@ -166,7 +166,7 @@
                                         <script>
                                             document.addEventListener("DOMContentLoaded", function () {
                                                 // Check if it's a mobile device based on screen width
-                                                if (window.innerWidth <= 768) {
+                                                if (window.innerWidth <=  1023) {
                                                     // Select the link with the specific href
                                                     const mobileBillingLink = document.querySelector('a[href="medical-billing.html"]');
 
@@ -194,7 +194,7 @@
                                         </a>
                                         <script>
                                             document.addEventListener("DOMContentLoaded", function () {
-                                                if (window.innerWidth <= 768) {
+                                                if (window.innerWidth <=  1023) {
                                                     const linksToDisable = ["Medical-Transcription.html"];
 
                                                     linksToDisable.forEach(function (href) {
@@ -209,7 +209,7 @@
                                         </script>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item"><a href="MT-Advantages.html" class="dropdown-item py-2">Advantages</a></li>
-                                            <li class="nav-item"><a href="MT-How-it-works.html" class="dropdown-item py-2">How It Works</a></li>
+                                            <li class="nav-item "><a href="MT-How-it-works.html" class="dropdown-item py-2">How It Works</a></li>
                                             <li class="nav-item active"><a href="MT-iPhone-app.html" class="dropdown-item py-2">iPhone Dictation app</a></li>
                                             <li class="nav-item"><a href="MT-DRTs.html" class="dropdown-item py-2">DRT</a></li>
                                             <li class="nav-item"><a href="MT-FAQ.html" class="dropdown-item py-2">FAQs</a></li>
@@ -243,7 +243,7 @@
                             <li class="nav-item">
                                 <a href="contact.html" class="nav-link">Contact</a>
                             </li>
-                            <li>
+                            <li class="download-btn-head">
                                 <div class="d-flex align-items-center flex-nowrap pt-xl-0">
                                     <a href="img/Vision-Infonet-Billing.pdf" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0" download="">Download Brochure</a>
                                 </div>
@@ -253,7 +253,6 @@
                 </nav>
             </div>
         </div>
-
         <!-- Navbar & Hero End -->
         <div class="container-fluid bg-iphoneipaddictation">
             <div class="bg-breadcrumb-single"></div>
@@ -448,7 +447,7 @@
         <!-- Copyright End -->
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
-        <!-- JavaScript Libraries -->
+        <!-- JavaScript Libraries -->  
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
