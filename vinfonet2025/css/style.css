@@ -1446,8 +1446,8 @@ span.num {
 	z-index: 99999;
 	position: fixed;
 	left: 1rem;
-	bottom: 75%;
-	background: #ef4023;
+	bottom: 5%;
+	background: #000000;
 
 	padding: 1rem;
 	border-radius: 100%;
@@ -1486,25 +1486,25 @@ span.num {
 
 @-webkit-keyframes cc-calto-action-ripple {
 	0% {
-		-webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
-		box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
+		-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2);
 	}
 
 	100% {
-		-webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
-		box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
+		-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 20px rgba(0, 0, 0, 0);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 20px rgba(0, 0, 0, 0);
 	}
 }
 
 @keyframes cc-calto-action-ripple {
 	0% {
-		-webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
-		box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 0 rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2);
+		-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2);
 	}
 
 	100% {
-		-webkit-box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
-		box-shadow: 0 4px 10px rgba(236, 139, 0, 0.2), 0 0 0 5px rgba(236, 139, 0, 0.2), 0 0 0 10px rgba(236, 139, 0, 0.2), 0 0 0 20px rgba(236, 139, 0, 0);
+		-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 20px rgba(0, 0, 0, 0);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 20px rgba(0, 0, 0, 0);
 	}
 }
 
@@ -1852,7 +1852,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 	.navbar .navbar-nav .nav-item.nav-link,
 	.navbar .navbar-nav .nav-link {
 		font-size: 16px;
-		font-weight: bold;
+		/* font-weight: bold; */
 		padding: 10px;
 	}
 
@@ -2743,7 +2743,7 @@ a.nav-link.dropdown-toggle.ps-0.show ul.dropdown-menu.show {
 }
 
 .dropdown-item {
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 nav .active {
@@ -2765,7 +2765,7 @@ nav .active {
 .dropdown-menu .dropend .dropdown-menu .nav-item:hover a {
 	color: #fff !important;
 }
-
+.call-buton .cc-calto-action-ripple{ width: 50px; padding: 0px;}
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
@@ -3436,10 +3436,16 @@ nav .active{ border-radius: 0px !important;}
 .shadow-sm img {
     width: 100% !important;
 }
-
+a.navbar-brand img{ width: 100% !important;}
+.shadow-sm a.navbar-brand img {
+    width: 50% !important;
+}
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	
+	a.navbar-brand img{ width: 100% !important;}
+	.shadow-sm a.navbar-brand img {
+    width: 50% !important;
+}
 }
