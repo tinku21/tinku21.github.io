@@ -29,7 +29,7 @@
 
     <body>
         <!--- quick quote start-->
-        <div class="side-container">
+    <div class="side-container">
             <div class="side-box">
                 <div class="bg-white p-3">
                     <form>
@@ -59,53 +59,52 @@
                 </div>
             </div>
         </div>
+
         <button class="quote-button action-btn open-side-btn">
             <span><i class="fa fa-quote-left"></i> Get a Quote</span>
         </button>
         <script>
-            // Open the sidebar
-            $(".open-side-btn").click(function (e) {
-                e.stopPropagation(); // Prevent this click from propagating to the document
-                $(".side-container .side-box").addClass("open-side");
-                $(".side-container .side-box").animate({
-                    width: 400,
+          $(document).ready(function () {
+        // Toggle sidebar when button is clicked
+        $(".open-side-btn").click(function (e) {
+            e.stopPropagation(); // Prevent triggering the document click
+            const $box = $(".side-container .side-box");
+
+            if ($box.hasClass("open-side")) {
+                $box.animate({ width: 0 }, 200, function () {
+                    $box.removeClass("open-side");
                 });
-            });
+            } else {
+                $box.addClass("open-side").animate({ width: 350 }, 200);
+            }
+        });
 
-            // Close the sidebar when the close button is clicked
-            $(".side-container .side-close-btn").click(function (e) {
-                $(".side-container .side-box").animate(
-                    {
-                        width: 0,
-                    },
-                    200,
-                    function () {
-                        $(".side-container .side-box").removeClass("open-side");
-                    }
-                );
-            });
-
-            // Close the sidebar when clicking outside of it
-            $(document).click(function (e) {
-                // Close the sidebar only if the click is outside the side-container
-                if (!$(e.target).closest(".side-container").length && !$(e.target).is(".open-side-btn")) {
-                    $(".side-container .side-box").animate(
-                        {
-                            width: 0,
-                        },
-                        200,
-                        function () {
-                            $(".side-container .side-box").removeClass("open-side");
-                        }
-                    );
+        // Close sidebar when clicking outside
+        $(document).click(function (e) {
+            if (
+                !$(e.target).closest(".side-container").length &&
+                !$(e.target).is(".open-side-btn")
+            ) {
+                const $box = $(".side-container .side-box");
+                if ($box.hasClass("open-side")) {
+                    $box.animate({ width: 0 }, 200, function () {
+                        $box.removeClass("open-side");
+                    });
                 }
-            });
+            }
+        });
+    });
 
             // Prevent clicks on the sidebar itself or its close button from triggering the document click handler
             $(".side-container").click(function (e) {
                 e.stopPropagation(); // Prevent the click from propagating to the document
             });
         </script>
+
+       
+        <div class="call-buton">
+            <a class="cc-calto-action-ripple" href="https://wa.link/mt8zfl" target="_blank" title="1-877-377-8999"><img src="img/wtsicon.png" class="w-100 img-fluid"> </a>
+        </div>
         <!--- quick quote end-->
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
