@@ -133,7 +133,7 @@ a {
 
 .btn.btn-light:hover {
 	background: var(--bs-secondary) !important;
-	color: var(--bs-dark) !important;
+	color: var(--bs-white) !important;
 }
 
 /*** Topbar Start ***/
@@ -903,11 +903,10 @@ nav .dropdown-item .text-white {
 /* .header-carousel.owl-carousel.owl-loaded.owl-drag { height: 90vh;} */
 
 .side-container {
-	position: fixed;
-	z-index: 999999;
-	top: 0;
-	right: 0;
-	height: 100%;
+	    position: absolute;
+    z-index: 999999;
+    top: 190px;
+    right: 0;
 }
 
 .side-container .side-box {
