@@ -983,7 +983,7 @@ button.quote-button.action-btn.open-side-btn {
 }
 
 button.quote-button1.action-btn1.open-side-btn1 {
-	background: #ef4023;
+	background: #ffca08;
 	padding: 10px;
 	border: none;
 	color: #fff;
@@ -2339,7 +2339,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: -120px;
+	margin-top: -37px;
 	transition: 0.5s;
 }
 
@@ -2860,12 +2860,107 @@ nav .active {
  
 }
 .read-more-slider{    position: absolute;
-    bottom: 15%;
-    right: 23%;}
+    bottom: 12%;
+    left: 5%;}
+
+.project-icon i , .project-icon img{
+	
+      width: 12% !important;
+    height: 80px;
+
+}
+.bg-new-practice-setup {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/New-Practice-Setup.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+}
+
+
+.off-size .box {
+  position: relative;
+  width: auto;
+ 
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 10px 10px 15px rgba(59, 38, 38, 0.25);
+}
+.off-size .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: var(--color);
+  transition: 0.5s ease-in-out;
+}
+
+.off-size .box:hover::before {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.off-size .box .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%; padding: 10px 0px;
+}
+
+.off-size .box .content .icon {
+  position: relative;
+  min-width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: var(--color);
+  transition: 0.5s ease-in-out;
+}
+
+.off-size .box:hover .content .icon {
+  color: #fff;
+}
+
+.off-size .box .content .text h3 {
+  font-weight: 500;
+  color: var(--color);
+  transition: 0.5s ease-in-out;     font-size: 18px;
+}
+
+.off-size .box .content .text p {
+  font-size: 0.9em;
+  color: #999;
+  transition: 0.5s ease-in-out;
+}
+
+.off-size .box:hover .content .text h3,
+.off-size .box:hover .content .text p {
+  color: #fff;
+}
 
 
 
+.list-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+
+}
+
+.list-main .off-size .box {
+  width: 48%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 0.75rem; float: left; margin: 10px 10px;  padding: 10px;
+}
 
 
 
@@ -2874,7 +2969,9 @@ nav .active {
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+.read-more-slider{    position: absolute;
+    bottom: 6%;
+    right: 12%; font-size: 12px;}
 	.dropdown-menu .nav-item .nav-link {
 
 		padding-right: 30px;
