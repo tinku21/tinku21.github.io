@@ -903,7 +903,7 @@ nav .dropdown-item .text-white {
 /* .header-carousel.owl-carousel.owl-loaded.owl-drag { height: 90vh;} */
 
 .side-container {
-	    position: absolute;
+	    position: fixed;
     z-index: 999999;
     top: 190px;
     right: 0;
@@ -2859,7 +2859,9 @@ nav .active {
   }
  
 }
-
+.read-more-slider{    position: absolute;
+    bottom: 15%;
+    right: 23%;}
 
 
 
