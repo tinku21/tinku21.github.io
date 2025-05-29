@@ -20,6 +20,10 @@
         <link href="css/menu.css" rel="stylesheet" />
         <link href="css/popinsfont.css" rel="stylesheet" />
         <script src="js/main-jsmin.js"></script>
+        <style>
+		 .wbnz-branding__link{display:none !important;}
+		
+		</style>
     </head>
     <body>
         <!--- quick quote start-->
@@ -29,15 +33,15 @@
                     <form>
                         <div class="input-group flex-nowrap mt-3">
                             <span class="input-group-text" id="addon-wrapping"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping" />
+                            <input type="text" class="form-control" placeholder="Name"  />
                         </div>
                         <div class="input-group flex-nowrap mt-3">
                             <span class="input-group-text" id="addon-wrapping"><i class="fa fa-phone" style="transform: rotate(125deg);"></i></span>
-                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="addon-wrapping" />
+                            <input type="text" class="form-control" placeholder="Phone Number"  />
                         </div>
                         <div class="input-group flex-nowrap mt-3">
                             <span class="input-group-text" id="addon-wrapping"><i class="fa fa-envelope"></i></span>
-                            <input type="text" class="form-control" placeholder="e-Mail" aria-label="e-Mail" aria-describedby="addon-wrapping" />
+                            <input type="text" class="form-control" placeholder="e-Mail"  />
                         </div>
                         <textarea class="form-control mt-3" placeholder="comment here" id="floatingTextarea"></textarea>
                         <select class="form-select mt-3" aria-label="Default select example">
@@ -151,9 +155,9 @@
                     </button>
                     <div class="collapse navbar-collapse dlg-flex justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
+                            <!-- <li class="nav-item active">
                                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item ">
                                 <a href="about.html" class="nav-link">About Us</a>
                             </li>
@@ -189,8 +193,9 @@
                                             <li class="nav-item"><a href="MB-MedicalCoding.html" class="dropdown-item py-2">Medical Coding</a></li>
                                             <li class="nav-item"><a href="MB-Revenue-Recovery.html" class="dropdown-item py-2">Revenue Recovery</a></li>
                                             <li class="nav-item"><a href="MB-Billing-Cycle.html" class="dropdown-item py-2">Billing Cycle</a></li>
-                                            <li class="nav-item"><a href="MB-FAQs.html" class="dropdown-item py-2">FAQs</a></li>
                                             <li class="nav-item "><a href="new-practice-setup.html" class="dropdown-item py-2">New Practice Setup</a></li>
+                                            <li class="nav-item"><a href="MB-FAQs.html" class="dropdown-item py-2">FAQs</a></li>
+                                            
                                         </ul>
                                     </li>
 
@@ -242,8 +247,8 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li class="dropend"><a href="back-office-service.html" class="nav-link">Back Office Service </a></li>
-                                    <li class="dropend"><a href="website-development.html" class="nav-link">Website Development </a></li>
+                                    <li class="nav-item"><a href="back-office-service.html" class="nav-link">Back Office Service </a></li>
+                                    <li class="nav-item"><a href="website-development.html" class="nav-link">Website Development </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -267,15 +272,15 @@
                 <!-- First Slide -->
                 <div class="carousel-item active" data-bs-interval="8000">
                     <div class="header-carousel-item-img-1">
-                        <img src="img/carousel-1.png" class="img-fluid w-100" alt="Image" />
+                        <img src="img/banner1.png" class="img-fluid w-100" alt="Image" />
                         
-                        <a class="btn btn-light rounded-pill py-lg-3 px-lg-5 read-more-slider" href="Medical-Transcription.html">Read More ...</a>
+                        <a class="btn btn-light rounded-pill py-lg-3 px-lg-5 read-more-slider" href="new-practice-setup.html">Read More ...</a>
                     </div>
                 </div>
                 <!-- Second Slide -->
                 <div class="carousel-item" data-bs-interval="8000">
                     <div class="header-carousel-item-img-2">
-                        <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image" />
+                        <img src="img/banner2.png" class="img-fluid w-100" alt="Image" />
                         
                     </div>
                 </div>
@@ -295,7 +300,7 @@
         <!-- Specialists Start -->
         <div class="container-fluid service py-lg-5 py-3">
             <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <div class="text-center mx-auto pb-lg-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                     <h4 class="text-primary">We Are Specialists In</h4>
                     <h1 class="display-4">What We Do</h1>
                 </div>
@@ -309,7 +314,7 @@
                                 <div class="service-content-inner">
                                     <a href="medical-billing.html" class="h4 mb-4 d-inline-flex text-start h-60">Medical Billing Services </a>
                                     <p class="mb-4">AssuredCash Billing - Say goodbye to unpaid claims and write-offs</p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="medical-billing.html">Read More ...</a>
+                                    <a class="btn btn-light rounded-pill py-lg-2 px-lg-4" href="medical-billing.html">Read More ...</a>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +328,7 @@
                                 <div class="service-content-inner">
                                     <a href="https://www.mdcare.com/" target="_blank" class="h4 mb-4 d-inline-flex text-start h-60"> MDCare EMR/PMS</a>
                                     <p class="mb-4">MDCare is "Complete EHR" ONC - ATCB - certified</p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="https://www.mdcare.com/" target="_blank">Read More ...</a>
+                                    <a class="btn btn-light rounded-pill py-lg-2 px-lg-4" href="https://www.mdcare.com/" target="_blank">Read More ...</a>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +342,7 @@
                                 <div class="service-content-inner">
                                     <a href="Medical-Transcription.html" class="h4 mb-4 d-inline-flex text-start h-60"> Medical Transcription Services</a>
                                     <p class="mb-4">Continue to dictate and still meet "Meaningful Use" criteria.</p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="Medical-Transcription.html">Read More ...</a>
+                                    <a class="btn btn-light rounded-pill py-lg-2 px-lg-4" href="Medical-Transcription.html">Read More ...</a>
                                 </div>
                             </div>
                         </div>
@@ -351,7 +356,7 @@
                                 <div class="service-content-inner">
                                     <a href="denial-management.html" class="h4 mb-4 d-inline-flex text-start h-60"> Denial Management & Revenue Recovery</a>
                                     <p class="mb-4">Available as a part of medical billing or as a standalone service.</p>
-                                    <a class="btn btn-light rounded-pill py-2 px-4" href="denial-management.html">Read More ...</a>
+                                    <a class="btn btn-light rounded-pill py-lg-2 px-lg-4" href="denial-management.html">Read More ...</a>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +393,7 @@
                             The company prides itself on combining high-end technology with expert professionals to streamline documentation and optimize healthcare operations.
                         </p>
                         <div class="row g-4 justify-content-between">
-                            <div class="col-xl-5"><a href="about.html" class="btn btn-primary rounded-pill py-3 px-5">Read More ...</a></div>
+                            <div class="col-xl-5"><a href="about.html" class="btn btn-primary rounded-pill py-lg-3 px-lg-5">Read More ...</a></div>
                         </div>
                     </div>
 
@@ -404,7 +409,7 @@
                                 <p class="text-dark h5 mb-3">Leading Healthcare Back-office Service Provider……</p>
                                 <a href="about.html" class="h5"> Offering Medical Billing, Coding, Transcription, Certified EMR, and other back-office services. </a>
                                 <div class="pt-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-5" href="about.html">Read More</a>
+                                    <a class="btn btn-light rounded-pill py-lg-3 px-lg-5" href="about.html">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +422,7 @@
                                 <p class="text-dark  mb-3 h5">Established & Expanding…….</p>
                                 <a href="about.html" class="h5">Founded in 1999, Vision has 26 years of experience, now serving over 2000 clients across the U.S.</a>
                                 <div class="pt-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-5" href="about.html">Read More</a>
+                                    <a class="btn btn-light rounded-pill py-lg-3 px-lg-5" href="about.html">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -430,7 +435,7 @@
                                 <p class="text-dark  mb-3 h5">Expert Workforce……</p>
                                 <a href="about.html" class="h5">Operates with 600+ specialized staff across multiple locations.</a>
                                 <div class="pt-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-5" href="about.html">Read More</a>
+                                    <a class="btn btn-light rounded-pill py-lg-3 px-lg-5" href="about.html">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -443,7 +448,7 @@
                                 <p class="text-dark h4 mb-3 h5">Streamlined Medical Processes……</p>
                                 <a href="about.html" class="h5">Combines high-end technology with skilled professionals for efficient documentation.</a>
                                 <div class="pt-4">
-                                    <a class="btn btn-light rounded-pill py-3 px-5" href="about.html">Read More</a>
+                                    <a class="btn btn-light rounded-pill py-lg-3 px-lg-5" href="about.html">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -459,7 +464,7 @@
                 <div class="counter-inner">
                     <div class="container">
                         <div class="row g-0">
-                          <div class="col-6 col-lg-3">
+                          <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/YearsExperience.png" />
@@ -470,7 +475,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/Employees.png" />
@@ -482,7 +487,7 @@
                                 </div>
                             </div>
                            
-                            <div class="col-6 col-lg-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/Happy-Clients.png" />
@@ -493,7 +498,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/Doctors-on-board.png" />
@@ -504,7 +509,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/Software-Developers.png" />
@@ -515,7 +520,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/Medical-Coders.png" />
@@ -526,7 +531,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-3">
+                            <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/doctor.png" />
@@ -537,7 +542,7 @@
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-6 col-lg-3">
+                             <div class="col-12 col-lg-3">
                                 <div class="py-5 text-center text-white">
                                     <div>
                                         <img src="img/outbound-calls.png" />
@@ -630,7 +635,7 @@
                                                 denial and work as per their clarification and getting the claim paid. This entire process involves following up on underpaid claims, understanding the reasons for underpayment, and then
                                                 recovering revenues from the payers by taking steps to address those issues (resubmitting claims, appeals, etc.)
                                             </p>
-                                            <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More ...</a>
+                                            <a class="btn btn-light rounded-pill py-lg-2 px-lg-4" href="#">Read More ...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -871,7 +876,7 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
         <!-- JavaScript Libraries -->
-      
+      <div class='wbnz-cookie-consent' data-webynize-id='1818'></div><script defer src='https://widgets.webynize.com/cookie-consent.js'></script>
         <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>

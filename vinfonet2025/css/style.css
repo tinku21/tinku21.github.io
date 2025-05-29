@@ -242,7 +242,7 @@ a {
 }
 
 .count {
-	font-family: 'Josefin Sans', sans-serif;
+	
 	font-size: 40px;
 	font-weight: bold;
 }
@@ -253,6 +253,7 @@ a {
 	background: cover;
 	background-position: center center;
 	position: relative;
+	    background-size: cover;
 }
 
 .counter-wrapper:after {
@@ -546,7 +547,7 @@ nav .dropdown-item .text-white {
 .bg-about {
 	position: relative;
 	overflow: hidden;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/about-us-banner.png);
+	background: url(../img/about-inner-p.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -727,7 +728,9 @@ nav .dropdown-item .text-white {
 	width: 100%;
 
 }
-
+.carousel-control-prev, .carousel-control-next{ 
+	    width: 8%;
+}
 @keyframes firstShow {
 
 	0%,
@@ -1317,7 +1320,7 @@ h2,
 
 /* ======================= chenges 14-05-2025 start ========================== */
 .topbar a {
-	color: #000 !important;
+	color: #000 !important; font-size: 14px;
 }
 
 .topbar {
@@ -1820,7 +1823,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 
 .navbar-nav li:hover {
 	background: var(--bs-primary) ;
-	border-radius: 50rem !important;
+	color: #fff;
+	
 }
 .download-btn-head:hover{ background: none !important;}
 .navbar .navbar-nav .nav-link:hover {
@@ -2750,7 +2754,7 @@ a.nav-link.dropdown-toggle.ps-0.show ul.dropdown-menu.show {
 
 nav .active {
 	background: var(--bs-primary) !important;
-	border-radius: 50rem !important;
+	
 }
 
 
@@ -2808,7 +2812,7 @@ nav .active {
     /* top: 0px; */
     left: 0px;
     right: 0px;
-    height: 200px;
+    
     bottom: 0px;
 }
 
@@ -2861,7 +2865,7 @@ nav .active {
 }
 .read-more-slider{    position: absolute;
     bottom: 12%;
-    left: 5%;}
+    left: 45%;}
 
 .project-icon i , .project-icon img{
 	
@@ -2961,7 +2965,7 @@ nav .active {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 0.75rem; float: left; margin: 10px 10px;  padding: 10px;
 }
-
+.collapse ul.navbar-nav li.nav-item.active >  a , .dropend.active a{ color: #fff !important;}
 
 
 
@@ -2969,9 +2973,13 @@ nav .active {
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-.read-more-slider{    position: absolute;
-    bottom: 6%;
-    right: 12%; font-size: 12px;}
+	.testimonial-item i{ font-size: 12px;}
+     .read-more-slider {
+        position: absolute;
+        bottom: 0%;
+        right: 32%;
+        font-size: 7px;
+    }
 	.dropdown-menu .nav-item .nav-link {
 
 		padding-right: 30px;
@@ -3131,10 +3139,21 @@ nav .active {
 li.download-btn-head {
     margin-top: 10px;
 }
+.counter-value img{ width: 20%;}
+.counter-value span , .count{ font-size: 16px;}
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.counter-value img{ width: 20%;}
+	    .read-more-slider {
+        position: absolute;
+        bottom: 0%;
+        right: 32%;
+        font-size: 16px;
+    }
+	.testimonial-item i{ font-size: 12px;}
+     
 	li.download-btn-head {
     margin-top: 10px;
 }
