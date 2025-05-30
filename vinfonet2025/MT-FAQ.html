@@ -6,7 +6,7 @@
         <title>Medical Billing Services | Medical Transcription Services | Vinfonet.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="" href="img/favicon.png" />
-        <meta name="Description" content="Medical billing services with a proven record of increasing reimbursement, Experienced and economical medical transcription services delivering accurate reports in time.">
+        <meta name="Description" content="Medical billing services with a proven record of increasing reimbursement, Experienced and economical medical transcription services delivering accurate reports in time." />
         <!-- Icon Font Stylesheet -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         <!-- Libraries Stylesheet -->
@@ -20,11 +20,10 @@
         <link href="css/menu.css" rel="stylesheet" />
         <link href="css/popinsfont.css" rel="stylesheet" />
         <script src="js/main-jsmin.js"></script>
-       
     </head>
     <body>
         <!--- quick quote start-->
-          <div class="side-container">
+        <div class="side-container">
             <div class="side-box">
                 <div class="bg-white p-3">
                     <form>
@@ -59,36 +58,33 @@
             <span><i class="fa fa-quote-left"></i> Get a Quote</span>
         </button>
         <script>
-          $(document).ready(function () {
-        // Toggle sidebar when button is clicked
-        $(".open-side-btn").click(function (e) {
-            e.stopPropagation(); // Prevent triggering the document click
-            const $box = $(".side-container .side-box");
+            $(document).ready(function () {
+                // Toggle sidebar when button is clicked
+                $(".open-side-btn").click(function (e) {
+                    e.stopPropagation(); // Prevent triggering the document click
+                    const $box = $(".side-container .side-box");
 
-            if ($box.hasClass("open-side")) {
-                $box.animate({ width: 0 }, 200, function () {
-                    $box.removeClass("open-side");
+                    if ($box.hasClass("open-side")) {
+                        $box.animate({ width: 0 }, 200, function () {
+                            $box.removeClass("open-side");
+                        });
+                    } else {
+                        $box.addClass("open-side").animate({ width: 350 }, 200);
+                    }
                 });
-            } else {
-                $box.addClass("open-side").animate({ width: 350 }, 200);
-            }
-        });
 
-        // Close sidebar when clicking outside
-        $(document).click(function (e) {
-            if (
-                !$(e.target).closest(".side-container").length &&
-                !$(e.target).is(".open-side-btn")
-            ) {
-                const $box = $(".side-container .side-box");
-                if ($box.hasClass("open-side")) {
-                    $box.animate({ width: 0 }, 200, function () {
-                        $box.removeClass("open-side");
-                    });
-                }
-            }
-        });
-    });
+                // Close sidebar when clicking outside
+                $(document).click(function (e) {
+                    if (!$(e.target).closest(".side-container").length && !$(e.target).is(".open-side-btn")) {
+                        const $box = $(".side-container .side-box");
+                        if ($box.hasClass("open-side")) {
+                            $box.animate({ width: 0 }, 200, function () {
+                                $box.removeClass("open-side");
+                            });
+                        }
+                    }
+                });
+            });
 
             // Prevent clicks on the sidebar itself or its close button from triggering the document click handler
             $(".side-container").click(function (e) {
@@ -96,9 +92,8 @@
             });
         </script>
 
-       
         <div class="call-buton">
-            <a class="cc-calto-action-ripple" href="https://wa.link/mt8zfl" target="_blank" title="1-877-377-8999"><img src="img/wtsicon.png" class="w-100 img-fluid"> </a>
+            <a class="cc-calto-action-ripple" href="https://wa.link/mt8zfl" target="_blank" title="1-877-377-8999"><img src="img/wtsicon.png" class="w-100 img-fluid" /> </a>
         </div>
         <!--- quick quote end-->
         <!-- Spinner Start -->
@@ -112,7 +107,7 @@
         <div class="container-fluid topbar px-0 d-none d-lg-block">
             <div class="container px-0">
                 <div class="row gx-0 align-items-center" style="height: 45px;">
-                   <div class="col-lg-9 col-xl-8 text-center text-lg-start mb-lg-0">
+                    <div class="col-lg-9 col-xl-8 text-center text-lg-start mb-lg-0">
                         <div class="d-flex flex-wrap">
                             <a href="https://maps.app.goo.gl/YBjoim3hf4eotT1SA" target="_blank" class="text-white me-4">
                                 <i class="fas fa-map-marker-alt text-primary me-2"></i>
@@ -122,7 +117,7 @@
                             <a href="mailto:info@vinfonet.com" class="text-white me-0"><i class="fas fa-envelope text-primary me-2"></i>info@vinfonet.com</a>
                         </div>
                     </div>
-                   <div class="col-lg-3 col-xl-4 text-center text-lg-end">
+                    <div class="col-lg-3 col-xl-4 text-center text-lg-end">
                         <div class="d-flex align-items-center justify-content-end">
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-twitter text-white"></i></a>
@@ -147,8 +142,8 @@
                     <div class="collapse navbar-collapse dlg-flex justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <!-- <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li> -->
+<a class="nav-link" aria-current="page" href="index.html">Home</a>
+</li> -->
                             <li class="nav-item">
                                 <a href="about.html" class="nav-link">About Us</a>
                             </li>
@@ -166,7 +161,7 @@
                                         <script>
                                             document.addEventListener("DOMContentLoaded", function () {
                                                 // Check if it's a mobile device based on screen width
-                                                if (window.innerWidth <=  1023) {
+                                                if (window.innerWidth <= 1023) {
                                                     // Select the link with the specific href
                                                     const mobileBillingLink = document.querySelector('a[href="medical-billing.html"]');
 
@@ -184,7 +179,7 @@
                                             <li class="nav-item"><a href="MB-MedicalCoding.html" class="dropdown-item py-2">Medical Coding</a></li>
                                             <li class="nav-item"><a href="MB-Revenue-Recovery.html" class="dropdown-item py-2">Revenue Recovery</a></li>
                                             <li class="nav-item"><a href="MB-Billing-Cycle.html" class="dropdown-item py-2">Billing Cycle</a></li>
-                                             <li class="nav-item "><a href="new-practice-setup.html" class="dropdown-item py-2">New Practice Setup</a></li>
+                                            <li class="nav-item"><a href="new-practice-setup.html" class="dropdown-item py-2">New Practice Setup</a></li>
                                             <li class="nav-item"><a href="MB-FAQs.html" class="dropdown-item py-2">FAQs</a></li>
                                         </ul>
                                     </li>
@@ -195,7 +190,7 @@
                                         </a>
                                         <script>
                                             document.addEventListener("DOMContentLoaded", function () {
-                                                if (window.innerWidth <=  1023) {
+                                                if (window.innerWidth <= 1023) {
                                                     const linksToDisable = ["Medical-Transcription.html"];
 
                                                     linksToDisable.forEach(function (href) {
@@ -221,7 +216,7 @@
                                         <a class="nav-link" aria-current="page" href="denial-management.html">denial-management</a>
                                     </li>
                                     <li class="nav-item">
-                                       <a href="https://www.mdcare.com" target="_blank" class="nav-link">MDCare EMR/PMS</a>
+                                        <a href="https://www.mdcare.com" target="_blank" class="nav-link">MDCare EMR/PMS</a>
                                     </li>
                                 </ul>
                             </li>
@@ -238,7 +233,7 @@
 
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="back-office-service.html" class="nav-link">Back Office Service </a></li>
-                                   <li class="nav-item"><a href="website-development.html" class="nav-link">Website Development </a></li>
+                                    <li class="nav-item"><a href="website-development.html" class="nav-link">Website Development </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -256,220 +251,356 @@
         </div>
 
         <!-- Navbar & Hero End -->
-         <div class="inner-p-bg">
-<div class="header">
-<!--Content before waves-->
-<div class="inner-header flex">
-<!--Just the logo.. Don't mind this-->
+        <div class="inner-p-bg">
+            <div class="header">
+                <!--Content before waves-->
+                <div class="inner-header flex">
+                    <!--Just the logo.. Don't mind this-->
 
+                    <div class="container-fluid bg-mt-faqs">
+                        <div class="bg-breadcrumb-single"></div>
+                        <div class="container text-center py-5" style="max-width: 900px;">
+                            <h4 class="text-white display-4 mb-4 wow fadeInDown">Frequently Asked Questions</h4>
+                            <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#!">Our Services</a></li>
+                                <li class="breadcrumb-item active">Frequently Asked Questions</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
 
-   <div class="container-fluid bg-mt-faqs">
-            <div class="bg-breadcrumb-single"></div>
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown">Frequently Asked Questions</h4>
-                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#!">Our Services</a></li>
-                    <li class="breadcrumb-item active">Frequently Asked Questions</li>
-                </ol>
+                <!--Waves Container-->
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
+                </div>
+                <!--Waves end-->
             </div>
         </div>
-</div>
 
-<!--Waves Container-->
-<div>
-<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-</g>
-</svg>
-</div>
-<!--Waves end-->
-</div>
-</div>
-
-     
-        <!-- Advantages Start -->
         <div class="container-fluid Advantages bg-light py-5">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-9 fadeInDown wow">
-                        <p>
+                        <h5>
                             For the convenience of the physicians and hospitals, we have a wide variety of options to send us the dictations and to receive transcriptions
-                        </p>
+                        </h5>
+                        <div class="accordion" id="accordionExample">
+                            <h2 class="text-primary mt-5">
+                                GENERAL
+                            </h2>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        How can I try your service?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        Send an e-mail to mtadmin@vinfonet.com Otherwise send a fax to 1-877-381 1608. Immediately you will be allotted a specific customer id and the dial-n-dictate procedure will be sent to you by e-mail or
+                                        fax. Then you can start giving dictations on our toll free telephone lines.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How do I get my dictation to you?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        We have a wide variety of options.
+                                        <ol>
+                                            <li>
+                                                Dictations can be submitted over the phone. We have a toll-free number that you can call any time.
+                                            </li>
+                                            <li>
+                                                We can provide digital handheld recorders.
+                                            </li>
+                                            <li>
+                                                We can also dial in to your server to retrieve dictations.
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            Click on the words phone, recorders or retrieve for further details
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#three" aria-expanded="false" aria-controls="three">
+                                        Do you charge for trials? Do I need to continue after trials?
+                                    </button>
+                                </h2>
+                                <div id="three" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        We provide a free trial service for Two weeks (or 1000 lines, whichever is earlier). This service is purely on a non-obligatory basis. If you are not satisfied with our services, you are free to
+                                        discontinue at any time after the trials.
+                                    </div>
+                                </div>
+                            </div>
 
-                        <h2 class="text-dark">
-                            GENERAL
-                        </h2>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#four" aria-expanded="false" aria-controls="four">
+                                        How is my dictation processed?
+                                    </button>
+                                </h2>
+                                <div id="four" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        When you sign up, you will be assigned to a medical transcriptionist(s), PR and Editor based on your specialty and your estimated dictation load. When you submit a dictation into our system, your
+                                        assigned medical transcriptionist(s) will automatically receive your dictation for transcription. Once they have returned the transcription, the assigned PR and then the Editor, with more than 10
+                                        years of medical transcription experience, will check the transcription for accuracy and make the transcription ready. The transcription is then forwarded to the pre?determined destination.
+                                    </div>
+                                </div>
+                            </div>
 
-                        <h2 class="text-primary">How can I try your service?</h2>
-                        <p>
-                            Send an e-mail to mtadmin@vinfonet.com Otherwise send a fax to 1-877-381 1608. Immediately you will be allotted a specific customer id and the dial-n-dictate procedure will be sent to you by e-mail or fax. Then
-                            you can start giving dictations on our toll free telephone lines.
-                        </p>
-                        <ul class="text-start list-arrow">
-                            <li>
-                                Dictations can be submitted over the phone. We have a toll-free number that you can call any time.
-                            </li>
-                            <li>
-                                We can provide digital handheld recorders.
-                            </li>
-                            <li>
-                                We can also dial in to your server to retrieve dictations.
-                            </li>
-                        </ul>
-                        <p>Click on the words phone, recorders or retrieve for further details</p>
-                        <h2 class="text-primary">
-                            Do you charge for trials? Do I need to continue after trials?
-                        </h2>
-                        <p>
-                            We provide a free trial service for Two weeks (or 1000 lines, whichever is earlier). This service is purely on a non-obligatory basis. If you are not satisfied with our services, you are free to discontinue at
-                            any time after the trials.
-                        </p>
-                        <h2 class="text-primary">
-                            How is my dictation processed?
-                        </h2>
-                        <p>
-                            When you sign up, you will be assigned to a medical transcriptionist(s), PR and Editor based on your specialty and your estimated dictation load. When you submit a dictation into our system, your assigned medical
-                            transcriptionist(s) will automatically receive your dictation for transcription. Once they have returned the transcription, the assigned PR and then the Editor, with more than 10 years of medical transcription
-                            experience, will check the transcription for accuracy and make the transcription ready. The transcription is then forwarded to the pre?determined destination.
-                        </p>
-                        <h2 class="text-primary">
-                            What turnaround times do you offer?
-                        </h2>
-                        <p>
-                            The turnaround time that YOU want is what we guarantee to meet. Generally we offer two turnaround times to meet your needs, Stat and General. Stat files will be returned within 4 hours and General files within 24
-                            hours.
-                        </p>
-                        <h2 class="text-primary">
-                            What if I dictate over the weekend?
-                        </h2>
-                        <p>
-                            WE NEVER CLOSE. We work on a 24/7/365 basis and hence the turnaround time also applies to weekend dictations.
-                        </p>
-                        <h2 class="text-primary">
-                            What are your customer service hours?
-                        </h2>
-                        <p>
-                            Customer Service is available round the clock on internet. Send your mail to mtadmin@vinfonet.com. You can call our USA office from 7.00 AM to 7.00 PM (Central time) on all working days including Saturdays.
-                        </p>
-                        <h2 class="text-primary">
-                            What payment methods are available?
-                        </h2>
-                        <p>
-                            Payment can be made by check, bank draft or by wire transfer. Billing is every fortnight.
-                        </p>
-                        <h2 class="text-primary">
-                            How will I know what the charges are?
-                        </h2>
-                        <p>
-                            We will send our invoice at the end of each fortnight. Date wise line count details will be submitted along with the invoice.
-                        </p>
-                        <h2 class="text-primary">
-                            How much does the service cost? Are there any other fees?
-                        </h2>
-                        <p>
-                            Our charges vary based on a number of factors like nature of line, volume, TAT, channel of sending dictations & receiving transcriptions. It ranges from 6-15 cents per line. There are no other fees.
-                        </p>
-                        <h2 class="text-dark">
-                            TECHNICAL
-                        </h2>
-                        <h2 class="text-primary">
-                            What constitutes a line?
-                        </h2>
-                        <p>
-                            Physical line: Is a line in MS Word document in Times New Roman 12pt, in a standard format. Standard Line: We count 65 characters as a line, where a character is defined as any letter, number or symbol necessary
-                            for the final appearance and content of a document, including the space bar. To understand this fully, take a transcribed document and open it in MS-Word 97 or greater, then click Tools, select Word Count and
-                            note the value shown next to “Characters (with spaces) and divide this by 65. Then you will get the line count of that particular document.
-                        </p>
-                        <h2 class="text-primary">
-                            Do you provide custom formatting? Can you use my Normals?
-                        </h2>
-                        <p>
-                            We use a default template with the following specifications: Margins: 1 inch all around Font: Times New Roman 11 pt Justification: Left If your desired format requires modification of any of these features, we
-                            can create it for you. We will request you to send a sample of each worktype as an email attachment to mtadmin@vinfonet.com. We will be happy to incorporate any normals or canned phrases you may routinely use in
-                            your dictation. Please send the text of your normals/canned phrases as an email attachment to mtadmin@vinfonet.com
-                        </p>
-                        <h2 class="text-primary">
-                            How do I receive my transcriptions?
-                        </h2>
-                        <p>
-                            You can select one or more of these option
-                        </p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#five" aria-expanded="false" aria-controls="five">
+                                        What turnaround times do you offer?
+                                    </button>
+                                </h2>
+                                <div id="five" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The turnaround time that YOU want is what we guarantee to meet.Generally we offer two turnaround times to meet your needs, Stat and General. Stat files will be returned within 4 hours and General
+                                        files within 24 hours.
+                                    </div>
+                                </div>
+                            </div>
 
-                        <ul class="text-start list-arrow">
-                            <li>
-                                As an attachment to secure e-mail.
-                            </li>
-                            <li>
-                                Through ftp site.
-                            </li>
-                            <li>
-                                Downloading from our web data bank.
-                            </li>
-                            <li>
-                                By fax.
-                            </li>
-                            <li>
-                                By remote printer.
-                            </li>
-                        </ul>
-                        <h2 class="text-primary">
-                            How do I open the transcriptions I download?
-                        </h2>
-                        <p>
-                            The transcriptions are returned in an RTF (Rich Text Format) file. This standard file type can be opened using virtually any word processing program, including Microsoft Word, WordPerfect, Lotus, etc.
-                        </p>
-                        <h2 class="text-primary">
-                            How long do you store my transcription?
-                        </h2>
-                        <p>
-                            We store our client's transcription for at least 1 year to provide them with additional backup and support for their records. If requested, we will maintain them longer. Our active clients can request reprints,
-                            retransmission of specific documents without any extra charge.
-                        </p>
-                        <h2 class="text-primary">
-                            How secure are transcriptions transmitted via the Internet?
-                        </h2>
-                        <p>
-                            All communication between your computer and our server is protected through the use of Secure Socket Layer encryption (SSL). This means that nobody can listen in on the conversation between those computers. This
-                            is the same level of security that large E-Commerce and banking sites use. You can verify this by looking for the little padlock icon used by Netscape and Internet Explorer to designate secure site.
-                        </p>
-                        <h2 class="text-primary">
-                            What about the security/privacy of patient information?
-                        </h2>
-                        <p>
-                            We are extremely concerned with the privacy of medical records. We adhere to all HIPAA and AAMT guidelines and recommendations. All files and transmissions are encrypted and password protected. All employees in
-                            USA as well as in India sign confidentiality and non-disclosure agreements. Every printed document that contains client/patient information is shredded and properly disposed of immediately after use.
-                        </p>
-                        <h2 class="text-primary">
-                            What about security if the work is done in India?
-                        </h2>
-                        <p>
-                            We, the company incorporated in the State of Illinois is solely responsible for the security and confidentiality of the records. In fact, the President of Vision Infonet also owns Vision 2K+ Inc., the Indian
-                            firm, which does the work. Many of the professionals in the healthcare industry say when the Internet is used to transfer the information it does not matter whether it is overseas or next-door.
-                        </p>
-                        <h2 class="text-primary">
-                            Can you accept and handle overflow? Occasional and small volumes?
-                        </h2>
-                        <p>
-                            If you are having in-house transcription facilities and do not want to disturb it, we can work with your staff to handle your overflow. There are many times that your staff cannot handle all of your work, due to
-                            vacations, illnesses or sudden increases in your patient load. We can have all of your templates set up on our system and you can call in when you need to.
-                        </p>
-                        <h2 class="text-primary">
-                            What about voice recognition?
-                        </h2>
-                        <p>
-                            This is an exciting and promising technology; but, to be honest, even the most expensive systems by IBM, Dragon, L&H and Philips are not ready for primetime for a Physician. They require a significant amount of
-                            extra work on the part of the physician. Within the next few years, we believe that Voice recognition will achieve the capabilities to be viable for the medical profession. Right now, the cost in lost
-                            productivity time for the physician is far too much to be worthwhile.
-                        </p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingsix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#six" aria-expanded="false" aria-controls="six">
+                                        What if I dictate over the weekend?
+                                    </button>
+                                </h2>
+                                <div id="six" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            WE NEVER CLOSE. We work on a 24/7/365 basis and hence the turnaround time also applies to weekend dictations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingseven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#seven" aria-expanded="false" aria-controls="seven">
+                                        What are your customer service hours?
+                                    </button>
+                                </h2>
+                                <div id="seven" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Customer Service is available round the clock on internet. Send your mail to mtadmin@vinfonet.com. You can call our USA office from 7.00 AM to 7.00 PM (Central time) on all working days including
+                                        Saturdays.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingeight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eight" aria-expanded="false" aria-controls="eight">
+                                        What payment methods are available?
+                                    </button>
+                                </h2>
+                                <div id="eight" class="accordion-collapse collapse" aria-labelledby="headingeight" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Payment can be made by check, bank draft or by wire transfer. Billing is every fortnight.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingnine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nine" aria-expanded="false" aria-controls="nine">
+                                        How will I know what the charges are?
+                                    </button>
+                                </h2>
+                                <div id="nine" class="accordion-collapse collapse" aria-labelledby="headingnine" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We will send our invoice at the end of each fortnight. Date wise line count details will be submitted along with the invoice.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingten">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ten" aria-expanded="false" aria-controls="ten">
+                                        How much does the service cost? Are there any other fees?
+                                    </button>
+                                </h2>
+                                <div id="ten" class="accordion-collapse collapse" aria-labelledby="headingten" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Our charges vary based on a number of factors like nature of line, volume, TAT, channel of sending dictations & receiving transcriptions. It ranges from 6-15 cents per line. There are no other fees.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="text-primary mt-3">
+                                TECHNICAL
+                            </h2>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headinglevan">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#levan" aria-expanded="false" aria-controls="levan">
+                                        What constitutes a line?
+                                    </button>
+                                </h2>
+                                <div id="levan" class="accordion-collapse collapse" aria-labelledby="headinglevan" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Physical line: Is a line in MS Word document in Times New Roman 12pt, in a standard format. Standard Line: We count 65 characters as a line, where a character is defined as any letter, number or
+                                        symbol necessary for the final appearance and content of a document, including the space bar. To understand this fully, take a transcribed document and open it in MS-Word 97 or greater, then click
+                                        Tools, select Word Count and note the value shown next to “Characters (with spaces) and divide this by 65. Then you will get the line count of that particular document.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingtwoval">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#twoval" aria-expanded="false" aria-controls="twoval">
+                                        Do you provide custom formatting? Can you use my Normals?
+                                    </button>
+                                </h2>
+                                <div id="twoval" class="accordion-collapse collapse" aria-labelledby="headingtwoval" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We use a default template with the following specifications: Margins: 1 inch all around Font: Times New Roman 11 pt Justification: Left If your desired format requires modification of any of these
+                                        features, we can create it for you. We will request you to send a sample of each worktype as an email attachment to mtadmin@vinfonet.com. We will be happy to incorporate any normals or canned phrases
+                                        you may routinely use in your dictation. Please send the text of your normals/canned phrases as an email attachment to mtadmin@vinfonet.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingtartine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tartine" aria-expanded="false" aria-controls="tartine">
+                                        How do I receive my transcriptions?
+                                    </button>
+                                </h2>
+                                <div id="tartine" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        You can select one or more of these option As an attachment to secure e-mail.
+                                        <ol>
+                                            <li>
+                                                Through ftp site.
+                                            </li>
+                                            <li>
+                                                Downloading from our web data bank.
+                                            </li>
+                                            <li>
+                                                By fax.
+                                            </li>
+                                            <li>
+                                                By remote printer.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingforteen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#forteen" aria-expanded="false" aria-controls="forteen">
+                                      How do I open the transcriptions I download?
+                                    </button>
+                                </h2>
+                                <div id="forteen" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      The transcriptions are returned in an RTF (Rich Text Format) file. This standard file type can be opened using virtually any word processing program, including Microsoft Word, WordPerfect, Lotus, etc.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfifteen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fifteen" aria-expanded="false" aria-controls="fifteen">
+                                       How long do you store my transcription?
+                                    </button>
+                                </h2>
+                                <div id="fifteen" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       We store our client's transcription for at least 1 year to provide them with additional backup and support for their records. If requested, we will maintain them longer. Our active clients can request reprints, retransmission of specific documents without any extra charge.
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSixteen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Sixteen" aria-expanded="false" aria-controls="Sixteen">
+                                      How secure are transcriptions transmitted via the Internet?
+                                    </button>
+                                </h2>
+                                <div id="Sixteen" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    All communication between your computer and our server is protected through the use of Secure Socket Layer encryption (SSL). This means that nobody can listen in on the conversation between those computers. This is the same level of security that large E-Commerce and banking sites use. You can verify this by looking for the little padlock icon used by Netscape and Internet Explorer to designate secure site.   
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeventeen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Seventeen" aria-expanded="false" aria-controls="Seventeen">
+                                      What about the security/privacy of patient information?
+                                    </button>
+                                </h2>
+                                <div id="Seventeen" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                     
+We are extremely concerned with the privacy of medical records. We adhere to all HIPAA and AAMT guidelines and recommendations. All files and transmissions are encrypted and password protected. All employees in USA as well as in India sign confidentiality and non-disclosure agreements. Every printed document that contains client/patient information is shredded and properly disposed of immediately after use.
+ </div>
+                                </div>
+                            </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingeighteen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eighteen" aria-expanded="false" aria-controls="eighteen">
+                                     What about security if the work is done in India?
+                                    </button>
+                                </h2>
+                                <div id="eighteen" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                  We, the company incorporated in the State of Illinois is solely responsible for the security and confidentiality of the records. In fact, the President of Vision Infonet also owns Vision 2K+ Inc., the Indian firm, which does the work. Many of the professionals in the healthcare industry say when the Internet is used to transfer the information it does not matter whether it is overseas or next-door.   
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingnineteen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nineteen" aria-expanded="false" aria-controls="nineteen">
+                                      Can you accept and handle overflow? Occasional and small volumes?
+                                    </button>
+                                </h2>
+                                <div id="nineteen" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      
+If you are having in-house transcription facilities and do not want to disturb it, we can work with your staff to handle your overflow. There are many times that your staff cannot handle all of your work, due to vacations, illnesses or sudden increases in your patient load. We can have all of your templates set up on our system and you can call in when you need to.
+</div>
+                                </div>
+                            </div>
+                             <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingtwenty">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#twenty" aria-expanded="false" aria-controls="twenty">
+                                      What about voice recognition?
+                                    </button>
+                                </h2>
+                                <div id="twenty" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                     
+This is an exciting and promising technology; but, to be honest, even the most expensive systems by IBM, Dragon, L&H and Philips are not ready for primetime for a Physician. They require a significant amount of extra work on the part of the physician. Within the next few years, we believe that Voice recognition will achieve the capabilities to be viable for the medical profession. Right now, the cost in lost productivity time for the physician is far too much to be worthwhile.
+   </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="col-lg-3 right-menu-c">
                         <nav aria-labelledby="nav-title-social">
                             <ul>
@@ -477,32 +608,39 @@
                                     <h2>Other Services</h2>
                                 </li>
                                 <li>
-                                    <a href="MT-Advantages.html">
+                                    <a href="MB-Advantages.html">
                                         <img src="img/advantage.svg" />
                                         Advantages
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="MT-How-it-works.html">
+                                    <a href="MB-MedicalCoding.html">
                                         <img src="img/mcoding.svg" />
-                                        How It Works
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="MT-iPhone-app.html">
-                                        <img src="img/cost.png" />
-                                        iPhone Dictation app
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="MT-DRTs.html">
-                                        <img src="img/recovery.svg" />
-                                        DRT
+                                        Medical Coding
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="MT-FAQ.html">
+                                    <a href="MB-Revenue-Recovery.html">
+                                        <img src="img/recovery.svg" />
+                                        Revenue Recovery
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="MB-Billing-Cycle.html">
+                                        <img src="img/BillingCycle.svg" />
+                                        Billing Cycle
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="new-practice-setup.html">
+                                        <img src="img/New-Practice-Setup-inner-s.png" />
+                                        New Practice Setup
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="MB-FAQs.html">
                                         <i class="fa fa-thumbs-up"></i>
                                         FAQs
                                     </a>
@@ -513,7 +651,6 @@
                 </div>
             </div>
         </div>
-        <!-- Advantages End -->
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn pb-3" data-wow-delay="0.2s">
             <div class="container">
@@ -571,7 +708,7 @@
                                 2055 Comprehensive Dr, Aurora, IL 60505, USA
                             </a>
                             <a href="tel:1-877-377-8999" class="me-4"><i class="fas fa-phone-alt text-primary me-2"></i>1-877-377-8999</a>
-                            <a href="mailto:info@vinfonet.com" class=" "><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                            <a href="mailto:info@vinfonet.com" class=" "><i class="fas fa-envelope text-primary me-2"></i>info@vinfonet.com</a>
                         </div>
                     </div>
                 </div>
@@ -594,7 +731,7 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
         <!-- JavaScript Libraries -->
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>

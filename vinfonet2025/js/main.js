@@ -19,7 +19,7 @@
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(window).width() > 992) {
-            if ($(this).scrollTop() > 35) {
+            if ($(this).scrollTop() > 5) {
                 $('.sticky-top .container').addClass('shadow-sm').css('max-width', '100%');
             } else {
                 $('.sticky-top .container').removeClass('shadow-sm').css('max-width', $('.topbar .container').width());
