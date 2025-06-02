@@ -1850,8 +1850,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 	content: "\f107" !important;
 	font-family: "Font Awesome 5 Free";
 	font-weight: 600;
-	vertical-align: middle;
+	vertical-align: middle;   
 
+}
+a.dropdown-item.dropdown-toggle.py-2::after {
+	  right: 5px;
+    top: 32%; position: absolute;
 }
 .navbar .navbar-nav .nav-item.nav-link,
 	.navbar .navbar-nav .nav-link {
@@ -2971,7 +2975,7 @@ nav .active {
   grid-gap: 0.75rem; float: left; margin: 10px 10px;  padding: 10px;
 }
 .collapse ul.navbar-nav li.nav-item.active >  a , .dropend.active a{ color: #fff !important;}
-
+.right-custam{ left: 61%;}
 
 
 
