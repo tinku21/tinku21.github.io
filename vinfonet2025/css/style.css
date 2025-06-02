@@ -1166,10 +1166,10 @@ button.quote-button1.action-btn1.open-side-btn1 {
 	background-color: var(--bs-primary) !important;
 }
 
-h2,
+/* h2,
 .h2 {
 	font-size: 1.9rem;
-}
+} */
 
 .medc-links-section {
 	display: flex;
@@ -1814,11 +1814,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 .breadcrumb-item.active {
 	color: #afafaf;
 }
-
+.container-fluid.sticky-top{ padding: 0px;}
 .navbar .navbar-nav .nav-item::before {
 	top: 0;
 	left: 0;
 }
+.shadow-sm nav{ padding: 0px 20px;}
 
 .navbar .navbar-nav .nav-item::after {
 	bottom: 0;
@@ -2976,7 +2977,9 @@ nav .active {
 }
 .collapse ul.navbar-nav li.nav-item.active >  a , .dropend.active a{ color: #fff !important;}
 .right-custam{ left: 61%;}
-
+.shadow-sm {
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important; padding: 0px 20px;
+}
 
 
 
@@ -2986,8 +2989,9 @@ nav .active {
 	.testimonial-item i{ font-size: 12px;}
      .read-more-slider {
         position: absolute;
-        bottom: 0%;
-        right: 32%;
+        bottom: 10%;
+       right: 15%;
+	   left: 70%;
         font-size: 7px;
     }
 	.dropdown-menu .nav-item .nav-link {
@@ -3169,11 +3173,13 @@ li.download-btn-head {
 }
 	.list-main .off-size .box {width: 100%;}
 	.counter-value img{ width: 20%;}
-	    .read-more-slider {
+.testimonial-item i{ font-size: 12px;}
+     .read-more-slider {
         position: absolute;
-        bottom: 0%;
-        right: 32%;
-        font-size: 16px;
+        bottom: 10%;
+       right: 15%;
+	   left: 60%;
+        font-size: 12px;
     }
 	.testimonial-item i{ font-size: 12px;}
      
@@ -3421,6 +3427,7 @@ li.download-btn-head {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	.read-more-slider{     left: 65%;}
 	.bg-contact , .bg-Medical-Billing , .bg-Advantages , .bg-MedicalCoding , 
 .bg-MB-Revenue-Recovery , .bg-MB-Billing-Cycle  ,  .bg-faqs , .bg-Medical-Transcription , .bg-MT-Advantages
 .bg-How-It-Works ,  .bg-iphoneipaddictation , .bg-iphoneipaddictation , .bg-Discrete-Reportable-Transcription , .bg-mt-faqs , .bg-Revenue-Recovery-main , .bg-hipaa ,
@@ -3661,6 +3668,7 @@ li.download-btn-head {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	
 .download-btn-head .navbar-nav>.nav-item {
     margin: 0px 0px !important;
 }

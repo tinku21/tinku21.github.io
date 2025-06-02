@@ -17,14 +17,15 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet" />
-        <link href="css/menu.css" rel="stylesheet" />
+        
         <link href="css/popinsfont.css" rel="stylesheet" />
         <script src="js/main-jsmin.js"></script>
         <style>
 		 .wbnz-branding__link{display:none !important;}
 		
 		</style>
-    </head>
+     <link href="css/menu.css" rel="stylesheet" />
+ </head>
     <body>
         <!--- quick quote start-->
         <div class="side-container">
@@ -272,16 +273,17 @@
                 <!-- First Slide -->
                 <div class="carousel-item active" data-bs-interval="8000">
                     <div class="header-carousel-item-img-1">
-                        <img src="img/banner1.png" class="img-fluid w-100" alt="Image" />
-                        
-                        <a class="btn btn-light rounded-pill py-lg-3 px-lg-5 read-more-slider" href="new-practice-setup.html">Read More ...</a>
+                       <img src="img/banner1.png" class="img-fluid w-100 d-none d-lg-block d-xl-block" alt="Image" />
+                        <img src="img/banner1-mobile.png" class="img-fluid w-100 d-lg-none d-md-block d-xl-none d-block " alt="Image" />
+                        <a class="btn btn-light rounded-pill py-lg-3 px-lg-4 read-more-slider" href="new-practice-setup.html">Read More ...</a>
                     </div>
                 </div>
                 <!-- Second Slide -->
                 <div class="carousel-item" data-bs-interval="8000">
                     <div class="header-carousel-item-img-2">
-                        <img src="img/banner2.png" class="img-fluid w-100" alt="Image" />
-                          <a class="btn btn-light rounded-pill py-lg-3 px-lg-5 read-more-slider right-custam" target="_blank" href="https://www.mdcare.com/">Read More ...</a>
+                        <img src="img/banner2.png" class="img-fluid w-100 d-none d-lg-block d-xl-block" alt="Image" />
+                        <img src="img/banner2-mobile.png" class="img-fluid w-100 d-lg-none d-md-block d-xl-none d-block " alt="Image" />
+                          <a class="btn btn-light rounded-pill py-lg-3 px-lg-4 read-more-slider right-custam" target="_blank" href="https://www.mdcare.com/">Read More ...</a>
                     </div>
                 </div>
             </div>
@@ -371,12 +373,12 @@
         <div class="container-fluid about bg-light py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-xl-5 wow fadeInDown" data-wow-delay="0.1s">
                         <div class="about-img">
                             <img src="img/aboutusn.jpg" class="img-fluid w-100 rounded-top bg-white" alt="Image" />
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
                         <h4 class="text-primary">About Us</h4>
                         <h1 class="display-5 mb-4 text-uppercase"><span class="text-uppercase"> Vision Infonet Inc.</span></h1>
                         <p class="text ps-0 mb-4">
@@ -459,7 +461,7 @@
 
         <!-- About End -->
         <!-- counter-value start -->
-        <div class="container-fluid counter-value p-0 wow fadeInDown">
+        <div class="container-fluid counter-value p-0 wow fadeInUp">
             <section class="counter-wrapper">
                 <div class="counter-inner">
                     <div class="container">
