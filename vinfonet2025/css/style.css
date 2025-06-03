@@ -2981,11 +2981,20 @@ nav .active {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important; padding: 0px 20px;
 }
 
-
+.lb-closeContainer {
+    position: absolute;
+    right: 22%;
+    top: -2%;
+}
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	
+	.lb-closeContainer {
+    position: absolute;
+    right: 2%;
+    top: -2%;
+	background: #000;
+}
 	.testimonial-item i{ font-size: 12px;}
      .read-more-slider {
         position: absolute;
@@ -3128,7 +3137,8 @@ nav .active {
 	}
 .right-menu-c ul i {
    width: 6%;}
-   .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before{top: 67px; left: 90%;}
+   .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before{        top: 87px;
+        left: 80%;}
    .Billing-Cycle-c .timeline ul li.in-view div{min-height: 82px;}
   .Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
          left: -4px;
@@ -3157,7 +3167,7 @@ li.download-btn-head {
 .counter-value span , .count{ font-size: 16px;}
 .list-main .off-size .box {width: 100% !important;}
 .timeline ul{ padding: 0px;}
-.Billing-Cycle-c .timeline ul li:nth-child(odd) div , .Billing-Cycle-c .timeline ul li:nth-child(even) div{ width: 320px;}
+.Billing-Cycle-c .timeline ul li:nth-child(odd) div , .Billing-Cycle-c .timeline ul li:nth-child(even) div{ width: 210px;}
     .Billing-Cycle-c .timeline ul li:nth-child(even) div {
         left: 24px;
     }
@@ -3166,10 +3176,16 @@ li.download-btn-head {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+		.lb-closeContainer {
+    position: absolute;
+    right: 2%;
+    top: -2%;
+	background: #000;
+}  
 	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-    left: -164px;
-    width: 379px;
-    top: -30px;
+           left: -180px;
+        width: 409px;
+        top: 10px;
 }
 	.list-main .off-size .box {width: 100%;}
 	.counter-value img{ width: 20%;}
@@ -3427,6 +3443,12 @@ li.download-btn-head {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+		.lb-closeContainer {
+    position: absolute;
+    right: 15%;
+    top: -2%;
+	background: #000;
+}
 	.read-more-slider{     left: 65%;}
 	.bg-contact , .bg-Medical-Billing , .bg-Advantages , .bg-MedicalCoding , 
 .bg-MB-Revenue-Recovery , .bg-MB-Billing-Cycle  ,  .bg-faqs , .bg-Medical-Transcription , .bg-MT-Advantages
@@ -3664,10 +3686,27 @@ li.download-btn-head {
 	.container .card {
 		max-width: 100%;
 	}
+	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
+    left: 26px;
+    width: 299px;
 }
+    .Billing-Cycle-c .timeline ul li:nth-child(even) div {
+        left: -360px;
+        width: 340px;
+    }
+}
+
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
+    left: 26px;
+    width: 299px;
+}
+.Billing-Cycle-c .timeline ul li:nth-child(even) div {
+    left: -349px;
+    width: 330px;
+}
 	
 .download-btn-head .navbar-nav>.nav-item {
     margin: 0px 0px !important;

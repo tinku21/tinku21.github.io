@@ -471,7 +471,7 @@
                                     <div>
                                         <img src="img/YearsExperience.png" />
                                     </div>
-                                    <div class="py-2 count"><span id="count3">25</span>+</div>
+                                    <div class="py-2 count"><span id="count1">25</span>+</div>
                                     <div>
                                      Years experience
                                     </div>
@@ -494,7 +494,7 @@
                                     <div>
                                         <img src="img/Happy-Clients.png" />
                                     </div>
-                                    <div class="py-2 count"><span id="count4">200</span>+</div>
+                                    <div class="py-2 count"><span id="count3">200</span>+</div>
                                     <div>
                                         clients
                                     </div>
@@ -505,7 +505,7 @@
                                     <div>
                                         <img src="img/Doctors-on-board.png" />
                                     </div>
-                                    <div class="py-2 count"><span id="count5">50</span>+</div>
+                                    <div class="py-2 count"><span id="count4">50</span>+</div>
                                     <div>
                                         Certified Medical Coders
                                     </div>
@@ -516,7 +516,7 @@
                                     <div>
                                         <img src="img/Software-Developers.png" />
                                     </div>
-                                    <div class="py-2 count"><span id="count6">50000</span>+</div>
+                                    <div class="py-2 count"><span id="count5">50000</span>+</div>
                                     <div>
                                        Physicians supported
                                     </div>
@@ -527,7 +527,7 @@
                                     <div>
                                         <img src="img/Medical-Coders.png" />
                                     </div>
-                                    <div class="py-2 count"><span id="count7">$200</span>M</div>
+                                    <div class="py-2 count"><span id="count6">$200</span>M</div>
                                     <div>
                                          Revenue Handled p.a.
                                     </div>
@@ -538,7 +538,7 @@
                                     <div>
                                         <img src="img/doctor.png" />
                                     </div>
-                                    <div class="py-2 count"><span id="count8">500,000</span>+</div>
+                                    <div class="py-2 count"><span id="count7">500,000</span>+</div>
                                     <div>
                                        Claims Handled p.a.
                                     </div>
@@ -560,6 +560,48 @@
                 </div>
             </section>
         </div>
+<script>
+  function animateCounter(id, end, duration = 1) {
+    const element = document.getElementById(id);
+    let start = 0;
+    const range = end - start;
+    const stepTime = Math.abs(Math.floor(duration / range));
+    const isCurrency = typeof end === 'string' && end.includes('$');
+    const isMillion = typeof end === 'string' && end.includes('M');
+
+    if (isCurrency || isMillion) return; // Skip if it's not a number
+
+    let counter = setInterval(function () {
+      start++;
+      element.innerText = start.toLocaleString();
+      if (start >= end) {
+        clearInterval(counter);
+      }
+    }, stepTime);
+  }
+
+  function startCounters() {
+    animateCounter("count1", 25);
+    animateCounter("count2", 600);
+    animateCounter("count3", 200);
+    animateCounter("count4", 50);
+    animateCounter("count5", 50000);
+    animateCounter("count6", 200);
+    animateCounter("count7", 500000);
+     animateCounter("count8", 600000);
+  }
+
+  // Trigger animation when section is in viewport
+  let started = false;
+  window.addEventListener("scroll", function () {
+    const section = document.querySelector(".counter-value");
+    const rect = section.getBoundingClientRect();
+    if (!started && rect.top < window.innerHeight) {
+      started = true;
+      startCounters();
+    }
+  });
+</script>
 
         <!-- counter-value end -->
         <!-- services Start -->
