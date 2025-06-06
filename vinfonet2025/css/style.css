@@ -1097,7 +1097,7 @@ button.quote-button1.action-btn1.open-side-btn1 {
 	border-width: 23px 34px 21px 0px;
 	border-color: transparent #5ec2af transparent transparent;
 	transform: rotate(270deg);
-	top: 49px;
+	top: 72px;
 
 }
 
@@ -1525,9 +1525,9 @@ span.num {
 }
 
 .side-box .bg-white.p-3 {
-	box-shadow: 0px 1px 23px -1px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: 0px 1px 23px -1px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 1px 23px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.75);
 	position: relative;
 	top: 27%;
 	right: 0;
@@ -2897,7 +2897,7 @@ nav .active {
  
   background: #fff;
   border-radius: 5px;
-  cursor: pointer;
+
   box-shadow: 10px 10px 15px rgba(59, 38, 38, 0.25);
 }
 .off-size .box::before {
@@ -2983,9 +2983,36 @@ nav .active {
     right: 22%;
     top: -2%;
 }
+i.fas.fa-phone-alt.text-primary.me-2 {
+    transform: rotate(137deg);
+}
+.side-container i.fa.fa-phone{
+	transform: rotate(48deg) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+	.MB-Medical-bil-s .pricing-card{ margin-top: 50px;}
 	.lb-closeContainer {
     position: absolute;
     right: 2%;
@@ -3168,11 +3195,17 @@ li.download-btn-head {
     .Billing-Cycle-c .timeline ul li:nth-child(even) div {
         left: 24px;
     }
+    .Billing-Cycle-c .timeline ul li.in-view div {
+        min-height: 96px;
+    }
+
+
 
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.MB-Medical-bil-s .pricing-card{ margin-top: 50px;}
 		.lb-closeContainer {
     position: absolute;
     right: 2%;
@@ -3438,8 +3471,27 @@ li.download-btn-head {
         align-items: center;}
 }
 
+@media (min-width: 412px) and (max-width: 415px)  {
+    .Billing-Cycle-c .timeline ul li:nth-child(odd) div, .Billing-Cycle-c .timeline ul li:nth-child(even) div {
+        width: 310px;
+    }
+
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+	.Billing-Cycle-c .timeline ul li:nth-child(odd) div, .Billing-Cycle-c .timeline ul li:nth-child(even) div
+ {
+        width: 440px;
+    }
+    .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before {
+        top: 75px;
+        left: 91%;
+    }
+}
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	
+	.MB-Medical-bil-s .pricing-card{ margin-top: 50px;}
 		.lb-closeContainer {
     position: absolute;
     right: 15%;
@@ -3691,11 +3743,32 @@ li.download-btn-head {
         left: -360px;
         width: 340px;
     }
+	.list-main .off-size .box{ width: 45%; height: 100px;
+	display: flex;
+        justify-content: flex-start;
+        align-items: center;
+	}
 }
 
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.list-main .off-size .box{ width: 45%; height: 100px;
+	display: flex;
+        justify-content: flex-start;
+        align-items: center;
+	}
+	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
+    left: 26px;
+    width: 379px;
+    min-height: 85px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+
 	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
     left: 26px;
     width: 299px;
@@ -3736,5 +3809,21 @@ a.navbar-brand img{ width: 100% !important;}
 	a.navbar-brand img{ width: 100% !important;}
 	.shadow-sm a.navbar-brand img {
     width: 50% !important;
+}
+.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
+    left: 26px;
+    width: 379px;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Billing-Cycle-c .timeline ul li:nth-child(even) div {
+  
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
 }
 }
