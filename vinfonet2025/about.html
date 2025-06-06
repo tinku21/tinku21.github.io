@@ -8,7 +8,7 @@
       <link rel="icon" type="" href="img/favicon.png" />
       <meta name="Description" content="Medical billing services with a proven record of increasing reimbursement, Experienced and economical medical transcription services delivering accurate reports in time.">
       <!-- Icon Font Stylesheet -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
       <!-- Libraries Stylesheet -->
       <link href="lib/animate/animate.min.css" rel="stylesheet" />
       <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -18,7 +18,7 @@
       <!--  Stylesheet -->
       <link href="css/style.css" rel="stylesheet" />
       <link href="css/menu.css" rel="stylesheet" />
-       
+       <link href="css/font-awesome.css" rel="stylesheet" />
       <script src="js/main-jsmin.js"></script>
    </head>
    <body>
@@ -459,7 +459,9 @@
                            <div>
                               <img src="img/outbound-calls.png" />
                            </div>
-                           <div class="py-2 count"><span id="count8">  600,000</span>+</div>
+                           <div class="py-2 count"><span class="counter-value" id="count8">  600,000</span>+</div>
+                          
+
                            <div>
                               Inbound/outbound calls p.a.
                            </div>
@@ -470,48 +472,48 @@
             </div>
          </section>
       </div>
-      <script>
-         function animateCounter(id, end, duration = 200) {
-           const element = document.getElementById(id);
-           let start = 0;
-           const range = end - start;
-           const stepTime = Math.abs(Math.floor(duration / range));
-           const isCurrency = typeof end === 'string' && end.includes('$');
-           const isMillion = typeof end === 'string' && end.includes('M');
-         
-           if (isCurrency || isMillion) return; // Skip if it's not a number
-         
-           let counter = setInterval(function () {
-             start++;
-             element.innerText = start.toLocaleString();
-             if (start >= end) {
-               clearInterval(counter);
-             }
-           }, stepTime);
-         }
-         
-         function startCounters() {
-           animateCounter("count1", 25);
-           animateCounter("count2", 600);
-           animateCounter("count3", 200);
-           animateCounter("count4", 50);
-           animateCounter("count5", 50000);
-           animateCounter("count6", 200);
-           animateCounter("count7", 500000);
-           animateCounter("count8", 600000);
-         }
-         
-         // Trigger animation when section is in viewport
-         let started = false;
-         window.addEventListener("scroll", function () {
-           const section = document.querySelector(".counter-value");
-           const rect = section.getBoundingClientRect();
-           if (!started && rect.top < window.innerHeight) {
-             started = true;
-             startCounters();
-           }
-         });
-      </script>
+    <script>
+  function animateCounter(id, end, duration = 1, start = 0) {
+    const element = document.getElementById(id);
+    const range = end - start;
+    const stepTime = Math.abs(Math.floor(duration / range));
+    const isCurrency = typeof end === 'string' && end.includes('$');
+    const isMillion = typeof end === 'string' && end.includes('M');
+
+    if (isCurrency || isMillion) return; // Skip if it's not a number
+
+    let current = start;
+    const counter = setInterval(function () {
+      current++;
+      element.innerText = current.toLocaleString();
+      if (current >= end) {
+        clearInterval(counter);
+      }
+    }, stepTime);
+  }
+
+  function startCounters() {
+    animateCounter("count1", 25);
+    animateCounter("count2", 600);
+    animateCounter("count3", 200);
+    animateCounter("count4", 50);
+    animateCounter("count5", 50000  , 100, 48899);
+    animateCounter("count6", 200);
+    animateCounter("count7", 500000 , 1000, 498999);
+    animateCounter("count8", 600000, 1000, 599000);
+  }
+
+  let started = false;
+  window.addEventListener("scroll", function () {
+    const section = document.querySelector(".counter-value");
+    const rect = section.getBoundingClientRect();
+    if (!started && rect.top < window.innerHeight) {
+      started = true;
+      startCounters();
+    }
+  });
+</script>
+
       <!-- counter-value end -->
       <!-- Footer Start -->
       <div class="container-fluid footer py-5 wow fadeIn pb-3" data-wow-delay="0.2s">
