@@ -1813,7 +1813,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 .breadcrumb-item.active {
 	color: #afafaf;
 }
-.container-fluid.sticky-top{ padding: 0px;}
+.container-fluid.sticky-top{ }
 .navbar .navbar-nav .nav-item::before {
 	top: 0;
 	left: 0;
