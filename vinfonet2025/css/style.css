@@ -194,7 +194,7 @@ a {
 	position: relative;
 	display: inline;
 	display: inline-block;
-	float: left;
+	
 	margin-right: 2%;
 	margin-bottom: 20px;
 }
@@ -252,7 +252,7 @@ a {
 	background: cover;
 	background-position: center center;
 	position: relative;
-	    background-size: cover;
+	    background-size: cover; font-size: 24px;
 }
 
 .counter-wrapper:after {
@@ -1217,11 +1217,11 @@ button.quote-button1.action-btn1.open-side-btn1 {
 	left: -2px;
 	right: -2px;
 	bottom: -2px;
-	background: #fff;
+	/* background: #fff; */
 	transform: skew(2deg, 2deg);
 	z-index: -1;
 }
-
+/* 
 .medc-links-section .card.skew.glow:nth-child(1)::before {
 	background: linear-gradient(315deg, #ff0057, #e64a19);
 }
@@ -1236,7 +1236,7 @@ button.quote-button1.action-btn1.open-side-btn1 {
 
 .medc-links-section .card.skew.glow:nth-child(4)::before {
 	background: linear-gradient(315deg, #ff0000, #ffc107);
-}
+} */
 
 .medc-links-section .card .content {
 	position: relative;
@@ -1792,7 +1792,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 }
 
 .navbar .navbar-nav .nav-item {
-	position: relative;
+	position: relative; 
 
 }
 
@@ -1813,7 +1813,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 .breadcrumb-item.active {
 	color: #afafaf;
 }
-.container-fluid.sticky-top{ }
+
 .navbar .navbar-nav .nav-item::before {
 	top: 0;
 	left: 0;
@@ -2870,9 +2870,11 @@ nav .active {
   }
  
 }
-.read-more-slider{    position: absolute;
-    bottom: 12%;
-    left: 45%;}
+.read-more-slider{     position: absolute;
+    bottom: 14%;
+    left: 69%;
+    right: 20%;
+    font-size: 15px;}
 
 .project-icon i , .project-icon img{
 	
@@ -2973,7 +2975,11 @@ nav .active {
   grid-gap: 0.75rem; float: left; margin: 10px 10px;  padding: 10px;
 }
 .collapse ul.navbar-nav li.nav-item.active >  a , .dropend.active a{ color: #fff !important;}
-.right-custam{ left: 61%;}
+.right-custam{  position: absolute;
+    bottom: 14%;
+    left: 74%;
+    right: 15%;
+    font-size: 15px;}
 .shadow-sm {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important; padding: 0px 20px;
 }
@@ -3023,9 +3029,9 @@ i.fas.fa-phone-alt.text-primary.me-2 {
      .read-more-slider {
         position: absolute;
         bottom: 10%;
-       right: 15%;
-	   left: 70%;
-        font-size: 7px;
+       right: 10%;
+	   left: 64%;
+        font-size: 8px;
     }
 	.dropdown-menu .nav-item .nav-link {
 
@@ -3180,7 +3186,8 @@ i.fas.fa-phone-alt.text-primary.me-2 {
 }
 .bg-contact , .bg-Medical-Billing , .bg-Advantages , .bg-MedicalCoding , 
 .bg-MB-Revenue-Recovery , .bg-MB-Billing-Cycle  ,  .bg-faqs , .bg-Medical-Transcription , .bg-MT-Advantages
-.bg-How-It-Works ,  .bg-iphoneipaddictation , .bg-about , .bg-iphoneipaddictation , .bg-Discrete-Reportable-Transcription , .bg-mt-faqs , .bg-Revenue-Recovery-main , .bg-hipaa ,.bg-other-serveces , .bg-Website-Development-Clinic-Hospital , .bg-contact{
+.bg-How-It-Works ,  .bg-iphoneipaddictation , .bg-about , .bg-iphoneipaddictation , .bg-Discrete-Reportable-Transcription , .bg-mt-faqs , .bg-Revenue-Recovery-main , 
+.bg-hipaa ,.bg-other-serveces , .bg-Website-Development-Clinic-Hospital , .bg-contact , .bg-MT-Advantages , .bg-How-It-Works , .bg-iphoneipaddictation{
 	 padding: 0px;         display: flex;
         text-align: center;
         align-items: center;}
@@ -3188,7 +3195,7 @@ li.download-btn-head {
     margin-top: 10px;
 }
 .counter-value img{ width: 20%;}
-.counter-value span , .count{ font-size: 16px;}
+.counter-value span , .count{ font-size: 28px;}
 .list-main .off-size .box {width: 100% !important;}
 .timeline ul{ padding: 0px;}
 .Billing-Cycle-c .timeline ul li:nth-child(odd) div , .Billing-Cycle-c .timeline ul li:nth-child(even) div{ width: 210px;}
@@ -3199,12 +3206,21 @@ li.download-btn-head {
         min-height: 96px;
     }
 
-
+div#navbarNavDropdown {
+    height: 350px;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+}
 
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	div#navbarNavDropdown {
+    height: 350px;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+}
 	.MB-Medical-bil-s .pricing-card{ margin-top: 50px;}
 		.lb-closeContainer {
     position: absolute;
@@ -3234,7 +3250,8 @@ li.download-btn-head {
 }
 .bg-contact , .bg-Medical-Billing , .bg-Advantages , .bg-MedicalCoding , 
 .bg-MB-Revenue-Recovery , .bg-MB-Billing-Cycle  ,  .bg-faqs , .bg-Medical-Transcription , .bg-MT-Advantages
-.bg-How-It-Works ,  .bg-iphoneipaddictation , .bg-iphoneipaddictation , .bg-Discrete-Reportable-Transcription , .bg-mt-faqs , .bg-Revenue-Recovery-main , .bg-hipaa ,.bg-other-serveces , .bg-Website-Development-Clinic-Hospital , .bg-contact{ padding: 0px;}
+.bg-How-It-Works ,  .bg-iphoneipaddictation , .bg-iphoneipaddictation , .bg-Discrete-Reportable-Transcription , .bg-mt-faqs , .bg-Revenue-Recovery-main , .bg-hipaa , 
+.bg-other-serveces , .bg-Website-Development-Clinic-Hospital , .bg-contact , .bg-MT-Advantages , .bg-How-It-Works , .bg-iphoneipaddictation{ padding: 0px;}
 
 	.sticky-top img {
 		width: 50% !important;
