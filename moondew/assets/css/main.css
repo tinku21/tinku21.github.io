@@ -75,6 +75,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  font-family: "Josefin Sans", sans-serif;
  
 }
 
@@ -185,7 +186,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: #336937;
-    padding: 12px 15px;
+    padding: 3px 15px;
     font-size: 20px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
@@ -204,14 +205,16 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu li:last-child a {
-    padding-right: 0;
-  }
+  /* .navmenu li:last-child a { */
+    /* padding-right: 0; */
+  /* } */
 
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: #000;
+    color: #f4e290;
+	background-color:#336937;
+	border-radius:10px;
   }
 
   .navmenu .dropdown ul {
