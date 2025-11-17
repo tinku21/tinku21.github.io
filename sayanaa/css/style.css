@@ -435,7 +435,7 @@ html{ overflow-x: hidden;}
     top: -65px;
     left: 50%;
     transform: translateX(-50%);
-    background: #FFFFFF;
+    background: #e7d584;
     box-shadow: 0 0 45px rgba(0, 0, 0, .09);
     z-index: 2;
 }
