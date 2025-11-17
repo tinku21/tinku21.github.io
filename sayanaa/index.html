@@ -29,7 +29,39 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/tabs.css" rel="stylesheet" />
-		
+		<style>
+		.trin-trin
+{
+    animation-name: trin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes trin {
+
+    from {
+        transform:rotate3d(0, 0, 1, 0deg);
+    }
+    20%, 32%, 44%, 56%, 68% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    23%, 35%, 47%, 59%, 71% {
+        transform: rotate3d(0,0,1,15deg);
+    }
+    26%, 38%, 50%, 62%, 74% {
+        transform: rotate3d(0,0,1,0deg);
+    }
+    29%, 41%, 53%, 65%, 77% {
+        transform: rotate3d(0,0,1,-15deg);
+    }
+    80% {
+        transform:rotate3d(0, 0, 1, 0deg);
+    }
+
+}
+		</style>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
@@ -87,7 +119,7 @@
                 </div>
                 <div class="col-lg-6 text-end">
                     <div class="h-100 topbar-right d-inline-flex align-items-center text-dark py-2 px-5">
-                        <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                        <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2 trin-trin"></i>Call Us:</span>
                         <span class="fs-5 fw-bold">+012 345 6789</span>
                     </div>
                 </div>
