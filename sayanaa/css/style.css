@@ -798,3 +798,10 @@ font-weight:400 !important;}
     padding-left: 21px;
 	color:#550000;
 }
+
+.logoname{
+    font-size: 8em;
+    margin-top: 34px;
+	color:#550000;
+	z-index: 2;
+}
