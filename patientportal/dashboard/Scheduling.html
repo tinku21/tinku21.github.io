@@ -37,7 +37,14 @@
       <!-- Style.css -->
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	  <style>
-	
+	.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+    padding: 5px !Important;
+}
 .schedule-box {
 border-radius: 6px;
 box-shadow: 0 2px 6px rgba(0,0,0,.08);
@@ -393,7 +400,7 @@ Fax: 772-466-0832</p>
 </span>
 </div>
 											   </div>
-											    <div class="col-sm-4"><button class="btn btn-success waves-effect waves-light btn-block" type="button">Appointment History / Status</button></div>
+											    <div class="col-sm-4"><button class="btn btn-success waves-effect waves-light btn-block" type="button"  data-toggle="modal" data-target="#flipFlop">Appointment History / Status</button></div>
                                             </div>
                                         </div>
                                     </div>
@@ -502,7 +509,246 @@ Fax: 772-466-0832</p>
         </div>
     </div>
    
-    
+    <div class="modal fade " id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="modalLabel">Appointment History</h4>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+
+</div>
+<div class="modal-body" Style="height:400px; overflow:auto">
+<table  width="100%" class="table table-bordered table-condensed table-hover">
+  <thead>
+    <tr>
+      <th> App Date &amp; Time </th>
+      <th> App Ref.No </th>
+      <th> Resource Name </th>
+      <th> App Status </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> 09/14/2025
+        12:35 PM </td>
+      <td> 908030 </td>
+      <td> Lawrence  G Oliver </td>
+      <td> Scheduled </td>
+    </tr>
+    <tr >
+      <td> 07/12/2025
+        08:00 AM </td>
+      <td> 899674 </td>
+      <td> OVERBOOK - FP </td>
+      <td> Scheduled </td>
+    </tr>
+    <tr >
+      <td> 02/29/2024
+        05:40 PM </td>
+      <td> 817302 </td>
+      <td> Dr.Hemang  B Panchal </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 02/29/2024
+        05:35 PM </td>
+      <td> 817303 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 08/28/2023
+        05:45 PM </td>
+      <td> 783467 </td>
+      <td> ECHO - PSL </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 02/11/2023
+        05:55 PM </td>
+      <td> 744344 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Scheduled </td>
+    </tr>
+    <tr >
+      <td> 11/09/2021
+        08:05 AM </td>
+      <td> 658794 </td>
+      <td> Kamalakar  T Rao </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 04/14/2021
+        05:00 PM </td>
+      <td> 619829 </td>
+      <td> Vein Clinic </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 07/12/2019
+        09:20 AM </td>
+      <td></td>
+      <td> PRASAD   CHALASANI </td>
+      <td> Cancelled </td>
+    </tr>
+    <tr >
+      <td> 06/27/2017
+        08:30 AM </td>
+      <td> 378465 </td>
+      <td> Dr.Fady  Henri Geha </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 06/20/2015
+        08:00 AM </td>
+      <td> 253138 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 06/04/2015
+        05:55 PM </td>
+      <td> 250028 </td>
+      <td> HOLTER - SLW </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 09/22/2014
+        05:55 PM </td>
+      <td> 203258 </td>
+      <td> Lawrence  G Oliver </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 07/14/2013
+        08:00 AM </td>
+      <td> 125597 </td>
+      <td> Lawrence  G Oliver </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 02/09/2012
+        05:45 PM </td>
+      <td> 32112 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/27/2011
+        02:55 PM </td>
+      <td> 14087 </td>
+      <td> CT SCAN - SLW </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/20/2011
+        04:55 PM </td>
+      <td> 12943 </td>
+      <td> Kamalakar  T Rao </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/20/2011
+        04:50 PM </td>
+      <td> 12854 </td>
+      <td> Kamalakar  T Rao </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/20/2011
+        04:45 PM </td>
+      <td> 12965 </td>
+      <td> Kamalakar  T Rao </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/19/2011
+        04:55 PM </td>
+      <td> 12610 </td>
+      <td> Kamalakar  T Rao </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/19/2011
+        04:50 PM </td>
+      <td> 12731 </td>
+      <td> Kamalakar  T Rao </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/18/2011
+        04:50 PM </td>
+      <td> 12420 </td>
+      <td> HOLTER - SLW </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/15/2011
+        08:20 AM </td>
+      <td> 11914 </td>
+      <td> ECHO - FP </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 10/12/2011
+        04:50 PM </td>
+      <td> 11308 </td>
+      <td> OVERBOOK - SLW </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 09/20/2011
+        04:50 PM </td>
+      <td> 7180 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 09/16/2011
+        04:45 PM </td>
+      <td> 7175 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 09/16/2011
+        04:30 PM </td>
+      <td> 7172 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 09/15/2011
+        04:55 PM </td>
+      <td> 7171 </td>
+      <td> OVERBOOK - FP </td>
+      <td> Arrived </td>
+    </tr>
+    <tr >
+      <td> 08/11/2011
+        08:00 AM </td>
+      <td> 2 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Confirmed </td>
+    </tr>
+    <tr >
+      <td> 06/23/2011
+        08:00 AM </td>
+      <td> 1 </td>
+      <td> Dr.Prasad  Chalasani </td>
+      <td> Arrived </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
     <!-- Required Jquery -->
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
