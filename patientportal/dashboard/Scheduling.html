@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mega Able bootstrap admin template by codedthemes </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Mega Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+      <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+      <meta name="author" content="codedthemes" />
+      <!-- Favicon icon -->
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <!-- waves.css -->
+      <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- themify icon -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- scrollbar.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+        <!-- am chart export.css -->
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	  <style>
+	
+.schedule-box {
+border-radius: 6px;
+box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+
+.panel-heading {
+background: #f7f9fc;
+font-weight: 600;
+}
+
+.panel-body{padding:10px}
+.slot {
+display: inline-block;
+margin: 6px 4px;
+padding: 8px 14px;
+border: 1px solid #ddd;
+background: #fff;
+border-radius: 4px;
+cursor: pointer;
+}
+
+
+.slot:hover {
+background: #f1f7ff;
+border-color: #428bca;
+}
+
+
+.slot.active {
+background: #428bca;
+color: #fff;
+border-color: #357ebd;
+}
+
+	  </style>
+  </head>
+
+  <body>
+  <!-- Pre-loader start -->
+  <div class="theme-loader">
+      <div class="loader-track">
+          <div class="preloader-wrapper">
+              <div class="spinner-layer spinner-blue">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+              <div class="spinner-layer spinner-red">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+            
+              <div class="spinner-layer spinner-yellow">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+            
+              <div class="spinner-layer spinner-green">
+                  <div class="circle-clipper left">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                      <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                      <div class="circle"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Pre-loader end -->
+  <div id="pcoded" class="pcoded">
+      <div class="pcoded-overlay-box"></div>
+      <div class="pcoded-container navbar-wrapper">
+          <nav class="navbar header-navbar pcoded-header">
+              <div class="navbar-wrapper">
+                  <div class="navbar-logo">
+                      <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                          <i class="ti-menu"></i>
+                      </a>
+                      <div class="mobile-search waves-effect waves-light">
+                          <div class="header-search">
+                              <div class="main-search morphsearch-search">
+                                  <div class="input-group">
+                                      <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                      <input type="text" class="form-control" placeholder="Enter Keyword">
+                                      <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a href="index.html">
+                          <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                      </a>
+                      <a class="mobile-options waves-effect waves-light">
+                          <i class="ti-more"></i>
+                      </a>
+                  </div>
+                
+                  <div class="navbar-container container-fluid">
+                      <ul class="nav-left">
+                          <li>
+                              <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                          </li>
+                          <!-- <li class="header-search"> -->
+                              <!-- <div class="main-search morphsearch-search"> -->
+                                  <!-- <div class="input-group"> -->
+                                      <!-- <span class="input-group-addon search-close"><i class="ti-close"></i></span> -->
+                                      <!-- <input type="text" class="form-control"> -->
+                                      <!-- <span class="input-group-addon search-btn"><i class="ti-search"></i></span> -->
+                                  <!-- </div> -->
+                              <!-- </div> -->
+                          <!-- </li> -->
+                          <li>
+                              <a href="#" class="waves-effect waves-light">
+                                 Last Login : Dec 16 2025 10:50PM
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav-right">
+	<li class="header-notification">				  
+<a href="#!" class="waves-effect waves-light"> Server Time : 12:12:41 AM</a>
+</li>
+                     <!-- <li class="header-notification"> -->
+                              <!-- <a href="#!" class="waves-effect waves-light"> -->
+                                  <!-- <i class="ti-bell"></i> -->
+                                  <!-- <span class="badge bg-c-red"></span> -->
+                              <!-- </a> -->
+                              <!-- <ul class="show-notification"> -->
+                                  <!-- <li> -->
+                                      <!-- <h6>Notifications</h6> -->
+                                      <!-- <label class="label label-danger">New</label> -->
+                                  <!-- </li> -->
+                                  <!-- <li class="waves-effect waves-light"> -->
+                                      <!-- <div class="media"> -->
+                                          <!-- <img class="d-flex align-self-center img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image"> -->
+                                          <!-- <div class="media-body"> -->
+                                              <!-- <h5 class="notification-user">John Doe</h5> -->
+                                              <!-- <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p> -->
+                                              <!-- <span class="notification-time">30 minutes ago</span> -->
+                                          <!-- </div> -->
+                                      <!-- </div> -->
+                                  <!-- </li> -->
+                                  <!-- <li class="waves-effect waves-light"> -->
+                                      <!-- <div class="media"> -->
+                                          <!-- <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image"> -->
+                                          <!-- <div class="media-body"> -->
+                                              <!-- <h5 class="notification-user">Joseph William</h5> -->
+                                              <!-- <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p> -->
+                                              <!-- <span class="notification-time">30 minutes ago</span> -->
+                                          <!-- </div> -->
+                                      <!-- </div> -->
+                                  <!-- </li> -->
+                                  <!-- <li class="waves-effect waves-light"> -->
+                                      <!-- <div class="media"> -->
+                                          <!-- <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image"> -->
+                                          <!-- <div class="media-body"> -->
+                                              <!-- <h5 class="notification-user">Sara Soudein</h5> -->
+                                              <!-- <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p> -->
+                                              <!-- <span class="notification-time">30 minutes ago</span> -->
+                                          <!-- </div> -->
+                                      <!-- </div> -->
+                                  <!-- </li> -->
+                              <!-- </ul> -->
+                          <!-- </li> -->
+                          <li class="user-profile header-notification">
+                              <a href="#!" class="waves-effect waves-light">
+                                  <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                  <i class="ti-angle-down"></i>
+                              </a>
+                              <ul class="show-notification profile-notification">
+                                  <li class="waves-effect waves-light">
+                                    
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <a href="#">
+                                          <i class="ti-user"></i> Profile</a>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <a href="#">
+                                          <i class="ti-time"></i> Recent Login Activities
+                                      </a>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <a href="#">
+                                          <i class="ti-lock"></i> Change Password
+                                      </a>
+                                  </li>
+                                  <li class="waves-effect waves-light">
+                                      <a href="../index.html">
+                                          <i class="ti-layout-sidebar-left"></i> Logout
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+						   <li>
+                              <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                  <i class="ti-fullscreen"></i>
+                              </a>
+                          </li>    
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+          <div class="pcoded-main-container">
+              <div class="pcoded-wrapper">
+                  <nav class="pcoded-navbar">
+                      <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                      <div class="pcoded-inner-navbar main-menu">
+                           <div class=""> 
+                               <div class="main-menu-header">
+                                  <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                                   <div class="user-details">
+                                       <span id="more-details">DEMO, PATIENT</span>
+									   <!-- <i class="fa fa-caret-down"></i> -->
+                                   </div> 
+                               </div> 
+        
+                              <!-- <div class="main-menu-content"> -->
+                                   <!-- <ul> -->
+                                      <!-- <li class="more-details"> -->
+                                          <!-- <a href="user-profile.html"><i class="ti-user"></i>View Profile</a> -->
+                                           <!-- <a href="#!"><i class="ti-settings"></i>Settings</a> -->
+                                          <!-- <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a> -->
+                                       <!-- </li>  -->
+                                   <!-- </ul>  -->
+                               <!-- </div> -->
+                          </div> 
+                        
+                          <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Menu</div>
+                          <ul class="pcoded-item pcoded-left-item">
+                              <li>
+                                  <a href="index.html" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-home"></i></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Home</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+							  <li class="active">
+                                  <a href="Scheduling.html" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-calendar"></i></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Scheduling</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+							   <li>
+                                  <a href="#" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-clipboard"></i></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Questionnaire</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+							   <li>
+                                  <a href="#" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-folder"></i></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Records</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+							     <li>
+                                  <a href="#" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-agenda"></i></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Demographics</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+							     <li>
+                                  <a href="#" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-email"></i></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Secure Messaging</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+                             
+                          </ul>
+                  </nav>
+                  <div class="pcoded-content">
+                      <!-- Page-header start -->
+                      <div class="page-header">
+                          <div class="page-block">
+                              <div class="row align-items-center">
+                                  <div class="col-md-8">
+                                      <div class="page-header-title">
+                                          <h5 class="m-b-10">Florida Heart Center</h5>
+                                          <p class="m-b-0">1900 Nebraska Ave., Ste.9 Fort Pierce, FL 34950<br>
+E-Mail: flheartcenter@bellsouth.net<br>
+Phone: 772-465-4499 772-465-0578<br>
+Fax: 772-466-0832</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <ul class="breadcrumb-title">
+                                          <li class="breadcrumb-item">
+                                              <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a href="#!">Scheduling</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Page-header end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+									 <div class="row">
+                                <div class="col-sm-8" Style="margin: 0 auto;">
+                                    <!-- Label card start -->
+                                    <div class="card">
+                                       
+                                        <div class="card-block">
+                                            <!-- labels -->
+                                            <div class="row">
+                                               <div class="col-sm-8">
+											   <div class="input-group" Style="margin-bottom:0px;">
+											   <span class="input-group-addon">Physician</span>
+											   <select name="select" id="select" class="form-control">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												</select>
+<span class="input-group-btn">
+<button class="btn btn-primary waves-effect waves-light" type="button"><span class="ti-search" aria-hidden="true">
+</span> Search!</button>
+</span>
+</div>
+											   </div>
+											    <div class="col-sm-4"><button class="btn btn-success waves-effect waves-light btn-block" type="button">Appointment History / Status</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Label card end -->
+                                </div>
+                            </div>
+                                       <div class="row">
+                                <div class="col-sm-12">
+                                    <!-- Label card start -->
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="card-header-left"><h5>Physician Details</h5>
+                                               
+                                            </div>
+                                            <div class="card-header-right"> <i class="icofont icofont-spinner-alt-5"></i> </div>
+                                        </div>
+                                        <div class="card-block">
+                                            <!-- labels -->
+                                        <div class="scheduler">
+<div class="row">
+
+
+<!-- Calendar / Date -->
+<div class="col-sm-4">
+<div class="panel panel-default schedule-box">
+<div class="panel-heading">Select Date</div>
+<div class="panel-body text-center">
+<input type="date" class="form-control">
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="panel panel-default schedule-box">
+<div class="panel-heading">Select Time</div>
+<div class="panel-body">
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<label>Start Time</label>
+<input type="time" class="form-control">
+</div>
+</div>
+<div class="col-sm-6">
+<div class="form-group">
+<label>End Time</label>
+<input type="time" class="form-control">
+</div>
+</div>
+</div>
+
+
+<button class="btn btn-primary btn-block">Add Slot</button>
+
+
+</div>
+</div>
+</div>
+
+<!-- Appointments -->
+<div class="col-sm-4">
+<div class="panel panel-default schedule-box">
+<div class="panel-heading">Appointments</div>
+<ul class="list-group">
+<li class="list-group-item">
+<strong>John Doe</strong><br>
+11:00 AM – 11:30 AM
+<span class="label label-success pull-right">Confirmed</span>
+</li>
+<li class="list-group-item">
+<strong>Maria Smith</strong><br>
+12:00 PM – 12:30 PM
+<span class="label label-warning pull-right">Pending</span>
+</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+</div>
+                                        </div>
+                                    </div>
+                                    <!-- Label card end -->
+                                </div>
+                            </div>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+                                    </div>
+                                    <!-- Page-body end -->
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="assets/pages/widget/excanvas.js "></script>
+    <!-- waves js -->
+    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="assets/js/modernizr/modernizr.js "></script>
+    <!-- slimscroll js -->
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="assets/js/chart.js/Chart.js"></script>
+    <!-- amchart js -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/gauge.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <script src="assets/pages/widget/amchart/pie.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <!-- menu js -->
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vertical-layout.min.js "></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/script.js "></script>
+</body>
+
+</html>
