@@ -37,7 +37,15 @@
       <!-- Style.css -->
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	  <style>
-	.table-condensed > thead > tr > th,
+	  .nav-tabs .nav-link {
+		color: #fff;
+    font-weight: 500;
+}
+.nav-tabs .nav-link:hover {
+		color: #fff;
+    font-weight: 500;
+}
+	  .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
 .table-condensed > tfoot > tr > th,
 .table-condensed > thead > tr > td,
@@ -45,46 +53,14 @@
 .table-condensed > tfoot > tr > td {
     padding: 5px !Important;
 }
-.schedule-box {
-border-radius: 6px;
-box-shadow: 0 2px 6px rgba(0,0,0,.08);
+
+.nav-tabs {
+background-color:#448aff;
 }
-
-
-.panel-heading {
-background: #f7f9fc;
-font-weight: 600;
-}
-
-.panel-body{padding:10px}
-.slot {
-display: inline-block;
-margin: 6px 4px;
-padding: 8px 14px;
-border: 1px solid #ddd;
-background: #fff;
-border-radius: 4px;
-cursor: pointer;
-}
-
-
-.slot:hover {
-background: #f1f7ff;
-border-color: #428bca;
-}
-
-
-.slot.active {
-background: #428bca;
-color: #fff;
-border-color: #357ebd;
-}
-.time-slots button {
-  margin: 5px 5px 5px 0;
-}
-.time-slots .active {
-  background: #337ab7;
-  color: #fff;
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+     border-top-left-radius: 0rem; 
+     border-top-right-radius: 0rem; 
 }
 	  </style>
   </head>
@@ -305,14 +281,14 @@ border-color: #357ebd;
                         
                           <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Menu</div>
                           <ul class="pcoded-item pcoded-left-item">
-                              <li>
+                              <li >
                                   <a href="index.html" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-home"></i></span>
                                       <span class="pcoded-mtext" data-i18n="nav.dash.main">Home</span>
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
-							  <li class="active">
+							  <li>
                                   <a href="Scheduling.html" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-calendar"></i></span>
                                       <span class="pcoded-mtext" data-i18n="nav.dash.main">Scheduling</span>
@@ -326,7 +302,7 @@ border-color: #357ebd;
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
-							   <li>
+							   <li class="active">
                                   <a href="records.html" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-folder"></i></span>
                                       <span class="pcoded-mtext" data-i18n="nav.dash.main">Records</span>
@@ -369,7 +345,7 @@ Fax: 772-466-0832</p>
                                           <li class="breadcrumb-item">
                                               <a href="index.html"> <i class="fa fa-home"></i> </a>
                                           </li>
-                                          <li class="breadcrumb-item"><a href="#!">Scheduling</a>
+                                          <li class="breadcrumb-item"><a href="#!">Records</a>
                                           </li>
                                       </ul>
                                   </div>
@@ -378,48 +354,22 @@ Fax: 772-466-0832</p>
                       </div>
                       <!-- Page-header end -->
                         <div class="pcoded-inner-content">
+						
                             <!-- Main-body start -->
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <!-- Page-body start -->
                                     <div class="page-body">
-									 <div class="row">
-                                <div class="col-sm-8" Style="margin: 0 auto;">
-                                    <!-- Label card start -->
-                                    <div class="card">
-                                       
-                                        <div class="card-block">
-                                            <!-- labels -->
-                                            <div class="row">
-                                               <div class="col-sm-8">
-											   <div class="input-group" Style="margin-bottom:0px;">
-											   <span class="input-group-addon">Physician</span>
-											   <select name="select" id="select" class="form-control">
-												  <option>1</option>
-												  <option>2</option>
-												  <option>3</option>
-												  <option>4</option>
-												</select>
-<span class="input-group-btn">
-<button class="btn btn-primary waves-effect waves-light" type="button"><span class="ti-search" aria-hidden="true">
-</span> Search!</button>
-</span>
-</div>
-											   </div>
-											    <div class="col-sm-4"><button class="btn btn-success waves-effect waves-light btn-block" type="button"  data-toggle="modal" data-target="#flipFlop">Appointment History / Status</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Label card end -->
-                                </div>
-                            </div>
+									
+									
+									
                                        <div class="row">
                                 <div class="col-sm-12">
                                     <!-- Label card start -->
                                     <div class="card">
-									 <div class="card-header">
+									  <div class="card-header">
                                                         <div class="card-header-left">
-                                                            <h5>Physician Details</h5>
+                                                            <h5>Reports</h5>
                                                         </div>
                                                         <div class="card-header-right">
                                                             <ul class="list-unstyled card-option">
@@ -431,210 +381,308 @@ Fax: 772-466-0832</p>
                                                             </ul>
                                                         </div>
                                                     </div>
-                                     
-                                        <div class="card-block">
-                                            <!-- labels -->
-                                        <!-- <div class="scheduler"> -->
-<!-- <div class="row"> -->
-
-
-<!-- <!-- Calendar / Date --> 
-<!-- <div class="col-sm-4"> -->
-<!-- <div class="panel panel-default schedule-box"> -->
-<!-- <div class="panel-heading">Select Date</div> -->
-<!-- <div class="panel-body text-center"> -->
-<!-- <input type="date" class="form-control"> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-
-<!-- <div class="col-sm-4"> -->
-<!-- <div class="panel panel-default schedule-box"> -->
-<!-- <div class="panel-heading">Select Time</div> -->
-<!-- <div class="panel-body"> -->
-<!-- <div class="row"> -->
-<!-- <div class="col-sm-6"> -->
-<!-- <div class="form-group"> -->
-<!-- <label>Start Time</label> -->
-<!-- <input type="time" class="form-control"> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- <div class="col-sm-6"> -->
-<!-- <div class="form-group"> -->
-<!-- <label>End Time</label> -->
-<!-- <input type="time" class="form-control"> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-
-
-<!-- <button class="btn btn-primary btn-block">Add Slot</button> -->
-
-
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-
-<!-- <!-- Appointments --> 
-<!-- <div class="col-sm-4"> -->
-<!-- <div class="panel panel-default schedule-box"> -->
-<!-- <div class="panel-heading">Appointments</div> -->
-<!-- <ul class="list-group"> -->
-<!-- <li class="list-group-item"> -->
-<!-- <strong>John Doe</strong><br> -->
-<!-- 11:00 AM – 11:30 AM -->
-<!-- <span class="label label-success pull-right">Confirmed</span> -->
-<!-- </li> -->
-<!-- <li class="list-group-item"> -->
-<!-- <strong>Maria Smith</strong><br> -->
-<!-- 12:00 PM – 12:30 PM -->
-<!-- <span class="label label-warning pull-right">Pending</span> -->
-<!-- </li> -->
-<!-- </ul> -->
-<!-- </div> -->
-<!-- </div> -->
-
-
-<!-- </div> -->
-<!-- </div> -->
-
-
-
-<!-- gagan -->
-<div class="">
-
-  <!-- Physician Details -->
-  <div class="panel panel-default">
-   
-
-    <div class="panel-body">
-
-      <!-- ROW 1 -->
-      <div class="row">
-
-        <!-- DATE -->
-        <div class="col-md-3">
-          <label>Select Date</label>
-          <input type="date" id="apptDate" class="form-control">
-        </div>
-
-        <!-- START TIME -->
-        <div class="col-md-2">
-          <label>Start Time</label>
-          <input type="time" id="startTime" class="form-control">
-        </div>
-
-        <!-- END TIME -->
-        <div class="col-md-2">
-          <label>End Time</label>
-          <input type="time" id="endTime" class="form-control">
-        </div>
-
-        <!-- STATUS -->
-        <div class="col-md-2">
-          <label>Status</label>
-          <select id="status" class="form-control">
-            <option value="Pending">Pending</option>
-            <option value="Confirmed">Confirmed</option>
-          </select>
-        </div>
-
-      </div>
-
-      <br>
-
-      <!-- ROW 2 -->
-      <div class="row">
-
-        <div class="col-md-3">
-           <select id="physician" class="form-control">
-            <option value="">Select Physician</option>
-            <option>Dr. Gagan</option>
-            <option>Dr. Sharma</option>
-            <option>Dr. Mehta</option>
-          </select>
-        </div>
-
-        <div class="col-md-3">
-          <input type="text" id="patient" class="form-control" placeholder="Patient Name">
-        </div>
-
-        <div class="col-md-2">
-          <button class="btn btn-primary btn-sm btn-block" onclick="addSlot()">
-            Add Appointment
-          </button>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-
-  <!-- Table -->
- 
-
-</div>
-<!-- gagan -->
-
-
-
-                                        </div>
-                                    </div>
-                                    <!-- Label card end -->
-                                </div>
-								
-								
-								<div class="row">
-                                <div class="col-sm-12">
-                                    <!-- Label card start -->
-                                    <div class="card">
-									 <div class="card-header">
-                                                        <div class="card-header-left">
-                                                            <h5>Appointments</h5>
-                                                        </div>
-                                                        <div class="card-header-right">
-                                                            <ul class="list-unstyled card-option">
-                                                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
-                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                                <li><i class="fa fa-minus minimize-card"></i></li>
-                                                                <li><i class="fa fa-refresh reload-card"></i></li>
-                                                                <li><i class="fa fa-trash close-card"></i></li>
+													<div class="card-block">
+                                        <div class="row ">
+                                                        <div class="col-lg-12">
+                                                          
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs  tabs" role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-toggle="tab" href="#home3" role="tab">Visits</a>
+                                                                   
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#profile3" role="tab">Problems</a>
+                                                                   
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#messages3" role="tab">Medication Allergies</a>
+                                                                  
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#settings3" role="tab">Medication</a>
+                                                                   
+                                                                </li>
+																  <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#results3" role="tab">Test Results</a>
+                                                                  
+                                                                </li>
                                                             </ul>
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content tabs card-block">
+                                                                <div class="tab-pane active" id="home3" role="tabpanel" Style="height:465px; overflow:auto;">
+                                                                  <table width="100%" class="table table-bordered table-condensed table-hover" >
+<thead>
+    <tr>
+    <th></th>
+      <th>Enc No</th>
+      <th>DOS</th>
+      <th>Rendering Physician</th>
+      <th>Location</th>
+      <th>Chart Status</th>
+</thead>      
+    </tr>
+	  <tbody>
+    <tr>
+      <td>Not Available</td>
+      <td>633074</td>
+      <td>12/18/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>PSL</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+     <td>Not Available</td>
+      <td>633031</td>
+      <td>12/18/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+     <td>Not Available</td>
+      <td>633028</td>
+      <td>12/18/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>633025</td>
+      <td>12/18/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>627656</td>
+      <td>12/15/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631991</td>
+      <td>12/10/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>629887</td>
+      <td>12/09/2025</td>
+      <td>Lawrence G Oliver</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631799</td>
+      <td>12/09/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631775</td>
+      <td>12/09/2025</td>
+      <td>Dr.JASTI</td>
+      <td>Stuart</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631671</td>
+      <td>12/08/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631638</td>
+      <td>12/08/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631559</td>
+      <td>12/05/2025</td>
+      <td>Dr.JASTI</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631488</td>
+      <td>12/05/2025</td>
+      <td>Dr.JASTI</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631425</td>
+      <td>12/04/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>PSL</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631263</td>
+      <td>12/03/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631231</td>
+      <td>12/03/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631191</td>
+      <td>12/02/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+     <td>Not Available</td>
+      <td>631175</td>
+      <td>12/02/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631166</td>
+      <td>12/02/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631164</td>
+      <td>12/02/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+    <td>Not Available</td>
+      <td>631155</td>
+      <td>12/02/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+     <td>Not Available</td>
+      <td>631153</td>
+      <td>12/02/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>631114</td>
+      <td>12/02/2025</td>
+      <td>Dr. RAVI JAYANTI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>630922</td>
+      <td>12/01/2025</td>
+      <td>Dr.JASTI</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>630893</td>
+      <td>11/26/2025</td>
+      <td>Dr. CHALASANI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>630624</td>
+      <td>11/25/2025</td>
+      <td>Dr. RAVI JAYANTI</td>
+      <td>FP</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+     <td>Not Available</td>
+      <td>630602</td>
+      <td>11/23/2025</td>
+      <td>Sarah Testa</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr><td>Not Available</td>
+    
+      <td>630333</td>
+      <td>11/21/2025</td>
+      <td>Lawrence G Oliver</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+    <tr>
+      <td>Not Available</td>
+      <td>630244</td>
+      <td>11/21/2025</td>
+      <td>Dr. RAVI JAYANTI</td>
+      <td>SLW</td>
+      <td>For Review</td>
+    </tr>
+  </tbody>
+</table>
+                                                                </div>
+                                                                <div class="tab-pane" id="profile3" role="tabpanel">
+                                                                    <p class="m-0">2</p>
+                                                                </div>
+                                                                <div class="tab-pane" id="messages3" role="tabpanel">
+                                                                    <p class="m-0">3</p>
+                                                                </div>
+                                                                <div class="tab-pane" id="settings3" role="tabpanel">
+                                                                    <p class="m-0">4</p>
+                                                                </div>
+																 <div class="tab-pane" id="results3" role="tabpanel">
+                                                                    <p class="m-0">5</p>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                     
-                                        <div class="card-block">
-                                            <!-- labels -->
-                                            <div class="row">
-                                               <table class="table table-bordered table-hover table-condensed">
-        <thead>
-          <tr>
-            <th>Physician</th>
-            <th>Patient</th>
-            <th>Date</th>
-            <th>Time Slot</th>
-            <th>Status</th>
-            <th width="80">Action</th>
-          </tr>
-        </thead>
-        <tbody id="slotTable"></tbody>
-      </table>
-                                            </div>
-                                        </div>
+                                                        
+                                                    </div></div>
+                                      
                                     </div>
                                     <!-- Label card end -->
                                 </div>
                             </div>
 							
-
-
-
-
- 			
-                            </div>
 							
 							
+							  
 							
 							
 							
@@ -655,246 +703,7 @@ Fax: 772-466-0832</p>
         </div>
     </div>
    
-    <div class="modal fade " id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h4 class="modal-title" id="modalLabel">Appointment History</h4>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-
-</div>
-<div class="modal-body" Style="height:400px; overflow:auto">
-<table  width="100%" class="table table-bordered table-condensed table-hover">
-  <thead>
-    <tr>
-      <th> App Date &amp; Time </th>
-      <th> App Ref.No </th>
-      <th> Resource Name </th>
-      <th> App Status </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr >
-      <td> 09/14/2025
-        12:35 PM </td>
-      <td> 908030 </td>
-      <td> Lawrence  G Oliver </td>
-      <td> Scheduled </td>
-    </tr>
-    <tr >
-      <td> 07/12/2025
-        08:00 AM </td>
-      <td> 899674 </td>
-      <td> OVERBOOK - FP </td>
-      <td> Scheduled </td>
-    </tr>
-    <tr >
-      <td> 02/29/2024
-        05:40 PM </td>
-      <td> 817302 </td>
-      <td> Dr.Hemang  B Panchal </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 02/29/2024
-        05:35 PM </td>
-      <td> 817303 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 08/28/2023
-        05:45 PM </td>
-      <td> 783467 </td>
-      <td> ECHO - PSL </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 02/11/2023
-        05:55 PM </td>
-      <td> 744344 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Scheduled </td>
-    </tr>
-    <tr >
-      <td> 11/09/2021
-        08:05 AM </td>
-      <td> 658794 </td>
-      <td> Kamalakar  T Rao </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 04/14/2021
-        05:00 PM </td>
-      <td> 619829 </td>
-      <td> Vein Clinic </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 07/12/2019
-        09:20 AM </td>
-      <td></td>
-      <td> PRASAD   CHALASANI </td>
-      <td> Cancelled </td>
-    </tr>
-    <tr >
-      <td> 06/27/2017
-        08:30 AM </td>
-      <td> 378465 </td>
-      <td> Dr.Fady  Henri Geha </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 06/20/2015
-        08:00 AM </td>
-      <td> 253138 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 06/04/2015
-        05:55 PM </td>
-      <td> 250028 </td>
-      <td> HOLTER - SLW </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 09/22/2014
-        05:55 PM </td>
-      <td> 203258 </td>
-      <td> Lawrence  G Oliver </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 07/14/2013
-        08:00 AM </td>
-      <td> 125597 </td>
-      <td> Lawrence  G Oliver </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 02/09/2012
-        05:45 PM </td>
-      <td> 32112 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/27/2011
-        02:55 PM </td>
-      <td> 14087 </td>
-      <td> CT SCAN - SLW </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/20/2011
-        04:55 PM </td>
-      <td> 12943 </td>
-      <td> Kamalakar  T Rao </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/20/2011
-        04:50 PM </td>
-      <td> 12854 </td>
-      <td> Kamalakar  T Rao </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/20/2011
-        04:45 PM </td>
-      <td> 12965 </td>
-      <td> Kamalakar  T Rao </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/19/2011
-        04:55 PM </td>
-      <td> 12610 </td>
-      <td> Kamalakar  T Rao </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/19/2011
-        04:50 PM </td>
-      <td> 12731 </td>
-      <td> Kamalakar  T Rao </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/18/2011
-        04:50 PM </td>
-      <td> 12420 </td>
-      <td> HOLTER - SLW </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/15/2011
-        08:20 AM </td>
-      <td> 11914 </td>
-      <td> ECHO - FP </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 10/12/2011
-        04:50 PM </td>
-      <td> 11308 </td>
-      <td> OVERBOOK - SLW </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 09/20/2011
-        04:50 PM </td>
-      <td> 7180 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 09/16/2011
-        04:45 PM </td>
-      <td> 7175 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 09/16/2011
-        04:30 PM </td>
-      <td> 7172 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 09/15/2011
-        04:55 PM </td>
-      <td> 7171 </td>
-      <td> OVERBOOK - FP </td>
-      <td> Arrived </td>
-    </tr>
-    <tr >
-      <td> 08/11/2011
-        08:00 AM </td>
-      <td> 2 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Confirmed </td>
-    </tr>
-    <tr >
-      <td> 06/23/2011
-        08:00 AM </td>
-      <td> 1 </td>
-      <td> Dr.Prasad  Chalasani </td>
-      <td> Arrived </td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
-</div>
+    
     <!-- Required Jquery -->
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
@@ -925,84 +734,6 @@ Fax: 772-466-0832</p>
     <!-- custom js -->
     <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
     <script type="text/javascript" src="assets/js/script.js "></script>
-	<script>
-let editRow = null;
-
-function addSlot(){
-  var physician = document.getElementById('physician').value;
-  var patient   = document.getElementById('patient').value;
-  var date      = document.getElementById('apptDate').value;
-  var start     = document.getElementById('startTime').value;
-  var end       = document.getElementById('endTime').value;
-  var status    = document.getElementById('status').value;
-
-  if(!physician || !patient || !date || !start || !end){
-    alert("Please fill all fields");
-    return;
-  }
-
-  if(start >= end){
-    alert("End time must be greater than start time");
-    return;
-  }
-
-  var label = status === "Confirmed"
-    ? '<span class="label label-success">Confirmed</span>'
-    : '<span class="label label-warning">Pending</span>';
-
-  var rowHtml = `
-    <td>${physician}</td>
-    <td>${patient}</td>
-    <td>${date}</td>
-    <td>${start} - ${end}</td>
-    <td>${label}</td>
-    <td class="action-icons">
-      <i class="fa fa-pencil text-primary" onclick="editAppointment(this)"></i>
-      <i class="fa fa-trash text-danger" onclick="deleteAppointment(this)" Style="margin-left:5px;"></i>
-    </td>
-  `;
-
-  if(editRow){
-    editRow.innerHTML = rowHtml;
-    editRow = null;
-  }else{
-    var tr = document.createElement("tr");
-    tr.innerHTML = rowHtml;
-    document.getElementById('slotTable').appendChild(tr);
-  }
-
-  clearForm();
-}
-
-function editAppointment(icon){
-  editRow = icon.closest("tr");
-
-  document.getElementById('physician').value = editRow.cells[0].innerText;
-  document.getElementById('patient').value   = editRow.cells[1].innerText;
-  document.getElementById('apptDate').value  = editRow.cells[2].innerText;
-
-  var time = editRow.cells[3].innerText.split(" - ");
-  document.getElementById('startTime').value = time[0];
-  document.getElementById('endTime').value   = time[1];
-
-  document.getElementById('status').value =
-    editRow.cells[4].innerText.trim();
-}
-
-function deleteAppointment(icon){
-  if(confirm("Delete this appointment?")){
-    icon.closest("tr").remove();
-  }
-}
-
-function clearForm(){
-  document.getElementById('patient').value = "";
-  document.getElementById('startTime').value = "";
-  document.getElementById('endTime').value = "";
-  document.getElementById('status').value = "Pending";
-}
-</script>
-
 </body>
 
 </html>
