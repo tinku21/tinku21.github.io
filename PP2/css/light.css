@@ -408,7 +408,7 @@ h3, .h3 {
   font-size: 1.53125rem; }
 
 h4, .h4 {
-  font-size: 1.3125rem; }
+  font-size: 18px; }
 
 h5, .h5 {
   font-size: 1.09375rem; }
@@ -1870,25 +1870,25 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3366ff;
-  border-color: #3366ff; }
+  background-color: #01adef;
+  border-color: #01adef; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #0d49ff;
-    border-color: #0040ff; }
+    background-color: #0396ce;
+    border-color: #0396ce; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #0d49ff;
-    border-color: #0040ff;
+    border-color: #0396ce;
     box-shadow: 0 0 0 0.2rem rgba(82, 125, 255, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #3366ff;
-    border-color: #3366ff; }
+    background-color: #01adef;
+    border-color: #01adef; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0040ff;
+    background-color: #0396ce;
     border-color: #003df2; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
@@ -3110,7 +3110,7 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: #1e2368;
   background-color: #3366ff; }
 
 .nav-fill > .nav-link,
@@ -7622,9 +7622,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: #1c273c; }
   .nav-pills .nav-link.active {
     border-radius: 2px;
-    background-color: #0093dd; }
+    background-color: #bfdfef; }
     .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
-      color: #fff; }
+      color: #1e2368; }
 
 .nav-dark .nav-link {
   color: #97a3b9; }
@@ -7820,7 +7820,7 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 1;
   margin-bottom: 0; }
   .ckbox span {
-    padding-left: 15px; }
+    padding-left: 5px; }
     .ckbox span:empty {
       float: left; }
     .ckbox span:before, .ckbox span:after {
@@ -37475,4 +37475,13 @@ body {
 }
 .app-logo {
   transition: background-image 0.2s ease-in-out;
+}
+
+
+
+.q-heading{
+font-size:14px;
+color:#f7921b;
+margin-bottom:0px;
+margin-top:10px;
 }

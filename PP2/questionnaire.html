@@ -29,6 +29,12 @@
   background-color: #007bff;
   color: #fff;
 }
+.ckbox{
+display:inline !important;}
+.relation-row {
+    align-items: center;
+    margin-bottom: 10px;
+  }
 	</style>
 
     <!-- Required meta tags -->
@@ -94,7 +100,7 @@
               <a href="" class="nav-link"><i class="typcn typcn-clipboard"></i>Questionnaire</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link"><i class="typcn typcn-document-text"></i>Records</a>
+              <a href="records.html" class="nav-link"><i class="typcn typcn-document-text"></i>Records</a>
             </li>		
 			<li class="nav-item">
               <a href="" class="nav-link"><i class="typcn typcn-folder"></i>Demographics</a>
@@ -200,48 +206,450 @@ Medical Questionnaire
       <div class="tab-content">
         <div class="tab-pane fade show active" id="tab1">
           <h4>Previous Summary</h4>
-          <p>User profile information goes here.</p>
+		  
+		  <h3 class="q-heading">FAMILY HISTORY:</h3>
+          <p>
+Reviewed<br>
+Sister is Alive. <br>
+Father is Alive. His health status is Stable. has h/o hypertension, asthma, angina pectoris and anemia.<br> 
+Sister is Alive. Her health status is Stable. has h/o asthma.<br>  
+Maternal uncle is Alive. has h/o thalasemia.<br>  
+Father is Alive.</p>
+
+
+<h3 class="q-heading">NON DRUG ALLERGIES:</h3>
+<p>
+
+Reviewed.<br>
+HISTORY ALLERGY TO PEANUTS.  HISTORY ALLERGY TO LATEX.  OTHER DRUG ALLERGY.  Other drug induced dystonia.  SNOMED RT Concept (special concept) causes   and lodine.  Hissing in ear (finding).  HISTORY ALLERGY TO OTH FOODS causes   and antioxidants.
+</p>
+
+
+<h3 class="q-heading">DRUG ALLERGIES:</h3>
+<p>
+Reviewed<br>
+Sulfur containing products causes Rash, and antioxidants.  Codeine.  Iodine causes  and Urticaria.  Ibuprofen since 2024,  causes Stroke, Rash, and Vomitings.  LODINE CAPSULES.  DILANTIN TABLETS.  ARICEPT TABLETS.  Insulins and analogues for injection,  intermediate-acting combined with fast-acting.  Aspirin 81 MG Chewable Tablet.  PainZone 1 % / 12 % / 20 % Topical Stick causes  and antioxidants. test zantac
+</p>
+
+
+<h3 class="q-heading">PAST MEDICAL HISTORY:</h3>
+
+Reviewed<br>
+1. CHOLERA Status:  Active.<br>
+2. BRONCHITIS UNSPECIFIED Status:  Active.<br>
+3. ACUTE MYOCARDIAL INFARCTION Status:  Active.<br>
+4. ATRIAL FIBRILLATION Status:  Active.<br>
+5. ESSENTIAL HYPERTENSION Status:  Active.<br>
+6. Other chronic pain Status:  Active.<br>
+7. Other asthma Status:  Active.<br>
+8. Pain in left foot Status:  Active.<br>
+9. Diabetes mellitus due to underlying condition with hyperglycemia Status:  Active.<br>
+10. Other specified diabetes mellitus with diabetic peripheral angiopathy with gangrene Status:  Active.<br>
+11. BRAIN HEMORRHAGE INJURY Status:  Active.<br>
+12. HEMOPHILIA A CARRIER STATUS Status:  Active. test<br>
+
+
+<h3 class="q-heading">SURGICAL HISTORY:</h3>
+Reviewed<br>
+1. CHOLERA <br>
+2. CABG <br>
+3. Right Unilateral Mastetomy <br>
+4. bilatearal mastectomy <br>
+5. Adenoidectomy <br>
+6. OTHER PROTOZOAL INTESTINAL DISEASE in 2011.<br>
+7. BRIEF EST <br>
+8. Surgical repair (procedure) <br>
+9. Surgical procedure on lower extremity (procedure) <br>
+10. OFFICE CONSLTJ 15 MIN <br>
+11. OFFICE CONSLTJ 30 MIN <br>
+12. Adenovirus infection,  unspecified <br>
+13. Pain,  not elsewhere classified .
+
+
+<h3 class="q-heading">SOCIAL HISTORY:</h3>
+<p>Reviewed<br>
+Occupation: Student. Education: Some College. Birth Sex: Male. Marital Status: Married. The patient can speak and read English. The patient completed 12 years of schooling.The patient did take English classes in United States. Curent Smoking Status: Light tobacco Smoker. Start Date: 05/04/2015. Alcohol: Yes. Amount: 1 1/2 peg ml. Frequency: 1/4 pint. IllicitDrugs: Yes. Activity Level: High. Hobbies: TT,SWIMMING. Health Club Member: Never. Tobacco Use Screening :  Cigarette smoker. Start Date: 06/02/2014. End Date: 08/27/2019. Sexual Orientation:  Straight or heterosexual. Risk Factors: EXERCISE: 2-5 times a week.
+Added.</p>
+
+
+
+<h3 class="q-heading">CURRENT MEDICATION:</h3>
+1. acetaminophen 160 MG Disintegrating Oral Tablet . <br> 
+2. ASPIRIN .  <br>
+3. aspirin 81 MG Chewable Tablet   TAKE 1 TABLET ONCE A DAY.  <br>
+4. ASTEPRO NASAL SPRAY .  <br>
+5. Ceftin Oral Tablet Cefuroxime 125 MG   Quantity:  10 Tablet(s), Take 1 Tablet(s) ORALLY once a day,  for 10 days.  <br>
+6. Ceftin Tablets 250 MG Oral Tablet   Quantity:  Qty. .  <br>
+7. Cipro 250 MG Oral Tablet .  <br>
+8. EDARBI TABLETS .  <br>
+9. metroNIDAZOLE 500 MG Oral Tablet   Quantity:  2.5 Tablet(s), Take 0.5 Tablet(s) ORALLY once a day,  for 5 days.  <br>
+meds The demo pat 472843 details can speak and read English. The patient completed 12 years of schooling.The patient did take English classes in United States. 
+
+
         </div>
 
         <div class="tab-pane fade" id="tab2">
-          <h4>Appointments</h4>
-          <p>Appointment details and schedule.</p>
+          <h4>Reason for visit</h4>
+          <p><label class="ckbox">
+                  <input type="checkbox">
+                  <span>Chest pain</span>
+                </label>
+				&nbsp;&nbsp;&nbsp;
+				<label class="ckbox">
+                  <input type="checkbox" >
+                  <span>Fever</span>
+                </label></p>
+				<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="input-group">
+			<div class="input-group-prepend"> <span class="input-group-text">Reason For visit:</span></div>
+	        <input type="text" class="form-control" >
+			</div>
+				</div></div>
         </div>
 
         <div class="tab-pane fade" id="tab3">
-          <h4>Settings</h4>
-          <p>Application settings content.</p>
+         <h4>Surgical History</h4>
+		 <p class="text-danger">Note : Check that all applicable</p>
+          <p><label class="ckbox">
+                  <input type="checkbox">
+                  <span>No significant surgical history</span>
+                </label>
+				</p>
+				<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="input-group">
+			<div class="input-group-prepend"> <span class="input-group-text">Others</span></div>
+	        <input type="text" class="form-control" >
+			</div>
+				</div></div>
         </div>
 
         <div class="tab-pane fade" id="tab4">
-          <h4>Reports</h4>
-          <p>Reports and analytics.</p>
+          <h4>Past Medical History</h4>
+		 <p class="text-danger">Note : Check that all applicable</p>
+          <p><label class="ckbox">
+                  <input type="checkbox">
+                  <span>Acute Myocardial Infarction</span>
+                </label>&nbsp;&nbsp;&nbsp;&nbsp;
+				<label class="ckbox">
+                  <input type="checkbox">
+                  <span>Asthma</span>
+                </label>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<label class="ckbox">
+                  <input type="checkbox">
+                  <span>Hypertension</span>
+                </label>
+				</p>
+				<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="input-group">
+			<div class="input-group-prepend"> <span class="input-group-text">Others</span></div>
+	        <input type="text" class="form-control" >
+			</div>
+				</div></div>
         </div>
 		
 		
 		 <div class="tab-pane fade" id="tab5">
-          <h4>5</h4>
-          <p>Reports and analytics.</p>
+          <h4>Review of Systems</h4>
+		 <p class="text-danger">Note : Check that all applicable</p>
+         
+		  <table width="100%">
+		  <tr>
+		  <td> <label class="ckbox">
+                  <input type="checkbox">
+                  <span>Yes</span>
+                </label>&nbsp;&nbsp;
+				<label class="ckbox">
+                  <input type="checkbox">
+                  <span>No</span>
+                </label></td>
+		  <td> <label class="ckbox">
+                  <input type="checkbox">
+                  <span>Yes</span>
+                </label>&nbsp;&nbsp;
+				<label class="ckbox">
+                  <input type="checkbox">
+                  <span>No</span>
+                </label></td>
+		  <td> <label class="ckbox">
+                  <input type="checkbox">
+                  <span>Yes</span>
+                </label>&nbsp;&nbsp;
+				<label class="ckbox">
+                  <input type="checkbox">
+                  <span>No</span>
+                </label></td>
+		  </tr>
+		  </table>
+		 
+				
         </div>
 		 <div class="tab-pane fade" id="tab6">
-          <h4>6</h4>
-          <p>Reports and analytics.</p>
+         <h4>Current Medication</h4>
+         
+				<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="input-group">
+			<div class="input-group-prepend"> <span class="input-group-text">Others</span></div>
+	        <input type="text" class="form-control" >
+			</div>
+				</div></div>
         </div>
 		 <div class="tab-pane fade" id="tab7">
-          <h4>7</h4>
-          <p>Reports and analytics.</p>
+           <h4>Allergies</h4>
+		 <p class="text-danger">Note : Check that all applicable</p>
+           <table width="100%">
+		  <tr>
+		  <td>Allergies</td>
+		  <td>Reactions</td>
+		
+		  </tr>
+		  </table>
+		  
+		  
+		  
+				<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="input-group">
+			<div class="input-group-prepend"> <span class="input-group-text">Others</span></div>
+	        <input type="text" class="form-control" >
+			</div>
+				</div></div>
         </div>
 		 <div class="tab-pane fade" id="tab8">
-          <h4>8</h4>
-          <p>Reports and analytics.</p>
+          <h4>Social History</h4>
+         
+  <div class="row">
+    <!-- LEFT COLUMN -->
+    <div class="col-md-6">
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label form-label">Marital Status:</label>
+        <div class="col-sm-8">
+          <select class="form-control form-control-sm">
+            <option value="Select">Select</option>
+	<option value="Single">Single</option>
+	<option value="Married">Married</option>
+	<option value="Domestic Partner">Domestic Partner</option>
+	<option value="Divorced">Divorced</option>
+	<option value="Seperated">Seperated</option>
+	<option value="Widowed">Widowed</option>
+	<option value="Involved">Involved</option>
+	<option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label form-label">Occupation:</label>
+        <div class="col-sm-8">
+          <select class="form-control form-control-sm">
+            <option value="Select">Select</option>
+	<option value="Student">Student</option>
+	<option value="Employed">Employed</option>
+	<option value="Retired">Retired</option>
+	<option value="Home Maker">Home Maker</option>
+	<option value="UnEmployed">UnEmployed</option>
+	<option value="Disabled">Disabled</option>
+	<option value="No Response">No Response</option>
+	<option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label d-block">Alcohol:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="alcohol">
+          <label class="form-check-label">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="alcohol">
+          <label class="form-check-label">No</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="alcohol">
+          <label class="form-check-label">Former</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="alcohol">
+          <label class="form-check-label">Refused to Answer</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label d-block">Illicit Drugs:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="drugs">
+          <label class="form-check-label">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="drugs">
+          <label class="form-check-label">No</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="drugs">
+          <label class="form-check-label">Former</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="drugs">
+          <label class="form-check-label">Refused to Answer</label>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-md-6">
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label form-label">Education:</label>
+        <div class="col-sm-8">
+          <select class="form-control form-control-sm">
+           <option value="Select">Select</option>
+	<option value="Elementary School">Elementary School</option>
+	<option value="Middle School">Middle School</option>
+	<option value="High School">High School</option>
+	<option value="Some College">Some College</option>
+	<option value="College">College</option>
+	<option value="Graduate School">Graduate School</option>
+	<option value="Currently in School">Currently in School</option>
+	<option value="No Response">No Response</option>
+	<option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label form-label">Smoking Status:</label>
+        <div class="col-sm-8">
+          <select class="form-control form-control-sm">
+            <option value="SEL">--Select--</option>
+	<option value="Y">Current every day smoker</option>
+	<option value="D">Current some day smoker</option>
+	<option value="F">Former Smoker</option>
+	<option value="N">Never smoker</option>
+	<option value="U">Smoker, current status unknown</option>
+	<option value="E">Unknown if ever smoked</option>
+	<option value="R">Refused to answer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label d-block">Caffeine:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="caffeine">
+          <label class="form-check-label">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="caffeine">
+          <label class="form-check-label">No</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="caffeine">
+          <label class="form-check-label">Refused to Answer</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- OTHER FIELD -->
+ <div class="input-group">
+			<div class="input-group-prepend"> <span class="input-group-text">Others</span></div>
+	        <input type="text" class="form-control" >
+			</div>
         </div>
 		 <div class="tab-pane fade" id="tab9">
-          <h4>9</h4>
-          <p>Reports and analytics.</p>
+          <h4>Family History</h4>
+          
+  <!-- Header -->
+  <div class="row mb-2 font-weight-bold">
+    <div class="col-md-3">Relation</div>
+    <div class="col-md-2">IsExpired</div>
+    <div class="col-md-3">Name</div>
+    <div class="col-md-4">Comments</div>
+  </div>
+
+  <!-- Rows -->
+  <div class="row relation-row">
+    <div class="col-md-3">
+      <input type="checkbox" class="relation-check" data-row="father"> Father
+    </div>
+    <div class="col-md-2">
+      <input type="checkbox" disabled>
+      IsExpired
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control form-control-sm" id="father-name" disabled>
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control form-control-sm" id="father-comments" disabled>
+    </div>
+  </div>
+
+  <div class="row relation-row">
+    <div class="col-md-3">
+      <input type="checkbox" class="relation-check" data-row="mother"> Mother
+    </div>
+    <div class="col-md-2">
+      <input type="checkbox" disabled>
+      IsExpired
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control form-control-sm" id="mother-name" disabled>
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control form-control-sm" id="mother-comments" disabled>
+    </div>
+  </div>
+
+  <div class="row relation-row">
+    <div class="col-md-3">
+      <input type="checkbox" class="relation-check" data-row="sister"> Sister
+    </div>
+    <div class="col-md-2">
+      <input type="checkbox" disabled>
+      IsExpired
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control form-control-sm" id="sister-name" disabled>
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control form-control-sm" id="sister-comments" disabled>
+    </div>
+  </div>
+
+  <div class="row relation-row">
+    <div class="col-md-3">
+      <input type="checkbox" class="relation-check" data-row="brother"> Brother
+    </div>
+    <div class="col-md-2">
+      <input type="checkbox" disabled>
+      IsExpired
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control form-control-sm" id="brother-name" disabled>
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control form-control-sm" id="brother-comments" disabled>
+    </div>
+  </div>
+
+  <!-- Other -->
+   <div class="input-group">
+			<div class="input-group-prepend"> <span class="input-group-text">Others</span></div>
+	        <input type="text" class="form-control" >
+			</div>
+
         </div>
 		 <div class="tab-pane fade" id="tab10">
-          <h4>10</h4>
-          <p>Reports and analytics.</p>
+          <h4>Summary</h4>
+          <p></p>
         </div>
       </div>
     </div>
@@ -282,87 +690,15 @@ Medical Questionnaire
     <script src="js/chart.flot.sampledata.js"></script>
     <script src="js/dashboard.sampledata.js"></script>
     <script src="js/jquery.cookie.js" type="text/javascript"></script>
- 
 <script>
-const strip = document.getElementById("dateStrip");
-const dateText = document.getElementById("selectedDateText");
-
-let startDate = new Date();
-let selectedDate = new Date();
-
-function formatHeader(date){
-  return date.toLocaleDateString('en', {
-    weekday:'long', month:'long', day:'numeric'
+  document.querySelectorAll('.relation-check').forEach(cb => {
+    cb.addEventListener('change', function () {
+      const key = this.dataset.row;
+      document.getElementById(key + '-name').disabled = !this.checked;
+      document.getElementById(key + '-comments').disabled = !this.checked;
+    });
   });
-}
-
-function renderDates(){
-  strip.innerHTML = "";
-
-  for(let i=0;i<7;i++){
-    let d = new Date(startDate);
-    d.setDate(startDate.getDate() + i);
-
-    let box = document.createElement("div");
-    box.className = "date-box";
-    box.innerHTML = `
-      ${d.toLocaleDateString('en',{weekday:'short'})}<br>
-      <strong>${d.getDate()}</strong>
-    `;
-
-    if(d.toDateString() === selectedDate.toDateString()){
-      box.classList.add("active");
-    }
-
-    box.onclick = () => selectDate(d);
-
-    strip.appendChild(box);
-  }
-}
-
-function selectDate(date){
-  selectedDate = date;
-  dateText.innerText = formatHeader(date);
-  renderDates();
-  loadSlots();
-}
-
-function moveDates(step){
-  startDate.setDate(startDate.getDate() + step);
-  renderDates();
-}
-
-/* ---------- TIME SLOTS ---------- */
-function loadSlots(){
-  const morning = ["9:00 AM","9:30 AM","10:00 AM","10:30 AM","11:00 AM","11:30 AM"];
-  const afternoon = ["12:00 PM","12:30 PM","1:00 PM","1:30 PM","2:00 PM","2:30 PM","3:00 PM","3:30 PM","4:00 PM"];
-
-  renderSlots("morningSlots", morning);
-  renderSlots("afternoonSlots", afternoon);
-}
-
-function renderSlots(id, times){
-  const el = document.getElementById(id);
-  el.innerHTML = "";
-
-  times.forEach(t=>{
-    let s = document.createElement("div");
-    s.className = "slot";
-    s.innerText = t;
-    s.onclick = ()=>{
-      document.querySelectorAll(".slot").forEach(x=>x.classList.remove("selected"));
-      s.classList.add("selected");
-      console.log("Selected:", selectedDate.toDateString(), t);
-    };
-    el.appendChild(s);
-  });
-}
-
-/* INIT */
-dateText.innerText = formatHeader(selectedDate);
-renderDates();
-loadSlots();
-</script>  
+</script> 
 <script>
 function toggleTheme() {
   const link = document.getElementById("theme-style");

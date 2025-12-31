@@ -408,7 +408,7 @@ h3, .h3 {
   font-size: 1.53125rem; }
 
 h4, .h4 {
-  font-size: 1.3125rem; }
+  font-size: 18px; }
 
 h5, .h5 {
   font-size: 1.09375rem; }
@@ -37475,4 +37475,11 @@ body {
 }
 .app-logo {
   transition: background-image 0.2s ease-in-out;
+}
+
+.q-heading{
+font-size:14px;
+color:#f7921b;
+margin-bottom:0px;
+margin-top:10px;
 }
