@@ -35,6 +35,10 @@ display:inline !important;}
     align-items: center;
     margin-bottom: 10px;
   }
+      .ms-md-auto {
+        margin-left: auto !important;
+    }
+}
 	</style>
 
     <!-- Required meta tags -->
@@ -103,10 +107,10 @@ display:inline !important;}
               <a href="" class="nav-link"><i class="typcn typcn-document-text"></i>Records</a>
             </li>		
 			<li class="nav-item">
-              <a href="" class="nav-link"><i class="typcn typcn-folder"></i>Demographics</a>
+              <a href="demo.html" class="nav-link"><i class="typcn typcn-folder"></i>Demographics</a>
             </li>
 			<li class="nav-item">
-              <a href="" class="nav-link"><i class="typcn typcn-mail"></i>Secure Messaging</a>
+              <a href="mail.html" class="nav-link"><i class="typcn typcn-mail"></i>Secure Messaging</a>
             </li>
          
           </ul>
@@ -129,7 +133,7 @@ display:inline !important;}
               <!-- </div> -->
               <a href="" class="dropdown-item"><i class="typcn typcn-time"></i> Recent Login Activities</a>
               <a href="" class="dropdown-item"><i class="typcn typcn-cog-outline"></i> Change Password</a>
-              <a href="" class="dropdown-item"><i class="typcn typcn-power-outline"></i> Sign Out</a>
+              <a href="login.html" class="dropdown-item"><i class="typcn typcn-power-outline"></i> Sign Out</a>
             </div><!-- dropdown-menu -->
           </div>
         </div><!-- az-header-right -->
@@ -462,11 +466,344 @@ Fax: 772-466-0832</label>
     </div>
 
     <div class="tab-pane fade" id="tab2" role="tabpanel">
-      This is About tab content...
+	<div class="input-group">
+	<div class="input-group-prepend"><span class="input-group-text">App No:</span></div>
+<input type="text" class="form-control">
+<div class="input-group-prepend" style="border-left:0px; border-right:0px;"><span class="input-group-text">Enc No:</span></div>
+<input type="text" class="form-control">
+<div class="input-group-prepend" style="border-left:0px; border-right:0px;"><span class="input-group-text">Physician:</span></div>
+<input type="text" class="form-control">
+<div class="input-group-prepend" style="border-left:0px; border-right:0px;"><span class="input-group-text">DOS From:</span></div>
+<input type="date" class="form-control">
+<div class="input-group-prepend"><span class="input-group-text">DOS To:</span></div>
+<input type="date" class="form-control">
+</div>
+<div class="row" style="padding:10px;">
+<div class="col-lg-12" style="text-align:center;">
+<button class="btn btn-primary" type="button">Search</button>&nbsp;<button class="btn btn-primary" type="button">Clear</button>
+</div>
+</div>
+	
+	<div class="d-flex flex-column flex-md-row align-items-center">
+              <h4 class="mb-md-0 mb-4">Final Diagnosis</h4>
+              <div class="wrapper d-flex align-items-center">
+              
+              </div>
+              <div class="wrapper ms-md-auto d-flex flex-column flex-md-row kanban-toolbar ms-n2 ms-md-0 mt-4 mt-md-0">
+               
+                <div class="d-flex mt-4 mt-md-0">
+				<div class="input-group" style="margin-right:5px;">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    Status:
+                  </div>
+                </div><!-- input-group-prepend -->
+               <select class="form-control" style="height:40px;">
+	<option value="All">All</option>
+	<option selected="selected" value="Active">Active</option>
+	<option value="Inactive/Resolved">Inactive/Resolved</option>
+	<option value="Others">Others</option>
+
+</select>
+              </div>
+                  <button type="button" class="btn btn-primary">Print</button>
+                </div>
+              </div>
+            </div>
+	
+	
+       <table class="table table-bordered table-condensed table-hover"  style="margin-top: 15px;">
+                <thead>
+                    <tr>
+                        <th>Enc No</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>620765</td><td>09/10/2025</td><td>Other asthma</td><td class="status-active">Active</td></tr>
+                    <tr><td>613922</td><td>07/11/2025</td><td>Coronary artery aneurysm</td><td class="status-active">Active</td></tr>
+                    <tr><td>613921</td><td>07/11/2025</td><td>Q fever</td><td class="status-active">Active</td></tr>
+                    <tr><td>605927</td><td>04/28/2025</td><td>Typhoid fever, unspecified</td><td class="status-active">Active</td></tr>
+                    <tr><td>576351</td><td>09/11/2024</td><td>Type 2 diabetes mellitus without complications</td><td class="status-active">Active</td></tr>
+                    <tr><td>549936</td><td>03/14/2024</td><td>Mixed hyperlipidemia</td><td class="status-active">Active</td></tr>
+                    <tr><td>534538</td><td>11/16/2023</td><td>Heart failure, unspecified</td><td class="status-active">Active</td></tr>
+                    <tr><td>431045</td><td>11/09/2021</td><td>Parkinson's disease</td><td class="status-active">Active</td></tr>
+                    <tr><td>157441</td><td>04/28/2016</td><td>Cholera</td><td class="status-active">Active</td></tr>
+                    <tr><td>145331</td><td>09/24/2015</td><td>Bronchitis unspecified</td><td class="status-active">Active</td></tr>
+                </tbody>
+            </table>
     </div>
 
     <div class="tab-pane fade" id="tab3" role="tabpanel">
-      This is 3 tab content...
+     <div class="input-group">
+	<div class="input-group-prepend"><span class="input-group-text">App No:</span></div>
+<input type="text" class="form-control">
+<div class="input-group-prepend" style="border-left:0px; border-right:0px;"><span class="input-group-text">Enc No:</span></div>
+<input type="text" class="form-control">
+<div class="input-group-prepend" style="border-left:0px; border-right:0px;"><span class="input-group-text">Physician:</span></div>
+<input type="text" class="form-control">
+<div class="input-group-prepend" style="border-left:0px; border-right:0px;"><span class="input-group-text">DOS From:</span></div>
+<input type="date" class="form-control">
+<div class="input-group-prepend"><span class="input-group-text">DOS To:</span></div>
+<input type="date" class="form-control">
+</div>
+<div class="row" style="padding:10px;">
+<div class="col-lg-12" style="text-align:center;">
+<button class="btn btn-primary" type="button">Search</button>&nbsp;<button class="btn btn-primary" type="button">Clear</button>
+</div>
+</div>
+	
+	<div class="d-flex flex-column flex-md-row align-items-center">
+              <h4 class="mb-md-0 mb-4">Allergies</h4>
+              <div class="wrapper d-flex align-items-center">
+              
+              </div>
+              <div class="wrapper ms-md-auto d-flex flex-column flex-md-row kanban-toolbar ms-n2 ms-md-0 mt-4 mt-md-0">
+               
+                <div class="d-flex mt-4 mt-md-0">
+				<div class="input-group" style="margin-right:5px;">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    Status:
+                  </div>
+                </div><!-- input-group-prepend -->
+               <select class="form-control" style="height:40px;">
+	<option value="All">All</option>
+	<option selected="selected" value="Active">Active</option>
+	<option value="Inactive/Resolved">Inactive/Resolved</option>
+	<option value="Others">Others</option>
+
+</select>
+              </div>
+                  <button type="button" class="btn btn-primary">Print</button>
+                </div>
+              </div>
+            </div>
+	
+	<table  class="table table-bordered table-condensed table-hover" style="margin-top: 15px;">
+                                                                                <thead><tr >
+                                                                                    <th>Enc No
+                                                                                    </th>
+                                                                                    <th>Date
+                                                                                    </th>
+                                                                                    <th>Drug Allergies
+                                                                                    </th>
+                                                                                    <th>Start Date
+                                                                                    </th>
+                                                                                    <th>End Date
+                                                                                    </th>
+                                                                                    <th>Adverse Reactions
+                                                                                    </th>
+                                                                                    <th>Allergies
+                                                                                    </th>
+                                                                                    <th>Intolerance
+                                                                                    </th>
+                                                                                    <th>Status
+                                                                                    </th>
+                                                                                    <th>Other Symptoms
+                                                                                    </th>
+                                                                                </tr>
+																				</thead>
+                                                                        <tbody>
+                                                                            <tr >
+                                                                                <td>630602</td>
+                                                                                <td>06/20/2015</td>
+                                                                                <td>Sulfur containing products</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Rash,antioxidants</td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr class="gridalternaterowstyle">
+                                                                                <td>630602</td>
+                                                                                <td>02/27/2023</td>
+                                                                                <td>Codeine</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr >
+                                                                                <td>630602</td>
+                                                                                <td>08/27/2019</td>
+                                                                                <td>Iodine</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Urticaria</td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr class="gridalternaterowstyle">
+                                                                                <td>630602</td>
+                                                                                <td>03/15/2024</td>
+                                                                                <td>Ibuprofen</td>
+                                                                                <td>03/15/2024</td>
+                                                                                <td></td>
+                                                                                <td>Stroke</td>
+                                                                                <td>Rash</td>
+                                                                                <td>Vomitings</td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr >
+                                                                                <td>630602</td>
+                                                                                <td>06/16/2021</td>
+                                                                                <td>LODINE CAPSULES</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr class="gridalternaterowstyle">
+                                                                                <td>630602</td>
+                                                                                <td>09/11/2024</td>
+                                                                                <td>DILANTIN TABLETS</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr >
+                                                                                <td>630602</td>
+                                                                                <td>02/27/2023</td>
+                                                                                <td>ARICEPT TABLETS</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr class="gridalternaterowstyle">
+                                                                                <td>630602</td>
+                                                                                <td>12/19/2011</td>
+                                                                                <td>Insulins and analogues for injection, intermediate-acting combined with fast-acting</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr >
+                                                                                <td>630602</td>
+                                                                                <td>08/29/2022</td>
+                                                                                <td>Aspirin 81 MG Chewable Tablet</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr class="gridalternaterowstyle">
+                                                                                <td>630602</td>
+                                                                                <td>09/11/2024</td>
+                                                                                <td>PainZone 1 % / 12 % / 20 % Topical Stick</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>antioxidants</td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr >
+                                                                                <td>133888</td>
+                                                                                <td>12/01/2015</td>
+                                                                                <td>Aspercreme Heat 10 % Topical Gel</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr class="gridalternaterowstyle">
+                                                                                <td>133888</td>
+                                                                                <td>12/01/2015</td>
+                                                                                <td>DARVOCET N 100 TABLETS</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr >
+                                                                                <td>26815</td>
+                                                                                <td>08/27/2012</td>
+                                                                                <td>NINIRIN DESMOPRESSIN ACETATE NASAL SPRAY ( FERRING)</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Rash</td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr class="gridalternaterowstyle">
+                                                                                <td>705</td>
+                                                                                <td>10/15/2011</td>
+                                                                                <td>ASPIRIN DELAYED-RELEASE TABLETS</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            <tr >
+                                                                                <td>2</td>
+                                                                                <td>06/23/2011</td>
+                                                                                <td>ASPIRIN/CODEINE TABLETS #4</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td>Rash</td>
+                                                                                <td></td>
+                                                                                <td>Active</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        
+                                                                            </tbody></table>
+      
     </div>
 	<div class="tab-pane fade" id="tab4" role="tabpanel">
       This is 4 tab content...

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90680653-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90680653-2');
+    </script>
+	<style>
+	.pull-right {
+  float: right !important;
+}
+.vertical-tabs {
+  border-right: 1px solid #dee2e6;
+  min-height: 250px;
+}
+
+.vertical-tabs .nav-link {
+  border-radius: 0;
+  color: #333;
+  padding: 10px 15px;
+}
+
+.vertical-tabs .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+.ckbox{
+display:inline !important;}
+.relation-row {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+      .ms-md-auto {
+        margin-left: auto !important;
+    }
+.table th {
+    font-size:13px;
+    font-weight:600;
+    background:#f5f5f5;
+    width:16%;
+}
+.table td {
+    font-size:14px;
+}
+.section {
+    background:#e5e5e5 !important;
+    font-weight:700;
+    font-size:14px;
+}
+.balance-box {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    background: #f8f9fa;
+    font-size: 14px;
+}
+.balance-box strong {
+    font-size: 16px;
+}
+.payment-title {
+    font-weight: 600;
+    margin: 15px 0 8px;
+}
+.table thead th {
+    background: #e9ecef;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.table tbody tr:nth-child(even) {
+    background: #f7f7f7;
+}
+.amount {
+    font-weight: 600;
+    text-align: right;
+}
+	</style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <!-- <meta name="twitter:site" content="@bootstrapdash">
+    <meta name="twitter:creator" content="@bootstrapdash">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Azia">
+    <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="twitter:image" content="https://www.bootstrapdash.com/azia/img/azia-social.png"> -->
+
+    <!-- Facebook -->
+    <!-- <meta property="og:url" content="https://www.bootstrapdash.com/azia">
+    <meta property="og:title" content="Azia">
+    <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
+
+    <meta property="og:image" content="https://www.bootstrapdash.com/azia/img/azia-social.png">
+    <meta property="og:image:secure_url" content="https://www.bootstrapdash.com/azia/img/azia-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600"> -->
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="BootstrapDash">
+
+    <title>patient portal</title>
+
+    <!-- vendor css -->
+    <link href="lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+
+    <!-- azia CSS -->
+    <link rel="stylesheet" id="theme-style" href="css/light.css">
+
+  </head>
+  <body>
+
+    <div class="az-header">
+      <div class="container">
+        <div class="az-header-left">
+          <a href="index.html" class="az-logo"><span></span> <div class="app-logo"></div></a>
+          <a href="" id="azMenuShow" class="az-header-menu-icon d-lg-none"><span></span></a>
+        </div><!-- az-header-left -->
+        <div class="az-header-menu">
+          <div class="az-header-menu-header">
+            <a href="index.html" class="az-logo"><span></span> <div class="app-logo"></div></a>
+            <a href="" class="close">&times;</a>
+          </div><!-- az-header-menu-header -->
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"><i class="typcn typcn-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="scheduling.html" class="nav-link"><i class="typcn typcn-calendar"></i> Scheduling</a>              
+            </li>
+            <li class="nav-item">
+              <a href="questionnaire.html" class="nav-link"><i class="typcn typcn-clipboard"></i>Questionnaire</a>
+            </li>
+            <li class="nav-item">
+              <a href="records.html" class="nav-link"><i class="typcn typcn-document-text"></i>Records</a>
+            </li>		
+			<li class="nav-item active show">
+              <a href="demo.html" class="nav-link"><i class="typcn typcn-folder"></i>Demographics</a>
+            </li>
+			<li class="nav-item">
+              <a href="mail.html" class="nav-link"><i class="typcn typcn-mail"></i>Secure Messaging</a>
+            </li>
+         
+          </ul>
+        </div><!-- az-header-menu -->
+        <div class="az-header-right">
+		<a onclick="toggleTheme()" href=""  class="az-header-search-link"><i class="typcn typcn-adjust-contrast" style="font-size:25px;"></i></a>
+      
+          <div class="dropdown az-profile-menu">
+            <a href="" class="az-img-user"><img src="img/faces/face1.jpg" alt=""></a>
+            <div class="dropdown-menu">
+              <div class="az-dropdown-header d-sm-none">
+                <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+              </div>
+              <!-- <div class="az-header-profile"> -->
+                <!-- <div class="az-img-user"> -->
+                  <!-- <img src="img/faces/face1.jpg" alt=""> -->
+                <!-- </div> -->
+                <!-- <h6>Aziana Pechon</h6> -->
+                <!-- <span>Premium Member</span> -->
+              <!-- </div> -->
+              <a href="" class="dropdown-item"><i class="typcn typcn-time"></i> Recent Login Activities</a>
+              <a href="" class="dropdown-item"><i class="typcn typcn-cog-outline"></i> Change Password</a>
+              <a href="login.html" class="dropdown-item"><i class="typcn typcn-power-outline"></i> Sign Out</a>
+            </div><!-- dropdown-menu -->
+          </div>
+        </div><!-- az-header-right -->
+      </div><!-- container -->
+    </div><!-- az-header -->
+
+    <div class="az-content az-content-dashboard" style="padding-top: 10px;">
+      <div class="container">
+        <div class="az-content-body">
+		<div class="az-dashboard-nav"> 
+            <nav class="nav">
+              <a class="nav-link" href="#" >Last Login : Dec 23 2025 9:06PM</a>
+            
+            </nav>
+            <nav class="nav">
+              <a class="nav-link" href="#" style="padding-right: 0px;">Server Time : 12:09:18 PM</a>
+              <a class="nav-link" href="#">Save Report</a>
+            </nav>
+          </div>
+          <div class="az-dashboard-one-title" style="margin-bottom:10px;">
+            <div>
+              <h3 class="az-dashboard-title">Welcome: Patient, Name</h3>
+              <!-- <p class="az-dashboard-text">Your web analytics dashboard template.</p> -->
+            </div>
+            <div class="az-content-header-right">
+              <div class="media">
+                <div class="media-body" style="text-align:right;">
+				<h6>Florida Heart Center</h6>
+                  <label>1900 Nebraska Ave., Ste.9 Fort Pierce, FL 34950<br>
+E-Mail: flheartcenter@bellsouth.net<br>
+Phone: 772-465-4499 772-465-0578<br>
+Fax: 772-466-0832</label>
+                  
+                </div><!-- media-body -->
+              </div><!-- media -->
+             
+              
+            </div>
+          </div><!-- az-dashboard-one-title -->
+
+          
+
+          <div class="row row-sm mg-b-20">
+            <div class="col-lg-12 ht-lg-100p">
+              <div class="card border-0">
+  <div class="card-header bg-gray-400 bd-b-0-f pd-b-0">
+     <ul class="nav nav-tabs d-flex w-100" role="tablist">
+
+      <li class="nav-item flex-fill">
+        <a class="nav-link active text-center w-100" data-toggle="tab" href="#tab1" role="tab">
+          Patient Gen info
+        </a>
+      </li>
+
+      <li class="nav-item flex-fill">
+        <a class="nav-link text-center w-100" data-toggle="tab" href="#tab2" role="tab">
+          Primary Insurance Info
+        </a>
+      </li>
+
+      <li class="nav-item flex-fill">
+        <a class="nav-link text-center w-100" data-toggle="tab" href="#tab3" role="tab">
+          Secondary Insurance Info
+        </a>
+      </li>
+
+      <li class="nav-item flex-fill">
+        <a class="nav-link text-center w-100" data-toggle="tab" href="#tab4" role="tab">
+         Payment Due Details
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="card-body border tab-content">
+    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+   
+<div class="table-responsive">
+<table class="table table-bordered align-middle mb-0">
+
+    <!-- MRN -->
+    <tr>
+        <td colspan="6" class="section">MRNO : 10001</td>
+    </tr>
+
+    <!-- Name -->
+    <tr>
+        <th>Title</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th colspan="2"></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>PATIENT</td>
+        <td>JS</td>
+        <td>DEMO</td>
+        <td colspan="2"></td>
+    </tr>
+
+    <!-- DOB -->
+    <tr>
+        <th>Suffix</th>
+        <th>Date of Birth</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>SSN</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>04/25/1988</td>
+        <td>37 Years</td>
+        <td>Male</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <!-- Current Address -->
+    <tr>
+        <td colspan="6" class="section">Current Address</td>
+    </tr>
+
+    <tr>
+        <th>Home Phone</th>
+        <th>Office Phone</th>
+        <th>Mobile Phone</th>
+        <th>Fax Number</th>
+        <th colspan="2">Email</th>
+    </tr>
+    <tr>
+        <td>222-222-2222</td>
+        <td>630-217-1808</td>
+        <td>111-111-1111</td>
+        <td></td>
+        <td colspan="2">emrgroup@vinfonet.com</td>
+    </tr>
+
+    <tr>
+        <th>Street Line 1</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Zip Code</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>Frenz 439 Dr</td>
+        <td>FORT PIERCE</td>
+        <td>FL</td>
+        <td>USA</td>
+        <td>34950</td>
+        <td></td>
+    </tr>
+
+    <!-- Permanent Address -->
+    <tr>
+        <td colspan="6" class="section">Permanent Address</td>
+    </tr>
+
+    <tr>
+        <th>Street Line 1</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Zip Code</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>Frenz 439 Dr</td>
+        <td>FORT PIERCE</td>
+        <td>FL</td>
+        <td>USA</td>
+        <td>34950</td>
+        <td></td>
+    </tr>
+
+    <!-- Options -->
+    <tr>
+        <th colspan="2">Primary Phone</th>
+        <th colspan="2">Mailing Address</th>
+        <th colspan="2">Contact Type</th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" checked>
+                <label class="form-check-label">Home</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio">
+                <label class="form-check-label">Office</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio">
+                <label class="form-check-label">Mobile</label>
+            </div>
+        </td>
+
+        <td colspan="2">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" checked>
+                <label class="form-check-label">Current</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio">
+                <label class="form-check-label">Permanent</label>
+            </div>
+        </td>
+
+        <td colspan="2">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">Postal</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" checked>
+                <label class="form-check-label">Phone</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">Email</label>
+            </div>
+        </td>
+    </tr>
+
+</table>
+</div>
+
+
+    </div>
+
+    <div class="tab-pane fade" id="tab2" role="tabpanel">
+<div class="table-responsive">
+<table class="table table-bordered align-middle mb-0">
+
+    <!-- Insurance Name -->
+    <tr>
+        <td colspan="6" class="section">
+            Insurance Name : <strong>VETERANS-FLORENCE</strong>
+        </td>
+    </tr>
+
+    <!-- Insurance Basic -->
+    <tr>
+        <th>Insurance Type</th>
+        <th>Co Pay</th>
+        <th>Policy No</th>
+        <th colspan="3">Insurance Group No</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>$10.00</td>
+        <td>1000002</td>
+        <td colspan="3"></td>
+    </tr>
+
+    <!-- Insured Address -->
+    <tr>
+        <td colspan="6" class="section">Insured's Address</td>
+    </tr>
+
+    <tr>
+        <th>Pt relationship to Insured</th>
+        <th>Subscriber First Name</th>
+        <th>Subscriber Middle Name</th>
+        <th colspan="3">Subscriber Last Name</th>
+    </tr>
+    <tr>
+        <td>Spouse</td>
+        <td>PATIENT</td>
+        <td>d</td>
+        <td colspan="3">DEMO</td>
+    </tr>
+
+    <tr>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>SSN</th>
+        <th colspan="3">Home Address</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="radio"> M
+            <input type="radio"> F
+        </td>
+        <td>12/31/1987</td>
+        <td>564-56-4563</td>
+        <td colspan="3">SUITE-11</td>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th colspan="3">Zip Code</th>
+    </tr>
+    <tr>
+        <td>NAPER</td>
+        <td>NY</td>
+        <td>USA</td>
+        <td colspan="3">6056311</td>
+    </tr>
+
+    <tr>
+        <th>Home Phone</th>
+        <th>Office</th>
+        <th>Mobile</th>
+        <th colspan="3">Fax</th>
+    </tr>
+    <tr>
+        <td>000-000-0000</td>
+        <td>897-984-6514X2312</td>
+        <td>846-545-6456</td>
+        <td colspan="3">987-987-4654</td>
+    </tr>
+
+    <tr>
+        <th>Email</th>
+        <th>Effective Date</th>
+        <th>Termination Date</th>
+        <th colspan="3">Employer / School Name</th>
+    </tr>
+    <tr>
+        <td>filehartcenter@iheartctr.com</td>
+        <td>3/6/2017</td>
+        <td>3/6/2017</td>
+        <td colspan="3">primary school</td>
+    </tr>
+
+    <!-- Insurance Company Details -->
+    <tr>
+        <td colspan="6" class="section">Insurance Company Details</td>
+    </tr>
+
+    <tr>
+        <th>Address1</th>
+        <th>Address2</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip Code</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>PO BOX 202117</td>
+        <td></td>
+        <td>FLORENCE</td>
+        <td>SC</td>
+        <td>29502</td>
+        <td>USA</td>
+    </tr>
+
+    <tr>
+        <th>Phone1</th>
+        <th>Phone2</th>
+        <th>Fax</th>
+        <th colspan="3"></th>
+    </tr>
+    <tr>
+        <td>888-901-7407</td>
+        <td></td>
+        <td>608-792-2143</td>
+        <td colspan="3"></td>
+    </tr>
+
+</table>
+</div>
+
+	
+    </div>
+
+    <div class="tab-pane fade" id="tab3" role="tabpanel">
+  
+<div class="table-responsive">
+<table class="table table-bordered align-middle mb-0">
+
+    <!-- Insurance Name -->
+    <tr>
+        <td colspan="6" class="section">
+            Insurance Name : <strong>ABAS INC-NAPERVILLE</strong>
+        </td>
+    </tr>
+
+    <!-- Insurance Basic -->
+    <tr>
+        <th>Insurance Type</th>
+        <th>Co Pay</th>
+        <th>Policy No</th>
+        <th colspan="3">Insurance Group No</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td>$</td>
+        <td>11111</td>
+        <td colspan="3"></td>
+    </tr>
+
+    <!-- Insured Address -->
+    <tr>
+        <td colspan="6" class="section">Insured's Address</td>
+    </tr>
+
+    <tr>
+        <th>Pt relationship to Insured</th>
+        <th>Subscriber First Name</th>
+        <th>Subscriber Middle Name</th>
+        <th colspan="3">Subscriber Last Name</th>
+    </tr>
+    <tr>
+        <td>Self</td>
+        <td>PATIENT</td>
+        <td>d</td>
+        <td colspan="3">DEMO</td>
+    </tr>
+
+    <tr>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>SSN</th>
+        <th colspan="3">Home Address</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="radio"> M
+            <input type="radio"> F
+        </td>
+        <td>12/31/1987</td>
+        <td></td>
+        <td colspan="3">Frenz 439</td>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th colspan="3">Zip Code</th>
+    </tr>
+    <tr>
+        <td>FORT PIERCE</td>
+        <td>FL</td>
+        <td>USA</td>
+        <td colspan="3">34950</td>
+    </tr>
+
+    <tr>
+        <th>Home Phone</th>
+        <th>Office</th>
+        <th>Mobile</th>
+        <th colspan="3">Fax</th>
+    </tr>
+    <tr>
+        <td>222-222-2222</td>
+        <td></td>
+        <td></td>
+        <td colspan="3"></td>
+    </tr>
+
+    <tr>
+        <th>Email</th>
+        <th>Effective Date</th>
+        <th>Termination Date</th>
+        <th colspan="3">Employer / School Name</th>
+    </tr>
+    <tr>
+        <td>filehartcenter@bellsouth.net</td>
+        <td>3/6/2017</td>
+        <td>3/6/2017</td>
+        <td colspan="3"></td>
+    </tr>
+
+    <!-- Insurance Company Details -->
+    <tr>
+        <td colspan="6" class="section">Insurance Company Details</td>
+    </tr>
+
+    <tr>
+        <th>Address1</th>
+        <th>Address2</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip Code</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>1733 PARK STREET</td>
+        <td>SUITE 300</td>
+        <td>NAPERVILLE</td>
+        <td>IL</td>
+        <td>60563</td>
+        <td>USA</td>
+    </tr>
+
+    <tr>
+        <th>Phone1</th>
+        <th>Phone2</th>
+        <th>Fax</th>
+        <th colspan="3"></th>
+    </tr>
+    <tr>
+        <td>800-736-7872</td>
+        <td></td>
+        <td></td>
+        <td colspan="3"></td>
+    </tr>
+
+</table>
+</div>
+
+      
+    </div>
+	<div class="tab-pane fade" id="tab4" role="tabpanel">
+      <!-- Balance Summary -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-md-4">
+            <div class="balance-box text-center">
+                Patient Balance Due ($):<br>
+                <strong>$19.26</strong>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="balance-box text-center">
+                Insurance Balance Due ($):<br>
+                <strong>$4,454.70</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Details -->
+    <div class="payment-title text-center">Payment Details</div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-sm align-middle">
+            <thead>
+                <tr>
+                    <th>Posted Date</th>
+                    <th>Check Date</th>
+                    <th>Mode of Payment</th>
+                    <th class="text-end">Amount ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2/27/2023</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$10.00</td>
+                </tr>
+                <tr>
+                    <td>2/2/2021</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$15.00</td>
+                </tr>
+                <tr>
+                    <td>9/27/2017</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$10.00</td>
+                </tr>
+                <tr>
+                    <td>1/23/2017</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$20.00</td>
+                </tr>
+                <tr>
+                    <td>2/13/2015</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$15.00</td>
+                </tr>
+                <tr>
+                    <td>2/13/2015</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$10.00</td>
+                </tr>
+                <tr>
+                    <td>9/22/2014</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$35.00</td>
+                </tr>
+                <tr>
+                    <td>4/24/2014</td>
+                    <td>4/23/2014</td>
+                    <td>Check</td>
+                    <td class="amount">$-1.00</td>
+                </tr>
+                <tr>
+                    <td>4/24/2014</td>
+                    <td></td>
+                    <td>Online</td>
+                    <td class="amount">$11.00</td>
+                </tr>
+                <tr>
+                    <td>4/24/2014</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$4.00</td>
+                </tr>
+                <tr>
+                    <td>4/19/2013</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$10.00</td>
+                </tr>
+                <tr>
+                    <td>2/7/2013</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$40.00</td>
+                </tr>
+                <tr>
+                    <td>9/6/2012</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$10.00</td>
+                </tr>
+                <tr>
+                    <td>9/6/2012</td>
+                    <td>9/5/2012</td>
+                    <td>NoPay</td>
+                    <td class="amount">$0.00</td>
+                </tr>
+                <tr>
+                    <td>8/23/2012</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$100.00</td>
+                </tr>
+                <tr>
+                    <td>7/20/2012</td>
+                    <td></td>
+                    <td>Cash</td>
+                    <td class="amount">$14.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+	
+  </div>
+</div>
+            </div><!-- col -->
+            
+          </div><!-- row -->
+
+          
+       
+
+        </div><!-- az-content-body -->
+      </div>
+    </div><!-- az-content -->
+
+    <div class="az-footer ht-40">
+      <div class="container ht-100p pd-t-0-f">
+        <span class=" d-block text-center text-sm-left d-sm-inline-block">© All Rights Reserved 2025</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">MDCare Patient Portal</span>
+      </div><!-- container -->
+    </div><!-- az-footer -->
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/ionicons/ionicons.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="lib/peity/jquery.peity.min.js"></script>
+
+    <script src="js/azia.js"></script>
+    <script src="js/chart.flot.sampledata.js"></script>
+    <script src="js/dashboard.sampledata.js"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script>
+  document.querySelectorAll('.relation-check').forEach(cb => {
+    cb.addEventListener('change', function () {
+      const key = this.dataset.row;
+      document.getElementById(key + '-name').disabled = !this.checked;
+      document.getElementById(key + '-comments').disabled = !this.checked;
+    });
+  });
+</script> 
+<script>
+function toggleTheme() {
+  const link = document.getElementById("theme-style");
+  const isLight = link.getAttribute("href").includes("light");
+
+  const theme = isLight ? "dark" : "light";
+
+  link.setAttribute("href", "css/" + theme + ".css");
+  localStorage.setItem("theme", theme);
+}
+
+/* Load saved theme on page load */
+(function () {
+  const theme = localStorage.getItem("theme") || "light";
+  document
+    .getElementById("theme-style")
+    .setAttribute("href", "css/" + theme + ".css");
+})();
+</script>
+  </body>
+</html>

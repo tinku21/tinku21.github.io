@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90680653-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-90680653-2');
+    </script>
+	<style>
+	.pull-right {
+  float: right !important;
+}
+
+	</style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Twitter -->
+    <!-- <meta name="twitter:site" content="@bootstrapdash">
+    <meta name="twitter:creator" content="@bootstrapdash">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Azia">
+    <meta name="twitter:description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="twitter:image" content="https://www.bootstrapdash.com/azia/img/azia-social.png"> -->
+
+    <!-- Facebook -->
+    <!-- <meta property="og:url" content="https://www.bootstrapdash.com/azia">
+    <meta property="og:title" content="Azia">
+    <meta property="og:description" content="Responsive Bootstrap 4 Dashboard Template">
+
+    <meta property="og:image" content="https://www.bootstrapdash.com/azia/img/azia-social.png">
+    <meta property="og:image:secure_url" content="https://www.bootstrapdash.com/azia/img/azia-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600"> -->
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="BootstrapDash">
+
+    <title>patient portal</title>
+
+    <!-- vendor css -->
+    <link href="lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+
+    <!-- azia CSS -->
+    <link rel="stylesheet" id="theme-style" href="css/light.css">
+
+  </head>
+  <body>
+
+    <div class="az-header">
+      <div class="container">
+        <div class="az-header-left">
+          <a href="index.html" class="az-logo"><span></span> <div class="app-logo"></div></a>
+          <a href="" id="azMenuShow" class="az-header-menu-icon d-lg-none"><span></span></a>
+        </div><!-- az-header-left -->
+        <div class="az-header-menu">
+          <div class="az-header-menu-header">
+            <a href="index.html" class="az-logo"><span></span> <div class="app-logo"></div></a>
+            <a href="" class="close">&times;</a>
+          </div><!-- az-header-menu-header -->
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"><i class="typcn typcn-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="scheduling.html" class="nav-link"><i class="typcn typcn-calendar"></i> Scheduling</a>              
+            </li>
+            <li class="nav-item">
+              <a href="questionnaire.html" class="nav-link"><i class="typcn typcn-clipboard"></i>Questionnaire</a>
+            </li>
+            <li class="nav-item">
+              <a href="records.html" class="nav-link"><i class="typcn typcn-document-text"></i>Records</a>
+            </li>		
+			<li class="nav-item">
+              <a href="demo.html" class="nav-link"><i class="typcn typcn-folder"></i>Demographics</a>
+            </li>
+			<li class="nav-item active show">
+              <a href="mail.html" class="nav-link"><i class="typcn typcn-mail"></i>Secure Messaging</a>
+            </li>
+         
+          </ul>
+        </div><!-- az-header-menu -->
+        <div class="az-header-right">
+		<a onclick="toggleTheme()" href=""  class="az-header-search-link"><i class="typcn typcn-adjust-contrast" style="font-size:25px;"></i></a>
+      
+          <div class="dropdown az-profile-menu">
+            <a href="" class="az-img-user"><img src="img/faces/face1.jpg" alt=""></a>
+            <div class="dropdown-menu">
+              <div class="az-dropdown-header d-sm-none">
+                <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+              </div>
+              <!-- <div class="az-header-profile"> -->
+                <!-- <div class="az-img-user"> -->
+                  <!-- <img src="img/faces/face1.jpg" alt=""> -->
+                <!-- </div> -->
+                <!-- <h6>Aziana Pechon</h6> -->
+                <!-- <span>Premium Member</span> -->
+              <!-- </div> -->
+              <a href="" class="dropdown-item"><i class="typcn typcn-time"></i> Recent Login Activities</a>
+              <a href="" class="dropdown-item"><i class="typcn typcn-cog-outline"></i> Change Password</a>
+              <a href="login.html" class="dropdown-item"><i class="typcn typcn-power-outline"></i> Sign Out</a>
+            </div><!-- dropdown-menu -->
+          </div>
+        </div><!-- az-header-right -->
+      </div><!-- container -->
+    </div><!-- az-header -->
+
+    <div class="az-content az-content-dashboard" style="padding-top: 10px;">
+      <div class="container">
+        <div class="az-content-body">
+		<div class="az-dashboard-nav"> 
+            <nav class="nav">
+              <a class="nav-link" href="#" >Last Login : Dec 23 2025 9:06PM</a>
+            
+            </nav>
+            <nav class="nav">
+              <a class="nav-link" href="#" style="padding-right: 0px;">Server Time : 12:09:18 PM</a>
+              <a class="nav-link" href="#">Save Report</a>
+            </nav>
+          </div>
+          <div class="az-dashboard-one-title" style="margin-bottom:10px;">
+            <div>
+              <h3 class="az-dashboard-title">Welcome: Patient, Name</h3>
+              <!-- <p class="az-dashboard-text">Your web analytics dashboard template.</p> -->
+            </div>
+            <div class="az-content-header-right">
+              <div class="media">
+                <div class="media-body" style="text-align:right;">
+				<h6>Florida Heart Center</h6>
+                  <label>1900 Nebraska Ave., Ste.9 Fort Pierce, FL 34950<br>
+E-Mail: flheartcenter@bellsouth.net<br>
+Phone: 772-465-4499 772-465-0578<br>
+Fax: 772-466-0832</label>
+                  
+                </div><!-- media-body -->
+              </div><!-- media -->
+             
+              
+            </div>
+          </div><!-- az-dashboard-one-title -->
+
+          
+
+        <div class="container">
+		
+        <div class="az-content-left az-content-left-mail">
+
+          <div class="az-content-header">
+            <a href="" id="azMenuShow" class="az-header-menu-icon"><span></span></a>
+            <a href="index.html" class="az-logo">az<span>i</span>a</a>
+            <a href="" id="azContentLeftHide" class="az-header-arrow">
+              <i class="icon ion-md-arrow-forward d-sm-none"></i>
+              <i class="icon ion-md-close d-none d-sm-block"></i>
+            </a>
+          </div><!-- az-content-header -->
+
+          <a id="btnCompose" href="" class="btn btn-primary btn-compose">Compose</a>
+          <div class="az-mail-menu">
+            <nav class="nav az-nav-column mg-b-20">
+              <a href="" class="nav-link active"><i class="typcn typcn-mail"></i> Inbox <span>20</span></a>
+             
+              <a href="" class="nav-link"><i class="typcn typcn-arrow-forward-outline"></i> Sent Mail <span>8</span></a>
+              <a href="" class="nav-link"><i class="typcn typcn-pen"></i> Drafts <span>15</span></a>
+              <a href="" class="nav-link"><i class="typcn typcn-cancel-outline"></i> Spam <span>128</span></a>
+              <a href="" class="nav-link"><i class="typcn typcn-trash"></i> Trash <span>6</span></a>
+            </nav>
+
+          </div><!-- az-mail-menu -->
+        </div><!-- az-content-left -->
+        <div class="az-content-body az-content-body-mail" style="        border-right: 1px solid #cdd4e0;">
+          <div class="az-mail-header">
+            <div>
+              <h4 class="az-content-title mg-b-5">Inbox</h4>
+              <p>You have 2 unread messages</p>
+            </div>
+            <div style="padding-right: 15px;">
+              <span>1-50 of 1200</span>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-secondary disabled"><i class="icon ion-ios-arrow-back"></i></button>
+                <button type="button" class="btn btn-outline-secondary"><i class="icon ion-ios-arrow-forward"></i></button>
+              </div>
+            </div>
+          </div><!-- az-mail-list-header -->
+          <div class="az-mail-options">
+            <label class="ckbox">
+              <input id="checkAll" type="checkbox">
+              <span></span>
+            </label>
+            <div class="btn-group">
+              <button class="btn btn-light"><i class="typcn typcn-arrow-sync"></i></button>
+              <button class="btn btn-light disabled"><i class="typcn typcn-archive"></i></button>
+              <button class="btn btn-light disabled"><i class="typcn typcn-info-outline"></i></button>
+              <button class="btn btn-light disabled"><i class="typcn typcn-trash"></i></button>
+              <button class="btn btn-light disabled"><i class="typcn typcn-folder"></i></button>
+              <button class="btn btn-light disabled"><i class="typcn typcn-tag"></i></button>
+            </div><!-- btn-group -->
+          </div><!-- az-mail-options -->
+
+          <div class="az-mail-list">
+            <div class="az-mail-item unread">
+              <div class="az-mail-checkbox">
+                <label class="ckbox">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+              </div><!-- az-mail-checkbox -->
+              <div class="az-mail-star">
+                <i class="typcn typcn-star"></i>
+              </div><!-- az-mail-star -->
+              <div class="az-mail-body">
+                <div class="az-mail-from">Adrian Monino</div>
+                <div class="az-mail-subject">
+                  <strong>Someone who believes in you</strong>
+                  <span>enean commodo li gula eget dolor cum socia eget dolor enean commodo li gula eget dolor cum socia eget dolor</span>
+                </div>
+              </div><!-- az-mail-body -->
+              <div class="az-mail-attachment"><i class="typcn typcn-attachment"></i></div>
+              <div class="az-mail-date">11:30am</div>
+            </div><!-- az-mail-item -->
+            <div class="az-mail-item unread">
+              <div class="az-mail-checkbox">
+                <label class="ckbox">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+              </div><!-- az-mail-checkbox -->
+              <div class="az-mail-star active">
+                <i class="typcn typcn-star"></i>
+              </div><!-- az-mail-star -->
+             <div class="az-mail-body">
+                <div class="az-mail-from">Albert Ansing</div>
+                <div class="az-mail-subject">
+                  <strong>Here's What You Missed This Week</strong>
+                  <span>enean commodo li gula eget dolor cum socia eget dolor enean commodo li gula eget dolor cum socia eget dolor...</span>
+                </div>
+              </div><!-- az-mail-body -->
+              <div class="az-mail-date">06:50am</div>
+            </div><!-- az-mail-item -->
+            <div class="az-mail-item">
+              <div class="az-mail-checkbox">
+                <label class="ckbox">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+              </div><!-- az-mail-checkbox -->
+              <div class="az-mail-star">
+                <i class="typcn typcn-star"></i>
+              </div><!-- az-mail-star -->
+              <div class="az-mail-body">
+                <div class="az-mail-from">Carla Guden</div>
+                <div class="az-mail-subject">
+                  <strong>4 Ways to Optimize Your Search</strong>
+                  <span>viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor</span>
+                </div>
+              </div><!-- az-mail-body -->
+              <div class="az-mail-attachment"><i class="typcn typcn-attachment"></i></div>
+              <div class="az-mail-date">Yesterday</div>
+            </div><!-- az-mail-item -->
+            <div class="az-mail-item unread">
+              <div class="az-mail-checkbox">
+                <label class="ckbox">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+              </div><!-- az-mail-checkbox -->
+              <div class="az-mail-star">
+                <i class="typcn typcn-star"></i>
+              </div><!-- az-mail-star -->
+             <div class="az-mail-body">
+                <div class="az-mail-from">Reven Galeon</div>
+                <div class="az-mail-subject">
+                  <strong>We're Giving a Macbook for Free</strong>
+                  <span>viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor</span>
+                </div>
+              </div><!-- az-mail-body -->
+              <div class="az-mail-date">Yesterday</div>
+            </div><!-- az-mail-item -->
+            <div class="az-mail-item">
+              <div class="az-mail-checkbox">
+                <label class="ckbox">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+              </div><!-- az-mail-checkbox -->
+              <div class="az-mail-star">
+                <i class="typcn typcn-star"></i>
+              </div><!-- az-mail-star -->
+              <div class="az-mail-body">
+                <div class="az-mail-from">Elisse Tan</div>
+                <div class="az-mail-subject">
+                  <strong>Keep Your Personal Data Safe</strong>
+                  <span>viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor</span>
+                </div>
+              </div><!-- az-mail-body -->
+              <div class="az-mail-date">Oct 13</div>
+            </div><!-- az-mail-item -->
+            <div class="az-mail-item">
+              <div class="az-mail-checkbox">
+                <label class="ckbox">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+              </div><!-- az-mail-checkbox -->
+              <div class="az-mail-star">
+                <i class="typcn typcn-star"></i>
+              </div><!-- az-mail-star -->
+              <div class="az-mail-body">
+                <div class="az-mail-from">Marianne Audrey</div>
+                <div class="az-mail-subject">
+                  <strong>We've Made Some Changes</strong>
+                  <span>viva mus elemen tum semper nisi enean vulputat enean commodo li gula eget dolor cum socia eget dolor</span>
+                </div>
+              </div><!-- az-mail-body -->
+              <div class="az-mail-date">Oct 13</div>
+            </div><!-- az-mail-item -->
+            
+           
+           
+           
+          </div><!-- az-mail-list -->
+
+       
+
+        </div><!-- az-content-body -->
+      </div>
+
+    
+        </div><!-- az-content-body -->
+      </div>
+    </div><!-- az-content -->
+
+    <div class="az-footer ht-40">
+      <div class="container ht-100p pd-t-0-f">
+        <span class=" d-block text-center text-sm-left d-sm-inline-block">© All Rights Reserved 2025</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">MDCare Patient Portal</span>
+      </div><!-- container -->
+    </div><!-- az-footer -->
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/ionicons/ionicons.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.js"></script>
+    <script src="lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="lib/peity/jquery.peity.min.js"></script>
+
+    <script src="js/azia.js"></script>
+    <script src="js/chart.flot.sampledata.js"></script>
+    <script src="js/dashboard.sampledata.js"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <script>
+      $(function(){
+        'use strict'
+
+        $('#checkAll').on('click', function(){
+          if($(this).is(':checked')) {
+            $('.az-mail-list .ckbox input').each(function(){
+              $(this).closest('.az-mail-item').addClass('selected');
+              $(this).attr('checked', true);
+            });
+
+            $('.az-mail-options .btn:not(:first-child)').removeClass('disabled');
+          } else {
+            $('.az-mail-list .ckbox input').each(function(){
+              $(this).closest('.az-mail-item').removeClass('selected');
+              $(this).attr('checked', false);
+            });
+
+            $('.az-mail-options .btn:not(:first-child)').addClass('disabled');
+          }
+        });
+
+        $('.az-mail-item .az-mail-checkbox input').on('click', function(){
+          if($(this).is(':checked')) {
+            $(this).attr('checked', false);
+            $(this).closest('.az-mail-item').addClass('selected');
+
+            $('.az-mail-options .btn:not(:first-child)').removeClass('disabled');
+
+          } else {
+            $(this).attr('checked', true);
+            $(this).closest('.az-mail-item').removeClass('selected');
+
+            if(!$('.az-mail-list .selected').length) {
+              $('.az-mail-options .btn:not(:first-child)').addClass('disabled');
+            }
+          }
+        });
+
+        $('.az-mail-star').on('click', function(e){
+          $(this).toggleClass('active');
+        });
+
+        $('#btnCompose').on('click', function(e){
+          e.preventDefault();
+          $('.az-mail-compose').show();
+        });
+
+        $('.az-mail-compose-header a:first-child').on('click', function(e){
+          e.preventDefault();
+          $('.az-mail-compose').toggleClass('az-mail-compose-minimize');
+        })
+
+        $('.az-mail-compose-header a:nth-child(2)').on('click', function(e){
+          e.preventDefault();
+          $(this).find('.fas').toggleClass('fa-compress');
+          $(this).find('.fas').toggleClass('fa-expand');
+          $('.az-mail-compose').toggleClass('az-mail-compose-compress');
+          $('.az-mail-compose').removeClass('az-mail-compose-minimize');
+        });
+
+        $('.az-mail-compose-header a:last-child').on('click', function(e){
+          e.preventDefault();
+          $('.az-mail-compose').hide(100);
+          $('.az-mail-compose').removeClass('az-mail-compose-minimize');
+        });
+
+
+      });
+    </script>
+<script>
+function toggleTheme() {
+  const link = document.getElementById("theme-style");
+  const isLight = link.getAttribute("href").includes("light");
+
+  const theme = isLight ? "dark" : "light";
+
+  link.setAttribute("href", "css/" + theme + ".css");
+  localStorage.setItem("theme", theme);
+}
+
+/* Load saved theme on page load */
+(function () {
+  const theme = localStorage.getItem("theme") || "light";
+  document
+    .getElementById("theme-style")
+    .setAttribute("href", "css/" + theme + ".css");
+})();
+</script>
+  </body>
+</html>
