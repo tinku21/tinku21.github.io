@@ -220,29 +220,17 @@ const loader  = document.getElementById('loader');
 const folder = 'images/dec-2025/';
 const maxImages = 200;
 
-let current = 1;
+let loadedCount = 0;
+let triedCount  = 0;
 
-function loadImage(index) {
-    const img = new Image();
-    img.loading = 'lazy';
-    img.className = 'gallery-img shadow';
+// Initialize Lightbox
+const lightbox = GLightbox({
+    loop: true,
+    touchNavigation: true,
+    zoomable: true
+});
 
-    // Try lowercase first
-    img.src = folder + index + '.jpg';
-
-    img.onload = () => addImage(img);
-
-    img.onerror = () => {
-        // Try uppercase extension
-        img.src = folder + index + '.JPG';
-
-        img.onload = () => addImage(img);
-        img.onerror = () => {
-            // Image doesn't exist at all
-        };
-    };
-}
-
+// Add image to gallery
 function addImage(img) {
     loader.style.display = 'none';
 
@@ -258,20 +246,52 @@ function addImage(img) {
     col.appendChild(link);
     gallery.appendChild(col);
 
+    loadedCount++;
     lightbox.reload();
+}
+
+// Try loading image with multiple extensions
+function loadImage(index) {
+    const extensions = ['jpg', 'JPG', 'jpeg', 'JPEG'];
+    let i = 0;
+
+    const img = new Image();
+    img.loading = 'lazy';
+    img.className = 'gallery-img shadow';
+
+    function tryNext() {
+        if (i >= extensions.length) {
+            triedCount++;
+            checkDone();
+            return;
+        }
+        img.src = folder + index + '.' + extensions[i++];
+    }
+
+    img.onload = () => {
+        triedCount++;
+        addImage(img);
+        checkDone();
+    };
+
+    img.onerror = tryNext;
+
+    tryNext();
+}
+
+// Check if no images found
+function checkDone() {
+    if (triedCount === maxImages && loadedCount === 0) {
+        loader.innerHTML = 'No images found';
+    }
 }
 
 // Load images
 for (let i = 1; i <= maxImages; i++) {
     loadImage(i);
 }
-
-// Initialize lightbox
-const lightbox = GLightbox({
-    loop: true,
-    touchNavigation: true
-});
 </script>
+
 
 
 
