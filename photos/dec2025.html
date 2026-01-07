@@ -59,6 +59,51 @@
     width: 100% !important;
     height: auto;
 }
+
+
+.month-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.month-list li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.month-list li a:hover {
+  background: #f7f7f7;
+  color: #e60000;
+}
+
+.month-list .month {
+  font-weight: 500;
+}
+
+.month-list .year {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Active month */
+.month-list li.active a {
+  background: #fff1f1;
+  color: #e60000;
+  font-weight: 600;
+}
+
+/* Optional subtle divider */
+.month-list li:not(:last-child) {
+  border-bottom: 1px dashed #eee;
+}
 	</style>
 </head>
 
@@ -69,37 +114,37 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"  style="padding:18px 0px;">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-<img src="assets/img/logo.png" alt="">
+<img src="assets/img/logo.png" alt="" style="border:0px !important;">
       </a>
 
-      <nav id="navmenu" class="navmenu">
+       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home<br></a></li>
           <li class="dropdown"><a href="#"><span class="toggle-dropdown">Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>   
+            <ul class="month-list">   
  <li class="dropdown"><a href="#"><span class=" toggle-dropdown">Birthday Celebration 2026</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-				 <li><a href="#">Jan, 2026 <small>Comming Soon</small></a></li>
+				
+				  <li><a href="#"><span class="month">Jan, 2026</span><span class="year">Comming Soon</span></a></li>
 				 <!-- <li><a href="#">Comming Soon</a></li> -->
 				                 
                 </ul>
               </li>			
               <li class="dropdown"><a href="#"><span class=" toggle-dropdown">Birthday Celebration 2025</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-				<li><a href="dec2025.html">Dec, 2025</a></li>
-<li><a href="#">Nov, 2025</a></li>
-<li><a href="#">Oct, 2025</a></li>
-<li><a href="#">Sep, 2025</a></li>
-<li><a href="#">Aug, 2025</a></li>
-<li><a href="#">Jul, 2025</a></li>
-<li><a href="#">Jun, 2025</a></li>
-<li><a href="#">May, 2025</a></li>
-<li><a href="#">Apr, 2025</a></li>
-<li><a href="#">Mar, 2025</a></li>
-<li><a href="#">Feb, 2025</a></li>
-<li><a href="#">Jan, 2025</a></li>
-                 
-                </ul>
+               <ul class="month-list">
+  <li class="active"><a href="dec2025.html"><span class="month">December</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">November</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">October</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">September</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">August</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">July</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">June</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">May</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">April</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">March</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">February</span><span class="year">2025</span></a></li>
+  <li><a href="#"><span class="month">January</span><span class="year">2025</span></a></li>
+</ul>
               </li>
 			  
               <li><a href="#">Vinayaka Chaturthi 2025</a></li>
@@ -135,11 +180,36 @@
         <p Class="fontclass2"><span style="font-weight:bold">Birthday Celebration </span> <span class="description-title"  style="font-size:22px;">December, 2025</span></p>
       </div><!-- End Section Title -->
 
-<!-- Gallery -->
-<div class="container pb-5">
+
+<div class="container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Images</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Videos</button>
+    </li>
+   
+  </ul>
+
+  <div class="tab-content pt-2" id="myTabContent" >
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="pb-5">
     <div class="row g-4" id="gallery"></div>
     <div id="loader">Loading images...</div>
 </div>
+
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <h2 class="mb-3" style="text-align:center;">Comming Soon</h2>
+     
+    </div>
+   
+  </div>
+</div>
+
+
+<!-- Gallery -->
 
 <!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
@@ -149,7 +219,7 @@ const gallery = document.getElementById('gallery');
 const loader  = document.getElementById('loader');
 
 const folder = 'images/dec-2025/';
-const maxImages = 50;
+const maxImages = 200;
 
 let loadedAny = false;
 

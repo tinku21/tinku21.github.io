@@ -757,7 +757,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -1693,3 +1693,7 @@ section,
 
 iframe{
 border:5px solid #f1ce37; border-radius:10px;width: 100%;}
+
+img {
+    /* vertical-align: middle; */
+border: 5px solid #f1ce37;}
