@@ -183,6 +183,107 @@
 .navbaremail li:hover ul {
   display: block;
 }
+/* GRID */
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+}
+
+/* 2 columns (tablet) */
+@media (min-width: 768px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 3 columns (desktop) */
+@media (min-width: 1100px) {
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* CARD */
+.feature-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+/* HEADER */
+.feature-header {
+    background: linear-gradient(135deg, #6fbf73, #025b97);
+    color: #fff;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.feature-header i {
+    margin-right: 8px;
+}
+
+/* LIST */
+.feature-list {
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.feature-list li {
+    padding: 9px 0;
+    display: flex;
+    align-items: flex-start;
+    
+    color: #444;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.feature-list li:last-child {
+    border-bottom: none;
+}
+
+.feature-list i {
+    color: #4caf50;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.feature-list li:hover {
+    color: #000;
+    padding-left: 5px;
+}
+
+/* HIGHLIGHT */
+.highlight {
+    position: relative;
+    background: #f0f7ff;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border-left: 4px solid #4caf50;
+}
+
+.badge-new {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #ff3b3b;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 7px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
 	</style>
     </head>
 
@@ -254,8 +355,8 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other Services</a>
                                 <div class="dropdown-menu m-0">
-                                    <a href="#" class="dropdown-item">Pricing&nbsp;Plan</a>
-                                    <a href="#" class="dropdown-item">Blog Post</a>
+                                    <a href="#" class="dropdown-item">Secure Fax</a>
+                                    <a href="#" class="dropdown-item">Secure Online Forms</a>
                                     
                                 </div>
                             </div>
@@ -263,16 +364,20 @@
 							<div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">login</a>
                                 <div class="dropdown-menu m-0">
-                                    <a href="#" class="dropdown-item">Pricing&nbsp;Plan</a>
-                                    <a href="#" class="dropdown-item">Blog Post</a>
+                                    <a href="#" class="dropdown-item">Account Administration/Billing</a>
+                                   
                                     
                                 </div>
                             </div>
 							<div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Help</a>
                                 <div class="dropdown-menu m-0">
-                                    <a href="#" class="dropdown-item">Pricing&nbsp;Plan</a>
-                                    <a href="#" class="dropdown-item">Blog Post</a>
+                                    <a href="#" class="dropdown-item">Webmail Help</a>
+                                    <a href="#" class="dropdown-item">Online Help/Support</a>
+									<a href="#" class="dropdown-item">Download Quick Start Guide</a>
+									<a href="#" class="dropdown-item">iPhone Setup Guide</a>
+									<a href="#" class="dropdown-item">Android Setup Guide</a>
+									<a href="#" class="dropdown-item">Support Request</a>
                                     
                                 </div>
                             </div>
@@ -377,6 +482,62 @@ HIPAA Compliant Fax service with no hassles !!</p>
             </div>
         </div>
         <!-- About End -->
+		   <div class="container-fluid services py-5 wow fadeInUp" data-wow-delay=".6s" style="margin-top:0px;">
+		   <div class="container">
+		    <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                    <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our Features</h5>
+                    <h1 class="display-5">Features of Email Hosting</h1>
+                </div>
+<div class="feature-grid">
+
+    <!-- CARD 1 -->
+    <div class="feature-card" >
+        <div class="feature-header">
+            <i class="fa-solid fa-gift"></i> Email Features
+        </div>
+        <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-check"></i> Legal Archival</li>
+            <li><i class="fa-solid fa-circle-check"></i> BCC Archiving</li>
+            <li><i class="fa-solid fa-circle-check"></i> HIPAA Business Agreement</li>
+            <li><i class="fa-solid fa-circle-check"></i> Facility to delete already sent message</li>
+            <li><i class="fa-solid fa-circle-check"></i> Security is strictly enforced</li>
+        </ul>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="feature-card">
+        <div class="feature-header">
+            <i class="fa-solid fa-shield-halved"></i> Access & Control
+        </div>
+        <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-check"></i> Outlook & Webmail</li>
+            <li><i class="fa-solid fa-circle-check"></i> Mobile Access</li>
+            <li><i class="fa-solid fa-circle-check"></i> "Intelligent Automation"</li>
+            <li><i class="fa-solid fa-circle-check"></i> Facility to validate new recipient</li>
+
+            <li class="highlight">
+                <span class="badge-new">NEW</span>
+                <strong style="width: 190px; padding-left: 7px; padding-top: 5px;">Email Your Doc</strong><br>
+                <small style="padding-left:15px;">Anyone can initiate secure message to MDofficeMail user. Go to the webpage, compose and send!</small>
+            </li>
+        </ul>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="feature-card">
+        <div class="feature-header">
+            <i class="fa-solid fa-sliders"></i> Extras
+        </div>
+        <ul class="feature-list">
+            <li><i class="fa-solid fa-circle-check"></i> Customization</li>
+            <li><i class="fa-solid fa-circle-check"></i> Free trial with no obligation</li>
+            <li><i class="fa-solid fa-circle-check"></i> Strict Privacy Policy</li>
+            <li><i class="fa-solid fa-circle-check"></i> Email Support</li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
 
 
         <!-- Services Start -->
