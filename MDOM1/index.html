@@ -7,14 +7,14 @@
     <title>MD OfficeMail</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" /> -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- Web Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
@@ -266,8 +266,11 @@ and HIPAA Compliant Fax service with no hassles !!</span>
 							
                                 <h2 class="title">Secure online Patient forms & Contact forms.</h2>
                             </div>
+							
+							
                         </div>
-                      
+                      <br>
+							 <a href="#" class="morebtn" style="float:left;" data-bs-toggle="modal" data-bs-target="#exampleModal">Receive a sample encrypted message. click here...</a>
                     </div>
                 </div>
 				  <div class="col-lg-4 col-md-4 col-12">
@@ -319,7 +322,7 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-service wow fadeInUp" data-wow-delay=".4s">
                         <div class="serial">
-                            <span><i class="lni lni-shield"></i></span>
+                            <span><i class="fa-solid fa-shield-halved"></i></span>
                         </div>
                         <h3><a href="service-single.html">Secure Forms</a></h3><p style="margin-top: -10px;"><small>HIPAA Compliant and secure form for website.</small></p>
                         <p>Customized header to match your website and customized fields to suit your requirement.</p>
@@ -486,47 +489,9 @@ and HIPAA Compliant Fax service with no hassles !!</span>
             </div>
         </div>
     </section>
-    <!--/ End Pricing Table -->
-
-    <!-- Start Clients Area -->
-    <section class="client-logo-section" style="display:none;">
-        <div class="container">
-            <div class="client-logo-wrapper">
-                <div class="client-logo-carousel d-flex align-items-center justify-content-between">
-                    <div class="client-logo">
-                        <img src="assets/images/client1.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client2.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client3.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client4.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client5.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client2.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client3.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client4.png" alt="">
-                    </div>
-                    <div class="client-logo">
-                        <img src="assets/images/client5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Clients Area -->
-
-    <!-- Start Newsletter Area -->
+  
+   
+  
     <section class="newsletter section">
         <div class="container">
             <div class="row ">
@@ -647,7 +612,29 @@ and HIPAA Compliant Fax service with no hassles !!</span>
     <a href="#" class="scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
     </a>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MDVault Encrypted Message Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <P>Please enter your email address below and submit to receive a sample encrypted message instantly.</p><br>
 
+<p>Sometimes the message may land in your junk mail folder.</p><br>
+<p>
+Enter your email address: <input name="TextBox1" type="text" class="form-control input-sm">
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
     <!-- ========================= JS here ========================= -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
@@ -667,34 +654,6 @@ and HIPAA Compliant Fax service with no hassles !!</span>
             'autoplayVideos': true,
         });
 
-        //====== Clients Logo Slider
-        tns({
-            container: '.client-logo-carousel',
-            slideBy: 'page',
-            autoplay: true,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 15,
-            nav: false,
-            controls: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                540: {
-                    items: 2,
-                },
-                768: {
-                    items: 3,
-                },
-                992: {
-                    items: 4,
-                },
-                1170: {
-                    items: 6,
-                }
-            }
-        });
 
         //======== Home Slider
         var slider = new tns({
