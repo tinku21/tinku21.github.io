@@ -356,6 +356,7 @@ p {
 	line-height:24px;
 	font-weight:400;
 	font-size:14px;
+	text-align:justify;
 }
 a,button,input,textarea{
 	font-weight:600;
@@ -670,13 +671,8 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: inherit;
-}
 
-a:visited {
-	color: inherit;
-}
+
 
 a:hover, a:focus, a:active {
 	color: inherit;
