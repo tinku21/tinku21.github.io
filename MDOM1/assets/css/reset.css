@@ -257,7 +257,7 @@ th {
     position: relative;
 }
 .breadcrumbs .breadcrumbs-content .breadcrumb-nav li a:hover{
-    color: #0C59DB;
+    color: #a9c8fb;
 }
 .breadcrumbs .breadcrumbs-content .breadcrumb-nav li a:after{
     content: '';
@@ -351,7 +351,7 @@ h6{
 	line-height:20px;
 }
 p {
-	color:#7b7b7b;
+	color:#222;
 	margin: 0;
 	line-height:24px;
 	font-weight:400;
