@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+	 <link rel="stylesheet" href="assets/css/anim.css" />
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	
 <style>
 
 
@@ -380,7 +382,7 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                         </div>
 						<div class="service-buttons">
     <a href="#" class="morebtn_home">Read More</a>
-    <a href="#" class="morebtn_home">Play Video</a>
+    <a href="#" class="morebtn_home" id="btnVideo1">Play Video</a>
 </div>
 						
                     </div>
@@ -402,7 +404,7 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                         </div>
 						<div class="service-buttons">
     <a href="#" class="morebtn_home">Read More</a>
-    <a href="#" class="morebtn_home">Play Video</a>
+    <a href="#" id="btnVideo2" class="morebtn_home">Play Video</a>
 </div>
                     </div>
                 </div>
@@ -423,7 +425,7 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                         </div>
 						<div class="service-buttons">
     <a href="#" class="morebtn_home">Read More</a>
-    <a href="#" class="morebtn_home">Play Video</a>
+    <a href="#" id="btnVideo3" class="morebtn_home">Play Video</a>
 </div>
                     </div>
                 </div>
@@ -432,6 +434,91 @@ and HIPAA Compliant Fax service with no hassles !!</span>
         </div>
     </section>
     <!-- /End Services Area -->
+	
+	
+	  <!-- Start features Area -->
+    <section class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Our Features</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Features of Email Hosting</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s" style="font-size:20px; text-align:center;">Secure & Efficient </p>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="hosting-features">
+           <div class="email-feature-list">
+
+    <a href="legal-archival.html" class="email-feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <span>Legal Archival</span>
+    </a>
+
+    <a href="bcc-archiving.html" class="email-feature-card">
+        <i class="fas fa-copy"></i>
+        <span>BCC Archiving</span>
+    </a>
+
+    <a href="hipaa-business-agreement.html" class="email-feature-card">
+        <i class="fas fa-file-contract"></i>
+        <span>HIPAA Business Agreement</span>
+    </a>
+
+    <a href="recall-sent-messages.html" class="email-feature-card">
+        <i class="fas fa-undo"></i>
+        <span>Facility to delete already sent message</span>
+    </a>
+
+    <a href="security-enforcement.html" class="email-feature-card">
+        <i class="fas fa-lock"></i>
+        <span>Security is strictly enforced</span>
+    </a>
+
+    <a href="webmail-mobile-access.html" class="email-feature-card">
+        <i class="fas fa-mobile-alt"></i>
+        <span>Outlook, webmail, and mobile access</span>
+    </a>
+
+    <a href="intelligent-automation.html" class="email-feature-card">
+        <i class="fas fa-robot"></i>
+        <span>Intelligent Automation</span>
+    </a>
+
+    <a href="recipient-validation.html" class="email-feature-card">
+        <i class="fas fa-user-check"></i>
+        <span>Facility to validate new recipient</span>
+    </a>
+
+    <a href="email-your-doc.html" class="email-feature-card email-feature-special">
+        <span class="email-feature-badge">NEW</span>
+        <span>"Email Your Doc" -  <small>Anyone can initiate secure message to MDofficeMail user. Go to the webpage, compose and send!</small></span>
+    </a>
+
+    <a href="customization.html" class="email-feature-card">
+        <i class="fas fa-palette"></i>
+        <span>Customization</span>
+    </a>
+
+    <a href="free-trial.html" class="email-feature-card">
+        <i class="fas fa-gift"></i>
+        <span>Free Trial Available</span>
+    </a>
+
+    <a href="privacy-policy.html" class="email-feature-card">
+        <i class="fas fa-user-shield"></i>
+        <span>Strict Privacy Policy</span>
+    </a>
+
+</div></div>
+
+        </div>
+    </section>
+    <!-- /End Features Area -->
+	
+	
 
     <section class="section free-version-banner">
         <div class="container">
@@ -449,7 +536,7 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                 </div>
                 <div class="col-xl-3 col-lg-5">
                     <div class="contact-btn text-right text-lg-right button wow fadeInRight" data-wow-delay=".8s">
-                        <a href="#" rel="nofollow" class="btn mouse-dir">Read More
+                        <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html" rel="nofollow" target="_blank" class="btn mouse-dir">Read More
                             <span class="dir-part"></span></a>
                     </div>
                 </div>
@@ -608,8 +695,12 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                        
                            
                             <div class="button">
-                                <button class="btn mouse-dir white-bg">Read More <span
-                                        class="dir-part"></span></button>
+                                <button
+    onclick="window.open('https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/Stage2Overview_Tipsheet.pdf', '_blank')"
+    class="btn mouse-dir white-bg">
+    Read More
+    <span class="dir-part"></span>
+</button>
                             </div>
                        
                     </div>
@@ -647,8 +738,7 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                     </div>
                     <div class="col-lg-9 col-md-8 col-12">
                         <div class="row">
-						<div class="col-lg-6 col-md-6 col-6">
-						</div>
+						
 						 <div class="col-lg-3 col-md-3 col-6">
                                 <!-- Single Widget -->
                                 <div class="single-footer f-link">
@@ -675,7 +765,10 @@ and HIPAA Compliant Fax service with no hassles !!</span>
                                 </div>
                                 <!-- End Single Widget -->
                             </div>
-                           
+                           <div class="col-lg-6 col-md-6 col-6" style="text-align: center; padding-top: 20px;">
+						<img src="assets/images/30-day-refund.png" alt="Logo" class="animated faa-slow faa-vertical">
+						<img src="assets/images/HIPAA.png" alt="Logo" style="padding-left:10px">
+						</div>
                         </div>
                     </div>
                    
@@ -750,7 +843,40 @@ Enter your email address: <input name="TextBox1" type="text" class="form-control
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/main.js"></script>
+<script>
+// Video 1
+document.getElementById('btnVideo1').addEventListener('click', function () {
+    GLightbox({
+        href: 'https://mdofficemail.com/videos/hipaa-compliant-email-hosting.mp4',
+        type: 'video',
+        source: 'local',
+        width: 900,
+        autoplayVideos: true
+    }).open();
+});
 
+// Video 2
+document.getElementById('btnVideo2').addEventListener('click', function () {
+    GLightbox({
+        href: 'https://mdofficemail.com/videos/hipaa-compliant-email-hosting.mp4',
+        type: 'video',
+        source: 'local',
+        width: 900,
+        autoplayVideos: true
+    }).open();
+});
+
+// Video 3
+document.getElementById('btnVideo3').addEventListener('click', function () {
+    GLightbox({
+        href: 'https://mdofficemail.com/videos/hipaa-compliant-email-hosting.mp4',
+        type: 'video',
+        source: 'local',
+        width: 900,
+        autoplayVideos: true
+    }).open();
+});
+</script>
     <script type="text/javascript">
         //========= glightbox
         GLightbox({

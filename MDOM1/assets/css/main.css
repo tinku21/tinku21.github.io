@@ -3869,8 +3869,8 @@ color:#fff;
 	position: relative;
 	font-size: 15px;
 	margin-top:15px;
-	    color: #7b7b7b;
-    text-align: justify;
+	    color: #222;
+   
     }
 
 .fa-li {
@@ -4332,4 +4332,157 @@ color:#fff;
         left: 0;
         min-width: 220px;
     }
+}
+
+
+
+/* =========================
+   EMAIL HOSTING FEATURES
+========================= */
+
+.hosting-features{
+    max-width:1200px;
+   
+    background:#fff;
+   
+    overflow:hidden;
+    
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Header */
+.feature-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:25px 30px;
+    background:linear-gradient(135deg,#5da844,#3f8d2d);
+    color:#fff;
+}
+
+.feature-header i{
+    font-size:32px;
+}
+
+.feature-header h3{
+    margin:0;
+    font-size:30px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+/* Grid */
+/* Grid */
+.email-feature-list{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+    padding:30px;
+}
+
+/* Feature Card */
+.email-feature-card{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:6px 17px;
+    background:#f8fafc;
+    border:1px solid #edf2f7;
+    border-radius:0 17px;
+    transition:all .3s ease;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
+
+.email-feature-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border-color:#a60000;
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Icon */
+.email-feature-card i{
+    width:42px;
+    height:42px;
+    min-width:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#a600000f;
+    color:#a60000;
+    font-size:16px;
+}
+
+/* Text */
+.email-feature-card span{
+    color:#334155;
+    font-size:16px;
+    font-weight:500;
+    line-height:1.4;
+}
+
+/* Arrow */
+.email-feature-card::after{
+    content:"→";
+    margin-left:auto;
+    opacity:0;
+    transition:.3s;
+}
+
+.email-feature-card:hover::after{
+    opacity:1;
+    transform:translateX(4px);
+}
+
+/* Highlight Card */
+.email-feature-special{
+    grid-column:1 / -1;
+    background:linear-gradient(135deg,#eef1e6,#f3f9e0);
+    border:1px solid #9fbc49;
+    position:relative;
+}
+
+.email-feature-special:hover{
+    border-color:#7ca500;
+}
+
+.email-feature-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:6px 12px;
+    background:#7ca500;
+    color:#fff !important;
+    border-radius:30px;
+    font-size:12px !important;
+    font-weight:700 !important;
+    margin-right:10px;
+    letter-spacing:.5px;
+}
+
+/* Tablet */
+@media (max-width:991px){
+    .email-feature-list{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width:576px){
+    .email-feature-list{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+    .email-feature-special{
+        grid-column:auto;
+    }
+}
+.email-feature-card:hover i{
+    transform:scale(1.1);
+    transition:.3s;
 }
