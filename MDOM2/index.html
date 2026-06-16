@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MD OfficeMail</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Web Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+	 <link rel="stylesheet" href="assets/css/anim.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	
+<style>
+
+
+</style>
+</head>
+
+<body>
+   
+<button
+    id="trialBtn"
+    class="free-trial-tab"
+    data-bs-toggle="collapse"
+    data-bs-target="#trialSection">
+    Free Trial
+</button>
+
+<div class="collapse" id="trialSection">
+    <div id="trialContent">
+	<div class="badge-wrap">
+    <i class="fa-solid fa-certificate badge-icon fa-spin" style="--fa-animation-duration: 30s;"></i>
+
+    <div class="badge-text">
+        <!-- <small style="font-size:18px; text-align:center; font-weight: 500;"></small> -->
+		<div class="fully">Fully</div>
+		<div class="functional">Functional</div>
+		
+        <h1 style="margin-left:-55px;   line-height:1; background:linear-gradient(#ff7a00,#ff0099); -webkit-background-clip:text; -webkit-text-fill-color:transparent; -webkit-text-stroke:3px #fff; text-shadow:4px 4px 10px rgba(0,0,0,.2);">30 <small style="font-size: 26px; position: absolute; margin-left: 4px; margin-top: 9px; -webkit-text-stroke:1px #fff; -webkit-text-fill-color:#479c33">Day</small></h1>
+        <span style="font-size: 22px; font-weight:bold;" class="fully"> Free Trial</span>
+    </div>
+</div>
+
+        <!-- <div class="starburst "> -->
+            <!-- <div>Fully Functional</div> -->
+            <!-- <div class="days"  style="color:#fff;">30 Day</div> -->
+            <!-- <div>Free Trial</div> -->
+        <!-- </div> -->
+
+        <a href="https://mdofficemail.com/subscriptions/ordertrialservices.aspx"  target="_blank" class="service-btn mdofficemail">
+            <h4 style="color:#fff;">Try MDOfficeMail</h4>
+            <p style="text-align:center;">HIPAA compliant email account</p>
+        </a>
+
+        <a href="https://mdofficemail.com/subscriptions/ordertrialservices.aspx" target="_blank" class="service-btn faxtone">
+            <h4 style="color:#fff;">Try Faxtone</h4>
+            <p  style="text-align:center;">HIPAA compliant digital fax service</p>
+        </a>
+
+    </div>
+</div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- ========================= header start ========================= -->
+    <header class="header navbar-area">
+        <!-- Toolbar Start -->
+        <div class="toolbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-9 col-12">
+                        <div class="toolbar-contact">
+                            <p><i class="lni lni-envelope"></i><a href="mailto:info@mdofficemail.com">info@mdofficemail.com</a></p>
+                            <p><i class="lni lni-phone"></i><a href="tel:+18774778999">1 (877) 477 8999</a></p>
+                            <p><i class="lni lni-map-marker"></i> 2055 Comprehensive Dr, Aurora, IL 60505</p>
+                        </div>
+                    </div>
+                   <div class="col-lg-4 col-md-3 col-12">
+    <div class="toolbar-sl-share">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <!-- Login Dropdown -->
+            <li class="dropdown-menu-item">
+                <a href="#">Login ▾</a>
+                <ul class="dropdown-submenu">
+                    <li><a href="#">Account Administration/Billing</a></li>                   
+                </ul>
+            </li>
+
+            <!-- Help Dropdown -->
+            <li class="dropdown-menu-item">
+                <a href="#">Help ▾</a>
+                <ul class="dropdown-submenu">
+                   <li><a href="#" >Webmail Help</a></li>
+<li><a href="#" >Online Help/Support</a></li>
+<li><a href="#" >Download Quick Start Guide</a></li>
+<li><a href="#" >iPhone Setup Guide</a></li>
+<li><a href="#" >Android Setup Guide</a></li>
+<li><a href="#" >Support Request</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <!-- Toolbar End -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                <div class="nav-inner">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ms-auto">                               
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="hipaa-email-features.html">Features</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll" href="how-hipaa-compliant-email-works.html">How It works</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll" href="hipaa-email.html">HIPAA</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll" href="customization.html">Customization</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll" href="faq.html">FAQ</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-1"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">Other Services</a>
+                                    <ul class="sub-menu collapse" id="submenu-1-1">
+                                        <li class="nav-item"><a href="#"><strong>Secure Fax</strong><br><small><em>HIPAA compliant digital fax service</em></small></a></li>
+										<li class="nav-item"><a href="#"><strong>Secure Online Forms</strong><br><small><em>HIPAA compliant web contact forms and patient forms</em></small></a></li>
+                                    </ul>
+                                </li>								
+								<li class="nav-item">
+                                    <a class="page-scroll" href="#">Pricing & Signup</a>
+                                </li>								
+                            </ul>
+                        </div> <!-- navbar collapse -->
+                        
+                    </nav> <!-- navbar -->
+                </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+
+    </header>
+    <!-- ========================= header end ========================= -->
+
+    <!-- Start Hero Area -->
+    <section class="hero-slider">
+        <!-- Single Slider -->
+        <div class="single-slider">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 co-12">
+                        <div class="home-slider">
+                            <div class="hero-text">
+                               <span class="small-title">Secure & Convenient</span>
+                                <h1 class="wow fadeInUp" data-wow-delay=".5s"><span>Most Convenient
+</span><br>
+                                    HIPAA Compliant Email Service</h1>                              
+                                <div class="button wow fadeInUp" data-wow-delay=".9s">
+                                    <a href="#" class="btn mouse-dir">More <span
+                                            class="dir-part"></span></a>
+                                </div>
+                            </div>
+                            <div class="hero-text">
+                                <span class="small-title">MD OfficeMail</span>
+                                <h1><span>Easy-to-use
+
+</span><br> HIPAA compliant email with Legal Archival</h1>
+                                
+                                <div class="button">
+                                    <a href="#" class="btn mouse-dir">More <span
+                                            class="dir-part"></span></a>
+                                </div>
+                            </div>
+                            <div class="hero-text">
+                                <span class="small-title">Crypt-n-Send
+
+</span>
+                                <h1><span>Email Encryption Service</span><br> for your current email</h1>
+                                
+                                <div class="button">
+                                    <a href="#" class="btn mouse-dir">More <span
+                                            class="dir-part"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Single Slider -->
+    </section>
+    <!--/ End Hero Area -->
+
+    <!-- Start Features Area -->
+    <section class="Features section">
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-lg-8 col-md-8 col-12">
+                    <div class="feature-content">
+                        <div class="title">
+                            
+                            <h3 class="wow fadeInRight" data-wow-delay=".5s">Secure & Convenient HIPAA Compliant Email</h3>
+							<span class="wow fadeInRight" data-wow-delay=".3s" style=" margin-top:5px; border-radius:0px 15px">Welcome to MDofficeMail! HIPAA Compliant Email Hosting
+and HIPAA Compliant Fax service with no hassles !!</span>
+                        </div>
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".2s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">Most convenient, easy-to-use HIPAA Compliant Email Service.</h2>
+                            </div>
+                        </div>
+						
+						<div class="feature-item wow fadeInUp" data-wow-delay=".3s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">Legal Archival. All email messages are stored in a secure remote server which cannot be edited or deleted.</h2>
+                            </div>
+                        </div>
+						
+						<div class="feature-item wow fadeInUp" data-wow-delay=".4s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">Forced expiration of sent messages, End-to-End Encryption, Customization, Intelligent Automation.</h2>
+                            </div>
+                        </div>
+						
+						<div class="feature-item wow fadeInUp" data-wow-delay=".5s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">Two-Factor Authentication (2FA). Additional layer of security for enhanced security of your email account.</h2>
+                            </div>
+                        </div>
+						
+						<div class="feature-item wow fadeInUp" data-wow-delay=".6s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">Configurable to send unencrypted messages by default and encryption on demand.</h2>
+                            </div>
+                        </div>
+						
+						<div class="feature-item wow fadeInUp" data-wow-delay=".7s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">"EmailYourDoc" - Anyone can initiate a secure message to a MDofficeMail user.</h2>
+                            </div>
+                        </div>
+						
+						<div class="feature-item wow fadeInUp" data-wow-delay=".8s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">30-day FREE TRIAL (fully functional) with no obligation.</h2>
+                            </div>
+                        </div>
+						<div class="feature-item wow fadeInUp" data-wow-delay=".9s">
+                            <div class="feature-thumb">
+                                <i class="lni lni-checkmark-circle"></i>
+                            </div>
+                            <div class="banner-content">
+							
+                                <h2 class="title">Secure online Patient forms & Contact forms.</h2>
+                            </div>
+							
+							
+                        </div>
+                      <br>
+							 <a href="#" class="morebtn" style="float:left;" data-bs-toggle="modal" data-bs-target="#exampleModal">Receive a sample encrypted message. click here...</a>
+                    </div>
+                </div>
+				  <div class="col-lg-4 col-md-4 col-12">
+                    <div class="feature-right wow fadeInUp" data-wow-delay=".3s">
+                        <div class="watch-inner">
+                            <div class="video-head wow zoomIn" data-wow-delay="0.4s">
+                                <a href="#" class="glightbox video"><i
+                                        class="lni lni-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Area -->
+
+    <!-- Start Service Area -->
+    <section class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">What We Offer You</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Services</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s" style="font-size:20px;">Three convenient and HIPAA Compliant services:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay=".2s">
+                        <div class="serial">
+                            <span><i class="lni lni-world"></i></span>
+                        </div>
+                        <h3><a href="service-single.html">MDofficeMail<br></a></h3><p style="margin-top: -10px;"><small>Email hosting service</small></p>
+                        <p>Secure, Efficient, and Economical HIPAA Compliant Email Service! All aspects of compliance are taken care.</p>
+						<div class="circles-wrap">
+                            <div class="circles">
+                                <span class="circle circle-1"></span>
+                                <span class="circle circle-2"></span>
+                                <span class="circle circle-3"></span>
+                                <span class="circle circle-4"></span>
+                            </div>
+                        </div>
+						<div class="service-buttons">
+    <a href="#" class="morebtn_home">Read More</a>
+    <a href="#" class="morebtn_home" id="btnVideo1">Play Video</a>
+</div>
+						
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay=".3s">
+                        <div class="serial">
+                            <span><i class="lni lni-rocket"></i></span>
+                        </div>
+                        <h3><a href="service-single.html">Secure Digital Fax</a></h3><p style="margin-top: -10px;"><small>Digital faxing through email and web-portal</small></p>
+                        <p>HIPAA Compliant Digital Fax Service, Faxtone. Make your faxes available. Free Legal Archival & secure email.</p>
+						<div class="circles-wrap">
+                            <div class="circles">
+                                <span class="circle circle-1"></span>
+                                <span class="circle circle-2"></span>
+                                <span class="circle circle-3"></span>
+                                <span class="circle circle-4"></span>
+                            </div>
+                        </div>
+						<div class="service-buttons">
+    <a href="#" class="morebtn_home">Read More</a>
+    <a href="#" id="btnVideo2" class="morebtn_home">Play Video</a>
+</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-service wow fadeInUp" data-wow-delay=".4s">
+                        <div class="serial">
+                            <span><i class="lni lni-shield"></i></span>
+                        </div>
+                        <h3><a href="service-single.html">Secure Forms</a></h3><p style="margin-top: -10px;"><small>HIPAA Compliant and secure form for website.</small></p>
+                        <p>Customized header to match your website and customized fields to suit your requirement.</p>
+						<div class="circles-wrap">
+                            <div class="circles">
+                                <span class="circle circle-1"></span>
+                                <span class="circle circle-2"></span>
+                                <span class="circle circle-3"></span>
+                                <span class="circle circle-4"></span>
+                            </div>
+                        </div>
+						<div class="service-buttons">
+    <a href="#" class="morebtn_home">Read More</a>
+    <a href="#" id="btnVideo3" class="morebtn_home">Play Video</a>
+</div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+    <!-- /End Services Area -->
+	
+	
+	  <!-- Start features Area -->
+    <section class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Our Features</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Features of Email Hosting</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s" style="font-size:20px; text-align:center;">Secure & Efficient </p>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="hosting-features">
+           <div class="email-feature-list">
+
+    <a href="legal-archival.html" class="email-feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <span>Legal Archival</span>
+    </a>
+
+    <a href="bcc-archiving.html" class="email-feature-card">
+        <i class="fas fa-copy"></i>
+        <span>BCC Archiving</span>
+    </a>
+
+    <a href="hipaa-business-agreement.html" class="email-feature-card">
+        <i class="fas fa-file-contract"></i>
+        <span>HIPAA Business Agreement</span>
+    </a>
+
+    <a href="recall-sent-messages.html" class="email-feature-card">
+        <i class="fas fa-undo"></i>
+        <span>Facility to delete already sent message</span>
+    </a>
+
+    <a href="security-enforcement.html" class="email-feature-card">
+        <i class="fas fa-lock"></i>
+        <span>Security is strictly enforced</span>
+    </a>
+
+    <a href="webmail-mobile-access.html" class="email-feature-card">
+        <i class="fas fa-mobile-alt"></i>
+        <span>Outlook, webmail, and mobile access</span>
+    </a>
+
+    <a href="intelligent-automation.html" class="email-feature-card">
+        <i class="fas fa-robot"></i>
+        <span>Intelligent Automation</span>
+    </a>
+
+    <a href="recipient-validation.html" class="email-feature-card">
+        <i class="fas fa-user-check"></i>
+        <span>Facility to validate new recipient</span>
+    </a>
+
+    <a href="email-your-doc.html" class="email-feature-card email-feature-special">
+        <span class="email-feature-badge">NEW</span>
+        <span>"Email Your Doc" -  <small>Anyone can initiate secure message to MDofficeMail user. Go to the webpage, compose and send!</small></span>
+    </a>
+
+    <a href="customization.html" class="email-feature-card">
+        <i class="fas fa-palette"></i>
+        <span>Customization</span>
+    </a>
+
+    <a href="free-trial.html" class="email-feature-card">
+        <i class="fas fa-gift"></i>
+        <span>Free Trial Available</span>
+    </a>
+
+    <a href="privacy-policy.html" class="email-feature-card">
+        <i class="fas fa-user-shield"></i>
+        <span>Strict Privacy Policy</span>
+    </a>
+
+</div></div>
+
+        </div>
+    </section>
+    <!-- /End Features Area -->
+	
+	
+
+    <section class="section free-version-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-9 col-lg-7">
+                    <div class="section-title mb-60">
+                        <!-- <span class="text-white wow fadeInDown" data-wow-delay=".2s" -->
+                            <!-- style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Bizfinity -->
+                            <!-- Free Lite</span> -->
+                        <h2 class="text-white wow fadeInUp" data-wow-delay=".4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Compliance is your responsibility</h2>
+                        <p class="text-white wow fadeInUp" data-wow-delay=".6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">"Office for Civil Rights may impose a penalty on a covered entity for a failure to comply with a requirement of the Privacy Rule. Penalties will vary significantly depending on... or whether the covered entity’s failure to comply was due to willful neglect."</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-5">
+                    <div class="contact-btn text-right text-lg-right button wow fadeInRight" data-wow-delay=".8s">
+                        <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html" rel="nofollow" target="_blank" class="btn mouse-dir">Read More
+                            <span class="dir-part"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section id="pricing" class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Pricing</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Price</h2>
+                       <p class="wow fadeInUp" data-wow-delay=".6s" style="text-align:center;">Legal Archival for 7 years included</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              
+               
+			  <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".3s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Basic <span>for small business</span></h4>
+                            <div class="price">
+                                <p class="amount"><span class="curency">$</span>2.69<span class="duration">/mo</span></p>
+                            </div>
+                        </div>
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>1-4 mail accounts</li>
+							<li>with annual payment</li>
+							<li>with monthly payment</li>
+							<li>quarterly payment - $ 2.99/mo</li>
+                            
+                        </ul>
+                        <div class="button">
+                            <a class="btn white-bg mouse-dir" href="#">Get Started <span class="dir-part"></span></a>
+                        </div>
+                        <!-- Table Bottom -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+				
+				<div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Standard <span>Medium Practice</span></h4>
+                            <div class="price">
+                                <p class="amount"><span class="curency">$</span>2.33<span class="duration">/mo</span></p>
+                            </div>
+                        </div>
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>5-25 mail accounts</li>
+							<li>with annual payment</li>
+							<li>with monthly payment</li>
+							<li>quarterly payment - $ 2.59/mo</li>
+                            
+                        </ul>
+                        <div class="button">
+                            <a class="btn white-bg mouse-dir" href="#">Get Started <span class="dir-part"></span></a>
+                        </div>
+                        <!-- Table Bottom -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+			  
+			  
+               <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".5s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Professonal <span>Large Practice</span></h4>
+                            <div class="price">
+                                <p class="amount"><span class="curency">$</span>1.79<span class="duration">/mo</span></p>
+                            </div>
+                        </div>
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>26-100 mail accounts</li>
+							<li>with annual payment</li>
+							<li>with monthly payment</li>
+							<li>quarterly payment - $ 1.99/mo</li>
+                            
+                        </ul>
+                        <div class="button">
+                            <a class="btn white-bg mouse-dir" href="#">Get Started <span class="dir-part"></span></a>
+                        </div>
+                        <!-- Table Bottom -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+			  
+				 <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".6s">
+                        <p class="popular">Popular</p>
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Most Popular </h4>
+                            <div class="price">
+                                <p class="amount"><span class="curency">$</span>2.91<span class="duration">/mo</span>
+								</p>
+								
+                            </div>
+                        </div>
+                        <!-- Table List -->
+                        <ul class="table-list">
+						  <li>No Contract/Setup fee</li>
+						  <li>5GB Storage</li>
+						  <li>Free trial</li>
+						  <li>30-day money back</li>
+						
+						  <li>EmailYourDoc</li>
+						
+                        </ul>
+						
+                        <div class="button">
+                            <a class="btn white-bg mouse-dir" href="#">Get Started <span class="dir-part"></span></a>
+                        </div>
+                        <!-- Table Bottom -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+				
+               
+            </div>
+        </div>
+    </section>
+  
+   
+  
+    <section class="newsletter section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-9 col-12">
+                    <!-- Start Newsletter Form -->
+                    <div class="subscribe-text wow fadeInLeft" data-wow-delay=".3s">
+                        <h6>CMS...Incentive Programs...HIPAA Secure Email</h6>
+                        <p class="">CMS recently published a final rule that specifies the Stage 2 criteria to continue to participate in the Medicare and Medicaid EHR Incentive Programs…Use secure electronic messaging to communicate with patient...</p>
+                    </div>
+                    <!-- End Newsletter Form -->
+                </div>
+                <div class="col-lg-3 col-12">
+                    <!-- Start Newsletter Form -->
+                    <div class="subscribe-form wow fadeInRight" data-wow-delay=".5s">
+                       
+                           
+                            <div class="button">
+                                <button
+    onclick="window.open('https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms/Downloads/Stage2Overview_Tipsheet.pdf', '_blank')"
+    class="btn mouse-dir white-bg">
+    Read More
+    <span class="dir-part"></span>
+</button>
+                            </div>
+                       
+                    </div>
+                    <!-- End Newsletter Form -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End Newsletter Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Middle Top -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-12">
+                        <!-- Single Widget -->
+                        <div class="f-about single-footer">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/logo.png" alt="#"></a>
+                            </div>
+                           
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="row">
+						
+						 <div class="col-lg-3 col-md-3 col-6">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Useful Links</h3>
+                                    <ul>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Quick Start Guide</a></li>
+                                        <li><a href="#">Online Support</a></li>
+                                        <li><a href="#">Webmail Help</a></li>                                        
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Quick Links</h3>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                                                            
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                           <div class="col-lg-6 col-md-6 col-6" style="text-align: center; padding-top: 20px;">
+						<img src="assets/images/30-day-refund.png" alt="Logo" class="animated faa-slow faa-vertical">
+						<img src="assets/images/HIPAA.png" alt="Logo" style="padding-left:10px">
+						</div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Middle -->
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="left">
+                                <p>Designed and Developed by<a href="#"
+                                        >Vinfonet</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="right">
+                                <p>All Right Reserved Design By MD OfficeMail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MDVault Encrypted Message Demo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <P>Please enter your email address below and submit to receive a sample encrypted message instantly.</p><br>
+
+<p>Sometimes the message may land in your junk mail folder.</p><br>
+<p>
+Enter your email address: <input name="TextBox1" type="text" class="form-control input-sm">
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- ========================= JS here ========================= -->
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/main.js"></script>
+<script>
+// Video 1
+document.getElementById('btnVideo1').addEventListener('click', function () {
+    GLightbox({
+        href: 'https://mdofficemail.com/videos/hipaa-compliant-email-hosting.mp4',
+        type: 'video',
+        source: 'local',
+        width: 900,
+        autoplayVideos: true
+    }).open();
+});
+
+// Video 2
+document.getElementById('btnVideo2').addEventListener('click', function () {
+    GLightbox({
+        href: 'https://mdofficemail.com/videos/hipaa-compliant-email-hosting.mp4',
+        type: 'video',
+        source: 'local',
+        width: 900,
+        autoplayVideos: true
+    }).open();
+});
+
+// Video 3
+document.getElementById('btnVideo3').addEventListener('click', function () {
+    GLightbox({
+        href: 'https://mdofficemail.com/videos/hipaa-compliant-email-hosting.mp4',
+        type: 'video',
+        source: 'local',
+        width: 900,
+        autoplayVideos: true
+    }).open();
+});
+</script>
+    <script type="text/javascript">
+        //========= glightbox
+        GLightbox({
+            'href': 'MDofficeMail.mp4',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+
+        //======== Home Slider
+        var slider = new tns({
+            container: '.home-slider',
+            slideBy: 'page',
+            autoplay: true,
+            mouseDrag: true,
+            gutter: 0,
+            items: 1,
+            nav: true,
+            controls: false,
+            controlsText: [
+                '<i class="lni lni-arrow-left prev"></i>',
+                '<i class="lni lni-arrow-right next"></i>'
+            ],
+            responsive: {
+                1200: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                0: {
+                    items: 1,
+                }
+
+            }
+        });
+
+        //======== Testimonial Slider
+        var slider = new tns({
+            container: '.testimonial-slider',
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            items: 1,
+            nav: true,
+            controls: false,
+            controlsText: [
+                '<i class="lni lni-arrow-left prev"></i>',
+                '<i class="lni lni-arrow-right next"></i>'
+            ],
+            responsive: {
+                1200: {
+                    items: 2,
+                },
+                992: {
+                    items: 1,
+                },
+                0: {
+                    items: 1,
+                }
+
+            }
+        });
+
+        //============== isotope masonry js with imagesloaded
+        imagesLoaded('#container', function () {
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope(elem, {
+                // options
+                itemSelector: '.grid-item',
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-item'
+                }
+            });
+
+            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+            filterButtons.forEach(e =>
+                e.addEventListener('click', () => {
+
+                    let filterValue = event.target.getAttribute('data-filter');
+                    iso.arrange({
+                        filter: filterValue
+                    });
+                })
+            );
+        });
+    </script>
+	
+	<style>
+
+</style>
+
+<script>
+const trialBtn = document.getElementById("trialBtn");
+const trialSection = document.getElementById("trialSection");
+
+trialBtn.addEventListener("click", function(e){
+    e.stopPropagation();
+
+    if(trialSection.style.display === "block"){
+        trialSection.style.display = "none";
+    }else{
+        trialSection.style.display = "block";
+    }
+});
+
+trialSection.addEventListener("click", function(e){
+    e.stopPropagation();
+});
+
+document.addEventListener("click", function(){
+    trialSection.style.display = "none";
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MD OfficeMail</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Web Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+	<link rel="stylesheet" href="assets/css/anim.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+.highlight{    text-transform: capitalize;
+    font-size: 14px;
+    display: inline-block;
+    background: #a60000;
+    color: #fff;
+    padding: 4px 18px;
+    margin-bottom: 5px;
+	text-align:center;}
+	
+	
+	.tabs{
+    display:flex;
+    gap:5px;
+}
+
+.tab-btn{
+    padding:10px 20px;
+    border:none;
+    background:#ddd;
+    cursor:pointer;
+    font-size:16px;
+	font-weight:400 !important;
+}
+
+.tab-btn.active{
+    background:#c00000;
+    color:#fff;
+}
+
+.tab-content{
+    display:none;
+    padding:20px 5px;
+    margin-top:10px;
+}
+
+.tab-content.active{
+    display:block;
+}
+</style>
+</head>
+
+<body>
+      
+<button
+    id="trialBtn"
+    class="free-trial-tab"
+    data-bs-toggle="collapse"
+    data-bs-target="#trialSection">
+    Free Trial
+</button>
+
+<div class="collapse" id="trialSection">
+    <div id="trialContent">
+	<div class="badge-wrap">
+    <i class="fa-solid fa-certificate badge-icon fa-spin" style="--fa-animation-duration: 30s;"></i>
+
+    <div class="badge-text">
+        <!-- <small style="font-size:18px; text-align:center; font-weight: 500;"></small> -->
+		<div class="fully">Fully</div>
+		<div class="functional">Functional</div>
+		
+        <h1 style="margin-left:-55px;   line-height:1; background:linear-gradient(#ff7a00,#ff0099); -webkit-background-clip:text; -webkit-text-fill-color:transparent; -webkit-text-stroke:3px #fff; text-shadow:4px 4px 10px rgba(0,0,0,.2);">30 <small style="font-size: 26px; position: absolute; margin-left: 4px; margin-top: 9px; -webkit-text-stroke:1px #fff; -webkit-text-fill-color:#479c33">Day</small></h1>
+        <span style="font-size: 22px; font-weight:bold;" class="fully"> Free Trial</span>
+    </div>
+</div>
+
+        <!-- <div class="starburst "> -->
+            <!-- <div>Fully Functional</div> -->
+            <!-- <div class="days"  style="color:#fff;">30 Day</div> -->
+            <!-- <div>Free Trial</div> -->
+        <!-- </div> -->
+ <a href="https://mdofficemail.com/subscriptions/ordertrialservices.aspx"  target="_blank" class="service-btn mdofficemail">
+            <h4 style="color:#fff;">Try MDOfficeMail</h4>
+            <p style="text-align:center;">HIPAA compliant email account</p>
+        </a>
+
+        <a href="https://mdofficemail.com/subscriptions/ordertrialservices.aspx" target="_blank" class="service-btn faxtone">
+            <h4 style="color:#fff;">Try Faxtone</h4>
+            <p  style="text-align:center;">HIPAA compliant digital fax service</p>
+        </a>
+    </div>
+</div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- ========================= header start ========================= -->
+    <header class="header navbar-area">
+        <!-- Toolbar Start -->
+        <div class="toolbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-9 col-12">
+                        <div class="toolbar-contact">
+                            <p><i class="lni lni-envelope"></i><a href="mailto:info@mdofficemail.com">info@mdofficemail.com</a></p>
+                            <p><i class="lni lni-phone"></i><a href="tel:+18774778999">1 (877) 477 8999</a></p>
+                            <p><i class="lni lni-map-marker"></i> 2055 Comprehensive Dr, Aurora, IL 60505</p>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-3 col-12">
+    <div class="toolbar-sl-share">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <!-- Login Dropdown -->
+            <li class="dropdown-menu-item">
+                <a href="#">Login ▾</a>
+                <ul class="dropdown-submenu">
+                    <li><a href="#">Account Administration/Billing</a></li>                   
+                </ul>
+            </li>
+
+            <!-- Help Dropdown -->
+            <li class="dropdown-menu-item">
+                <a href="#">Help ▾</a>
+                <ul class="dropdown-submenu">
+<li><a href="#">Webmail Help</a></li>
+<li><a href="#" >Online Help/Support</a></li>
+<li><a href="#" >Download Quick Start Guide</a></li>
+<li><a href="#" >iPhone Setup Guide</a></li>
+<li><a href="#" >Android Setup Guide</a></li>
+<li><a href="#" >Support Request</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <!-- Toolbar End -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                <div class="nav-inner">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ms-auto">                               
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="hipaa-email-features.html">Features</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll" href="how-hipaa-compliant-email-works.html">How It works</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll" href="hipaa-email.html">HIPAA</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll" href="customization.html">Customization</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll active" href="faq.html">FAQ</a>
+                                </li>
+								 <li class="nav-item">
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
+                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-1"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation">Other Services</a>
+                                    <ul class="sub-menu collapse" id="submenu-1-1">
+                                        <li class="nav-item"><a href="#"><strong>Secure Fax</strong><br><small><em>HIPAA compliant digital fax service</em></small></a></li>
+										<li class="nav-item"><a href="#"><strong>Secure Online Forms</strong><br><small><em>HIPAA compliant web contact forms and patient forms</em></small></a></li>
+                                    </ul>
+                                </li>								
+								<li class="nav-item">
+                                    <a class="page-scroll" href="#">Pricing & Signup</a>
+                                </li>								
+                            </ul>
+                        </div> <!-- navbar collapse -->
+                        
+                    </nav> <!-- navbar -->
+                </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+
+    </header>
+    <!-- ========================= header end ========================= -->
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-12">
+                    <div class="breadcrumbs-content left">
+                        <h1 class="page-title">FAQ</h1>
+                        <p>HIPAA Compliant Email</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="breadcrumbs-content right">
+                        <ul class="breadcrumb-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+  
+    <!-- Start Blog Singel Area -->
+    <section class="section blog-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12">
+                    <!-- Start Single List -->
+                    <div class="single-list">
+                        <div class="post-details">
+                            <div class="detail-inner">                                                            
+                                
+<div class="tabs">
+    <button class="tab-btn active" onclick="openTab('tab1', this)">Setup & Free Trial</button>
+    <button class="tab-btn" onclick="openTab('tab2', this)">Security Compliance</button>
+    <button class="tab-btn" onclick="openTab('tab3', this)">Features</button>
+	<button class="tab-btn" onclick="openTab('tab4', this)">About Us</button>
+</div>
+
+<div id="tab1" class="tab-content active">
+    <h2 class="post-title">Set-up & Free Trial</h2>
+	
+	<h3>How do I sign up for a MDofficeMail or CryptnSend account?</h3>
+    <p>You can sign up from the <a href="https://mdofficemail.com/subscriptions/orderservices.aspx">MDoffice Mail Subscription</a> page and <br><a href="https://cryptnsend.com/SecureOrder.aspx">CryptnSend Subscription</a> page. Select required number of accounts, choose options, choose your add-ons, enter your personal information, and payment information. Once the credit card is authorized, admin account is created, which you can start using immediately. Details of the account, Quick Start Guide and other details will be emailed to your current email address. In addition you can take assistance from our customer support. </p>
+	
+		<h3>How can I convert my Trial Account into a Regular Account?</h3>
+    <p>Nothing. Your trial account will get converted into regular account after the trial period and your credit card on file will charged.</p>
+	
+	
+	<h3>Can I still use my current email address with MDofficeMail?</h3>
+    <p>Yes, if you have your own domain name suffix for your current email address. Ex. “name@your-domain-name.com”. Our subscription plans allow you to use your private domain on our server through MX change, which is an easy job. Your website remains unaffected, email address remains unchanged, and no domain registration / transfer is required. Your domain email is redirected to MDofficeMail server. You can continue to use your current email address and become HIPAA compliant as well. MDofficeMail support team can assist you in this process.</p>
+	<p>
+	If your email address is provided by free services such as Yahoo/ Hotmail/Gmail or email service provided by companies like AT&T, Verizon, comcast etc, you can use our CryptnSend service to send HIPAA compliant, secure messages without changing your email address. Recipients of your secure messages can send a secure reply.
+	</p>
+	
+	<h3 style="line-height: 25px;">Will I lose any emails in my current email account if I switch MDofficeMail?</h3>
+    <p>You will not lose any emails from the Inbox of your current email account. We employ a migration system that manages the process by checking your Inbox at both locations until the cutover is complete and consolidating all emails in the new location. Note that messages from other folders like Sent Items etc can't be migrated.</p>
+	
+	<h3 style="line-height: 25px;">Do I need to download or install any software to use the MDofficeMail?</h3>
+    <p>Absolutely nothing. No downloads, plug-ins, or installations are necessary to use MDofficeMail. MDofficeMail is as simple and user-friendly as any other email service.</p>
+	
+	
+	<h3>Does MDofficeMail work with my PC/email client program/OS?</h3>
+    <p style="margin-bottom:0px;">MDofficeMail works with almost all the systems:</p>
+	<ul class="fa-ul">
+  <li><i class="fa-li fa-solid fa-angles-right"></i><strong>Web  Browsers:</strong> Internet Explorer 6 and above,  Firefox, Apple,&nbsp; Safari, Google Chrome Netscape Communicator, Mozilla,  AOL, Opera, Red Hat,&nbsp;Linux,&nbsp; Konqeror, Camino.</li>
+  <li><i class="fa-li fa-solid fa-angles-right"></i><strong>Email  Clients:</strong> Outlook &amp; Outlook Express,  Windows Mail, Thunderbird, Netscape Communicator, Eudora, Apple Mail (MacOS  10.2 or later), Mac-Entourage v.x for MacOS X.</li>
+  <li><i class="fa-li fa-solid fa-angles-right"></i><strong>Mobile:</strong> MDofficeMail also works with iPhone, iPad, Android, Palm  and Windows Mobile.</li>
+</ul>
+	
+	
+	
+	<h3 style="margin-top:25px;">Do you offer free trial?</h3>
+    <p>Yes, you can try fully functional MDofficeMail or CryptnSend account for 30 days without any obligation. Click here to signup for fully functional free trial of MDofficeMail or click here to signup for CryptnSend. Your account is ready as soon as you complete as your complete your subsription.</p>
+	
+	<h3 style="line-height: 25px;">Sending email through remote servers is blocked by my ISP. What now?</h3>
+    <p>You can still use MDofficeMail. Generally ISPs that block 3rd party SMTP servers block port 25. MDofficeMail being secure, uses port 587 and 465. There should not be any problem at all.
+	
+	<br><br>
+	FAQ - Security &amp; Compliance...&nbsp;<a href="faq-security-compliance.html" class="btn-link">click here</a></p>
+	
+</div>
+
+<div id="tab2" class="tab-content">
+     <h2 class="post-title">Security & Compliance</h2>	
+	<h3>How does the security work resulting in HIPAA compliance?</h3>
+   <p>Security and encryption is enforced without compromise for all the email messages sent from MDofficeMail and CryptnSend. An SSL (or TLS) session is initiated before login or password information is exchanged and well before any data is transmitted. Server certificates we use are 100% secure using RSA-powered TLS (Transport Layer Security). Email sent to other than “Safe Recipients”  i.e. any account outside MDofficeMail service will be force encrypted and secured by MDVault to maintain compliance with security regulations. <a href="hipaa-email.html">Click here</a> for more information. All messages sent using CryptnSend service are encrypted by default.</p>
+	
+	
+	<h3 style="line-height: 25px;">Whether MDofficeMail / CryptnSend / Faxtone services are available throughout the world?</h3>
+    <p>MDofficeMail / CryptnSend / Faxtone services are specifically meant for US healthcare providers. However MDofficeMail is can be accessed from few other countries in addition to the United States.</p>
+	
+    <p>For security reasons MDofficeMail / CryptnSend / Faxtone services are not accessable from some geo locations outside the United Staetes. Please contact us for details.</p>
+	
+	<h3>Who is “Safe Recipient”?</h3>
+    <ul class="fa-ul" style="margin-bottom:20px;">
+  <li><i class="fa-li fa-solid fa-angles-right"></i>All the email addresses in your domain.</li>
+  <li><i class="fa-li fa-solid fa-angles-right"></i>All the  email accounts hosted with MDofficeMail. This will be automatically detected.</li>
+  <li><i class="fa-li fa-solid fa-angles-right"></i>All the email addresses that are certified by  the user as “Safe Recipients” and added to “Safe List" in the address  book.</li>
+</ul>
+	<p>All these email addresses are automatically detected by MDofficeMail.</p>
+	<h3>How to determine an outside email address as “Safe Recipient”?</h3>
+    <p>Any HIPAA compliant email server/service user is a “Safe Recipient”.</p>
+	
+	<h3>Who is “Other Recipient”?</h3>
+    <p>All those whose security credentials are unknown are “Other recipients”. We strongly recommend to send secure and encrypted email messages these recipients to maintain security and meet compliance requirements.</p>
+	
+	<h3>What is “Locking" or "Encryption” of out-bound messages?</h3>
+    <p>When a message is sent to “Other Recipient” it is encrypted with industry-standard AES-256 encryption in CBC mode with MD5 hash. This is the same kind of encryption is used by many Banks and Federal agencies around the world to protect their data.</p>
+	<p>These “Locked Messages” are not delivered to the Inbox of recipient. Instead they are stored in secure server MDVault of MDofficeMail. A notification is sent to the recipient informing a secure, encrypted message has been received.</p>
+	
+	<h3>What is “MDVault” and how does it work?</h3>
+    <p>When a locked (encrypted) message is sent, it is stored in our secure server MDVault and just a notification is sent to the recipient, containing a secure weblink. By clicking this link and entering password recipient can log into our secure server, decrypt, view the message, and download attachments if any. In addition the recipient can send secure reply.</p>
+	
+	
+	<h3  style="line-height: 25px;">Is there a way to receive secure and plain messages instead of encrypted ones?</h3>
+    <p>Encrypted messages are sent by MDofficeMail for security and compliance. These messages needs to be decrypted with a password to view them. It is very much possible to send plain messages instead of encrypted messages. Please visit hipaa-email-plain-message.html for more information.</p>
+	
+	
+	<h3>Where can I find the Federal HIPAA HITECH legislation?</h3>
+    <p>The HITECH legislation is Title XIII of the 2009 American Recovery and Reinvestment act, and can be found here:<br>
+  <a href="http://www.gpo.gov/fdsys/pkg/BILLS-111hr1enr/pdf/BILLS-111hr1enr.pdf">http://www.gpo.gov/fdsys/pkg/BILLS-111hr1enr/pdf/BILLS-111hr1enr.pdf</a></p>
+	
+	
+	<h3>What is your policy about sharing customers email addresses?</h3>
+    <p>We respect your privacy. We never rent, sell or share client details with anyone.</p>
+	
+	
+</div>
+
+<div id="tab3" class="tab-content">
+<h2 class="post-title">Features</h2>	
+    <h3>Can I customize MD Officemail to display my own banner and logo?</h3>
+    <p><p>Yes, you can customize the look and feel of MDofficeMail to display your logo and banner. <a href="customization.html">Click here for details..</a></p></p>
+	
+	 <h3>Do you have a Calendar? What are the features?</h3>
+    <p>MDofficeMail Calendar is a great planning tool. You can set reminder messages for appointments and work deadlines. Since it automatically stores information on MDofficeMail server, you can access your schedule from any computer. You can also share your entire calendar or particular events with other users.</p>
+	
+	 <h3>Whether File sharing available with MDofficeMail?</h3>
+    <p>Yes - You can share files with patients, doctors, and your staff anytime. Just upload files and give access to anyone by sending the link through email. You can share Patient Instruction Sheets, Patient Education Forms, etc with patients. You can even create web pages without having a website!</p>
+	<p>Further, you can have the contents of a particular folder on your computer automatically synchronized and available on any computer you use.</p>
+	
+	 <h3>Does MDofficeMail support email Legal Archiving?</h3>
+    <p>MDofficeMail provides online email archiving for 7 years or more. All incoming and outgoing emails are stored in a secure remote server which cannot be modified or deleted. As long as the user is active archived messages can be viewed and downloaded.</p>
+	
+	 <h3>Is there any limit to the size of attachments?</h3>
+    <p>Large attachments up to 50 MB can be sent with each message. There is no size limit on receiving attachments except the quota limit of mailbox.</p>
+	
+	 <h3 style="line-height: 25px;">Is there a way for someone to send a secure message to MDofficeMail user?</h3>
+    <p>Yes. there are two easy ways:</p>
+	
+	<ul class="fa-ul">
+  <li><i class="fa-li fa-solid fa-angles-right"></i>Anyone  can browse <a href="https://EmailYourDoc.com" target="_blank">https://EmailYourDoc.com</a>,  compose, and send a secure message to MDofficeMail user.</li>
+  <li><i class="fa-li fa-solid fa-angles-right"></i>If someone has already received a secure message  from MDofficeMail user, there is an option to send secure reply from the  received message.</li>
+</ul>
+	
+	
+	 <h3 style="margin-top:30px;">How does the spam filter work?</h3>
+    <p>MDofficeMail is having an excellent spam filtration system. First it checks multiple RBL databases and the SPF protocol to see if the sender is a known spammer or if the email is coming from an email server that is either a known spam server or a machine that is not properly secured to prevent spam. Then it processes incoming messages through the powerful Spam Assassin system. As a third step suspicious messages can be challenged by the Friends system giving senders an opportunity to prove their message is not spam. Using a combination of these systems allows a user to actually stop almost 100% of spam without false positives.</p>
+	
+	<h3 style="margin-top:30px;">How does the virus protection work?</h3>
+    <p>MDofficeMail uses a powerful server-based system provided by Avasti. This system is certified by ICSA, the same certification authority that approves systems for MacAfee, Norton and a few other major players. Only trust ICSA Certified virus scan systems. As the system is installed on our email servers users don’t have to worry with administration or updates.</p>
+	
+	<h3 style="margin-top:30px;">What if I use PGP or S/MIME for email encryption?</h3>
+    <p>MDofficeMail supports and supplements PGP or S/MIME encryption. Even if you encrypt email messages with PGP or S/MIME, the message headers still remain open. "To:", "From:", "Subject:" etc. header fields may disclose your identity and contain confidential information. Using a MDofficeMail encrypted tunnel to transport these messages creates higher level of security. PGP encryption is supported directly within MDofficeMail classic WebMail interface.</p>
+	
+	<h3 style="margin-top:30px;">Do you support push email to my mobile device?</h3>
+    <p>MDofficeMail fully supports the IMAP IDLE push command for instant new mail notifications to your cell phone.</p>
+	
+	<h3 style="margin-top:30px;">How do I manage my MDofficeMail/CryptnSend email account(s)?</h3>
+    <p>Account administration control panel that lets you completely manage all of the user-level functions of your MDofficeMail account. For all plans which include multiple accounts, we provide a master email hosting control panel that lets you create, delete, define and manage user email accounts while allowing each individual user to manage all of their own user-level functions. If domain hosting is included in your plan, a domain admin panel is provided which allows user management, routing & filtering, reports, and other domain-level functions.</p>
+	
+	<h3 style="margin-top:30px;">Do you keep usage logs?</h3>
+    <p>Yes, we do record and maintain session logs.<br>
+	MDofficeMail vs Crypt-n-Send
+	</p>
+	
+	<h3 style="margin-top:30px;">What is the difference between MDofficeMail and Crypt-n-Send?</h3>
+    <p>MDofficeMail is a HIPAA compliant email hosting solution where as Crypt-n-Send is HIPAA compliant email encryption service for your existing email account irrespective of where it is hosted. CryptnSend can be used with any email acccount, email service provider can be anyone including free services like Gmail, Yahoo, MSN etc. CryptnSend is encryption service for your outgoing messages, for security at the recipient's end.</p>
+	
+	<h3 style="margin-top:30px; line-height: 25px;">Can I see a detailed comparision between MDofficeMail, Crypt-n-Send, and other services?</h3>
+    <p>Yes, detailed comparision between Standard, Economy plans of MDofficeMail hosting and CryptnSend is available at mdofficemail.com/compareplans.html.<br><br>
+	Detailed comparision between MDofficeMail hosting, CryptnSend, and other email services is available at mdofficemail.com/compare.html.</p>
+	
+	
+  
+</div>
+
+<div id="tab4" class="tab-content">
+<h2 class="post-title">About us & how we can help</h2>	
+
+    <h3>About MDofficeMail</h3>
+    <p>MDofficeMail was started by a group of young entrepreneurs with ample of experience in serving US Healthcare and certified in HIPAA Privacy and Security Awareness.</p>
+	<p>MDofficeMail is the sister concern of <a href="http://vinfonet.com" target="_blank">Vision Infonet Inc</a>, a 27-year-old Illinois corporation serving US Healthcare with Software Development, Medical Billng, Medical Transcription and other back-office services.</p>
+	<p>
+Vision Infonet also owns a 50-year-old California LLC, <a href="http://practicemgt.com" target="_blank">Practice Management System</a> serving Bay Area physicians for the past 50 years with IT and Billing services.
+<a href="http://mdcare.com" target="_blank">MDCare</a> EMR/PMS is one of the software product and service from Vision Infonet. MDCare is a certified, high-end, and web-based software with most advanced features.</p>
+	
+	<h3>Where can I find online Technical Support documentation?</h3>
+    <p>Webmail help: Please visit <a href="http://mdofficemail.com/help/index.html" target="_blank">help/index.html</a><br>
+Online support: Please visit <a href="http://mdofficemail.com/support/index.html" target="_blank">support/index.html</a></p>
+	
+	<h3>Can you assist me in setting up my MDofficeMail account?</h3>
+    <p>We can assist in all respects including configuring your web-portal, email program (Outlook, Windows Mail etc), setting up your domain account, etc. We can remotely access your computer and provide support if required and permission is granted to us. There is not extra charge for support.</p>
+	
+	<h3>Do you provide Technical Support?</h3>
+    <p>We provide unmatched customer support:<br>
+Email support is available on 24/7 basis (response time ranges between 15 minutes to 12 hours) <br>
+Telephone support is available Mon-Fri from 8.00 AM to 5.00 PM CST <br>
+Chat support is also available.</p>
+	
+	<h3>How can I cancel my trial account or regular subscription?</h3>
+    <p>You can log in to your Account Administration page and click "Cancel" button and proceed. Alternatively you can cancel MDofficeMail account by sending an email or calling us. Make sure to provide your admin email id and last 4 digits of credit card on file.</p>
+	
+	<h3>Where are the MDofficeMail email servers located?</h3>
+    <p>MDofficeMail email servers are located in a secure data center attached to our office in Illinois, and California.</p>
+	
+	
+</div>
+	<script>
+function openTab(tabId, btn) {
+
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // Remove active button
+    document.querySelectorAll('.tab-btn').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Show selected tab
+    document.getElementById(tabId).classList.add('active');
+    btn.classList.add('active');
+}
+</script>	
+                          
+                              
+                            </div>
+							
+							
+							
+                        </div>	
+                    </div>
+			
+                </div>
+                <aside class="col-lg-4 col-md-5 col-12">
+                    <div class="sidebar">
+                       
+						
+						
+                      <div class="widget popular-feeds">
+					  <div class="bg-icon">
+            <i class="fa-solid fa-file-lines"></i>
+        </div>
+                            <h5 class="widget-title">Secure Web-contact Forms</h5>
+                            <div class="popular-feed-loop">
+                                <div class="single-popular-feed">
+                                  
+                                    <div class="feed-desc">
+                                        <h6 class="post-title"><p>Secure and HIPAA compliant Contact Forms for your website. Forms are Dynamic, Responsive, customized to suit your website.</p></h6>
+                                        <!-- <span class="time"><i class="lni lni-calendar"></i> 05th Nov 2023</span> -->
+										<a href="#" class="morebtn">More</a>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>
+					
+						
+						  <div class="widget popular-feeds">
+						   <div class="bg-icon">
+           <i class="fa-solid fa-fax"></i>
+        </div>
+                            <h5 class="widget-title">Secure Fax</h5>
+                            <div class="popular-feed-loop">
+                                <div class="single-popular-feed">
+                                  
+                                    <div class="feed-desc">
+                                        <h6 class="post-title"><p>No more fax machines, telephone lines. Subscribe to MDfax to send/receive HIPAA compliant fax from your email or desktop...</p></h6>
+                                        <!-- <span class="time"><i class="lni lni-calendar"></i> 05th Nov 2023</span> -->
+										<a href="#" class="morebtn">More</a>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>
+						
+						
+						  <div class="widget popular-feeds">
+						  <div class="bg-icon">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+                            <h5 class="widget-title">Legal Archival</h5>
+                            <div class="popular-feed-loop">
+                                <div class="single-popular-feed">
+                                  
+                                    <div class="feed-desc">
+                                        <h6 class="post-title"><p>All sent and received email messages are stored in a secure remote server which cannot be edited or deleted...</p></h6>
+                                        <!-- <span class="time"><i class="lni lni-calendar"></i> 05th Nov 2023</span> -->
+										<a href="#" class="morebtn">More</a>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>
+						
+						
+						
+                        <div class="widget social-widget">
+                            <h5 class="widget-title">Follow Us</h5>
+                            <ul class="custom-flex">
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="#"><i class="lni lni-wordpress-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Singel Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Middle Top -->
+         <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-12">
+                        <!-- Single Widget -->
+                        <div class="f-about single-footer">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/logo.png" alt="#"></a>
+                            </div>
+                           
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="row">
+						
+						 <div class="col-lg-3 col-md-3 col-6">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Useful Links</h3>
+                                    <ul>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Quick Start Guide</a></li>
+                                        <li><a href="#">Online Support</a></li>
+                                        <li><a href="#">Webmail Help</a></li>                                        
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-6">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Quick Links</h3>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                                                            
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                           <div class="col-lg-6 col-md-6 col-6" style="text-align: center; padding-top: 20px;">
+						<img src="assets/images/30-day-refund.png" alt="Logo" class="animated faa-slow faa-vertical">
+						<img src="assets/images/HIPAA.png" alt="Logo" style="padding-left:10px">
+						</div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Middle -->
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="left">
+                                <p>Designed and Developed by<a href="#"
+                                        target="_blank">Vinfonet</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="right">
+                                <p>All Right Reserved Design By MD OfficeMail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+const trialBtn = document.getElementById("trialBtn");
+const trialSection = document.getElementById("trialSection");
+
+trialBtn.addEventListener("click", function(e){
+    e.stopPropagation();
+
+    if(trialSection.style.display === "block"){
+        trialSection.style.display = "none";
+    }else{
+        trialSection.style.display = "block";
+    }
+});
+
+trialSection.addEventListener("click", function(e){
+    e.stopPropagation();
+});
+
+document.addEventListener("click", function(){
+    trialSection.style.display = "none";
+});
+</script>
+	
+    <script type="text/javascript">
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+        //====== Clients Logo Slider
+        tns({
+            container: '.client-logo-carousel',
+            slideBy: 'page',
+            autoplay: true,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            gutter: 15,
+            nav: false,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 2,
+                },
+                768: {
+                    items: 3,
+                },
+                992: {
+                    items: 4,
+                },
+                1170: {
+                    items: 6,
+                }
+            }
+        });
+
+        //======== Home Slider
+        var slider = new tns({
+            container: '.home-slider',
+            slideBy: 'page',
+            autoplay: true,
+            mouseDrag: true,
+            gutter: 0,
+            items: 1,
+            nav: true,
+            controls: false,
+            controlsText: [
+                '<i class="lni lni-arrow-left prev"></i>',
+                '<i class="lni lni-arrow-right next"></i>'
+            ],
+            responsive: {
+                1200: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                0: {
+                    items: 1,
+                }
+
+            }
+        });
+
+        //======== Testimonial Slider
+        var slider = new tns({
+            container: '.testimonial-slider',
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            items: 1,
+            nav: true,
+            controls: false,
+            controlsText: [
+                '<i class="lni lni-arrow-left prev"></i>',
+                '<i class="lni lni-arrow-right next"></i>'
+            ],
+            responsive: {
+                1200: {
+                    items: 2,
+                },
+                992: {
+                    items: 1,
+                },
+                0: {
+                    items: 1,
+                }
+
+            }
+        });
+
+        //============== isotope masonry js with imagesloaded
+        imagesLoaded('#container', function () {
+            var elem = document.querySelector('.grid');
+            var iso = new Isotope(elem, {
+                // options
+                itemSelector: '.grid-item',
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-item'
+                }
+            });
+
+            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+            filterButtons.forEach(e =>
+                e.addEventListener('click', () => {
+
+                    let filterValue = event.target.getAttribute('data-filter');
+                    iso.arrange({
+                        filter: filterValue
+                    });
+                })
+            );
+        });
+    </script>
+</body>
+
+</html>
