@@ -471,7 +471,7 @@ body.scrolled .header .header-container {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #fff;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -2177,4 +2177,26 @@ a:hover{
 body.scrolled .navmenu a {
 	margin-top:10px;
 	padding:18px 15px 9px 15px;
+}
+
+
+/* mobile device */
+@media (max-width: 768px) {
+.header .logo img {
+    max-height: 48px;
+    margin-right: 8px;
+}
+.top-pill{
+	display:none;
+}
+.footer {  
+    padding-bottom: 0px;
+  
+}
+    .header .header-container {
+        padding: 19px 0;
+    }
+	    .hero h2 {
+        font-size: 22px;
+    }
 }
