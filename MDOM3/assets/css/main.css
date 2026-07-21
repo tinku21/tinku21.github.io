@@ -2166,6 +2166,12 @@ a:hover{
          url('../fonts/Cosmos-R-Medium.svg#Cosmos BQ') format('svg');
 }
 
+
+
+body.scrolled .navmenu a {
+	margin-top:10px;
+	padding:18px 15px 9px 15px;
+}
 .logotrans{
 	  font-size: 32px;
  color:#fff;
@@ -2174,11 +2180,8 @@ a:hover{
      margin-top: -21px;
 }
 
-body.scrolled .navmenu a {
-	margin-top:10px;
-	padding:18px 15px 9px 15px;
-}
-
+.logocap{
+position: absolute;  top:17px;  right: 23px;}
 
 /* mobile device */
 @media (max-width: 768px) {
@@ -2199,4 +2202,15 @@ body.scrolled .navmenu a {
 	    .hero h2 {
         font-size: 22px;
     }
+	
+.logotrans{
+	  font-size: 28px;
+ color:#fff;
+  letter-spacing: 1px;
+ font-family: 'Cosmos BQ';
+     margin-top: -21px;
+}
+
+.logocap{
+position: absolute;  top:12px;  right: 23px;}	
 }
