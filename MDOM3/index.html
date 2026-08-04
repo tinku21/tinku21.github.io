@@ -26,12 +26,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body class="index-page">
-
+<div class="scroll-down">
+    <a href="#services">
+        <span class="mouse">
+            <span class="wheel"></span>
+        </span>
+     
+    </a>
+</div>
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
 
@@ -55,22 +62,33 @@
 </div>
 
       <nav id="navmenu" class="navmenu">
-        <ul><li><a href="features.html">Features</a></li>
-          <li><a href="#">How It works</a></li>
-          <li><a href="#">HIPAA</a></li>
-          <li><a href="#">Customization</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li class="dropdown"><a href="#"><span>Other Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <ul>
+		  <li class="dropdown"><a href="#mousedown"><span>MD Officemail</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#" style="display:block"><strong>Secure Fax</strong><br>
-                            <em style="font-size:12px; font-weight:400;">HIPAA compliant digital fax service</em></a></li>
-             
-              <li><a href="#"  style="display:block"><strong>Secure Online Forms</strong><br>
-                            <em style="font-size:12px; font-weight:400;">HIPAA compliant web contact forms <br>and patient forms</em></a></li>
-            
+              <li><a href="#">Features</a></li>
+			   <li><a href="#">How It works</a></li>
+			    <li><a href="#">HIPAA</a></li>
+				 <li><a href="#">Customization</a></li> 
             </ul>
           </li>
-          <li><a href="#">Pricing & Signup</a></li>
+		    <li class="dropdown"><a href="#faxtone"><span>Faxtone</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+             <li><a href="#">Features</a></li>
+			   <li><a href="#">How It works</a></li>
+			    <li><a href="#">HIPAA</a></li>
+				 <li><a href="#">Customization</a></li> 
+            </ul>
+          </li>
+		    <li class="dropdown"><a href="#patientforms"><span>Secure Web Forms</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Patient Questionnaires</a></li>
+			   <li><a href="#">Patient Consent Forms</a></li>
+			    <li><a href="#">Contact Us Forms</a></li>
+				 <li><a href="#">Authorization Forms</a></li> 
+            </ul>
+          </li>	
+          <li><a href="#pricing">Pricing & Signup</a></li>          
+     
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -89,69 +107,189 @@
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>Secure & Convenient<br>HIPAA Compliant Email</h2>
+            <h2>Everything You Need for<br>Secure Digital Communication</h2>
             <!-- <p>We are team of talented designers making websites with Bootstrap</p> -->
-            <a href="#" class="btn-get-started">Get Started</a>
+            <!-- <a href="#" class="btn-get-started">Get Started</a> -->
           </div>
         </div>
       </div>
 
     </section><!-- /Hero Section -->
 
+<section class="announcement-banner" id="services">
+    <div class="banner-content">
+        <h2>Three convenient and <span style="color:#4FC3F7">HIPAA</span> Compliant services</h2>
 
+        <a href="#" class="banner-link">
+            Discover the powerful features that deliver secure, reliable, and efficient digital communication.         
+        </a>
+    </div>
+</section>
+
+
+<section class="services-section" style=" background-color:#f3f7fb;
+    background-image:
+        linear-gradient(rgba(6,60,106,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6,60,106,.05) 1px, transparent 1px);
+    background-size:35px 35px;">
+
+<div class="container">
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+
+<div class="col-lg-4">
+
+<div class="service-card" style="min-height:auto;"
+
+data-title="HIPAA Email Hosting Service"
+
+data-image="assets/img/mdom.jpg"
+
+data-desc="Majority of healthcare providers and patients use free email service or the one provided by the internet or web hosting service provider. "
+
+data-menu='
+
+<a href="#">Features</a>
+
+<a href="#">How It Works</a>
+
+<a href="#">HIPAA</a>
+
+<a href="#">Customization</a>
+
+'>
+
+<div class="icon">
+
+<i class="bi bi-envelope-at-fill"></i>
+
+</div>
+
+<h4>HIPAA Email Hosting Service</h4>
+
+
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="col-lg-4">
+
+<div class="service-card" style="min-height:auto;"
+
+data-title="HIPAA Compliant Digital Fax"
+
+data-image="assets/img/faxtone.jpg"
+
+data-desc="By simply accessing your secure email you can view all your office faxes anytime, anywhere. In addition you can send faxes from your email, web-portal, and smart phone. "
+
+data-menu='
+
+
+<a href="#">How it Works</a>
+
+<a href="#">Features</a>
+
+<a href="#">Security</a>
+
+<a href="#">Pricing</a>
+
+'>
+
+<div class="icon">
+
+<i class="bi bi-motherboard-fill"></i>
+
+</div>
+
+<h4>HIPAA Compliant Digital Fax</h4>
+
+
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="col-lg-4">
+
+<div class="service-card" style="min-height:auto;"
+
+data-title="Secure Online Patient Forms"
+
+data-image="assets/img/secure.jpg"
+
+data-desc="A secure online form is necessary to collect Protected Health Information (PHI) and other sensitive, private information such as social security details, credit card details, legal information, etc."
+
+data-menu='
+
+<a href="#">Patient Questionnaires</a>
+
+<a href="#">Patient Consent Forms</a>
+
+<a href="#">Contact Us Forms</a>
+
+<a href="#">Authorization Forms</a>
+
+'>
+
+<div class="icon">
+
+<i class="bi bi-file-lock-fill"></i>
+
+</div>
+
+<h4>Secure Online Patient Forms</h4>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SHARED MEGA PANEL -->
+
+<div class="mega-panel">
+
+<div class="row align-items-center">
+
+<div class="col-lg-4">
+
+<img
+id="megaImage"
+src=""
+class="img-fluid rounded">
+
+</div>
+
+<div class="col-lg-8">
+
+<h2 id="megaTitle"></h2>
+
+<p id="megaDesc"></p>
+
+<div id="megaMenu" class="mega-links"></div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
     <!-- Services Section -->
-    <section id="services" class="services section"> 
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-envelope-at-fill"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>HIPAA Email Hosting Service</h3>
-              </a>
-              <p>Majority of healthcare providers and patients use free email service or the one provided by the internet or web hosting service provider. </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-motherboard-fill"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>HIPAA Compliant Digital Fax</h3>
-              </a>
-              <p>By simply accessing your secure email you can view all your office faxes anytime, anywhere. In addition you can send faxes from your email, web-portal, and smart phone. </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-file-lock-fill"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Secure Online Patient Forms</h3>
-              </a>
-              <p>A secure online form is necessary to collect Protected Health Information (PHI) and other sensitive, private information such as social security details, credit card details, legal information, etc.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        
-
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-<section class="py-5 bg-light">
+    
+<section class="py-5" id="mousedown">
     <div class="container">
 
         <div class="text-center mb-5">
@@ -295,66 +433,66 @@ HIPAA Compliant Fax service with no hassles !!
     </div>
 </section>
   <!-- Why Us Section -->
-    <section id="why-us" class="why-us section">
+    <!-- <section id="why-us" class="why-us section"> -->
 
-      <div class="container">
+      <!-- <div class="container"> -->
 
-        <div class="row gy-4">
+        <!-- <div class="row gy-4"> -->
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>Three convenient and HIPAA Compliant services</h3>
-              <p>
-               Some of the important features of MDofficeMail that is secure and efficient.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Why Box -->
+          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100"> -->
+            <!-- <div class="why-box"> -->
+              <!-- <h3>Three convenient and HIPAA Compliant services</h3> -->
+              <!-- <p> -->
+               <!-- Some of the important features of MDofficeMail that is secure and efficient. -->
+              <!-- </p> -->
+              <!-- <div class="text-center"> -->
+                <!-- <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a> -->
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div><!-- End Why Box --> 
 
-          <div class="col-lg-8 d-flex align-items-stretch">
-            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-lg-8 d-flex align-items-stretch"> -->
+            <!-- <div class="row gy-4" data-aos="fade-up" data-aos-delay="200"> -->
 
-              <div class="col-xl-4">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-globe-americas-fill"></i>
-                  <h4>MDofficeMail</h4>
-                  <p>Secure, Efficient, and Economical HIPAA Compliant Email Service! All aspects of compliance are taken care.</p>
-                </div>
-              </div><!-- End Icon Box -->
+              <!-- <div class="col-xl-4"> -->
+                <!-- <div class="icon-box d-flex flex-column justify-content-center align-items-center"> -->
+                  <!-- <i class="bi bi-globe-americas-fill"></i> -->
+                  <!-- <h4>MDofficeMail</h4> -->
+                  <!-- <p>Secure, Efficient, and Economical HIPAA Compliant Email Service! All aspects of compliance are taken care.</p> -->
+                <!-- </div> -->
+              <!-- </div><!-- End Icon Box --> 
 
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="fa-solid fa-shield-halved"></i>
-                  <h4>Secure Digital Fax</h4>
-                  <p>HIPAA Compliant Digital Fax Service, Faxtone. Make your faxes available all the time. Free Legal Archival and secure email account.</p>
-                </div>
-              </div><!-- End Icon Box -->
+              <!-- <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300"> -->
+                <!-- <div class="icon-box d-flex flex-column justify-content-center align-items-center"> -->
+                  <!-- <i class="fa-solid fa-shield-halved"></i> -->
+                  <!-- <h4>Secure Digital Fax</h4> -->
+                  <!-- <p>HIPAA Compliant Digital Fax Service, Faxtone. Make your faxes available all the time. Free Legal Archival and secure email account.</p> -->
+                <!-- </div> -->
+              <!-- </div><!-- End Icon Box --> 
 
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard2-check-fill"></i>
-                  <h4>Secure Forms</h4>
-                  <p>HIPAA Compliant and secure form for your website. Customized header to match your website and customized fields to suit your requirement.</p>
-                </div>
-              </div><!-- End Icon Box -->
+              <!-- <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400"> -->
+                <!-- <div class="icon-box d-flex flex-column justify-content-center align-items-center"> -->
+                  <!-- <i class="bi bi-clipboard2-check-fill"></i> -->
+                  <!-- <h4>Secure Forms</h4> -->
+                  <!-- <p>HIPAA Compliant and secure form for your website. Customized header to match your website and customized fields to suit your requirement.</p> -->
+                <!-- </div> -->
+              <!-- </div><!-- End Icon Box --> 
 
-            </div>
-          </div>
+            <!-- </div> -->
+          <!-- </div> -->
 
-        </div>
+        <!-- </div> -->
 
-      </div>
+      <!-- </div> -->
 
-    </section><!-- /Why Us Section -->
+    <!-- </section><!-- /Why Us Section --> 
 
   <!-- Start features Area -->
-    <section class="services section">
+    <section class="services section " style="background-color:#f3f7fb !important;" id="faxtone">
         <div class="container">
 		<div class="text-center mb-5">
             <h2 class="fw-bold display-8">
-               Features of Email Hosting
+               Faxtone - Secure digital faxing
             </h2>
         </div>
          
@@ -427,7 +565,132 @@ HIPAA Compliant Fax service with no hassles !!
     </section>
     <!-- /End Features Area -->
 
+<section class="services section " style="background-color:#fff !important;" id="patientforms">
+        <div class="container">
+		<div class="text-center mb-5">
+            <h2 class="fw-bold display-8">
+               Secure Online Patient Forms
+            </h2>
+			<p class="lead text-secondary">Using a secure website form to protect confidential information</p>
+        </div>
+         
+			<div class="row g-4 mt-3">
 
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+                <h5>Secure & HIPAA Compliant</h5>
+                <p>Protect patient information with enterprise-grade HIPAA compliant security.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <div>
+                <h5>PDF Form Delivery</h5>
+                <p>Completed forms are automatically delivered as PDF documents.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <div>
+                <h5>Fully Customizable</h5>
+                <p>Match your website branding with complete customization options.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-list-check"></i>
+            </div>
+            <div>
+                <h5>Custom Form Fields</h5>
+                <p>Supports text fields, dropdowns, checkboxes, radio buttons and more.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-code-branch"></i>
+            </div>
+            <div>
+                <h5>Conditional Logic</h5>
+                <p>Display sub-menus dynamically based on user selections.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-mobile-screen-button"></i>
+            </div>
+            <div>
+                <h5>Responsive Design</h5>
+                <p>Optimized automatically for desktop, tablet, and mobile devices.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-paperclip"></i>
+            </div>
+            <div>
+                <h5>File Attachments</h5>
+                <p>Allow users to upload documents and supporting files securely.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-signature"></i>
+            </div>
+            <div>
+                <h5>Electronic Signatures</h5>
+                <p>Collect legally valid digital signatures directly within the form.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="secure-feature-card">
+            <div class="secure-icon">
+                <i class="fas fa-link"></i>
+            </div>
+            <div>
+                <h5>Easy Website Integration</h5>
+                <p>No installation required. Just add a hyperlink to your website—no plugins or certificates needed.</p>
+				
+
+            </div>
+        </div>
+    </div>
+  <a href="#" class="secure-btn" style="margin:0 auto; width:auto !important; margin-top:20px;" >Read More   <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+</div>
+
+        </div>
+    </section>
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
@@ -442,7 +705,7 @@ HIPAA Compliant Fax service with no hassles !!
             <p>"Office for Civil Rights may impose a penalty on a covered entity for a failure to comply with a requirement of the Privacy Rule. Penalties will vary significantly depending on... or whether the covered entity’s failure to comply was due to willful neglect."</p>
           </div>
           <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Read More</a>
+            <a class="cta-btn align-middle" href="https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html" target="_blank">Read More</a>
           </div>
         </div>
 
@@ -452,7 +715,7 @@ HIPAA Compliant Fax service with no hassles !!
 
    
 
-  <section class="pricing-section py-5">
+  <section class="pricing-section py-5" id="pricing">
 <div class="container">
 
 <div class="text-center mb-5">
@@ -570,6 +833,79 @@ Learn More
 </div>
 </section>
   
+  
+  <section class="clients-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-4">
+            <h2>Our Clients</h2>
+            <p>Serving healthcare organizations across the country.</p>
+        </div>
+
+        <div class="logo-slider">
+
+            <div class="logo-track">
+
+                <div class="logo-item">
+                    <img src="assets/img/client1.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client2.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client3.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client4.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client5.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client6.png" alt="">
+                </div>
+
+                <!-- Duplicate for infinite scroll -->
+
+                <div class="logo-item">
+                    <img src="assets/img/client1.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client2.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client3.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client4.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client5.png" alt="">
+                </div>
+
+                <div class="logo-item">
+                    <img src="assets/img/client6.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  
+  
   </main>
 
   <footer id="footer" class="footer light-background">
@@ -643,7 +979,7 @@ Learn More
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
