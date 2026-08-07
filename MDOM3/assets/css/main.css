@@ -266,9 +266,6 @@ body.scrolled .top-pill{
 
 }
 
-body.scrolled .top-pill a{
-    color:#fff;
-}
 body.scrolled .top-pill a:hover{
     color:#feb2b1;
 }
