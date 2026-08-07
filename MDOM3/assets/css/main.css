@@ -234,12 +234,14 @@ position: absolute;
     padding: 8px 18px;
     transition: all .45s ease;
     z-index: 9999;
+    display: flex;
 }
 
 .top-pill a{
     text-decoration:none;
     color:#fff;
     font-size:14px;
+	margin-top: 2px;
 }
 .top-pill a:hover{
     text-decoration:none;
@@ -419,7 +421,7 @@ body.scrolled .header .header-container {
 
   .navmenu .dropdown ul {
     margin: 0;
-    padding: 10px 0;
+    padding: 1px;
     background: var(--nav-dropdown-background-color);
     display: block;
     position: absolute;
@@ -451,7 +453,8 @@ body.scrolled .header .header-container {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: #fff;
+	background:#063c6a;
   }
 
   .navmenu .dropdown:hover>ul {

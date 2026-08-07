@@ -28,6 +28,45 @@
   <link href="assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
+<style>
+
+/* Dropdown */
+.dropdown1{
+    position:relative;
+	Display:flex;
+}
+
+.dropdown-menu2{
+    position:absolute;
+    top:100%;
+    right:0;
+    min-width:180px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:6px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    display:none;
+    z-index:999;
+    overflow:hidden;
+}
+
+.dropdown-menu2 a{
+    display:block;
+    padding:10px 15px;
+    color:#333;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.dropdown-menu2 a:hover{
+    background:#063c6a;
+    color:#fff;
+}
+
+.dropdown1:hover .dropdown-menu2{
+    display:block;
+}
+</style>
 </head>
 
 <body class="index-page">
@@ -49,16 +88,46 @@
 	  <span class="logocap"><small style="color:#fff;"><br>HIPAA Compliant Email Service</small></span>
         
       </a>
+<!-- <div class="top-pill"> -->
+
+
+    <!-- <a href="#">About</a> -->
+	 <!-- <span>|</span> -->
+    <!-- <a href="#">Contact</a> -->
+	 <!-- <span>|</span> -->
+    <!-- <a href="#">Login</a> -->
+	 <!-- <span>|</span> -->
+    <!-- <a href="#">Help</a> -->
+<!-- </div> -->
+
 <div class="top-pill">
-
-
     <a href="#">About</a>
-	 <span>|</span>
+    <span>|</span>
+
     <a href="#">Contact</a>
-	 <span>|</span>
-    <a href="#">Login</a>
-	 <span>|</span>
-    <a href="#">Help</a>
+    <span>|</span>
+
+    <div class="dropdown1">
+        <a href="#">Login  <i class="bi bi-chevron-down toggle-dropdown" style="font-size:10px;"></i></a>
+        <div class="dropdown-menu2">
+            <a href="#">Webmail Login</a>
+            <a href="#">Account Administration/Billing</a>
+        </div>
+    </div>
+
+    <span>|</span>
+
+    <div class="dropdown1">
+        <a href="#">Help  <i class="bi bi-chevron-down toggle-dropdown"  style="font-size:10px;"></i></a>
+        <div class="dropdown-menu2">
+            <a href="#">Webmail Help</a>
+            <a href="#">Online Help/Support</a>
+            <a href="#">Download Quick Start Guide</a>
+			<a href="#">iPhone Setup Guide</a>
+			<a href="#">Android Setup Guide</a>
+            <a href="#">Support Request</a>
+        </div>
+    </div>
 </div>
 
       <nav id="navmenu" class="navmenu">
