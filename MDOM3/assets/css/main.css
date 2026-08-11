@@ -287,13 +287,18 @@ body.scrolled .header .header-container {
 }
 
 .header .header-container {
-  background-color:rgba(6,60, 106, 0.5);
-  transition: all 0.5s;
+	    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 40px;
+    padding: 0 20px;
+    box-shadow:inset 0 0 4px rgba(0, 0, 0, 0.4),
+        0 0 0 2px rgba(255, 255, 255, 0.9),
+        0 14px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease;
+
   position: relative;
-  padding-top: 7px;
+  padding-top:10px;
   padding-bottom: 7px;
-  border-radius: 50px;
-  box-shadow: 0 0px 5px rgba(225, 225, 225, 0.6);
 }
 
 .header .logo {
@@ -385,7 +390,7 @@ body.scrolled .header .header-container {
 
   .navmenu a,
   .navmenu a:focus {
-    color: #fff;
+    color: #063c6a;
     padding: 18px 15px;
     font-size: 15px;
     text-transform: uppercase;
@@ -413,7 +418,7 @@ body.scrolled .header .header-container {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: #a2e1fe;
+    color: #a60000;
   }
 
   .navmenu .dropdown ul {
@@ -631,7 +636,7 @@ body.scrolled .header .header-container {
   font-size: 30px;
  
   letter-spacing: 1px;
-font-family: 'Cosmos BQ', sans-serif;
+font-family: 'Cosmos BQ';
 }
 
 .footer .footer-about p {
@@ -2163,14 +2168,24 @@ a:hover{
 }
 }
 
-@font-face {
-   font-family: 'Cosmos BQ';
-    src: url('../fonts/Cosmos-R-Medium.eot');
-    src: url('../fonts/Cosmos-R-Medium.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Cosmos-R-Medium.woff2') format('woff2'),
-         url('../fonts/Cosmos-R-Medium.woff') format('woff'),
-         url('../fonts/Cosmos-R-Medium.ttf') format('truetype'),
-         url('../fonts/Cosmos-R-Medium.svg#CosmosBQ') format('svg');
+/* @font-face { */
+   /* font-family: 'Cosmos BQ'; */
+    /* src: url('../fonts/Cosmos-R-Medium.eot'); */
+    /* src: url('../fonts/Cosmos-R-Medium.eot?#iefix') format('embedded-opentype'), */
+         /* url('../fonts/Cosmos-R-Medium.woff2') format('woff2'), */
+         /* url('../fonts/Cosmos-R-Medium.woff') format('woff'), */
+         /* url('../fonts/Cosmos-R-Medium.ttf') format('truetype'), */
+         /* url('../fonts/Cosmos-R-Medium.svg#CosmosBQ') format('svg'); */
+/* } */
+
+@font-face { 
+    font-family: 'Cosmos BQ';
+   src: url('../fonts/CosmosBQ-Medium.eot'); 
+   src: url('../fonts/CosmosBQ-Medium.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/CosmosBQ-Medium.woff2') format('woff2'),
+         url('../fonts/CosmosBQ-Medium.woff') format('woff'),
+         url('../fonts/CosmosBQ-Medium.ttf') format('truetype'),
+         url('../fonts/CosmosBQ-Medium.svg#CosmosBQ') format('svg');
 }
 
 
@@ -2179,11 +2194,25 @@ body.scrolled .navmenu a {
 	margin-top:10px;
 	padding:18px 15px 9px 15px;
 }
+.scrolled .logotrans{
+	color:#fff;
+}
+.scrolled .navmenu a, .navmenu a:focus{
+	color:#fff;
+}
+
+.scrolled .logocap{
+	color:#fff;
+}
+
+.scrolled .navmenu li:hover>a, .navmenu .active, .navmenu .active:focus{
+	color:#cae7fd;
+}
 .logotrans{
 	  font-size: 32px;
- color:#fff;
+ color:#063c6a;
   letter-spacing: 1px;
- font-family: 'Cosmos BQ', sans-serif;
+ font-family: 'Cosmos BQ';
      margin-top: -21px;
 }
 
@@ -2214,7 +2243,7 @@ position: absolute;  top:17px;  right: 23px;}
 	  font-size: 28px;
  color:#fff;
   letter-spacing: 1px;
-font-family: 'Cosmos BQ', sans-serif;
+font-family: 'Cosmos BQ';
      margin-top: -21px;
 }
 
