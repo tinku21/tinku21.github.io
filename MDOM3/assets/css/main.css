@@ -919,7 +919,7 @@ section,
 
 .hero:before {
   content: "";
-background: color-mix(in srgb, #000, transparent 45%);
+background: color-mix(in srgb, #999, transparent 70%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -2179,12 +2179,12 @@ a:hover{
 
 @font-face { 
     font-family: 'Cosmos BQ';
-   src: url('../fonts/CosmosBQ-Medium.eot'); 
-   src: url('../fonts/CosmosBQ-Medium.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/CosmosBQ-Medium.woff2') format('woff2'),
-         url('../fonts/CosmosBQ-Medium.woff') format('woff'),
-         url('../fonts/CosmosBQ-Medium.ttf') format('truetype'),
-         url('../fonts/CosmosBQ-Medium.svg#CosmosBQ') format('svg');
+   src: url('CosmosBQ-Medium.eot'); 
+   src: url('CosmosBQ-Medium.eot?#iefix') format('embedded-opentype'), 
+         url('CosmosBQ-Medium.woff2') format('woff2'),
+         url('CosmosBQ-Medium.woff') format('woff'),
+         url('CosmosBQ-Medium.ttf') format('truetype'),
+         url('CosmosBQ-Medium.svg#CosmosBQ') format('svg');
 }
 
 

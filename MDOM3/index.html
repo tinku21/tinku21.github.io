@@ -27,8 +27,153 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/pricing.css">
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tabs = document.querySelectorAll(".range-tab");
+
+    const panels = document.querySelectorAll(".content-panel");
+
+    const section = document.getElementById("rangeSection");
+
+
+    tabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+
+            /* -----------------------------------------
+               Remove active state from all tabs
+            ----------------------------------------- */
+
+            tabs.forEach(function (item) {
+
+                item.classList.remove("active");
+
+            });
+
+
+            /* -----------------------------------------
+               Hide all content panels
+            ----------------------------------------- */
+
+            panels.forEach(function (panel) {
+
+                panel.classList.remove("range-visible");
+
+            });
+
+
+            /* -----------------------------------------
+               Activate clicked tab
+            ----------------------------------------- */
+
+            this.classList.add("active");
+
+
+            /* -----------------------------------------
+               Find target panel
+            ----------------------------------------- */
+
+            const target =
+                this.getAttribute("data-target");
+
+
+            const color =
+                this.getAttribute("data-color");
+
+
+            const targetPanel =
+                document.getElementById(target);
+
+
+            /* -----------------------------------------
+               Show target content
+            ----------------------------------------- */
+
+            if (targetPanel) {
+
+                targetPanel.classList.add("range-visible");
+
+            }
+
+
+            /* -----------------------------------------
+               Change main content background
+            ----------------------------------------- */
+
+            section.classList.remove(
+                "luxury-active",
+                "hybrid-active"
+            );
+
+
+            if (color === "luxury") {
+
+                section.classList.add(
+                    "luxury-active"
+                );
+
+            }
+
+
+            if (color === "hybrid") {
+
+                section.classList.add(
+                    "hybrid-active"
+                );
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
 <style>
+.feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 40px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.content-title {
+    position: relative;
+    
+    padding: 0 0 12px 0px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+
+    color: #17243a;
+}
+
+
+.content-title::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+
+    width: 70px;
+    height: 3px;
+
+    border-radius: 10px;
+    background:#075b9d;
+}
 
 /* Dropdown */
 .dropdown1{
@@ -66,6 +211,534 @@
 .dropdown1:hover .dropdown-menu2{
     display:block;
 }
+         /* =====================================================
+           MAIN SECTION
+        ===================================================== */
+
+        .range-section {
+            width: 100%;
+            max-width: 1300px;
+            margin: 30px auto;
+            overflow: hidden;
+            background: #e8f8e2;
+            transition: background-color 0.3s ease;
+			border-radius: 40px;
+			box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+			border:2px solid #fff;
+        }
+
+
+        /* =====================================================
+           TOP 3 TABS
+        ===================================================== */
+
+        .range-tabs {
+            width: 100%;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .range-tab {
+            width: 33.333333%;
+            height: 230px;
+
+            border: 0;
+            border-radius: 0;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+
+            color: #fff;
+
+            transition:
+                opacity 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .range-tab:hover {
+            opacity: 0.94;
+        }
+
+        .range-tab:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+
+        /* TAB COLORS */
+
+        .range-tab.organic {
+            background: #e8f8e2;
+        }
+
+        .range-tab.luxury {
+            background: #dfecfa;
+			border-left:2px solid #fff;
+			border-right:2px solid #fff;			
+        }
+
+        .range-tab.hybrid {
+            background: #feedd0;
+        }
+
+
+        /* =====================================================
+           TAB LOGO
+        ===================================================== */
+
+        .tab-logo {
+            width: 85%;
+            height: 170px;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+        }
+
+
+        /* MOONDEW */
+
+        .moondew-logo {
+            position: relative;
+            width: 90%;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+
+        .moondew-logo::before {
+            content: "";
+
+            position: absolute;
+
+            top: -15px;
+            left: 10%;
+
+            width: 80%;
+            height: 32px;
+
+            border-top: 4px solid #fff;
+            border-left: 4px solid #fff;
+            border-right: 4px solid #fff;
+        }
+
+        .moondew-logo::after {
+            content: "";
+
+            position: absolute;
+
+            bottom: -15px;
+            left: 10%;
+
+            width: 80%;
+            height: 32px;
+
+            border-bottom: 4px solid #fff;
+            border-left: 4px solid #fff;
+            border-right: 4px solid #fff;
+        }
+
+        .moondew-text {
+            position: relative;
+            z-index: 2;
+
+         
+
+            font-size: 38px;
+            font-weight: 300;
+
+            letter-spacing: 7px;
+            line-height: 1;
+
+            white-space: nowrap;
+        }
+
+
+        /* =====================================================
+           RANGE NAMES
+        ===================================================== */
+
+        .range-name {
+            position: relative;
+            z-index: 2;
+            line-height: 1;
+            font-weight: 500;
+			color:#fff;
+			background-color:#063c6a;
+			border-radius:5px;
+			padding:5px;
+        }
+
+
+        /* ORGANIA */
+
+        .organic-name {
+            font-size: 48px;
+            letter-spacing: -3px;
+        }
+
+        .organic-subtitle {
+            color: #e4df8d;
+        }
+
+
+        /* OPULA */
+
+        .luxury-name {
+            font-family: Georgia, serif;
+
+            font-size: 50px;
+            font-weight: 500;
+
+            color: #f6d77d;
+
+            letter-spacing: 2px;
+        }
+
+    
+
+        /* ELORIS */
+
+        .hybrid-name {
+            font-size: 43px;
+            letter-spacing: 1px;
+        }
+
+    
+
+        .range-subtitle {
+            position: relative;
+            z-index: 2;
+
+            margin-top: 7px;
+
+            font-size: 15px;
+            line-height: 1.15;
+        }
+
+
+        /* =====================================================
+           CONTENT AREA
+        ===================================================== */
+
+        .range-content {
+            padding: 16px 28px 20px;
+			border-top:2px solid #fff;
+        }
+
+
+        /* Hide panels */
+
+        .range-content .content-panel {
+            display: none !important;
+        }
+
+        /* Show selected panel */
+
+        .range-content .content-panel.range-visible {
+            display: block !important;
+        }
+
+
+        /* =====================================================
+           CONTENT TEXT
+        ===================================================== */
+
+        .content-title {
+            margin: 0 0 27px;
+
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .content-description {
+            margin-bottom: 30px;
+
+        
+
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+
+        /* =====================================================
+           FEATURES
+        ===================================================== */
+
+        .feature-list {
+            padding: 0;
+            margin: 0;
+
+            list-style: none;
+        }
+
+        .feature-list li {
+            position: relative;
+
+            padding-left: 28px;
+
+         
+            font-size: 16px;
+            font-weight: 600;
+
+            line-height: 1.6;
+        }
+
+        .feature-list li::before {
+  content: "›";
+    position: absolute;
+    left: 6px;
+    top: -10px;
+    font-size: 27px;
+    font-weight: 500;
+        }
+
+        .feature-list li span {
+            font-weight: 400;
+        }
+
+
+        /* =====================================================
+           IMAGE
+        ===================================================== */
+
+        .product-image {
+            display: block;
+
+            width: 100%;
+            height: 230px;
+
+            object-fit: cover;
+
+            border: 5px solid #fff;
+            border-radius: 50px 0px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ===================================================== */
+
+        .range-buttons {
+            display: flex;
+            align-items: center;
+
+            margin-top: -31px;
+        }
+
+        .range-buttons .btn {
+            margin-right: 5px;
+
+            padding: 9px 14px;
+
+            background: #fff;
+            color: #222;
+            z-index: 9999;
+            border: 0;
+            border-radius: 6px;
+
+            font-size: 16px;
+        }
+
+        .range-buttons .btn:hover {
+            background: #eee;
+        }
+
+        .more-btn {
+            margin-left: auto !important;
+            margin-right: 0 !important;
+        }
+
+
+
+.more-btn {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  border-radius: 30px;
+  color: #063c6a;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
+  border:1px solid #063c6a ;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: #fff !important;
+}
+
+.more-btn:hover {
+  
+  transition-duration: .5s;
+  color:#063c6a;
+}
+
+.more-btn:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.more-btn:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+
+
+
+        /* =====================================================
+           CONTENT BACKGROUND
+        ===================================================== */
+
+        .range-section.luxury-active {
+            background: #dfecfa;
+        }
+
+        .range-section.hybrid-active {
+            background: #feedd0;
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 992px) {
+
+            .range-tab {
+                height: 200px;
+            }
+
+            .tab-logo {
+                height: 150px;
+            }
+
+            .moondew-text {
+                font-size: 29px;
+                letter-spacing: 4px;
+            }
+
+            .organic-name {
+                font-size: 38px;
+            }
+
+            .luxury-name {
+                font-size: 40px;
+            }
+
+            .hybrid-name {
+                font-size: 35px;
+            }
+
+            .range-subtitle {
+                font-size: 13px;
+            }
+
+            .product-image {
+                height: 260px;
+            }
+
+            .content-title {
+                font-size: 28px;
+            }
+
+            .content-description {
+                font-size: 14px;
+            }
+
+            .feature-list li {
+                font-size: 14px;
+            }
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 767px) {
+
+            .range-section {
+                margin: 15px 10px;
+            }
+
+            .range-tabs {
+                flex-direction: column;
+            }
+
+            .range-tab {
+                width: 100%;
+                height: 150px;
+            }
+
+            .tab-logo {
+                height: 125px;
+            }
+
+            .moondew-text {
+                font-size: 27px;
+                letter-spacing: 4px;
+            }
+
+            .organic-name {
+                font-size: 34px;
+            }
+
+            .luxury-name {
+                font-size: 36px;
+            }
+
+            .hybrid-name {
+                font-size: 32px;
+            }
+
+            .range-content {
+                padding: 20px;
+            }
+
+            .content-title {
+                font-size: 27px;
+            }
+
+            .content-description {
+                font-size: 14px;
+            }
+
+            .feature-list li {
+                font-size: 14px;
+            }
+
+            .product-image {
+                height: 230px;
+                margin-top: 25px;
+            }
+
+        }
+
 </style>
 </head>
 
@@ -196,164 +869,264 @@
 </section>
 
 
-<section class="services-section" style=" background-color:#f3f7fb;
-    background-image:
-        linear-gradient(rgba(6,60,106,.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(6,60,106,.05) 1px, transparent 1px);
-    background-size:35px 35px;">
+<section class="services-section" style=" background-color:#f3f7fb;   background-image:linear-gradient(rgba(6,60,106,.05) 1px, transparent 1px),  linear-gradient(90deg, rgba(6,60,106,.05) 1px, transparent 1px);  background-size:35px 35px; padding:15px;">
 
-<div class="container">
 
-<div class="row g-4">
+<section class="range-section" id="rangeSection" style="padding:0px !important;">
 
-<!-- CARD 1 -->
 
-<div class="col-lg-4">
+    <!-- =====================================================
+         THREE TABS
+    ====================================================== -->
 
-<div class="service-card" style="min-height:auto;"
+    <div class="range-tabs">
 
-data-title="HIPAA Email Hosting Service"
 
-data-image="assets/img/mdom.jpg"
+        <!-- ================= ORGANIC ================= -->
 
-data-desc="Majority of healthcare providers and patients use free email service or the one provided by the internet or web hosting service provider. "
+        <button   type="button"   class="range-tab organic active"   data-target="organicContent"   data-color="organic">
+            <div class="tab-logo">
+			
+   <img   src="assets/img/mdomtab.png" >
 
-data-menu='
+                <!-- <div class="range-name">HIPAA Email Hosting Service</div> -->
+            </div>
+        </button>
 
-<a href="#">Features</a>
 
-<a href="#">How It Works</a>
 
-<a href="#">HIPAA</a>
+        <!-- ================= LUXURY ================= -->
 
-<a href="#">Customization</a>
+        <button type="button"  class="range-tab luxury"   data-target="luxuryContent"  data-color="luxury">
 
-'>
+            <div class="tab-logo">
+			<img   src="assets/img/faxtonetab.png" >
 
-<div class="icon">
+                <!-- <div class="range-name">HIPAA Compliant Digital Fax</div> -->
+            </div>
 
-<i class="bi bi-envelope-at-fill"></i>
+        </button>
 
-</div>
 
-<h4>HIPAA Email Hosting Service</h4>
 
+        <!-- ================= HYBRID ================= -->
 
+        <button  type="button"  class="range-tab hybrid"  data-target="hybridContent"  data-color="hybrid">
+            <div class="tab-logo"> 
+		<img   src="assets/img/securetab.png" >
 
-</div>
+                <!-- <div class="range-name">Secure Online Patient Forms</div> -->
+            </div>
 
-</div>
+        </button>
 
-<!-- CARD 2 -->
+    </div>
 
-<div class="col-lg-4">
 
-<div class="service-card" style="min-height:auto;"
 
-data-title="HIPAA Compliant Digital Fax"
+    <!-- =====================================================
+         CONTENT
+    ====================================================== -->
 
-data-image="assets/img/faxtone.jpg"
+    <div class="range-content">
 
-data-desc="By simply accessing your secure email you can view all your office faxes anytime, anywhere. In addition you can send faxes from your email, web-portal, and smart phone. "
 
-data-menu='
+        <!-- =================================================
+             ORGANIC CONTENT
+        ================================================== -->
 
+        <div   class="content-panel range-visible"   id="organicContent" >
 
-<a href="#">How it Works</a>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="content-title">
+                       HIPAA Email Hosting Service
+                    </h2>
+                    <p class="content-description">Majority of healthcare providers and patients use free email service or the one provided by the internet or web hosting service provider.</p>
 
-<a href="#">Features</a>
 
-<a href="#">Security</a>
+                    <ul class="feature-list">
 
-<a href="#">Pricing</a>
+                        <li>Features</li>
 
-'>
+                        <li>How It Works</li>
 
-<div class="icon">
+                        <li>HIPAA</li>
 
-<i class="bi bi-motherboard-fill"></i>
+                        <li>Customization</li>
+                    </ul>
+  <div class="range-buttons">
 
-</div>
+                       
 
-<h4>HIPAA Compliant Digital Fax</h4>
+                    <a href="#" class="more-btn">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</a>
 
+                    </div>
+                </div>
 
 
-</div>
+                <div class="col-lg-4">
 
-</div>
+                    <img   src="assets/img/mdom.jpg"   alt="Natural bedding"    class="product-image">
 
-<!-- CARD 3 -->
+                </div>
 
-<div class="col-lg-4">
+            </div>
 
-<div class="service-card" style="min-height:auto;"
+        </div>
 
-data-title="Secure Online Patient Forms"
 
-data-image="assets/img/secure.jpg"
 
-data-desc="A secure online form is necessary to collect Protected Health Information (PHI) and other sensitive, private information such as social security details, credit card details, legal information, etc."
+        <!-- =================================================
+             LUXURY CONTENT
+        ================================================== -->
 
-data-menu='
+        <div
+            class="content-panel"
+            id="luxuryContent"
+        >
 
-<a href="#">Patient Questionnaires</a>
+            <div class="row align-items-center">
 
-<a href="#">Patient Consent Forms</a>
 
-<a href="#">Contact Us Forms</a>
+                <div class="col-lg-8">
 
-<a href="#">Authorization Forms</a>
+                    <h2 class="content-title">
+                        HIPAA Compliant Digital Fax
+                    </h2>
 
-'>
 
-<div class="icon">
+                    <p class="content-description">
+                        By simply accessing your secure email you can view all your office faxes anytime, anywhere. In addition you can send faxes from your email, web-portal, and smart phone.
+                    </p>
 
-<i class="bi bi-file-lock-fill"></i>
 
-</div>
+                    <ul class="feature-list">
 
-<h4>Secure Online Patient Forms</h4>
+                        <li>
+                            How it Works
+                        </li>
 
+                        <li>
+                            Security
+                        </li>
 
-</div>
+                        <li>
+                           Features
+                        
+                        </li>
 
-</div>
+                        <li>
+                          Pricing
+                        </li>
 
-</div>
+                    </ul>
 
-<!-- SHARED MEGA PANEL -->
 
-<div class="mega-panel">
+                    <div class="range-buttons">
 
-<div class="row align-items-center">
+                       <a href="#" class="more-btn">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</a>
 
-<div class="col-lg-4">
+                        
 
-<img
-id="megaImage"
-src=""
-class="img-fluid rounded">
+                    </div>
 
-</div>
+                </div>
 
-<div class="col-lg-8">
 
-<h2 id="megaTitle"></h2>
+                <div class="col-lg-4">
 
-<p id="megaDesc"></p>
+                    <img src="assets/img/faxtone.jpg" class="product-image">
 
-<div id="megaMenu" class="mega-links"></div>
+                </div>
 
+            </div>
 
+        </div>
 
-</div>
 
-</div>
 
-</div>
+        <!-- =================================================
+             HYBRID CONTENT
+        ================================================== -->
 
-</div>
+        <div
+            class="content-panel"
+            id="hybridContent"
+        >
+
+            <div class="row align-items-center">
+
+
+                <div class="col-lg-8">
+
+                    <h2 class="content-title">
+                       Secure Online Patient Forms
+                    </h2>
+
+
+                    <p class="content-description">
+                        A secure online form is necessary to collect Protected Health Information (PHI) and other sensitive, private information such as social security details, credit card details, legal information, etc.
+                    </p>
+
+
+                    <ul class="feature-list">
+
+                        <li>
+                             Patient Questionnaires
+
+                        </li>
+
+                        <li>
+                          Patient Consent Forms
+
+                        </li>
+
+                        <li>
+                          Contact Us Forms
+                        </li>
+
+                        <li>
+                           Authorization Forms
+                        </li>
+
+                    </ul>
+
+
+                    <div class="range-buttons">
+
+
+                       <a href="#" class="more-btn">
+   <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                       <img src="assets/img/secure.jpg" class="product-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
 
 </section>
     <!-- Services Section -->
@@ -501,60 +1274,7 @@ HIPAA Compliant Fax service with no hassles !!
 
     </div>
 </section>
-  <!-- Why Us Section -->
-    <!-- <section id="why-us" class="why-us section"> -->
-
-      <!-- <div class="container"> -->
-
-        <!-- <div class="row gy-4"> -->
-
-          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100"> -->
-            <!-- <div class="why-box"> -->
-              <!-- <h3>Three convenient and HIPAA Compliant services</h3> -->
-              <!-- <p> -->
-               <!-- Some of the important features of MDofficeMail that is secure and efficient. -->
-              <!-- </p> -->
-              <!-- <div class="text-center"> -->
-                <!-- <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a> -->
-              <!-- </div> -->
-            <!-- </div> -->
-          <!-- </div><!-- End Why Box --> 
-
-          <!-- <div class="col-lg-8 d-flex align-items-stretch"> -->
-            <!-- <div class="row gy-4" data-aos="fade-up" data-aos-delay="200"> -->
-
-              <!-- <div class="col-xl-4"> -->
-                <!-- <div class="icon-box d-flex flex-column justify-content-center align-items-center"> -->
-                  <!-- <i class="bi bi-globe-americas-fill"></i> -->
-                  <!-- <h4>MDofficeMail</h4> -->
-                  <!-- <p>Secure, Efficient, and Economical HIPAA Compliant Email Service! All aspects of compliance are taken care.</p> -->
-                <!-- </div> -->
-              <!-- </div><!-- End Icon Box --> 
-
-              <!-- <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300"> -->
-                <!-- <div class="icon-box d-flex flex-column justify-content-center align-items-center"> -->
-                  <!-- <i class="fa-solid fa-shield-halved"></i> -->
-                  <!-- <h4>Secure Digital Fax</h4> -->
-                  <!-- <p>HIPAA Compliant Digital Fax Service, Faxtone. Make your faxes available all the time. Free Legal Archival and secure email account.</p> -->
-                <!-- </div> -->
-              <!-- </div><!-- End Icon Box --> 
-
-              <!-- <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400"> -->
-                <!-- <div class="icon-box d-flex flex-column justify-content-center align-items-center"> -->
-                  <!-- <i class="bi bi-clipboard2-check-fill"></i> -->
-                  <!-- <h4>Secure Forms</h4> -->
-                  <!-- <p>HIPAA Compliant and secure form for your website. Customized header to match your website and customized fields to suit your requirement.</p> -->
-                <!-- </div> -->
-              <!-- </div><!-- End Icon Box --> 
-
-            <!-- </div> -->
-          <!-- </div> -->
-
-        <!-- </div> -->
-
-      <!-- </div> -->
-
-    <!-- </section><!-- /Why Us Section --> 
+  
 
   <!-- Start features Area -->
     <section class="services section " style="background-color:#f3f7fb !important;" id="faxtone">
@@ -784,122 +1504,129 @@ HIPAA Compliant Fax service with no hassles !!
 
    
 
-  <section class="pricing-section py-5" id="pricing">
-<div class="container">
+  
+<section class="pricing-section" id="pricing">
 
-<div class="text-center mb-5">
-
-<span class="badge2 bg-success-subtle text-success px-4 py-2 rounded-pill fs-6">
-<i class="fa-solid fa-shield-heart me-2"></i>Affordable & Reliable
+    <div class="container">
+	
+	
+	<div class="text-center mb-5">
+	<span class="badge2 bg-success-subtle text-success px-4 py-2 rounded-pill fs-6">
+<i class="fa-solid fa-shield-heart me-2"></i>Affordable &amp; Reliable
 </span>
-
-<h1 class="display-4 fw-bold mt-4">
-Plans Starting From
-</h1>
-
-<div class="price">
-<span class="currency">$</span>
-2.91
-</div>
-
-<p class="text-muted fs-4">
-Per Mail Box / Month
-</p>
-
-<h3 class="fw-semibold mt-4">
-<i class="fa-solid fa-shield-halved text-success me-2"></i>
-Legal Archival for 7 Years Included
-</h3>
-
-</div>
-
-<div class="card shadow-md border-0 rounded-0">
-
-<div class="card-body p-5">
-
-<div class="row g-4">
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-file-circle-check"></i>
-<h5>No Contract</h5>
-<p>No Setup Fee</p>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-cloud-arrow-up"></i>
-<h5>5GB Storage</h5>
-<p>Cloud Backup</p>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-gift"></i>
-<h5>Free Trial</h5>
-<p>Try Before Buy</p>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-money-bill-wave"></i>
-<h5>30-Day</h5>
-<p>Money Back</p>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-calendar-days"></i>
-<h5>Online Calendar</h5>
-<p>Sync Anywhere</p>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-envelope-open-text"></i>
-<h5>EmailYourDoc</h5>
-<p>Secure Documents</p>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-shield-virus"></i>
-<h5>Spam Protection</h5>
-<p>Advanced Security</p>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="feature-box">
-<i class="fa-solid fa-sliders"></i>
-<h5>Customization</h5>
-<p>Easy Settings</p>
-</div>
-</div>
-
-</div>
-
-<div class="text-center mt-5">
-
-<a href="#" class="btn btn-success btn-lg rounded-pill px-5">
-Learn More
-<i class="fa-solid fa-arrow-right ms-2"></i>
-</a>
-
-</div>
-
-</div>
+	</div>
+<div class="text-center mb-5">
+    <h2 class="pricing-heading">Choose the Right Plan for Your Business</h2>
+    <p class="pricing-subheading">
+        Flexible plans designed to fit your business needs and help you get started with confidence.
+    </p>
 </div>
 
 
+        <div class="row justify-content-center g-4">
 
-</div>
+            <!-- BASIC -->
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-card basic">
+
+                    <h3 class="pricing-title">Email Accounts</h3>
+
+                    <div class="pricing-subtitle">
+                        HIPAA Secure Email Account Hosting
+                    </div>
+
+                    <div class="price-circle">
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2.69</span>
+                            <span class="month">/mo</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing-details">
+                        <p>1–4 mail accounts</p>
+                        <p>with annual payment</p>
+                        <p>with monthly payment</p>
+                        <p>quarterly payment - $ 2.99/mo</p>
+                    </div>
+
+                    <a href="#" class="pricing-btn" data-bs-toggle="modal"    data-bs-target="#myModal">
+                        Get Started
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- STANDARD -->
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-card standard">
+
+                    <h3 class="pricing-title">Secure Fax</h3>
+
+                    <div class="pricing-subtitle">
+                      HIPAA compliant Fax Service
+                    </div>
+
+                    <div class="price-circle">
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2.33</span>
+                            <span class="month">/mo</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing-details">
+                        <p>5–25 mail accounts</p>
+                        <p>with annual payment</p>
+                        <p>with monthly payment</p>
+                        <p>quarterly payment - $ 2.59/mo</p>
+                    </div>
+
+                    <a href="#" class="pricing-btn">
+                        Get Started
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- PROFESSIONAL -->
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing-card professional">
+
+                    <h3 class="pricing-title">Secure Forms</h3>
+
+                    <div class="pricing-subtitle">
+                        Secure Contact Form for Website
+                    </div>
+
+                    <div class="price-circle">
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">1.79</span>
+                            <span class="month">/mo</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing-details">
+                        <p>26–100 mail accounts</p>
+                        <p>with annual payment</p>
+                        <p>with monthly payment</p>
+                        <p>quarterly payment - $ 1.99/mo</p>
+                    </div>
+
+                    <a href="#" class="pricing-btn">
+                        Get Started
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
   
   
@@ -1036,6 +1763,254 @@ Learn More
   <!-- Preloader -->
   <div id="preloader"></div>
 
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Business Email Plans</h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+            <section style="padding:0px !important">
+
+    <div >
+
+        <!-- Heading -->
+      
+        <!-- Table -->
+        <div class="pricing-table-wrapper">
+
+            <div class="table-responsive">
+
+                <table class="table pricing-table">
+
+                    <thead>
+                        <tr>
+                            <th style="width: 42%;">Plan</th>
+                            <th style="width: 27%;">Mail Accounts</th>
+                            <th style="width: 31%;">Pricing</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <!-- Small -->
+                        <tr>
+                            <td>
+                                <div class="plan-name">
+                                    Small Practice / Personal Plan
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="account-info">
+                                    1–4 mail accounts
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="price">
+                                    $2.69 / mail box / mo
+                                </span>
+                                <span class="price-note">
+                                    (with annual payment)
+                                </span>
+                                <br>
+                                <span class="price-note">
+                                    (monthly/quarterly payment - $2.99/mo)
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <!-- Medium -->
+                        <tr>
+                            <td>
+                                <div class="plan-name">
+                                    Medium Practice Plan
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="account-info">
+                                    5–25 mail accounts
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="price">
+                                    $2.33 / mail box / mo
+                                </span>
+                                <span class="price-note">
+                                    (with annual payment)
+                                </span>
+                                <br>
+                                <span class="price-note">
+                                    (with monthly payment - $2.59/mo)
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <!-- Large -->
+                        <tr>
+                            <td>
+                                <div class="plan-name">
+                                    Large Practice Plan
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="account-info">
+                                    26–100 mail accounts
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="price">
+                                    $1.79 / mail box / mo
+                                </span>
+                                <span class="price-note">
+                                    (with annual payment)
+                                </span>
+                                <br>
+                                <span class="price-note">
+                                    (with monthly payment - $1.99/mo)
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <!-- Hospital -->
+                        <tr>
+                            <td>
+                                <div class="plan-name">
+                                    Hospital Plan
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="account-info">
+                                    &gt;100 mail accounts
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="contact-price">
+                                    Please contact us for a customized quote.
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <!-- Legal Archival -->
+                        <tr>
+                            <td>
+                                <div class="plan-name">
+                                    Legal Archival
+                                    <span class="archive-badge">
+                                        7 Years
+                                    </span>
+                                </div>
+
+                                <div class="price-note mt-1">
+                                    All sent and received messages are archived
+                                    remotely for 7 years, which cannot be edited
+                                    or deleted.
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="account-info">
+                                    Subscribed with email account by default.
+                                    <br>
+                                    (mandatory with each mail box).
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="price">
+                                    $1.12 / mail box / mo
+                                </span>
+
+                                <span class="price-note">
+                                    (with annual payment)
+                                </span>
+
+                                <br>
+
+                                <span class="price-note">
+                                    (with monthly/quarterly payment - $1.25/mo)
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <!-- HIPAA -->
+                        <tr>
+                            <td>
+                                <div class="plan-name">
+                                    HIPAA Business Associate Agreement
+                                </div>
+
+                                <div class="price-note mt-1">
+                                    Preparation and processing
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="account-info">
+                                    (one time charge)
+                                </div>
+                            </td>
+
+                            <td>
+                                <span class="old-price">
+                                    $29.99
+                                </span>
+
+                                <span class="waived">
+                                    Waived<span class="star">*</span>
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+        <!-- Note -->
+       
+
+    </div>
+
+</section>
+            </div>
+
+            <div class="modal-footer">
+			 <div class="small text-secondary" style="  float: left;    position: absolute;    padding-left: 15px; left: 0px;">
+            <span class="star">*</span>
+            Terms and conditions may apply.
+        </div>
+                <button type="button"    class="btn btn-primary" >
+                    Signup
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1049,6 +2024,10 @@ Learn More
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 <script src="assets/js/script.js"></script>
+
+
+
+
 </body>
 
 </html>
