@@ -2855,8 +2855,8 @@ font-size:20px;
 
     width:calc(220px * 12);
 
-    animation:scrollLogo 30s linear infinite;
-gap:50px;
+    animation:scrollLogo 80s linear infinite;
+gap:40px;
 }
 
 .logo-slider:hover .logo-track{
@@ -2908,7 +2908,7 @@ gap:50px;
     }
 
     100%{
-        transform:translateX(calc(-220px * 6));
+        transform:translateX(calc(-270px * 14));
     }
 
 }
