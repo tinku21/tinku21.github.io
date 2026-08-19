@@ -2205,7 +2205,7 @@ body.scrolled .navmenu a {
 }
 
 .scrolled .navmenu li:hover>a, .navmenu .active, .navmenu .active:focus{
-	color:#cae7fd;
+	color:#cae7fd !important;
 }
 .logotrans{
 	  font-size: 32px;
