@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Next Leap Sellers</title>
+<meta name="description" content="Get in touch with Next Leap Sellers for a free consultation on growing your Amazon, eBay or Walmart store.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="https://tinku21.github.io/nls/assets/img/logo.png" alt="Next Leap Sellers logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html#services">Amazon</a></li>
+            <li><a class="dropdown-item" href="index.html#services">eBay</a></li>
+            <li><a class="dropdown-item" href="index.html#services">Walmart</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-cta">Free Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Page header ===== -->
+<header class="page-header">
+  <div class="container position-relative">
+    <h1>Contact Us</h1>
+    <nav class="breadcrumb-nls">
+      <a href="index.html">Home</a> <span>/ Contact Us</span>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Info cards ===== -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="info-card">
+          <div class="icon"><i class="bi bi-geo-alt"></i></div>
+          <h5>Our Address</h5>
+          <p>42400 West 9 Mile Road<br>Novi, Michigan, 48375</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card">
+          <div class="icon"><i class="bi bi-telephone"></i></div>
+          <h5>Call Us</h5>
+          <p><a href="tel:+12486757555" class="text-reset">(248) 675-7555</a></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card">
+          <div class="icon"><i class="bi bi-envelope"></i></div>
+          <h5>Email Us</h5>
+          <p><a href="mailto:connect@nextleapsellers.com" class="text-reset">connect@nextleapsellers.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Form + Map ===== -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="mb-4">Book your free consultation</h2>
+        <div class="contact-form-wrap">
+          <div id="formSuccess" class="alert alert-success d-none" role="alert">
+            <i class="bi bi-check-circle me-2"></i>Thanks! Your message has been received — we'll be in touch shortly.
+          </div>
+          <form id="contactForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="col-md-6">
+                <label for="marketplace" class="form-label">Marketplace</label>
+                <select id="marketplace" class="form-select" required>
+                  <option value="" selected disabled>Choose one</option>
+                  <option>Amazon</option>
+                  <option>eBay</option>
+                  <option>Walmart</option>
+                  <option>Multiple / Not sure</option>
+                </select>
+                <div class="invalid-feedback">Please choose a marketplace.</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required placeholder="Tell us about your store and goals..."></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-cta w-100">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="eyebrow">Find Us</span>
+        <h2 class="mb-4">Visit or reach out anytime</h2>
+        <div class="map-wrap mb-4">
+          <iframe
+            src="https://www.google.com/maps?q=42400+West+9+Mile+Road,+Novi,+Michigan,+48375&output=embed"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Next Leap Sellers office location">
+          </iframe>
+        </div>
+        <div class="value-card">
+          <div class="icon"><i class="bi bi-clock"></i></div>
+          <h5 class="mb-2">Business Hours</h5>
+          <p class="text-muted mb-1 small">Monday – Friday: 9:00 AM – 6:00 PM (EST)</p>
+          <p class="text-muted mb-0 small">Saturday – Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-banner text-center">
+      <h2>Prefer to talk it through first?</h2>
+      <p class="mb-4">Give us a call and let's discuss how we can grow your marketplace store.</p>
+      <a href="tel:+12486757555" class="btn btn-cta">Call (248) 675-7555</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer pt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <span class="footer-logo-wrap"><img src="https://tinku21.github.io/nls/assets/img/logo.png" alt="Next Leap Sellers logo" class="footer-logo"></span>
+        <p>42400 West 9 Mile Road Novi, Michigan, 48375</p>
+        <p class="mb-1"><strong>Phone:</strong> (248) 675-7555</p>
+        <p><strong>Email:</strong> connect@nextleapsellers.com</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h6>Useful Links</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h6>Services</h6>
+        <ul>
+          <li><a href="index.html#services">Amazon</a></li>
+          <li><a href="index.html#services">eBay</a></li>
+          <li><a href="index.html#services">Walmart</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6>About Us</h6>
+        <p>Empowering online businesses with tailored solutions for Amazon, eBay, and Walmart. We handle the details—so you can focus on growth.</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center mt-4">
+      &copy; Copyright 2026 <strong class="text-white">Next Leap Sellers</strong>. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
