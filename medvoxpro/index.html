@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MedVox pro — Medical Dictation That Writes the Note for You</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+	   <link href="assets/css/LineIcons.2.0.css" rel="stylesheet">
+<style>
+.form-control{
+font-size:14px;
+}
+
+/* Logo switching */
+.header .logo {
+  position: relative;
+}
+
+.header .logo img {
+  max-height: 45px;
+  width: auto;
+  transition: opacity 0.3s ease;
+}
+
+.header .logo .logo-white {
+  display: block;
+}
+
+.header .logo .logo-color {
+  display: none;
+}
+
+/* After scrolling */
+.header.scrolled .logo .logo-white {
+  display: none;
+}
+
+.header.scrolled .logo .logo-color {
+  display: block;
+}
+.header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  background: #ffffff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stage-pill {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    color: #000;
+    background: #e0ebf8;
+    border: 1px solid #e0ebf8;
+    padding: 7px 13px;
+    border-radius: 8px;
+}
+.stages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.stage-pill b {
+    color: #0e68ee;
+    font-weight: 600;
+}
+
+.eyebrow {
+       display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px 6px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    color: var(--mint);
+    margin-bottom: 28px;}
+
+
+	.eyebrow .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #65d12b;
+    display: inline-block;
+    box-shadow: 0 0 0 0 rgba(110, 231, 183, 0.9);
+    animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(110, 231, 183, 0.9);
+    }
+
+    50% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 5px rgba(110, 231, 183, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(110, 231, 183, 0);
+    }
+}
+
+.get-in-touch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 22px;
+  margin-top: 18px;
+
+  background: #0066cc;
+  color: #ffffff;
+  border: 1px solid #1769aa;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.get-in-touch-btn:hover {
+  background: #0f568e;
+  border-color: #0f568e;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(23, 105, 170, 0.25);
+  color:#fff !important;
+}
+
+.get-in-touch-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const header = document.querySelector("#header");
+
+  function updateHeaderLogo() {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  }
+
+  updateHeaderLogo();
+
+  window.addEventListener("scroll", updateHeaderLogo);
+
+});
+</script>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/logowhite.png" alt="MedVox Pro" class="logo-white">
+  <img src="assets/img/logoblue.png" alt="MedVox Pro" class="logo-color">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+		<li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#features" >Features</a></li>
+          <li><a href="index.html#howitworks">How It Works</a></li>
+          <li><a href="index.html#services">Who It's For</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>            
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="https://access.medvoxpro.ai/" target="_blank">Login</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+		  <div class="eyebrow"><span class="dot"></span> MedVox <em>pro</em> — Live</div>
+		  
+            <h2 data-aos="fade-up" data-aos-delay="100">Medical Dictation App.</h2>
+			<div class="stages" data-aos="fade-up" data-aos-delay="200">
+      <span class="stage-pill"><b>01</b> Transcribe</span>
+      <span class="stage-pill"><b>02</b> Code</span>
+      <span class="stage-pill"><b>03</b> Export</span>
+    </div>
+            <p data-aos="fade-up" data-aos-delay="300">MedVox pro captures your voice, structures the clinical note,<br>generates codes, and routes it to your team — so you spend more<br>time with patients and less time on documentation.</p>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="400">
+       
+	         <a href="#" class="get-in-touch-btn" data-bs-toggle="modal"    data-bs-target="#myModal">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+
+  <section class="medvox-features" style="background-color:#f7f9fc;">
+
+    <div class="container">
+
+      <!-- Header -->
+      <div class="row align-items-end mb-5">
+
+        <div class="col-lg-7">
+
+          <span class="section-eyebrow">
+            <span class="eyebrow-dot"></span>
+            BUILT FOR MODERN CLINICAL TEAMS
+          </span>
+
+          <h1 class="section-heading">
+            Documentation that
+            <span>moves at the speed of care.</span>
+          </h1>
+
+        </div>
+
+        <div class="col-lg-4 ms-auto">
+
+          <p class="section-intro">
+            From the first word spoken to the final clinical note,
+            MedVox Pro keeps your documentation accurate, structured,
+            and moving forward.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Feature Cards -->
+      <div class="row g-4">
+
+        <!-- Card 01 -->
+        <div class="col-lg-3 col-md-6">
+
+          <div class="feature-card">
+
+            <div class="feature-number">
+              01
+            </div>
+
+            <div class="feature-icon">
+              <i class="bi bi-mic-fill"></i>
+            </div>
+
+            <h3>
+              Capture Naturally
+            </h3>
+
+            <p>
+              Speak naturally during patient encounters.
+              No templates. No typing. No interruption.
+            </p>
+
+            <div class="feature-line"></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Card 02 -->
+        <div class="col-lg-3 col-md-6">
+
+          <div class="feature-card active-card">
+
+            <div class="feature-number">
+              02
+            </div>
+
+            <div class="feature-icon">
+              <i class="bi bi-stars"></i>
+            </div>
+
+            <h3>
+              AI Structures It
+            </h3>
+
+            <p>
+              Advanced AI transforms your conversation
+              into a clean, structured clinical note.
+            </p>
+
+            <div class="feature-line"></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Card 03 -->
+        <div class="col-lg-3 col-md-6">
+
+          <div class="feature-card">
+
+            <div class="feature-number">
+              03
+            </div>
+
+            <div class="feature-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+
+            <h3>
+              Codes Automatically
+            </h3>
+
+            <p>
+              Medical coding is generated alongside
+              the documentation for faster workflows.
+            </p>
+
+            <div class="feature-line"></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Card 04 -->
+        <div class="col-lg-3 col-md-6">
+
+          <div class="feature-card">
+
+            <div class="feature-number">
+              04
+            </div>
+
+            <div class="feature-icon">
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+
+            <h3>
+              Ready to Deliver
+            </h3>
+
+            <p>
+              Review, approve, and securely route the
+              final note to your clinical team.
+            </p>
+
+            <div class="feature-line"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================================
+           WORKFLOW
+      ========================================== -->
+
+      <div class="workflow-modern">
+
+        <div class="workflow-top">
+
+          <div>
+
+            <span class="small-label">
+              THE MEDVOX FLOW
+            </span>
+
+            <h2>
+              Four Ways to
+              <span>Capture a Note.</span>
+            </h2>
+
+          </div>
+        </div>
+
+
+        <!-- Workflow Steps -->
+        <div class="workflow-track">
+
+          <!-- Step 01 -->
+          <div class="workflow-step">
+
+            <div class="step-circle">
+              <i class="bi bi-mic"></i>
+            </div>
+
+            <span>01</span>
+
+            <h4>
+              Dictate
+            </h4>
+
+            <p>
+              Record the encounter naturally.
+            </p>
+
+          </div>
+
+
+          <div class="workflow-connector"></div>
+
+
+          <!-- Step 02 -->
+          <div class="workflow-step">
+
+            <div class="step-circle">
+              <i class="bi bi-cpu"></i>
+            </div>
+
+            <span>02</span>
+
+            <h4>
+              Process
+            </h4>
+
+            <p>
+              AI transcribes and structures.
+            </p>
+
+          </div>
+
+
+          <div class="workflow-connector"></div>
+
+
+          <!-- Step 03 -->
+          <div class="workflow-step">
+
+            <div class="step-circle">
+              <i class="bi bi-shield-check"></i>
+            </div>
+
+            <span>03</span>
+
+            <h4>
+              Review
+            </h4>
+
+            <p>
+              Verify the clinical note.
+            </p>
+
+          </div>
+
+
+          <div class="workflow-connector"></div>
+
+
+          <!-- Step 04 -->
+          <div class="workflow-step">
+
+            <div class="step-circle final-step">
+              <i class="bi bi-check-lg"></i>
+            </div>
+
+            <span>04</span>
+
+            <h4>
+              Complete
+            </h4>
+
+            <p>
+              Approve and deliver securely.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ <section class="medvox-capabilities" id="features">
+  <div class="medvox-capabilities-header">
+    <span class="medvox-eyebrow">POWERFUL CAPABILITIES</span>
+
+     <h2 style="font-size:2rem;">
+     Features
+    </h2>
+
+    <p>
+      Every capability is designed to remove friction from the clinical documentation process.
+    </p>
+  </div>
+
+  <div class="medvox-capabilities-layout">
+
+    <!-- Large highlighted card -->
+
+    <!-- Smaller cards -->
+    <div class="medvox-capability-grid">
+
+  <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="m8 12 2.5 2.5L16 9"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">01</span>
+        </div>
+
+        <h3>Instant Structured Notes</h3>
+        <p>
+           Say the words; MedVox Pro produces a complete clinical note across multiple formats including SOAP, H&P, Surgery, and more.
+        </p>
+      </article>
+
+
+      <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="m8 12 2.5 2.5L16 9"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">02</span>
+        </div>
+
+        <h3>Confidence-Aware Transcription</h3>
+        <p>
+        A secondary AI pass flags uncertain words and replaces inaudible sections with clear markers.
+        </p>
+      </article>
+
+      <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3v11"/>
+              <path d="M8 8v4a4 4 0 0 0 8 0V8"/>
+              <path d="M5 12a7 7 0 0 0 14 0"/>
+              <path d="M12 19v3"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">03</span>
+        </div>
+
+        <h3>Natural Dictation Commands</h3>
+        <p>
+          Simple voice commands like "new paragraph" or "heading assessment" automatically format the note.
+        </p>
+      </article>
+
+      <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M7 3h10v18H7z"/>
+              <path d="m10 9-2 3 2 3M14 9l2 3-2 3"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">04</span>
+        </div>
+
+        <h3>Automatic Medical Coding</h3>
+        <p>
+          ICD-10, CPT, and HCPCS codes are extracted
+          automatically alongside every note.
+        </p>
+      </article>
+
+      <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="9" cy="8" r="3"/>
+              <circle cx="17" cy="9" r="2.5"/>
+              <path d="M3 20c0-3 2.5-5 6-5s6 2 6 5"/>
+              <path d="M14 15c3 0 5 2 5 5"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">05</span>
+        </div>
+
+        <h3>Review Portal</h3>
+        <p>
+          Transcriptionists and medical coders can review,
+          edit, and finalize documentation.
+        </p>
+      </article>
+
+      <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="9" y="3" width="6" height="5" rx="1"/>
+              <rect x="3" y="16" width="6" height="5" rx="1"/>
+              <rect x="15" y="16" width="6" height="5" rx="1"/>
+              <path d="M12 8v4M6 16v-2h12v2"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">06</span>
+        </div>
+
+        <h3>EHR Integration</h3>
+        <p>
+          Connect your EHR to auto-fill patient details,
+          finish dictations, and export notes.
+        </p>
+      </article>
+
+      <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19 12a7 7 0 0 0-.2-1.6l2-1.5-2-3.4-2.3 1a7 7 0 0 0-2.7-1.6L13.5 4h-3l-.3 2.9a7 7 0 0 0-2.7 1.6l-2.3-1-2 3.4 2 1.5A7 7 0 0 0 5 12c0 .6.1 1.1.2 1.6l-2 1.5 2 3.4 2.3-1a7 7 0 0 0 2.7 1.6l.3 2.9h3l.3-2.9a7 7 0 0 0 2.7-1.6l2.3 1 2-3.4-2-1.5c.1-.5.2-1 .2-1.6z"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">07</span>
+        </div>
+
+        <h3>Custom Vocabulary</h3>
+        <p>
+          Define specialty-specific terminology to improve
+          transcription accuracy.
+        </p>
+      </article>
+
+      <article class="medvox-capability-card">
+        <div class="medvox-card-top">
+          <div class="medvox-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 12a4 4 0 0 1 4-4h2"/>
+              <path d="M20 12a4 4 0 0 0-4-4h-2"/>
+              <path d="M8 8V5M16 8V5"/>
+              <path d="M8 19c0-3 2-5 4-5s4 2 4 5"/>
+            </svg>
+          </div>
+          <span class="medvox-card-number">08</span>
+        </div>
+
+        <h3>Webhook Notifications</h3>
+        <p>
+          Trigger real-time updates to external systems
+          when documentation is completed.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+	
+	<section class="medvox-section" id="howitworks">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- SECTION HEADING -->
+        <h2 class="section-title">
+            How MedVox <em>pro</em> Works
+        </h2>
+
+        <p class="section-subtitle">
+            A seamless, continuous workflow from the exam room to the finalized record.
+        </p>
+
+
+        <div class="row g-lg-5">
+
+            <!-- =========================
+                 LEFT SIDE
+            ========================== -->
+
+            <div class="col-lg-6">
+
+                <div class="workflow-list">
+
+                    <!-- STEP 01 -->
+                    <div class="workflow-item">
+
+                        <div class="step-number">01</div>
+
+                        <div class="workflow-content">
+
+                            <div class="workflow-title">
+                                Record
+                            </div>
+
+                            <p class="workflow-text">
+                                The physician opens the app, selects a patient, chooses a format,
+                                and begins dictating. If dictation is not your thing, you can also
+                                enter the notes manually.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 02 -->
+                    <div class="workflow-item">
+
+                        <div class="step-number">02</div>
+
+                        <div class="workflow-content">
+
+                            <div class="workflow-title">
+                                Transcribe
+                            </div>
+
+                            <p class="workflow-text">
+                                Audio is processed into text with formatting, coding extraction,
+                                and confidence analysis.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 03 -->
+                    <div class="workflow-item">
+
+                        <div class="step-number">03</div>
+
+                        <div class="workflow-content">
+
+                            <div class="workflow-title">
+                                Generate Note
+                            </div>
+
+                            <p class="workflow-text">
+                                The transcript is structured into the selected clinical format
+                                using AI.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 04 -->
+                    <div class="workflow-item">
+
+                        <div class="step-number">04</div>
+
+                        <div class="workflow-content">
+
+                            <div class="workflow-title">
+                                Extract Codes
+                            </div>
+
+                            <p class="workflow-text">
+                                Extract ICD10, CPT, SNOMED, and CPT2 codes from the notes
+                                automatically. Edit and lock after proofing.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 05 -->
+                    <div class="workflow-item">
+
+                        <div class="step-number">05</div>
+
+                        <div class="workflow-content">
+
+                            <div class="workflow-title">
+                                Review Flags
+                            </div>
+
+                            <p class="workflow-text">
+                                Uncertain words are reviewed, confirmed, or edited by the physician.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 06 -->
+                    <div class="workflow-item">
+
+                        <div class="step-number">06</div>
+
+                        <div class="workflow-content">
+
+                            <div class="workflow-title">
+                                Professional Review
+                            </div>
+
+                            <p class="workflow-text">
+                                Transcriptionists and Coders can verify accuracy, refine, and lock
+                                the notes before exporting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 07 -->
+                    <div class="workflow-item mb-0">
+
+                        <div class="step-number">07</div>
+
+                        <div class="workflow-content">
+
+                            <div class="workflow-title">
+                                Export and Done
+                            </div>
+
+                            <p class="workflow-text">
+                                Finalized notes can be exported to integrated downstream systems
+                                like EHRs, or emailed/shared through third party secure apps.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 RIGHT SIDE
+            ========================== -->
+
+            <div class="col-lg-6">
+
+                <div class="process-panel">
+
+
+                    <!-- VOICE INPUT -->
+                    <div class="voice-card">
+
+                        <div class="voice-icon">
+                            <i class="bi bi-mic"></i>
+                        </div>
+
+                        <div class="voice-content">
+
+                            <div class="voice-label">
+                                VOICE INPUT
+                            </div>
+
+                            <div class="waveform">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <span class="live-badge">
+                                Live
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- AI PROCESSING -->
+                    <div class="ai-processing">
+
+                        <div class="ai-line"></div>
+
+                        <div class="ai-text">
+
+                            <span class="ai-arrow">
+                                →
+                            </span>
+
+                            <span>
+                                AI Processing
+                            </span>
+
+                            <span class="ai-arrow">
+                                →
+                            </span>
+
+                        </div>
+
+                        <div class="ai-line"></div>
+
+                    </div>
+
+
+                    <!-- STRUCTURED NOTE -->
+                    <div class="note-card">
+
+                        <div class="card-header-custom">
+
+                            <div class="card-label">
+
+                                <span class="blue-dot"></span>
+
+                                <span>
+                                    STRUCTURED NOTE
+                                </span>
+
+                            </div>
+
+                            <span class="format-badge">
+                                SOAP
+                            </span>
+
+                        </div>
+
+
+                        <div class="note-line">
+                            Patient: John D. | DOB: 03/12/1968
+                        </div>
+
+                        <div class="note-line">
+                            Chief Complaint: Chest tightness, fatigue
+                        </div>
+
+                        <div class="note-line">
+                            HPI: 3-day history of exertional dyspnea...
+                        </div>
+
+                        <div class="note-line">
+                            Assessment: Hypertensive heart disease
+                        </div>
+
+                        <div class="note-line">
+                            Plan: Echo, Lisinopril 10mg daily
+                        </div>
+
+
+                        <div class="note-status">
+
+                            <span class="status status-locked">
+                                Locked
+                            </span>
+
+                            <span class="status status-ready">
+                                Ready to Export
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CODES -->
+                    <div class="codes-card">
+
+                        <div class="codes-title">
+
+                            <span class="yellow-dot"></span>
+
+                            <span>
+                                CODES
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-row">
+
+                            <span class="code-number">
+                                I11.9
+                            </span>
+
+                            <span>
+                                Hypertensive heart disease
+                            </span>
+
+                            <span class="code-type">
+                                ICD-10
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-row">
+
+                            <span class="code-number">
+                                93000
+                            </span>
+
+                            <span>
+                                Electrocardiogram
+                            </span>
+
+                            <span class="code-type">
+                                CPT
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-row">
+
+                            <span class="code-number">
+                                Z87.39
+                            </span>
+
+                            <span>
+                                Personal hx of other conditions
+                            </span>
+
+                            <span class="code-type">
+                                ICD-10
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container-fluid section-title" data-aos="fade-up">
+        <h2>Built for the Entire Care Team</h2>
+        <p>MedVox Pro connects everyone involved in the clinical documentation lifecycle.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><svg width="50" height="50" viewBox="0 0 25 24" fill="none"  transform="rotate(0 0 0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.77344 3.5C6.35922 3.5 6.02344 3.83579 6.02344 4.25L6.02344 6.75C6.02344 9.09721 7.92623 11 10.2734 11C12.6206 11 14.5234 9.09721 14.5234 6.75L14.5234 4.25C14.5234 3.83579 14.1876 3.5 13.7734 3.5H13.5234C13.1092 3.5 12.7734 3.16421 12.7734 2.75C12.7734 2.33579 13.1092 2 13.5234 2H13.7734C15.0161 2 16.0234 3.00736 16.0234 4.25L16.0234 6.75C16.0234 9.67145 13.8447 12.084 11.0234 12.4515L11.0234 16.5C11.0234 18.433 12.5904 20 14.5234 20C16.4564 20 18.0234 18.433 18.0234 16.5L18.0234 14.9852C17.0092 14.6666 16.2734 13.719 16.2734 12.5996C16.2734 11.2189 17.3927 10.0996 18.7734 10.0996C20.1541 10.0996 21.2734 11.2189 21.2734 12.5996C21.2734 13.719 20.5377 14.6666 19.5234 14.9852V16.5C19.5234 19.2614 17.2849 21.5 14.5234 21.5C11.762 21.5 9.52344 19.2614 9.52344 16.5L9.52344 12.4515C6.70217 12.084 4.52344 9.67145 4.52344 6.75V4.25C4.52344 3.00736 5.5308 2 6.77344 2H7.02344C7.43765 2 7.77344 2.33579 7.77344 2.75C7.77344 3.16421 7.43765 3.5 7.02344 3.5L6.77344 3.5ZM17.7734 12.5996C17.7734 12.0473 18.2212 11.5996 18.7734 11.5996C19.3257 11.5996 19.7734 12.0473 19.7734 12.5996C19.7734 13.1519 19.3257 13.5996 18.7734 13.5996C18.2212 13.5996 17.7734 13.1519 17.7734 12.5996Z" fill="#343C54"/>
+</svg>
+</div>
+              <div>
+                <h4 class="title">Physicians & Surgeons</h4>
+                <p class="description">Clinicians who want faster, hands-free documentation.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" transform="rotate(0 0 0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8923 16.7332C16.8923 17.9759 15.885 18.9832 14.6423 18.9832H6.34375C5.10111 18.9832 4.09375 17.9759 4.09375 16.7332V8.60187C4.09375 8.00538 4.33061 7.4333 4.75226 7.01138L9.10142 2.65951C9.52341 2.23725 10.0959 2 10.6929 2H14.6423C15.885 2 16.8923 3.00736 16.8923 4.25V16.7332ZM14.6423 17.4832C15.0566 17.4832 15.3923 17.1475 15.3923 16.7332V4.25C15.3923 3.83579 15.0565 3.5 14.6423 3.5H10.8227L10.8249 6.47969C10.8257 7.72296 9.81813 8.73129 8.57486 8.73129H5.59375V16.7332C5.59375 17.1475 5.92954 17.4832 6.34375 17.4832H14.6423ZM6.65314 7.23129L9.32349 4.55928L9.32486 6.48076C9.32516 6.89518 8.98928 7.23129 8.57486 7.23129H6.65314Z" fill="#343C54"/>
+<path d="M18.4065 5.68442C18.4065 5.27021 18.7423 4.93442 19.1565 4.93442C19.5707 4.93442 19.9065 5.27021 19.9065 5.68442V17.2514C19.9065 19.8747 17.7799 22.0014 15.1565 22.0014H7.79765C7.38344 22.0014 7.04765 21.6656 7.04765 21.2514C7.04765 20.8371 7.38344 20.5014 7.79765 20.5014H15.1565C16.9514 20.5014 18.4065 19.0463 18.4065 17.2514V5.68442Z" fill="#343C54"/>
+</svg>
+</div>
+              <div>
+                <h4 class="title">Medical Transcriptionists</h4>
+                <p class="description">Professionals who review and finalize AI-assisted notes.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><svg width="50" height="50" viewBox="0 0 24 25" fill="none"  transform="rotate(0 0 0)">
+<path d="M10 20.897H20V6.39697C20 5.56855 19.3284 4.89697 18.5 4.89697H11.5C10.6716 4.89697 10 5.56855 10 6.39697V9.39697M10 20.897L10.0005 17.147M10 20.897H4V10.897C4 10.0685 4.67157 9.39697 5.5 9.39697H10M10 20.897V9.39697M7.75586 17.147H10.0005M10.0005 17.147V13.147M7.75586 13.147H10.0005M10.0005 13.147L10 9.39697M13.5 15.5636H16.5M13.5 10.2303H16.5" stroke="#343C54" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+              <div>
+                <h4 class="title">Practice Administrators</h4>
+                <p class="description">Teams needing visibility into workflow, volume, and performance.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><svg width="50" height="50" viewBox="0 0 24 24" fill="none"  transform="rotate(0 0 0)">
+<path d="M13 3.75C13 4.30228 12.5523 4.75 12 4.75C11.4477 4.75 11 4.30228 11 3.75C11 3.19772 11.4477 2.75 12 2.75C12.5523 2.75 13 3.19772 13 3.75ZM8.5 16.25C8.5 16.8023 8.05228 17.25 7.5 17.25C6.94772 17.25 6.5 16.8023 6.5 16.25C6.5 15.6977 6.94772 15.25 7.5 15.25C8.05228 15.25 8.5 15.6977 8.5 16.25ZM17.51 16.25C17.51 16.8023 17.0623 17.25 16.51 17.25C15.9577 17.25 15.51 16.8023 15.51 16.25C15.51 15.6977 15.9577 15.25 16.51 15.25C17.0623 15.25 17.51 15.6977 17.51 16.25Z" fill="#343C54" stroke="#343C54" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M9 8.75C9.46318 7.61335 10.3431 6.75 12 6.75C13.6569 6.75 14.5368 7.61335 15 8.75M4.5 21.2502C4.96318 20.1136 5.84315 19.2502 7.5 19.2502C9.15685 19.2502 10.0368 20.1136 10.5 21.2502M13.5 21.2502C13.9632 20.1136 14.8431 19.2502 16.5 19.2502C18.1569 19.2502 19.0368 20.1136 19.5 21.2502M11.9996 12.5002L10.2676 13.5002M11.9996 12.5002L13.7316 13.5002M11.9996 12.5002L12 10.5002" stroke="#343C54" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+              <div>
+                <h4 class="title">Healthcare Organizations</h4>
+                <p class="description">Multi-site practices requiring scalable documentation systems.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" transform="rotate(0 0 0)">
+<path d="M17.8076 2C18.2218 2 18.5576 2.33579 18.5576 2.75V2.91898C19.3061 3.10815 19.8599 3.78601 19.8599 4.59323C19.8599 5.00744 19.5242 5.34323 19.1099 5.34323C18.6957 5.34323 18.3599 5.00744 18.3599 4.59323C18.3599 4.46796 18.2584 4.36641 18.1331 4.36641H17.7381C17.4714 4.36641 17.2553 4.58257 17.2553 4.84921C17.2553 5.05046 17.3801 5.2306 17.5686 5.30127L18.5734 5.67811C19.3473 5.96833 19.8599 6.70814 19.8599 7.53464C19.8599 8.39065 19.3175 9.11996 18.5576 9.39759V9.63372C18.5576 10.0479 18.2218 10.3837 17.8076 10.3837C17.3934 10.3837 17.0576 10.0479 17.0576 9.63372V9.46488C16.3092 9.2757 15.7553 8.59785 15.7553 7.79062C15.7553 7.37641 16.0911 7.04062 16.5053 7.04062C16.9195 7.04062 17.2553 7.37641 17.2553 7.79062C17.2553 7.91589 17.3568 8.01744 17.4821 8.01744H17.8771C18.1438 8.01744 18.3599 7.80129 18.3599 7.53464C18.3599 7.3334 18.2351 7.15326 18.0467 7.08259L17.0418 6.70575C16.268 6.41552 15.7553 5.67571 15.7553 4.84921C15.7553 3.99321 16.2977 3.2639 17.0576 2.98626V2.75C17.0576 2.33579 17.3934 2 17.8076 2Z" fill="#343C54"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 3.25045C4.25736 3.25045 3.25 4.25781 3.25 5.50045V18.5005C3.25 19.7431 4.25736 20.7505 5.5 20.7505H5.83333C7.07597 20.7505 8.08333 19.7431 8.08333 18.5005V5.50045C8.08333 4.25781 7.07598 3.25045 5.83333 3.25045H5.5ZM4.75 5.50045C4.75 5.08624 5.08579 4.75045 5.5 4.75045H5.83333C6.24755 4.75045 6.58333 5.08624 6.58333 5.50045V18.5005C6.58333 18.9147 6.24755 19.2505 5.83333 19.2505H5.5C5.08579 19.2505 4.75 18.9147 4.75 18.5005V5.50045Z" fill="#343C54"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.833 9.63424C10.5904 9.63424 9.58301 10.6416 9.58301 11.8842V18.5005C9.58301 19.7432 10.5904 20.7505 11.833 20.7505H12.1663C13.409 20.7505 14.4163 19.7432 14.4163 18.5005V11.8842C14.4163 10.6416 13.409 9.63424 12.1663 9.63424H11.833ZM11.083 11.8842C11.083 11.47 11.4188 11.1342 11.833 11.1342H12.1663C12.5806 11.1342 12.9163 11.47 12.9163 11.8842V18.5005C12.9163 18.9147 12.5806 19.2505 12.1663 19.2505H11.833C11.4188 19.2505 11.083 18.9147 11.083 18.5005V11.8842Z" fill="#343C54"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.916 14.9223C15.916 13.6797 16.9234 12.6723 18.166 12.6723H18.4993C19.742 12.6723 20.7493 13.6797 20.7493 14.9223V18.5005C20.7493 19.7432 19.742 20.7505 18.4993 20.7505H18.166C16.9234 20.7505 15.916 19.7432 15.916 18.5005V14.9223ZM18.166 14.1723C17.7518 14.1723 17.416 14.5081 17.416 14.9223V18.5005C17.416 18.9147 17.7518 19.2505 18.166 19.2505H18.4993C18.9136 19.2505 19.2493 18.9147 19.2493 18.5005V14.9223C19.2493 14.5081 18.9136 14.1723 18.4993 14.1723H18.166Z" fill="#343C54"/>
+</svg>
+</div>
+              <div>
+                <h4 class="title">Medical Billing Teams
+</h4>
+                <p class="description">Staff who rely on accurate, structured coding for every encounter.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><svg width="50" height="50" viewBox="0 0 25 24" fill="none" transform="rotate(0 0 0)">
+<path d="M15.0582 4.16286C15.1481 3.75851 14.8931 3.35788 14.4888 3.26802C14.0844 3.17816 13.6838 3.43311 13.5939 3.83746L10.0384 19.8374C9.94851 20.2418 10.2035 20.6424 10.6078 20.7323C11.0122 20.8221 11.4128 20.5672 11.5026 20.1628L15.0582 4.16286Z" fill="#343C54"/>
+<path d="M7.82913 7.46956C8.12204 7.76244 8.12206 8.23732 7.82918 8.53022L4.35946 12.0003L7.82916 15.47C8.12205 15.7628 8.12205 16.2377 7.82916 16.5306C7.53627 16.8235 7.06139 16.8235 6.7685 16.5306L2.7685 12.5306C2.47561 12.2377 2.4756 11.7629 2.76847 11.47L6.76847 7.46961C7.06135 7.1767 7.53623 7.17668 7.82913 7.46956Z" fill="#343C54"/>
+<path d="M17.2685 7.46956C16.9756 7.76244 16.9756 8.23732 17.2685 8.53022L20.7382 12.0003L17.2685 15.47C16.9756 15.7628 16.9756 16.2377 17.2685 16.5306C17.5614 16.8235 18.0363 16.8235 18.3292 16.5306L22.3292 12.5306C22.622 12.2377 22.6221 11.7629 22.3292 11.47L18.3292 7.46961C18.0363 7.1767 17.5614 7.17668 17.2685 7.46956Z" fill="#343C54"/>
+</svg>
+</div>
+              <div>
+                <h4 class="title">Medical Coders</h4>
+                <p class="description">Medical Coders who can extract codes from Structured Notes.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Features Section -->
+   
+
+    <!-- Portfolio Section -->
+  
+
+    <!-- Pricing Section -->
+  
+
+    <!-- Faq Section -->
+    
+    <!-- Team Section -->
+    
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Ready to transform your documentation workflow?</h3>
+              <p>MedVox Pro turns voice into verified, structured clinical notes<br>faster than traditional transcription and with the accuracy your practice demands.</p>
+              <a class="cta-btn" href="#"  data-bs-toggle="modal"    data-bs-target="#myModal">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Testimonials Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container-fluid section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Have questions or need more information? Reach out to us today.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street</p>
+                  <p>New York, NY 535022</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+1 xxx xxx xxxx</p>
+				  <p>&nbsp;</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@medvoxpro.ai</p>
+				  <p>&nbsp;</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday</p>
+                  <p>9:00AM - 05:00PM</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+   
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">MedVox <span><i>Pro</i></span></strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+       
+        Designed by Vinfonet 
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-md modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel" style="font-weight:600;">
+                        Get in Touch
+
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body" style=" font-size: 14px;">
+
+                    <p>
+                      Tell us about your practice and we'll reach out to get you started.
+                    </p>
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name <span style="color:#ff0000;">*</span></label>
+                        <input type="text"
+                               class="form-control input-sm"
+                               placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email <span style="color:#ff0000;">*</span></label>
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Enter your email">
+                    </div>
+ <div class="mb-3">
+                        <label class="form-label">Organization </label>
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Springfield Medical Group">
+                    </div>
+ <div class="mb-3">
+                        <label class="form-label">Number of Users </label>
+                        <input type="email"
+                               class="form-control"
+                               placeholder="e.g. 10">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control"
+                                  rows="4"
+                                  placeholder="Tell us about your practice and what you're looking for..."></textarea>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+
+               
+
+                    <button type="button"
+                            class="btn btn-primary" style="width:100%; font-size:14px;">
+                        Send Message
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
