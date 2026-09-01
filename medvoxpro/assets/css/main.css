@@ -1,15 +1,4 @@
-/**
-* Template Name: Append
-* Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -470,10 +459,11 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+background: linear-gradient(90deg, #0a2545 0%, #153c64 100%);
   font-size: 14px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   position: relative;
+  color:#fff;
 }
 
 .footer .footer-top {
@@ -569,9 +559,9 @@ h6 {
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  padding-top: 20px;
+  padding-bottom: 15px;
+  
 }
 
 .footer .copyright p {
@@ -1335,10 +1325,11 @@ section,
 .pricing .pricing-item {
   background-color: var(--surface-color);
   box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
-  padding: 60px 40px;
+  padding: 35px 40px;
   height: 100%;
   position: relative;
   border-radius: 15px;
+  border: 1px solid #ccc;
 }
 
 .pricing h3 {
@@ -1404,7 +1395,7 @@ section,
 }
 
 .pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+ 
   font-size: 18px;
   font-weight: 400;
 }
@@ -1442,7 +1433,7 @@ section,
 }
 
 .pricing .buy-btn {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: var(--contrast-color);
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
@@ -1452,16 +1443,17 @@ section,
   font-weight: 600;
   font-family: var(--heading-font);
   transition: 0.3s;
+    background-color: var(--accent-color);
 }
 
 .pricing .buy-btn:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
+  background-color: #fff;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
 .pricing .featured {
   z-index: 10;
-  border: 3px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 @media (min-width: 992px) {

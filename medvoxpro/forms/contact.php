@@ -1,41 +1,71 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+/**
+ * Handles the "Contact" section form (name, email, subject, message).
+ * Talks to assets/vendor/php-email-form/validate.js, which expects a
+ * plain-text "OK" response on success or an error message otherwise.
+ */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+require __DIR__ . '/mail-config.php';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+header('Content-Type: text/plain; charset=UTF-8');
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+// Only accept AJAX POSTs from the form's own JS.
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || empty($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest') {
+    http_response_code(403);
+    echo 'Forbidden';
+    exit;
+}
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+$name    = isset($_POST['name']) ? medvox_clean($_POST['name']) : '';
+$email   = isset($_POST['email']) ? medvox_clean($_POST['email']) : '';
+$subject = isset($_POST['subject']) ? medvox_clean($_POST['subject']) : '';
+$message = isset($_POST['message']) ? trim($_POST['message']) : '';
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+// Honeypot: if this hidden field is filled, silently pretend success.
+if (!empty($_POST['website'])) {
+    echo 'OK';
+    exit;
+}
 
-  echo $contact->send();
-?>
+$errors = [];
+if ($name === '') {
+    $errors[] = 'Name is required.';
+}
+if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $errors[] = 'A valid email address is required.';
+}
+if ($subject === '') {
+    $errors[] = 'Subject is required.';
+}
+if ($message === '') {
+    $errors[] = 'Message is required.';
+}
+
+if (!empty($errors)) {
+    http_response_code(400);
+    echo implode(' ', $errors);
+    exit;
+}
+
+$body  = "New message from the MedVox Pro contact form\n\n";
+$body .= "Name: {$name}\n";
+$body .= "Email: {$email}\n";
+$body .= "Subject: {$subject}\n\n";
+$body .= "Message:\n{$message}\n";
+
+$sent = medvox_send_mail(
+    $receiving_emails,
+    $from_email,
+    $from_name,
+    'Contact form: ' . $subject,
+    $body,
+    $email,
+    $name
+);
+
+if ($sent) {
+    echo 'OK';
+} else {
+    http_response_code(500);
+    echo 'Sorry, something went wrong while sending your message. Please try again later or email us directly.';
+}
