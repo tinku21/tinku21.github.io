@@ -719,7 +719,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   position: relative;
 }
 
@@ -2943,7 +2943,7 @@ section,
     .feature-card {
       position: relative;
 
-      min-height: 315px;
+      min-height: 265px;
       padding: 28px;
 
       overflow: hidden;
@@ -3064,7 +3064,7 @@ section,
       position: relative;
 
       margin-top: 40px;
-      padding: 55px;
+      padding: 25px;
 
       overflow: hidden;
 
@@ -3102,7 +3102,7 @@ section,
       align-items: flex-end;
       justify-content: space-between;
 
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
     .small-label {
@@ -3182,6 +3182,7 @@ section,
 
     .workflow-step {
       flex: 1;
+	  padding-right: 25px;
     }
 
     .step-circle {
@@ -3213,12 +3214,13 @@ section,
     }
 
     .workflow-step > span {
-      color: #5c88ad;
-
-      font-size: 11px;
-      font-weight: 700;
-
-      letter-spacing: 1px;
+       color: #5c88ad;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    top: 19px;
+    position: absolute;
+    margin-left: 62px;
     }
 
     .workflow-step h4 {
@@ -3231,14 +3233,11 @@ section,
     }
 
     .workflow-step p {
-      max-width: 160px;
-
-      margin: 0;
-
-      color: #89a5c0;
-
-      font-size: 13px;
-      line-height: 1.6;
+    margin: 0;
+    color: #89a5c0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-right: 10px;
     }
 
     /* =========================================
@@ -3581,6 +3580,77 @@ section,
         }
 
         /* =========================
+           HOW IT WORKS - BACKGROUND
+        ========================= */
+
+        #howitworks {
+            position: relative;
+            isolation: isolate;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+            background-image: url('../img/howitworks-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #howitworks::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient( 90deg,  rgba(10, 37, 69, 0.6) 0%,   rgba(21, 60, 100, 0.6) 100%);
+            z-index: 0;
+        }
+
+        #howitworks .container {
+            position: relative;
+            z-index: 1;
+            padding-top: 75px;
+            padding-bottom: 80px;
+        }
+
+        #howitworks .section-title,
+        #howitworks .section-title em {
+            color: #ffffff;
+        }
+
+        #howitworks .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        #howitworks .workflow-list {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 22px;
+            padding: 32px 30px 8px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 20px 45px rgba(2, 10, 25, 0.3);
+        }
+
+        #howitworks .workflow-title {
+            color: #ffffff;
+        }
+
+        #howitworks .workflow-text {
+            color: rgba(255, 255, 255, 0.78);
+        }
+
+        #howitworks .step-number {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        #howitworks .process-panel {
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            box-shadow: 0 30px 65px rgba(2, 10, 25, 0.5);
+        }
+
+        /* =========================
            HEADING
         ========================= */
 
@@ -3599,6 +3669,7 @@ section,
             font-size: 18px;
             color: #55718f;
             margin-bottom: 38px;
+			text-align:center;
         }
 
         /* =========================
@@ -3612,7 +3683,7 @@ section,
         .workflow-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 27px;
+            margin-bottom: 15px;
         }
 
         .step-number {
@@ -3654,10 +3725,14 @@ section,
         ========================= */
 
         .process-panel {
-            border: 1px solid #dce6ef;
-            border-radius: 16px;
-            padding: 23px 24px;
-            background: #f8fbfe;
+          
+            border-radius: 22px;
+            padding: 23px 24px; 
+			    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 20px 45px rgba(2, 10, 25, 0.3);
         }
 
         /* =========================
@@ -3665,15 +3740,15 @@ section,
         ========================= */
 
         .voice-card {
-            background: #ffffff;
-            border: 1px solid #dce5ed;
-            border-radius: 14px;
-            min-height: 135px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(20, 50, 80, 0.08);
-
-            display: flex;
-            align-items: center;
+       background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #dce5ed;
+    border-radius: 14px;
+    min-height: 135px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(20, 50, 80, 0.08);
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(16px);
         }
 
         .voice-icon {
@@ -3768,12 +3843,12 @@ section,
             align-items: center;
             gap: 11px;
             white-space: nowrap;
-            color: #3d6590;
+            color: #fff;
             font-size: 12px;
         }
 
         .ai-arrow {
-            color: #087ee8;
+            color: #fff;
             font-size: 20px;
             font-weight: bold;
         }
@@ -3783,12 +3858,16 @@ section,
         ========================= */
 
         .note-card {
-            background: #ffffff;
-            border: 1px solid #dce5ed;
-            border-radius: 14px;
             padding: 17px 16px;
-            box-shadow: 0 5px 12px rgba(30, 55, 80, 0.10);
-            margin-bottom: 15px;
+            margin-bottom: 40px;	
+			background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #dce5ed;
+	backdrop-filter: blur(16px);
+    border-radius: 14px;    
+    box-shadow: 0 2px 5px rgba(20, 50, 80, 0.08);
+    
+			
+			
         }
 
         .card-header-custom {
@@ -3802,7 +3881,7 @@ section,
             display: flex;
             align-items: center;
             gap: 9px;
-            color: #087ee8;
+            color: #0a2545;
             font-size: 13px;
             font-weight: 500;
         }
@@ -3811,7 +3890,7 @@ section,
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #087ee8;
+            background: #0a2545;
         }
 
         .format-badge {
@@ -3823,9 +3902,9 @@ section,
         }
 
         .note-line {
-            font-size: 11px;
-            color: #315c88;
-            line-height: 1.8;
+          font-size: 13px;
+    color: #315c88;
+    line-height: 2.3;
         }
 
         .note-line strong {
@@ -3861,8 +3940,9 @@ section,
         ========================= */
 
         .codes-card {
-            background: #ffffff;
-            border: 1px solid #dce5ed;
+          background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #dce5ed;
+	backdrop-filter: blur(16px);
             border-radius: 14px;
             padding: 16px;
             box-shadow: 0 5px 12px rgba(30, 55, 80, 0.10);
@@ -3872,7 +3952,7 @@ section,
             display: flex;
             align-items: center;
             gap: 9px;
-            color: #eaa900;
+            color: #0a2545;
             font-size: 13px;
             margin-bottom: 12px;
         }
@@ -3880,15 +3960,15 @@ section,
         .yellow-dot {
             width: 8px;
             height: 8px;
-            background: #f2b300;
+            background: #0a2545;
             border-radius: 50%;
         }
 
         .code-row {
             display: flex;
             align-items: center;
-            margin-bottom: 8px;
-            font-size: 10px;
+            margin-bottom: 9px;
+            font-size: 12px;
             color: #315c88;
         }
 
@@ -3908,8 +3988,8 @@ section,
 
         .code-type {
             margin-left: auto;
-            color: #55718f;
-            font-size: 9px;
+            color: #fff;
+            font-size: 11px;
         }
 
         /* =========================
@@ -3936,6 +4016,20 @@ section,
 
             .medvox-section {
                 padding: 25px 15px;
+            }
+
+            #howitworks {
+                background-attachment: scroll;
+            }
+
+            #howitworks .container {
+                padding-top: 45px;
+                padding-bottom: 50px;
+            }
+
+            #howitworks .workflow-list {
+                padding: 22px 18px 4px;
+                border-radius: 16px;
             }
 
             .section-title {
@@ -3996,3 +4090,116 @@ section,
         }
 		
 		/* --------------------------aboutus ---------------------*/
+		
+		.featurelist{
+	 color: #76b8ed;
+    font-size: 12.5px;
+    line-height: 1.6;
+		list-style-type: none;
+		padding-left:0px;
+		margin-top:15px;
+		}
+	
+	.featurelist li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+}
+
+.featurelist li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #6ee7b7; /* Check icon color */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+  /* =========================
+           WORKFLOW INTRO - SPLIT SECTION
+        ========================= */
+
+        .medvox-split-section {
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            min-height: 460px;
+            background: #ffffff;
+        }
+
+        .medvox-split-section .split-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 70px;
+        }
+
+        .medvox-split-section .split-text h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0b1220;
+            margin-bottom: 22px;
+        }
+
+        .medvox-split-section .split-text p {
+            font-size: 15.5px;
+            line-height: 1.7;
+            color: #333c4d;
+            margin-bottom: 20px;
+        }
+
+        .medvox-split-section .split-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .medvox-split-section .split-image {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .medvox-split-section .split-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 991px) {
+
+            .medvox-split-section {
+                flex-direction: column;
+            }
+
+            .medvox-split-section .split-text,
+            .medvox-split-section .split-image {
+                width: 100%;
+            }
+
+            .medvox-split-section .split-text {
+                padding: 45px 30px;
+                order: 2;
+            }
+
+            .medvox-split-section .split-image {
+                order: 1;
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 575px) {
+
+            .medvox-split-section .split-text {
+                padding: 35px 20px;
+            }
+
+            .medvox-split-section .split-text h2 {
+                font-size: 21px;
+            }
+
+            .medvox-split-section .split-image {
+                height: 240px;
+            }
+        }
