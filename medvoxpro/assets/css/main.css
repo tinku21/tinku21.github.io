@@ -3590,7 +3590,7 @@ section,
             padding: 0;
             margin: 0;
             border-radius: 0;
-            background-image: url('../img/howitworks-bg.jpg');
+            background-image: url('../img/howitworks-bg.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -3601,7 +3601,7 @@ section,
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient( 90deg,  rgba(10, 37, 69, 0.6) 0%,   rgba(21, 60, 100, 0.6) 100%);
+            background: linear-gradient( 90deg,  rgba(10, 37, 69, 0.4) 0%,   rgba(21, 60, 100, 0.4) 100%);
             z-index: 0;
         }
 
