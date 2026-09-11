@@ -804,11 +804,12 @@ font-family: 'Cosmos BQ';
 }
 
 /*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
+# Global Page Titles & Breadcrumbs gagan
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #fff;
+  background-image: linear-gradient(rgba(6,60,106,0.8), rgba(255,255,255,1)),
+        url("../img/features.jpg");
   padding: 150px 0 60px 0;
   text-align: center;
   position: relative;
@@ -839,7 +840,7 @@ font-family: 'Cosmos BQ';
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -878,17 +879,7 @@ section,
   position: relative;
 }
 
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-}
+
 
 .section-title p {
   margin-bottom: 0;
@@ -2348,7 +2339,7 @@ position: absolute;  top:12px;  right: 23px;}
     font-weight:700;
 
     margin-bottom:12px;
-	text-align:center;
+	text-align:left;
 }
 
 .section-title p{
