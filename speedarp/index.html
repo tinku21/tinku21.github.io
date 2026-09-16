@@ -18,7 +18,24 @@
     <link rel="stylesheet" href="assets/css/glightbox.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
-<style></style></head>
+<style>
+.form-result {
+    display: block;
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 500;
+    min-height: 0;
+}
+.form-result:empty {
+    margin: 0;
+}
+.form-result-success {
+    color: #1a9d5c;
+}
+.form-result-error {
+    color: #e64848;
+}
+</style></head>
 
 <body>
 
@@ -585,7 +602,11 @@
                     <div class="row">
                         <div class="col-lg-8 col-12">
                             <div class="form-main">
-                                <form class="form" method="post" action="assets/mail/mail.php">
+                                <form class="form" id="speedarp-contact-form" method="post" action="https://api.web3forms.com/submit">
+                                    <input type="hidden" name="access_key" value="a1c175ac-71c5-4353-b339-492593ae7f43">
+                                    <input type="hidden" name="subject" value="New message from Speedarp website">
+                                    <input type="hidden" name="from_name" value="Speedarp Contact Form">
+                                    <input type="checkbox" name="botcheck" class="d-none" style="display: none;" tabindex="-1" autocomplete="off">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="form-group">
@@ -594,7 +615,7 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="form-group">
-                                                <input name="subject" type="text" placeholder="Your Subject" required="required">
+                                                <input name="topic" type="text" placeholder="Your Subject" required="required">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-12">
@@ -609,7 +630,12 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group message">
-                                                <textarea name="message" placeholder="Your Message"></textarea>
+                                                <textarea name="message" placeholder="Your Message" required="required"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <span id="speedarp-form-result" class="form-result"></span>
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -730,6 +756,51 @@
             'width': 900,
             'autoplayVideos': true,
         });
+
+        //========= Contact form (Web3Forms)
+        (function () {
+            var form = document.getElementById('speedarp-contact-form');
+            var result = document.getElementById('speedarp-form-result');
+            if (!form) return;
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var formData = new FormData(form);
+                var submitBtn = form.querySelector('button[type="submit"]');
+                var originalBtnText = submitBtn.innerHTML;
+
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = 'Sending...';
+                result.className = 'form-result';
+                result.innerHTML = '';
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: formData
+                })
+                    .then(function (response) { return response.json(); })
+                    .then(function (data) {
+                        if (data.success) {
+                            result.classList.add('form-result-success');
+                            result.innerHTML = 'Thanks! Your message has been sent — we\'ll get back to you soon.';
+                            form.reset();
+                        } else {
+                            result.classList.add('form-result-error');
+                            result.innerHTML = data.message || 'Something went wrong. Please try again.';
+                        }
+                    })
+                    .catch(function () {
+                        result.classList.add('form-result-error');
+                        result.innerHTML = 'Something went wrong. Please check your connection and try again.';
+                    })
+                    .finally(function () {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                    });
+            });
+        })();
     </script>
 
 
